@@ -1,0 +1,182 @@
+{
+  "passed": 44,
+  "total": 44,
+  "results": [
+    {
+      "name": "Matrix inverse composes to identity",
+      "pass": true
+    },
+    {
+      "name": "Singular matrix rejected",
+      "pass": true
+    },
+    {
+      "name": "Generic skeleton composes parent/child transforms",
+      "pass": true
+    },
+    {
+      "name": "Skeleton rejects missing parent and duplicate names",
+      "pass": true
+    },
+    {
+      "name": "Skeleton rejects nonfinite/singular animated scale",
+      "pass": true
+    },
+    {
+      "name": "Two-bone IK conserves lengths on both bend sides",
+      "pass": true
+    },
+    {
+      "name": "IK unreachable and coincident target remain finite",
+      "pass": true
+    },
+    {
+      "name": "IK explicit pole produces mirrored elbow solution",
+      "pass": true
+    },
+    {
+      "name": "Negative bone length rejected",
+      "pass": true
+    },
+    {
+      "name": "Path compiler normalizes relative and shorthand commands",
+      "pass": true
+    },
+    {
+      "name": "SVG arc and incomplete path rejected explicitly",
+      "pass": true
+    },
+    {
+      "name": "Path exponent numbers are parsed as numbers",
+      "pass": true
+    },
+    {
+      "name": "Weighted skin preserves rest shape exactly",
+      "pass": true
+    },
+    {
+      "name": "Weighted skin follows translated bones",
+      "pass": true
+    },
+    {
+      "name": "Invalid weights rejected instead of corrupting paths",
+      "pass": true
+    },
+    {
+      "name": "Corrective morph interpolates compatible path shapes",
+      "pass": true
+    },
+    {
+      "name": "Corrective morph rejects topology and invalid weight",
+      "pass": true
+    },
+    {
+      "name": "Clip samples exact keys and endpoint clamps",
+      "pass": true
+    },
+    {
+      "name": "Clip sampling is referentially repeatable",
+      "pass": true
+    },
+    {
+      "name": "Clip data constructor does not retain user object references",
+      "pass": true
+    },
+    {
+      "name": "Clip validation rejects malformed timing and NaN",
+      "pass": true
+    },
+    {
+      "name": "Clip import rejects prototype pollution keys",
+      "pass": true
+    },
+    {
+      "name": "Hold/strike easing preserve animation accents",
+      "pass": true
+    },
+    {
+      "name": "Events dispatch exactly once and include first/last frame",
+      "pass": true
+    },
+    {
+      "name": "Seek neither dispatches nor retroactively replays events",
+      "pass": true
+    },
+    {
+      "name": "Hitstop freezes pose, frame and event dispatch",
+      "pass": true
+    },
+    {
+      "name": "Loop dispatches one event set per cycle",
+      "pass": true
+    },
+    {
+      "name": "Snapshot restore reproduces future poses and events",
+      "pass": true
+    },
+    {
+      "name": "State blending starts from previous pose and reaches destination",
+      "pass": true
+    },
+    {
+      "name": "Fixed-clock sim count matches at 30/60/120/144 Hz",
+      "pass": true
+    },
+    {
+      "name": "Fixed-clock caps catchup and clears background gap on reset",
+      "pass": true
+    },
+    {
+      "name": "Analytic follow-through is deterministic under reverse seek",
+      "pass": true
+    },
+    {
+      "name": "All 27 clips evaluate to finite poses at every quarter-frame",
+      "pass": true
+    },
+    {
+      "name": "Every character has at least three distinct non-identical clips",
+      "pass": true
+    },
+    {
+      "name": "Contact event and the frozen pose have the same authored frame",
+      "pass": true
+    },
+    {
+      "name": "Every authored contact dispatches on its matching pose frame",
+      "pass": true
+    },
+    {
+      "name": "Air-only dive begins airborne and finishes on the floor",
+      "pass": true
+    },
+    {
+      "name": "IK input rejects malformed coordinates and impossible margin",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock rejects zero frequency, invalid step cap and NaN speed",
+      "pass": true
+    },
+    {
+      "name": "Path compiler rejects unparsed characters and missing moveto",
+      "pass": true
+    },
+    {
+      "name": "Clip rejects inherited property tracks and non-array events",
+      "pass": true
+    },
+    {
+      "name": "Mai has canonical IDs with explicit, non-ambiguous legacy mappings",
+      "pass": true
+    },
+    {
+      "name": "Authored foreshortening affects projection without changing bind lengths",
+      "pass": true
+    },
+    {
+      "name": "Clip import rejects nonfinite impulse and unsafe attachment sockets",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,705 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "iori",
+  "key": "sLP",
+  "gameId": "sLP",
+  "name": "爪突",
+  "category": "normal",
+  "command": "sLP",
+  "binding": {
+    "startup": 4,
+    "active": 3,
+    "recovery": 9,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "iori:sLP",
+    "character": "iori",
+    "name": "爪突",
+    "command": "sLP",
+    "duration": 16,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        4
+      ],
+      "active": [
+        4,
+        7
+      ],
+      "recovery": [
+        7,
+        16
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          12,
+          "linear"
+        ],
+        [
+          2,
+          14.632,
+          "linear"
+        ],
+        [
+          4,
+          25,
+          "linear"
+        ],
+        [
+          6,
+          26.148,
+          "linear"
+        ],
+        [
+          7,
+          27.0,
+          "linear"
+        ],
+        [
+          9,
+          16.66,
+          "linear"
+        ],
+        [
+          12,
+          13.496,
+          "linear"
+        ],
+        [
+          16,
+          12,
+          "linear"
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          2,
+          15.793,
+          "linear"
+        ],
+        [
+          4,
+          14,
+          "linear"
+        ],
+        [
+          6,
+          14,
+          "linear"
+        ],
+        [
+          7,
+          14,
+          "linear"
+        ],
+        [
+          9,
+          17.447,
+          "linear"
+        ],
+        [
+          12,
+          8.974,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "head": [
+        [
+          0,
+          -8,
+          "linear"
+        ],
+        [
+          2,
+          -8.877,
+          "linear"
+        ],
+        [
+          4,
+          -13,
+          "linear"
+        ],
+        [
+          6,
+          -13,
+          "linear"
+        ],
+        [
+          7,
+          -13,
+          "linear"
+        ],
+        [
+          9,
+          -9.553,
+          "linear"
+        ],
+        [
+          12,
+          -8.499,
+          "linear"
+        ],
+        [
+          16,
+          -8,
+          "linear"
+        ]
+      ],
+      "chest": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "pelvis": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          2,
+          0.149,
+          "linear"
+        ],
+        [
+          4,
+          0.3,
+          "linear"
+        ],
+        [
+          6,
+          0.3,
+          "linear"
+        ],
+        [
+          7,
+          0.3,
+          "linear"
+        ],
+        [
+          9,
+          0.188,
+          "linear"
+        ],
+        [
+          12,
+          0.085,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "open": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ]
+      ],
+      "frontArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "rearArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "frontLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "rearLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -65,
+            -204
+          ],
+          "linear"
+        ],
+        [
+          2,
+          [
+            -94.831,
+            -289.983
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            -73,
+            -306
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            -73,
+            -306
+          ],
+          "linear"
+        ],
+        [
+          7,
+          [
+            -73,
+            -306
+          ],
+          "linear"
+        ],
+        [
+          9,
+          [
+            -95.403,
+            -302.553
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            -81.951,
+            -252.858
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -65,
+            -204
+          ],
+          "linear"
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            116,
+            -290
+          ],
+          "linear"
+        ],
+        [
+          2,
+          [
+            1.941,
+            -259.292
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            168,
+            -290
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            168,
+            -290
+          ],
+          "linear"
+        ],
+        [
+          7,
+          [
+            168,
+            -290
+          ],
+          "linear"
+        ],
+        [
+          9,
+          [
+            8.592,
+            -242.609
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            49.693,
+            -262.58
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            116,
+            -290
+          ],
+          "linear"
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -122,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          2,
+          [
+            -122,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            -124,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            -124,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          7,
+          [
+            -124,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          9,
+          [
+            -122.277,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            -122,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -122,
+            -16
+          ],
+          "linear"
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            107,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          2,
+          [
+            112.264,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            132,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            132,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          7,
+          [
+            132,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          9,
+          [
+            115.628,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            109.991,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            107,
+            -16
+          ],
+          "linear"
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-atelier",
+      "legacyID": "sLP",
+      "kind": "punch",
+      "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
+      "gameId": "sLP",
+      "rootPolicy": "combat"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [
+    {
+      "id": "accent",
+      "frame": 4,
+      "duration": 5,
+      "type": "streak",
+      "socket": "frontHand",
+      "scale": 0.72,
+      "color": "#a987df",
+      "rotation": 0,
+      "opacity": 0.72
+    }
+  ],
+  "source": "migrated-atelier"
+}

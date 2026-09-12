@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "chun",
+  "name": "CHUN-LI",
+  "cn": "春丽",
+  "female": true,
+  "accent": "#51c9bc",
+  "arm": [
+    13.8,
+    7.3,
+    6.1
+  ],
+  "leg": [
+    29.5,
+    15.8,
+    9.2
+  ],
+  "headScale": 0.79,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "掌法 · 换轴 · 千变腿法",
+  "shape": {
+    "chest": 1.02,
+    "waist": 0.97,
+    "hip": 1.05
+  }
+}

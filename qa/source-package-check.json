@@ -1,0 +1,10 @@
+{
+  "curatedSourceRebuild": "passed",
+  "baselineUnchanged": true,
+  "rebuiltArtifactSHA256": {
+    "INK-Street-Fighter-6.html": "318afb65a553faad6c5a22fb1f0a331541fa41e892afccf103728a7e388eaba2",
+    "INK-Street-Fighter-6-Player.html": "c2c329eacfa44a31b055c7a51d68bb827e29dadc5e57d215f169e6a80cb0d5ef"
+  },
+  "filesBeforeChecksum": 793,
+  "verifiedAt": "2026-09-12T16:14:03.601434+00:00"
+}

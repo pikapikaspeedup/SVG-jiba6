@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "luke",
+  "name": "LUKE",
+  "cn": "卢克",
+  "female": false,
+  "accent": "#e8b573",
+  "arm": [
+    24,
+    13.8,
+    10
+  ],
+  "leg": [
+    28,
+    15.3,
+    10.6
+  ],
+  "headScale": 0.83,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "转肩 · 重拳 · 瞬间爆发",
+  "shape": {
+    "chest": 1.17,
+    "waist": 1.04,
+    "hip": 1.04
+  }
+}

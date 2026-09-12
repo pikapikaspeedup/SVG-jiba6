@@ -1,0 +1,537 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "cammy",
+  "key": "stance",
+  "gameId": "stance",
+  "name": "流氓组合",
+  "category": "unique",
+  "command": "22K",
+  "binding": {
+    "startup": 8,
+    "active": 1,
+    "recovery": 12,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "cammy:stance",
+    "character": "cammy",
+    "name": "流氓组合",
+    "command": "22K",
+    "duration": 21,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        8
+      ],
+      "active": [
+        8,
+        9
+      ],
+      "recovery": [
+        9,
+        21
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          7,
+          "linear"
+        ],
+        [
+          21,
+          7,
+          "linear"
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          4,
+          17.581,
+          "linear"
+        ],
+        [
+          6,
+          18,
+          "linear"
+        ],
+        [
+          8,
+          9,
+          "linear"
+        ],
+        [
+          9,
+          9,
+          "linear"
+        ],
+        [
+          12,
+          7.104,
+          "linear"
+        ],
+        [
+          16,
+          2.988,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "head": [
+        [
+          0,
+          -4,
+          "linear"
+        ],
+        [
+          21,
+          -4,
+          "linear"
+        ]
+      ],
+      "chest": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "pelvis": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          21,
+          1,
+          "linear"
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "open": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          4,
+          0.977,
+          "linear"
+        ],
+        [
+          6,
+          1,
+          "linear"
+        ],
+        [
+          8,
+          1,
+          "linear"
+        ],
+        [
+          9,
+          1,
+          "linear"
+        ],
+        [
+          12,
+          0.052,
+          "linear"
+        ],
+        [
+          16,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          21,
+          1,
+          "linear"
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          21,
+          0,
+          "linear"
+        ]
+      ],
+      "frontArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          21,
+          1,
+          "linear"
+        ]
+      ],
+      "rearArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          21,
+          1,
+          "linear"
+        ]
+      ],
+      "frontLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          21,
+          1,
+          "linear"
+        ]
+      ],
+      "rearLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          21,
+          1,
+          "linear"
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            9,
+            -314
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            -10.534,
+            -275.908
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            -11,
+            -275
+          ],
+          "linear"
+        ],
+        [
+          8,
+          [
+            -33,
+            -292
+          ],
+          "linear"
+        ],
+        [
+          9,
+          [
+            -33,
+            -292
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            6.823,
+            -312.86
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            9,
+            -314
+          ],
+          "linear"
+        ],
+        [
+          21,
+          [
+            9,
+            -314
+          ],
+          "linear"
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            86,
+            -323
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            51.815,
+            -275.141
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            51,
+            -274
+          ],
+          "linear"
+        ],
+        [
+          8,
+          [
+            81,
+            -316
+          ],
+          "linear"
+        ],
+        [
+          9,
+          [
+            81,
+            -316
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            85.741,
+            -322.637
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            86,
+            -323
+          ],
+          "linear"
+        ],
+        [
+          21,
+          [
+            86,
+            -323
+          ],
+          "linear"
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -79,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          21,
+          [
+            -79,
+            -16
+          ],
+          "linear"
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            120,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          21,
+          [
+            120,
+            -16
+          ],
+          "linear"
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-atelier",
+      "legacyID": "stance",
+      "kind": "stance",
+      "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
+      "gameId": "stance",
+      "rootPolicy": "combat"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "migrated-atelier"
+}

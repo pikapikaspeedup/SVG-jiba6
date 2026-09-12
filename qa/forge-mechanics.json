@@ -1,0 +1,159 @@
+[
+  {
+    "name": "Mai right 236+LP → kachosen_0",
+    "pass": true
+  },
+  {
+    "name": "Mai right 214+MP → hissatsu_1",
+    "pass": true
+  },
+  {
+    "name": "Mai right 623+MK → ryuenbu_1",
+    "pass": true
+  },
+  {
+    "name": "Mai right 236+HK → shinobibachi_2",
+    "pass": true
+  },
+  {
+    "name": "Mai right 236236+LP → SA1",
+    "pass": true
+  },
+  {
+    "name": "Mai right 236236+LK → SA2",
+    "pass": true
+  },
+  {
+    "name": "Mai right 214214+LP → SA3",
+    "pass": true
+  },
+  {
+    "name": "Mai left 236+LP → kachosen_0",
+    "pass": true
+  },
+  {
+    "name": "Mai left 214+MP → hissatsu_1",
+    "pass": true
+  },
+  {
+    "name": "Mai left 623+MK → ryuenbu_1",
+    "pass": true
+  },
+  {
+    "name": "Mai left 236+HK → shinobibachi_2",
+    "pass": true
+  },
+  {
+    "name": "Mai left 236236+LP → SA1",
+    "pass": true
+  },
+  {
+    "name": "Mai left 236236+LK → SA2",
+    "pass": true
+  },
+  {
+    "name": "Mai left 214214+LP → SA3",
+    "pass": true
+  },
+  {
+    "name": "Mai air 214P / 1",
+    "pass": true
+  },
+  {
+    "name": "Mai air 214P / -1",
+    "pass": true
+  },
+  {
+    "name": "Mai air SA2 / 1",
+    "pass": true
+  },
+  {
+    "name": "Mai air SA2 / -1",
+    "pass": true
+  },
+  {
+    "name": "Mai ground-only SA1 / SA3 cannot start in air",
+    "pass": true
+  },
+  {
+    "name": "SA1 creates exactly five flame stocks at activation",
+    "pass": true
+  },
+  {
+    "name": "Accepted special spends one stock, rejected input does not",
+    "pass": true
+  },
+  {
+    "name": "SA3 does not consume flame stock",
+    "pass": true
+  },
+  {
+    "name": "Round reset clears flame stock and follow window",
+    "pass": true
+  },
+  {
+    "name": "Uncharged fan has one hit, is strike-vulnerable",
+    "pass": true
+  },
+  {
+    "name": "Hold P creates a protected fan with physical bounce",
+    "pass": true,
+    "damage": 689
+  },
+  {
+    "name": "Normal fan loses to an opposing Hadoken without deleting it",
+    "pass": true
+  },
+  {
+    "name": "OD charged fan allows forward+P follow-up and two separate fans",
+    "pass": true
+  },
+  {
+    "name": "Standalone midare cannot bypass prerequisites",
+    "pass": true
+  },
+  {
+    "name": "OD Shinobi Bachi hit rebounds into an actionable airborne state",
+    "pass": true
+  },
+  {
+    "name": "Mai SA2 ignores projectile contact during its active travel",
+    "pass": true
+  },
+  {
+    "name": "Mai pillar has a bilateral, vertical hitbox; DP uses a foot",
+    "pass": true
+  },
+  {
+    "name": "ryu drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "ken drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "chun drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "cammy drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "luke drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "juri drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "mai drive meter / burnout / super cost",
+    "pass": true
+  },
+  {
+    "name": "iori drive meter / burnout / super cost",
+    "pass": true
+  }
+]

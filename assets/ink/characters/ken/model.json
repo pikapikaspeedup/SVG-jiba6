@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "ken",
+  "name": "KEN",
+  "cn": "肯",
+  "female": false,
+  "accent": "#ff8c55",
+  "arm": [
+    20.8,
+    10.5,
+    8.4
+  ],
+  "leg": [
+    28.8,
+    16,
+    10.8
+  ],
+  "headScale": 0.8,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "前压 · 蹬地 · 火焰回旋",
+  "shape": {
+    "chest": 1.08,
+    "waist": 1,
+    "hip": 1.02
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "total": 7,
+  "passed": 7,
+  "tests": [
+    {
+      "name": "Landscape controls, exit and arena stay within 844 × 390 viewport",
+      "pass": true,
+      "detail": [
+        {
+          "s": "#joystick",
+          "x": 12,
+          "y": 268,
+          "w": 110,
+          "h": 110,
+          "visible": true
+        },
+        {
+          "s": ".touch-buttons [data-btn=LP]",
+          "x": 697,
+          "y": 268,
+          "w": 41,
+          "h": 41,
+          "visible": true
+        },
+        {
+          "s": ".touch-buttons [data-btn=HK]",
+          "x": 791,
+          "y": 315,
+          "w": 41,
+          "h": 41,
+          "visible": true
+        },
+        {
+          "s": "#back-btn",
+          "x": 8,
+          "y": 223.203125,
+          "w": 70.0625,
+          "h": 38.796875,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Real two-finger 236 + LP fires Mai Kachousen in classic mode",
+      "pass": true,
+      "detail": {
+        "move": "kachosen_0",
+        "held": [
+          "right",
+          "LP"
+        ],
+        "dir": 6,
+        "history": [
+          {
+            "n": 6,
+            "t": 35
+          }
+        ]
+      }
+    },
+    {
+      "name": "Touch release clears held directions, button state and joystick",
+      "pass": true,
+      "detail": {
+        "held": [],
+        "pressed": 0,
+        "knob": ""
+      }
+    },
+    {
+      "name": "Pointer cancellation cannot leave the fighter walking",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "In-game exit restores ordinary navigation after landscape fullscreen layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Portrait arena and touch panel fit the 390px layout",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No browser script errors",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "errors": []
+}

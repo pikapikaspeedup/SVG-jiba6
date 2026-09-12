@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "ryu",
+  "name": "RYU",
+  "cn": "隆",
+  "female": false,
+  "accent": "#74c4cf",
+  "arm": [
+    21,
+    10.2,
+    8.2
+  ],
+  "leg": [
+    31,
+    16,
+    10.8
+  ],
+  "headScale": 0.8,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "沉肩 · 双掌 · 气的控制",
+  "shape": {
+    "chest": 1.13,
+    "waist": 0.94,
+    "hip": 1.04
+  }
+}

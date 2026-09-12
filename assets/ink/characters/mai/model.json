@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "mai",
+  "name": "MAI",
+  "cn": "不知火舞",
+  "female": true,
+  "accent": "#ef7186",
+  "arm": [
+    13.6,
+    7.4,
+    6
+  ],
+  "leg": [
+    25.8,
+    14,
+    8.7
+  ],
+  "headScale": 0.78,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "扇面 · 翻身 · 不知火流",
+  "shape": {
+    "chest": 1.03,
+    "waist": 0.94,
+    "hip": 1.02
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "iori",
+  "name": "IORI",
+  "cn": "八神庵",
+  "female": false,
+  "accent": "#a987df",
+  "arm": [
+    18.7,
+    9.8,
+    8
+  ],
+  "leg": [
+    26,
+    16.8,
+    10.3
+  ],
+  "headScale": 0.8,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "前伏 · 爪切 · 紫焰 / 客串",
+  "shape": {
+    "chest": 1,
+    "waist": 0.96,
+    "hip": 0.97
+  }
+}

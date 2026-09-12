@@ -1,0 +1,823 @@
+{
+  "tests": [
+    {
+      "name": "ryu walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "ryu walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "ryu crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "ryu jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "ryu land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "ryu block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "ryu block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "ryu hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "ryu hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "ryu parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "ryu drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "ryu dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "ryu stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "ryu win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "ryu down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "ryu rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "ryu tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "ryu ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "ken walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "ken walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "ken crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "ken jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "ken land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "ken block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "ken block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "ken hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "ken hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "ken parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "ken drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "ken dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "ken stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "ken win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "ken down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "ken rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "ken tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "ken ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "chun walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "chun walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "chun crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "chun jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "chun land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "chun block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "chun block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "chun hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "chun hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "chun parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "chun drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "chun dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "chun stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "chun win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "chun down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "chun rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "chun tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "chun ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "cammy walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "cammy walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "cammy crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "cammy jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "cammy land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "cammy block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "cammy block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "cammy hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "cammy hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "cammy parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "cammy drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "cammy dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "cammy stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "cammy win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "cammy down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "cammy rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "cammy tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "cammy ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "luke walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "luke walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "luke crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "luke jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "luke land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "luke block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "luke block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "luke hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "luke hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "luke parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "luke drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "luke dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "luke stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "luke win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "luke down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "luke rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "luke tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "luke ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "juri walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "juri walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "juri crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "juri jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "juri land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "juri block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "juri block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "juri hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "juri hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "juri parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "juri drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "juri dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "juri stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "juri win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "juri down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "juri rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "juri tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "juri ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "mai walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "mai walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "mai crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "mai jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "mai land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "mai block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "mai block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "mai hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "mai hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "mai parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "mai drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "mai dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "mai stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "mai win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "mai down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "mai rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "mai tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "mai ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "iori walk-forward is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-forward"
+    },
+    {
+      "name": "iori walk-back is a sampled state asset",
+      "pass": true,
+      "asset": "state-walk-back"
+    },
+    {
+      "name": "iori crouch is a sampled state asset",
+      "pass": true,
+      "asset": "state-crouch"
+    },
+    {
+      "name": "iori jump is a sampled state asset",
+      "pass": true,
+      "asset": "state-jump"
+    },
+    {
+      "name": "iori land is a sampled state asset",
+      "pass": true,
+      "asset": "state-land"
+    },
+    {
+      "name": "iori block-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-high"
+    },
+    {
+      "name": "iori block-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-block-low"
+    },
+    {
+      "name": "iori hit-high is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-high"
+    },
+    {
+      "name": "iori hit-low is a sampled state asset",
+      "pass": true,
+      "asset": "state-hit-low"
+    },
+    {
+      "name": "iori parry is a sampled state asset",
+      "pass": true,
+      "asset": "state-parry"
+    },
+    {
+      "name": "iori drive-rush is a sampled state asset",
+      "pass": true,
+      "asset": "state-drive-rush"
+    },
+    {
+      "name": "iori dash is a sampled state asset",
+      "pass": true,
+      "asset": "state-dash"
+    },
+    {
+      "name": "iori stance is a sampled state asset",
+      "pass": true,
+      "asset": "state-stance"
+    },
+    {
+      "name": "iori win is a sampled state asset",
+      "pass": true,
+      "asset": "state-win"
+    },
+    {
+      "name": "iori down is a sampled state asset",
+      "pass": true,
+      "asset": "state-down"
+    },
+    {
+      "name": "iori rise is a sampled state asset",
+      "pass": true,
+      "asset": "state-rise"
+    },
+    {
+      "name": "iori tumble is a sampled state asset",
+      "pass": true,
+      "asset": "state-tumble"
+    },
+    {
+      "name": "iori ko is a sampled state asset",
+      "pass": true,
+      "asset": "state-ko"
+    },
+    {
+      "name": "Edited walk asset reaches actual forward movement",
+      "pass": true
+    },
+    {
+      "name": "State transition ages reset at new round",
+      "pass": true
+    },
+    {
+      "name": "State-only assets reject custom attack geometry",
+      "pass": true
+    },
+    {
+      "name": "ryu forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "ryu back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "ken forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "ken back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "chun forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "chun back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "cammy forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "cammy back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "luke forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "luke back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "juri forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "juri back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "mai forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "mai back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "iori forward throw keeps paired constraints",
+      "pass": true,
+      "damage": 1200
+    },
+    {
+      "name": "iori back throw keeps paired constraints",
+      "pass": true,
+      "damage": 1150
+    },
+    {
+      "name": "Head and waist edits change vector art without changing move data",
+      "pass": true
+    }
+  ],
+  "total": 164,
+  "passed": 164,
+  "errors": []
+}

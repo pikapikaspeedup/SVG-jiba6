@@ -1,0 +1,44 @@
+{
+  "suite": "storage-contracts",
+  "scope": "Node tests with storage/file-handle doubles; native directory permissions and browser persistence are not exercised",
+  "tests": [
+    {
+      "name": "Later local edits take precedence over embedded portable seed",
+      "pass": true
+    },
+    {
+      "name": "A newer exported seed beats an older stored copy",
+      "pass": true
+    },
+    {
+      "name": "Corrupt saved copy falls back to validated portable seed",
+      "pass": true
+    },
+    {
+      "name": "Non-numeric revision is rejected before import",
+      "pass": true
+    },
+    {
+      "name": "Whole-folder read imports independently edited JSON, not stale backup",
+      "pass": true
+    },
+    {
+      "name": "One malformed file aborts folder import without partial publication",
+      "pass": true
+    },
+    {
+      "name": "Missing file is not silently replaced by a default",
+      "pass": true
+    },
+    {
+      "name": "Directory writes reject path traversal",
+      "pass": true
+    },
+    {
+      "name": "Queued writes preserve latest revision under overlapping saves",
+      "pass": true
+    }
+  ],
+  "total": 9,
+  "passed": 9
+}

@@ -1,0 +1,172 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "iori",
+  "key": "idle",
+  "gameId": "@idle",
+  "name": "待机 / 呼吸",
+  "category": "locomotion",
+  "command": "NEUTRAL",
+  "binding": {
+    "startup": 30,
+    "active": 60,
+    "recovery": 30,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "iori:idle",
+    "character": "iori",
+    "name": "待机 / 呼吸",
+    "duration": 120,
+    "loop": true,
+    "phases": {
+      "startup": [
+        0,
+        30
+      ],
+      "active": [
+        30,
+        90
+      ],
+      "recovery": [
+        90,
+        120
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          12
+        ],
+        [
+          120,
+          12
+        ]
+      ],
+      "head": [
+        [
+          0,
+          -8
+        ],
+        [
+          60,
+          -7.4
+        ],
+        [
+          120,
+          -8
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -65,
+            -204
+          ]
+        ],
+        [
+          120,
+          [
+            -65,
+            -204
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            116,
+            -290
+          ]
+        ],
+        [
+          120,
+          [
+            116,
+            -290
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -122,
+            -16
+          ]
+        ],
+        [
+          120,
+          [
+            -122,
+            -16
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            107,
+            -16
+          ]
+        ],
+        [
+          120,
+          [
+            107,
+            -16
+          ]
+        ]
+      ],
+      "open": [
+        [
+          0,
+          1
+        ],
+        [
+          120,
+          1
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          1.3
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          90,
+          -1.3
+        ],
+        [
+          120,
+          0
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "authored-idle",
+      "rootPolicy": "combat"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "authored-idle"
+}

@@ -1,0 +1,67 @@
+{
+  "build": "INK FORGE 2.0",
+  "testedAt": "2026-09-12T16:02:35.596168+00:00",
+  "suites": {
+    "core": {
+      "total": 44,
+      "passed": 44,
+      "report": "test-results/ink-core.json"
+    },
+    "assets_and_contracts": {
+      "total": 720,
+      "passed": 720,
+      "report": "qa/forge-core.json"
+    },
+    "storage_contract_doubles": {
+      "total": 9,
+      "passed": 9,
+      "report": "qa/forge-storage.json"
+    },
+    "browser_workflow": {
+      "total": 24,
+      "passed": 24,
+      "report": "qa/forge-browser.json"
+    },
+    "combat_mechanics": {
+      "total": 39,
+      "passed": 39,
+      "report": "qa/forge-mechanics.json"
+    },
+    "combat_replays": {
+      "total": 522,
+      "passed": 522,
+      "report": "qa/forge-replays.json"
+    },
+    "states_and_throws": {
+      "total": 164,
+      "passed": 164,
+      "report": "qa/forge-states.json"
+    },
+    "real_mobile_touch": {
+      "total": 7,
+      "passed": 7,
+      "report": "qa/forge-mobile.json"
+    },
+    "retained_rendering": {
+      "total": 34,
+      "passed": 34,
+      "report": "qa/forge-retained.json"
+    }
+  },
+  "artifacts": {
+    "INK-Street-Fighter-6.html": {
+      "bytes": 7373873,
+      "sha256": "318afb65a553faad6c5a22fb1f0a331541fa41e892afccf103728a7e388eaba2"
+    },
+    "INK-Street-Fighter-6-Player.html": {
+      "bytes": 7374032,
+      "sha256": "c2c329eacfa44a31b055c7a51d68bb827e29dadc5e57d215f169e6a80cb0d5ef"
+    }
+  },
+  "limitations": [
+    "Headless Chromium only; set_content was used because this environment blocks URL navigation.",
+    "Native IndexedDB persistence and directory permission UI were not exercised. Storage/file-handle contracts use explicit doubles. Portable HTML/ZIP round trips were tested in a real browser.",
+    "Render benchmark is synchronous JavaScript time, not GPU paint or device FPS.",
+    "Passing tests is not a claim of official SF6 frame accuracy or perfect artwork."
+  ]
+}

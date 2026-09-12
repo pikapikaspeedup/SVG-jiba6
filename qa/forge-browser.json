@@ -1,0 +1,177 @@
+{
+  "tests": [
+    {
+      "name": "Eight selectable roster entries",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Rendering is retained vector art, no raster fighter images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Explicit warning when persistent storage is blocked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Start actual training match from redesigned selection UI",
+      "pass": true,
+      "detail": [
+        "ryu",
+        "mai"
+      ]
+    },
+    {
+      "name": "Eight models solve and draw in the production editor",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "All 690 assets registered including 522 combat IDs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Seek and single-frame transport",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed-clock playback advances; pause stops it",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Pointer drag writes real wrist keyframe",
+      "pass": true,
+      "detail": {
+        "before": [
+          63,
+          -280
+        ],
+        "after": [
+          101.66359367725575,
+          -277.469463172823
+        ]
+      }
+    },
+    {
+      "name": "Undo and redo restore authored values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Save → actual match samples precisely the edited pose",
+      "pass": true,
+      "detail": {
+        "fw": [
+          101.66359367725575,
+          -277.469463172823
+        ],
+        "record": "ryuenbu_0",
+        "renderer": "mai"
+      }
+    },
+    {
+      "name": "Switching characters and returning preserves saved draft",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Edited timing drives real startup/active/recovery",
+      "pass": true,
+      "detail": [
+        12,
+        20,
+        24,
+        56
+      ]
+    },
+    {
+      "name": "Independent model and rig edits also update the fighter runtime",
+      "pass": true,
+      "detail": {
+        "head": 0.96,
+        "hip": 66
+      }
+    },
+    {
+      "name": "Custom socket hitbox obeys active window and mirrors in combat",
+      "pass": true,
+      "detail": {
+        "before": 0,
+        "active": [
+          {
+            "x": 643.7126889561538,
+            "y": 340.2294199852377,
+            "w": 74.25,
+            "h": 60.389999999999986,
+            "part": "ink-hit:hit-mtykopdx"
+          }
+        ],
+        "after": 0,
+        "mirrorError": 0
+      }
+    },
+    {
+      "name": "Authored FX is shared, seekable, and visible only inside its lifetime",
+      "pass": true,
+      "detail": {
+        "color": "#12abef",
+        "before": true,
+        "visibleAgain": "inline"
+      }
+    },
+    {
+      "name": "Repeated evaluation of a frozen frame does not dispatch duplicate FX events",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Asset center reports library and actual persistence mode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid imported data cannot partially overwrite saved work",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Exported offline HTML boots with saved model, motion, timing, hitbox and FX",
+      "pass": true,
+      "detail": {
+        "head": 0.96,
+        "startup": 12,
+        "color": "#12abef",
+        "box": "custom",
+        "revision": 5
+      }
+    },
+    {
+      "name": "Player export keeps edited assets but presents only selection and fighting",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Browser ZIP is valid UTF-8/CRC32 and contains edited sources + playable HTML",
+      "pass": true,
+      "detail": 710
+    },
+    {
+      "name": "Mobile home, editor and asset panels fit without horizontal overflow",
+      "pass": true,
+      "detail": "390 × 844"
+    },
+    {
+      "name": "No unhandled browser script errors",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "total": 24,
+  "passed": 24,
+  "errors": []
+}

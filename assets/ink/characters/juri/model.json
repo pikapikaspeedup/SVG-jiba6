@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "juri",
+  "name": "JURI",
+  "cn": "蛛俐",
+  "female": true,
+  "accent": "#c68ee0",
+  "arm": [
+    13,
+    7,
+    5.9
+  ],
+  "leg": [
+    26.2,
+    14.8,
+    9
+  ],
+  "headScale": 0.78,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "偏轴 · 斧劈 · 紫焰脚刃",
+  "shape": {
+    "chest": 0.98,
+    "waist": 0.94,
+    "hip": 1.02
+  }
+}

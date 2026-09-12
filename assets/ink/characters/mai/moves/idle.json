@@ -1,0 +1,183 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "mai",
+  "key": "idle",
+  "gameId": "@idle",
+  "name": "待机 / 呼吸",
+  "category": "locomotion",
+  "command": "NEUTRAL",
+  "binding": {
+    "startup": 30,
+    "active": 60,
+    "recovery": 30,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "mai:idle",
+    "character": "mai",
+    "name": "待机 / 呼吸",
+    "duration": 120,
+    "loop": true,
+    "phases": {
+      "startup": [
+        0,
+        30
+      ],
+      "active": [
+        30,
+        90
+      ],
+      "recovery": [
+        90,
+        120
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          -6
+        ],
+        [
+          120,
+          -6
+        ]
+      ],
+      "head": [
+        [
+          0,
+          3
+        ],
+        [
+          60,
+          3.6
+        ],
+        [
+          120,
+          3
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -23,
+            -285
+          ]
+        ],
+        [
+          120,
+          [
+            -23,
+            -285
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            113,
+            -313
+          ]
+        ],
+        [
+          120,
+          [
+            113,
+            -313
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -104,
+            -16
+          ]
+        ],
+        [
+          120,
+          [
+            -104,
+            -16
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            82,
+            -16
+          ]
+        ],
+        [
+          120,
+          [
+            82,
+            -16
+          ]
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0.92
+        ],
+        [
+          120,
+          0.92
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          -9
+        ],
+        [
+          120,
+          -9
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          1.3
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          90,
+          -1.3
+        ],
+        [
+          120,
+          0
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "authored-idle",
+      "rootPolicy": "combat",
+      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned."
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "authored-idle"
+}

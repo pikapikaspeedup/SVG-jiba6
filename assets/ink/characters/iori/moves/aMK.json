@@ -1,0 +1,769 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "iori",
+  "key": "aMK",
+  "gameId": "aMK",
+  "name": "空·侧踢",
+  "category": "normal",
+  "command": "aMK",
+  "binding": {
+    "startup": 8,
+    "active": 4,
+    "recovery": 14,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "iori:aMK",
+    "character": "iori",
+    "name": "空·侧踢",
+    "command": "aMK",
+    "duration": 26,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        8
+      ],
+      "active": [
+        8,
+        12
+      ],
+      "recovery": [
+        12,
+        26
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          12,
+          "linear"
+        ],
+        [
+          4,
+          -9.935,
+          "linear"
+        ],
+        [
+          6,
+          -13,
+          "linear"
+        ],
+        [
+          8,
+          -10,
+          "linear"
+        ],
+        [
+          10,
+          -9.505,
+          "linear"
+        ],
+        [
+          11,
+          -8.531,
+          "linear"
+        ],
+        [
+          12,
+          -8.0,
+          "linear"
+        ],
+        [
+          16,
+          -12.997,
+          "linear"
+        ],
+        [
+          20,
+          0.571,
+          "linear"
+        ],
+        [
+          26,
+          12,
+          "linear"
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "head": [
+        [
+          0,
+          -8,
+          "linear"
+        ],
+        [
+          4,
+          6.038,
+          "linear"
+        ],
+        [
+          6,
+          8,
+          "linear"
+        ],
+        [
+          8,
+          -7,
+          "linear"
+        ],
+        [
+          10,
+          -7,
+          "linear"
+        ],
+        [
+          11,
+          -7,
+          "linear"
+        ],
+        [
+          12,
+          -7,
+          "linear"
+        ],
+        [
+          16,
+          7.99,
+          "linear"
+        ],
+        [
+          20,
+          -0.686,
+          "linear"
+        ],
+        [
+          26,
+          -8,
+          "linear"
+        ]
+      ],
+      "chest": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "pelvis": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "open": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          4,
+          6.142,
+          "linear"
+        ],
+        [
+          6,
+          7,
+          "linear"
+        ],
+        [
+          8,
+          78,
+          "linear"
+        ],
+        [
+          10,
+          78,
+          "linear"
+        ],
+        [
+          11,
+          78,
+          "linear"
+        ],
+        [
+          12,
+          78,
+          "linear"
+        ],
+        [
+          16,
+          7.046,
+          "linear"
+        ],
+        [
+          20,
+          3.2,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          26,
+          0,
+          "linear"
+        ]
+      ],
+      "frontArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "rearArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "frontLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "rearLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          26,
+          1,
+          "linear"
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -65,
+            -204
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            -43.943,
+            -296.125
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            -41,
+            -309
+          ],
+          "linear"
+        ],
+        [
+          8,
+          [
+            -79,
+            -233
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            -79,
+            -233
+          ],
+          "linear"
+        ],
+        [
+          11,
+          [
+            -79,
+            -233
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            -79,
+            -233
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -41.025,
+            -308.951
+          ],
+          "linear"
+        ],
+        [
+          20,
+          [
+            -54.028,
+            -252.001
+          ],
+          "linear"
+        ],
+        [
+          26,
+          [
+            -65,
+            -204
+          ],
+          "linear"
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            116,
+            -290
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            -637.67,
+            -311.935
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            -743,
+            -315
+          ],
+          "linear"
+        ],
+        [
+          8,
+          [
+            103,
+            -241
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            103,
+            -241
+          ],
+          "linear"
+        ],
+        [
+          11,
+          [
+            103,
+            -241
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            103,
+            -241
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -742.451,
+            -314.952
+          ],
+          "linear"
+        ],
+        [
+          20,
+          [
+            -276.693,
+            -301.429
+          ],
+          "linear"
+        ],
+        [
+          26,
+          [
+            116,
+            -290
+          ],
+          "linear"
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -122,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            -86.905,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            -82,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          8,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          11,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -81.999,
+            -16.087
+          ],
+          "linear"
+        ],
+        [
+          20,
+          [
+            -103.714,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          26,
+          [
+            -122,
+            -16
+          ],
+          "linear"
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            107,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          4,
+          [
+            64.008,
+            -109.88
+          ],
+          "linear"
+        ],
+        [
+          6,
+          [
+            58,
+            -123
+          ],
+          "linear"
+        ],
+        [
+          8,
+          [
+            211,
+            -161
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            211,
+            -161
+          ],
+          "linear"
+        ],
+        [
+          11,
+          [
+            211,
+            -161
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            211,
+            -161
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            58.099,
+            -123.025
+          ],
+          "linear"
+        ],
+        [
+          20,
+          [
+            84.6,
+            -64.915
+          ],
+          "linear"
+        ],
+        [
+          26,
+          [
+            107,
+            -16
+          ],
+          "linear"
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-atelier",
+      "legacyID": "aMK",
+      "kind": "kick",
+      "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
+      "gameId": "aMK",
+      "rootPolicy": "combat"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [
+    {
+      "id": "accent",
+      "frame": 8,
+      "duration": 5,
+      "type": "streak",
+      "socket": "frontFoot",
+      "scale": 0.72,
+      "color": "#a987df",
+      "rotation": 0,
+      "opacity": 0.72
+    }
+  ],
+  "source": "migrated-atelier"
+}

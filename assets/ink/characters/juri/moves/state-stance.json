@@ -1,0 +1,268 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "juri",
+  "key": "state-stance",
+  "gameId": "@stance",
+  "name": "派生架势",
+  "category": "locomotion",
+  "command": "SIMULATION STATE",
+  "binding": {
+    "startup": 4,
+    "active": 28,
+    "recovery": 4,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "juri:state-stance",
+    "character": "juri",
+    "name": "派生架势",
+    "duration": 36,
+    "loop": true,
+    "phases": {
+      "startup": [
+        0,
+        4
+      ],
+      "active": [
+        4,
+        32
+      ],
+      "recovery": [
+        32,
+        36
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          -5.4
+        ],
+        [
+          36,
+          -5.4
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          10.55748887493834
+        ],
+        [
+          36,
+          10.55748887493834
+        ]
+      ],
+      "head": [
+        [
+          0,
+          2
+        ],
+        [
+          36,
+          2
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "open": [
+        [
+          0,
+          1
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          9
+        ],
+        [
+          36,
+          9
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -5,
+            -291
+          ]
+        ],
+        [
+          36,
+          [
+            -5,
+            -291
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            81.6,
+            -309.6
+          ]
+        ],
+        [
+          36,
+          [
+            81.6,
+            -309.6
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -77,
+            -16
+          ]
+        ],
+        [
+          36,
+          [
+            -77,
+            -16
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            75.6,
+            -86.2
+          ]
+        ],
+        [
+          36,
+          [
+            75.6,
+            -86.2
+          ]
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-state",
+      "state": "stance",
+      "rootPolicy": "combat",
+      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "migrated-state"
+}

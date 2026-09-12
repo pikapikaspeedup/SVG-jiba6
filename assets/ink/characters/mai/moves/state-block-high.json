@@ -1,0 +1,383 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "mai",
+  "key": "state-block-high",
+  "gameId": "@block-high",
+  "name": "站立防御",
+  "category": "reaction",
+  "command": "SIMULATION STATE",
+  "binding": {
+    "startup": 4,
+    "active": 16,
+    "recovery": 4,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "mai:state-block-high",
+    "character": "mai",
+    "name": "站立防御",
+    "duration": 24,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        4
+      ],
+      "active": [
+        4,
+        20
+      ],
+      "recovery": [
+        20,
+        24
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          -13,
+          "linear"
+        ],
+        [
+          2,
+          -11.571428571428571,
+          "linear"
+        ],
+        [
+          4,
+          -10.142857142857142,
+          "linear"
+        ],
+        [
+          6,
+          -8.714285714285715,
+          "linear"
+        ],
+        [
+          8,
+          -8,
+          "linear"
+        ],
+        [
+          10,
+          -8,
+          "linear"
+        ],
+        [
+          12,
+          -8,
+          "linear"
+        ],
+        [
+          14,
+          -8,
+          "linear"
+        ],
+        [
+          16,
+          -8,
+          "linear"
+        ],
+        [
+          18,
+          -8,
+          "linear"
+        ],
+        [
+          20,
+          -8,
+          "linear"
+        ],
+        [
+          22,
+          -8,
+          "linear"
+        ],
+        [
+          24,
+          -8,
+          "linear"
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          6
+        ],
+        [
+          24,
+          6
+        ]
+      ],
+      "head": [
+        [
+          0,
+          9,
+          "linear"
+        ],
+        [
+          2,
+          8.142857142857142,
+          "linear"
+        ],
+        [
+          4,
+          7.285714285714286,
+          "linear"
+        ],
+        [
+          6,
+          6.428571428571429,
+          "linear"
+        ],
+        [
+          8,
+          6,
+          "linear"
+        ],
+        [
+          10,
+          6,
+          "linear"
+        ],
+        [
+          12,
+          6,
+          "linear"
+        ],
+        [
+          14,
+          6,
+          "linear"
+        ],
+        [
+          16,
+          6,
+          "linear"
+        ],
+        [
+          18,
+          6,
+          "linear"
+        ],
+        [
+          20,
+          6,
+          "linear"
+        ],
+        [
+          22,
+          6,
+          "linear"
+        ],
+        [
+          24,
+          6,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "open": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0.92
+        ],
+        [
+          24,
+          0.92
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          -9
+        ],
+        [
+          24,
+          -9
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            34,
+            -317
+          ]
+        ],
+        [
+          24,
+          [
+            34,
+            -317
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            68,
+            -321
+          ]
+        ],
+        [
+          24,
+          [
+            68,
+            -321
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -104,
+            -16
+          ]
+        ],
+        [
+          24,
+          [
+            -104,
+            -16
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            112,
+            -16
+          ]
+        ],
+        [
+          24,
+          [
+            112,
+            -16
+          ]
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-state",
+      "state": "block-high",
+      "rootPolicy": "combat",
+      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。",
+      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned."
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "migrated-state"
+}

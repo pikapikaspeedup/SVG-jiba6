@@ -1,0 +1,382 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "cammy",
+  "key": "state-block-low",
+  "gameId": "@block-low",
+  "name": "蹲下防御",
+  "category": "reaction",
+  "command": "SIMULATION STATE",
+  "binding": {
+    "startup": 4,
+    "active": 16,
+    "recovery": 4,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "cammy:state-block-low",
+    "character": "cammy",
+    "name": "蹲下防御",
+    "duration": 24,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        4
+      ],
+      "active": [
+        4,
+        20
+      ],
+      "recovery": [
+        20,
+        24
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          -4,
+          "linear"
+        ],
+        [
+          2,
+          -2.5714285714285716,
+          "linear"
+        ],
+        [
+          4,
+          -1.1428571428571432,
+          "linear"
+        ],
+        [
+          6,
+          0.2857142857142855,
+          "linear"
+        ],
+        [
+          8,
+          1,
+          "linear"
+        ],
+        [
+          10,
+          1,
+          "linear"
+        ],
+        [
+          12,
+          1,
+          "linear"
+        ],
+        [
+          14,
+          1,
+          "linear"
+        ],
+        [
+          16,
+          1,
+          "linear"
+        ],
+        [
+          18,
+          1,
+          "linear"
+        ],
+        [
+          20,
+          1,
+          "linear"
+        ],
+        [
+          22,
+          1,
+          "linear"
+        ],
+        [
+          24,
+          1,
+          "linear"
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          61
+        ],
+        [
+          24,
+          61
+        ]
+      ],
+      "head": [
+        [
+          0,
+          9,
+          "linear"
+        ],
+        [
+          2,
+          8.142857142857142,
+          "linear"
+        ],
+        [
+          4,
+          7.285714285714286,
+          "linear"
+        ],
+        [
+          6,
+          6.428571428571429,
+          "linear"
+        ],
+        [
+          8,
+          6,
+          "linear"
+        ],
+        [
+          10,
+          6,
+          "linear"
+        ],
+        [
+          12,
+          6,
+          "linear"
+        ],
+        [
+          14,
+          6,
+          "linear"
+        ],
+        [
+          16,
+          6,
+          "linear"
+        ],
+        [
+          18,
+          6,
+          "linear"
+        ],
+        [
+          20,
+          6,
+          "linear"
+        ],
+        [
+          22,
+          6,
+          "linear"
+        ],
+        [
+          24,
+          6,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "open": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            22,
+            -295
+          ]
+        ],
+        [
+          24,
+          [
+            22,
+            -295
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            79,
+            -298
+          ]
+        ],
+        [
+          24,
+          [
+            79,
+            -298
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -108,
+            -16
+          ]
+        ],
+        [
+          24,
+          [
+            -108,
+            -16
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            125,
+            -16
+          ]
+        ],
+        [
+          24,
+          [
+            125,
+            -16
+          ]
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-state",
+      "state": "block-low",
+      "rootPolicy": "combat",
+      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "migrated-state"
+}

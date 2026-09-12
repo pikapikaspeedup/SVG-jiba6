@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+qa/browser-export.zip
+qa/roundtrip.html
+dist/game-forge.js
+dist/forge-template.html

@@ -1,0 +1,268 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "juri",
+  "key": "state-crouch",
+  "gameId": "@crouch",
+  "name": "蹲伏 / 防守",
+  "category": "locomotion",
+  "command": "SIMULATION STATE",
+  "binding": {
+    "startup": 4,
+    "active": 16,
+    "recovery": 4,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "juri:state-crouch",
+    "character": "juri",
+    "name": "蹲伏 / 防守",
+    "duration": 24,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        4
+      ],
+      "active": [
+        4,
+        20
+      ],
+      "recovery": [
+        20,
+        24
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          61
+        ],
+        [
+          24,
+          61
+        ]
+      ],
+      "head": [
+        [
+          0,
+          6
+        ],
+        [
+          24,
+          6
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "open": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            22,
+            -295
+          ]
+        ],
+        [
+          24,
+          [
+            22,
+            -295
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            79,
+            -298
+          ]
+        ],
+        [
+          24,
+          [
+            79,
+            -298
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -108,
+            -16
+          ]
+        ],
+        [
+          24,
+          [
+            -108,
+            -16
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            125,
+            -16
+          ]
+        ],
+        [
+          24,
+          [
+            125,
+            -16
+          ]
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-state",
+      "state": "crouch",
+      "rootPolicy": "combat",
+      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "migrated-state"
+}

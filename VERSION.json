@@ -1,0 +1,16 @@
+{
+  "name": "INK FORGE",
+  "version": "2.0.0",
+  "date": "2026-09-12",
+  "sourceBaseline": {
+    "repository": "pikapikaspeedup/html-playground",
+    "commit": "fcf9890c6f3810c919890ae6ec42fbfdae4a5c1b",
+    "gameSha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c"
+  },
+  "entry": "dist/INK-Street-Fighter-6.html",
+  "playerEntry": "dist/INK-Street-Fighter-6-Player.html",
+  "build": "python tools/build_forge.py",
+  "validate": "python tools/check_forge.py",
+  "githubWritten": false,
+  "scope": "Fan-made 2D SVG adaptation, not official Street Fighter 6 models or frame data."
+}

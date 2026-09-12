@@ -1,0 +1,17 @@
+/* INK portable packages. Minimal ZIP writer (STORE, UTF-8, CRC32).
+ * The HTML export rebuilds a pristine template, never serializes the live DOM.
+ */
+'use strict';
+(() => {
+ const enc=new TextEncoder();
+ const table=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xedb88320^(c>>>1):c>>>1;table[n]=c>>>0;}
+ const crc32=bytes=>{let c=0xffffffff;for(const b of bytes)c=table[(c^b)&255]^(c>>>8);return (c^0xffffffff)>>>0;};
+ const u16=(arr,v)=>{arr.push(v&255,(v>>>8)&255);},u32=(arr,v)=>{u16(arr,v&65535);u16(arr,v>>>16);};
+ function zip(files){const chunks=[],central=[];let offset=0;const now=new Date(),time=((now.getHours()&31)<<11)|((now.getMinutes()&63)<<5)|(now.getSeconds()>>1),date=((now.getFullYear()-1980)<<9)|((now.getMonth()+1)<<5)|now.getDate();for(const [name,content]of Object.entries(files)){const n=enc.encode(name),data=typeof content==='string'?enc.encode(content):content,c=crc32(data),h=[];u32(h,0x04034b50);u16(h,20);u16(h,0x800);u16(h,0);u16(h,time);u16(h,date);u32(h,c);u32(h,data.length);u32(h,data.length);u16(h,n.length);u16(h,0);chunks.push(new Uint8Array(h),n,data);const d=[];u32(d,0x02014b50);u16(d,20);u16(d,20);u16(d,0x800);u16(d,0);u16(d,time);u16(d,date);u32(d,c);u32(d,data.length);u32(d,data.length);u16(d,n.length);u16(d,0);u16(d,0);u16(d,0);u16(d,0);u32(d,0);u32(d,offset);central.push(new Uint8Array(d),n);offset+=h.length+n.length+data.length;}
+ const centralSize=central.reduce((a,b)=>a+b.length,0),end=[],count=Object.keys(files).length;u32(end,0x06054b50);u16(end,0);u16(end,0);u16(end,count);u16(end,count);u32(end,centralSize);u32(end,offset);u16(end,0);return new Blob([...chunks,...central,new Uint8Array(end)],{type:'application/zip'});}
+ function safeJSON(o){return JSON.stringify(o).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');}
+ function html(store,{playerOnly=false}={}){const el=document.getElementById('ink-export-template');if(!el)throw Error('此源码页面没有离线模板，请先运行构建器');const t=JSON.parse(el.textContent),snapshot=store.snapshot();snapshot.projectId='ink-portable-'+Date.now().toString(36)+(playerOnly?'-play':'');snapshot.presentation=playerOnly?'player':'studio';const slot=(doc,id,value)=>{const start='<script id="'+id+'" type="application/json">',a=doc.indexOf(start);if(a<0)throw Error('导出模板缺少 '+id);const b=doc.indexOf('</script>',a);return doc.slice(0,a+start.length)+safeJSON(value)+doc.slice(b);};return slot(slot(t,'ink-export-template',t),'ink-user-project',snapshot);}
+ function download(name,content,type='application/octet-stream'){const blob=content instanceof Blob?content:new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);return blob;}
+ function packageFiles(store,playable=true){const files={};for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK 2 / Street Fighter 6\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
+ INK.Portable={zip,crc32,html,download,packageFiles,safeJSON};
+})();

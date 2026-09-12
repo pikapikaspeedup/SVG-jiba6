@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "kind": "ink-rig",
+  "character": "ryu",
+  "lengths": [
+    68,
+    71,
+    96,
+    98
+  ],
+  "rearShoulder": [
+    -42,
+    -292
+  ],
+  "frontShoulder": [
+    42,
+    -290
+  ],
+  "hipWidth": 52,
+  "headOffset": [
+    6,
+    -46
+  ]
+}

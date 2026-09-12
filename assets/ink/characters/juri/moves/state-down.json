@@ -1,0 +1,340 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "juri",
+  "key": "state-down",
+  "gameId": "@down",
+  "name": "倒地",
+  "category": "reaction",
+  "command": "SIMULATION STATE",
+  "binding": {
+    "startup": 4,
+    "active": 22,
+    "recovery": 4,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "juri:state-down",
+    "character": "juri",
+    "name": "倒地",
+    "duration": 30,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        4
+      ],
+      "active": [
+        4,
+        26
+      ],
+      "recovery": [
+        26,
+        30
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "head": [
+        [
+          0,
+          10,
+          "linear"
+        ],
+        [
+          2,
+          12.82842712474619,
+          "linear"
+        ],
+        [
+          4,
+          14,
+          "linear"
+        ],
+        [
+          6,
+          12.82842712474619,
+          "linear"
+        ],
+        [
+          8,
+          10,
+          "linear"
+        ],
+        [
+          10,
+          10,
+          "linear"
+        ],
+        [
+          12,
+          10,
+          "linear"
+        ],
+        [
+          14,
+          10,
+          "linear"
+        ],
+        [
+          16,
+          10,
+          "linear"
+        ],
+        [
+          18,
+          10,
+          "linear"
+        ],
+        [
+          20,
+          10,
+          "linear"
+        ],
+        [
+          22,
+          10,
+          "linear"
+        ],
+        [
+          24,
+          10,
+          "linear"
+        ],
+        [
+          26,
+          10,
+          "linear"
+        ],
+        [
+          28,
+          10,
+          "linear"
+        ],
+        [
+          30,
+          10,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          -88
+        ],
+        [
+          30,
+          -88
+        ]
+      ],
+      "open": [
+        [
+          0,
+          1
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          10
+        ],
+        [
+          30,
+          10
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          2
+        ],
+        [
+          30,
+          2
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          119
+        ],
+        [
+          30,
+          119
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1
+        ],
+        [
+          30,
+          1
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -4,
+            -224
+          ]
+        ],
+        [
+          30,
+          [
+            -4,
+            -224
+          ]
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            40,
+            -205
+          ]
+        ],
+        [
+          30,
+          [
+            40,
+            -205
+          ]
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -8,
+            -25
+          ]
+        ],
+        [
+          30,
+          [
+            -8,
+            -25
+          ]
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            93,
+            -29
+          ]
+        ],
+        [
+          30,
+          [
+            93,
+            -29
+          ]
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-state",
+      "state": "down",
+      "rootPolicy": "combat",
+      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [],
+  "source": "migrated-state"
+}

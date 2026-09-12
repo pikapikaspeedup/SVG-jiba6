@@ -1,0 +1,769 @@
+{
+  "version": 2,
+  "kind": "ink-move",
+  "character": "ryu",
+  "key": "aHK",
+  "gameId": "aHK",
+  "name": "跳跃重脚",
+  "category": "normal",
+  "command": "aHK",
+  "binding": {
+    "startup": 12,
+    "active": 5,
+    "recovery": 19,
+    "rootPolicy": "combat",
+    "retimed": false
+  },
+  "clip": {
+    "version": 1,
+    "id": "ryu:aHK",
+    "character": "ryu",
+    "name": "跳跃重脚",
+    "command": "aHK",
+    "duration": 36,
+    "loop": false,
+    "phases": {
+      "startup": [
+        0,
+        12
+      ],
+      "active": [
+        12,
+        17
+      ],
+      "recovery": [
+        17,
+        36
+      ]
+    },
+    "tracks": {
+      "lean": [
+        [
+          0,
+          -3,
+          "linear"
+        ],
+        [
+          5,
+          -8.326,
+          "linear"
+        ],
+        [
+          10,
+          -12.616,
+          "linear"
+        ],
+        [
+          12,
+          -15.66,
+          "linear"
+        ],
+        [
+          14,
+          -15.472,
+          "linear"
+        ],
+        [
+          16,
+          -14.019,
+          "linear"
+        ],
+        [
+          17,
+          -13.66,
+          "linear"
+        ],
+        [
+          22,
+          -13.016,
+          "linear"
+        ],
+        [
+          28,
+          -7.379,
+          "linear"
+        ],
+        [
+          36,
+          -3,
+          "linear"
+        ]
+      ],
+      "bob": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "head": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          5,
+          6.038,
+          "linear"
+        ],
+        [
+          10,
+          12.634,
+          "linear"
+        ],
+        [
+          12,
+          19,
+          "linear"
+        ],
+        [
+          14,
+          19,
+          "linear"
+        ],
+        [
+          16,
+          19,
+          "linear"
+        ],
+        [
+          17,
+          19,
+          "linear"
+        ],
+        [
+          22,
+          8.265,
+          "linear"
+        ],
+        [
+          28,
+          4.065,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "chest": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "pelvis": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "spin": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "turn": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "depth": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "floor": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "rootShift": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "open": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "fan": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "fanAngle": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "ffoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          5,
+          5.038,
+          "linear"
+        ],
+        [
+          10,
+          36.912,
+          "linear"
+        ],
+        [
+          12,
+          78,
+          "linear"
+        ],
+        [
+          14,
+          78,
+          "linear"
+        ],
+        [
+          16,
+          78,
+          "linear"
+        ],
+        [
+          17,
+          78,
+          "linear"
+        ],
+        [
+          22,
+          8.712,
+          "linear"
+        ],
+        [
+          28,
+          3.065,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "rfoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "reachScale": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "reachFoot": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          36,
+          0,
+          "linear"
+        ]
+      ],
+      "frontArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "rearArmProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "frontLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "rearLegProjection": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          36,
+          1,
+          "linear"
+        ]
+      ],
+      "rw": [
+        [
+          0,
+          [
+            -1,
+            -291
+          ],
+          "linear"
+        ],
+        [
+          5,
+          [
+            -29.787,
+            -303.954
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            -63.329,
+            -298.468
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            -94,
+            -284
+          ],
+          "linear"
+        ],
+        [
+          14,
+          [
+            -94,
+            -284
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -94,
+            -284
+          ],
+          "linear"
+        ],
+        [
+          17,
+          [
+            -94,
+            -284
+          ],
+          "linear"
+        ],
+        [
+          22,
+          [
+            -42.278,
+            -308.397
+          ],
+          "linear"
+        ],
+        [
+          28,
+          [
+            -18.517,
+            -298.882
+          ],
+          "linear"
+        ],
+        [
+          36,
+          [
+            -1,
+            -291
+          ],
+          "linear"
+        ]
+      ],
+      "fw": [
+        [
+          0,
+          [
+            102,
+            -298
+          ],
+          "linear"
+        ],
+        [
+          5,
+          [
+            76.812,
+            -310.234
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            70.37,
+            -298.991
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            75,
+            -277
+          ],
+          "linear"
+        ],
+        [
+          14,
+          [
+            75,
+            -277
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            75,
+            -277
+          ],
+          "linear"
+        ],
+        [
+          17,
+          [
+            75,
+            -277
+          ],
+          "linear"
+        ],
+        [
+          22,
+          [
+            67.193,
+            -314.084
+          ],
+          "linear"
+        ],
+        [
+          28,
+          [
+            86.673,
+            -305.445
+          ],
+          "linear"
+        ],
+        [
+          36,
+          [
+            102,
+            -298
+          ],
+          "linear"
+        ]
+      ],
+      "ra": [
+        [
+          0,
+          [
+            -100,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          5,
+          [
+            -87.046,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            -81.579,
+            -72.454
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          14,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          17,
+          [
+            -81,
+            -150
+          ],
+          "linear"
+        ],
+        [
+          22,
+          [
+            -81.976,
+            -19.231
+          ],
+          "linear"
+        ],
+        [
+          28,
+          [
+            -92.118,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          36,
+          [
+            -100,
+            -16
+          ],
+          "linear"
+        ]
+      ],
+      "fa": [
+        [
+          0,
+          [
+            108,
+            -16
+          ],
+          "linear"
+        ],
+        [
+          5,
+          [
+            72.016,
+            -93.005
+          ],
+          "linear"
+        ],
+        [
+          10,
+          [
+            115.296,
+            -160.074
+          ],
+          "linear"
+        ],
+        [
+          12,
+          [
+            194,
+            -211
+          ],
+          "linear"
+        ],
+        [
+          14,
+          [
+            194,
+            -211
+          ],
+          "linear"
+        ],
+        [
+          16,
+          [
+            194,
+            -211
+          ],
+          "linear"
+        ],
+        [
+          17,
+          [
+            194,
+            -211
+          ],
+          "linear"
+        ],
+        [
+          22,
+          [
+            61.28,
+            -125.122
+          ],
+          "linear"
+        ],
+        [
+          28,
+          [
+            86.104,
+            -62.857
+          ],
+          "linear"
+        ],
+        [
+          36,
+          [
+            108,
+            -16
+          ],
+          "linear"
+        ]
+      ]
+    },
+    "events": [],
+    "meta": {
+      "source": "migrated-atelier",
+      "legacyID": "aHK",
+      "kind": "kick",
+      "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
+      "gameId": "aHK",
+      "rootPolicy": "combat"
+    }
+  },
+  "boxes": {
+    "mode": "inherit",
+    "items": []
+  },
+  "fx": [
+    {
+      "id": "accent",
+      "frame": 12,
+      "duration": 5,
+      "type": "streak",
+      "socket": "frontFoot",
+      "scale": 0.72,
+      "color": "#74c4cf",
+      "rotation": 0,
+      "opacity": 0.72
+    }
+  ],
+  "source": "migrated-atelier"
+}

@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "kind": "ink-model",
+  "character": "cammy",
+  "name": "CAMMY",
+  "cn": "嘉米",
+  "female": true,
+  "accent": "#70b9d5",
+  "arm": [
+    14.5,
+    7.4,
+    6.2
+  ],
+  "leg": [
+    25,
+    13.6,
+    9
+  ],
+  "headScale": 0.79,
+  "style": {
+    "volume": 1,
+    "head": 1
+  },
+  "description": "低姿 · 螺旋 · 精确突进",
+  "shape": {
+    "chest": 1.02,
+    "waist": 0.96,
+    "hip": 0.99
+  }
+}
