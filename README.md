@@ -1,6 +1,8 @@
 # INK FORGE 2 — 街霸 6 / SVG 格斗创作系统
 
-**先打开 `OPEN-ME.html`。无需安装，两个成品 HTML 都可独立离线使用。**
+**在线版：** [https://pikapikaspeedup.github.io/SVG-jiba6/](https://pikapikaspeedup.github.io/SVG-jiba6/)
+
+**本地打开 `OPEN-ME.html`。无需安装，两个成品 HTML 都可独立离线使用。**
 
 | 文件 | 用途 |
 |---|---|
