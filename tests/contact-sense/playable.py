@@ -1,0 +1,20 @@
+from pathlib import Path
+import os,json,hashlib,struct,wave
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];O=R/'qa/contact-sense';O.mkdir(parents=True,exist_ok=True);h=(R/'dist/INK-Street-Fighter-6.html').read_bytes()
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(h.decode());p.wait_for_function('window.INKDuel?.ready');p.locator('.kinetic-launch button').click();p.locator('#fight-practice').click();p.locator('#strike-coach [data-sound]').click();p.wait_for_function('SVG_FIGHTER.soundStatus().enabled')
+ p.evaluate('''()=>{window.soundRows=[];const S=INK.StrikeFeel,old=S.commit;S.commit=function(G,a,d,m,type,damage,context,play){return old(G,a,d,m,type,damage,context,(t,s,q)=>{soundRows.push({move:m.id,type,plan:q.plan,contact:q.contact,zone:q.zone,strength:s,pan:q.pan,incoming:context.incoming});play(t,s,q);});};}''')
+ rows=[]
+ for move,left in [('sLP',False),('sHP',False),('sMP',True),('cMK',False),('hadoken_0',True)]:
+  p.wait_for_timeout(220)
+  row=p.evaluate('''([move,left])=>{const A=SVG_FIGHTER,G=A.state;A.start('ryu','ken','training','classic',16);G.paused=false;document.getElementById('dummy').value='idle';document.getElementById('autohp').checked=false;A.teleport(0,left?800:500);A.teleport(1,left?620:680);A.step(2);if(move==='sLP'){A.press(1,'down');A.step(2);}soundRows.length=0;INK.ImpactFeedback.clear();A.tryMove(0,move);for(let i=0;i<65&&!soundRows.length;i++)A.step();const q=soundRows.at(-1),impact=INK.ImpactFeedback.events.at(-1),status=A.soundStatus();G.paused=true;return {left,...q,impact:impact?{angle:impact.angle,contact:impact.contact,zone:impact.zone}:null,status};}''',[move,left]);rows.append(row)
+ # Render the exact captured plans with the same per-layer synthesis used by sound().
+ pcm=p.evaluate('''async rows=>{const ac=new OfflineAudioContext(1,Math.ceil(rows.length*.4*24000),24000),noise=ac.createBuffer(1,10800,24000),data=noise.getChannelData(0);let seed=17;for(let i=0;i<data.length;i++){seed=(seed*1664525+1013904223)>>>0;data[i]=seed/2147483648-1;}rows.forEach((r,i)=>{for(const s of r.plan){const tone=s[0]==='tone',start=i*.4+(tone?s[6]||0:s[4]||0),duration=tone?s[3]:s[1],end=start+duration,source=tone?ac.createOscillator():ac.createBufferSource(),gain=ac.createGain(),volume=(tone?s[5]:s[3])*r.strength*.72;gain.gain.setValueAtTime(.0001,start);gain.gain.exponentialRampToValueAtTime(volume,start+.004);gain.gain.exponentialRampToValueAtTime(.0001,end);if(tone){source.type=s[4];source.frequency.setValueAtTime(s[1],start);source.frequency.exponentialRampToValueAtTime(Math.max(25,s[2]),end);source.connect(gain);}else{source.buffer=noise;const filter=ac.createBiquadFilter();filter.type='lowpass';filter.Q.setValueAtTime(.5,start);filter.frequency.setValueAtTime(s[2],start);filter.frequency.exponentialRampToValueAtTime(Math.max(110,s[2]*.2),end);source.connect(filter);filter.connect(gain);}gain.connect(ac.destination);source.start(start);source.stop(end+.012);}});const result=await ac.startRendering();return [...result.getChannelData(0)];}''',rows);b.close()
+with wave.open(str(O/'contact-plans.wav'),'wb') as w:w.setparams((1,2,24000,0,'NONE','not compressed'));w.writeframes(b''.join(struct.pack('<h',round(max(-1,min(1,x))*32767)) for x in pcm))
+report={'sha256':hashlib.sha256(h).hexdigest(),'cases':rows,'errors':errors,'audio':'Offline WebAudio render of actual contact plans, deterministic noise, mono; not a live master/limiter recording and not listened to.'};(O/'playable.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(rows,indent=2));assert not errors
+for r in rows:
+ assert len(r['plan'])==3 and r['status']['capacity']==6 and len(r['status']['voices'])<=6
+ assert r['contact']['measured']==(r['move']!='hadoken_0')
+ assert r['incoming'][0]*(-1 if r['left'] else 1)>0
+ assert all(all(not isinstance(x,(int,float)) or abs(x)<1e6 for x in layer) for layer in r['plan'])

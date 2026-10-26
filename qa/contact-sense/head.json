@@ -1,0 +1,72 @@
+{
+  "sha256": "a9113f292e4cc64f35638b5bc66b640aa94b8e0bbe3063250ba9f6337895d550",
+  "cases": [
+    {
+      "move": "aLP",
+      "type": "hit",
+      "plan": [
+        [
+          "noise",
+          0.028,
+          4100,
+          0.05
+        ],
+        [
+          "tone",
+          189,
+          60,
+          0.1,
+          "triangle",
+          0.05247888019736267,
+          0.006
+        ],
+        [
+          "noise",
+          0.045,
+          1700,
+          0.014,
+          0.028
+        ]
+      ],
+      "contact": {
+        "measured": false,
+        "quality": 0.85,
+        "closing": 0,
+        "alignment": 0.9026975551529928,
+        "oblique": 0.09730244484700723,
+        "mode": "solid",
+        "body": 0.874648003289378,
+        "incoming": [
+          0.9026975551529928,
+          -0.4302756371453186
+        ],
+        "normal": [
+          -1,
+          0
+        ]
+      },
+      "zone": "head",
+      "strength": 0.85,
+      "pan": 0.024132283735864096,
+      "incoming": [
+        0.9026975551529928,
+        -0.4302756371453186
+      ],
+      "status": {
+        "enabled": true,
+        "state": "running",
+        "voices": [
+          {
+            "type": "hit",
+            "start": 0.2613333333333333,
+            "end": 0.3833333333333333
+          }
+        ],
+        "capacity": 6
+      },
+      "targetGrounded": true
+    }
+  ],
+  "errors": [],
+  "audio": "Offline WebAudio render of actual contact plans, deterministic noise, mono; not a live master/limiter recording and not listened to."
+}

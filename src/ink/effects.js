@@ -139,7 +139,7 @@
       if(kind==='armor'){
         const brace={...materials.guard,color:'#d79c59',core:'#ffe0a8'};
         pool.emit({x,y,frame,seed,count:8,material:brace,direction:dir,angle:0,spread:180,speed:3.2,life:13,size:1.4,species:'spark',priority:2});
-        INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,response:context?.response,material:brace,reduced:setting.reducedMotion});return true;
+        INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,incoming:context?.incoming,response:context?.response,material:brace,reduced:setting.reducedMotion});return true;
       }
       pool.emit({x,y,frame,seed,count:guard?8:multi?7:big?20:14,material:base,direction:dir,angle:-12,spread:guard?220:155,speed:guard?4.5:big?10:7.5,life:guard?17:27,size:guard?1.2:2,species:'spark',priority:2});
       if(!guard){
@@ -149,7 +149,7 @@
         pool.add({x,y,birth:frame,life:5,vx:0,vy:0,gravity:0,size:big?28:18,angle:seed%45,color:base.core,species:'impact',stretch:1.25,opacity:INK.ContactFlux?.active()&&m&&!m.throw?.28:.88,priority:4});
       }
       if(guard)INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,response:context?.response,reduced:setting.reducedMotion,G});
-      if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,response:context?.response,material:base,reduced:setting.reducedMotion});
+      if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,incoming:context?.incoming,response:context?.response,material:base,reduced:setting.reducedMotion});
       else pool.add({x,y,birth:frame,life:guard?12:9,vx:0,vy:0,gravity:0,size:guard?19:big?34:20,angle:15,color:base.core,species:'ring',stretch:.65,opacity:.55,priority:3});return true;
     },
     dust(x,G){const p=this.mount();if(!p)return false;if(!setting.enabled||setting.reducedMotion)return true;p.emit({x,y:670,frame:this.time,seed:hash('dust'+x+G.tick),count:7,material:{...materials.luke,color:'#adbcad',core:'#d1c7ae'},angle:-90,spread:150,speed:1.3,life:26,size:9,species:'smoke',gravity:-.02,opacity:.16});return true;},

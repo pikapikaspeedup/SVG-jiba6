@@ -42,6 +42,7 @@
  function reset(f){f._inkSupport=null;INK.Locomotion?.reset(f);}
  function basePose(f){const view=Object.create(f);view._inkRawVisual=true;view._inkSupport=null;view._inkLocomotion=null;const p=globalThis.SVG_FIGHTER?.pose(view);return p?INK.Runtime.visual(view,p,{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1}):null;}
  function step(f,G){
+  if(INK.HitEpisode?.support(f))return;
   if(!active(f)){reset(f);return;}
   const time=f._inkVisualClock||0,old=f._inkSupport;if(old?.time===time)return;
   const on=supported(f),profile=profiles[f.ch.id],p=on?basePose(f):null;

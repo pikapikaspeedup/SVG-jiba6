@@ -11,7 +11,7 @@
   return Math.hypot(point[0]-head[0],point[1]-head[1])<70?'head':point[1]>hip[1]+18?'leg':'body';
  }
  function response(f,p,r,now,motion=1){
-  if(!active())return false;if(INK.GuardBody?.response(f,p,r,now,motion))return true;const age=now-r.actorBirth;if(age<0||age>r.duration)return true;
+  if(!active())return false;if(INK.GuardBody?.response(f,p,r,now,motion))return true;if(INK.HitBody?.response(f,p,r,now,motion))return true;const age=now-r.actorBirth;if(age<0||age>r.duration)return true;
   const end=clamp(1-age/r.duration),power=Math.min(1.6,r.energy)*INK.Kinetic.settings.impact*motion,sign=r.worldDir*f.dir;
   const pulse=(delay,rate,damp)=>{const t=Math.max(0,age-delay);return (age<delay?1:Math.cos(t*rate))*Math.exp(-damp*t)*end*end;};
   const fast=pulse(0,.25,.13)*power,lag=pulse(3,.22,.095)*power,weight=Math.sin(Math.PI*clamp(age/r.duration))*end*power;
@@ -52,27 +52,33 @@
   }
   return true;
  }
+ // Contact snapshots are already in world coordinates. The normal supplies
+ // obliqueness, not a replacement direction or an extra facing transform.
+ function contactSound(context={}){
+  const r=context.response,vector=(q,f)=>Array.isArray(q)&&q.length>=2&&q.slice(0,2).every(Number.isFinite)&&Math.hypot(q[0],q[1])>1e-6?q.slice(0,2).map(v=>v/Math.hypot(q[0],q[1])):f;
+  const incoming=vector(context.incoming,vector(r?.responseDir,[context.direction===-1?-1:1,0])),normal=vector(r?.normalGeom||r?.normal,incoming),measured=r?.affectsPush===true;
+  const quality=measured?clamp(Number.isFinite(r.quality)?r.quality:1):.85,closing=measured?clamp(Number.isFinite(r.closing)?r.closing:0,-12,12):0,alignment=Math.abs(incoming[0]*normal[0]+incoming[1]*normal[1]),oblique=1-alignment;
+  const mode=oblique>.42?'slice':measured&&quality<.72?'glance':'solid',body=clamp((.45+.55*quality)*(1+closing*.018)*(1-.48*oblique),.25,1.18);
+  return {measured,quality,closing,alignment,oblique,mode,body,incoming,normal};
+ }
  function audio(m,type,zone,context={},x=720){
   const multi=(m.hits||1)>1&&!context.last,heavy=m.level>=3||m.super&&context.last,guard=type==='block',parry=type==='parry',armor=type==='armor',throwing=type==='throw';
-  const tier=armor?'armor':parry?'parry':guard?'block':throwing?'land':m.super?(context.last?'superfinish':'superhit'):heavy?'heavy':'hit';
-  const f=zone==='head'?230:zone==='leg'?110:145,level=multi?.64:heavy?1.1:.85;
-  let plan=armor?[['tone',105,57,.085,'triangle',.07],['noise',.04,1150,.045]]:parry?[['tone',context.perfect?1050:800,1500,.13,'sine',.045],['tone',1750,1200,.16,'sine',.022,.012]]:guard?[['noise',.045,1900,.042],['tone',430,210,.065,'triangle',.052]]:throwing?[['tone',80,28,.23,'sine',.13],['noise',.13,1050,.07]]:[['tone',heavy?f*.7:f,heavy?35:55,heavy?.18:.095,zone==='head'?'triangle':'sine',heavy?.12:.085],['noise',heavy?.095:.055,zone==='head'?4200:zone==='leg'?1500:2300,heavy?.08:.055]];
-  if(!armor&&!guard&&!parry&&!throwing&&heavy)plan.push(['tone',f*1.8,f*.8,.07,'triangle',.025,.008]);
-  if(!armor&&!guard&&!parry&&m.category!=='normal'&&!multi)plan.push(['noise',.08,3200,.018,.012]);
-  const contact=context.response,style=contact?.style||'neutral',part=contact?.part||m.contactPart||'',foot=/foot|leg|shin|kick/.test(part);
-  // Character timbres share the same contact trigger and bounded voice pool.
-  // Defensive sounds retain their recognisable common cue across the roster.
-  if(!armor&&!guard&&!parry&&!throwing){
-   const tint={rooted:[.88,1700],pursuit:[1.06,3100],alternating:[foot?.9:1.1,2800],spiral:[1.14,3600],boxing:[.78,1900],'single-leg':[1.2,4100],'fan-dance':[1.3,4700],'low-claw':[.76,1200]}[style];
-   if(tint){for(const layer of plan){if(layer[0]==='tone'){layer[1]*=tint[0];layer[2]*=tint[0];}else if(layer[0]==='noise')layer[2]=tint[1];}
-    if(heavy&&!multi&&style==='boxing')plan.push(['tone',75,32,.09,'triangle',.024,.014]);
-    if(!multi&&style==='fan-dance')plan.push(['noise',.035,5600,.014,.009]);
-   }
-  }
-  return {type:tier,strength:level*(context.punish?1.15:context.counter?1.07:1),pan:clamp((x-720)/900,-.65,.65),plan,zone,multi,style,part};
+  const tier=armor?'armor':parry?'parry':guard?'block':throwing?'land':m.super?(context.last?'superfinish':'superhit'):heavy?'heavy':'hit',contact=contactSound(context),style=context.response?.style||'neutral',part=context.response?.part||m.contactPart||'';
+  const material={rooted:[1700,.9],pursuit:[3100,1.03],alternating:[2800,1.08],spiral:[3600,1.12],boxing:[1900,.8],'single-leg':[4100,1.18],'fan-dance':[4700,1.25],'low-claw':[1200,.78]}[style]||[2300,1];
+  const f=zone==='head'?210:zone==='leg'?100:130,brightness=zone==='head'?4100:zone==='leg'?1400:2100,slice=contact.mode==='slice',glance=contact.mode==='glance',body=contact.body,tail=multi?.48:1;
+  // Three layers share one bounded voice: contact transient, delayed mass,
+  // material release. Intermediate hits shorten their tail instead of stacking.
+  let plan;
+  if(parry)plan=[['tone',context.perfect?1050:800,1500,.11,'sine',.045],['tone',1750,1200,.12,'sine',.022,.012],['noise',.025,4300,.012,.018]];
+  else if(guard)plan=[['noise',.025,2500,.04],['tone',430,210,.055,'triangle',.04*body,.009],['noise',.045*tail,material[0],.014,.025]];
+  else if(armor)plan=[['noise',.022,1600,.04],['tone',105,57,.085,'triangle',.065*body,.006],['noise',.04*tail,1100,.015,.025]];
+  else if(throwing)plan=[['noise',.035,1050,.06],['tone',80,28,.20,'sine',.12,.008],['noise',.08,800,.025,.04]];
+  else plan=[['noise',slice?.045:glance?.021:.028,brightness*(slice?1.25:1),glance?.034:.05],['tone',f*material[1]*(heavy?.8:1),zone==='head'?60:32, multi?.06:heavy?.15:.10,zone==='head'?'triangle':'sine',(.06+(heavy?.025:0))*body,zone==='head'?.006:zone==='leg'?.016:.011],['noise',(slice?.075:.045)*tail,material[0],(slice?.025:.014)*(glance?.75:1),multi?.018:.028]];
+  return {type:tier,strength:(multi?.64:heavy?1.1:.85)*(context.punish?1.15:context.counter?1.07:1),pan:clamp((x-720)/900,-.65,.65),plan,zone,multi,style,part,contact};
  }
+
  function commit(G,a,d,m,type,damage,context,play){if(!active()||!['hit','block','parry','throw','armor'].includes(type))return;context=context||{};const z=d._inkReaction?.zone||zone(d,m,type,context.point),x=context.point?.[0]??d.x,q=audio(m,type,z,context,x);play(q.type,q.strength,q);
-  events.push({tick:G.tick,actorTick:d._inkVisualClock||0,zone:z,type,tier:q.type,pan:q.pan,multi:q.multi,style:q.style,part:q.part,damage,move:m.id});if(events.length>32)events.shift();
+  events.push({tick:G.tick,actorTick:d._inkVisualClock||0,zone:z,type,contact:q.contact,tier:q.type,pan:q.pan,multi:q.multi,style:q.style,part:q.part,damage,move:m.id});if(events.length>32)events.shift();
  }
- INK.StrikeFeel={settings,active,zone,response,audio,commit,clear:()=>{events=[];},inspect:()=>events.map(e=>({...e}))};
+ INK.StrikeFeel={settings,active,zone,response,contactSound,audio,commit,clear:()=>{events=[];},inspect:()=>events.map(e=>({...e}))};
 })();

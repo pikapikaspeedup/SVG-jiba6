@@ -27,11 +27,13 @@
   if(!settings.enabled||!['hit','block','parry','throw','armor'].includes(type))return;
   const point=context?.point,dir=context?.direction??a.dir,guard=type==='block'||type==='parry',armor=type==='armor',multi=(m.hits||1)>1&&!context?.last,energy=strength(m)*(guard?.48:armor?.58:1)*(multi?.6:1)*(context?.punish?1.25:context?.counter?1.12:1),birth=INK.VFX.time;
   const zone=guard?'guard':context?.response?.zone||(INK.StrikeFeel?.active()?INK.StrikeFeel.zone(d,m,type,point):(point?.[1]??665+d.y-250)<665+d.y-295?'head':m.height==='low'||(point?.[1]??0)>665+d.y-165?'leg':'body');
-  const e={contact:context?.response||null,zone,id:++serial,birth,life:guard?13:armor?11:m.super?27:21,type,energy,attacker:a.index,defender:d.index,dir,x:point?.[0]??d.x-a.dir*27,y:point?.[1]??665+d.y-(m.height==='low'?95:d.crouch?190:270),color:armor?'#e8b06b':type==='parry'?'#d4b9ff':guard?'#9edfff':a.ch.color,move:m.id,super:!!m.super,damage,finish:!!context?.last,counter:!!context?.counter,punish:!!context?.punish};
+  const incoming=context?.incoming,valid=Array.isArray(incoming)&&incoming.slice(0,2).every(Number.isFinite)&&Math.hypot(...incoming)>1e-6,n=valid?Math.hypot(...incoming):1;
+  const e={contact:context?.response||null,incoming:Object.freeze(valid?incoming.slice(0,2).map(v=>v/n):[dir,0]),zone,id:++serial,birth,life:guard?13:armor?11:m.super?27:21,type,energy,attacker:a.index,defender:d.index,dir,x:point?.[0]??d.x-a.dir*27,y:point?.[1]??665+d.y-(m.height==='low'?95:d.crouch?190:270),color:armor?'#e8b06b':type==='parry'?'#d4b9ff':guard?'#9edfff':a.ch.color,move:m.id,super:!!m.super,damage,finish:!!context?.last,counter:!!context?.counter,punish:!!context?.punish};
   events.push(e);if(events.length>32)events.shift();
   // Recoil is local to the evaluated body. Root motion remains combat-owned.
-  const previous=d._inkReaction,residual=previous?envelope((d._inkVisualClock||0)-previous.actorBirth,previous.duration)*previous.energy*.3:0;
+  const previous=d._inkReaction,residual=previous&&!(type==='hit'&&INK.HitBody?.active())?envelope((d._inkVisualClock||0)-previous.actorBirth,previous.duration)*previous.energy*.3:0;
   d._inkReaction=Object.freeze({birth,actorBirth:d._inkVisualClock||0,energy:Math.min(1.8,energy+residual),worldDir:dir,contact:context?.response||null,zone,height:m.height,crouch:!!d.crouch,guard,parry:type==='parry',armor,outcome:type,point:Object.freeze([e.x,e.y]),duration:guard?13:armor?10:23});
+  if(type==='hit'&&!INK.HitEpisode?.enqueue(d,d._inkReaction))INK.HitBody?.commit(d,d._inkReaction);
   a._inkRecoil={birth,actorBirth:a._inkVisualClock||0,energy:energy*(guard?.8:armor?.65:.35),duration:12};
  }
  function land(f,speed){
@@ -106,8 +108,9 @@
    const contact=INK.ContactResponse?.active()?e.contact:null,turn=contact?clamp(contact.turn*20,-20,20):0,quality=contact?.quality??1,causal=!ground&&e.type!=='throw'&&INK.ContactFlux?.active();
    const newer=active.some(q=>q.defender===e.defender&&q.id>e.id&&q.type!=='landing'),focus=newer?.28:contact?.multi?.68:1;
    assign(s.root,'opacity',focus);assign(s.root,'data-contact-style',contact?.material||'physical');assign(s.root,'data-contact-result',e.type);
-   assign(s.root,'transform',`translate(${e.x} ${e.y}) scale(${e.dir} 1) rotate(${ground?0:turn})`);
-   assign(s.lightColor,'stop-color',e.color);assign(s.light,'rx',ground?radius*1.6:radius*1.5);assign(s.light,'ry',ground?12:radius*1.1);assign(s.light,'opacity',fade*(reduced?.08:.2)*e.energy*intensity);
+   const heading=ground?0:Math.atan2(e.incoming?.[1]||0,e.incoming?.[0]??e.dir)*180/Math.PI;
+   assign(s.root,'transform',`translate(${e.x} ${e.y}) rotate(${heading+turn})`);
+   assign(s.lightColor,'stop-color',e.color);assign(s.light,'rx',ground?radius*1.6:radius*(guard?.55:1.1));assign(s.light,'ry',ground?12:radius*(guard?.9:.5));assign(s.light,'opacity',fade*(reduced?.08:.2)*e.energy*intensity);
    assign(s.halo,'rx',radius*(ground?1.4:guard?.4:1));assign(s.halo,'ry',radius*(ground?.1:guard?1:.55));assign(s.halo,'stroke',e.color);assign(s.halo,'stroke-width',guard?3:1.3);assign(s.halo,'opacity',fade*(guard?.8:.32)*intensity*(causal?.18:1));
    const core=armor?'M-22-10L-8-15 8-13 21-4 19 9 6 16-10 13-23 4ZM-12-3L0-8 12 0 0 8Z':guard?'M-5-30Q28 0-5 30L1 18Q16 0 1-18Z':contactArt[contact?.material]||'M-7-5L-26-23-4-12 6-33 9-9 43-5 14 3 25 21 4 11-6 29-10 9-38 6Z';
    assign(s.core,'d',core);assign(s.core,'fill',e.type==='parry'?'#fff5ff':'#fff4da');assign(s.core,'transform',`scale(${(1+e.energy*.6)*(1+u*.3)})`);assign(s.core,'opacity',ground?0:Math.max(0,1-age/5)*.9*intensity*(causal?.3:1));
@@ -117,6 +120,6 @@
    });
   }
  }
- function clear(){INK.StrikeFeel?.clear();trails.clear();events=[];serial=0;layer?.remove();layer=null;slots=[];for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkReaction=null;f._inkRecoil=null;f._inkWeight=null;}}
+ function clear(){INK.StrikeFeel?.clear();trails.clear();events=[];serial=0;layer?.remove();layer=null;slots=[];for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.HitBody?.reset(f);f._inkReaction=null;f._inkRecoil=null;f._inkWeight=null;}}
  INK.Kinetic={settings,contact,land,pose,advance,render,clear,visibleContacts,contactArt,inspect:()=>({events:events.map(e=>({...e})),slots:slots.length}),set(enabled){settings.enabled=!!enabled;clear();}};
 })();

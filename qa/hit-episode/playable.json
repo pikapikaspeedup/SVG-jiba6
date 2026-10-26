@@ -1,0 +1,96 @@
+{
+  "sha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1",
+  "rows": [
+    {
+      "scenario": "head",
+      "passed": true,
+      "zone": "head",
+      "sourceMode": "locomotion",
+      "representation": "spatial3D",
+      "count": 1,
+      "pure": true,
+      "hitstop": 3
+    },
+    {
+      "scenario": "body",
+      "passed": true,
+      "zone": "body",
+      "sourceMode": "locomotion",
+      "representation": "spatial3D",
+      "count": 1,
+      "pure": true,
+      "hitstop": 5
+    },
+    {
+      "scenario": "leg",
+      "passed": true,
+      "zone": "leg",
+      "sourceMode": "locomotion",
+      "representation": "spatial3D",
+      "count": 1,
+      "pure": true,
+      "hitstop": 5
+    },
+    {
+      "scenario": "attack",
+      "passed": true,
+      "zone": "body",
+      "sourceMode": "legacy",
+      "representation": "legacyProjected",
+      "count": 1,
+      "pure": true,
+      "hitstop": 6
+    },
+    {
+      "scenario": "turn",
+      "passed": true,
+      "zone": "body",
+      "sourceMode": "locomotion",
+      "representation": "spatial3D",
+      "count": 1,
+      "pure": true,
+      "hitstop": 5
+    },
+    {
+      "scenario": "four contacts",
+      "fixture": "A.contact real damage/state entry, not public attack input or collision search",
+      "passed": true,
+      "stable": true,
+      "samples": [
+        {
+          "result": "hit",
+          "records": 1,
+          "slots": 9,
+          "finite": true
+        },
+        {
+          "result": "hit",
+          "records": 2,
+          "slots": 9,
+          "finite": true
+        },
+        {
+          "result": "hit",
+          "records": 3,
+          "slots": 9,
+          "finite": true
+        },
+        {
+          "result": "hit",
+          "records": 3,
+          "slots": 9,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "scenario": "recovery to LP",
+      "passed": true,
+      "accepted": true,
+      "active": true,
+      "owned": false,
+      "error": 0
+    }
+  ],
+  "errors": []
+}

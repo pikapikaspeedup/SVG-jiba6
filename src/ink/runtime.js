@@ -21,11 +21,11 @@
    if(!this.store)return;const A=globalThis.SVG_FIGHTER,from=A?.pose(source),rec=this.record(f,m);if(!from||!rec)return;
    const profile=this.profile(f.ch.id),world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},oldWorld={x:source.x,y:source.y,dir:source.dir,scale:source.renderScale||source.ch.scale||1},visualFrom=this.visual(source,from,oldWorld);
    let previous=from,visualPrevious=visualFrom,dt=.25;
-   if(source.attack&&source.attack.t>0){dt=Math.min(.25,source.attack.t);const view=Object.create(source);view.attack={...source.attack,t:source.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,oldWorld);}else if(INK.Presentation){const view=INK.Presentation.previous(source,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,oldWorld);}
+   if(source.attack&&source.attack.t>0){dt=Math.min(.25,source.attack.t);const view=Object.create(source);view.attack={...source.attack,t:source.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,{x:view.x,y:view.y,dir:view.dir,scale:view.renderScale||view.ch.scale||1});}else if(INK.Presentation){const view=INK.Presentation.previous(source,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,{x:view.x,y:view.y,dir:view.dir,scale:view.renderScale||view.ch.scale||1});}
    // Sample the real incoming game pose with clean transition ownership.
    // Falling back to the outgoing pose for absent channels fabricated a yaw
    // target which the incoming Runtime.sample would never actually produce.
-   const incomingView=Object.create(f);Object.assign(incomingView,{state:'attack',stateAge:0,crouch:m.normalState==='c',move:0,jumpPre:0,attack:{m,t:0},_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkStateBlend:null,_inkFrameTransition:null});
+   const incomingView=Object.create(f);Object.assign(incomingView,{_inkNoHitEpisode:true,_inkHitEpisode:null,state:'attack',stateAge:0,crouch:m.normalState==='c',move:0,jumpPre:0,attack:{m,t:0},_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkStateBlend:null,_inkFrameTransition:null});
    const target=A.pose(incomingView);incomingView.attack={m,t:.25};const next=A.pose(incomingView);
    const oldCtx=INK.State.contextForFX(source);
    const oldSecondary=this.presentation(source,oldCtx?.record,oldCtx?.frame||0,source.attack?.t||0);
@@ -79,9 +79,9 @@
    if(this.eventLog.length>160)this.eventLog.splice(0,this.eventLog.length-160);
    if(this.lifecycleLog.length>256)this.lifecycleLog.splice(0,this.lifecycleLog.length-256);
   },
-  stateChange(f,next){
+  stateChange(f,next,presentationFrom=undefined){
    if(!this.enabled||!this.store)return;
-   const old=f.attack;INK.StateTransitions.change(f,next);
+   const old=f.attack;INK.StateTransitions.change(f,next,presentationFrom);
    if(old)INK.VFX?.bank?.cancel(f.index,INK.VFX.time,'state:'+next);
    if(old?._inkTimeline)for(const e of old._inkTimeline.cancel('state:'+next))this.lifecycleLog.push({character:f.ch.id,move:old.m.id,event:e.event.id,frame:e.frame,kind:e.kind,instance:e.instance,serial:e.serial});
    if(this.lifecycleLog.length>256)this.lifecycleLog.splice(0,this.lifecycleLog.length-256);
@@ -106,6 +106,7 @@
   },
   visual(f,base,world=null,skipThrowConstraint=false){
    if(!this.enabled||!this.store)return base;
+   if(INK.HitEpisode?.owns(f))return INK.HitEpisode.sample(f,world||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},this.clock(f));
    const movingFrame=INK.VisualFrame&&!f._inkRawVisual&&!f.attack&&!f.crouch&&!f.jumpPre&&f.y===0&&['idle','dash','rush'].includes(f.state);
    let display=f;
    if(movingFrame){

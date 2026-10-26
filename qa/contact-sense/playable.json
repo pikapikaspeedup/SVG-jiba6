@@ -1,0 +1,442 @@
+{
+  "sha256": "d2e29d20402d560d5336aeaedf8c3edb7daf4f13f8f75ff38497b3b7cd2d4d97",
+  "cases": [
+    {
+      "left": false,
+      "move": "sLP",
+      "type": "hit",
+      "plan": [
+        [
+          "noise",
+          0.028,
+          2100,
+          0.05
+        ],
+        [
+          "tone",
+          117,
+          32,
+          0.1,
+          "sine",
+          0.04575351548632995,
+          0.011
+        ],
+        [
+          "noise",
+          0.045,
+          1700,
+          0.014,
+          0.028
+        ]
+      ],
+      "contact": {
+        "measured": true,
+        "quality": 0.8389504373177843,
+        "closing": 0,
+        "alignment": 0.659725799961398,
+        "oblique": 0.340274200038602,
+        "mode": "solid",
+        "body": 0.7625585914388325,
+        "incoming": [
+          0.7515063997500575,
+          -0.659725799961398
+        ],
+        "normal": [
+          0,
+          1
+        ]
+      },
+      "zone": "body",
+      "strength": 0.85,
+      "pan": -0.03468956238325114,
+      "incoming": [
+        0.7515063997500577,
+        -0.6597257999613981
+      ],
+      "impact": {
+        "angle": -41.278964091258146,
+        "contact": {
+          "measured": true,
+          "quality": 0.8389504373177843,
+          "closing": 0,
+          "alignment": 0.659725799961398,
+          "oblique": 0.340274200038602,
+          "mode": "solid",
+          "body": 0.7625585914388325,
+          "incoming": [
+            0.7515063997500575,
+            -0.659725799961398
+          ],
+          "normal": [
+            0,
+            1
+          ]
+        },
+        "zone": "body"
+      },
+      "status": {
+        "enabled": true,
+        "state": "running",
+        "voices": [
+          {
+            "type": "hit",
+            "start": 0.2613333333333333,
+            "end": 0.3883333333333333
+          }
+        ],
+        "capacity": 6
+      }
+    },
+    {
+      "left": false,
+      "move": "sHP",
+      "type": "hit",
+      "plan": [
+        [
+          "noise",
+          0.045,
+          2625,
+          0.05
+        ],
+        [
+          "tone",
+          93.60000000000001,
+          32,
+          0.15,
+          "sine",
+          0.04821438969961781,
+          0.011
+        ],
+        [
+          "noise",
+          0.075,
+          1700,
+          0.025,
+          0.028
+        ]
+      ],
+      "contact": {
+        "measured": true,
+        "quality": 0.91792,
+        "closing": 0,
+        "alignment": 0.15426190378695606,
+        "oblique": 0.845738096213044,
+        "mode": "slice",
+        "body": 0.5672281141131508,
+        "incoming": [
+          0.15426190378695606,
+          0.98802999197394
+        ],
+        "normal": [
+          1,
+          0
+        ]
+      },
+      "zone": "body",
+      "strength": 1.1,
+      "pan": -0.05921016438882336,
+      "incoming": [
+        0.15426190378695606,
+        0.98802999197394
+      ],
+      "impact": {
+        "angle": 81.12600838725,
+        "contact": {
+          "measured": true,
+          "quality": 0.91792,
+          "closing": 0,
+          "alignment": 0.15426190378695606,
+          "oblique": 0.845738096213044,
+          "mode": "slice",
+          "body": 0.5672281141131508,
+          "incoming": [
+            0.15426190378695606,
+            0.98802999197394
+          ],
+          "normal": [
+            1,
+            0
+          ]
+        },
+        "zone": "body"
+      },
+      "status": {
+        "enabled": true,
+        "state": "running",
+        "voices": [
+          {
+            "type": "heavy",
+            "start": 0.5013333333333333,
+            "end": 0.6783333333333333
+          }
+        ],
+        "capacity": 6
+      }
+    },
+    {
+      "left": true,
+      "move": "sMP",
+      "type": "hit",
+      "plan": [
+        [
+          "noise",
+          0.028,
+          2100,
+          0.05
+        ],
+        [
+          "tone",
+          117,
+          32,
+          0.1,
+          "sine",
+          0.05240695643193102,
+          0.011
+        ],
+        [
+          "noise",
+          0.045,
+          1700,
+          0.014,
+          0.028
+        ]
+      ],
+      "contact": {
+        "measured": true,
+        "quality": 0.9789504373177843,
+        "closing": -0.0,
+        "alignment": 0.7576663853231849,
+        "oblique": 0.24233361467681513,
+        "mode": "solid",
+        "body": 0.8734492738655171,
+        "incoming": [
+          -0.7576663853231849,
+          0.6526420523926564
+        ],
+        "normal": [
+          1,
+          0
+        ]
+      },
+      "zone": "body",
+      "strength": 0.85,
+      "pan": -0.12175329630344499,
+      "incoming": [
+        -0.7576663853231851,
+        0.6526420523926565
+      ],
+      "impact": {
+        "angle": 139.2589012376386,
+        "contact": {
+          "measured": true,
+          "quality": 0.9789504373177843,
+          "closing": -0.0,
+          "alignment": 0.7576663853231849,
+          "oblique": 0.24233361467681513,
+          "mode": "solid",
+          "body": 0.8734492738655171,
+          "incoming": [
+            -0.7576663853231849,
+            0.6526420523926564
+          ],
+          "normal": [
+            1,
+            0
+          ]
+        },
+        "zone": "body"
+      },
+      "status": {
+        "enabled": true,
+        "state": "running",
+        "voices": [
+          {
+            "type": "hit",
+            "start": 0.7413333333333333,
+            "end": 0.8683333333333333
+          }
+        ],
+        "capacity": 6
+      }
+    },
+    {
+      "left": false,
+      "move": "cMK",
+      "type": "hit",
+      "plan": [
+        [
+          "noise",
+          0.045,
+          1750,
+          0.05
+        ],
+        [
+          "tone",
+          90,
+          32,
+          0.1,
+          "sine",
+          0.033140761133910776,
+          0.016
+        ],
+        [
+          "noise",
+          0.075,
+          1700,
+          0.025,
+          0.028
+        ]
+      ],
+      "contact": {
+        "measured": true,
+        "quality": 1,
+        "closing": 0,
+        "alignment": 0.06738753937190187,
+        "oblique": 0.9326124606280981,
+        "mode": "slice",
+        "body": 0.552346018898513,
+        "incoming": [
+          0.06738753937190187,
+          0.9977268762228472
+        ],
+        "normal": [
+          1,
+          0
+        ]
+      },
+      "zone": "leg",
+      "strength": 0.85,
+      "pan": -0.01397175923514169,
+      "incoming": [
+        0.06738753937190187,
+        0.9977268762228472
+      ],
+      "impact": {
+        "angle": 86.13605021292466,
+        "contact": {
+          "measured": true,
+          "quality": 1,
+          "closing": 0,
+          "alignment": 0.06738753937190187,
+          "oblique": 0.9326124606280981,
+          "mode": "slice",
+          "body": 0.552346018898513,
+          "incoming": [
+            0.06738753937190187,
+            0.9977268762228472
+          ],
+          "normal": [
+            1,
+            0
+          ]
+        },
+        "zone": "leg"
+      },
+      "status": {
+        "enabled": true,
+        "state": "running",
+        "voices": [
+          {
+            "type": "hit",
+            "start": 0.9813333333333333,
+            "end": 1.1133333333333333
+          }
+        ],
+        "capacity": 6
+      }
+    },
+    {
+      "left": true,
+      "move": "hadoken_0",
+      "type": "hit",
+      "plan": [
+        [
+          "noise",
+          0.028,
+          2100,
+          0.05
+        ],
+        [
+          "tone",
+          117,
+          32,
+          0.1,
+          "sine",
+          0.055049999999999995,
+          0.011
+        ],
+        [
+          "noise",
+          0.045,
+          1700,
+          0.014,
+          0.028
+        ]
+      ],
+      "contact": {
+        "measured": false,
+        "quality": 0.85,
+        "closing": 0,
+        "alignment": 1,
+        "oblique": 0,
+        "mode": "solid",
+        "body": 0.9175,
+        "incoming": [
+          -1,
+          0
+        ],
+        "normal": [
+          -1,
+          0
+        ]
+      },
+      "zone": "body",
+      "strength": 0.85,
+      "pan": -0.11174272976981557,
+      "incoming": [
+        -1,
+        0
+      ],
+      "impact": {
+        "angle": 180,
+        "contact": {
+          "measured": false,
+          "quality": 0.85,
+          "closing": 0,
+          "alignment": 1,
+          "oblique": 0,
+          "mode": "solid",
+          "body": 0.9175,
+          "incoming": [
+            -1,
+            0
+          ],
+          "normal": [
+            -1,
+            0
+          ]
+        },
+        "zone": "body"
+      },
+      "status": {
+        "enabled": true,
+        "state": "running",
+        "voices": [
+          {
+            "type": "wave",
+            "start": 1.2213333333333334,
+            "end": 1.4173333333333333
+          },
+          {
+            "type": "hit",
+            "start": 1.2213333333333334,
+            "end": 1.3483333333333334
+          }
+        ],
+        "capacity": 6
+      }
+    }
+  ],
+  "errors": [],
+  "audio": "Offline WebAudio render of actual contact plans, deterministic noise, mono; not a live master/limiter recording and not listened to."
+}

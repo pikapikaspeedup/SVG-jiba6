@@ -16,7 +16,7 @@
   const q=R.visual(previous,A.pose(previous),world(previous));
   return{pose:p,previous:q,frame:INK.FrameBridge?.capture(f,p),secondary:R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0),state:f.state,key:INK.Presentation.key(f),dir:f.dir,dt};
  }
- function cleanView(f){const v=Object.create(f);v._inkStateVisualBlend=null;v._inkStateBlend=null;v._inkVisualTransition=null;v._inkJointTransition=null;v._inkTransition=null;v._inkFrameTransition=null;return v;}
+ function cleanView(f){const v=Object.create(f);v._inkNoHitEpisode=true;v._inkHitEpisode=null;v._inkStateVisualBlend=null;v._inkStateBlend=null;v._inkVisualTransition=null;v._inkJointTransition=null;v._inkTransition=null;v._inkFrameTransition=null;return v;}
  function bind(f,from,{next=f.state,kind=next,age=0,override=null}={}){
   if(!from||!INK.Presentation.settings.stateBlends||!INK.Runtime.enabled||excluded(f))return null;
   INK.FrameBridge?.begin(f,from.frame,{state:next,duration:duration[kind]??5,impact:['hit','block','stun'].includes(kind),guard:kind==='block'});
@@ -44,9 +44,12 @@
   return bridge;
  }
  const Transitions={version:'8.0.0',duration,events:[],capture,bind,
-  change(f,next){
+  change(f,next,presentationFrom=undefined){
    if(!INK.Runtime.enabled||!INK.Runtime.store)return;
-   const from=(f.state!==next||['hit','block','stun'].includes(next))?capture(f):null;
+   if(INK.HitEpisode?.pending(f)){f._inkStateBlend=null;f._inkStateVisualBlend=null;f._inkFrameTransition=null;return;}
+   const from=presentationFrom!==undefined?presentationFrom:(f.state!==next||['hit','block','stun'].includes(next))?capture(f):null;
+   if(next!=='hit')INK.HitEpisode?.release(f);
+   if(presentationFrom===null)f._inkFrameTransition=null;
    f._inkStateBlend=null;f._inkStateVisualBlend=null;if(next==='attack')f._inkLanding=null;
    const poseState={state:next,stateAge:0,attack:null,move:0,_inkState:null};
    if(['hit','tumble','down','rise','captured','throwing','stun','ko'].includes(next))Object.assign(poseState,{crouch:false,jumpPre:0});

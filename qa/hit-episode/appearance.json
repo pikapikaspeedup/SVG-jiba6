@@ -1,0 +1,77 @@
+{
+  "sha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1",
+  "rows": [
+    {
+      "target": "cammy",
+      "move": "sMP",
+      "born": 6,
+      "state": "hit",
+      "zone": "body",
+      "frames": [
+        {
+          "age": 0,
+          "state": "hit",
+          "owns": true
+        },
+        {
+          "age": 5,
+          "state": "hit",
+          "owns": true
+        },
+        {
+          "age": 10,
+          "state": "hit",
+          "owns": true
+        }
+      ]
+    },
+    {
+      "target": "luke",
+      "move": "cMK",
+      "born": 8,
+      "state": "hit",
+      "zone": "leg",
+      "frames": [
+        {
+          "age": 0,
+          "state": "hit",
+          "owns": true
+        },
+        {
+          "age": 5,
+          "state": "hit",
+          "owns": true
+        },
+        {
+          "age": 10,
+          "state": "hit",
+          "owns": true
+        }
+      ]
+    },
+    {
+      "target": "ryu",
+      "move": "sMP",
+      "born": 6,
+      "state": "hit",
+      "zone": "body",
+      "frames": [
+        {
+          "age": 0,
+          "state": "hit",
+          "owns": true
+        },
+        {
+          "age": 5,
+          "state": "hit",
+          "owns": true
+        },
+        {
+          "age": 10,
+          "state": "hit",
+          "owns": true
+        }
+      ]
+    }
+  ]
+}

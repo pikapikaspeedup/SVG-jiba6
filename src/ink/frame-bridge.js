@@ -25,20 +25,33 @@
   const start=f._inkVisualClock||0,feet=sampleFeet(from.footPlan,start),remaining=Math.max(0,(feet?.endTime||start)-start);
   f._inkFrameTransition=Object.freeze({from,state,attack,duration,impact,guard,deadlineFrame,start,supportDuration:feet?remaining+10:duration});
  }
+ // Contact legacy chains live in a native plane. Fit through their saved
+ // forward map; artificial display depth never supplies an IK bone length.
+ function contactChain(frame,name,a,root,end,ratio){
+  const carrier=frame.contactCarrier,native=frame.nativeChains?.[name]||carrier?.nativeChains?.[name],B=frame.forwardBindings?.[name]||carrier?.bindings?.[name];
+  if(!native||!B)return null;
+  const lengths=[0,1].map(i=>Math.hypot(...native[i+1].map((v,j)=>v-native[i][j]))),angles=[0,1].map(i=>Math.atan2(native[i+1][1]-native[i][1],native[i+1][0]-native[i][0]));
+  const fk=()=>{const p=native[0],j=[p[0]+lengths[0]*Math.cos(angles[0]),p[1]+lengths[0]*Math.sin(angles[0])];return [p.slice(),j,[j[0]+lengths[1]*Math.cos(angles[1]),j[1]+lengths[1]*Math.sin(angles[1])]];};
+  const project=q=>[ratio*(B[0]*q[0]+B[2]*q[1]),ratio*(B[1]*q[0]+B[3]*q[1])],initial=fk().map(project),correction=a.map((p,i)=>[p[0]-a[0][0]-initial[i][0]+initial[0][0],p[1]-a[0][1]-initial[i][1]+initial[0][1]]);
+  if(correction.some(q=>Math.hypot(...q)>24*ratio))return null;
+  for(let k=0;k<12;k++){const points=fk().map(project),last=points[2],error=[end[0]-root[0]-last[0]+points[0][0]-correction[2][0],end[1]-root[1]-last[1]+points[0][1]-correction[2][1]],jac=angles.map((v,i)=>{const x=-lengths[i]*Math.sin(v),y=lengths[i]*Math.cos(v);return [ratio*(B[0]*x+B[2]*y),ratio*(B[1]*x+B[3]*y)];}),den=jac.flat().reduce((s,v)=>s+v*v,80);for(let i=0;i<2;i++)angles[i]+=Math.max(-.08,Math.min(.08,(jac[i][0]*error[0]+jac[i][1]*error[1])/den));}
+  const points=fk().map(project),chain=points.map((q,i)=>[root[0]+q[0]-points[0][0]+correction[i][0],root[1]+q[1]-points[0][1]+correction[i][1],a[i][2]+root[2]-a[0][2]]);
+  return {chain,residual:distance(chain[2],end),native:fk(),metric:'nativeProjected'};
+ }
  function apply(f,target,{world:currentWorld,time=f._inkVisualClock||0}={}){
   const tr=f._inkFrameTransition;if(!tr||f.state!==tr.state||tr.attack&&f.attack?.m.id!==tr.attack)return target;
   const age=time-tr.start,grounded=f.y===0&&!f.airLock&&!f.captured&&!f.attack?.m.throw;
   // A newly committed walking/turning plan supersedes a captured plan. Only
   // actions without that live support owner continue their outgoing footstep.
   const liveSupport=target.mode==='locomotion'&&!!(INK.FacingMotion?.sample(f,time)?.ownsFeet||INK.Locomotion?.sample(f,time));
-  const footPlan=grounded&&!liveSupport?tr.from.footPlan:null,feet=sampleFeet(footPlan,time),total=feet?Math.max(tr.duration,tr.supportDuration):tr.duration;
+  const footPlan=grounded&&!liveSupport&&tr.from.frame.mode!=='contact'?tr.from.footPlan:null,feet=sampleFeet(footPlan,time),total=feet?Math.max(tr.duration,tr.supportDuration):tr.duration;
   if(age<0||age>=total)return target;
   const old=tr.from.frame,w=currentWorld||world(f),oldWorld=tr.from.world,scale=w.scale||1,ratio=oldWorld.scale/scale;
   const shift=[(oldWorld.x-w.x)/scale,(oldWorld.y-w.y)/scale,0],t=ease(age/tr.duration),critical=contactChains(f);
   const point=q=>q.map((v,i)=>v*ratio+shift[i]);
   const matrix=m=>[m[0]*ratio,m[1]*ratio,m[2]*ratio,m[3]*ratio,m[4]*ratio+shift[0],m[5]*ratio+shift[1]];
   const angle=(a,b,u=t)=>a+Math.atan2(Math.sin((b-a)*Math.PI/180),Math.cos((b-a)*Math.PI/180))*180/Math.PI*u;
-  const joints3D={},sockets={},depth={},surfaces={},rig={},endFrames={},fanFrames={},residuals={},deadlines={};
+  const joints3D={},sockets={},depth={},surfaces={},rig={},endFrames={},fanFrames={},residuals={},deadlines={},chainMetrics={},nativeChains={};
   const c=target.rig.profile,materialAngles=tr.impact?target.materialAngles:Object.fromEntries(Object.keys(target.materialAngles).map(k=>[k,angle(old.materialAngles[k],target.materialAngles[k])]));
   for(const name of names){
    const source=old.joints3D[name],dest=target.joints3D[name];if(!source||!dest)return target;
@@ -58,8 +71,12 @@
     progress=ease((time-feet.endTime)/10);end=blend(anchor,dest[2],progress);
    }
    deadlines[name]=support?tr.supportDuration:tr.duration;
-   const lengths=source.slice(0,2).map((q,i)=>mix(distance(q,source[i+1])*ratio,distance(dest[i],dest[i+1]),t));
-   const solved=done?{chain:dest,residual:0}:age===0&&!tr.impact?{chain:a,residual:0}:INK.VisualFrame.twoBone3D(root,end,lengths[0],lengths[1],pole);
+   const contactExit=old.mode==='contact',spatialContact=contactExit&&old.contactCarrier?.representation==='spatial3D';
+   const lengths=source.slice(0,2).map((q,i)=>contactExit?distance(q,source[i+1])*ratio:mix(distance(q,source[i+1])*ratio,distance(dest[i],dest[i+1]),t));
+   const nativeFit=contactExit&&!spatialContact?contactChain(old,name,a,root,end,ratio):null;
+   const cross=contactExit&&!spatialContact&&!nativeFit?{chain:a.map((p,i)=>blend(p,dest[i],t)),residual:distance(blend(a[2],dest[2],t),end),metric:'crossRepresentation'}:null;
+   const solved=done?{chain:dest,residual:0}:age===0&&!tr.impact?{chain:a,residual:0}:nativeFit||cross||INK.VisualFrame.twoBone3D(root,end,lengths[0],lengths[1],pole);
+   chainMetrics[name]=done?'destination':solved.metric||(contactExit?'fixedSpatial':'legacyBridge');if(solved.native)nativeChains[name]=solved.native;
    joints3D[name]=solved.chain;sockets[name]=solved.chain.map(q=>q.slice(0,2));rig[name]=sockets[name];depth[name]=solved.chain.map(q=>q[2]);residuals[name]=solved.residual*scale;
    surfaces[name]={...target.rig.anatomy.surfaces[name],depth:depth[name],segmentDepth:[(depth[name][0]+depth[name][1])/2,(depth[name][1]+depth[name][2])/2]};
    if(done){endFrames[name]=target.endFrames[name];if(target.fanFrames?.[name])fanFrames[name]=target.fanFrames[name];continue;}
@@ -77,7 +94,7 @@
   const headMatrix=tr.impact?target.headMatrix:blend(matrix(old.headMatrix),target.headMatrix,t);
   Object.defineProperties(rig,{profile:{value:c},anatomy:{value:{...target.rig.anatomy,sockets,depth,surfaces}}});
   const worldFeet=Object.fromEntries(['rear','front'].map(k=>{const q=joints3D[k+'Leg'][2];return[k,[w.x+q[0]*scale,665+w.y+q[1]*scale,q[2]*scale]];}));
-  return {...target,rig,joints3D,skinMatrices,headMatrix,endFrames,fanFrames,materialAngles,worldFeet,bridge:{age,duration:total,critical,deadlines,footPlan,residuals}};
+  return {...target,rig,joints3D,skinMatrices,headMatrix,endFrames,fanFrames,materialAngles,worldFeet,bridge:{age,duration:total,critical,deadlines,footPlan,residuals,chainMetrics,nativeChains,contactExit:old.mode==='contact',representation:old.contactCarrier?.representation||null}};
  }
  INK.FrameBridge={capture,begin,apply,contactChains};
 })();

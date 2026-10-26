@@ -22,40 +22,42 @@
     return 'strike';
   }
   function direction(owner,m,kind,dir){
-    if(kind==='launch')return dir===-1?-105:-75;
-    if(kind==='fan')return dir===-1?205:-25;
     // Use the actual projected striking chain, bounded so a wildly edited
     // rig cannot aim the whole screen's impact feedback backwards.
     if(owner&&globalThis.SVG_FIGHTER&&INK.Runtime?.store){
       const p=SVG_FIGHTER.visualPose(owner),r=INK.Runtime.visualRig(owner,p),s=INK.Rig.sockets(p,r);
       const c=kind==='kick'?s.frontLeg:s.frontArm;
-      const x=(c[2][0]-c[1][0])*dir,y=c[2][1]-c[1][1];
+      const world={x:owner.x,y:665+owner.y,scale:owner.renderScale||owner.ch.scale||1,facing:dir},end=INK.Rig.world(p,c[2],world),joint=INK.Rig.world(p,c[1],world),x=end[0]-joint[0],y=end[1]-joint[1];
       if(Math.hypot(x,y)>2){const a=Math.atan2(y,x)*180/Math.PI;return Number.isFinite(a)?a:0;}
     }
     return dir===-1?180:0;
   }
   const Impact={events:[],
     classify,
-    emit(pool,{x,y,frame,G,owner,m,result,last,dir,response,material,reduced}){
+    emit(pool,{x,y,frame,G,owner,m,result,last,dir,response,incoming,material,reduced}){
       const kind=classify(m,result,last),seed=hash([G.tick,owner?.index,m?.id,kind].join(':'));
-      const angle=response?Math.atan2(response.responseDir[1],response.responseDir[0])*180/Math.PI+response.turn*20:direction(owner,m,kind,dir),multi=(m?.hits||1)>1&&!last,size=kind==='finisher'?37:multi?17:kind==='kick'?30:24;
+      const facts=INK.StrikeFeel?.contactSound({response,incoming,direction:dir}),observed=Array.isArray(incoming)&&incoming.slice(0,2).every(Number.isFinite)&&Math.hypot(...incoming)>1e-6;
+      const angle=observed?Math.atan2(incoming[1],incoming[0])*180/Math.PI:direction(owner,m,kind,dir),multi=(m?.hits||1)>1&&!last,zone=response?.zone||'body',size=(kind==='finisher'?32:multi?14:kind==='kick'?26:21)*(facts?.mode==='glance'?.72:1),normalAngle=facts?Math.atan2(facts.normal[1],facts.normal[0])*180/Math.PI:angle;
+
       const causal=INK.ContactFlux?.active()&&m&&!m.throw;
-      const add=(species,scale,rotation=angle,delay=0,life=10,opacity=.85)=>pool.add({x,y,birth:frame+delay,life,vx:0,vy:0,gravity:0,size:size*scale*(causal?.65:1),angle:rotation,color:material.core,species,stretch:1,opacity:opacity*(causal?.45:1),priority:4,
+      const add=(species,scale,rotation=angle,delay=0,life=10,opacity=.85,stretch=1)=>pool.add({x,y,birth:frame+delay,life,vx:0,vy:0,gravity:0,size:size*scale*(causal?.65:1),angle:rotation,color:material.core,species,stretch,opacity:opacity*(causal?.45:1),priority:4,
         sizeCurve:[[0,.75],[.22,1],[1,1.5]],opacityCurve:[[0,1],[.18,.88],[.65,.36],[1,0]]});
-      if(kind==='brace')add('brace',.85,dir===-1?180:0,0,8,.65);
-      else if(kind==='guard')add('shield',1.1,dir===-1?180:0,0,11,.7);
-      else if(kind==='fan'){add('slash',1.45,angle,0,multi?7:12);if(!reduced)add('slash',1.1,angle+20,2,11,.5);}
-      else if(kind==='launch'){add('thrust',1.6,angle,0,9,.72);add('cross',.64,angle+35,0,7,.78);}
-      else if(kind==='finisher'){add('cross',1.2,angle,0,9);if(!causal)add('ring',.9,0,2,15,.55);}
-      else {add(kind==='kick'?'thrust':'cross',1,angle,0,multi?6:9);}
+      if(kind==='brace')add('brace',.75,normalAngle,0,7,.6);
+      else if(kind==='guard')add('shield',.9,normalAngle,0,9,.65,.65);
+      else if(facts?.mode==='slice'){add('slash',1.15,angle,0,multi?5:8,.72,1.25);}
+      else if(facts?.mode==='glance'){add('thrust',.8,angle,0,5,.6,1.2);}
+      else if(kind==='fan'){add('slash',1.45,angle,0,multi?7:12);if(!reduced&&!multi)add('slash',1.1,angle+20,2,11,.5);}
+      else if(kind==='launch'){add('thrust',1.35,angle,0,8,.72);if(!reduced&&!multi)add('cross',.55,angle+35,0,6,.65);}
+      else if(kind==='finisher'){add('cross',1.1,angle,0,8);if(!multi&&!reduced)add('thrust',.7,angle,2,7,.45);}
+      else {add(zone==='leg'||kind==='kick'?'thrust':'cross',facts?.body??1,angle,0,multi?5:8,.8,zone==='body'?.8:1);}
       // Intermediate blows are deliberately economical. The final contact
       // releases the slower debris instead of every hit spawning a smoke cloud.
-      if(!multi&&kind!=='guard'&&kind!=='brace'&&!reduced){
-        pool.emit({x,y,frame:frame+3,seed:seed+7,count:owner?.ch?.id==='mai'?4:3,material,
-          direction:dir,angle:-42,spread:140,speed:2.5,life:24,size:2.5,
+      if(!multi&&kind!=='guard'&&kind!=='brace'&&!reduced&&facts?.mode!=='glance'){
+        pool.emit({x,y,frame:frame+3,seed:seed+7,count:2,material,
+          direction:1,angle:angle+(facts?.mode==='slice'?35:-20),spread:facts?.mode==='slice'?35:85,speed:1.8,life:18,size:1.8,
           species:owner?.ch?.id==='mai'?'petal':material.species,drag:.07,priority:1});
       }
-      this.events.push({tick:G.tick,move:m?.id,kind,multi,angle,frame,response:response||null,delayed:!multi&&kind!=='guard'&&kind!=='brace'&&!reduced});if(this.events.length>128)this.events.shift();
+      this.events.push({tick:G.tick,move:m?.id,kind,multi,angle,zone,contact:facts,frame,response:response||null,delayed:!multi&&kind!=='guard'&&kind!=='brace'&&!reduced&&facts?.mode!=='glance'});if(this.events.length>128)this.events.shift();
       return kind;
     },
     clear(){this.events=[];}

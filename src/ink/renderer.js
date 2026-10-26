@@ -268,7 +268,7 @@
    for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===face?'visible':'hidden',s);
    const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
    const oldHair=()=>{const at=visual?Rig.sockets(visual.legacyPose,visual.legacyRig).head:h;return mat.multiply(mat.compose(at[0]-6,at[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365));};
-   setTransform(this.hair,visual?.mode==='locomotion'?mat.multiply(visual.headMatrix,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
+   setTransform(this.hair,['locomotion','contact'].includes(visual?.mode)?mat.multiply(visual.headMatrix,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
    const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);
    setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
    setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);

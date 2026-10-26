@@ -1,0 +1,76 @@
+{
+  "htmlSha256": "d2e29d20402d560d5336aeaedf8c3edb7daf4f13f8f75ff38497b3b7cd2d4d97",
+  "rows": [
+    {
+      "kind": "contact",
+      "actor": 0,
+      "hit": true,
+      "incoming": [
+        0.7576663853231849,
+        0.6526420523926564
+      ],
+      "light": {
+        "x": 749.5779666731005,
+        "y": 424.97583361875144,
+        "color": "#80eaff",
+        "power": 0.5,
+        "radius": 145,
+        "incoming": [
+          0.7576663853231849,
+          0.6526420523926564
+        ],
+        "aspect": 0.48,
+        "defender": 1
+      },
+      "unit": true,
+      "pure": true,
+      "angle": "translate(749.5779666731005 424.97583361875144) rotate(39.92431483500041)"
+    },
+    {
+      "kind": "contact",
+      "actor": 1,
+      "hit": true,
+      "incoming": [
+        -0.9573196409053248,
+        0.28903132206890647
+      ],
+      "light": {
+        "x": 575.6059358902638,
+        "y": 429.9570156391156,
+        "color": "#ffab65",
+        "power": 0.5,
+        "radius": 145,
+        "incoming": [
+          -0.9573196409053248,
+          0.28903132206890647
+        ],
+        "aspect": 0.48,
+        "defender": 0
+      },
+      "unit": true,
+      "pure": true,
+      "angle": "translate(575.6059358902638 429.9570156391156) rotate(162.78911858459063)"
+    },
+    {
+      "kind": "rush",
+      "actor": 0,
+      "count": 2,
+      "positiveRoot": true,
+      "transforms": [
+        "translate(389.1 665) scale(1.04)",
+        "translate(457.28315088443753 665) scale(1.04)"
+      ]
+    },
+    {
+      "kind": "rush",
+      "actor": 1,
+      "count": 2,
+      "positiveRoot": true,
+      "transforms": [
+        "translate(1060.9 665) scale(1.04)",
+        "translate(992.7168491155627 665) scale(1.04)"
+      ]
+    }
+  ],
+  "errors": []
+}

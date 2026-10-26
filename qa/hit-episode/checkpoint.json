@@ -1,0 +1,50 @@
+{
+  "stage": "Contact-owned ground hit episode and contact sense",
+  "htmlSha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1",
+  "htmlBytes": 9150121,
+  "reports": {
+    "qa/hit-episode/playable.json": {
+      "reportSha256": "a7c2ea9831c7c717c0115b001ead7b7d4aee6fab1cc158a06c007c175c46aeda",
+      "buildSha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1"
+    },
+    "qa/hit-episode/appearance.json": {
+      "reportSha256": "aa67bab3f6b5867fc0c69f20c9596c45cb8be95bd322ac478d0e38b2e9c9412b",
+      "buildSha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1"
+    },
+    "qa/hit-body/transaction.json": {
+      "reportSha256": "c1201877faa96561fe2469ffe093ee44e4ab18fbdd81be801ef191aedd03a976",
+      "buildSha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1"
+    },
+    "qa/hit-episode/source/validation.json": {
+      "reportSha256": "44d38caca3018f59cbbf1a164cf82ba7167eea4fe6ecdd6f5469834a1d71ac58",
+      "buildSha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1"
+    },
+    "qa/contact-sense/playable.json": {
+      "reportSha256": "b87f39a12c02f63a20dfa2cce5964aff76d5ba052111b79614b46181faa9b2ca",
+      "buildSha256": "d2e29d20402d560d5336aeaedf8c3edb7daf4f13f8f75ff38497b3b7cd2d4d97"
+    },
+    "qa/contact-sense/head.json": {
+      "reportSha256": "2166b7686b678ebfdc1c78746ea01abd1ce86a7dc458ef6cf0431a6a6848154a",
+      "buildSha256": "a9113f292e4cc64f35638b5bc66b640aa94b8e0bbe3063250ba9f6337895d550"
+    },
+    "qa/contact-sense/composition.json": {
+      "reportSha256": "13d42a62a31afaf9c4a9df4e62fb293e6387cfc317f182a27412090df22f6a66",
+      "buildSha256": "d2e29d20402d560d5336aeaedf8c3edb7daf4f13f8f75ff38497b3b7cd2d4d97"
+    }
+  },
+  "unitChecksExecuted": [
+    "tests/hit-body-frame/unit.cjs",
+    "tests/frame-bridge/contact.cjs",
+    "tests/hit-dynamics/unit.cjs"
+  ],
+  "limits": [
+    "No long soak or new performance claim",
+    "Contact-sense reports retain their earlier build hashes; not rerun as final build coverage",
+    "Offline audio-plan WAV is not master-output recording and has not been listened to",
+    "Legacy projected bones use native metrics; uncertain cross-representation bridge reports explicit fallback",
+    "Four-hit continuity fixture uses real contact API, not public input combo",
+    "Eight-character design parameters are shared; screenshots cover Cammy Luke and Ryu only",
+    "Continuous engine goal remains active"
+  ],
+  "next": "Readable two-sided head materials, model volume and combat expression"
+}

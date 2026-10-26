@@ -1,0 +1,26 @@
+{
+  "htmlSha256": "56c6ba68535d407b540b9b85dae0a39536001371a698e514a0177c43f05dd8c1",
+  "rows": [
+    {
+      "name": "mutual contact",
+      "count": 2,
+      "states": [
+        "attack",
+        "attack"
+      ],
+      "clean": true,
+      "same": true
+    },
+    {
+      "name": "hit to tumble",
+      "count": 1,
+      "transitions": [
+        "hit",
+        "tumble"
+      ],
+      "same": true,
+      "state": "tumble"
+    }
+  ],
+  "errors": []
+}

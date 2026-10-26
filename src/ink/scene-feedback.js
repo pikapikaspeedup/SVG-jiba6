@@ -27,7 +27,8 @@
    if(!slot.renderer||slot.character!==f.ch.id){slot.renderer?.destroy();slot.renderer=new INK.Renderer(slot.root,profile);slot.renderer.setMode('silhouette');slot.character=f.ch.id;}
    slot.renderer.render(p,{rig,frame:ctx?.frame||0,secondary:true,motion:R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0),expression:['hit','tumble','down'].includes(f.state)?'hurt':'neutral'});
    const scale=f.renderScale||f.ch.scale||1;
-   assign(slot.root,'transform',`translate(${f.x} ${665+f.y}) scale(${scale}) scale(${f.dir*(p.depth||1)} 1) translate(${p.rootShift||0} ${p.floor||0}) rotate(${p.spin||0} 0 -180)`);
+   const framed=!!INK.VisualFrame?.get(p);
+   assign(slot.root,'transform',`translate(${f.x} ${665+f.y}) scale(${scale})`+(framed?'':` scale(${f.dir*(p.depth||1)} 1) translate(${p.rootShift||0} ${p.floor||0}) rotate(${p.spin||0} 0 -180)`));
    slot.root.style.setProperty('--ink-echo-color',f.state==='rush'?'#6dffc0':f.ch.color);
    assign(slot.root,'display','inline');assign(slot.root,'opacity',.22*W.settings.intensity);
    slot.start=t;slot.end=t+15;slot.actor=f.index;slot.pose=INK.copy(p);slot.sockets=INK.copy(INK.Rig.sockets(p,rig));slot.clock=f._inkVisualClock;

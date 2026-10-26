@@ -50,7 +50,7 @@
    }
   },
   set(values){if(!values||typeof values!=='object'||Array.isArray(values))throw TypeError('Presentation settings object required');for(const [k,v]of Object.entries(values)){if(!(k in settings)||typeof v!=='boolean')throw TypeError('Invalid presentation setting: '+k);}Object.assign(settings,values);return{...settings};},
-  reset(f){INK.FacingMotion?.reset(f);f._inkFrameTransition=null;f.intentDir=f.dir;f._inkVisualClock=0;f._inkPoseVelocity=null;f._inkHistory=null;f._inkPrevView=null;f._inkLanding=null;f._inkStateVisualBlend=null;}
+  reset(f){INK.HitBody?.reset(f);INK.FacingMotion?.reset(f);f._inkFrameTransition=null;f.intentDir=f.dir;f._inkVisualClock=0;f._inkPoseVelocity=null;f._inkHistory=null;f._inkPrevView=null;f._inkLanding=null;f._inkStateVisualBlend=null;}
  };
  INK.Presentation=Clock;
 })();
