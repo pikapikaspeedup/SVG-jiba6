@@ -1,0 +1,193 @@
+{
+  "htmlSha256": "10044084b86273b1a013c768ddbcc989197226abb5f4c6300accb842bd886aed",
+  "rows": [
+    {
+      "name": "real demo produces strike throw and retreat episodes",
+      "passed": true,
+      "choices": [
+        "retreat",
+        "strike",
+        "throw"
+      ]
+    },
+    {
+      "name": "episode choices respect existing plan and decision deadlines",
+      "passed": true
+    },
+    {
+      "name": "no private free tech-plan fields",
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "choices": [
+        {
+          "actor": 1,
+          "choice": "strike"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 2,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 3,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "strike"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 4,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "strike"
+        },
+        {
+          "actor": 1,
+          "choice": "retreat"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 5,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 6,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 7,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "throw"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 8,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "strike"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 9,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "retreat"
+        },
+        {
+          "actor": 1,
+          "choice": "throw"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 10,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "throw"
+        },
+        {
+          "actor": 0,
+          "choice": "strike"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 11,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 12,
+      "choices": [
+        {
+          "actor": 0,
+          "choice": "strike"
+        },
+        {
+          "actor": 1,
+          "choice": "strike"
+        }
+      ],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 13,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 14,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 15,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    },
+    {
+      "seed": 16,
+      "choices": [],
+      "violations": [],
+      "privatePlan": false,
+      "techs": 0
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,135 @@
+{
+  "htmlSha256": "10044084b86273b1a013c768ddbcc989197226abb5f4c6300accb842bd886aed",
+  "scope": "Sequential actual forward/back throw simulation + full SVG/VFX DOM render. One full throw warmup, grip frames 4..22 sampled. CPU only; no display/GPU/mobile or endurance claim.",
+  "rows": [
+    {
+      "id": "ryu",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.299999989961323,
+      "p95": 2.5,
+      "max": 2.5
+    },
+    {
+      "id": "ryu",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.278947353363037,
+      "p95": 2.3000001907348633,
+      "max": 2.3000001907348633
+    },
+    {
+      "id": "ken",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.2947368621826172,
+      "p95": 2,
+      "max": 2
+    },
+    {
+      "id": "ken",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.200000010038677,
+      "p95": 1.8000001907348633,
+      "max": 1.8000001907348633
+    },
+    {
+      "id": "chun",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.2894736842105263,
+      "p95": 2.0999999046325684,
+      "max": 2.0999999046325684
+    },
+    {
+      "id": "chun",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.2526315638893528,
+      "p95": 2,
+      "max": 2
+    },
+    {
+      "id": "cammy",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.2736842255843313,
+      "p95": 1.9000000953674316,
+      "max": 1.9000000953674316
+    },
+    {
+      "id": "cammy",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.1789473734403912,
+      "p95": 1.4000000953674316,
+      "max": 1.4000000953674316
+    },
+    {
+      "id": "luke",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.2157894937615645,
+      "p95": 2.0999999046325684,
+      "max": 2.0999999046325684
+    },
+    {
+      "id": "luke",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.1999999849419845,
+      "p95": 2.0999999046325684,
+      "max": 2.0999999046325684
+    },
+    {
+      "id": "juri",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.1000000050193386,
+      "p95": 1.299999713897705,
+      "max": 1.299999713897705
+    },
+    {
+      "id": "juri",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.2578947418614437,
+      "p95": 2.0999999046325684,
+      "max": 2.0999999046325684
+    },
+    {
+      "id": "mai",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.3210526265596088,
+      "p95": 2.5999999046325684,
+      "max": 2.5999999046325684
+    },
+    {
+      "id": "mai",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.1789473734403912,
+      "p95": 1.4000000953674316,
+      "max": 1.4000000953674316
+    },
+    {
+      "id": "iori",
+      "back": false,
+      "gripFrames": 19,
+      "mean": 1.1999999849419845,
+      "p95": 2.299999713897705,
+      "max": 2.299999713897705
+    },
+    {
+      "id": "iori",
+      "back": true,
+      "gripFrames": 19,
+      "mean": 1.1999999849419845,
+      "p95": 1.8000001907348633,
+      "max": 1.8000001907348633
+    }
+  ],
+  "errors": []
+}

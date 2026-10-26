@@ -1,0 +1,26 @@
+{
+  "htmlSha256": "10044084b86273b1a013c768ddbcc989197226abb5f4c6300accb842bd886aed",
+  "rows": [
+    {
+      "name": "back throw button uses public directional input and releases its own held key",
+      "passed": true
+    },
+    {
+      "name": "throw button also techs real capture once with pure paused render",
+      "passed": true,
+      "event": {
+        "tick": 17,
+        "type": "throw-tech",
+        "attacker": 1,
+        "defender": 0,
+        "move": "throw",
+        "damage": 0
+      }
+    },
+    {
+      "name": "tech keeps original recovery and no strike hit sound event",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

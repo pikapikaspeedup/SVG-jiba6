@@ -120,6 +120,11 @@
       const owner=context?.owner,m=context?.move,phased=INK.CombatFlow?.settings.rhythm!=='legacy'&&!!m,multi=phased&&(m?.hits||1)>1&&!context?.last,guard=['block','parry'].includes(kind),big=!!m?.super,last=!!context?.last;
       const base=guard?materials.guard:materials[owner?.ch?.id]||materials.ryu,dir=context?.direction||owner?.dir||1,seed=hash([G.tick,owner?.index,kind,m?.id,x,y].join(':')),frame=this.time;
       pool.quality=setting.quality*(setting.reducedMotion?.55:1);
+      if(kind==='throw-tech'){
+        // Two separating strokes read as broken grip, without a damage flash.
+        for(const sign of [-1,1])pool.add({x:x+sign*9,y,birth:frame,life:11,vx:sign*2.4,vy:-.3,gravity:0,size:21,angle:sign<0?180:0,color:'#d9f4ff',species:'shield',stretch:.7,opacity:.75,priority:4,opacityCurve:[[0,1],[.3,.8],[1,0]]});
+        pool.emit({x,y,frame,seed,count:6,material:materials.guard,direction:dir,angle:0,spread:180,speed:2.8,life:12,size:1.2,species:'spark',priority:2});return true;
+      }
       if(kind==='armor'){
         const brace={...materials.guard,color:'#d79c59',core:'#ffe0a8'};
         pool.emit({x,y,frame,seed,count:8,material:brace,direction:dir,angle:0,spread:180,speed:3.2,life:13,size:1.4,species:'spark',priority:2});

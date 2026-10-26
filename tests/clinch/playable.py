@@ -1,0 +1,17 @@
+from pathlib import Path
+import os,json,hashlib
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];O=R/'qa/clinch';O.mkdir(parents=True,exist_ok=True);html=(R/'dist/INK-Street-Fighter-6.html').read_bytes()
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(html.decode());p.wait_for_function('window.INKDuel?.ready&&INK.Clinch')
+ rows=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state,C=INK.Clinch,out=[],check=(name,passed,details)=>out.push({name,passed,details});
+ function setup(id='ryu',distance=110){A.start(id,'ryu','training','classic',13);G.paused=false;document.getElementById('dummy').value='idle';document.getElementById('autohp').checked=false;A.teleport(0,540);A.teleport(1,540+distance);A.step();}
+ function grab(move='throw'){A.tryMove(0,move);for(let i=0;i<60&&!A.fighters[1].captured;i++)A.step();return A.fighters[1];}
+ for(const age of [8,9]){setup();const d=grab();for(let i=0;i<20&&d.throwAction?.t<age;i++)A.step();const at=d.throwAction?.t;A.press(1,'THROW');const tech=C.inspect().some(e=>e.result==='tech');check('ordinary throw tech boundary '+age,at===age&&tech===(age===8),{at,tech,state:d.state});A.release(1,'THROW');}
+ setup('iori');const cmd=A.moves.iori.find(m=>m.commandThrow&&!m.od),d=grab(cmd.id);A.press(1,'THROW');check('command throw rejects tech',d.captured&&!C.inspect().some(e=>e.result==='tech'));A.release(1,'THROW');
+ setup();A.tryMove(1,'PAR');const parryVictim=grab();for(let i=0;i<120&&parryVictim.hp===10000;i++)A.step();check('parry throw snapshots damage bonus',parryVictim.hp===8560,{hp:parryVictim.hp});
+ setup();A.tryMove(0,'throw');A.tryMove(1,'throw');A.step(12);check('real simultaneous legal throw inputs allow pretech',C.inspect().some(e=>e.result==='tech')&&A.fighters.every(f=>f.hp===10000),C.inspect());
+ setup();A.press(0,'left');A.tryMove(1,'sLP');for(let i=0;i<40&&A.fighters[0].state!=='block';i++)A.step();A.press(0,'THROW');check('illegal throw input in block cannot install pretech',A.fighters[0].state==='block'&&!C.canPreTech(A.fighters[0],G),{intent:A.fighters[0]._inkThrowIntent});A.release(0,'THROW');A.release(0,'left');
+ setup('ryu',500);A.tryMove(0,'throw');A.step(10);A.press(0,'THROW');check('failed recovery input does not refresh expired legal intent',!C.canPreTech(A.fighters[0],G),{age:G.actionTick-A.fighters[0]._inkThrowIntent?.at,state:A.fighters[0].state});A.release(0,'THROW');A.step(35);check('real distant throw emits whiff once',C.inspect().filter(e=>e.result==='whiff').length===1,C.inspect());setup();INK.Kinetic.settings.enabled=false;A.tryMove(0,'throw');A.tryMove(1,'throw');A.step(12);check('legal simultaneous throws still pretech with visual master disabled',A.fighters.every(f=>f.hp===10000&&!f.captured&&f.state==='recovery'));INK.Kinetic.settings.enabled=true;setup('ryu',500);A.tryMove(0,'throw');const intent=A.fighters[0]._inkThrowIntent,at=G.actionTick;G.paused=true;for(let i=0;i<20;i++)A.renderFraction(i%3/2);check('paused render does not age legal action-frame intent',G.actionTick===at&&C.canPreTech(A.fighters[0],G)&&A.fighters[0]._inkThrowIntent===intent);return out;}''');b.close()
+for r in rows:print('PASS' if r['passed'] else 'FAIL',r)
+(O/'playable.json').write_text(json.dumps({'htmlSha256':hashlib.sha256(html).hexdigest(),'rows':rows,'errors':errors},indent=2)+'\n');assert all(r['passed'] for r in rows) and not errors,errors

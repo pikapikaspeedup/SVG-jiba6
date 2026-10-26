@@ -33,7 +33,7 @@
    f._inkTransition={id:m.id,bridge:INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,next),deadline),secondary:oldSecondary};
    // A separate visual bridge preserves a cancelled layer's displacement and
    // derivative. It does not replace the battle-owned incoming base bridge.
-   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;const guard=INK.GuardBody?.pose(view,kinetic)||kinetic;const strike=INK.StrikeMotion?.pose(view,guard)||guard;const recovery=INK.RecoveryMotion?.pose(view,strike)||strike;const aerial=INK.Aerial?.pose(view,recovery)||recovery;const pursuit=INK.AirPursuitFX?.pose(view,aerial)||aerial;const wake=INK.WakeFlow?.pose(view,pursuit)||pursuit;return INK.BodySupport?.pose(view,wake,world)||wake;};
+   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;const guard=INK.GuardBody?.pose(view,kinetic)||kinetic;const strike=INK.StrikeMotion?.pose(view,guard)||guard;const recovery=INK.RecoveryMotion?.pose(view,strike)||strike;const aerial=INK.Aerial?.pose(view,recovery)||recovery;const pursuit=INK.AirPursuitFX?.pose(view,aerial)||aerial;const wake=INK.WakeFlow?.pose(view,pursuit)||pursuit;const supported=INK.BodySupport?.pose(view,wake,world)||wake;return INK.ThrowBody?.pose(view,supported)||supported;};
    const visualTarget=graphAt(target,0),visualNext=graphAt(next,.25);
    f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),deadline)};
    // A pose-value bridge alone cannot preserve a compiled skeleton: the next
@@ -80,7 +80,7 @@
    if(old?._inkTimeline)for(const e of old._inkTimeline.cancel('state:'+next))this.lifecycleLog.push({character:f.ch.id,move:old.m.id,event:e.event.id,frame:e.frame,kind:e.kind,instance:e.instance,serial:e.serial});
    if(this.lifecycleLog.length>256)this.lifecycleLog.splice(0,this.lifecycleLog.length-256);
   },
-  visual(f,base,world=null){
+  visual(f,base,world=null,skipThrowConstraint=false){
    if(!this.enabled||!this.store)return base;
    const ctx=INK.State.contextForFX(f)||(()=>{const r=this.store.byGame(f.ch.id,'@idle');return r?{record:r,frame:(this.clock(f,f.stateAge||0)+(f.index||0)*13)%r.clip.duration}:null;})();
    let p=base;
@@ -95,13 +95,31 @@
    p=INK.AirPursuitFX?.pose(f,p)||p;
    p=INK.WakeFlow?.pose(f,p)||p;
    p=INK.BodySupport?.pose(f,p,world)||p;
+   p=INK.ThrowBody?.pose(f,p)||p;
    const visualTransition=f._inkVisualTransition;
    if(INK.MotionGraph.settings.enabled&&f.attack&&visualTransition?.id===f.attack.m.id)p=INK.Motion.apply(p,visualTransition.bridge,f.attack.t);
    if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
    p=INK.StateTransitions.compression(f,p);
    p=INK.StateTransitions.apply(f,p);
    p=INK.BodySupport?.constrainFeet(f,p,world)||p;
+   if(!skipThrowConstraint)p=this.throwGrip(f,p,world);
    return p;
+  },
+  throwGrip(f,p,world=null){
+   const action=f.throwAction,phase=INK.ThrowBody?.phase(action);
+   if(!INK.ThrowBody?.active()||!phase||action.owner!==f||phase.released||phase.grip<=0)return p;
+   const target=action.target;if(!target||target.throwAction!==action||target.captureKind!=='throw')return p;
+   // One-way sampling: the target never requests the owner's pose. Both use
+   // the same simulation-owned throw time, independent of drawing order.
+   const root=(actor,w)=>({x:w?.x??actor.x,y:665+(w?.y??actor.y),scale:w?.scale||actor.renderScale||actor.ch.scale||1,facing:w?.dir??actor.dir});
+   const targetWorld={x:target.x,y:target.y,dir:target.dir,scale:target.renderScale||target.ch.scale||1};
+   const q=this.visual(target,SVG_FIGHTER.pose(target),targetWorld,true),targetRig=this.visualRig(target,q),s=Rig.sockets(q,targetRig);
+   const collar=name=>vec.mix(s[name][0],s.chest,.3),tw=root(target,targetWorld);
+   const anchors={front:Rig.world(q,collar('rearArm'),tw),rear:Rig.world(q,collar('frontArm'),tw)},w=root(f,world),rig=this.visualRig(f,p);
+   const surface=name=>[[s[name][0],s[name][1]],[s[name][0],s.chest],[s.chest,vec.mix(s.chest,s.pelvis,.55)]].map(segment=>segment.map(point=>Rig.world(q,point,tw)));
+   const regions={front:surface('rearArm'),rear:surface('frontArm')};
+   const matrix=mat.multiply(mat.compose(w.x,w.y,0,w.scale*w.facing*(p.depth||1),w.scale),mat.multiply(mat.compose(p.rootShift||0,(p.floor||0)-180,p.spin||0),mat.compose(0,180))),inverse=mat.inverse(matrix);
+   return INK.ThrowBody.constrain(f,p,{rig,anchors,regions,character:this.profile(f.ch.id),toWorld:point=>Rig.world(p,point,w),toLocal:point=>mat.point(inverse,point)});
   },
   visualSample(f,record,frame,root){
    const m=f.attack.m,b=record.binding,gameFrame=phaseMap(frame,[0,b.startup,b.startup+b.active,record.clip.duration],[0,m.startup,m.startup+m.active,m.total]);

@@ -1,0 +1,53 @@
+{
+  "htmlSha256": "10044084b86273b1a013c768ddbcc989197226abb5f4c6300accb842bd886aed",
+  "stage": "Continuous round 4: clinch decisions, throw intent, independent arm planes and paired grip",
+  "goal": "active; a checkpoint does not finish continuous work",
+  "reports": [
+    {
+      "report": "qa/clinch/playable.json",
+      "checks": 10,
+      "passed": true
+    },
+    {
+      "report": "qa/clinch/throws.json",
+      "checks": 19,
+      "passed": true
+    },
+    {
+      "report": "qa/clinch/controls.json",
+      "checks": 3,
+      "passed": true
+    },
+    {
+      "report": "qa/clinch/cpu.json",
+      "checks": 3,
+      "passed": true
+    },
+    {
+      "report": "qa/clinch/source/validation.json",
+      "checks": 6,
+      "passed": true
+    },
+    {
+      "report": "qa/throw-body/playable.json",
+      "checks": 19,
+      "passed": true
+    },
+    {
+      "report": "qa/throw-body/frame-cost.json",
+      "checks": 16,
+      "passed": true
+    },
+    {
+      "report": "qa/flow6/anatomy.json",
+      "checks": 14,
+      "passed": true
+    }
+  ],
+  "unitChecks": [
+    "tests/clinch/unit.cjs",
+    "tests/throw-body/unit.cjs",
+    "tests/throw-body/arm-plane.cjs (384 plane cases)"
+  ],
+  "limitations": "All 16 t14 paired throws attach within .01; Cammy/Juri t4..23 attach continuously. Late Iori front-hand reach residual up to 27.57 world units is explicitly retained, not called exact attachment. Airthrow uses real stance eligibility with explicit airborne teleport setup. No endurance, competitive balance, subjective audio or hardware FPS claim."
+}

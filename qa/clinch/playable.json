@@ -1,0 +1,112 @@
+{
+  "htmlSha256": "10044084b86273b1a013c768ddbcc989197226abb5f4c6300accb842bd886aed",
+  "rows": [
+    {
+      "name": "ordinary throw tech boundary 8",
+      "passed": true,
+      "details": {
+        "at": 8,
+        "tech": true,
+        "state": "recovery"
+      }
+    },
+    {
+      "name": "ordinary throw tech boundary 9",
+      "passed": true,
+      "details": {
+        "at": 9,
+        "tech": false,
+        "state": "captured"
+      }
+    },
+    {
+      "name": "command throw rejects tech",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "parry throw snapshots damage bonus",
+      "passed": true,
+      "details": {
+        "hp": 8560
+      }
+    },
+    {
+      "name": "real simultaneous legal throw inputs allow pretech",
+      "passed": true,
+      "details": [
+        {
+          "id": 7,
+          "at": 103,
+          "result": "grab",
+          "actor": 0,
+          "target": 1,
+          "move": "throw",
+          "dir": 1,
+          "point": [
+            535.5,
+            435
+          ]
+        },
+        {
+          "id": 8,
+          "at": 103,
+          "result": "tech",
+          "actor": 0,
+          "target": 1,
+          "move": "throw",
+          "dir": 1,
+          "point": [
+            595,
+            435
+          ]
+        }
+      ]
+    },
+    {
+      "name": "illegal throw input in block cannot install pretech",
+      "passed": true,
+      "details": {
+        "intent": null
+      }
+    },
+    {
+      "name": "failed recovery input does not refresh expired legal intent",
+      "passed": true,
+      "details": {
+        "age": 10,
+        "state": "attack"
+      }
+    },
+    {
+      "name": "real distant throw emits whiff once",
+      "passed": true,
+      "details": [
+        {
+          "id": 9,
+          "at": 119,
+          "result": "whiff",
+          "actor": 0,
+          "target": null,
+          "move": "throw",
+          "dir": 1,
+          "point": [
+            540,
+            435
+          ]
+        }
+      ]
+    },
+    {
+      "name": "legal simultaneous throws still pretech with visual master disabled",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "paused render does not age legal action-frame intent",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": []
+}

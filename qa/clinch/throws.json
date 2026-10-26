@@ -1,0 +1,195 @@
+{
+  "htmlSha256": "10044084b86273b1a013c768ddbcc989197226abb5f4c6300accb842bd886aed",
+  "rows": [
+    {
+      "name": "ryu throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "ryu backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "ken throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "ken backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "chun throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "chun backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "cammy throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "cammy backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "luke throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "luke backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "juri throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "juri backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "mai throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "mai backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "iori throw impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1200,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "iori backthrow impacts once at edge",
+      "passed": true,
+      "details": {
+        "changes": 1,
+        "damage": 1150,
+        "impacts": 1,
+        "bounds": true
+      }
+    },
+    {
+      "name": "real air branch throw captures and impacts once",
+      "passed": true,
+      "details": {
+        "started": true,
+        "caught": true,
+        "changes": 1,
+        "move": "airthrow"
+      }
+    },
+    {
+      "name": "Pressure YIELD block protection rejects actual active throw",
+      "passed": true,
+      "details": {
+        "yielded": true,
+        "guardThrow": true,
+        "protectedChecks": 8,
+        "bypass": false
+      }
+    },
+    {
+      "name": "actual wake-up throw protection remains intact",
+      "passed": true,
+      "details": {
+        "rising": true,
+        "wakeThrow": true,
+        "grabDuringRise": false
+      }
+    }
+  ],
+  "errors": []
+}

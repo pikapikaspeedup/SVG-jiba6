@@ -81,20 +81,24 @@
   const source=sourceRig(c,p),f=frameInfo(p),r={},sockets={},depth={},turns={},projectors={};
   for(const name of parts){
    const leg=name.includes('Leg'),rear=name.startsWith('rear'),bone=leg?0:2;
-   const angle=yaw(p,leg?'leg':'arm'),sign=rear?-1:1,z=sign*(leg?5:8);
+   const bodyAngle=yaw(p,leg?'leg':'arm'),offset=leg?0:clamp(Number.isFinite(p[name+'Yaw'])?p[name+'Yaw']:0,-160,160),angle=bodyAngle+offset,sign=rear?-1:1,z=sign*(leg?5:8);
    // Legs turn about the gravity axis so a planted ankle stays at its
    // authored height. Arms turn in the chest frame, including torso lean.
    const basis=leg?mat.compose(f.source[0][4],f.source[0][5]):f.source[bone],inverse=mat.inverse(basis);
    const original=source[name].map(q=>leg?q:mat.point(f.body,q));
    const local=original.map(q=>mat.point(inverse,q));
    const rootX=local[0][0],slope=sign*(leg?.12:.2),a=rad(angle),cs=Math.cos(a),sn=Math.sin(a);
-   const projector=mat.multiply(basis,mat.multiply([cs+slope*sn,0,0,1,(z-rootX*slope)*sn,0],inverse));
+   // Arms can abduct out of the chest plane while their shoulder stays at
+   // the original torso projection. Zero offset is exactly the legacy plane.
+   const ba=rad(bodyAngle),rootProjected=rootX*Math.cos(ba)+z*Math.sin(ba),k=cs+slope*sn;
+   const projector=mat.multiply(basis,mat.multiply([k,0,0,1,rootProjected-rootX*k,0],inverse));
    projectors[name]=projector;
    const world=original.map(q=>mat.point(projector,q));
    // Arms retain the documented body-local compatibility representation. All
    // downstream users read world sockets from this same result, exactly once.
    r[name]=world.map(q=>leg?q:mat.point(f.invBody,q));sockets[name]=world;
-   depth[name]=local.map(q=>-q[0]*Math.sin(a)+(z+(q[0]-rootX)*slope)*Math.cos(a));
+   const rootDepth=-rootX*Math.sin(ba)+z*Math.cos(ba);
+   depth[name]=local.map(q=>rootDepth+(q[0]-rootX)*(-sn+slope*cs));
    turns[name]=angle;
   }
   // Head, neckline, belt and hair anchors share the skinned torso frame.
@@ -130,12 +134,13 @@
   // its authored local x instead of dividing by a nearly singular cosine.
   const leg=name.includes('Leg'),rear=name.startsWith('rear'),f=frameInfo(p),bone=leg?0:2;
   const basis=leg?mat.compose(f.source[0][4],f.source[0][5]):f.source[bone],inverse=mat.inverse(basis);
-  const q=mat.point(inverse,world),angle=yaw(p,leg?'leg':'arm'),a=rad(angle),sign=rear?-1:1;
+  const q=mat.point(inverse,world),bodyAngle=yaw(p,leg?'leg':'arm'),offset=leg?0:clamp(Number.isFinite(p[name+'Yaw'])?p[name+'Yaw']:0,-160,160),angle=bodyAngle+offset,a=rad(angle),sign=rear?-1:1;
   const z=sign*(leg?5:8),slope=sign*(leg?.12:.2),k=Math.cos(a)+slope*Math.sin(a);
   const source=sourceRig(c,p),root=mat.point(inverse,leg?source[name][0]:mat.point(f.body,source[name][0]));
   const key=leg?(rear?'ra':'fa'):(rear?'rw':'fw');
   const prev=mat.point(inverse,leg?p[key]:mat.point(f.body,p[key]));
-  const x=Math.abs(k)>.18?(q[0]-(z-root[0]*slope)*Math.sin(a))/k:prev[0];
+  const ba=rad(bodyAngle),rootProjected=root[0]*Math.cos(ba)+z*Math.sin(ba);
+  const x=Math.abs(k)>.18?root[0]+(q[0]-rootProjected)/k:prev[0];
   const actor=mat.point(basis,[x,q[1]]);
   return leg?actor:mat.point(f.invBody,actor);
  }

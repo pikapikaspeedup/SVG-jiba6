@@ -71,7 +71,7 @@
   }
   return {type:tier,strength:level*(context.punish?1.15:context.counter?1.07:1),pan:clamp((x-720)/900,-.65,.65),plan,zone,multi,style,part};
  }
- function commit(G,a,d,m,type,damage,context,play){if(!active())return;context=context||{};const z=d._inkReaction?.zone||zone(d,m,type,context.point),x=context.point?.[0]??d.x,q=audio(m,type,z,context,x);play(q.type,q.strength,q);
+ function commit(G,a,d,m,type,damage,context,play){if(!active()||!['hit','block','parry','throw','armor'].includes(type))return;context=context||{};const z=d._inkReaction?.zone||zone(d,m,type,context.point),x=context.point?.[0]??d.x,q=audio(m,type,z,context,x);play(q.type,q.strength,q);
   events.push({tick:G.tick,actorTick:d._inkVisualClock||0,zone:z,type,tier:q.type,pan:q.pan,multi:q.multi,style:q.style,part:q.part,damage,move:m.id});if(events.length>32)events.shift();
  }
  INK.StrikeFeel={settings,active,zone,response,audio,commit,clear:()=>{events=[];},inspect:()=>events.map(e=>({...e}))};
