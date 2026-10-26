@@ -1,0 +1,33 @@
+{
+  "stage": "continuous-5-strike-tempo",
+  "htmlSha256": "327d86d885aa8aabbbd8ad9d65e86fadec343ec6352e6c4f01401e94f89e3be1",
+  "source": "535ecf7d89a7f127",
+  "reports": {
+    "playable": {
+      "path": "qa/strike-tempo/playable.json",
+      "rows": 17
+    },
+    "visual": {
+      "path": "qa/strike-tempo/visual.json",
+      "rows": 18
+    },
+    "cpu": {
+      "path": "qa/strike-tempo/cpu.json",
+      "rows": 3
+    },
+    "controls": {
+      "path": "qa/strike-tempo/controls.json",
+      "rows": 6
+    },
+    "frame-cost": {
+      "path": "qa/strike-tempo/frame-cost.json",
+      "rows": 16
+    }
+  },
+  "limits": [
+    "CPU natural sample did not exercise feint selection",
+    "No display FPS, GPU/mobile or endurance claim",
+    "Some support-foot drift up to 5.87 world units; retained existing hit geometry",
+    "No new Pro consultation; two subagents reused"
+  ]
+}

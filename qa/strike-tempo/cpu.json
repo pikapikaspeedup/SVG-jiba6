@@ -1,0 +1,109 @@
+{
+  "htmlSha256": "327d86d885aa8aabbbd8ad9d65e86fadec343ec6352e6c4f01401e94f89e3be1",
+  "rows": [
+    {
+      "name": "natural CPU creates real button-origin heavy attacks",
+      "passed": true
+    },
+    {
+      "name": "natural CPU holds and releases heavy attacks",
+      "passed": true
+    },
+    {
+      "name": "CPU control handoff leaves no held attack keys",
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "actionFrames": 301,
+      "starts": 0,
+      "holds": 0,
+      "releases": 0,
+      "feints": 0,
+      "completed": 0,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 2,
+      "actionFrames": 301,
+      "starts": 0,
+      "holds": 0,
+      "releases": 0,
+      "feints": 0,
+      "completed": 0,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 3,
+      "actionFrames": 301,
+      "starts": 0,
+      "holds": 0,
+      "releases": 0,
+      "feints": 0,
+      "completed": 0,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 4,
+      "actionFrames": 301,
+      "starts": 1,
+      "holds": 1,
+      "releases": 1,
+      "feints": 0,
+      "completed": 1,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 5,
+      "actionFrames": 301,
+      "starts": 0,
+      "holds": 0,
+      "releases": 0,
+      "feints": 0,
+      "completed": 0,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 6,
+      "actionFrames": 301,
+      "starts": 3,
+      "holds": 2,
+      "releases": 2,
+      "feints": 0,
+      "completed": 3,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 7,
+      "actionFrames": 301,
+      "starts": 0,
+      "holds": 0,
+      "releases": 0,
+      "feints": 0,
+      "completed": 0,
+      "bad": [],
+      "stuck": false
+    },
+    {
+      "seed": 8,
+      "actionFrames": 301,
+      "starts": 0,
+      "holds": 0,
+      "releases": 0,
+      "feints": 0,
+      "completed": 0,
+      "bad": [],
+      "stuck": false
+    }
+  ],
+  "naturalFeints": 0,
+  "errors": []
+}

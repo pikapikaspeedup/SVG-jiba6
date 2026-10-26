@@ -1,0 +1,40 @@
+{
+  "htmlSha256": "327d86d885aa8aabbbd8ad9d65e86fadec343ec6352e6c4f01401e94f89e3be1",
+  "rows": [
+    {
+      "name": "practice hold button uses live origin",
+      "passed": true,
+      "detail": {
+        "phase": "holding"
+      }
+    },
+    {
+      "name": "paused explicit frame advance progresses hold",
+      "passed": true,
+      "detail": {
+        "age": 3
+      }
+    },
+    {
+      "name": "paused render cannot advance hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "practice feint button uses back plus RUSH",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "practice release clears own source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "panel release preserves another registered source",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "errors": []
+}

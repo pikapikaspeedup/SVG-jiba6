@@ -6,9 +6,9 @@
 (() => {
   const Input={frame:0,window:9,serial:0,
     begin(G) {if(G.screen==='battle'&&G.phase==='fight'&&!G.hitstop&&!(G.slow>0&&G.tick%2===0))this.frame++;},
-    enqueue(f,m,G,reason='early') {
+    enqueue(f,m,G,reason='early',origin=null) {
       if(!m||G.phase!=='fight'||f.hp<=0||f.captured||['throwing','ko','win'].includes(f.state))return false;
-      f.input.queue=[{m,t:G.tick,inkFrame:this.frame,serial:++this.serial,reason}];
+      f.input.queue=[{m,t:G.tick,inkFrame:this.frame,serial:++this.serial,reason,origin}];
       f._inkInput={status:'buffered',move:m.id,frame:this.frame,reason};this.log(f,{...f._inkInput,serial:this.serial});return false;
     },
     consume(f,G,request) {
@@ -16,7 +16,7 @@
       const age=q.inkFrame==null?G.tick-q.t:this.frame-q.inkFrame;
       if(age>this.window){f.input.queue.shift();f._inkInput={status:'expired',move:q.m.id,age};this.log(f,{...f._inkInput,serial:q.serial});return false;}
       if(G.hitstop)return false;
-      const ok=request(f,q.m,false);
+      const ok=request(f,q.m,false,q.origin);
       if(ok){if(f.input.queue[0]===q)f.input.queue.shift();f._inkInput={status:'consumed',move:q.m.id,age};this.log(f,{...f._inkInput,serial:q.serial});}return ok;
     },
     log(f,e){if(!f._inkInputLog)f._inkInputLog=[];f._inkInputLog.push({...e});if(f._inkInputLog.length>64)f._inkInputLog.shift();},

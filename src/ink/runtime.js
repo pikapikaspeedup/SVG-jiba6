@@ -33,7 +33,7 @@
    f._inkTransition={id:m.id,bridge:INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,next),deadline),secondary:oldSecondary};
    // A separate visual bridge preserves a cancelled layer's displacement and
    // derivative. It does not replace the battle-owned incoming base bridge.
-   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;const guard=INK.GuardBody?.pose(view,kinetic)||kinetic;const strike=INK.StrikeMotion?.pose(view,guard)||guard;const recovery=INK.RecoveryMotion?.pose(view,strike)||strike;const aerial=INK.Aerial?.pose(view,recovery)||recovery;const pursuit=INK.AirPursuitFX?.pose(view,aerial)||aerial;const wake=INK.WakeFlow?.pose(view,pursuit)||pursuit;const supported=INK.BodySupport?.pose(view,wake,world)||wake;return INK.ThrowBody?.pose(view,supported)||supported;};
+   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;const guard=INK.GuardBody?.pose(view,kinetic)||kinetic;const strike=INK.StrikeMotion?.pose(view,guard)||guard;const tempo=INK.StrikeTempoFX?.pose(view,strike)||strike;const recovery=INK.RecoveryMotion?.pose(view,tempo)||tempo;const aerial=INK.Aerial?.pose(view,recovery)||recovery;const pursuit=INK.AirPursuitFX?.pose(view,aerial)||aerial;const wake=INK.WakeFlow?.pose(view,pursuit)||pursuit;const supported=INK.BodySupport?.pose(view,wake,world)||wake;return INK.ThrowBody?.pose(view,supported)||supported;};
    const visualTarget=graphAt(target,0),visualNext=graphAt(next,.25);
    f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),deadline)};
    // A pose-value bridge alone cannot preserve a compiled skeleton: the next
@@ -90,6 +90,7 @@
    p=INK.Kinetic?.pose(f,p)||p;
    p=INK.GuardBody?.pose(f,p)||p;
    p=INK.StrikeMotion?.pose(f,p)||p;
+   p=INK.StrikeTempoFX?.pose(f,p)||p;
    p=INK.RecoveryMotion?.pose(f,p)||p;
    p=INK.Aerial?.pose(f,p)||p;
    p=INK.AirPursuitFX?.pose(f,p)||p;

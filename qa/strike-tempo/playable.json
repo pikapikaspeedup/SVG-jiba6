@@ -1,0 +1,147 @@
+{
+  "htmlSha256": "327d86d885aa8aabbbd8ad9d65e86fadec343ec6352e6c4f01401e94f89e3be1",
+  "rows": [
+    {
+      "name": "tap retains original startup progression",
+      "passed": true,
+      "details": {
+        "steps": 9,
+        "expected": 9,
+        "tempo": null
+      }
+    },
+    {
+      "name": "held HP stops for exactly twelve actionable steps",
+      "passed": true,
+      "details": {
+        "age": 12,
+        "t": 8,
+        "holdFrame": 7
+      }
+    },
+    {
+      "name": "unrelated release does not release heavy hold",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "release callback does not advance simulation",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "original release resumes remaining startup",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "real super freeze preserves held attack frame and age",
+      "passed": true,
+      "details": {
+        "hitstop": 17,
+        "super": "SA1"
+      }
+    },
+    {
+      "name": "pending release takes effect after freeze",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "feint charges half drive and starts twelve-frame recovery",
+      "passed": true,
+      "details": {
+        "drive": 6,
+        "after": 5.5,
+        "state": "recovery",
+        "stateT": 12
+      }
+    },
+    {
+      "name": "feint recovery rejects cancel entrances",
+      "passed": true,
+      "details": [
+        {
+          "id": "sLP",
+          "ok": false
+        },
+        {
+          "id": "RUSH",
+          "ok": false
+        },
+        {
+          "id": "PAR",
+          "ok": false
+        },
+        {
+          "id": "YIELD",
+          "ok": false
+        },
+        {
+          "id": "ESCAPE",
+          "ok": false
+        },
+        {
+          "id": "throw",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "name": "feint remains recovering before final step",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "feint recovery completes at twelve actions",
+      "passed": true,
+      "details": {
+        "state": "idle",
+        "stateT": 0
+      }
+    },
+    {
+      "name": "real incoming strike clears tempo",
+      "passed": true,
+      "details": {
+        "hp": 9686,
+        "state": "hit"
+      }
+    },
+    {
+      "name": "Luke real quarter-circle input starts native charge",
+      "passed": true,
+      "details": {
+        "id": "flash_1"
+      }
+    },
+    {
+      "name": "Luke unrelated release does not discharge",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "Luke release callback leaves attack clock unchanged",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "Luke retains perfect native release window",
+      "passed": true,
+      "details": {
+        "held": 20,
+        "perfect": true,
+        "damage": 1570
+      }
+    },
+    {
+      "name": "Luke native charge still times out at thirty-six",
+      "passed": true,
+      "details": {
+        "ticks": 36,
+        "damage": 1274
+      }
+    }
+  ],
+  "errors": []
+}

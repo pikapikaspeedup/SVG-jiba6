@@ -1,0 +1,119 @@
+{
+  "htmlSha256": "327d86d885aa8aabbbd8ad9d65e86fadec343ec6352e6c4f01401e94f89e3be1",
+  "scope": "Sequential real held HP/HK simulation + SVG/VFX DOM render, one full-action warmup. CPU only.",
+  "rows": [
+    {
+      "id": "ryu",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.424999992052714,
+      "p95": 1.9000000953674316
+    },
+    {
+      "id": "ryu",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.2416666746139526,
+      "p95": 1.4000000953674316
+    },
+    {
+      "id": "ken",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.4333333174387615,
+      "p95": 2.4000000953674316
+    },
+    {
+      "id": "ken",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.3416666587193806,
+      "p95": 2.1999998092651367
+    },
+    {
+      "id": "chun",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.450000007947286,
+      "p95": 2.200000286102295
+    },
+    {
+      "id": "chun",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.2583333253860474,
+      "p95": 2.0999999046325684
+    },
+    {
+      "id": "cammy",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.2083333333333333,
+      "p95": 1.4000000953674316
+    },
+    {
+      "id": "cammy",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.174999992052714,
+      "p95": 1.6999998092651367
+    },
+    {
+      "id": "luke",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.375,
+      "p95": 2.200000286102295
+    },
+    {
+      "id": "luke",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.2666666905085247,
+      "p95": 2
+    },
+    {
+      "id": "juri",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.2083333333333333,
+      "p95": 1.3000001907348633
+    },
+    {
+      "id": "juri",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.1083333094914753,
+      "p95": 1.3999996185302734
+    },
+    {
+      "id": "mai",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.2583333253860474,
+      "p95": 1.5
+    },
+    {
+      "id": "mai",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.2833333015441895,
+      "p95": 1.9000000953674316
+    },
+    {
+      "id": "iori",
+      "key": "HP",
+      "holdFrames": 12,
+      "mean": 1.2083333333333333,
+      "p95": 1.8999996185302734
+    },
+    {
+      "id": "iori",
+      "key": "HK",
+      "holdFrames": 12,
+      "mean": 1.3833333651224773,
+      "p95": 2.9000000953674316
+    }
+  ],
+  "errors": []
+}
