@@ -7,6 +7,12 @@
 (() => {
  const {mat,vec,Rig,clamp}=INK;
  function phaseMap(t,from,to){for(let i=0;i<3;i++)if(t<=from[i+1]||i===2)return to[i]+clamp((t-from[i])/Math.max(.001,from[i+1]-from[i]))*(to[i+1]-to[i]);return to[3];}
+ function contactWeight(f){
+  if(!INK.StrikeScore?.supports(f))return 0;
+  const {m,t}=f.attack,end=m.startup+m.active,handoff=Math.min(2,Math.max(0,m.startup-1)),lead=Math.min(3,Math.max(.001,m.startup-handoff)),tail=Math.min(5,m.recovery/3);
+  const u=clamp(t<m.startup?(t-m.startup+lead)/lead:t<=end?1:1-(t-end)/Math.max(.001,tail));
+  return u*u*(3-2*u);
+ }
  function socket(p,rig,name){if(name==='fanGrip'||name==='fanTip')return INK.Motion.fanSocket(p,rig,name);const r=Rig.sockets(p,rig),lut={frontHand:['frontArm',2],rearHand:['rearArm',2],frontElbow:['frontArm',1],rearElbow:['rearArm',1],frontFoot:['frontLeg',2],rearFoot:['rearLeg',2],frontKnee:['frontLeg',1],rearKnee:['rearLeg',1]};if(name==='root')return[0,0];if(lut[name])return r[lut[name][0]][lut[name][1]];return r[name]||r.chest;}
  const Runtime={enabled:true,sourceStore:null,sessionStore:null,get store(){return this.sessionStore||this.sourceStore;},eventLog:[],profileCache:new Map(),lifecycleLog:[],actionSerial:0,
   install(store){this.sourceStore=store;store.on(()=>{if(!this.sessionStore)this.invalidate();});return this;},
@@ -30,24 +36,30 @@
    const oldCtx=INK.State.contextForFX(source);
    const oldSecondary=this.presentation(source,oldCtx?.record,oldCtx?.frame||0,source.attack?.t||0);
    f._inkActionOrigin={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1,t:0};
-   const deadline=Math.min(5,Math.max(0,m.startup-1));
+   const scoredIncoming=INK.StrikeScore?.supports(incomingView),deadline=Math.min(5,Math.max(0,m.startup-1)),visualDeadline=scoredIncoming?Math.min(2,deadline):deadline;
    f._inkTransition={id:m.id,bridge:INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,next),deadline),secondary:oldSecondary};
    // A separate visual bridge preserves a cancelled layer's displacement and
    // derivative. It does not replace the battle-owned incoming base bridge.
+   if(!scoredIncoming){
    const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};return this.composeLayers(view,INK.Motion.apply(p,f._inkTransition.bridge,t),world,{record:rec,frame:this.clipFrame(rec,m,t)});};
    const visualTarget=graphAt(target,0),visualNext=graphAt(next,.25);
-   f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),deadline)};
+   f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),visualDeadline)};
    // A pose-value bridge alone cannot preserve a compiled skeleton: the next
    // clip owns a different angular trajectory. Carry actual joint rotations
    // and their derivatives, then expire before the first active frame.
    let incoming=INK.Motion.apply(visualTarget,f._inkVisualTransition.bridge,0),incomingNext=INK.Motion.apply(visualNext,f._inkVisualTransition.bridge,.25);
    const constrained=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};return INK.BodySupport?.constrainFeet(view,p,world)||p;};incoming=constrained(incoming,0);incomingNext=constrained(incomingNext,.25);
-   f._inkJointTransition={id:m.id,...INK.Articulation.bridge(Rig.solveAnimation(profile,visualFrom),Rig.solveAnimation(profile,visualPrevious),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),deadline,dt)};
+   f._inkJointTransition={id:m.id,...INK.Articulation.bridge(Rig.solveAnimation(profile,visualFrom),Rig.solveAnimation(profile,visualPrevious),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),visualDeadline,dt)};
+   }else{
+    // One world-frame handoff owns scored entries. Do not also accumulate
+    // the older pose-value and angular residual bridges on the same limb.
+    f._inkVisualTransition=null;f._inkJointTransition=null;
+   }
    // Aim the short contact-limb handoff at its actual deadline pose. Chasing
    // each moving startup pose left most of a cross-side punch for the last frame.
-   incomingView.attack={m,t:deadline};incomingView._inkVisualClock=(f._inkVisualClock||0)+deadline;
+   incomingView.attack={m,t:visualDeadline};incomingView._inkVisualClock=(f._inkVisualClock||0)+visualDeadline;
    const deadlinePose=this.visual(incomingView,A.pose(incomingView),world);
-   INK.FrameBridge?.begin(f,INK.FrameBridge.capture(source,visualFrom),{state:'attack',attack:m.id,duration:deadline,deadlineFrame:INK.VisualFrame?.get(deadlinePose),carry:m.movementStrike?.budget||0});
+   INK.FrameBridge?.begin(f,INK.FrameBridge.capture(source,visualFrom),{state:'attack',attack:m.id,duration:visualDeadline,deadlineFrame:INK.VisualFrame?.get(deadlinePose),carry:m.movementStrike?.budget||0});
   },
   sample(f,m,t,base){
    if(!this.enabled||!this.store)return null;const record=this.record(f,m);if(!record)return null;
@@ -91,12 +103,15 @@
    let p=base;
    if(!ctx)return p;
    const context=world?{...world,history:f._inkTrail?.rows,origin:f._inkActionOrigin,airborne:f.y<-2}:null;
-   p=INK.MotionGraph.compose(ctx.record,ctx.frame,p,this.profile(f.ch.id),context);
+   const scored=INK.StrikeScore?.supports(f);
+   // Score owns the authored body/guard/fan tracks. Preserve independent
+   // secondary dynamics, but do not add the old motion5 score a second time.
+   p=scored?INK.copy(p):INK.MotionGraph.compose(ctx.record,ctx.frame,p,this.profile(f.ch.id),context);
    p=INK.Kinetic?.pose(f,p)||p;
    p=INK.GuardBody?.pose(f,p)||p;
-   p=INK.StrikeMotion?.pose(f,p)||p;
+   p=scored?INK.StrikeScore.sample(f,p):INK.StrikeMotion?.pose(f,p)||p;
    p=INK.StrikeTempoFX?.pose(f,p)||p;
-   p=INK.RecoveryMotion?.pose(f,p)||p;
+   if(!scored)p=INK.RecoveryMotion?.pose(f,p)||p;
    p=INK.Aerial?.pose(f,p)||p;
    p=INK.AirPursuitFX?.pose(f,p)||p;
    p=INK.WakeFlow?.pose(f,p)||p;
@@ -122,12 +137,19 @@
    if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
    p=INK.StateTransitions.compression(display,p);
    p=INK.StateTransitions.apply(display,p);
+   const strikeWeight=contactWeight(f);
+   if(strikeWeight){
+    const q=INK.Articulation.inherit(p,INK.copy(p)),kick=f.attack.m.contactPart==='foot'||f.attack.m.pose==='kick';
+    const keys=['lean','bob','pelvis','pelvisYaw','turn','yaw','spin','floor','rootShift','depth',...(kick?[]:['chest','chestYaw']),...(f.ch.id==='mai'?['fan','fanAngle']:[])];
+    for(const key of keys){const fallback=key==='depth'?1:0,from=p[key]??fallback,to=base[key]??fallback;q[key]=from+(to-from)*strikeWeight;}p=q;
+   }
    if(!movingFrame)p=INK.BodySupport?.constrainFeet(f,p,world)||p;
    if(!skipThrowConstraint)p=this.throwGrip(f,p,world);
    if(INK.VisualFrame&&!f._inkRawVisual){
     // Each evaluation owns its frame; never attach to a cached authored pose.
     const final=INK.copy(p);INK.Articulation.inherit(p,final);
-    const built=INK.VisualFrame.build(f,p,{world,time:this.clock(f),facing:INK.FacingMotion?.sample(f,this.clock(f),world)}),frame=INK.FrameBridge?.apply(f,built,{world,time:this.clock(f)})||built;
+    const built=INK.VisualFrame.build(f,p,{world,time:this.clock(f),facing:INK.FacingMotion?.sample(f,this.clock(f),world)}),handed=INK.FrameBridge?.apply(f,built,{world,time:this.clock(f)})||built;
+    const frame=strikeWeight&&INK.StrikeContact?.apply?INK.StrikeContact.apply(f,handed,{combatPose:base,weight:strikeWeight}):handed;
     p=INK.VisualFrame.attach(final,this.combatView(f,frame));
    }
    return p;

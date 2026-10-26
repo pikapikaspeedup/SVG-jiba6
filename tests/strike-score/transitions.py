@@ -1,0 +1,21 @@
+from pathlib import Path
+import os,json,hashlib
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];raw=(R/'dist/INK-Street-Fighter-6.html').read_bytes();errors=[]
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page();p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(raw.decode());p.wait_for_function('window.INKDuel?.ready&&INK.StrikeScore');p.locator('.kinetic-launch button').click()
+ result=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state,V=INK.VisualFrame,dist=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]),frame=f=>V.get(A.visualPose(f)),gap=(a,b)=>Math.max(...['rearArm','frontArm','rearLeg','frontLeg'].flatMap(n=>a.joints3D[n].map((p,i)=>dist(p,b.joints3D[n][i])))),setup=(one='ryu',two='mai',x=450,y=1150)=>{A.start(one,two,'training','classic',42);G.paused=true;document.getElementById('dummy').value='idle';document.getElementById('autohp').checked=false;A.teleport(0,x);A.teleport(1,y);};
+ const left=[];for(const [id,move]of [['mai','sHP'],['ryu','sMP'],['chun','cMK']]){setup('ryu',id);A.tryMove(1,move);const f=A.fighters[1],m=f.attack.m,n=move==='cMK'?'frontLeg':'frontArm';let minDet=Infinity,activeError=0,repeat=true;while(f.attack){for(const dt of [0,.25,.5,.75]){if(f.attack.t+dt>=m.total)continue;const view=Object.create(f);view.attack={...f.attack,t:f.attack.t+dt};view._inkVisualClock=f._inkVisualClock+dt;const cp=A.pose(view),vf=frame(view),ef=vf.endFrames[n];minDet=Math.min(minDet,Math.abs(ef[0]*ef[3]-ef[1]*ef[2]));repeat&&=JSON.stringify(vf.joints3D)===JSON.stringify(frame(view).joints3D);if(view.attack.t>=m.startup&&view.attack.t<=m.startup+m.active){const target=INK.Rig.sockets(cp,INK.Runtime.rig(view,cp))[n].map(q=>INK.Rig.world(cp,q,{x:0,y:0,scale:1,facing:view.dir}));activeError=Math.max(activeError,...target.map((q,i)=>dist(q,vf.joints3D[n][i])));}}A.step();}left.push({id,move,minDet,activeError,repeat});}
+ setup('ryu','mai',600,735);A.tryMove(1,'sHP');A.step(7);A.tryMove(0,'sLP');for(let i=0;i<35&&!A.fighters[1]._inkHitEpisode;i++)A.step();const d=A.fighters[1],hit=frame(d),held=JSON.stringify(hit),combat=JSON.stringify(A.combatState());for(let i=0;i<5;i++)A.renderFraction(i/4);const interruption={owns:INK.HitEpisode.owns(d),source:d._inkHitEpisode?.source?.contactCompatibility,pure:held===JSON.stringify(frame(d))&&combat===JSON.stringify(A.combatState())};
+ // Small deformation of a real scored carrier must preserve its fan basis.
+ setup('ryu','mai');A.tryMove(1,'sHP');A.step(12);const f=A.fighters[1],vf=frame(f),carrier=INK.HitBodyFrame.capture(vf),tiny=INK.HitBodyFrame.deform(carrier,{lean:1e-7},{world:{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1},dir:f.dir});const fanContinuity=Math.max(...tiny.fanFrames.frontArm.map((v,i)=>Math.abs(v-vf.fanFrames.frontArm[i])));
+ setup('ryu','ryu',600,735);A.tryMove(0,'sMP');const a=A.fighters[0];for(let i=0;i<40&&!a.attack?.hitConfirmed;i++)A.step();const next=A.moves.ryu.find(m=>m.category==='special'&&!m.od&&A.canCancel(a,m));if(!next)throw Error('No legal cancel');for(let i=0;i<30&&!A.decide(0,next.id).ok;i++)A.step();const before=frame(a),ok=A.tryMove(0,next.id),cancel={accepted:ok,move:next.id,entryError:gap(before,frame(a))};
+ setup('ryu','ken');A.step();A.press(0,'right');A.step();A.release(0,'right');A.step();A.press(0,'right');A.step();A.press(0,'MP');for(let i=0;i<8&&!A.fighters[0].attack;i++)A.step();const runner=A.fighters[0],carry={...runner.attack?.m.movementStrike},recovery=runner.attack?.m.recovery;A.step(8);const movement={carry,recovery,spent:runner._inkMovementStrike?.spent??carry.budget,x:runner.x};
+ return {left,interruption,fanContinuity,cancel,movement};}''');b.close()
+result.update(sha256=hashlib.sha256(raw).hexdigest(),errors=errors);(R/'qa/strike-score/transitions.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n');print(json.dumps(result,ensure_ascii=False))
+assert not errors
+assert all(r['minDet']>1e-5 and r['activeError']<1e-6 and r['repeat'] for r in result['left'])
+assert result['interruption']['owns'] and result['interruption']['pure']
+assert result['fanContinuity']<1e-4
+assert result['cancel']['accepted'] and result['cancel']['entryError']<1e-6
+assert 0<result['movement']['carry']['budget']<=18

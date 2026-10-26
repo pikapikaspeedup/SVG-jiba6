@@ -1,0 +1,79 @@
+{
+  "stage": "phase13-strike-score",
+  "status": "stage checkpoint; continuous goal remains active",
+  "sha256": "56d2a8e4dbddc1bd1b1f3b18650bbb9ad1c1e62e7b51d64954107e8c6e27acc0",
+  "scope": "24 normals, actual contact chain alignment, per-character preparation/recovery, native-length compatibility carrier and attachment continuity",
+  "checks": {
+    "sourceGate": "6/6 passed; 707 original assets preserved; production JavaScript syntax",
+    "scoreUnits": [
+      "unit.cjs passed",
+      "context.cjs passed",
+      "exchange-facts/unit.cjs passed"
+    ],
+    "playableSamples": 144,
+    "maxActiveChainError": 1.1718571004216928e-13,
+    "maxNativeLengthError": 8.526512829121202e-14,
+    "leftFractional": [
+      {
+        "id": "mai",
+        "move": "sHP",
+        "minDet": 0.4470945261136369,
+        "activeError": 1.139086659085919e-13,
+        "repeat": true
+      },
+      {
+        "id": "ryu",
+        "move": "sMP",
+        "minDet": 0.6633194738005788,
+        "activeError": 1.1457157353758233e-13,
+        "repeat": true
+      },
+      {
+        "id": "chun",
+        "move": "cMK",
+        "minDet": 0.4629807429946407,
+        "activeError": 2.929642751054232e-14,
+        "repeat": true
+      }
+    ],
+    "cancel": {
+      "accepted": true,
+      "move": "hadoken_0",
+      "entryError": 0
+    },
+    "hitInterruption": {
+      "owns": true,
+      "source": {
+        "name": "frontArm",
+        "lambda": 1.1154239004629625,
+        "legacyRigIsReference": true
+      },
+      "pure": true
+    },
+    "fanTinyDeformationError": 2.5404449388588546e-07,
+    "movement": {
+      "carry": {
+        "dir": 1,
+        "budget": 18,
+        "frames": 5,
+        "penalty": 2,
+        "source": "dash"
+      },
+      "recovery": 15,
+      "spent": 18,
+      "x": 498.815
+    }
+  },
+  "visualReview": [
+    "poses-sMP.png",
+    "poses-sHP.png",
+    "poses-cMK.png"
+  ],
+  "limits": [
+    "Active trajectories still follow original combat, not redesigned combat geometry.",
+    "Legacy screen stretch is explicit; native lengths remain fixed, not a rigid 3D projection claim.",
+    "Only the selected 24 normal move templates use the score; special instances fall back.",
+    "Fan basis and combat reference points align; stylized fan skin is not an exact hitbox silhouette.",
+    "No new performance or endurance claim."
+  ]
+}

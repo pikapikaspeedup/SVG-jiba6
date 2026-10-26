@@ -1,0 +1,54 @@
+{
+  "left": [
+    {
+      "id": "mai",
+      "move": "sHP",
+      "minDet": 0.4470945261136369,
+      "activeError": 1.139086659085919e-13,
+      "repeat": true
+    },
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "minDet": 0.6633194738005788,
+      "activeError": 1.1457157353758233e-13,
+      "repeat": true
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "minDet": 0.4629807429946407,
+      "activeError": 2.929642751054232e-14,
+      "repeat": true
+    }
+  ],
+  "interruption": {
+    "owns": true,
+    "source": {
+      "name": "frontArm",
+      "lambda": 1.1154239004629625,
+      "legacyRigIsReference": true
+    },
+    "pure": true
+  },
+  "fanContinuity": 2.5404449388588546e-07,
+  "cancel": {
+    "accepted": true,
+    "move": "hadoken_0",
+    "entryError": 0
+  },
+  "movement": {
+    "carry": {
+      "dir": 1,
+      "budget": 18,
+      "frames": 5,
+      "penalty": 2,
+      "source": "dash"
+    },
+    "recovery": 15,
+    "spent": 18,
+    "x": 498.815
+  },
+  "sha256": "56d2a8e4dbddc1bd1b1f3b18650bbb9ad1c1e62e7b51d64954107e8c6e27acc0",
+  "errors": []
+}

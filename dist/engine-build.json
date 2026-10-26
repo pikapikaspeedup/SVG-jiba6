@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256-source-manifest-v1",
-  "id": "b483f21eca8880be17f6099504312da8fb9fe03987d0d38d175f070bed0c414b",
+  "id": "0cd04329486db1f8a1044e472bf81bd3e302b62a57e19192cb474d04adc57146",
   "files": {
     "assets/ink/characters/cammy/model.json": "7e751719b23e3f12a393b3f94561c44f26063e6b37f826dc4e545172c6e34e11",
     "assets/ink/characters/cammy/moves/CA.json": "24953b636023bcdd53801a6e2d307e7a86d5e1e081b256ccbd21eef1b911aa0b",
@@ -804,12 +804,12 @@
     "src/ink/effects.js": "50f2082444431df9b8258a737b240604b61420dd11b56dcced1e2a08fb96d0e2",
     "src/ink/engine-clock.js": "bbff8a989a4766f81ea8225dc28c59af74f7bcc85cec683d178c11d62e894f86",
     "src/ink/exchange-duel.js": "d8d4282b869140a2bd3bf7e36993acfdac318dd527ab40c27ade5b06744f64a8",
-    "src/ink/exchange-facts.js": "619050ea29d149068d9badb5726f683bb2b0df763a4a1e04f3468b345ee5807d",
+    "src/ink/exchange-facts.js": "9bb9f3286fa52fc90d7329f92a72890cad69b9c7b43d185df36a80f51f484977",
     "src/ink/facing-motion.js": "b1f60a82c499562784d95303d2ce5da846535a375bbf687bc6307260fe18c861",
     "src/ink/flow-chain.js": "818afb48053e839ab1b9f46f3f75af644930b4e1d43a08f6fd304afa50ff3c57",
     "src/ink/foot-constraint.js": "ec1a2710b97e3950a9eb8a889a1f3fb00320ebb0b6b0a5370b5271f1c9785ea1",
     "src/ink/frame-bridge.js": "d646ba8d5e121796ab4d4296f2a3de03213696bdc32621e8bfec776c34af769b",
-    "src/ink/frame-deform.js": "58387224d165af4785dbc7a07dcad20ab8299be943517f6c4b8b847c103076e9",
+    "src/ink/frame-deform.js": "9d1ae96ac4b5b6217d5f73ec61f3940c54833c0da0c156cd9d152aa0eb0c6464",
     "src/ink/frame-probe.js": "7a10349e663c838d9c7ae0106386c1f26ca60d569b5ed7b4aac99022a73b99f7",
     "src/ink/fx-emitter.js": "26870b0f21897a3af68dff3154458d12ef7fd5d59e54d6a2c2998f9ddcccf183",
     "src/ink/fx-timeline.js": "45e2a3bca5e9cf35a93d7ffd97ab045d785758868ad081a6f57a4ff757677bba",
@@ -841,7 +841,7 @@
     "src/ink/recovery-motion.js": "8ec67929da4baaaa1d1b02fd03924a6a3772d7022a9d6c72f6fcc71dcc232765",
     "src/ink/renderer.js": "491bbd26d0075f1f3bb52c7b40267ded36762402a03688c7bceca46989418c7e",
     "src/ink/ribbon-geometry.js": "c84dbedd42895158e495d0776e615a2ce1747c9d62bd0912345553c10950ee61",
-    "src/ink/runtime.js": "2bf67423d16345b36d3138e333e421be2698955fb2b1971b7540f38f96b9aed0",
+    "src/ink/runtime.js": "061818092f80f7bcacd3dbb398b850469b5904a2ff87969bf2f85ae72c6b7074",
     "src/ink/scene-feedback.js": "66f3aa5cda9916f18b9f683b445464d702d8df5ef51582f5f6bb267a5dce80f5",
     "src/ink/secondary-dynamics.js": "97b7a5d73e314a651a45d94387397b1eb31a3f9771554b3bc5eeec5fa78fff2d",
     "src/ink/session-config.js": "abde290ca7083ff9f2d9a55f2a2cf7d71eb7413541199b1fed0cff6716f569a5",
@@ -850,8 +850,11 @@
     "src/ink/stage-light.js": "e30f6d81ebb79d460e19ca20edf84da83a5479915501d06df37ba344a5c05e93",
     "src/ink/state-transitions.js": "5d437364624ef13644b4095f47f5b641a5d3065640e4d7df142b319faf869f5b",
     "src/ink/states.js": "16edf2e29f51af97e65d70b444ebaac247db949964fbccb9f9b32a49894c93f4",
+    "src/ink/strike-contact.js": "26e9f409e38b2aca74b34f4d576cca4ef50e0bf20988b09a4cb7558cca0ff47d",
     "src/ink/strike-feel.js": "dd7751eb17d7cb7012d306fb42d7b60955bbe576d198974f569191c1866280e7",
     "src/ink/strike-motion.js": "0c12edf01c3bdc7774d1a3d59c1a189d6b8b0dad23f8cf949f3e14f21de5f766",
+    "src/ink/strike-score-data.js": "2590f777d2fd4654752b46ab0dbb76af6d7e49833508e7822ebe05e60859ff98",
+    "src/ink/strike-score.js": "e5807c9e90277a19a1c552b707899b17663303d87a72be81da6ed1156c98a702",
     "src/ink/strike-tempo-fx.js": "14dfaa596a18e703eed2faca8232deae6daa82e2650647e77050f37aa7989d15",
     "src/ink/strike-tempo.js": "15a54e9cdee09e0938e292db1543963933680f87015040db1136e0b1f89ab074",
     "src/ink/super-director.js": "55f8d810e21e2e50bf3f42d6c63006873215c56acc85c2921a45f494fdfae2bf",
@@ -864,6 +867,6 @@
     "src/models/head.js": "37bcc482716537fbd4dec6b7e780462e34a911637d860a4c4f9b75c099920902",
     "src/models/torso.js": "6f92d56259a58cd11147f3d5fecb38f8e718a549100581367c054cfa4a89df74",
     "street-fighter-6.html": "6c11e99deefc6a3eeab2c15c97d13c9bdfba53d0b71a137a322560832832b1a9",
-    "tools/build_forge.py": "01a4c34ad3b326abefa169e2513560efaf214f8c0d95a75a310d254c11f876d9"
+    "tools/build_forge.py": "fdf647f037d499b3d8393c62948b1666433f0026d43d0c86b60b605cbc2c7990"
   }
 }

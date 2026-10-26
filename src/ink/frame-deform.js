@@ -20,7 +20,18 @@
    surfaces[n]=INK.Anatomy.surfaceInfo(c.id,original,sockets[n],depth[n],heading);
    const authoredAngle=leg?(n.startsWith('rear')?source.legacyPose?.rfoot:source.legacyPose?.ffoot)||0:Math.atan2(source.endFrames[n][1],source.endFrames[n][0])*180/Math.PI;
    const config={kind:leg?'foot':'hand',scale:leg?(c.female?.79:.88):(c.female?.7:c.id==='luke'?.88:.82),heading:heading*Math.PI/180,authoredAngle};
-   endFrames[n]=INK.VisualFrame.thickEndFrame(chain,config);if(source.fanFrames?.[n])fanFrames[n]=INK.VisualFrame.thinFanFrame(chain,config);
+   if(source.contactCompatibility?.name===n){
+    // A scored contact may carry a combat-sized fan or a reflected hand
+    // template. Transport its captured attachment basis; rebuilding a generic
+    // end frame would visibly change it at an arbitrarily small hit response.
+    const before=source.joints3D[n],direction=q=>Math.atan2(q[2][1]-q[1][1],q[2][0]-q[1][0]);
+    const angle=(direction(chain)-direction(before))*180/Math.PI,M=INK.mat;
+    const carry=M.multiply(M.compose(chain[2][0],chain[2][1],angle),M.compose(-before[2][0],-before[2][1]));
+    endFrames[n]=M.multiply(carry,source.endFrames[n]);
+    if(source.fanFrames?.[n])fanFrames[n]=M.multiply(carry,source.fanFrames[n]);
+   }else{
+    endFrames[n]=INK.VisualFrame.thickEndFrame(chain,config);if(source.fanFrames?.[n])fanFrames[n]=INK.VisualFrame.thinFanFrame(chain,config);
+   }
   }
   for(const [n,p] of Object.entries(joints)){if(p.length!==3||!p.every(Number.isFinite))throw TypeError('Finite XYZ torso joints required');joints3D[n]=p.slice();sockets[n]=p.slice(0,2);}
   Object.defineProperties(rig,{profile:{value:c},anatomy:{value:{...old,sockets,depth,surfaces,turns,projectors}}});

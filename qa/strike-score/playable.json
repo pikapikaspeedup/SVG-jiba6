@@ -1,0 +1,2054 @@
+{
+  "rows": [
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "t": 3,
+      "accepted": true,
+      "active": false,
+      "chainError": 106.88173447231561,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "t": 6,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9999999999999996,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "t": 7,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "t": 14,
+      "accepted": true,
+      "active": false,
+      "chainError": 62.787511903149976,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9999999999999993,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sMP",
+      "t": 20,
+      "accepted": true,
+      "active": false,
+      "chainError": 14.702970485364155,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 46.1485709777754,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.728578676879116e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.03,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.03,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "t": 14,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0300000000000007,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "t": 20,
+      "accepted": true,
+      "active": false,
+      "chainError": 94.20998766917576,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "t": 31,
+      "accepted": true,
+      "active": false,
+      "chainError": 15.501378794914014,
+      "nativeError": 0,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 11.32001607936769,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "t": 17,
+      "accepted": true,
+      "active": false,
+      "chainError": 61.205378545693726,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "t": 25,
+      "accepted": true,
+      "active": false,
+      "chainError": 55.42542152316528,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "sMP",
+      "t": 2,
+      "accepted": true,
+      "active": false,
+      "chainError": 46.80138250668448,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "sMP",
+      "t": 5,
+      "accepted": true,
+      "active": true,
+      "chainError": 4.0194366942304644e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.94,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sMP",
+      "t": 6,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9399999999999998,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sMP",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9400000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sMP",
+      "t": 12,
+      "accepted": true,
+      "active": false,
+      "chainError": 19.270928932453973,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9566779192386825,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sMP",
+      "t": 18,
+      "accepted": true,
+      "active": false,
+      "chainError": 12.133401086205998,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 135.97789446713483,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0000000000000004,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "t": 15,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "t": 21,
+      "accepted": true,
+      "active": false,
+      "chainError": 13.96020253964002,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "t": 31,
+      "accepted": true,
+      "active": false,
+      "chainError": 31.071929075647972,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "t": 3,
+      "accepted": true,
+      "active": false,
+      "chainError": 35.82897832207218,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "t": 7,
+      "accepted": true,
+      "active": true,
+      "chainError": 7.105427357601002e-15,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999996,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.0097183471152322e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.0097183471152322e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "t": 15,
+      "accepted": true,
+      "active": false,
+      "chainError": 85.31950913607382,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "t": 23,
+      "accepted": true,
+      "active": false,
+      "chainError": 9.873050331625652,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "sMP",
+      "t": 2,
+      "accepted": true,
+      "active": false,
+      "chainError": 47.508119262247064,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "sMP",
+      "t": 5,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0400000000000007,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sMP",
+      "t": 6,
+      "accepted": true,
+      "active": true,
+      "chainError": 4.0194366942304644e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0400000000000005,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sMP",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.1368683772161603e-13,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0400000000000003,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sMP",
+      "t": 11,
+      "accepted": true,
+      "active": false,
+      "chainError": 33.058543354127764,
+      "nativeError": 8.526512829121202e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0288813871742108,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sMP",
+      "t": 17,
+      "accepted": true,
+      "active": false,
+      "chainError": 15.179219030980903,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 91.33410763144096,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.1000000000000003,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "t": 15,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.859285502108464e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0999999999999996,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "t": 21,
+      "accepted": true,
+      "active": false,
+      "chainError": 44.90055428997262,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "t": 32,
+      "accepted": true,
+      "active": false,
+      "chainError": 7.390324302214115,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 24.080408827015866,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 7.105427357601002e-15,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000004,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "t": 17,
+      "accepted": true,
+      "active": false,
+      "chainError": 47.0785398154108,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "t": 26,
+      "accepted": true,
+      "active": false,
+      "chainError": 74.92603445690618,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "sMP",
+      "t": 2,
+      "accepted": true,
+      "active": false,
+      "chainError": 49.4366291843948,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "sMP",
+      "t": 5,
+      "accepted": true,
+      "active": true,
+      "chainError": 3.1776437161565096e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sMP",
+      "t": 6,
+      "accepted": true,
+      "active": true,
+      "chainError": 8.038873388460929e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.8999999999999998,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sMP",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.8999999999999998,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sMP",
+      "t": 11,
+      "accepted": true,
+      "active": false,
+      "chainError": 32.33135320079939,
+      "nativeError": 7.105427357601002e-15,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9376157407407407,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sMP",
+      "t": 16,
+      "accepted": true,
+      "active": false,
+      "chainError": 3.4005911477597963,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 111.84578206342417,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9400000000000006,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 3.552713678800501e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9400000000000006,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "t": 13,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9400000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "t": 18,
+      "accepted": true,
+      "active": false,
+      "chainError": 23.505023081048915,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "t": 27,
+      "accepted": true,
+      "active": false,
+      "chainError": 13.35207002153175,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "t": 3,
+      "accepted": true,
+      "active": false,
+      "chainError": 25.164123829287277,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "t": 7,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 7.105427357601002e-15,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 0,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "t": 14,
+      "accepted": true,
+      "active": false,
+      "chainError": 49.90614080458571,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999997,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "t": 21,
+      "accepted": true,
+      "active": false,
+      "chainError": 30.34359029631748,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "sMP",
+      "t": 3,
+      "accepted": true,
+      "active": false,
+      "chainError": 116.95901305438564,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "sMP",
+      "t": 7,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0199999999999996,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sMP",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0200000000000005,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sMP",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.0247593068766007e-13,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0200000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sMP",
+      "t": 15,
+      "accepted": true,
+      "active": false,
+      "chainError": 36.03611991500197,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0138017578621146,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sMP",
+      "t": 22,
+      "accepted": true,
+      "active": false,
+      "chainError": 7.083341863173204,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 110.24560331776881,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "t": 14,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "t": 17,
+      "accepted": true,
+      "active": true,
+      "chainError": 8.526512829121202e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "t": 24,
+      "accepted": true,
+      "active": false,
+      "chainError": 39.11825247966329,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "t": 36,
+      "accepted": true,
+      "active": false,
+      "chainError": 13.003494726374061,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 26.610118819787395,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "t": 13,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999997,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "t": 19,
+      "accepted": true,
+      "active": false,
+      "chainError": 65.78524073143825,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "t": 28,
+      "accepted": true,
+      "active": false,
+      "chainError": 22.728092616120332,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "sMP",
+      "t": 3,
+      "accepted": true,
+      "active": false,
+      "chainError": 61.17470370058318,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "sMP",
+      "t": 6,
+      "accepted": true,
+      "active": true,
+      "chainError": 3.1776437161565096e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.96,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sMP",
+      "t": 7,
+      "accepted": true,
+      "active": true,
+      "chainError": 3.1776437161565096e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9599999999999995,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sMP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9600000000000001,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sMP",
+      "t": 13,
+      "accepted": true,
+      "active": false,
+      "chainError": 46.77575029891708,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9711186128257885,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sMP",
+      "t": 19,
+      "accepted": true,
+      "active": false,
+      "chainError": 25.65959974125007,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 73.47278427368767,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0099999999999996,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.842170943040401e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.01,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "t": 14,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.842170943040401e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0099999999999996,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "t": 20,
+      "accepted": true,
+      "active": false,
+      "chainError": 53.70362644721973,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "t": 30,
+      "accepted": true,
+      "active": false,
+      "chainError": 22.56578351512022,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 75.33056255902677,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 0,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.0097183471152322e-14,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000007,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "t": 17,
+      "accepted": true,
+      "active": false,
+      "chainError": 51.71417508742894,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "t": 25,
+      "accepted": true,
+      "active": false,
+      "chainError": 14.846903129132402,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "sMP",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 90.5126059790494,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "sMP",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.859285502108464e-14,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0700000000000007,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "sMP",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.684341886080802e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0700000000000003,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "sMP",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.1718571004216928e-13,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0700000000000007,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "sMP",
+      "t": 17,
+      "accepted": true,
+      "active": false,
+      "chainError": 29.906906827263736,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "sMP",
+      "t": 26,
+      "accepted": true,
+      "active": false,
+      "chainError": 4.1241698957716855,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 47.2207532143989,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 7.105427357601002e-14,
+      "nativeError": 3.552713678800501e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.1300000000000003,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "t": 14,
+      "accepted": true,
+      "active": true,
+      "chainError": 8.526512829121202e-14,
+      "nativeError": 3.552713678800501e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.1300000000000003,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "t": 17,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 7.105427357601002e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.1300000000000008,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "t": 24,
+      "accepted": true,
+      "active": false,
+      "chainError": 37.90635967416195,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "t": 37,
+      "accepted": true,
+      "active": false,
+      "chainError": 7.867571112605748,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 13.786348347738578,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999997,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.0097183471152322e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999997,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "t": 16,
+      "accepted": true,
+      "active": false,
+      "chainError": 60.477801743029325,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "t": 24,
+      "accepted": true,
+      "active": false,
+      "chainError": 49.73611183636565,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "sMP",
+      "t": 3,
+      "accepted": true,
+      "active": false,
+      "chainError": 110.6066392334344,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "sMP",
+      "t": 6,
+      "accepted": true,
+      "active": true,
+      "chainError": 8.987733679556355e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9599999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sMP",
+      "t": 7,
+      "accepted": true,
+      "active": true,
+      "chainError": 7.105427357601002e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9599999999999995,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sMP",
+      "t": 10,
+      "accepted": true,
+      "active": true,
+      "chainError": 4.0194366942304644e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9599999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sMP",
+      "t": 13,
+      "accepted": true,
+      "active": false,
+      "chainError": 108.75383749929591,
+      "nativeError": 0,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 0.9728697442747027,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sMP",
+      "t": 18,
+      "accepted": true,
+      "active": false,
+      "chainError": 21.776079944340115,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "t": 5,
+      "accepted": true,
+      "active": false,
+      "chainError": 52.627671141816194,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "t": 11,
+      "accepted": true,
+      "active": true,
+      "chainError": 5.859285502108464e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0400000000000005,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 6.355287432313019e-14,
+      "nativeError": 5.684341886080802e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0399999999999998,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "t": 15,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.842170943040401e-14,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontArm",
+        "lambda": 1.0400000000000003,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "t": 21,
+      "accepted": true,
+      "active": false,
+      "chainError": 80.45302736734092,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "t": 32,
+      "accepted": true,
+      "active": false,
+      "chainError": 20.17779721028644,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "t": 4,
+      "accepted": true,
+      "active": false,
+      "chainError": 53.45333896065451,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "t": 8,
+      "accepted": true,
+      "active": true,
+      "chainError": 7.105427357601002e-15,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999999,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "t": 9,
+      "accepted": true,
+      "active": true,
+      "chainError": 2.0097183471152322e-14,
+      "nativeError": 4.263256414560601e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 0.9999999999999997,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "t": 12,
+      "accepted": true,
+      "active": true,
+      "chainError": 1.4210854715202004e-14,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": {
+        "name": "frontLeg",
+        "lambda": 1.0000000000000002,
+        "legacyRigIsReference": true
+      }
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "t": 17,
+      "accepted": true,
+      "active": false,
+      "chainError": 83.07553939281607,
+      "nativeError": 1.4210854715202004e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "t": 26,
+      "accepted": true,
+      "active": false,
+      "chainError": 5.819218131599626,
+      "nativeError": 2.842170943040401e-14,
+      "wristError": 0,
+      "repeat": true,
+      "compatibility": null
+    }
+  ],
+  "sha256": "56d2a8e4dbddc1bd1b1f3b18650bbb9ad1c1e62e7b51d64954107e8c6e27acc0",
+  "errors": []
+}
