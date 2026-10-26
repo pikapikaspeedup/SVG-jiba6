@@ -72,12 +72,14 @@
   constructor(parent,c,leg,rear,profile){
    this.c=c;this.leg=leg;this.rear=rear;this.widths=leg?profile.leg:profile.arm;this.material=material(c,leg,rear);
    this.group=node('g',{'data-ink-part':(rear?'rear-':'front-')+(leg?'leg':'arm')},parent);
-   this.surface=node('path',{fill:this.material.base,stroke:INKLINE,'stroke-width':1.1,'stroke-linejoin':'round'},this.group);this.clip=node('clipPath',{id:'ink6-limb-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.group);this.clipShape=node('path',{},this.clip);this.details=node('g',{'clip-path':'url(#'+this.clip.id+')'},this.group);
+   this.body=node('g',{'data-ink-part':'limb-surface'},this.group);
+   this.surface=node('path',{fill:this.material.base,stroke:INKLINE,'stroke-width':1.1,'stroke-linejoin':'round'},this.body);this.clip=node('clipPath',{id:'ink6-limb-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.body);this.clipShape=node('path',{},this.clip);this.details=node('g',{'clip-path':'url(#'+this.clip.id+')'},this.body);
    this.pieces=[0,1].map(()=>{const group=node('g',{},this.details);return {group,outline:node('path',{fill:this.material.base,stroke:'none','stroke-width':0,'stroke-linejoin':'round'},group),shade:node('path',{fill:this.material.shade,opacity:rear?.28:.16},group),light:node('path',{fill:this.material.light,opacity:rear?.12:.2},group),line:node('path',{fill:'none',stroke:this.material.shade,'stroke-width':1,'stroke-linecap':'round',opacity:.68},group),cloth:node('g',{},group)};});
    this.skinShade=node('path',{fill:this.material.shade,opacity:this.rear?.22:.16},this.details);this.details.insertBefore(this.skinShade,this.details.firstChild);
    this.skinLight=node('path',{fill:this.material.light,opacity:.22},this.details);this.details.insertBefore(this.skinLight,this.details.firstChild);
-   this.joint=node('ellipse',{fill:this.material.base},this.group);
-   this.crease=node('path',{fill:'none',stroke:this.material.shade,'stroke-width':.95,'stroke-linecap':'round',opacity:.7},this.group);
+   this.foldShade=node('path',{fill:this.material.shade},this.details);
+   this.joint=node('ellipse',{fill:this.material.base},this.body);
+   this.crease=node('path',{fill:'none',stroke:this.material.shade,'stroke-width':.95,'stroke-linecap':'round',opacity:.7},this.details);
    this.end=node('g',{},this.group);
    if(leg){
     const bare=['ryu','juri','luke','mai'].includes(c.id),p=SF6Art.palette[c.id];
@@ -121,7 +123,7 @@
    const name=(this.rear?'rear':'front')+(this.leg?'Leg':'Arm'),source=rig.anatomy?.source[name];
    const invariant=INK.Anatomy.lengths(this.c),index=this.leg?2:0,sourceLengths=[invariant[index],invariant[index+1]];
    this.decals(sourceLengths);
-   const centerline=INK.SkinGeometry.sampled(chain,baseWidths,INK.SkinGeometry.morphology[this.c.id]?.[this.leg?'leg':'arm']);
+   const centerline=INK.SkinGeometry.sampled(chain,baseWidths,INK.SkinGeometry.morphology[this.c.id]?.[this.leg?'leg':'arm'],rig.anatomy?.surfaces?.[name]);
    const contour=INK.SkinGeometry.sweep(chain,baseWidths,outer,centerline);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
    assign(this.skinShade,'d',INK.SkinGeometry.band(chain,baseWidths,outer,-.94,this.material.skin?-.48:-.30,centerline),stats);
    assign(this.skinLight,'d',INK.SkinGeometry.band(chain,baseWidths,outer,.28,this.material.skin?.53:.67,centerline),stats);
@@ -139,10 +141,9 @@
    assign(this.joint,'cx',joint[0],stats);assign(this.joint,'cy',joint[1],stats);assign(this.joint,'rx',e*.82,stats);assign(this.joint,'ry',e*.71,stats);
    // The shared continuous surface replaces the old overlaid joint patch.
    assign(this.joint,'visibility','hidden',stats);
-   const n=[-bc[1]/Math.max(.0001,lengths[1]),bc[0]/Math.max(.0001,lengths[1])],turn=ab[0]*bc[1]-ab[1]*bc[0],side=turn<0?-1:1;
-   const q0=mat.point(outer,[b[0]+n[0]*e*side*.72-bc[0]/Math.max(1,lengths[1])*e*.35,b[1]+n[1]*e*side*.72-bc[1]/Math.max(1,lengths[1])*e*.35]);
-   const q1=mat.point(outer,[b[0]+n[0]*e*side*.2+bc[0]/Math.max(1,lengths[1])*e*.4,b[1]+n[1]*e*side*.2+bc[1]/Math.max(1,lengths[1])*e*.4]);
-   assign(this.crease,'d',`M${q0}Q${joint[0]} ${joint[1]} ${q1}`,stats);assign(this.crease,'opacity',(.06+flex*.42)*(this.material.skin?.7:1),stats);
+   const folds=INK.SkinGeometry.folds(centerline,outer,this.material.skin);
+   assign(this.crease,'d',folds.crease,stats);assign(this.crease,'opacity',folds.opacity,stats);
+   assign(this.foldShade,'d',folds.shade,stats);assign(this.foldShade,'opacity',folds.opacity*.7,stats);
    const endMatrix=this.leg?INK.Anatomy.footMatrix(p,rig,this.c,this.rear):INK.Anatomy.handMatrix(p,rig,this.c,this.rear);
    setTransform(this.end,endMatrix,stats);
    if(this.leg){const shoe=INK.SkinGeometry.foot(INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
@@ -178,11 +179,26 @@
     target.setAttribute('clip-path','url(#'+mask.id+')');
    }
    this.frontArm=new Limb(this.art,this.c,false,false,this.c);
-   this.foregroundArms={};
-   for(const name of ['rearArm','frontArm']){const id='ink6-arm-source-'+(++serial);this[name].group.id=id;
-    const clip=node('clipPath',{id:'ink6-arm-depth-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs),path=node('path',{},clip);
-    const use=node('use',{href:'#'+id,'clip-path':'url(#'+clip.id+')','data-ink-part':name+'-depth-overlay'},this.art);this.foregroundArms[name]={clip,path,use};
+   this.foregroundLimbs={};
+   for(const name of ['rearLeg','frontLeg','rearArm','frontArm']){
+    const limb=this[name],id='ink6-surface-source-'+(++serial),endId='ink6-end-source-'+(++serial);limb.body.id=id;limb.end.id=endId;
+    const clip=node('clipPath',{id:'ink6-limb-depth-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs),path=node('path',{},clip);
+    const group=node('g',{'data-ink-part':name+'-depth-overlay'},this.art);
+    const use=node('use',{href:'#'+id,'clip-path':'url(#'+clip.id+')'},group);
+    // Reuse the actual hand/fan/foot silhouette. An oversized wrist circle
+    // must never drag a distant patch of sleeve or torso into the near pass.
+    const end=node('use',{href:'#'+endId,'data-ink-part':name+'-end-overlay'},group);
+    let rootFade=null;
+    if(name.endsWith('Leg')){
+     const gradient=node('linearGradient',{id:'ink6-root-fade-'+(++serial),gradientUnits:'userSpaceOnUse'},this.turnDefs);
+     node('stop',{offset:0,'stop-color':'black'},gradient);node('stop',{offset:1,'stop-color':'white'},gradient);
+     const mask=node('mask',{id:'ink6-root-seam-'+(++serial),maskUnits:'userSpaceOnUse',x:-1000,y:-1000,width:2000,height:2000,'mask-type':'luminance'},this.turnDefs);
+     node('rect',{x:-1000,y:-1000,width:2000,height:2000,fill:'url(#'+gradient.id+')'},mask);
+     use.setAttribute('mask','url(#'+mask.id+')');rootFade=gradient;
+    }
+    this.foregroundLimbs[name]={clip,path,use,end,group,rootFade};
    }
+   this.foregroundArms={rearArm:this.foregroundLimbs.rearArm,frontArm:this.foregroundLimbs.frontArm};
    this.debug=node('g',{'data-ink-layer':'rig','pointer-events':'none'},this.group);
    this.bones=Array.from({length:11},()=>node('line',{stroke:'#3a8f87','stroke-width':1.35,'stroke-dasharray':'4 3'},this.debug));
    this.joints=Array.from({length:15},()=>node('circle',{r:3.4,fill:'#f6fbeb',stroke:'#238b81','stroke-width':1.4},this.debug));
@@ -214,19 +230,34 @@
    const hipShape=[[-24,-222],[-31,-212],[-33,-196],[-25,-180],[0,-171],[25,-180],[33,-196],[31,-212],[24,-222]];
    assign(this.pelvisSurface,'d',INK.SkinGeometry.closed(hipShape.map(q=>INK.Anatomy.skinPoint(p,q)),.15),s);
 
-   // Opaque back pass + clipped near-depth pass. An elbow can cross the
-   // torso while its shoulder remains behind it; there is no whole-arm swap.
-   for(const name of ['rearArm','frontArm']){
-    const chain=Rig.sockets(p,r)[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
+   // All limbs have a far pass and a near-depth surface pass. Raised thighs
+   // can cross the belt/coat just as a forearm can cross the chest.
+   const sockets=Rig.sockets(p,r),layers=this.foregroundLimbs;
+   for(const name of ['rearLeg','frontLeg','rearArm','frontArm']){
+    const leg=name.endsWith('Leg'),limb=this[name],chain=sockets[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
     if(name==='rearArm'){
      const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
      const facing=Math.max(0,Math.cos(INK.rad(INK.Turn.angle(p))));depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;
     }
-    assign(this.foregroundArms[name].path,'d',INK.SkinGeometry.frontClip(chain,depth,this.c.arm,this.c.id==='mai'&&name==='frontArm'?91:43,INK.SkinGeometry.morphology[this.c.id]?.arm),s);
+    const exposure=leg?INK.Turn.smooth(-10,28,Math.max(chain[0][1]-chain[1][1],chain[0][1]-chain[2][1])):1;
+    assign(layers[name].group,'opacity',exposure,s);
+    const widths=limb.widths.map(w=>w*this.style.volume*(limb.rear?.94:1));
+    assign(layers[name].path,'d',INK.SkinGeometry.frontClip(chain,depth,widths,0,INK.SkinGeometry.morphology[this.c.id]?.[leg?'leg':'arm']),s);
+    assign(layers[name].end,'display',depth[2]>0?'inline':'none',s);
+    assign(layers[name].end,'opacity',clamp(depth[2]/5),s);
+    if(leg){
+     // Fade only the near pass into its hip seam; the complete far surface
+     // remains opaque underneath. Keep the foot outside this root-plane mask.
+     const u=vec.normal(vec.sub(chain[1],chain[0])),seam=clamp(widths[0]*1.1,18,34),g=layers[name].rootFade;
+     assign(g,'x1',chain[0][0],s);assign(g,'y1',chain[0][1],s);
+     assign(g,'x2',chain[0][0]+u[0]*seam,s);assign(g,'y2',chain[0][1]+u[1]*seam,s);
+    }
+    layers[name].depth=(depth[1]+depth[2])*.5;
    }
-   const order=back?'back':'front';if(order!==this._order){this._order=order;
+   const nearLegs=['rearLeg','frontLeg'].sort((a,b)=>layers[a].depth-layers[b].depth),nearArms=['rearArm','frontArm'].sort((a,b)=>layers[a].depth-layers[b].depth);
+   const order=[back,...nearLegs,...nearArms].join(':');if(order!==this._order){this._order=order;
     const legs=back?[this.frontLeg.group,this.rearLeg.group]:[this.rearLeg.group,this.frontLeg.group];
-    const ordered=[this.trail,...legs,this.hair,this.rearArm.group,this.frontArm.group,this.pelvisSurface,this.strap,this.torso.group,this.torsoSide.group,this.torsoBack.group,this.coat,this.head,this.foregroundArms.frontArm.use,this.foregroundArms.rearArm.use];
+    const ordered=[this.trail,...legs,this.hair,this.rearArm.group,this.frontArm.group,this.pelvisSurface,this.strap,this.torso.group,this.torsoSide.group,this.torsoBack.group,this.coat,...nearLegs.map(n=>layers[n].group),this.head,...nearArms.map(n=>layers[n].group)];
     for(const n of ordered)this.art.appendChild(n);
    }
    if(this.c.id==='iori'){const a=vec.mix(r.rearLeg[0],r.rearLeg[1],.69),b=vec.mix(r.frontLeg[0],r.frontLeg[1],.69);assign(this.strap,'d',`M${a}Q${(a[0]+b[0])/2} ${Math.max(a[1],b[1])+55} ${b}`,s);}

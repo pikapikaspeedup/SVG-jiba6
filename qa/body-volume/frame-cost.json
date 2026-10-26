@@ -1,0 +1,115 @@
+{
+  "htmlSha256": "1a4db579fbdd6755b014d66b524f08e65177b4468470a39f3bfdd2ca0e4692ab",
+  "scope": "Sequential same-script 60 measured action steps per character after 4 initial steps; one warmup each build. Simulation plus full SVG/VFX DOM render CPU only, not display/GPU/mobile FPS.",
+  "builds": [
+    {
+      "label": "baseline",
+      "htmlSha256": "28b61152feb3355585e024b6fb70a5022184dfd0b748f131e6b4bb18e0dca83c",
+      "rows": [
+        {
+          "id": "ryu",
+          "frames": 60,
+          "mean": 1.2583333333333333,
+          "p95": 2
+        },
+        {
+          "id": "ken",
+          "frames": 60,
+          "mean": 1.3233333349227905,
+          "p95": 2
+        },
+        {
+          "id": "chun",
+          "frames": 60,
+          "mean": 1.2233333349227906,
+          "p95": 1.8000001907348633
+        },
+        {
+          "id": "cammy",
+          "frames": 60,
+          "mean": 1.1866666634877523,
+          "p95": 1.5999999046325684
+        },
+        {
+          "id": "luke",
+          "frames": 60,
+          "mean": 1.2,
+          "p95": 1.700000286102295
+        },
+        {
+          "id": "juri",
+          "frames": 60,
+          "mean": 1.1700000047683716,
+          "p95": 1.799999713897705
+        },
+        {
+          "id": "mai",
+          "frames": 60,
+          "mean": 1.3049999952316285,
+          "p95": 1.9000000953674316
+        },
+        {
+          "id": "iori",
+          "frames": 60,
+          "mean": 1.196666669845581,
+          "p95": 2
+        }
+      ]
+    },
+    {
+      "label": "current",
+      "htmlSha256": "1a4db579fbdd6755b014d66b524f08e65177b4468470a39f3bfdd2ca0e4692ab",
+      "rows": [
+        {
+          "id": "ryu",
+          "frames": 60,
+          "mean": 1.4933333317438762,
+          "p95": 2
+        },
+        {
+          "id": "ken",
+          "frames": 60,
+          "mean": 1.4966666618982951,
+          "p95": 2.1000003814697266
+        },
+        {
+          "id": "chun",
+          "frames": 60,
+          "mean": 1.4550000031789143,
+          "p95": 2.0999999046325684
+        },
+        {
+          "id": "cammy",
+          "frames": 60,
+          "mean": 1.4333333333333333,
+          "p95": 2.0999999046325684
+        },
+        {
+          "id": "luke",
+          "frames": 60,
+          "mean": 1.4666666666666666,
+          "p95": 2
+        },
+        {
+          "id": "juri",
+          "frames": 60,
+          "mean": 1.425,
+          "p95": 2.1999998092651367
+        },
+        {
+          "id": "mai",
+          "frames": 60,
+          "mean": 1.5516666650772095,
+          "p95": 2.0999999046325684
+        },
+        {
+          "id": "iori",
+          "frames": 60,
+          "mean": 1.446666661898295,
+          "p95": 2.1999998092651367
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

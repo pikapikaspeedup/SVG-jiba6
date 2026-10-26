@@ -29,7 +29,7 @@
   iori:{arm:[.06,.10,.16],leg:[.10,.14,.15]}
  });
  const jointFalloff=Array.from({length:18},(_,i)=>Math.exp(-Math.pow((i-8)/3.1,2)));
- function sampled(chain,widths,shape=null){
+ function sampled(chain,widths,shape=null,surface=null){
   const [a,b,c]=chain,[w,j,z]=widths,L0=length(a,b),L1=length(b,c);
   if(L0+L1<.01)return null;
   const cut=Math.min(j*.9,L0*.23,L1*.23),u0=vec.normal(vec.sub(b,a)),u1=vec.normal(vec.sub(c,b));
@@ -40,9 +40,16 @@
   for(let i=1;i<=6;i++){const t=i/6;centers.push(vec.mix(after,c,t));radii.push(lerp(j,z,t)+Math.sin(Math.pow(t,.72)*Math.PI)*(shape?j*shape[1]:j*.055));}
   const normals=centers.map((q,i)=>{const a=centers[Math.max(0,i-1)],b=centers[Math.min(centers.length-1,i+1)];let v=vec.sub(b,a);if(vec.length(v)<1e-6)v=i<centers.length/2?u0:u1;const u=vec.normal(v);return[-u[1],u[0]];});
   const bend=clamp((1-(u0[0]*u1[0]+u0[1]*u1[1]))*.5),cross=u0[0]*u1[1]-u0[1]*u1[0],side=cross<0?-1:1;
-  const leftR=radii.map((r,i)=>{const joint=jointFalloff[i];return r*(1+(shape?bend*joint*(side<0?.10+(shape[2]||0)*.35:-.16):0));});
-  const rightR=radii.map((r,i)=>{const joint=jointFalloff[i];return r*(1+(shape?bend*joint*(side>0?.10+(shape[2]||0)*.35:-.16):0));});
-  return {centers,radii,normals,leftR,rightR,a,c,u0,u1,w,z};
+  // A shortened segment keeps a readable cross-section rather than becoming
+  // a wide slab. The correction is bounded and never changes its centerline.
+  const ratios=surface?.foreshortening||surface?.ratios||[1,1];
+  const compress=i=>{const segment=i<9?0:1,ratio=Number.isFinite(ratios[segment])?ratios[segment]:1;return 1-.17*(1-clamp(ratio,.05,1));};
+  const cloth=clamp((shape?.[2]||0)*4,0,.8),rootTaper=shape?.[0]||0;
+  for(let i=0;i<radii.length;i++){const seam=1-(shape ? .07+rootTaper*.25 : 0)*Math.exp(-i*i/3);radii[i]*=compress(i)*seam;}
+  const flex=shape?bend:0,outer=.13+cloth*.16,inner=.22+cloth*.15;
+  const leftR=radii.map((r,i)=>{const joint=jointFalloff[i];return r*(1+flex*joint*(side<0?outer:-inner));});
+  const rightR=radii.map((r,i)=>{const joint=jointFalloff[i];return r*(1+flex*joint*(side>0?outer:-inner));});
+  return {centers,radii,normals,leftR,rightR,a,c,u0,u1,w,z,b,side,bend,cloth};
  }
  function sweep(chain,widths,outer=mat.identity(),g=sampled(chain,widths)){
   if(!g){const at=mat.point(outer,chain[0]),r=Math.max(...widths);return `M${at[0]-r} ${at[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
@@ -53,8 +60,23 @@
  }
  function band(chain,widths,outer,from=-.92,to=-.48,g=sampled(chain,widths)){
   if(!g)return '';
-  const edge=f=>g.centers.map((q,i)=>mat.point(outer,vec.add(q,vec.mul(g.normals[i],g.radii[i]*f))));
+  const edge=f=>g.centers.map((q,i)=>mat.point(outer,vec.add(q,vec.mul(g.normals[i],(f<0?(g.rightR||g.radii)[i]:(g.leftR||g.radii)[i])*f*(1-(g.bend||0)*jointFalloff[i]*.18)))));
   return closed([...edge(from),...edge(to).reverse()],.09);
+ }
+ // One compound path per kind: reuse existing renderer nodes, no simulation.
+ function folds(g,outer=mat.identity(),skin=false){
+  if(!g)return {crease:'',shade:'',opacity:0};
+  const bend=g.bend||0,cloth=skin?0:g.cloth||0,side=g.side||1,n=g.normals[8],b=g.b;
+  const point=(along,across)=>mat.point(outer,[b[0]+g.u1[0]*along+n[0]*across*side,b[1]+g.u1[1]*along+n[1]*across*side]);
+  const radius=g.radii[8],width=radius*(.45+.3*cloth)*bend;
+  let crease='',shade='';
+  const count=skin?1:3;
+  for(let i=0;i<count;i++){
+   const offset=(i-(count-1)/2)*radius*.34,reach=width*(1-i*.13),a=point(offset,-reach),q=point(offset+radius*.18,reach*.25),z=point(offset+radius*.05,reach);
+   crease+='M'+fmt(a)+'Q'+fmt(q)+' '+fmt(z);
+   if(!skin){const back=point(offset+radius*(.08+.12*cloth)*bend,0);shade+=closed([a,q,z,back],.04);}
+  }
+  return {crease,shade,opacity:clamp(bend*(skin?.24:.36+.2*cloth),0,.65)};
  }
  function frontClip(chain,depth,widths,handRadius=44,shape=null){
   // This masks an existing surface; widening the mask does not add geometry.
@@ -65,7 +87,7 @@
    const p=vec.mix(chain[i],chain[i+1],from),q=vec.mix(chain[i],chain[i+1],to),w=lerp(widths[i],widths[i+1],from)+2,z=lerp(widths[i],widths[i+1],to)+2;
    const fade=clamp(Math.max(a,b)/7);d+=sweep([p,vec.mix(p,q,.5),q],[w*fade,(w+z)*.5*fade,z*fade]);
   }
-  if(depth[2]>0){const r=handRadius*clamp(depth[2]/8),q=chain[2];d+=`M${q[0]-r} ${q[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
+  if(depth[2]>0&&handRadius>0){const r=handRadius*clamp(depth[2]/8),q=chain[2];d+=`M${q[0]-r} ${q[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
   return d||'M0 0Z';
  }
  function torsoClip(p,x,width){
@@ -80,5 +102,5 @@
   const sole=`M${fmt([heel[0]-7*c,heel[1]+8])}Q${fmt([toe[0]*.5,16+Math.abs(s)])} ${fmt([toe[0]+4*c,toe[1]+5])}`;
   return {outline,sole,toe,angle};
  }
- INK.SkinGeometry={morphology,sampled,sweep,band,frontClip,closed,torsoClip,foot,version:'7.0.0'};
+ INK.SkinGeometry={morphology,sampled,sweep,band,folds,frontClip,closed,torsoClip,foot,version:'7.0.0'};
 })();

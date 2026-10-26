@@ -1,0 +1,27 @@
+{
+  "stage": "continuous-7-body-volume",
+  "htmlSha256": "1a4db579fbdd6755b014d66b524f08e65177b4468470a39f3bfdd2ca0e4692ab",
+  "gameSource": "22cb837c8c731d3f",
+  "reports": {
+    "render": {
+      "path": "qa/body-volume/render.json",
+      "rows": 32
+    },
+    "frame-cost": {
+      "path": "qa/body-volume/frame-cost.json",
+      "builds": 2,
+      "charactersEach": 8
+    }
+  },
+  "pureChecks": {
+    "geometry": 64,
+    "anatomy": 112,
+    "armPlaneRegression": 384
+  },
+  "limits": [
+    "Only four actual scene screenshots reviewed; not all 690 moves visually certified",
+    "Frame costs are sequential simulation/SVG DOM CPU samples; no GPU/display/mobile FPS claim",
+    "Current CPU mean 1.43\u20131.55 ms vs prior 1.17\u20131.32 ms in this sample; added surface work has a cost",
+    "Original 707 authored assets unchanged; no endurance or Pro call for phase 7"
+  ]
+}

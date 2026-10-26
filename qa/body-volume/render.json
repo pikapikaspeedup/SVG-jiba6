@@ -1,0 +1,742 @@
+{
+  "htmlSha256": "1a4db579fbdd6755b014d66b524f08e65177b4468470a39f3bfdd2ca0e4692ab",
+  "rows": [
+    {
+      "id": "ryu",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 422,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -76.75592394676876,
+        -79.50803323575019
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "ryu",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 422,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -66.3004618170098,
+        -68.47552453750012
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "ryu",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 422,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -64.9493945809279,
+        74.51622418023001
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "ryu",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 422,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -52.71328956089813,
+        -66.50282661829849
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "ken",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 401,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -77.13449426119902,
+        -79.74320099220957
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "ken",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 401,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -64.62063946565175,
+        -69.02821183058305
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "ken",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 401,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -64.78166800079504,
+        73.96423897869056
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "ken",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 401,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -65.54754843258286,
+        -67.94662875389983
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "chun",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 420,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -75.1637594520183,
+        -80.35280975817896
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "chun",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 420,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -71.34557423784997,
+        -68.98193926037372
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "chun",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 420,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -63.177444790410476,
+        73.48083716675421
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "chun",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 420,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -57.18107054691191,
+        -50.75839001536659
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "cammy",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -80.10563824114128,
+        -76.61286196379525
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "cammy",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -74.08922385160295,
+        -52.963226812348154
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "cammy",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -60.91148205380165,
+        77.18610868165209
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "cammy",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -58.42669765664729,
+        -53.87854195021677
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "luke",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 406,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -79.60315631653985,
+        -77.39810718926762
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "luke",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 406,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -68.01286567510763,
+        -66.27166523521274
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "luke",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 406,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -66.19806864402734,
+        74.96656480410951
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "luke",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 406,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -51.440914875187985,
+        -63.30680339039286
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "juri",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -73.54101771791831,
+        -1.9381062063309855
+      ],
+      "legExposure": [
+        0,
+        0.11593124770783975
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "juri",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -73.80124725536986,
+        -66.2432508490988
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "juri",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -59.77133136062557,
+        60.47312379513366
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "juri",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 408,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -57.56734013207232,
+        -53.87854195021677
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 2
+    },
+    {
+      "id": "mai",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 461,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -75.71795903973631,
+        -79.7336795893392
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "mai",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 461,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -67.3722871669669,
+        -73.78307225660276
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "mai",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 461,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -69.94858269237821,
+        69.23071712773279
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "mai",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 461,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -46.901943377214906,
+        16.741350627721857
+      ],
+      "legExposure": [
+        0,
+        0.7886701824196881
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 0
+    },
+    {
+      "id": "iori",
+      "mode": "idle",
+      "state": "idle",
+      "nodes": 405,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -80.55998425000075,
+        -72.85614400498066
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "iori",
+      "mode": "guard",
+      "state": "block",
+      "nodes": 405,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -59.75241197860231,
+        -54.8728836164953
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "iori",
+      "mode": "kick",
+      "state": "attack",
+      "nodes": 405,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -79.29060537158006,
+        61.90882725351136
+      ],
+      "legExposure": [
+        0,
+        1
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    },
+    {
+      "id": "iori",
+      "mode": "throw",
+      "state": "throwing",
+      "nodes": 405,
+      "bounded": true,
+      "pure": true,
+      "repeat": true,
+      "finite": true,
+      "legRaise": [
+        -68.21030881295769,
+        -65.52860448797067
+      ],
+      "legExposure": [
+        0,
+        0
+      ],
+      "rootMasks": true,
+      "noHandCircle": true,
+      "overlays": 4,
+      "endRefs": true,
+      "folds": 4
+    }
+  ],
+  "errors": []
+}

@@ -76,6 +76,14 @@
   }
   return !rawOnly&&INK.Articulation?INK.Articulation.stabilize(c,p,r):r;
  }
+ // Read-only surface measurements derived AFTER projection. They never feed IK.
+ function surfaceInfo(character,original,projected,depth,angle){
+  const length=(points,i)=>Math.hypot(points[i+1][0]-points[i][0],points[i+1][1]-points[i][1]);
+  const ratio=[0,1].map(i=>{const before=length(original,i);return before>1e-8?clamp(length(projected,i)/before,0,1.25):1;});
+  const direction=i=>{const d=length(projected,i);return d>1e-8?[(projected[i+1][0]-projected[i][0])/d,(projected[i+1][1]-projected[i][1])/d]:[0,0];};
+  const u=direction(0),v=direction(1),a=rad(angle);
+  return Object.freeze({character,foreshortening:Object.freeze(ratio),depth:Object.freeze(depth.slice()),segmentDepth:Object.freeze([(depth[0]+depth[1])*.5,(depth[1]+depth[2])*.5]),turn:Object.freeze({angle,cos:Math.cos(a),sin:Math.sin(a)}),bend:Object.freeze({cross:u[0]*v[1]-u[1]*v[0],dot:clamp(u[0]*v[0]+u[1]*v[1],-1,1)})});
+ }
  function solve(c,p,{force=false}={}){
   if(!settings.enabled&&!force)return legacySolve(c,p);
   const source=sourceRig(c,p),f=frameInfo(p),r={},sockets={},depth={},turns={},projectors={};
@@ -106,6 +114,15 @@
   sockets.neck=skinPoint(p,[5,-324]);
   const h=c.rigHeadOffset||[6,-46];sockets.head=skinPoint(p,[h[0],-295+h[1]]);
   const anatomy={version:6,source,sockets,depth,turns,projectors};
+  // Most solver consumers only need joints. Material measurements are made
+  // once, on the first surface read; subsequent reads share the frozen value.
+  let surfaces=null;
+  Object.defineProperty(anatomy,'surfaces',{enumerable:true,get(){
+   if(!surfaces){const measured={};for(const name of parts){
+    const original=source[name].map(q=>name.includes('Leg')?q:mat.point(f.body,q));
+    measured[name]=surfaceInfo(c.id,original,sockets[name],depth[name],turns[name]);
+   }surfaces=Object.freeze(measured);}return surfaces;
+  }});
   Object.defineProperties(r,{profile:{value:c},anatomy:{value:anatomy}});
   return r;
  }
@@ -145,5 +162,5 @@
   return leg?actor:mat.point(f.invBody,actor);
  }
  Rig.solveCombat=legacySolve;Rig.solveAnimation=solve;Rig.sockets=sockets;
- INK.Anatomy={version:'6.0.0',settings,solve,sourceRig,chain,skinPoint,skinMatrices,weights,frameInfo,projectLocal,projectedPoint,handMatrix,footMatrix,inverseTarget,lengths};
+ INK.Anatomy={version:'6.0.0',settings,solve,sourceRig,surfaceInfo,chain,skinPoint,skinMatrices,weights,frameInfo,projectLocal,projectedPoint,handMatrix,footMatrix,inverseTarget,lengths};
 })();
