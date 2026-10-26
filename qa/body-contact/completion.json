@@ -1,0 +1,46 @@
+{
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "scope": "Current body/contact sample and directly affected combat checks; not endurance, hardware or balance certification. Prior ten-round completion applies to its historical build.",
+  "suites": [
+    {
+      "suite": "body-support",
+      "report": "qa/body-support/playable.json",
+      "passed": 18,
+      "total": 18
+    },
+    {
+      "suite": "contact-response",
+      "report": "qa/contact-response/playable.json",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "suite": "body-contact",
+      "report": "qa/body-contact/playable.json",
+      "passed": 10,
+      "total": 10
+    },
+    {
+      "suite": "flow-chain",
+      "report": "qa/flow-chain/playable.json",
+      "passed": 15,
+      "total": 15
+    },
+    {
+      "suite": "aerial",
+      "report": "qa/aerial/playable.json",
+      "passed": 17,
+      "total": 17
+    },
+    {
+      "suite": "strike-feel",
+      "report": "qa/strike-feel/playable.json",
+      "passed": 17,
+      "total": 17
+    }
+  ],
+  "passed": 84,
+  "total": 84,
+  "sourceReport": "qa/body-contact/source/validation.json",
+  "cpuReport": "qa/body-contact/frame-cost.json"
+}

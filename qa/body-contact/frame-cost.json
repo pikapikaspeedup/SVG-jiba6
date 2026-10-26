@@ -1,0 +1,59 @@
+{
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "scope": "Sequential body/contact off then on, Ryu/Cammy 480-step samples, first 120 warmup. Outcomes may differ due to push changes, so this is a workload sample, not an identical-frame benchmark. Synchronous simulation + SVG DOM + VFX CPU time only. No display/GPU FPS, audio hardware, true mobile, balance or endurance claim.",
+  "rows": [
+    {
+      "id": "ryu",
+      "enabled": false,
+      "mean": 1.2877777788374158,
+      "p95": 2.3000001907348633,
+      "max": 7.099999904632568,
+      "nodes": 4215,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "cammy",
+      "enabled": false,
+      "mean": 1.1555555555555554,
+      "p95": 2.3000001907348633,
+      "max": 4.800000190734863,
+      "nodes": 4504,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "ryu",
+      "enabled": true,
+      "mean": 1.166944444179535,
+      "p95": 2,
+      "max": 11.899999618530273,
+      "nodes": 4215,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "cammy",
+      "enabled": true,
+      "mean": 1.153055555290646,
+      "p95": 2.0999999046325684,
+      "max": 5.099999904632568,
+      "nodes": 4504,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,127 @@
+{
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "rows": [
+    {
+      "name": "Sample practice selects Cammy against Ryu through the actual UI",
+      "passed": true
+    },
+    {
+      "name": "ryu body/contact upgrade preserves damage and contact timing",
+      "passed": true,
+      "details": [
+        {
+          "hp": 9180,
+          "stun": 29,
+          "frame": 11,
+          "push": 2.75
+        },
+        {
+          "hp": 9180,
+          "stun": 29,
+          "frame": 11,
+          "push": 2.9767657919999997
+        }
+      ]
+    },
+    {
+      "name": "cammy body/contact upgrade preserves damage and contact timing",
+      "passed": true,
+      "details": [
+        {
+          "hp": 9300,
+          "stun": 27,
+          "frame": 10,
+          "push": 2.75
+        },
+        {
+          "hp": 9300,
+          "stun": 27,
+          "frame": 10,
+          "push": 2.9253947374080007
+        }
+      ]
+    },
+    {
+      "name": "Classic simultaneous sample normals preserve both contact intents",
+      "passed": true,
+      "details": {
+        "hp": [
+          9180,
+          9180
+        ],
+        "events": [
+          {
+            "tick": 65,
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "sHP",
+            "damage": 820
+          },
+          {
+            "tick": 65,
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "sHP",
+            "damage": 820
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reaction and contact effects share the actual collision witness",
+      "passed": true,
+      "details": {
+        "point": [
+          671.4239106638647,
+          427.9805673099986
+        ],
+        "event": [
+          671.4239106638647,
+          427.9805673099986
+        ]
+      }
+    },
+    {
+      "name": "Repeated fractional renders cannot move fighters or update foot anchors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Both sample characters complete integrated CPU exchanges",
+      "passed": true,
+      "details": [
+        {
+          "id": "ryu",
+          "finite": true,
+          "hp": [
+            6855,
+            4329
+          ]
+        },
+        {
+          "id": "cammy",
+          "finite": true,
+          "hp": [
+            3456,
+            7868
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heavy-punch practice button creates a real sample contact",
+      "passed": true
+    },
+    {
+      "name": "Sample duel opens a real Ryu versus Cammy CPU match",
+      "passed": true
+    },
+    {
+      "name": "Body-contact practice controls fit narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

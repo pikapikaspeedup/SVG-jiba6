@@ -1,0 +1,15 @@
+"""Short checks of actual sample-character contacts, not a replay suite."""
+from pathlib import Path
+import os,json,hashlib
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];O=R/'qa/contact-response';O.mkdir(parents=True,exist_ok=True);html=(R/'dist/INK-Street-Fighter-6.html').read_bytes()
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(html.decode());p.wait_for_function('window.INKDuel?.ready')
+ rows=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state,C=INK.ContactResponse,out=[],check=(name,passed,details)=>out.push({name,passed,details});
+ function strike(id='ryu',distance=180,enabled=true,guard=false,move='sHP'){A.start(id,id==='ryu'?'cammy':'ryu','training','classic',1);G.paused=true;document.getElementById('dummy').value=guard?'guard':'idle';document.getElementById('infinite').checked=false;document.getElementById('autohp').checked=false;C.settings.enabled=enabled;A.teleport(0,500);A.teleport(1,500+distance);A.inputMove(0,move);for(let i=0;i<100;i++){A.step();if(G.lastCombatEvent?.attacker===0)break;}const f=A.fighters[1];return {hp:f.hp,push:f.push,stun:f.stateT,type:G.lastCombatEvent?.type,response:C.inspect(f),clock:f._inkVisualClock};}
+ for(const id of ['ryu','cammy']){const legacy=strike(id,180,false),modern=strike(id);check(id+' real heavy contact preserves damage and stun while changing bounded push',!!modern.response&&modern.hp===legacy.hp&&modern.stun===legacy.stun&&Math.abs(modern.push/legacy.push-modern.response.hitScale)<1e-8,{legacy,modern});const guard=strike(id,180,true,true),oldGuard=strike(id,180,false,true);check(id+' real guard contact changes retreat without free damage',guard.type==='block'&&!!guard.response&&guard.hp===oldGuard.hp&&guard.stun===oldGuard.stun&&Math.abs(guard.push/oldGuard.push-guard.response.blockScale)<1e-8,{guard,oldGuard});}
+ const contacts=[];for(const distance of [130,160,190,220,250,280]){const r=strike('ryu',distance);if(r.response)contacts.push({distance,quality:r.response.quality,push:r.push});}check('Actual contact geometry yields distinct distance qualities',contacts.length>=2&&Math.max(...contacts.map(r=>r.quality))-Math.min(...contacts.map(r=>r.quality))>.02,contacts);
+ strike();const before=JSON.stringify(A.fighters.map(f=>[f.x,f.y,f.hp,f.push,f.stateT,C.inspect(f)]));for(let i=0;i<30;i++)A.renderFraction(i%3/2);check('Repeated body rendering cannot change committed contact or battle state',before===JSON.stringify(A.fighters.map(f=>[f.x,f.y,f.hp,f.push,f.stateT,C.inspect(f)])));
+ const sweep=strike('ryu',180,true,false,'cHK');check('Knockdown normal preserves authored launch and excludes the modifier',sweep.hp<10000&&!sweep.response);C.settings.enabled=true;return out;}''');b.close()
+for row in rows:print('PASS' if row['passed'] else 'FAIL',row['name'])
+(O/'playable.json').write_text(json.dumps({'htmlSha256':hashlib.sha256(html).hexdigest(),'rows':rows,'errors':errors},indent=2)+'\n');print(errors);assert not errors and all(r['passed'] for r in rows)

@@ -1,5 +1,5 @@
 {
-  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
   "rows": [
     {
       "name": "sLP commits a real contact and matching sound tier",
@@ -10,7 +10,7 @@
         "zone": "body",
         "type": "hit",
         "tier": "hit",
-        "pan": -0.04,
+        "pan": 0.031977104283415526,
         "multi": false,
         "damage": 280,
         "move": "sLP"
@@ -25,7 +25,7 @@
         "zone": "body",
         "type": "hit",
         "tier": "heavy",
-        "pan": -0.04,
+        "pan": 0.007456502277843305,
         "multi": false,
         "damage": 820,
         "move": "sHP"
@@ -40,7 +40,7 @@
         "zone": "leg",
         "type": "hit",
         "tier": "hit",
-        "pan": -0.04,
+        "pan": 0.04158379632041387,
         "multi": false,
         "damage": 520,
         "move": "cMK"

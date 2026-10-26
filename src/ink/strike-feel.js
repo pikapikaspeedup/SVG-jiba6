@@ -28,6 +28,20 @@
    add('chest',-16*fast);add('chestYaw',sign*13*fast);add('lean',sign*12*lag);add('head',-sign*8*lag);add('pelvis',-sign*4*weight);add('bob',4*Math.abs(fast)+3*weight);
    shift('fw',sign*15*fast,-2*lag);shift('rw',sign*10*lag,4*fast);
   }
+  const contact=INK.ContactResponse?.active()?r.contact:null;
+  if(contact){
+   // Local body/step response reads the contact snapshot. No feet or root
+   // positions are written back to combat, including during repeated renders.
+   const turn=contact.turn*sign*contact.twist,solid=contact.quality*contact.compression;
+   add('chestYaw',turn*15*fast);add('pelvisYaw',-turn*7*lag);add('headYaw',turn*5*lag);
+   add('lean',sign*(solid-1)*8*fast);add('chest',-(solid-1)*7*fast);
+   if(!r.parry){
+    const retreat=Math.sin(Math.PI*clamp(age/r.duration))*end*power*contact.step*(r.guard?.55:1);
+    const stepping=sign<0?'ra':'fa',bracing=sign<0?'fa':'ra';
+    shift(stepping,sign*20*retreat,-7*retreat);shift(bracing,-sign*3*retreat,0);
+    add('bob',3*retreat);add('pelvis',sign*4*retreat);
+   }
+  }
   return true;
  }
  function audio(m,type,zone,context={},x=720){

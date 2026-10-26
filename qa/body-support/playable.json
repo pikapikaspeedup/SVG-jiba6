@@ -1,0 +1,211 @@
+{
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "rows": [
+    {
+      "name": "ryu final solved support foot reduces planted horizontal drift",
+      "passed": true,
+      "details": {
+        "samples": 24,
+        "on": 1.9447324801947516,
+        "off": 16.449981883599126
+      }
+    },
+    {
+      "name": "ryu stop retains bounded braking and support",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "mode": "brake",
+        "phase": 0.8322580645161128,
+        "velocity": 0,
+        "drive": 0.5999999998960517,
+        "brake": 0.9999999999999957,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              451.724587568552,
+              648.2046811438322
+            ],
+            "weight": 0.35
+          },
+          "front": {
+            "anchor": [
+              604.5860503693823,
+              648.2046811438322
+            ],
+            "weight": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "ryu settles braking instead of accumulating offsets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy final solved support foot reduces planted horizontal drift",
+      "passed": true,
+      "details": {
+        "samples": 24,
+        "on": 1.3431070470858824,
+        "off": 21.241985530485138
+      }
+    },
+    {
+      "name": "cammy stop retains bounded braking and support",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "mode": "brake",
+        "phase": 0.8358974358974334,
+        "velocity": 0,
+        "drive": 0.5999999998960504,
+        "brake": 0.9999999999999933,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              539.8470715783286,
+              649.6400000000001
+            ],
+            "weight": 0.35
+          },
+          "front": {
+            "anchor": [
+              663.5213619579989,
+              649.6400000000001
+            ],
+            "weight": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "cammy settles braking instead of accumulating offsets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Ryu and Cammy have distinct support/drive profiles",
+      "passed": true,
+      "details": [
+        {
+          "id": "ryu",
+          "lean": -3.7560000003368206,
+          "brake": 0.9999999999999957
+        },
+        {
+          "id": "cammy",
+          "lean": 7.404999999462042,
+          "brake": 0.9999999999999933
+        }
+      ]
+    },
+    {
+      "name": "Direction reversal transfers momentum into torso turn",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "mode": "step",
+        "phase": 0.7629677419354807,
+        "velocity": -4.103999999999985,
+        "drive": 0.2859223039999985,
+        "brake": 0.9999999999999957,
+        "turn": -1,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              266.1863369714941,
+              648.2046811438322
+            ],
+            "weight": 0
+          },
+          "front": {
+            "anchor": [
+              415.88078542609196,
+              648.2046811438322
+            ],
+            "weight": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "Repeated and fractional rendering cannot change support or combat state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Hitstop holds support anchors and momentum",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Final support constraint preserves solved arms and all bone lengths",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Grounded heavy normal gains shoulder/pelvis loading",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Kicking front leg is released from planted target",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Jump releases support so flight remains authored",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Other characters retain their existing movement presentation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Real directional hit unloads retreat foot while preserving other support",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "mode": "absorb",
+        "phase": 0,
+        "velocity": 0,
+        "drive": 0,
+        "brake": 0,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              831.4516635298043,
+              649.64
+            ],
+            "weight": 0
+          },
+          "front": {
+            "anchor": [
+              626.2229704199029,
+              649.64
+            ],
+            "weight": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "Reaction end restores both grounded support contacts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Teleport discards world foot anchors",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": []
+}

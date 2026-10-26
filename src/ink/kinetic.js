@@ -10,12 +10,12 @@
  function contact(G,a,d,m,type,damage,context=null){
   if(!settings.enabled||!['hit','block','parry','throw'].includes(type))return;
   const point=context?.point,dir=context?.direction??a.dir,guard=type==='block'||type==='parry',multi=(m.hits||1)>1&&!context?.last,energy=strength(m)*(guard?.48:1)*(multi?.6:1)*(context?.punish?1.25:context?.counter?1.12:1),birth=INK.VFX.time;
-  const zone=INK.StrikeFeel?.active()?INK.StrikeFeel.zone(d,m,type,point):guard?'guard':(point?.[1]??665+d.y-250)<665+d.y-295?'head':m.height==='low'||(point?.[1]??0)>665+d.y-165?'leg':'body';
-  const e={zone,id:++serial,birth,life:guard?13:m.super?27:21,type,energy,attacker:a.index,defender:d.index,dir,x:point?.[0]??d.x-a.dir*27,y:point?.[1]??665+d.y-(m.height==='low'?95:d.crouch?190:270),color:type==='parry'?'#d4b9ff':guard?'#9edfff':a.ch.color,move:m.id,super:!!m.super,damage,finish:!!context?.last,counter:!!context?.counter,punish:!!context?.punish};
+  const zone=guard?'guard':context?.response?.zone||(INK.StrikeFeel?.active()?INK.StrikeFeel.zone(d,m,type,point):(point?.[1]??665+d.y-250)<665+d.y-295?'head':m.height==='low'||(point?.[1]??0)>665+d.y-165?'leg':'body');
+  const e={contact:context?.response||null,zone,id:++serial,birth,life:guard?13:m.super?27:21,type,energy,attacker:a.index,defender:d.index,dir,x:point?.[0]??d.x-a.dir*27,y:point?.[1]??665+d.y-(m.height==='low'?95:d.crouch?190:270),color:type==='parry'?'#d4b9ff':guard?'#9edfff':a.ch.color,move:m.id,super:!!m.super,damage,finish:!!context?.last,counter:!!context?.counter,punish:!!context?.punish};
   events.push(e);if(events.length>32)events.shift();
   // Recoil is local to the evaluated body. Root motion remains combat-owned.
   const previous=d._inkReaction,residual=previous?envelope((d._inkVisualClock||0)-previous.actorBirth,previous.duration)*previous.energy*.3:0;
-  d._inkReaction={birth,actorBirth:d._inkVisualClock||0,energy:Math.min(1.8,energy+residual),worldDir:dir,zone,height:m.height,guard,parry:type==='parry',duration:guard?13:23};
+  d._inkReaction={birth,actorBirth:d._inkVisualClock||0,energy:Math.min(1.8,energy+residual),worldDir:dir,contact:context?.response||null,zone,height:m.height,guard,parry:type==='parry',duration:guard?13:23};
   a._inkRecoil={birth,actorBirth:a._inkVisualClock||0,energy:energy*(guard?.8:.35),duration:12};
  }
  function land(f,speed){
@@ -99,13 +99,14 @@
   for(let i=0;i<slots.length;i++){
    const s=slots[i],e=active[i];assign(s.root,'display',e?'inline':'none');if(!e)continue;
    const age=time-e.birth,u=clamp(age/e.life),fade=(1-u)**2,ground=e.type==='landing',guard=e.type==='block'||e.type==='parry',radius=(guard?32:45)+e.energy*(guard?14:35)+age*(guard?1:2.8);
-   assign(s.root,'transform',`translate(${e.x} ${e.y}) scale(${e.dir} 1)`);
+   const contact=INK.ContactResponse?.active()?e.contact:null,turn=contact?clamp(contact.turn*20,-20,20):0,quality=contact?.quality??1;
+   assign(s.root,'transform',`translate(${e.x} ${e.y}) scale(${e.dir} 1) rotate(${ground?0:turn})`);
    assign(s.lightColor,'stop-color',e.color);assign(s.light,'rx',ground?radius*1.6:radius*1.5);assign(s.light,'ry',ground?12:radius*1.1);assign(s.light,'opacity',fade*(reduced?.08:.2)*e.energy*intensity);
    assign(s.halo,'rx',radius*(ground?1.4:guard?.4:1));assign(s.halo,'ry',radius*(ground?.1:guard?1:.55));assign(s.halo,'stroke',e.color);assign(s.halo,'stroke-width',guard?3:1.3);assign(s.halo,'opacity',fade*(guard?.8:.32)*intensity);
    const core=guard?'M-5-30Q28 0-5 30L1 18Q16 0 1-18Z':'M-7-5L-26-23-4-12 6-33 9-9 43-5 14 3 25 21 4 11-6 29-10 9-38 6Z';
    assign(s.core,'d',core);assign(s.core,'fill',e.type==='parry'?'#fff5ff':'#fff4da');assign(s.core,'transform',`scale(${(1+e.energy*.6)*(1+u*.3)})`);assign(s.core,'opacity',ground?0:Math.max(0,1-age/5)*.9*intensity);
    s.rays.forEach((ray,j)=>{
-    const angle=(j-3)*(guard?.33:.22),near=radius*.65,far=near+(reduced?12:40+e.energy*70)*(1-u),c=Math.cos(angle),sn=Math.sin(angle);
+    const angle=(j-3)*(guard?.33:.22),near=radius*.65,far=near+(reduced?12:40+e.energy*70*(.72+.28*quality))*(1-u),c=Math.cos(angle),sn=Math.sin(angle);
     assign(ray,'d',`M${c*near} ${sn*near}L${c*far} ${sn*far}`);assign(ray,'stroke',j%2?e.color:'#fff3d7');assign(ray,'stroke-width',j===3?2.8:1.2);assign(ray,'opacity',reduced||ground?0:fade*(guard?.35:.55)*intensity);
    });
   }

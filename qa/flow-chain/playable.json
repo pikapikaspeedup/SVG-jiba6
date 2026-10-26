@@ -1,5 +1,5 @@
 {
-  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
   "rows": [
     {
       "name": "ryu completes its contact-gated three-stage route",
@@ -109,7 +109,7 @@
       "name": "Cancel preserves all four solved limb chains at the handoff",
       "passed": true,
       "details": {
-        "maxJointJump": 1.0247593068766007e-13
+        "maxJointJump": 1.7112135109858136e-13
       }
     },
     {

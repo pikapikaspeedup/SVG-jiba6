@@ -2,9 +2,11 @@
 
 十轮引擎升级已经整合：重心动作与命中反馈、八角色确认连携、短跳/快落/方向受身、角色材质特效、连续对波与能量衰减、场景照明、分部位打击与音效、实际接触驱动的超级技演出，以及 CPU 实战策略和落地输入缓冲。
 
+下一阶段从「身体与接触」推进：隆/嘉米加入实际位移驱动的承重、刹步与肩胯发力；方向接触统一驱动受击身体、局部特效和有界退让。自由练习中可切换两种身体风格，并关闭新层对照。后续攻防分支与八角色推广见 [下一阶段安排](docs/NEXT-ENGINE.md)。本轮证据位于 `qa/body-contact/`、`qa/body-support/` 和 `qa/contact-response/`，不沿用旧十轮报告宣称本轮验收。
+
 打开 `dist/INK-Street-Fighter-6.html`，点击 **开始格斗**。支持电脑对战、本地双人、自由练习；各项引擎练习控制收在战斗画面下方。辅助操作可用 Z/X/C/B 必杀、1/2/3 超级技，经典搓招仍可用。
 
-构建：`python3 tools/build_forge.py`（Python 3.10+）。[十轮范围](docs/ITERATIONS.md) · [最新整合与验证边界](docs/DUEL.md)。最终直接检查见 `qa/duel/completion.json`；保留 707 份原始资产，API/存储沿用 v9。旧版报告只证明各自绑定的历史构建。
+构建：`python3 tools/build_forge.py`（Python 3.10+）。[迭代范围](docs/ITERATIONS.md) · [十轮整合基线](docs/DUEL.md)。十轮基线检查见 `qa/duel/completion.json`；保留 707 份原始资产，API/存储沿用 v9。旧版报告只证明各自绑定的历史构建。
 
 ---
 

@@ -1,0 +1,283 @@
+{
+  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "rows": [
+    {
+      "name": "ryu real heavy contact preserves damage and stun while changing bounded push",
+      "passed": true,
+      "details": {
+        "legacy": {
+          "hp": 9180,
+          "push": 2.75,
+          "stun": 29,
+          "type": "hit",
+          "response": null,
+          "clock": 10
+        },
+        "modern": {
+          "hp": 9180,
+          "push": 3.080055264,
+          "stun": 29,
+          "type": "hit",
+          "response": {
+            "version": 2,
+            "attacker": "ryu",
+            "defender": "cammy",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              666.710852050059,
+              427.9805673099986
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 150,
+            "dFar": 250,
+            "extension": 0.3,
+            "quality": 0.91792,
+            "closing": 0,
+            "turn": -0.02859768873704272,
+            "hitScale": 1.120020096,
+            "blockScale": 1.08699552,
+            "compression": 0.88,
+            "twist": 1.22,
+            "step": 1.18,
+            "kind": "solid"
+          },
+          "clock": 10
+        }
+      }
+    },
+    {
+      "name": "ryu real guard contact changes retreat without free damage",
+      "passed": true,
+      "details": {
+        "guard": {
+          "hp": 10000,
+          "push": 1.9565919360000001,
+          "stun": 16,
+          "type": "block",
+          "response": {
+            "version": 2,
+            "attacker": "ryu",
+            "defender": "cammy",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              666.710852050059,
+              427.9805673099986
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 150,
+            "dFar": 250,
+            "extension": 0.3,
+            "quality": 0.91792,
+            "closing": 0,
+            "turn": -0.02859768873704272,
+            "hitScale": 1.120020096,
+            "blockScale": 1.08699552,
+            "compression": 0.88,
+            "twist": 1.22,
+            "step": 1.18,
+            "kind": "solid"
+          },
+          "clock": 10
+        },
+        "oldGuard": {
+          "hp": 10000,
+          "push": 1.8,
+          "stun": 16,
+          "type": "block",
+          "response": null,
+          "clock": 10
+        }
+      }
+    },
+    {
+      "name": "cammy real heavy contact preserves damage and stun while changing bounded push",
+      "passed": true,
+      "details": {
+        "legacy": {
+          "hp": 9300,
+          "push": 2.75,
+          "stun": 27,
+          "type": "hit",
+          "response": null,
+          "clock": 9
+        },
+        "modern": {
+          "hp": 9300,
+          "push": 2.7324000000000006,
+          "stun": 27,
+          "type": "hit",
+          "response": {
+            "version": 2,
+            "attacker": "cammy",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              655.4003640931614,
+              428.6943154476055
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 180,
+            "dFar": 305,
+            "extension": 0,
+            "quality": 1,
+            "closing": 0,
+            "turn": -0.0256898259541998,
+            "hitScale": 0.9936000000000001,
+            "blockScale": 0.9864,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "clock": 9
+        }
+      }
+    },
+    {
+      "name": "cammy real guard contact changes retreat without free damage",
+      "passed": true,
+      "details": {
+        "guard": {
+          "hp": 10000,
+          "push": 1.7755200000000002,
+          "stun": 14,
+          "type": "block",
+          "response": {
+            "version": 2,
+            "attacker": "cammy",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              655.4003640931614,
+              428.6943154476055
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 180,
+            "dFar": 305,
+            "extension": 0,
+            "quality": 1,
+            "closing": 0,
+            "turn": -0.0256898259541998,
+            "hitScale": 0.9936000000000001,
+            "blockScale": 0.9864,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "clock": 9
+        },
+        "oldGuard": {
+          "hp": 10000,
+          "push": 1.8,
+          "stun": 14,
+          "type": "block",
+          "response": null,
+          "clock": 9
+        }
+      }
+    },
+    {
+      "name": "Actual contact geometry yields distinct distance qualities",
+      "passed": true,
+      "details": [
+        {
+          "distance": 130,
+          "quality": 1,
+          "push": 3.1317
+        },
+        {
+          "distance": 160,
+          "quality": 0.98936,
+          "push": 3.125005312
+        },
+        {
+          "distance": 190,
+          "quality": 0.8662399999999999,
+          "push": 3.0475382079999997
+        },
+        {
+          "distance": 220,
+          "quality": 0.70208,
+          "push": 2.944248736
+        },
+        {
+          "distance": 250,
+          "quality": 0.62,
+          "push": 2.8926039999999995
+        }
+      ]
+    },
+    {
+      "name": "Repeated body rendering cannot change committed contact or battle state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Knockdown normal preserves authored launch and excludes the modifier",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": []
+}

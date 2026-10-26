@@ -11,7 +11,7 @@
  const Runtime={enabled:true,sourceStore:null,sessionStore:null,get store(){return this.sessionStore||this.sourceStore;},eventLog:[],profileCache:new Map(),lifecycleLog:[],actionSerial:0,
   install(store){this.sourceStore=store;store.on(()=>{if(!this.sessionStore)this.invalidate();});return this;},
   useSessionStore(store){this.sessionStore=store;this.invalidate();},
-  invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Presentation?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
+  invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Presentation?.reset(f);INK.BodySupport?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
   get revision(){return this.store?.revision||0;},
   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
   record(f,m){return this.store?.byGame(f.ch.id,m?.id||'@idle')||null;},
@@ -33,13 +33,14 @@
    f._inkTransition={id:m.id,bridge:INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,next),deadline),secondary:oldSecondary};
    // A separate visual bridge preserves a cancelled layer's displacement and
    // derivative. It does not replace the battle-owned incoming base bridge.
-   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;return INK.Aerial?.pose(view,kinetic)||kinetic;};
+   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;const aerial=INK.Aerial?.pose(view,kinetic)||kinetic;return INK.BodySupport?.pose(view,aerial,world)||aerial;};
    const visualTarget=graphAt(target,0),visualNext=graphAt(next,.25);
    f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),deadline)};
    // A pose-value bridge alone cannot preserve a compiled skeleton: the next
    // clip owns a different angular trajectory. Carry actual joint rotations
    // and their derivatives, then expire before the first active frame.
-   const incoming=INK.Motion.apply(visualTarget,f._inkVisualTransition.bridge,0),incomingNext=INK.Motion.apply(visualNext,f._inkVisualTransition.bridge,.25);
+   let incoming=INK.Motion.apply(visualTarget,f._inkVisualTransition.bridge,0),incomingNext=INK.Motion.apply(visualNext,f._inkVisualTransition.bridge,.25);
+   const constrained=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};return INK.BodySupport?.constrainFeet(view,p,world)||p;};incoming=constrained(incoming,0);incomingNext=constrained(incomingNext,.25);
    f._inkJointTransition={id:m.id,...INK.Articulation.bridge(Rig.solveAnimation(profile,visualFrom),Rig.solveAnimation(profile,visualPrevious),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),deadline,dt)};
   },
   sample(f,m,t,base){
@@ -88,11 +89,13 @@
    p=INK.MotionGraph.compose(ctx.record,ctx.frame,p,this.profile(f.ch.id),context);
    p=INK.Kinetic?.pose(f,p)||p;
    p=INK.Aerial?.pose(f,p)||p;
+   p=INK.BodySupport?.pose(f,p,world)||p;
    const visualTransition=f._inkVisualTransition;
    if(INK.MotionGraph.settings.enabled&&f.attack&&visualTransition?.id===f.attack.m.id)p=INK.Motion.apply(p,visualTransition.bridge,f.attack.t);
    if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
    p=INK.StateTransitions.compression(f,p);
    p=INK.StateTransitions.apply(f,p);
+   p=INK.BodySupport?.constrainFeet(f,p,world)||p;
    return p;
   },
   visualSample(f,record,frame,root){
