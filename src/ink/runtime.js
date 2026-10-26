@@ -47,7 +47,7 @@
    // each moving startup pose left most of a cross-side punch for the last frame.
    incomingView.attack={m,t:deadline};incomingView._inkVisualClock=(f._inkVisualClock||0)+deadline;
    const deadlinePose=this.visual(incomingView,A.pose(incomingView),world);
-   INK.FrameBridge?.begin(f,INK.FrameBridge.capture(source,visualFrom),{state:'attack',attack:m.id,duration:deadline,deadlineFrame:INK.VisualFrame?.get(deadlinePose)});
+   INK.FrameBridge?.begin(f,INK.FrameBridge.capture(source,visualFrom),{state:'attack',attack:m.id,duration:deadline,deadlineFrame:INK.VisualFrame?.get(deadlinePose),carry:m.movementStrike?.budget||0});
   },
   sample(f,m,t,base){
    if(!this.enabled||!this.store)return null;const record=this.record(f,m);if(!record)return null;

@@ -30,6 +30,8 @@
   // Elbow guide only: authored wrists and ankles remain byte-for-byte intact.
   const elbow=(x,y)=>{if(Array.isArray(p.re))p.re=[p.re[0]+x*gain,p.re[1]+y*gain];};
   add('pelvisYaw',-5*h);add('chestYaw',8*c);add('lean',2*c);add('bob',f.y<0?0:2*q.hip.load);add('head',-c);
+  const carry=f.attack.m.movementStrike;
+  if(carry){const load=clamp(carry.budget/18),drive=load*(.45*q.hip.load+q.hip.release);add('lean',4*drive);add('pelvis',-2*load*q.hip.load);add('chest',-2*drive);elbow(-4*drive,-3*drive);}
   switch(q.path){
    case 'root':add('pelvis',-3*q.hip.load+2*q.hip.release);elbow(-5*o,-2*q.off.release);break;
    case 'drive':add('lean',4*q.hip.release-2*q.chest.load);add('chest',-2*q.off.load);elbow(5*q.off.release,-6*q.off.release);break;

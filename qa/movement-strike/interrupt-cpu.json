@@ -1,0 +1,387 @@
+{
+  "sha256": "a87ad245a841e9e47e89564d9d36cc9e0395b90a1b5f64e5c05aea99e31bf414",
+  "interrupt": {
+    "state": "hit",
+    "spent": 10.8,
+    "budget": 18,
+    "remaining": 7.2,
+    "cleared": true,
+    "hitstop": 4,
+    "stable": true
+  },
+  "cpu": [
+    {
+      "seed": 1,
+      "entry": "rush",
+      "moves": [],
+      "states": [
+        {
+          "i": 0,
+          "state": "rush",
+          "move": null,
+          "age": 1,
+          "x": 520
+        },
+        {
+          "i": 1,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 2,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 3,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 4,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 5,
+          "state": "rush",
+          "move": null,
+          "age": 3,
+          "x": 557.3405
+        },
+        {
+          "i": 6,
+          "state": "rush",
+          "move": null,
+          "age": 4,
+          "x": 574.7601775
+        },
+        {
+          "i": 7,
+          "state": "rush",
+          "move": null,
+          "age": 5,
+          "x": 591.3959695125001
+        },
+        {
+          "i": 8,
+          "state": "rush",
+          "move": null,
+          "age": 6,
+          "x": 607.2831508844375
+        },
+        {
+          "i": 9,
+          "state": "attack",
+          "move": "sMP",
+          "age": 1,
+          "x": 607.2831508844375
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "move": "sMP",
+          "age": 2,
+          "x": 607.2831508844375
+        },
+        {
+          "i": 11,
+          "state": "attack",
+          "move": "sMP",
+          "age": 3,
+          "x": 607.2831508844375
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "entry": "rush",
+      "moves": [],
+      "states": [
+        {
+          "i": 0,
+          "state": "rush",
+          "move": null,
+          "age": 1,
+          "x": 520
+        },
+        {
+          "i": 1,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 2,
+          "state": "rush",
+          "move": null,
+          "age": 3,
+          "x": 557.3405
+        },
+        {
+          "i": 3,
+          "state": "rush",
+          "move": null,
+          "age": 4,
+          "x": 574.7601775
+        },
+        {
+          "i": 4,
+          "state": "rush",
+          "move": null,
+          "age": 5,
+          "x": 591.3959695125001
+        },
+        {
+          "i": 5,
+          "state": "rush",
+          "move": null,
+          "age": 6,
+          "x": 607.2831508844375
+        },
+        {
+          "i": 6,
+          "state": "rush",
+          "move": null,
+          "age": 7,
+          "x": 622.4554090946378
+        },
+        {
+          "i": 7,
+          "state": "rush",
+          "move": null,
+          "age": 8,
+          "x": 636.9449156853791
+        },
+        {
+          "i": 8,
+          "state": "rush",
+          "move": null,
+          "age": 9,
+          "x": 650.7823944795371
+        },
+        {
+          "i": 9,
+          "state": "attack",
+          "move": "sLP",
+          "age": 1,
+          "x": 650.7823944795371
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "move": "sLP",
+          "age": 2,
+          "x": 650.7823944795371
+        },
+        {
+          "i": 11,
+          "state": "attack",
+          "move": "sLP",
+          "age": 3,
+          "x": 650.7823944795371
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "entry": "rush",
+      "moves": [
+        {
+          "actor": 0,
+          "move": "sMP",
+          "source": "rush",
+          "budget": 18,
+          "held": [],
+          "dir": 1
+        }
+      ],
+      "states": [
+        {
+          "i": 0,
+          "state": "rush",
+          "move": null,
+          "age": 1,
+          "x": 520
+        },
+        {
+          "i": 1,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 2,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 3,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 4,
+          "state": "rush",
+          "move": null,
+          "age": 2,
+          "x": 539.1
+        },
+        {
+          "i": 5,
+          "state": "rush",
+          "move": null,
+          "age": 3,
+          "x": 557.3405
+        },
+        {
+          "i": 6,
+          "state": "rush",
+          "move": null,
+          "age": 4,
+          "x": 574.7601775
+        },
+        {
+          "i": 7,
+          "state": "rush",
+          "move": null,
+          "age": 5,
+          "x": 591.3959695125001
+        },
+        {
+          "i": 8,
+          "state": "rush",
+          "move": null,
+          "age": 6,
+          "x": 607.2831508844375
+        },
+        {
+          "i": 9,
+          "state": "attack",
+          "move": "sMP",
+          "age": 1,
+          "x": 607.2831508844375
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "move": "sMP",
+          "age": 2,
+          "x": 613.2831508844375
+        },
+        {
+          "i": 11,
+          "state": "hit",
+          "move": null,
+          "age": 0,
+          "x": 618.0831508844375
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "entry": "rush",
+      "moves": [],
+      "states": [
+        {
+          "i": 0,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 1,
+          "x": 500
+        },
+        {
+          "i": 1,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 2,
+          "x": 500
+        },
+        {
+          "i": 2,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 3,
+          "x": 500
+        },
+        {
+          "i": 3,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 4,
+          "x": 500
+        },
+        {
+          "i": 4,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 5,
+          "x": 500
+        },
+        {
+          "i": 5,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 6,
+          "x": 500
+        },
+        {
+          "i": 6,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 7,
+          "x": 500
+        },
+        {
+          "i": 7,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 8,
+          "x": 500
+        },
+        {
+          "i": 8,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 9,
+          "x": 500
+        },
+        {
+          "i": 9,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 10,
+          "x": 500
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 11,
+          "x": 500
+        },
+        {
+          "i": 11,
+          "state": "attack",
+          "move": "hadoken_2",
+          "age": 12,
+          "x": 496.1652328872171
+        }
+      ]
+    }
+  ]
+}

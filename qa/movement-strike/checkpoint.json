@@ -1,0 +1,34 @@
+{
+  "stage": "疾走追身与踩步出招",
+  "htmlSha256": "a87ad245a841e9e47e89564d9d36cc9e0395b90a1b5f64e5c05aea99e31bf414",
+  "reports": [
+    {
+      "path": "qa/movement-strike/playable.json",
+      "buildSha256": "8ffd0552cce4600e396b4a6eb748107d6233f16d9fbd68eac80bf3807a85b9a7"
+    },
+    {
+      "path": "qa/movement-strike/interrupt-cpu.json",
+      "buildSha256": "a87ad245a841e9e47e89564d9d36cc9e0395b90a1b5f64e5c05aea99e31bf414"
+    },
+    {
+      "path": "qa/movement-strike/presentation.json",
+      "buildSha256": "a87ad245a841e9e47e89564d9d36cc9e0395b90a1b5f64e5c05aea99e31bf414"
+    },
+    {
+      "path": "qa/locomotion/run-v3.json",
+      "buildSha256": "479a05bf5d3149b3f0f90ecbc2d46f06a03ab2168952327b04b8021960889f78"
+    }
+  ],
+  "checks": [
+    "MovementStrike unit",
+    "Locomotion unit",
+    "VisualFrame unit",
+    "source gate: 6 passed, 707 assets unchanged"
+  ],
+  "scope": "Targeted checks; individual reports preserve their own build hashes. No endurance/performance claim.",
+  "limitations": [
+    "护架追身步，不是自然交叉腿跑步",
+    "CPU自然短样本未观察到前压；定向公共RUSH后CPU接管出现一次",
+    "未新增竞技平衡或长时间性能验证"
+  ]
+}

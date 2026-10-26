@@ -17,3 +17,18 @@ const wall={ch:{id:'ryu'},dir:1};L.adopt(wall,{front:[80,665,0],rear:[-20,665,0]
 // corrective stepping and reset blend to one (Cammy stop frame 79).
 const unloading={ch:{id:'cammy'},dir:1};L.adopt(unloading,{front:[80,665,0],rear:[-20,665,0]},{time:0,dir:1,scale:1});unloading._inkLocomotion=Object.freeze({...unloading._inkLocomotion,adopted:false,releaseStart:0,releaseDuration:8});
 L.step(unloading,{}, {actionclock:6,actualdx:0,grounded:true,eligible:true,dir:1,baseFeet:{front:[30,665],rear:[-20,665]},reach:{front:[10,50],rear:[-40,0]}});assert.equal(unloading._inkLocomotion.releaseStart,0);assert.equal(unloading._inkLocomotion.feet.front.swing,null);assert.equal(L.sample(unloading,6).blend,.15625);
+// Fast root movement releases the trailing support before the other foot
+// finishes; flight is presentation data, never a change to combat altitude.
+for(const id of Object.keys(L.profiles)){
+ const runner={ch:{id},dir:1,x:0,y:0};let flight=false,used=new Set();
+ for(let t=1;t<=28;t++){
+  const dx=t<19?20*Math.pow(.955,t-1):0;runner.x+=dx;
+  const c={actionclock:t,actualdx:dx,scale:1,grounded:true,eligible:true,dir:1,baseFeet:{front:[runner.x+30,665],rear:[runner.x-30,665]},reach:{front:[runner.x-110,runner.x+110],rear:[runner.x-110,runner.x+110]}};
+  const previous=runner._inkLocomotion,at=previous?L.sample(runner,t):null;L.step(runner,{},c);const q=L.sample(runner,t);if(!q)continue;
+  flight||=q.flight;for(const name of ['front','rear']){if(runner._inkLocomotion.feet[name].swing?.run){used.add(name);const sw=runner._inkLocomotion.feet[name].swing;if(sw.start===t&&dx>0){for(let j=0;j<20;j++){const clock=t+sw.duration*j/20,a=L.samplePlan(runner._inkLocomotion,clock).feet[name],b=L.samplePlan(runner._inkLocomotion,clock+.001).feet[name];assert.ok(Math.hypot(b[0]-a[0],b[1]-a[1])/.001<=32.1,id+' run velocity budget');}}}assert.ok(q.feet[name].every(Number.isFinite));if(at&&runner._inkLocomotion.feet[name].swing?.start===t)assert.ok(Math.hypot(...q.feet[name].map((v,i)=>v-at.feet[name][i]))<1e-6);}
+  assert.equal(runner.y,0);const serialized=JSON.stringify(runner);L.sample(runner,t+.4);assert.equal(JSON.stringify(runner),serialized);
+ }
+ assert.ok(flight,id+' has bounded flight phase');assert.equal(used.size,2);
+}
+const strikeSource={ch:{id:'ryu'},dir:1};L.step(strikeSource,{}, {actionclock:1,actualdx:4,scale:1,grounded:true,eligible:true,dir:1,baseFeet:{front:[25,665],rear:[-25,665]}});const plan=strikeSource._inkLocomotion,time=2,sp=L.samplePlan(plan,time),snapshot=JSON.stringify(plan),actual={front:[sp.feet.front[0]+3,sp.feet.front[1],4],rear:[-25,665,-4]};
+const strike=L.strikePlan(plan,{time,world:{scale:1},frame:{worldFeet:actual},deadlineFrame:{worldFeet:{front:[45,665,4],rear:[-20,665,-4]}},carry:18,dir:1});assert.equal(JSON.stringify(plan),snapshot);assert.ok(Object.isFrozen(strike.feet.front.swing.velocity));assert.equal(strike.feet.rear.swing,null);assert.deepEqual(Array.from(L.samplePlan(strike,time).feet.front),actual.front.slice(0,2));assert.equal(strike.feet.front.swing.to[0],63);const eps=.0001,a=L.samplePlan(strike,time+eps).feet.front,b=L.samplePlan(plan,time+eps).feet.front;assert.ok(Math.abs((a[0]-actual.front[0])/eps-(b[0]-sp.feet.front[0])/eps)<.03);assert.ok(!L.samplePlan(strike,L.samplePlan(strike,time).endTime).active);

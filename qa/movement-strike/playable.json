@@ -1,0 +1,530 @@
+{
+  "sha256": "8ffd0552cce4600e396b4a6eb748107d6233f16d9fbd68eac80bf3807a85b9a7",
+  "cases": [
+    {
+      "kind": "dash",
+      "hold": true,
+      "wall": false,
+      "entry": "dash",
+      "move": "sMP",
+      "metadata": {
+        "dir": 1,
+        "budget": 18,
+        "frames": 5,
+        "penalty": 2,
+        "source": "dash"
+      },
+      "original": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 23
+      },
+      "actual": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 25
+      },
+      "dx": 12,
+      "maxSpent": 18,
+      "trace": [
+        {
+          "x": 491.615,
+          "t": 2,
+          "spent": 10.8
+        },
+        {
+          "x": 495.21500000000003,
+          "t": 3,
+          "spent": 14.4
+        },
+        {
+          "x": 497.615,
+          "t": 4,
+          "spent": 16.8
+        },
+        {
+          "x": 498.815,
+          "t": 5,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 7,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 8,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 9,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 10,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 11,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 12,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 13,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 14,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 15,
+          "spent": 18
+        },
+        {
+          "x": 498.815,
+          "t": 16,
+          "spent": 18
+        }
+      ]
+    },
+    {
+      "kind": "dash",
+      "hold": false,
+      "wall": false,
+      "entry": "dash",
+      "move": "sMP",
+      "metadata": null,
+      "original": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 23
+      },
+      "actual": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 23
+      },
+      "dx": 0,
+      "maxSpent": 0,
+      "trace": [
+        {
+          "x": 480.815,
+          "t": 2,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 3,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 4,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 5,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 6,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 7,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 8,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 9,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 10,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 11,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 12,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 13,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 14,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 15,
+          "spent": null
+        },
+        {
+          "x": 480.815,
+          "t": 16,
+          "spent": null
+        }
+      ]
+    },
+    {
+      "kind": "rush",
+      "hold": true,
+      "wall": false,
+      "entry": "rush",
+      "move": "sMP",
+      "metadata": {
+        "dir": 1,
+        "budget": 18,
+        "frames": 5,
+        "penalty": 2,
+        "source": "rush"
+      },
+      "original": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 23
+      },
+      "actual": {
+        "startup": 6,
+        "active": 4,
+        "damage": 525,
+        "total": 25
+      },
+      "dx": 12,
+      "maxSpent": 18,
+      "trace": [
+        {
+          "x": 499.90000000000003,
+          "t": 2,
+          "spent": 10.8
+        },
+        {
+          "x": 503.50000000000006,
+          "t": 3,
+          "spent": 14.4
+        },
+        {
+          "x": 505.90000000000003,
+          "t": 4,
+          "spent": 16.8
+        },
+        {
+          "x": 507.1,
+          "t": 5,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 7,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 8,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 9,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 10,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 11,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 12,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 13,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 14,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 15,
+          "spent": 18
+        },
+        {
+          "x": 507.1,
+          "t": 16,
+          "spent": 18
+        }
+      ]
+    },
+    {
+      "kind": "rush",
+      "hold": false,
+      "wall": false,
+      "entry": "rush",
+      "move": "sMP",
+      "metadata": null,
+      "original": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 23
+      },
+      "actual": {
+        "startup": 6,
+        "active": 4,
+        "damage": 525,
+        "total": 23
+      },
+      "dx": 0,
+      "maxSpent": 0,
+      "trace": [
+        {
+          "x": 489.1,
+          "t": 2,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 3,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 4,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 5,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 6,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 7,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 8,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 9,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 10,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 11,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 12,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 13,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 14,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 15,
+          "spent": null
+        },
+        {
+          "x": 489.1,
+          "t": 16,
+          "spent": null
+        }
+      ]
+    },
+    {
+      "kind": "rush",
+      "hold": true,
+      "wall": true,
+      "entry": "rush",
+      "move": "sMP",
+      "metadata": {
+        "dir": 1,
+        "budget": 18,
+        "frames": 5,
+        "penalty": 2,
+        "source": "rush"
+      },
+      "original": {
+        "startup": 6,
+        "active": 4,
+        "damage": 500,
+        "total": 23
+      },
+      "actual": {
+        "startup": 6,
+        "active": 4,
+        "damage": 525,
+        "total": 25
+      },
+      "dx": -16.103759765625,
+      "maxSpent": 18,
+      "trace": [
+        {
+          "x": 1226.475,
+          "t": 2,
+          "spent": 10.8
+        },
+        {
+          "x": 1223.0375,
+          "t": 3,
+          "spent": 14.4
+        },
+        {
+          "x": 1220.71875,
+          "t": 4,
+          "spent": 16.8
+        },
+        {
+          "x": 1218.959375,
+          "t": 5,
+          "spent": 18
+        },
+        {
+          "x": 1217.4796875,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 1217.4796875,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 1217.4796875,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 1217.4796875,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 1217.4796875,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 1217.4796875,
+          "t": 6,
+          "spent": 18
+        },
+        {
+          "x": 1216.73984375,
+          "t": 7,
+          "spent": 18
+        },
+        {
+          "x": 1216.369921875,
+          "t": 8,
+          "spent": 18
+        },
+        {
+          "x": 1216.1849609375,
+          "t": 9,
+          "spent": 18
+        },
+        {
+          "x": 1216.09248046875,
+          "t": 10,
+          "spent": 18
+        },
+        {
+          "x": 1216.046240234375,
+          "t": 11,
+          "spent": 18
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "super freeze",
+      "ok": true,
+      "passed": true
+    },
+    {
+      "name": "real incoming hit clears carry",
+      "passed": true,
+      "state": "hit"
+    }
+  ]
+}

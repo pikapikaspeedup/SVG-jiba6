@@ -16,8 +16,12 @@
   const kick=m.contactPart?m.contactPart==='foot':m.pose==='kick'||['drill','dive','spin'].includes(m.kind)||m.pose==='upper'&&f.ch.female;
   return kick?(m.kind==='spin'?['frontLeg','rearLeg']:['frontLeg']):['frontArm'];
  }
- function begin(f,from,{state=f.state,attack=null,duration=5,impact=false,guard=false,deadlineFrame=null}={}){
+ function begin(f,from,{state=f.state,attack=null,duration=5,impact=false,guard=false,deadlineFrame=null,carry=0}={}){
   if(!from||duration<=0||['throwing','captured','down','ko'].includes(state)){f._inkFrameTransition=null;return;}
+  if(attack&&from.footPlan?.kind==='gait'&&INK.Locomotion?.strikePlan){
+   const plan=INK.Locomotion.strikePlan(from.footPlan.plan,{time:f._inkVisualClock||0,world:from.world,frame:from.frame,deadlineFrame,carry,dir:f.dir});
+   if(plan)from={...from,footPlan:{kind:'gait',plan}};
+  }
   const start=f._inkVisualClock||0,feet=sampleFeet(from.footPlan,start),remaining=Math.max(0,(feet?.endTime||start)-start);
   f._inkFrameTransition=Object.freeze({from,state,attack,duration,impact,guard,deadlineFrame,start,supportDuration:feet?remaining+10:duration});
  }

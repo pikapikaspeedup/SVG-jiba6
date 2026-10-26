@@ -1,0 +1,274 @@
+{
+  "htmlSha256": "479a05bf5d3149b3f0f90ecbc2d46f06a03ab2168952327b04b8021960889f78",
+  "runs": [
+    {
+      "id": "ryu",
+      "scenario": "dash",
+      "samples": 90,
+      "residualScope": "fullBlend uses gait target; unload uses frozen handoff/gait blend",
+      "unloadResidual": 0.15074852874925082,
+      "fullBlendResidual": 5.684341886080802e-14,
+      "handoffJump": 11.68031574760315,
+      "supportResidual": 5.684341886080802e-14,
+      "swingResidual": 5.684341886080802e-14,
+      "maxJump": 26.969383598834472,
+      "gaitJump": 26.969383598834472,
+      "attackJump": 0,
+      "worstResidual": [
+        {
+          "frame": 5,
+          "label": "dash-stop",
+          "foot": "rear",
+          "state": "dash",
+          "x": 475.1340480748844,
+          "actual": [
+            341.3399709277952,
+            648.2046811438322
+          ],
+          "target": [
+            341.33997092779515,
+            648.2046811438322
+          ],
+          "blend": 1,
+          "kind": "support",
+          "residual": 5.684341886080802e-14,
+          "jump": 5.684341886080802e-14
+        },
+        {
+          "frame": 6,
+          "label": "dash-stop",
+          "foot": "rear",
+          "state": "dash",
+          "x": 484.9960159115146,
+          "actual": [
+            352.63476393440703,
+            637.7214811438322
+          ],
+          "target": [
+            352.634763934407,
+            637.7214811438322
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 5.684341886080802e-14,
+          "jump": 15.410056174531217
+        },
+        {
+          "frame": 0,
+          "label": "dash-stop",
+          "foot": "front",
+          "state": "dash",
+          "x": 418.4,
+          "actual": [
+            514.4985730866981,
+            639.7193096401803
+          ],
+          "target": [
+            514.4985730866981,
+            639.7193096401803
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 0,
+          "jump": 0
+        }
+      ],
+      "worstJump": [
+        {
+          "frame": 8,
+          "label": "dash-stop",
+          "foot": "rear",
+          "state": "dash",
+          "x": 503.40855641169907,
+          "actual": [
+            402.3318531634989,
+            637.7214811438322
+          ],
+          "target": [
+            402.3318531634989,
+            637.7214811438322
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 0,
+          "jump": 26.969383598834472
+        },
+        {
+          "frame": 7,
+          "label": "dash-stop",
+          "foot": "rear",
+          "state": "dash",
+          "x": 494.4141951954964,
+          "actual": [
+            377.48330854895295,
+            627.2382811438322
+          ],
+          "target": [
+            377.48330854895295,
+            627.2382811438322
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 0,
+          "jump": 26.969383598834423
+        },
+        {
+          "frame": 13,
+          "label": "dash-stop",
+          "foot": "rear",
+          "state": "dash",
+          "x": 542.6613657688465,
+          "actual": [
+            441.0454487184433,
+            627.2382811438322
+          ],
+          "target": [
+            441.0454487184433,
+            627.2382811438322
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 0,
+          "jump": 21.569331722881746
+        }
+      ],
+      "checks": [],
+      "finite": true
+    },
+    {
+      "id": "cammy",
+      "scenario": "wall",
+      "samples": 82,
+      "residualScope": "fullBlend uses gait target; unload uses frozen handoff/gait blend",
+      "unloadResidual": 0,
+      "fullBlendResidual": 3.0194503279286584,
+      "handoffJump": 8.084116455634007,
+      "supportResidual": 0,
+      "swingResidual": 3.0194503279286584,
+      "maxJump": 8.084116455634007,
+      "gaitJump": 8.084116455634007,
+      "attackJump": 0,
+      "worstResidual": [
+        {
+          "frame": 3,
+          "label": "walk",
+          "foot": "rear",
+          "state": "idle",
+          "x": 1335,
+          "actual": [
+            1253.552602877809,
+            646.3411745050728
+          ],
+          "target": [
+            1251.857503411243,
+            648.8399178054692
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 3.0194503279286584,
+          "jump": 7.664787051610279
+        },
+        {
+          "frame": 0,
+          "label": "walk",
+          "foot": "front",
+          "state": "idle",
+          "x": 1325.168,
+          "actual": [
+            1427.8291517029895,
+            645.6368435732594
+          ],
+          "target": [
+            1427.8291517029895,
+            645.6368435732594
+          ],
+          "blend": 1,
+          "kind": "support",
+          "residual": 0,
+          "jump": 0
+        },
+        {
+          "frame": 0,
+          "label": "walk",
+          "foot": "rear",
+          "state": "idle",
+          "x": 1325.168,
+          "actual": [
+            1244.16,
+            649.64
+          ],
+          "target": [
+            1244.16,
+            649.64
+          ],
+          "blend": 1,
+          "kind": "support",
+          "residual": 0,
+          "jump": 0
+        }
+      ],
+      "worstJump": [
+        {
+          "frame": 40,
+          "label": "stop",
+          "foot": "front",
+          "state": "idle",
+          "x": 1335,
+          "actual": [
+            1375.6295946742102,
+            649.2779367627667
+          ],
+          "target": [
+            1375.6295946742102,
+            649.2779367627667
+          ],
+          "blend": 0.84375,
+          "kind": "support",
+          "residual": 0,
+          "jump": 8.084116455634007
+        },
+        {
+          "frame": 3,
+          "label": "walk",
+          "foot": "rear",
+          "state": "idle",
+          "x": 1335,
+          "actual": [
+            1253.552602877809,
+            646.3411745050728
+          ],
+          "target": [
+            1251.857503411243,
+            648.8399178054692
+          ],
+          "blend": 1,
+          "kind": "swing",
+          "residual": 3.0194503279286584,
+          "jump": 7.664787051610279
+        },
+        {
+          "frame": 39,
+          "label": "stop",
+          "foot": "front",
+          "state": "idle",
+          "x": 1335,
+          "actual": [
+            1383.7130644700771,
+            649.3801861029112
+          ],
+          "target": [
+            1383.7130644700771,
+            649.3801861029112
+          ],
+          "blend": 0.8878761574074074,
+          "kind": "support",
+          "residual": 0,
+          "jump": 6.970893861743734
+        }
+      ],
+      "checks": [],
+      "finite": true
+    }
+  ],
+  "errors": []
+}

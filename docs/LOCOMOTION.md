@@ -4,7 +4,7 @@
 
 `step(f,G,context)` 每动作钟仅执行一次。context 为 `{baseFeet:{front:[worldX,worldY],rear:[worldX,worldY]},scale,actualdx,grounded,eligible,dir,actionclock,profile?}`。baseFeet 应为无 Locomotion/Support 反馈的当步基础脚世界点，地面高度应稳定。profile 可沿用 BodySupport 的 stride/lift/settle/drive，不提供时动态读取 BodySupport.profiles 或模块八角色回退参数，允许提前加载。
 
-step 写不可变 `f._inkLocomotion`：每脚 anchor 和可选 swing `{from,to,start,duration,height}`、weights、next、travel、brake、body。运动依据实际 dx 累积超过三像素启动；零位移墙边不会启动大步。摆动时间随速度在有限范围变化，落点根据基脚和有界前移预测；始终仅一脚摆动。反向继续当前脚轨迹，下一个步再改变方向。停止后摆脚按同一动作钟完成落地，不把相位停在半空；身体前倾逐步回落。
+step 写不可变 `f._inkLocomotion`：每脚 anchor 和可选 swing `{from,to,start,duration,height}`、weights、next、travel、brake、body。运动依据实际 dx 累积超过三像素启动；零位移墙边不会启动大步。摆动时间随速度在有限范围变化，落点根据基脚和有界前移预测；普通步行始终仅一脚摆动；疾走采用下文独立换脚规则。反向继续当前脚轨迹，下一个步再改变方向。停止后摆脚按同一动作钟完成落地，不把相位停在半空；身体前倾逐步回落。
 
 `sample(f,time,world)` 纯读，返回 `{active,feet,worldFeet,weights,brake,body}`。**feet/worldFeet 都是世界点**；world 参数预留、不执行隐式坐标转换，由 root 使用一致变换接入最终约束。脚底目标的骨架可达性由 FootConstraint 解算，模块自身不伸骨。支持分数动作钟采样，冻结时相同 time 必须得到相同结果。瞬间跨朝向暂 reset，overrideTurn 也是显式 reset 钩子，后续转身合同另接。
 
@@ -25,3 +25,11 @@ step 写不可变 `f._inkLocomotion`：每脚 anchor 和可选 swing `{from,to,s
 完整转身交接：`adopt(f,worldFeet,{time,dir,scale,...})` 是模拟侧提交入口，原样接收 front/rear 世界 XYZ，建立 adopted 支撑，不重新吸附 baseFeet，也不冒充有根位移。原地保持该姿态直到下一真实移动或动作接管；下一步从这些锚起步。sample.feet/worldFeet 保持二维兼容，feet3D/ownedFeet 返回 XYZ。顺序必须是 FacingMotion.step 产生 handoff → Locomotion.adopt 成功 → FacingMotion.completeHandoff 确认。未成功采用前不得释放 Facing 脚约束。adopted 无自动卸载到 authored 站姿，避免下一帧回跳；普通行走停车仍使用既有有限 handoff 卸载。
 
 停车卸载与可达修正有明确所有权：无位移时，可达边界纠正只能发生在 `releaseStart === null`。一旦开始向固定 handoff 足点卸载，新的轻微边界变化不能重新启动摆脚、将 blend 拉回 1；真实移动输入造成根位移时仍从当前实际脚位置续接步态。
+
+## 疾走计划（phase9）
+
+实际速度达到 9 local/F 进入 `mode: run`，低于 7 退出。疾走每脚独立判断支撑剩余距离，预计约 2.5 帧后越界便提前卸载；允许 `sample.flight` 表示短暂双脚低权重，绝不修改战斗高度或空中状态。未来落点按真实 dx 和有界加速度预测 3.5–5 帧，将当前三维地面可达区间平移至预计根位置后选取内部点。Hermite 摆脚保存起始位置与速度，停步时一次性撤回向前预测，继续有限制动落地。骨长和战斗根位置不变。
+
+`samplePlan` 兼容疾走快照，供独立攻击交接读取。该快照仅代表已提交轨迹；攻击余势移动由新的模拟交接计划接续，不应由渲染猜测根速度。已检查隆疾走和嘉米墙停，完整顺序图见 `qa/locomotion/run-sequence.png`，对应报告 `run-v3.json`。首次短回收后同脚继续向前送，起步至少错开两帧；速度预算最高 32 local/F，不改变战斗根速度。隆最大脚位移 26.969 世界单位/帧（首版为 60.065），墙停保持稳定。呈现保持护架的疾走追身步；尚非自然交叉腿跑步，躯干偏直立。
+
+`strikePlan(plan,{time,world,frame,deadlineFrame,carry,dir})` 是模拟提交用纯构造器，返回冻结且兼容 `samplePlan` 的脚计划。`frame.worldFeet` 为交接时实际世界 XYZ；`deadlineFrame.worldFeet` 应在出招当前根位置求得，不预加余势，函数再按 dir 添加最多 18 世界单位 carry。运动脚保留原采样速度、从实际可见脚点出发，重新落向攻击站姿，至少四帧；已站稳的脚原地保持，不把双脚一起搬到攻击站姿。若无 deadlineFrame，运动脚原水平位置落地。攻击腿的活动帧权限仍由 FrameBridge 决定，此函数不改变战斗或接触时序。

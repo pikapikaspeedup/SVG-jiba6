@@ -115,6 +115,12 @@
   const gait=!m&&!f.crouch&&!f.jumpPre&&['idle','dash','rush'].includes(f.state)?INK.Locomotion?.sample(f,f._inkVisualClock||0,world):null;
   if(gait){add('lean',gait.body.lean*direction);add('bob',gait.body.bob*profile.load);add('pelvisYaw',gait.body.pelvisYaw);add('pelvis',gait.brake*3);shift('rw',-localDrive*4,-gait.brake*3);}
   else{add('lean',localDrive*4.5*profile.drive-localBrake*4);add('pelvis',-localDrive*2.5+localBrake*3);add('bob',Math.abs(q.brake)*3.5*profile.load);shift('rw',-localDrive*4,-Math.abs(q.brake)*3);}
+  if(gait?.mode==='run'){
+   const stride=clamp((gait.feet.front[0]-gait.feet.rear[0])*direction/(90*(f.renderScale||f.ch.scale||1)),-1,1),style=profile.style;
+   const arm=style==='boxing'?3:style==='fan-dance'?2:style==='low-claw'?5:4;
+   add('chestYaw',stride*(style==='spiral'?5:3));add('pelvisYaw',-stride*2);
+   shift('rw',stride*arm,-Math.abs(stride)*2);shift('fw',-stride*arm,-Math.abs(stride));
+  }
   if(!gait){add('chestYaw',q.turn*f.dir*profile.turn);add('pelvisYaw',-q.turn*f.dir*profile.turn*.55);}
   // Attack loading belongs exclusively to StrikeMotion. Support owns locomotion.
   const traveling=!gait&&(q.mode==='step'||q.mode==='defend'),guarding=['block','parry'].includes(f.state),quiet=!m&&!['hit','stun'].includes(f.state);
