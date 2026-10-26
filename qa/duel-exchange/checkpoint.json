@@ -1,0 +1,50 @@
+{
+  "phase": 12,
+  "status": "integrated targeted checkpoint; continuous goal remains active",
+  "htmlSha256": "05863755f363cf46dc4ca2d1a464068dca3e3fbd496548090d386c1195c194d2",
+  "htmlBytes": 9232550,
+  "evidence": {
+    "playable": "qa/duel-exchange/playable.json",
+    "source": "qa/duel-exchange/source/validation.json"
+  },
+  "moduleSuites": [
+    "exchange-facts",
+    "duel-perception",
+    "duel-reach",
+    "duel-window",
+    "duel-personality",
+    "exchange-duel",
+    "clinch"
+  ],
+  "observed": {
+    "sourceChecks": "6/6",
+    "actualDuelContacts": 31,
+    "actualProbeCycles": 3,
+    "minimumSimulationObservationLag": 9,
+    "sameStepSupers": [
+      {
+        "move": "SA1",
+        "t": 1,
+        "super": 2
+      },
+      {
+        "move": "SA1",
+        "t": 1,
+        "super": 2
+      }
+    ],
+    "exactTapPunishAttempt": true
+  },
+  "limits": [
+    "cleanMiss evidence supports grounded single-hit normals under current detector only",
+    "geometric quote is an attempt, not a guaranteed contact against a changing pose",
+    "CPU proposal batch does not migrate player tickInput/command boundaries",
+    "learning uses bounded public event tendencies, not all contextual episode learning proposed by Pro",
+    "no endurance, new performance benchmark, full roster competitive balance or replay expansion claimed"
+  ],
+  "pro": {
+    "consultations": 1,
+    "received": true,
+    "sourcepackSHA256": "acd6568814e9c01148353bbe0ae3895bf64b82d6328508cfb7cf97f60a48dd78"
+  }
+}

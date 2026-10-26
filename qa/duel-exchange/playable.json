@@ -1,0 +1,491 @@
+{
+  "facts": {
+    "miss": {
+      "id": "2:attack:1",
+      "combatID": "attack:1",
+      "epoch": 2,
+      "actor": 0,
+      "character": "ryu",
+      "move": "sMP",
+      "start": 0,
+      "startup": 6,
+      "active": 4,
+      "total": 23,
+      "commit": 0,
+      "age": 23,
+      "contacts": 0,
+      "result": "cleanMiss",
+      "target": null,
+      "contactAt": null,
+      "endedAt": 23,
+      "reason": "natural",
+      "whiff": true,
+      "activeClosed": true,
+      "coverage": "complete",
+      "detectionModel": "discrete",
+      "avoided": false,
+      "settledAt": 23
+    },
+    "block": {
+      "id": "3:attack:1",
+      "combatID": "attack:1",
+      "epoch": 3,
+      "actor": 0,
+      "character": "ryu",
+      "move": "sMP",
+      "start": 55,
+      "startup": 6,
+      "active": 4,
+      "total": 23,
+      "commit": 55,
+      "age": 23,
+      "contacts": 1,
+      "result": "block",
+      "target": 1,
+      "contactAt": 61,
+      "endedAt": 78,
+      "reason": "natural",
+      "whiff": false,
+      "activeClosed": true,
+      "coverage": "broken",
+      "detectionModel": "discrete",
+      "avoided": false,
+      "settledAt": 78
+    },
+    "immune": {
+      "id": "4:attack:1",
+      "combatID": "attack:1",
+      "epoch": 4,
+      "actor": 0,
+      "character": "ryu",
+      "move": "sMP",
+      "start": 107,
+      "startup": 6,
+      "active": 4,
+      "total": 23,
+      "commit": 107,
+      "age": 23,
+      "contacts": 0,
+      "result": "avoided",
+      "target": 1,
+      "contactAt": 116,
+      "endedAt": 130,
+      "reason": "natural",
+      "whiff": false,
+      "activeClosed": true,
+      "coverage": "complete",
+      "detectionModel": "discrete",
+      "avoided": true,
+      "settledAt": 130
+    }
+  },
+  "punish": [
+    {
+      "tick": 191,
+      "action": 185,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 192,
+      "action": 186,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 193,
+      "action": 187,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 194,
+      "action": 188,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 195,
+      "action": 189,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 196,
+      "action": 190,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 197,
+      "action": 191,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 198,
+      "action": 192,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 199,
+      "action": 193,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 200,
+      "action": 194,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 201,
+      "action": 195,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 202,
+      "action": 196,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 203,
+      "action": 197,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 204,
+      "action": 198,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 205,
+      "action": 199,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": "sLP",
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    },
+    {
+      "tick": 206,
+      "action": 200,
+      "goal": "确认落空 · 有限窗口追击",
+      "move": null,
+      "x": 726.1800000000001,
+      "holding": false,
+      "carry": false
+    }
+  ],
+  "setupFacts": {
+    "epoch": 5,
+    "records": [
+      {
+        "id": "5:attack:1",
+        "combatID": "attack:1",
+        "epoch": 5,
+        "actor": 0,
+        "character": "ryu",
+        "move": "sHP",
+        "start": 162,
+        "startup": 10,
+        "active": 4,
+        "total": 36,
+        "commit": 162,
+        "age": 36,
+        "contacts": 0,
+        "result": "cleanMiss",
+        "target": null,
+        "contactAt": null,
+        "endedAt": 198,
+        "reason": "natural",
+        "whiff": true,
+        "activeClosed": true,
+        "coverage": "complete",
+        "detectionModel": "discrete",
+        "avoided": false,
+        "settledAt": 198
+      }
+    ],
+    "events": [
+      {
+        "serial": 1,
+        "id": "5:attack:1",
+        "epoch": 5,
+        "at": 176,
+        "firstResult": true,
+        "resultChanged": true,
+        "result": "cleanMiss",
+        "reason": null,
+        "contacts": 0,
+        "target": null,
+        "activeClosed": true,
+        "coverage": "complete"
+      },
+      {
+        "serial": 2,
+        "id": "5:attack:1",
+        "epoch": 5,
+        "at": 198,
+        "firstResult": false,
+        "resultChanged": false,
+        "result": "cleanMiss",
+        "reason": "natural",
+        "contacts": 0,
+        "target": null,
+        "activeClosed": true,
+        "coverage": "complete"
+      }
+    ]
+  },
+  "duel": {
+    "goals": [
+      "远距牵制",
+      "斗气迸发接近",
+      "短步试探 · 争取距离",
+      "回撤诱招 · 保留防守",
+      "观察收招 · 等待实际窗口",
+      "试探无应答 · 几何可达短打",
+      "角色连携 · 突击连段",
+      "守势退让 · 让出距离",
+      "中距试探",
+      "跳跃改变节奏",
+      "确认连段",
+      "改变进攻节奏",
+      "消耗斗气 · 方向受身",
+      "起身防守",
+      "近身选择",
+      "取消迸发追击",
+      "等待对手出错",
+      "后撤诱空",
+      "角色连携 · 拳心三连",
+      "付费追距 · 踏步中脚",
+      "后撤诱投 · 留出确反距离",
+      "蓄势试探 · 预先选择收放",
+      "建立攻击距离",
+      "安全收尾",
+      "空中变速 · 改变接近路线",
+      "空中接近",
+      "命中确认 · 超级追击",
+      "压起身 · 停手诱迎击",
+      "付费反击",
+      "击倒后接近"
+    ],
+    "cycles": 3,
+    "contacts": 31,
+    "minSimulationLag": 9,
+    "freezeMature": 296,
+    "actors": [
+      {
+        "hp": 6174,
+        "clinch": {
+          "episode": 8,
+          "inside": false,
+          "choice": null,
+          "used": false,
+          "nextChoice": 1016,
+          "lastTech": null
+        },
+        "exchange": {
+          "cycles": 3,
+          "lastPunish": null,
+          "memory": {
+            "whiffRate": 0.2566094365687809,
+            "heavyRate": 0.37833412905039093,
+            "lowRate": 0.24087619879387584,
+            "approach": 0.16306578705110295,
+            "guardRate": 0.4674402338274412,
+            "samples": 8,
+            "seenIDs": [
+              "6:attack:20",
+              "6:attack:20",
+              "received:6:attack:21",
+              "received:6:attack:23",
+              "received:6:attack:24",
+              "6:attack:26",
+              "6:attack:28",
+              "6:attack:28",
+              "6:attack:29",
+              "6:attack:29",
+              "6:attack:30",
+              "6:attack:33",
+              "6:attack:33",
+              "received:6:attack:35",
+              "received:6:attack:36",
+              "6:attack:40"
+            ],
+            "seenKinds": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "lastAction": 995,
+            "lastX": 234.19964458651555,
+            "lastSelfX": 467.86135437230973,
+            "lastGuard": false,
+            "factEpoch": 6,
+            "eventSerial": 28,
+            "attackSerial": 40,
+            "receiptEpoch": 6,
+            "receiptSerial": 24,
+            "bias": {
+              "probe": -0.07301716902936574,
+              "bait": -0.05802659548481152,
+              "intercept": -0.050245554310534235,
+              "press": 0.009767929851767637
+            }
+          }
+        }
+      },
+      {
+        "hp": 3298,
+        "clinch": {
+          "episode": 9,
+          "inside": false,
+          "choice": null,
+          "used": false,
+          "nextChoice": 1024,
+          "lastTech": null
+        },
+        "exchange": {
+          "cycles": 3,
+          "lastPunish": null,
+          "memory": {
+            "whiffRate": 0.18383319382744123,
+            "heavyRate": 0.2365597156834412,
+            "lowRate": 0.2411446306274412,
+            "approach": 7.043418446620147e-07,
+            "guardRate": 0.6106640415752193,
+            "samples": 12,
+            "seenIDs": [
+              "6:attack:17",
+              "received:6:attack:19",
+              "received:6:attack:20",
+              "6:attack:21",
+              "6:attack:21",
+              "6:attack:23",
+              "6:attack:23",
+              "6:attack:24",
+              "6:attack:24",
+              "received:6:attack:28",
+              "received:6:attack:29",
+              "received:6:attack:33",
+              "6:attack:35",
+              "6:attack:35",
+              "6:attack:36",
+              "6:attack:36"
+            ],
+            "seenKinds": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "lastAction": 995,
+            "lastX": 435.02935437230985,
+            "lastSelfX": 234.1996444633894,
+            "lastGuard": false,
+            "factEpoch": 6,
+            "eventSerial": 24,
+            "attackSerial": 37,
+            "receiptEpoch": 6,
+            "receiptSerial": 23,
+            "bias": {
+              "probe": -0.09485004185176762,
+              "bait": -0.1026879864291273,
+              "intercept": -0.07857359380056765,
+              "press": -0.03319921247256578
+            }
+          }
+        }
+      }
+    ]
+  },
+  "simultaneous": [
+    {
+      "move": "SA1",
+      "t": 1,
+      "super": 2
+    },
+    {
+      "move": "SA1",
+      "t": 1,
+      "super": 2
+    }
+  ],
+  "sha256": "05863755f363cf46dc4ca2d1a464068dca3e3fbd496548090d386c1195c194d2",
+  "errors": []
+}

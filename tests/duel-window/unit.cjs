@@ -1,0 +1,8 @@
+'use strict';
+const assert=require('node:assert/strict');global.INK={};require('../../src/ink/duel-window.js');const W=INK.DuelWindow,f={x:100,y:0,dir:1,state:'idle',ch:{speed:5}},obs={y:0,hurt:[{x:170,y:440,w:40,h:100}]},m={id:'sMP',category:'normal',normalState:'s',kind:'punch',startup:6,active:4},r={space:'root-local-world-units',floor:665,frames:[{t:6,hit:[{x:30,y:-200,w:40,h:30}]},{t:9,hit:[{x:30,y:-200,w:55,h:30}]}]},choices=[{move:m,reach:r}],opt={remaining:14};
+let a=W.candidates(f,obs,{},choices,opt)[0];assert.equal(a.walkFrames,2);assert.equal(a.impactFrame,8);assert.equal(a.margin,3);assert.equal(a.gap,8);
+const mirrored={...obs,hurt:obs.hurt.map(b=>({...b,x:200-b.x-b.w}))};assert.deepEqual(W.candidates({...f,dir:-1},mirrored,{},choices,opt),[a]);
+assert.equal(W.candidates(f,obs,{},choices,{remaining:10}).length,0);assert.equal(W.candidates(f,obs,{},choices,{remaining:-1}).length,0);assert.equal(W.candidates(f,{...obs,y:-1},{},choices,opt).length,0);assert.equal(W.candidates(f,{y:0,hurt:[]},{},choices,opt).length,0);assert.equal(W.candidates(f,{y:0,hurt:[{x:170,y:100,w:40,h:40}]},{},choices,opt).length,0);
+assert.equal(W.candidates(f,{y:0,hurt:[{x:400,y:440,w:40,h:100}]},{},choices,{remaining:999,maxWalk:99}).length,0);const before=JSON.stringify({f,obs,choices});W.candidates(f,obs,{},choices,opt);assert.equal(JSON.stringify({f,obs,choices}),before);
+assert.equal(W.candidates(f,obs,{},[{move:{...m,range:99999,startup:20},reach:{...r,frames:[{t:20,hit:r.frames[1].hit}]}}],opt).length,0);
+console.log('DuelWindow mirrored true geometry, vertical rejection, bounded approach, conservative timing, purity passed');

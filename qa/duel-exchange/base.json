@@ -1,0 +1,134 @@
+{
+  "idle": {
+    "epoch": 2,
+    "records": [
+      {
+        "id": "2:attack:1",
+        "combatID": "attack:1",
+        "epoch": 2,
+        "actor": 0,
+        "character": "ryu",
+        "move": "sMP",
+        "start": 0,
+        "startup": 6,
+        "active": 4,
+        "total": 23,
+        "commit": 0,
+        "age": 23,
+        "contacts": 0,
+        "result": "whiff",
+        "target": null,
+        "contactAt": null,
+        "endedAt": 23,
+        "reason": "natural",
+        "whiff": true,
+        "settledAt": 23
+      }
+    ],
+    "events": [
+      {
+        "serial": 1,
+        "id": "2:attack:1",
+        "epoch": 2,
+        "at": 10,
+        "result": "whiff",
+        "reason": null,
+        "contacts": 0,
+        "target": null
+      },
+      {
+        "serial": 2,
+        "id": "2:attack:1",
+        "epoch": 2,
+        "at": 23,
+        "result": "whiff",
+        "reason": "natural",
+        "contacts": 0,
+        "target": null
+      }
+    ]
+  },
+  "guard": {
+    "epoch": 3,
+    "records": [
+      {
+        "id": "3:attack:1",
+        "combatID": "attack:1",
+        "epoch": 3,
+        "actor": 0,
+        "character": "ryu",
+        "move": "sMP",
+        "start": 65,
+        "startup": 6,
+        "active": 4,
+        "total": 23,
+        "commit": 65,
+        "age": 23,
+        "contacts": 1,
+        "result": "block",
+        "target": 1,
+        "contactAt": 71,
+        "endedAt": 88,
+        "reason": "natural",
+        "whiff": false,
+        "settledAt": 88
+      }
+    ],
+    "events": [
+      {
+        "serial": 1,
+        "id": "3:attack:1",
+        "epoch": 3,
+        "at": 71,
+        "result": "block",
+        "reason": null,
+        "contacts": 1,
+        "target": 1
+      },
+      {
+        "serial": 2,
+        "id": "3:attack:1",
+        "epoch": 3,
+        "at": 88,
+        "result": "block",
+        "reason": "natural",
+        "contacts": 1,
+        "target": 1
+      }
+    ]
+  },
+  "demo": {
+    "goals": [
+      "观察开局",
+      "远距牵制",
+      "斗气迸发接近",
+      "后撤诱空",
+      "中距试探",
+      "建立攻击距离",
+      "延迟起身 · 打乱压制时机",
+      "击倒后接近",
+      "贴身短打 · 试探防守",
+      "压起身 · 停手诱迎击",
+      "起身防守",
+      "安全收尾",
+      "付费脱压 · 承担恢复",
+      "取消迸发追击",
+      "余势前压 · 承担收招",
+      "角色连携 · 拳心三连",
+      "付费追距 · 踏步中脚",
+      "确认连段",
+      "贴身破防 · 投",
+      "近身牵制"
+    ],
+    "minLag": 15,
+    "frozen": 63,
+    "frozenStable": true,
+    "actions": 475,
+    "states": [
+      "attack",
+      "hit"
+    ]
+  },
+  "sha256": "c0ca9442f703c0751405469287cb47a94f8e8e50972a876dd6640bd0335e8d06",
+  "errors": []
+}

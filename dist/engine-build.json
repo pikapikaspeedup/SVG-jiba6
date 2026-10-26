@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256-source-manifest-v1",
-  "id": "d4c5c1aa6415e8891dfe690adea2b7f64724b8b0c0ef1bc72a4c4eed213de700",
+  "id": "b483f21eca8880be17f6099504312da8fb9fe03987d0d38d175f070bed0c414b",
   "files": {
     "assets/ink/characters/cammy/model.json": "7e751719b23e3f12a393b3f94561c44f26063e6b37f826dc4e545172c6e34e11",
     "assets/ink/characters/cammy/moves/CA.json": "24953b636023bcdd53801a6e2d307e7a86d5e1e081b256ccbd21eef1b911aa0b",
@@ -748,7 +748,7 @@
     "forge/style.css": "17cb786c1ae2bb8b81392d7976c11f7525e09b9217e651df977d2183c9f523c3",
     "forge/super-director.js": "3d272037da70a66f4809e2a45af77e9838b292c10b0bbe0b0b7df01425b07080",
     "forge/wake.js": "e6fb155b500fcced63fc7a099633d7148a64beeb87e9b8624a04d4291eb927a0",
-    "game.js": "56189345a0df93edb889294a32eb6e71c37057676db088399c8cd95174610669",
+    "game.js": "f91be0033393055ff55eb56789a3fc79ff9d5dc9cfe736d16dd0076c566ba2be",
     "src/atelier-art.js": "e7afb8cb1fd2eab584a539d8a61ff614a89ddaaabd8c6aaea085cbdf9400264b",
     "src/atelier-fx.js": "917d566b8fc2396fc3d2fb60433b8cebefcc24cd33c07d218e1acc265abe601b",
     "src/atelier-motion.js": "e7a0b02b15ac8c029ddff65f73a9e275f9e47373927f75f567022446e5ccee59",
@@ -778,7 +778,7 @@
     "src/ink/body-support.js": "d188d0a115b3b3d88bd0d06801c158e7a1e557311781dd9102270085c28c8a34",
     "src/ink/canonical.js": "fcdadcbe8acfac5275f816d499bcd9d5928a00fb569267f9774dfcd037a31786",
     "src/ink/cinema.js": "c0d9ca913cbe23d23347d6f980b810d4693ddfc8d2d24480722a1c8e8d2d5cc8",
-    "src/ink/clinch.js": "be4ca30c64e61e6a1dad48db513d53a32f8cd556a05712d067eccdc23e874a73",
+    "src/ink/clinch.js": "7ddb504d61e5970611396cd06bfca0666ad70e0fbc383b0413bc31a0a5e1654f",
     "src/ink/combat-entities.js": "1cd20a3aa0dcf26a119d0afd2301c8ec1c3c1092243cbbe37fc74a81e661951a",
     "src/ink/combat-expression.js": "8b8bc89bfff504bd893c82a3b1d5ed3c537c86461b765b9b748b6eef982374b5",
     "src/ink/combat-flow.js": "2d840fd4fc726fda0ed3b9105dfc1eb30071acb21855fb883af4d0117404bea7",
@@ -795,10 +795,16 @@
     "src/ink/contact-solver.js": "3050e95ad146c1cadd16f9def765eb55ac89efba528be9a2492e3bb8b05c1f21",
     "src/ink/core.js": "34f76c552c09e132a7046dc9fd813231e1f647445df3c5635c2c67111291fa78",
     "src/ink/design.js": "da4072698d00ea47f1f1d5c5aea816fe2ba41e223b7fbed156f8abca1d977cfb",
-    "src/ink/duel-brain.js": "43c937642d736f1fa1c6f907a735091f25cf906994cf0606fadf4d7ccbad0665",
+    "src/ink/duel-brain.js": "3b7d3f3b0d00c7f0abce0909260169e08a54d3d0b9dd2bb87752adccbdf57a53",
     "src/ink/duel-control.js": "2f87a5e2c6e7c2cfd1771b88f399ef09b06e8353e141c78709c62daa4f675d54",
+    "src/ink/duel-perception.js": "d9f6da0f3702bf88cda00868dd028a24a6577a8d3dba08e8c4b8d8d09a92cd20",
+    "src/ink/duel-personality.js": "64850bdba9a21e27d6e074198d63055e06e4441ccd5ce332c17d90ea1291f665",
+    "src/ink/duel-reach.js": "f218c9a3a98e5e4073513f5194e2caa7851ae02df8e17bf88701f7837a96a734",
+    "src/ink/duel-window.js": "d0040ce4757c0880559951d2eafba20c2218d9a627f178fb057f1bc209eda886",
     "src/ink/effects.js": "50f2082444431df9b8258a737b240604b61420dd11b56dcced1e2a08fb96d0e2",
     "src/ink/engine-clock.js": "bbff8a989a4766f81ea8225dc28c59af74f7bcc85cec683d178c11d62e894f86",
+    "src/ink/exchange-duel.js": "d8d4282b869140a2bd3bf7e36993acfdac318dd527ab40c27ade5b06744f64a8",
+    "src/ink/exchange-facts.js": "619050ea29d149068d9badb5726f683bb2b0df763a4a1e04f3468b345ee5807d",
     "src/ink/facing-motion.js": "b1f60a82c499562784d95303d2ce5da846535a375bbf687bc6307260fe18c861",
     "src/ink/flow-chain.js": "818afb48053e839ab1b9f46f3f75af644930b4e1d43a08f6fd304afa50ff3c57",
     "src/ink/foot-constraint.js": "ec1a2710b97e3950a9eb8a889a1f3fb00320ebb0b6b0a5370b5271f1c9785ea1",
@@ -832,7 +838,7 @@
     "src/ink/project.js": "2806db2aa73484cb7e38fa5ad0f6f3b30768e9c6bc922292cbb504c432d58c41",
     "src/ink/projectile-flow.js": "822f0089a13ec948ba320e12a3b495819187bd8f81786a7c47becdc8695824dc",
     "src/ink/random.js": "35374948768c5affbdad5b1390ac2e6d67d644ef6413f1232026793e2bd03ff1",
-    "src/ink/recovery-motion.js": "2712892076759561a116eaecdc99062565b5139a987299c26d80d2166a8508d0",
+    "src/ink/recovery-motion.js": "8ec67929da4baaaa1d1b02fd03924a6a3772d7022a9d6c72f6fcc71dcc232765",
     "src/ink/renderer.js": "491bbd26d0075f1f3bb52c7b40267ded36762402a03688c7bceca46989418c7e",
     "src/ink/ribbon-geometry.js": "c84dbedd42895158e495d0776e615a2ce1747c9d62bd0912345553c10950ee61",
     "src/ink/runtime.js": "2bf67423d16345b36d3138e333e421be2698955fb2b1971b7540f38f96b9aed0",
@@ -858,6 +864,6 @@
     "src/models/head.js": "37bcc482716537fbd4dec6b7e780462e34a911637d860a4c4f9b75c099920902",
     "src/models/torso.js": "6f92d56259a58cd11147f3d5fecb38f8e718a549100581367c054cfa4a89df74",
     "street-fighter-6.html": "6c11e99deefc6a3eeab2c15c97d13c9bdfba53d0b71a137a322560832832b1a9",
-    "tools/build_forge.py": "096d1d9505f113095c37c615db33eb171b79021e50cdef53fa89759b67f5237c"
+    "tools/build_forge.py": "01a4c34ad3b326abefa169e2513560efaf214f8c0d95a75a310d254c11f876d9"
   }
 }

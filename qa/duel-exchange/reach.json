@@ -1,0 +1,94 @@
+{
+  "rows": [
+    {
+      "character": "ryu",
+      "move": "sLP",
+      "declared": 175,
+      "forward": 215.6632258796324,
+      "times": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "character": "ryu",
+      "move": "sMP",
+      "declared": 202,
+      "forward": 215.9098493140534,
+      "times": [
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "character": "ryu",
+      "move": "sHP",
+      "declared": 236,
+      "forward": 192.91989752822062,
+      "times": [
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "character": "ryu",
+      "move": "cMK",
+      "declared": 257,
+      "forward": 223.41103567230653,
+      "times": [
+        8,
+        9,
+        11
+      ]
+    },
+    {
+      "character": "chun",
+      "move": "sLP",
+      "declared": 175,
+      "forward": 198.7303440401877,
+      "times": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "character": "chun",
+      "move": "sMP",
+      "declared": 210,
+      "forward": 208.2440395636441,
+      "times": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "character": "chun",
+      "move": "sHP",
+      "declared": 252,
+      "forward": 177.1234162793594,
+      "times": [
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "character": "chun",
+      "move": "cMK",
+      "declared": 298,
+      "forward": 216.92063865814245,
+      "times": [
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "pure": true,
+  "sha256": "03e1455676019f6aa4e118fa5ddfdfc6fc27181bdcceacc60dd17eb4992d00dd"
+}

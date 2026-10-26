@@ -9,7 +9,8 @@
   const a=f?.attack,m=a?.m;if(!active()||!m||!profiles[f.ch?.id]||m.throw||m.super||m.air||m.launch||f.captured||f.airLock||f.y<-.01||['captured','throwing','tumble','down','ko'].includes(f.state)||String(m.kind||'').includes('projectile')||['upper','dive','install','stance'].includes(m.kind))return null;
   const start=m.startup+m.active,duration=m.recovery,t=a.t-start;
   if(!Number.isFinite(t)||!Number.isFinite(duration)||duration<=0||t<=0||t>=duration)return null;
-  const u=clamp(t/duration),kind=a.contactResult==='block'?'block':a.contactResult==='hit'||a.hitConfirmed?'hit':'whiff';
+  const result=INK.ExchangeFacts?.inspect(a)?.result||a.contactResult,kind=result==='block'?'block':result==='hit'||a.hitConfirmed?'hit':result==='cleanMiss'?'whiff':null;
+  if(!kind)return null;const u=clamp(t/duration);
   // Squared sine supplies zero position and velocity at both ends. Hit returns
   // to guard sooner; block has a recoil followed by a smaller counter motion.
   const window=kind==='hit'?.72:1,v=clamp(u/window),weight=Math.sin(Math.PI*v)**2*(kind==='hit'?.72:kind==='block'?.92:1);
