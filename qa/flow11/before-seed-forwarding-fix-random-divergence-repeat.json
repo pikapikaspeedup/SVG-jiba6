@@ -1,0 +1,91 @@
+{
+  "frame": 0,
+  "expected": {
+    "tick": 1,
+    "action": 0,
+    "phase": "intro",
+    "clock": 5940,
+    "freeze": 0,
+    "rng": {
+      "algorithm": "mulberry32-v1",
+      "seed": 58027635,
+      "state": 58027635,
+      "draws": 0
+    },
+    "fighters": [
+      {
+        "x": 480,
+        "y": 0,
+        "vx": 0,
+        "vy": 0,
+        "hp": 10000,
+        "drive": 6,
+        "super": 0,
+        "state": "idle",
+        "stateT": 0,
+        "dir": 1,
+        "attack": null,
+        "plan": null
+      },
+      {
+        "x": 960,
+        "y": 0,
+        "vx": 0,
+        "vy": 0,
+        "hp": 10000,
+        "drive": 6,
+        "super": 0,
+        "state": "idle",
+        "stateT": 0,
+        "dir": -1,
+        "attack": null,
+        "plan": null
+      }
+    ],
+    "shots": []
+  },
+  "actual": {
+    "tick": 1,
+    "action": 0,
+    "phase": "intro",
+    "clock": 5940,
+    "freeze": 0,
+    "rng": {
+      "algorithm": "mulberry32-v1",
+      "seed": 987813237,
+      "state": 987813237,
+      "draws": 0
+    },
+    "fighters": [
+      {
+        "x": 480,
+        "y": 0,
+        "vx": 0,
+        "vy": 0,
+        "hp": 10000,
+        "drive": 6,
+        "super": 0,
+        "state": "idle",
+        "stateT": 0,
+        "dir": 1,
+        "attack": null,
+        "plan": null
+      },
+      {
+        "x": 960,
+        "y": 0,
+        "vx": 0,
+        "vy": 0,
+        "hp": 10000,
+        "drive": 6,
+        "super": 0,
+        "state": "idle",
+        "stateT": 0,
+        "dir": -1,
+        "attack": null,
+        "plan": null
+      }
+    ],
+    "shots": []
+  }
+}

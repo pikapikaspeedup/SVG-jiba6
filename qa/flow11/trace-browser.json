@@ -1,0 +1,46 @@
+{
+  "htmlSha256": "9b764a27c990abe64d4291c7ddef3dc6124bf74e1b2e5794336d317175d22e46",
+  "rows": [
+    {
+      "name": "Recording contains S0 and every completed simulation boundary",
+      "passed": true
+    },
+    {
+      "name": "Import begins checking without claiming success",
+      "passed": true
+    },
+    {
+      "name": "Full replay reaches matched only after the last boundary",
+      "passed": true
+    },
+    {
+      "name": "Matched playback cannot advance past its recorded end",
+      "passed": true
+    },
+    {
+      "name": "Live hidden-state perturbation stops at its first differing step",
+      "passed": true
+    },
+    {
+      "name": "Divergence remains terminal for this replay",
+      "passed": true
+    },
+    {
+      "name": "Truncated proof rejects before replacing the current battle",
+      "passed": true
+    },
+    {
+      "name": "Input-only files never claim state verification",
+      "passed": true
+    },
+    {
+      "name": "Out-of-step state changes cannot be exported as verified boundaries",
+      "passed": true
+    },
+    {
+      "name": "Zero-step proof verifies the initial boundary",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

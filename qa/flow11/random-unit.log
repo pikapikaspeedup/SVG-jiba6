@@ -1,0 +1,31 @@
+✔ SHA-256 agrees with independent Node crypto across padding boundaries and UTF-8 (30.912708ms)
+✔ encoding preserves all float bits and missing/null/undefined distinctions (0.23125ms)
+✔ object insertion order is irrelevant but array order is meaningful (0.146417ms)
+✔ cycles, opaque objects, holes and unsupported types fail explicitly (0.128ms)
+✔ nested boundaries and string delimiters cannot collide (0.121333ms)
+✔ external requests remain inert until one boundary and preserve press/release order (0.910958ms)
+✔ frozen steps are still numbered, and idle boundaries are retained (0.155917ms)
+✔ playback rejects live injection and executes each recorded event once (0.453333ms)
+✔ diagonal stays atomic, snapshots and executor cannot mutate history (0.092417ms)
+✔ capacity failures are explicit and never silently truncate a playable tape (0.13425ms)
+✔ pending input cannot be exported as though it executed (0.06475ms)
+✔ recursive dispatch is rejected without leaving execution latched (0.07325ms)
+✔ malformed imports leave the existing stream untouched (0.106875ms)
+✔ unknown keys, invalid actor, duplicate buttons and invalid moves are refused (0.103792ms)
+✔ long mixed timeline round-trips across deterministic empty and command steps (4.9685ms)
+✔ fixed seed has a versioned known sequence (0.583875ms)
+✔ independent streams and cosmetic randomness cannot change combat (3.313ms)
+✔ snapshot restores exact continuation including draw count (0.186834ms)
+✔ invalid restore is atomic and seed endpoints work (0.214917ms)
+✔ reset reproduces stream and begin without seed uses fresh entropy (0.351ms)
+✔ canonical configuration is complete and detached from caller arrays (0.374834ms)
+✔ invalid rule settings and unknown state patch keys are rejected (0.184958ms)
+✔ all supported buffers are validated before mutation (0.067792ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 69.858791

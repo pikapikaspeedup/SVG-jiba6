@@ -1,0 +1,70 @@
+{
+  "kind": "ink-spacing-contacts",
+  "version": 1,
+  "enabled": true,
+  "reentry": true,
+  "rules": {
+    "duration": 24,
+    "travelFrames": 8,
+    "speed": 7,
+    "nearDistance": 18,
+    "minTravel": 8,
+    "cancelFrames": 4
+  },
+  "events": [
+    {
+      "frame": 67,
+      "type": "retreat",
+      "player": 0
+    },
+    {
+      "frame": 77,
+      "type": "near-miss",
+      "player": 0,
+      "attacker": 1,
+      "move": "sHK",
+      "serial": "1:1",
+      "distance": 2.1147349027252176,
+      "pointA": [
+        572.4824765797596,
+        350.38629232525346
+      ],
+      "pointB": [
+        570.3677416770344,
+        350.38629232525346
+      ]
+    },
+    {
+      "frame": 86,
+      "type": "reentry",
+      "player": 0,
+      "move": "sMP",
+      "source": "1:1",
+      "serial": "0:1"
+    },
+    {
+      "frame": 92,
+      "type": "contact",
+      "time": 1,
+      "point": [
+        652.9498076011282,
+        449.1463466638306
+      ],
+      "normal": [
+        0,
+        1
+      ],
+      "initialOverlap": true,
+      "attacker": 0,
+      "defender": 1,
+      "serial": "0:1",
+      "hitIndex": 0,
+      "hitPart": "fist",
+      "hurtPart": "front-leg",
+      "swept": false,
+      "punish": true,
+      "counter": false,
+      "result": "hit"
+    }
+  ]
+}

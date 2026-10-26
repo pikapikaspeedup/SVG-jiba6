@@ -1,0 +1,33 @@
+{
+  "build": "9f9d1a955d20d41415cbb0679f1462d3911fa967b70629ec2bca49338d6fcdda",
+  "rows": [
+    {
+      "name": "Source archive builds without workspace dependencies",
+      "passed": true
+    },
+    {
+      "name": "Independent build has the same source identity",
+      "passed": true
+    },
+    {
+      "name": "Independent HTML is byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Archive contains base HTML and legacy runtime dependencies",
+      "passed": true
+    },
+    {
+      "name": "Runtime changes invalidate build identity",
+      "passed": true
+    },
+    {
+      "name": "Asset content changes invalidate build identity",
+      "passed": true
+    },
+    {
+      "name": "A cosmetic version label is not trusted as code identity",
+      "passed": true
+    }
+  ]
+}

@@ -54,7 +54,7 @@
    const a=[0,1].map(k=>tr[i*2+k]+(tr[j*2+k]-tr[i*2+k])*u+clamp(shortest(a0[k]-a1[k]),-14,14));
    const jt=ctx.transition;if(jt&&ctx.transitionTime<jt.duration&&jt.duration>0){
     const u=clamp(ctx.transitionTime/jt.duration),h=2*u*u*u-3*u*u+1,g=u*u*u-2*u*u+u;
-    for(let k=0;k<2;k++)a[k]+=jt.offsets[name][k]*h+jt.velocities[name][k]*jt.duration*g;
+    for(let k=0;k<2;k++)a[k]+=INK.Kinetic?.settings.enabled?INK.Motion.residual(jt.offsets[name][k],jt.velocities[name][k],ctx.transitionTime,jt.duration):jt.offsets[name][k]*h+jt.velocities[name][k]*jt.duration*g;
    }
    const root=raw[name][0],l0=vec.length(vec.sub(raw[name][1],root)),l1=vec.length(vec.sub(raw[name][2],raw[name][1]));
    const first=[root[0]+Math.cos(rad(a[0]))*l0,root[1]+Math.sin(rad(a[0]))*l0];

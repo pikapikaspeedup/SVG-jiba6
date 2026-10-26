@@ -1,0 +1,6 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+const ctx={INK:{Schema:{CHARACTERS:['ryu','ken']}}};vm.runInNewContext(fs.readFileSync('src/ink/random.js','utf8'),ctx);vm.runInNewContext(fs.readFileSync('src/ink/session-config.js','utf8'),ctx);const validate=ctx.INK.SessionConfig.validate;
+test('canonical configuration is complete and detached from caller arrays',()=>{const source={seed:0,characters:['ryu','ken']},config=validate(source);source.characters[0]='ken';assert.equal(config.characters[0],'ryu');assert.equal(config.buffer,9);assert.equal(config.dummy,'idle');assert.equal(config.mode,'training');});
+test('invalid rule settings and unknown state patch keys are rejected',()=>{for(const patch of [{buffer:0},{buffer:7},{seed:-1},{seed:NaN},{characters:['ryu']},{characters:['ryu','unknown']},{preset:'arbitrary'},{x:900},{mode:'arcade'},{difficulty:'god'},{spacing:1},{control:'other'},{rules:'unknown'}])assert.throws(()=>validate({seed:1,...patch}));});
+test('all supported buffers are validated before mutation',()=>{for(const buffer of [3,6,9,12])assert.equal(validate({seed:1,buffer}).buffer,buffer);});

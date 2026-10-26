@@ -1,0 +1,58 @@
+{
+  "htmlSha256": "076840e971f7902857f815510b36526518c1f355a92eb5b92aa0d7cc1e10278a",
+  "rows": [
+    {
+      "name": "Canonical restart matches a clean start after old combat and clocks",
+      "passed": true
+    },
+    {
+      "name": "Fresh actors and global state discard unknown leftover fields",
+      "passed": true
+    },
+    {
+      "name": "Public requests are queued once on the canonical timeline",
+      "passed": true
+    },
+    {
+      "name": "Commands regenerate the same 180-step battle trajectory",
+      "passed": true
+    },
+    {
+      "name": "Playback rejects public live commands and stops at the recorded end",
+      "passed": true
+    },
+    {
+      "name": "Invalid move imports do not change the current battle",
+      "passed": true
+    },
+    {
+      "name": "Releasing keyboard keeps a button still held by touch",
+      "passed": true
+    },
+    {
+      "name": "Shared-device ownership records only the effective press and release",
+      "passed": true
+    },
+    {
+      "name": "Press release press before one step retains all ordered edges",
+      "passed": true
+    },
+    {
+      "name": "Replay transport pause preserves held battle input",
+      "passed": true
+    },
+    {
+      "name": "CPU decisions are recomputed from seed without recording AI output",
+      "passed": true
+    },
+    {
+      "name": "Focus loss records one reset and clears held input on the next step",
+      "passed": true
+    },
+    {
+      "name": "Actual browser keyboard input regenerates the same combat result",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

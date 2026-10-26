@@ -1,0 +1,10 @@
+{
+  "htmlSha256": "68e4334518807c0e2d98ba50971267839eb56c782ef3ee9ea689a99b44a053f8",
+  "unchangedDuringRun": true,
+  "utc": "2026-10-26T08:59:59.452892+00:00",
+  "scripts": [
+    "tests/flow9/contracts.py",
+    "tests/flow9/inherited-regress.py"
+  ],
+  "adaptation": "Output paths and Chromium executable only; assertions unchanged."
+}

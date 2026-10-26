@@ -1,0 +1,142 @@
+[
+  {
+    "reward": true,
+    "lesson": {
+      "distance": 270,
+      "delay": 60,
+      "move": "sHK",
+      "demo": true,
+      "start": 3,
+      "success": true,
+      "result": "反入确反！提前结束短撤，抓住了对手收招。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      9400
+    ],
+    "events": [
+      {
+        "frame": 69,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 79,
+        "type": "near-miss",
+        "player": 0,
+        "attacker": 1,
+        "move": "sHK",
+        "serial": "1:1",
+        "distance": 2.1147349027252176,
+        "pointA": [
+          572.4824765797596,
+          350.38629232525346
+        ],
+        "pointB": [
+          570.3677416770344,
+          350.38629232525346
+        ]
+      },
+      {
+        "frame": 88,
+        "type": "reentry",
+        "player": 0,
+        "move": "sMP",
+        "source": "1:1",
+        "serial": "0:1"
+      },
+      {
+        "frame": 94,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          652.9498076011282,
+          449.1463466638306
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "initialOverlap": true,
+        "attacker": 0,
+        "defender": 1,
+        "serial": "0:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "front-leg",
+        "swept": false,
+        "punish": true,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "reward": false,
+    "lesson": {
+      "distance": 270,
+      "delay": 60,
+      "move": "sHK",
+      "demo": true,
+      "start": 123,
+      "success": false,
+      "result": "普通命中：未用反入，或反击晚于对手收招。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      9500
+    ],
+    "events": [
+      {
+        "frame": 189,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 199,
+        "type": "near-miss",
+        "player": 0,
+        "attacker": 1,
+        "move": "sHK",
+        "serial": "1:1",
+        "distance": 2.1147349027252176,
+        "pointA": [
+          572.4824765797596,
+          350.38629232525346
+        ],
+        "pointB": [
+          570.3677416770344,
+          350.38629232525346
+        ]
+      },
+      {
+        "frame": 218,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          650.7776882216577,
+          449.4095091002473
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "initialOverlap": true,
+        "attacker": 0,
+        "defender": 1,
+        "serial": "0:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "front-leg",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  }
+]

@@ -32,7 +32,7 @@
     constructor(parent,{capacity=48}={}) {
       if(!Number.isInteger(capacity)||capacity<1||capacity>128)throw RangeError('Ribbon capacity 1..128');
       const {node}=INK.SVG;this.capacity=capacity;this.root=node('g',{'data-ink-swept-ribbons':'world','pointer-events':'none'},parent);
-      this.nodes=Array.from({length:capacity},()=>{const g=node('g',{display:'none'},this.root);return {g,edge:node('path',{stroke:'none'},g),body:node('path',{stroke:'none'},g),core:node('path',{fill:'none','stroke-linecap':'round'},g)};});
+      this.nodes=Array.from({length:capacity},()=>{const g=node('g',{display:'none'},this.root);return {g,material:Array.from({length:6},()=>node('path',{display:'none','stroke-linecap':'round','stroke-linejoin':'round'},g)),edge:node('path',{stroke:'none'},g),body:node('path',{stroke:'none'},g),core:node('path',{fill:'none','stroke-linecap':'round'},g)};});
       this.live=Array(capacity).fill(null);this.byKey=new Map();this.stats={active:0,peak:0,dropped:0,capacity,vertices:0};
     }
     push(key,point,time,style={}) {
@@ -59,6 +59,15 @@
         const r=this.live[i],n=this.nodes[i];if(!r)continue;
         const pts=r.points.filter(p=>p.time<=time+1e-6).map(p=>p.point),age=Math.max(0,time-r.last),fade=clamp(1-age/(r.life??13));
         if(pts.length<2||fade<=0){assign(n.g,'display','none');continue;}
+        const material=INK.MaterialFlow?.active()&&r.character;
+        for(const part of [n.edge,n.body,n.core])assign(part,'display',material?'none':'inline');
+        for(const part of n.material)assign(part,'display','none');
+        if(material){
+          const layers=INK.MaterialFlow.geometry(r.points,time,r);
+          assign(n.g,'display',layers.length?'inline':'none');assign(n.g,'opacity',fade*fade*(r.opacity??.65));
+          layers.forEach((layer,j)=>{const p=n.material[j];if(!p)return;assign(p,'display','inline');assign(p,'d',layer.d);assign(p,'fill',layer.fill);assign(p,'stroke',layer.stroke||'none');assign(p,'stroke-width',layer.width);assign(p,'opacity',layer.opacity);assign(p,'stroke-dasharray',layer.dash||'none');});
+          vertices+=layers.length*24;continue;
+        }
         const s=sweep(pts,{width:(r.width??14)*(.55+.45*fade),samples:24,age:time,wave:r.flame?.09:0});
         assign(n.g,'display','inline');assign(n.g,'opacity',(fade*fade*(r.opacity??.65)).toFixed(4));
         assign(n.edge,'d',s.body);assign(n.edge,'fill',r.dark||'#af4356');assign(n.edge,'opacity',.35);

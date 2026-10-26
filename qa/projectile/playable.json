@@ -1,0 +1,156 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "Ryu has ordinary and resource-paid projectile choices",
+      "passed": true,
+      "details": {
+        "normal": "hadoken_1",
+        "od": "hadoken_3"
+      }
+    },
+    {
+      "name": "Real ordinary projectiles cancel before damaging either fighter",
+      "passed": true,
+      "details": [
+        {
+          "id": 1,
+          "time": 42,
+          "x": 720,
+          "y": 425.76218853038966,
+          "color": "#80eaff",
+          "other": "#80eaff",
+          "energy": 1,
+          "survivor": null
+        }
+      ]
+    },
+    {
+      "name": "Paid OD wave survives one ordinary wave with reduced energy",
+      "passed": true,
+      "details": {
+        "shots": [
+          [
+            1,
+            2
+          ]
+        ],
+        "drive": 4
+      }
+    },
+    {
+      "name": "Surviving OD wave carries reduced damage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Surviving wave continues through to a real hit",
+      "passed": true,
+      "details": {
+        "hp": 9631
+      }
+    },
+    {
+      "name": "A projectile crossing the target within one step cannot tunnel",
+      "passed": true,
+      "details": {
+        "hp": 9280
+      }
+    },
+    {
+      "name": "Two fast crossing waves cancel before either can hit behind the clash",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Seven characters with grounded projectile specials retain their flight paths",
+      "passed": true,
+      "details": [
+        {
+          "id": "ryu",
+          "seen": true,
+          "finite": true
+        },
+        {
+          "id": "ken",
+          "seen": true,
+          "finite": true
+        },
+        {
+          "id": "chun",
+          "seen": true,
+          "finite": true
+        },
+        {
+          "id": "luke",
+          "seen": true,
+          "finite": true
+        },
+        {
+          "id": "juri",
+          "seen": true,
+          "finite": true
+        },
+        {
+          "id": "mai",
+          "seen": true,
+          "finite": true
+        },
+        {
+          "id": "iori",
+          "seen": true,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "name": "Super wave spends one of four energy units against an ordinary wave",
+      "passed": true,
+      "details": {
+        "shots": [
+          [
+            3,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Unopposed OD wave retains both contact beats",
+      "passed": true,
+      "details": {
+        "combo": 2,
+        "hp": 9058
+      }
+    },
+    {
+      "name": "Crossing projectiles meet continuously inside the step",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Separated vertical lanes do not falsely clash",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reversing projectile storage order keeps equal clash outcome",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Projectile display cannot advance energy, lifetime or damage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "The OD duel button plays a real resource-paid clash",
+      "passed": true
+    },
+    {
+      "name": "Projectile controls fit a narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

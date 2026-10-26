@@ -1,0 +1,145 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "ryu completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8727,
+        "combo": 3
+      }
+    },
+    {
+      "name": "ken completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8833,
+        "combo": 3
+      }
+    },
+    {
+      "name": "chun completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 9082,
+        "combo": 3
+      }
+    },
+    {
+      "name": "cammy completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8833,
+        "combo": 3
+      }
+    },
+    {
+      "name": "luke completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8631,
+        "combo": 3
+      }
+    },
+    {
+      "name": "juri completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8717,
+        "combo": 3
+      }
+    },
+    {
+      "name": "mai completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8815,
+        "combo": 3
+      }
+    },
+    {
+      "name": "iori completes its contact-gated three-stage route",
+      "passed": true,
+      "details": {
+        "started": [
+          0,
+          1,
+          2
+        ],
+        "hp": 8488,
+        "combo": 3
+      }
+    },
+    {
+      "name": "Cancel preserves all four solved limb chains at the handoff",
+      "passed": true,
+      "details": {
+        "maxJointJump": 1.0247593068766007e-13
+      }
+    },
+    {
+      "name": "Whiff cannot cancel into the next normal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "An expired opener does not keep a target-chain continuation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Guard allows the second strike but denies the hit-only finisher",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Disabling routes restores original normal cancel rules",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Three actual coach button clicks produce a three-hit combo",
+      "passed": true
+    },
+    {
+      "name": "Chain controls fit the mobile viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

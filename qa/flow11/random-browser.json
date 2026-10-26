@@ -1,0 +1,46 @@
+{
+  "suite": "flow11-random-prerequisite",
+  "utc": "2026-10-26T12:06:24.883651+00:00",
+  "htmlSha256": "076840e971f7902857f815510b36526518c1f355a92eb5b92aa0d7cc1e10278a",
+  "rows": [
+    {
+      "name": "Same seed reproduces 900 ticks of real CPU combat",
+      "passed": true
+    },
+    {
+      "name": "Additional renders and cosmetic randomness do not change combat",
+      "passed": true
+    },
+    {
+      "name": "Another seed changes actual CPU decisions",
+      "passed": true
+    },
+    {
+      "name": "Seeded CPU exercised random decisions",
+      "passed": true
+    },
+    {
+      "name": "Reset restores seed and clears draws",
+      "passed": true
+    },
+    {
+      "name": "Lesson opponent cannot act while the simulation is frozen",
+      "passed": true
+    },
+    {
+      "name": "Repeated renders cannot dispatch training attacks",
+      "passed": true
+    },
+    {
+      "name": "Training attack starts after exactly 60 actionable steps",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "draws": 79,
+  "traceSha256": "24f7fc9cd73c439f820c1e71930fca52f35441b6d17b4d3f610b4eccc3fdb615"
+}

@@ -1,0 +1,568 @@
+[
+  {
+    "distance": 250,
+    "move": "sHK",
+    "delay": 60,
+    "lesson": {
+      "distance": 250,
+      "move": "sHK",
+      "delay": 60,
+      "demo": true,
+      "start": 242,
+      "success": false,
+      "result": "退晚了，或站得太近。短撤没有无敌帧。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      9260,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 308,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 313,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          561.425109128397,
+          330.6989304004214
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "initialOverlap": true,
+        "attacker": 1,
+        "defender": 0,
+        "serial": "1:1",
+        "hitIndex": 0,
+        "hitPart": "foot",
+        "hurtPart": "head",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 250,
+    "move": "sHK",
+    "delay": 78,
+    "lesson": {
+      "distance": 250,
+      "move": "sHK",
+      "delay": 78,
+      "demo": true,
+      "start": 380,
+      "success": false,
+      "result": "退晚了，或站得太近。短撤没有无敌帧。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      9260,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 464,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 469,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          561.425109128397,
+          330.6989304004214
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "initialOverlap": true,
+        "attacker": 1,
+        "defender": 0,
+        "serial": "1:1",
+        "hitIndex": 0,
+        "hitPart": "foot",
+        "hurtPart": "head",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 250,
+    "move": "sHP",
+    "delay": 60,
+    "lesson": {
+      "distance": 250,
+      "move": "sHP",
+      "delay": 60,
+      "demo": true,
+      "start": 518,
+      "success": false,
+      "result": "退晚了，或站得太近。短撤没有无敌帧。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      9180,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 584,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 587,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          571.3484448134877,
+          403.19699881121414
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "initialOverlap": true,
+        "attacker": 1,
+        "defender": 0,
+        "serial": "1:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "head",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 250,
+    "move": "sHP",
+    "delay": 78,
+    "lesson": {
+      "distance": 250,
+      "move": "sHP",
+      "delay": 78,
+      "demo": true,
+      "start": 656,
+      "success": false,
+      "result": "退晚了，或站得太近。短撤没有无敌帧。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      9180,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 740,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 743,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          571.3484448134877,
+          403.19699881121414
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "initialOverlap": true,
+        "attacker": 1,
+        "defender": 0,
+        "serial": "1:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "head",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 270,
+    "move": "sHK",
+    "delay": 60,
+    "lesson": {
+      "distance": 270,
+      "move": "sHK",
+      "delay": 60,
+      "demo": true,
+      "start": 794,
+      "success": true,
+      "result": "反入确反！提前结束短撤，抓住了对手收招。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      9400
+    ],
+    "events": [
+      {
+        "frame": 860,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 870,
+        "type": "near-miss",
+        "player": 0,
+        "attacker": 1,
+        "move": "sHK",
+        "serial": "1:1",
+        "distance": 2.1147349027252176,
+        "pointA": [
+          572.4824765797596,
+          350.38629232525346
+        ],
+        "pointB": [
+          570.3677416770344,
+          350.38629232525346
+        ]
+      },
+      {
+        "frame": 879,
+        "type": "reentry",
+        "player": 0,
+        "move": "sMP",
+        "source": "1:1",
+        "serial": "0:1"
+      },
+      {
+        "frame": 885,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          652.9498076011282,
+          449.1463466638306
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "initialOverlap": true,
+        "attacker": 0,
+        "defender": 1,
+        "serial": "0:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "front-leg",
+        "swept": false,
+        "punish": true,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 270,
+    "move": "sHK",
+    "delay": 78,
+    "lesson": {
+      "distance": 270,
+      "move": "sHK",
+      "delay": 78,
+      "demo": true,
+      "start": 934,
+      "success": true,
+      "result": "反入确反！提前结束短撤，抓住了对手收招。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      9400
+    ],
+    "events": [
+      {
+        "frame": 1018,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 1028,
+        "type": "near-miss",
+        "player": 0,
+        "attacker": 1,
+        "move": "sHK",
+        "serial": "1:1",
+        "distance": 2.1147349027252176,
+        "pointA": [
+          572.4824765797596,
+          350.38629232525346
+        ],
+        "pointB": [
+          570.3677416770344,
+          350.38629232525346
+        ]
+      },
+      {
+        "frame": 1037,
+        "type": "reentry",
+        "player": 0,
+        "move": "sMP",
+        "source": "1:1",
+        "serial": "0:1"
+      },
+      {
+        "frame": 1043,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          652.9498076011282,
+          449.1463466638306
+        ],
+        "normal": [
+          0,
+          1
+        ],
+        "initialOverlap": true,
+        "attacker": 0,
+        "defender": 1,
+        "serial": "0:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "front-leg",
+        "swept": false,
+        "punish": true,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 270,
+    "move": "sHP",
+    "delay": 60,
+    "lesson": {
+      "distance": 270,
+      "move": "sHP",
+      "delay": 60,
+      "demo": true,
+      "start": 1074,
+      "success": false,
+      "result": "退晚了，或站得太近。短撤没有无敌帧。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      9180,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 1140,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 1143,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          581.3484448134877,
+          403.19699881121414
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "initialOverlap": true,
+        "attacker": 1,
+        "defender": 0,
+        "serial": "1:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "head",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 270,
+    "move": "sHP",
+    "delay": 78,
+    "lesson": {
+      "distance": 270,
+      "move": "sHP",
+      "delay": 78,
+      "demo": true,
+      "start": 1212,
+      "success": false,
+      "result": "退晚了，或站得太近。短撤没有无敌帧。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      9180,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 1296,
+        "type": "retreat",
+        "player": 0
+      },
+      {
+        "frame": 1299,
+        "type": "contact",
+        "time": 1,
+        "point": [
+          581.3484448134877,
+          403.19699881121414
+        ],
+        "normal": [
+          0,
+          -1
+        ],
+        "initialOverlap": true,
+        "attacker": 1,
+        "defender": 0,
+        "serial": "1:1",
+        "hitIndex": 0,
+        "hitPart": "fist",
+        "hurtPart": "head",
+        "swept": false,
+        "punish": false,
+        "counter": false,
+        "result": "hit"
+      }
+    ]
+  },
+  {
+    "distance": 310,
+    "move": "sHK",
+    "delay": 60,
+    "lesson": {
+      "distance": 310,
+      "move": "sHK",
+      "delay": 60,
+      "demo": true,
+      "start": 1350,
+      "success": false,
+      "result": "这次没有擦身。过早退远或未短撤，都不会获得反入。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 1416,
+        "type": "retreat",
+        "player": 0
+      }
+    ]
+  },
+  {
+    "distance": 310,
+    "move": "sHK",
+    "delay": 78,
+    "lesson": {
+      "distance": 310,
+      "move": "sHK",
+      "delay": 78,
+      "demo": true,
+      "start": 1495,
+      "success": false,
+      "result": "这次没有擦身。过早退远或未短撤，都不会获得反入。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 1579,
+        "type": "retreat",
+        "player": 0
+      }
+    ]
+  },
+  {
+    "distance": 310,
+    "move": "sHP",
+    "delay": 60,
+    "lesson": {
+      "distance": 310,
+      "move": "sHP",
+      "delay": 60,
+      "demo": true,
+      "start": 1640,
+      "success": false,
+      "result": "这次没有擦身。过早退远或未短撤，都不会获得反入。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 1706,
+        "type": "retreat",
+        "player": 0
+      }
+    ]
+  },
+  {
+    "distance": 310,
+    "move": "sHP",
+    "delay": 78,
+    "lesson": {
+      "distance": 310,
+      "move": "sHP",
+      "delay": 78,
+      "demo": true,
+      "start": 1785,
+      "success": false,
+      "result": "这次没有擦身。过早退远或未短撤，都不会获得反入。",
+      "attack": true,
+      "done": true
+    },
+    "hp": [
+      10000,
+      10000
+    ],
+    "events": [
+      {
+        "frame": 1869,
+        "type": "retreat",
+        "player": 0
+      }
+    ]
+  }
+]

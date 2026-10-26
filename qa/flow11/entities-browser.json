@@ -1,0 +1,42 @@
+{
+  "htmlSha256": "076840e971f7902857f815510b36526518c1f355a92eb5b92aa0d7cc1e10278a",
+  "rows": [
+    {
+      "name": "A projectile outlives its originating attack",
+      "passed": true
+    },
+    {
+      "name": "Repeated entity export never allocates IDs",
+      "passed": true
+    },
+    {
+      "name": "Departed source attack remains reachable through projectile",
+      "passed": true
+    },
+    {
+      "name": "Export has no projectile DOM nodes",
+      "passed": true
+    },
+    {
+      "name": "Same setup and command replay regenerate IDs and entity content",
+      "passed": true
+    },
+    {
+      "name": "Real throw creates one entity shared by both actors",
+      "passed": true
+    },
+    {
+      "name": "Throw ownership is represented without object cycles",
+      "passed": true
+    },
+    {
+      "name": "Rendering cannot allocate combat identities",
+      "passed": true
+    },
+    {
+      "name": "Canonical new match resets entity serial",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

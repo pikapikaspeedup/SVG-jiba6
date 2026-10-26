@@ -1,0 +1,147 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "ryu super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "ken super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "chun super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "cammy super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "luke super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "juri super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "mai super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7260
+      }
+    },
+    {
+      "name": "iori super follows real startup and confirmed final contact",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "finish"
+        ],
+        "hp": 7206
+      }
+    },
+    {
+      "name": "Whiffed super never shows a fake finishing hit",
+      "passed": true,
+      "details": {
+        "phases": [
+          "start",
+          "strike",
+          "recover",
+          "whiff"
+        ]
+      }
+    },
+    {
+      "name": "Guarded super counts defense and denies hit-only finisher",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Paused redraw does not advance phases or repeat hits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Cinematic framing preserves the stable camera",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reduced motion suppresses finishing streak layers",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Reset clears cinematic state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual SA3 control reaches a real finisher",
+      "passed": true
+    },
+    {
+      "name": "Super controls fit narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

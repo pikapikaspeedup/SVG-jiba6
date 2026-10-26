@@ -1,0 +1,118 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "ryu produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "shoryu_1",
+        "visible": 36,
+        "shapes": 120,
+        "peak": 87
+      }
+    },
+    {
+      "name": "ken produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "shoryu_1",
+        "visible": 36,
+        "shapes": 150,
+        "peak": 102
+      }
+    },
+    {
+      "name": "chun produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "legs_1",
+        "visible": 46,
+        "shapes": 136,
+        "peak": 125
+      }
+    },
+    {
+      "name": "cammy produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "arrow_1",
+        "visible": 27,
+        "shapes": 84,
+        "peak": 113
+      }
+    },
+    {
+      "name": "luke produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "rising_1",
+        "visible": 36,
+        "shapes": 120,
+        "peak": 94
+      }
+    },
+    {
+      "name": "juri produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "fuha_1",
+        "visible": 27,
+        "shapes": 105,
+        "peak": 83
+      }
+    },
+    {
+      "name": "mai produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "ryuenbu_1",
+        "visible": 80,
+        "shapes": 325,
+        "peak": 102
+      }
+    },
+    {
+      "name": "iori produces moving material ribbons during a real special",
+      "passed": true,
+      "details": {
+        "move": "oniYaki_1",
+        "visible": 36,
+        "shapes": 120,
+        "peak": 94
+      }
+    },
+    {
+      "name": "Repeated paused draws neither emit nor advance combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Eight material families differ in geometry beyond their colors",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact release travels through a hit and reflects from guard",
+      "passed": true,
+      "details": {
+        "hit": 5.255594553063383,
+        "guard": -1.6219909114390432
+      }
+    },
+    {
+      "name": "Legacy FX comparison hides material paths",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Material upgrade preserves the same attack damage and fighter outcome",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Material controls fit narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -45,6 +45,7 @@
     const x=prev?prev.x+(s.x-prev.x)*u:s.x,y=prev?prev.y+(s.y-prev.y)*u:s.y,age=prev?prev.age+((s.age||0)-prev.age)*u:s.age||0;
     INK.SVG.assign(s.node,'transform',`translate(${x.toFixed(3)} ${y.toFixed(3)}) scale(${s.dir} 1)`);
     if(s.spin)INK.SVG.assign(s.spin,'transform',s.spinKind==='energy'?`rotate(${age*10})`:`rotate(${age*27}) translate(-47 0)`);
+    INK.ProjectileFlow?.renderShot(s,x,y,age);
     this.stats.projectileViews++;
    }
   },

@@ -1,0 +1,50 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "Startup produces shoulder and weight-transfer motion",
+      "passed": true
+    },
+    {
+      "name": "Real heavy contact drives the shared response event",
+      "passed": true
+    },
+    {
+      "name": "Victim receives compression and attacker receives recoil",
+      "passed": true
+    },
+    {
+      "name": "New hit rhythm distinguishes light, heavy and punish",
+      "passed": true
+    },
+    {
+      "name": "Legacy comparison restores original heavy hitstop",
+      "passed": true
+    },
+    {
+      "name": "Rendering cannot repeat contacts or change damage",
+      "passed": true
+    },
+    {
+      "name": "Impact composition stays within twelve retained slots",
+      "passed": true
+    },
+    {
+      "name": "Guard contact uses its own feedback category",
+      "passed": true
+    },
+    {
+      "name": "Eight characters remain playable with finite motion and contact effects",
+      "passed": true
+    },
+    {
+      "name": "Character selector and jump control produce a real landing response",
+      "passed": true
+    },
+    {
+      "name": "Control panel fits a narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

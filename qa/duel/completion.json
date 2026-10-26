@@ -1,0 +1,90 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "buildId": "f830931d573090693c4eafe9cafa6ae5181b599f4f9b9e87791447db3492ae3b",
+  "completedRounds": 10,
+  "totalChecks": 162,
+  "suites": [
+    {
+      "suite": "kinetic",
+      "path": "qa/kinetic/playable.json",
+      "total": 11,
+      "passed": 11,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "flow-chain",
+      "path": "qa/flow-chain/playable.json",
+      "total": 15,
+      "passed": 15,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "aerial",
+      "path": "qa/aerial/playable.json",
+      "total": 17,
+      "passed": 17,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "material",
+      "path": "qa/material/playable.json",
+      "total": 14,
+      "passed": 14,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "projectile",
+      "path": "qa/projectile/playable.json",
+      "total": 16,
+      "passed": 16,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "stage-light",
+      "path": "qa/stage-light/playable.json",
+      "total": 11,
+      "passed": 11,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "strike-feel",
+      "path": "qa/strike-feel/playable.json",
+      "total": 17,
+      "passed": 17,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "super-director",
+      "path": "qa/super-director/playable.json",
+      "total": 16,
+      "passed": 16,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "duel",
+      "path": "qa/duel/playable.json",
+      "total": 15,
+      "passed": 15,
+      "sameBuild": true,
+      "errors": []
+    },
+    {
+      "suite": "spacing",
+      "path": "qa/duel/spacing/browser.json",
+      "total": 30,
+      "passed": 30,
+      "sameBuild": true,
+      "errors": []
+    }
+  ],
+  "performance": "qa/duel/frame-cost.json",
+  "scope": "Direct playable, source, geometry, rendering and UI checks. Not a full legacy replay/endurance certification."
+}

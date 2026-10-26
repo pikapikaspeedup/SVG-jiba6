@@ -33,7 +33,7 @@
    slot.start=t;slot.end=t+15;slot.actor=f.index;slot.pose=INK.copy(p);slot.sockets=INK.copy(INK.Rig.sockets(p,rig));slot.clock=f._inkVisualClock;
    this.stats.captures++;this.stats.peak=Math.max(this.stats.peak,this.slots.filter(s=>s.end>t).length);return true;
   },
-  render(G,alpha=1){const W=INK.VFX,visible=W.settings.enabled&&!W.settings.reducedMotion,t=G.paused||G.hitstop||W.frozen?W.time:W.time-1+clamp(alpha);
+  render(G,alpha=1){INK.SuperDirector?.render(G,alpha);INK.StageLight?.render(G,alpha);INK.ProjectileFlow?.render(G,alpha);INK.Kinetic?.render(G,alpha);INK.Aerial?.render(G,globalThis.SVG_FIGHTER?.fighters||[]);const W=INK.VFX,visible=W.settings.enabled&&!W.settings.reducedMotion,t=G.paused||G.hitstop||W.frozen?W.time:W.time-1+clamp(alpha);
    for(const s of this.slots){const age=t-s.start,life=s.end-s.start,on=visible&&age>=0&&age<life;assign(s.root,'display',on?'inline':'none');if(on)assign(s.root,'opacity',.22*Math.pow(1-age/life,1.35)*W.settings.intensity);}
   },
   camera(){return[0,0];}, // FLOW 09: hit feedback never translates the scenery.

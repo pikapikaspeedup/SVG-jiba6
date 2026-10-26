@@ -1,3 +1,21 @@
+# INK FIGHT · 计算等于游戏性
+
+十轮引擎升级已经整合：重心动作与命中反馈、八角色确认连携、短跳/快落/方向受身、角色材质特效、连续对波与能量衰减、场景照明、分部位打击与音效、实际接触驱动的超级技演出，以及 CPU 实战策略和落地输入缓冲。
+
+打开 `dist/INK-Street-Fighter-6.html`，点击 **开始格斗**。支持电脑对战、本地双人、自由练习；各项引擎练习控制收在战斗画面下方。辅助操作可用 Z/X/C/B 必杀、1/2/3 超级技，经典搓招仍可用。
+
+构建：`python3 tools/build_forge.py`（Python 3.10+）。[十轮范围](docs/ITERATIONS.md) · [最新整合与验证边界](docs/DUEL.md)。最终直接检查见 `qa/duel/completion.json`；保留 707 份原始资产，API/存储沿用 v9。旧版报告只证明各自绑定的历史构建。
+
+---
+
+# 计算对抗实验 · 擦身反入
+
+在 FLOW09 基础上，新增可玩的「短撤 → 擦身 → 反入」机制。打开 `dist/INK-Street-Fighter-6.html`，从首页进入「挑战擦身反入」：**X 短撤，K 中拳，L 重拳**。真实几何判定完整挥空后，才允许提前结束最后 4 帧收势；可关闭取消奖励做同输入对照。
+
+新环境默认经典规则。构建仍为 `python3 tools/build_forge.py`；本轮验证使用 `python3 tools/check_spacing.py --browser`。设计、实现边界及后续工作见 [计算等于游戏性](docs/COMPUTATION-GAMEPLAY.md)。`qa/flow10/` 是实验验证，以下 FLOW09 报告保留为历史基线。
+
+---
+
 <!-- FLOW9-CURRENT -->
 # INK FLOW 09 · 稳镜与流畅动作
 

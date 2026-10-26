@@ -1,0 +1,59 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "neon environment and body lighting mounted",
+      "passed": true
+    },
+    {
+      "name": "courtyard environment and body lighting mounted",
+      "passed": true
+    },
+    {
+      "name": "rooftop environment and body lighting mounted",
+      "passed": true
+    },
+    {
+      "name": "Actual contact produces a bounded light field",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actor light uses a nonrecursive live-art mask",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Renderer edits rebuild exactly two body light rigs without stale masks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Repeated paused lighting draws preserve combat and light clock",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Light feedback leaves the scene camera stable",
+      "passed": true,
+      "details": {
+        "camera": "matrix(1 0 0 1 0 0)"
+      }
+    },
+    {
+      "name": "Airborne fighter has a broader ground shadow and no planted foot shadow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Disabling restores original shadow dimensions and hides added lights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Scene controls fit a narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

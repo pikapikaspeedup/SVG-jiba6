@@ -1,5 +1,5 @@
 {
-  "name": "INK FLOW · Fluid Motion & Stable Stage",
+  "name": "INK FIGHT · Computation Is Gameplay",
   "version": "9.0.0",
   "date": "2026-10-05",
   "entry": "dist/INK-Street-Fighter-6.html",
@@ -16,7 +16,6 @@
     "name": "INK-Flow-8-Response-Source.zip",
     "sha256": "8c3308af282c966eba23330582290e61cc03d8608599bab39f97731bc365ede7"
   },
-  "githubWritten": false,
   "scope": "Non-official 2.5D SVG fan game. No official frame-data equivalence or real-device FPS promise.",
   "engineIteration": {
     "productionGameSource": "game.js",
@@ -46,6 +45,18 @@
     "defaultSpeed": 1
   },
   "archiveQA": "qa/flow9/validation.json",
-  "guide": "docs/FLOW9-ENGINE.md",
-  "report": "TEST-REPORT-FLOW9.md"
+  "guide": "docs/DUEL.md",
+  "report": "TEST-REPORT-FLOW9.md",
+  "experiments": {
+    "spacing": {
+      "version": "0.1.0",
+      "defaultEnabled": false,
+      "guide": "docs/COMPUTATION-GAMEPLAY.md",
+      "validate": "python3 tools/check_spacing.py --browser",
+      "evidence": "qa/flow10/validation.json"
+    }
+  },
+  "upgradeDate": "2026-10-26",
+  "completedUpgradeRounds": 10,
+  "currentEvidence": "qa/duel/completion.json"
 }

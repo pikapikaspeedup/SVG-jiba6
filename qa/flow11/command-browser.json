@@ -1,0 +1,56 @@
+{
+  "scope": "Explicit command API boundary; device capture/full replay not yet implemented",
+  "htmlSha256": "076840e971f7902857f815510b36526518c1f355a92eb5b92aa0d7cc1e10278a",
+  "utc": "2026-10-26T12:06:19.518284+00:00",
+  "rows": [
+    {
+      "name": "Queued directions do not mutate battle before a simulation boundary",
+      "passed": true
+    },
+    {
+      "name": "Rendering does not consume queued commands",
+      "passed": true
+    },
+    {
+      "name": "A diagonal is one direction sample at the boundary",
+      "passed": true
+    },
+    {
+      "name": "Release returns to neutral through real input code",
+      "passed": true
+    },
+    {
+      "name": "Commands in freeze use the normal input buffer",
+      "passed": true
+    },
+    {
+      "name": "Frozen steps remain distinct on the command timeline",
+      "passed": true
+    },
+    {
+      "name": "Buffered command starts after freeze through normal rules",
+      "passed": true
+    },
+    {
+      "name": "Internal buffer consumption does not duplicate external commands",
+      "passed": true
+    },
+    {
+      "name": "Reset drops the old command session",
+      "passed": true
+    },
+    {
+      "name": "Forced single-step applies action buttons as a running simulation",
+      "passed": true
+    },
+    {
+      "name": "Build fingerprint is embedded and immutable",
+      "passed": true
+    },
+    {
+      "name": "No browser exceptions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

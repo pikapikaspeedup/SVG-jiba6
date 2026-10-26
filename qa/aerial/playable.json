@@ -1,0 +1,133 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "Tap produces a shorter lower jump than holding up",
+      "passed": true,
+      "details": {
+        "short": {
+          "min": -50.79999999999999,
+          "frames": 23,
+          "x": 300,
+          "landing": 6,
+          "fast": false,
+          "cut": true
+        },
+        "full": {
+          "min": -169.3000000000001,
+          "frames": 43,
+          "x": 300,
+          "landing": 6,
+          "fast": false,
+          "cut": false
+        }
+      }
+    },
+    {
+      "name": "Fast descent reduces airtime and commits to longer landing recovery",
+      "passed": true,
+      "details": {
+        "fast": {
+          "min": -169.00000000000009,
+          "frames": 33,
+          "x": 300,
+          "landing": 11,
+          "fast": true,
+          "cut": true
+        },
+        "full": {
+          "min": -169.3000000000001,
+          "frames": 43,
+          "x": 300,
+          "landing": 6,
+          "fast": false,
+          "cut": false
+        }
+      }
+    },
+    {
+      "name": "Air steering changes horizontal travel with bounded speed",
+      "passed": true,
+      "details": {
+        "steer": {
+          "min": -169.3000000000001,
+          "frames": 43,
+          "x": 479.7599999999997,
+          "landing": 6,
+          "fast": false,
+          "cut": false
+        }
+      }
+    },
+    {
+      "name": "Holding up cannot skip the landing commitment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Pressing up in the air does not create a second jump",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Special launch keeps its authored trajectory outside jump steering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Directional inputs cannot steer a special launch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All eight characters complete the new jump and landing cycle",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Grounded knockdown accepts one paid recovery after real damage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Repeated recovery requests cannot spend repeatedly",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Directional recovery shortens wakeup and moves within its bound",
+      "passed": true,
+      "details": {
+        "frames": 18,
+        "travel": 42
+      }
+    },
+    {
+      "name": "Quick recovery loses strike immunity during its final recovery frames",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Disabling Air Flow restores the original full jump for a tap",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Hold-jump control starts a real full-height jump",
+      "passed": true
+    },
+    {
+      "name": "Releasing hold control cuts the real jump",
+      "passed": true
+    },
+    {
+      "name": "Sweep and recovery buttons perform a paid wakeup",
+      "passed": true
+    },
+    {
+      "name": "Air controls fit a narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,70 @@
+{
+  "htmlSha256": "076840e971f7902857f815510b36526518c1f355a92eb5b92aa0d7cc1e10278a",
+  "rows": [
+    {
+      "name": "Identity checked file regenerates selected combat state",
+      "passed": true
+    },
+    {
+      "name": "build mismatch rejects before changing battle",
+      "passed": true
+    },
+    {
+      "name": "assets mismatch rejects before changing battle",
+      "passed": true
+    },
+    {
+      "name": "rules mismatch rejects before changing battle",
+      "passed": true
+    },
+    {
+      "name": "Malformed input file rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "Unknown config rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "Revision alone does not change content identity",
+      "passed": true
+    },
+    {
+      "name": "Same revision with changed override changes content hash",
+      "passed": true
+    },
+    {
+      "name": "Active session keeps its captured effective model",
+      "passed": true
+    },
+    {
+      "name": "Live override mismatch rejects before changing battle",
+      "passed": true
+    },
+    {
+      "name": "Playback scheduling speed does not invalidate rules",
+      "passed": true
+    },
+    {
+      "name": "dummy change stops before advancing and refuses export",
+      "passed": true
+    },
+    {
+      "name": "infinite change stops before advancing and refuses export",
+      "passed": true
+    },
+    {
+      "name": "autohp change stops before advancing and refuses export",
+      "passed": true
+    },
+    {
+      "name": "Input buffer change invalidates session before step",
+      "passed": true
+    },
+    {
+      "name": "Stopping restores live asset store",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

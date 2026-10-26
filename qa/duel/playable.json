@@ -1,0 +1,216 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "Home opens a real CPU fight with the lab folded away",
+      "passed": true
+    },
+    {
+      "name": "Released diagonal jump buffers across landing without skipping recovery",
+      "passed": true,
+      "details": {
+        "landing": 6,
+        "y": -9,
+        "vx": 5.7
+      }
+    },
+    {
+      "name": "Double-tap dash waits for the full landing commitment",
+      "passed": true,
+      "details": {
+        "pending": true,
+        "early": false,
+        "state": "dash"
+      }
+    },
+    {
+      "name": "Expired jump intent cannot fire after a long attack",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Hitstop preserves actionable-frame input intent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Pausing clears buffered movement intent",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Movement buffering can be disabled independently",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "CPU chooses a paid directional recovery after a real sweep",
+      "passed": true,
+      "details": {
+        "paid": 1,
+        "hp": 9260,
+        "stats": 1
+      }
+    },
+    {
+      "name": "CPU pays for OD to contest an observed projectile",
+      "passed": true,
+      "details": {
+        "counters": 1,
+        "clashes": 1,
+        "spent": true
+      }
+    },
+    {
+      "name": "CPU advances behind its surviving wave",
+      "passed": true,
+      "details": {
+        "follows": 1
+      }
+    },
+    {
+      "name": "Eight-character CPU matches attack, deal damage, and stay finite",
+      "passed": true,
+      "details": [
+        {
+          "id": "ryu",
+          "finite": true,
+          "moves": 12,
+          "hp": [
+            4740,
+            3002
+          ],
+          "brain": {
+            "recoveries": 1,
+            "fastDrops": 1,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "ken",
+          "finite": true,
+          "moves": 17,
+          "hp": [
+            4774,
+            4311
+          ],
+          "brain": {
+            "recoveries": 2,
+            "fastDrops": 1,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "chun",
+          "finite": true,
+          "moves": 19,
+          "hp": [
+            1559,
+            7171
+          ],
+          "brain": {
+            "recoveries": 1,
+            "fastDrops": 1,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "cammy",
+          "finite": true,
+          "moves": 14,
+          "hp": [
+            7750,
+            0
+          ],
+          "brain": {
+            "recoveries": 5,
+            "fastDrops": 0,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "luke",
+          "finite": true,
+          "moves": 19,
+          "hp": [
+            4156,
+            6133
+          ],
+          "brain": {
+            "recoveries": 1,
+            "fastDrops": 0,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "juri",
+          "finite": true,
+          "moves": 18,
+          "hp": [
+            3214,
+            2902
+          ],
+          "brain": {
+            "recoveries": 0,
+            "fastDrops": 0,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "mai",
+          "finite": true,
+          "moves": 20,
+          "hp": [
+            4543,
+            4373
+          ],
+          "brain": {
+            "recoveries": 1,
+            "fastDrops": 0,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        },
+        {
+          "id": "iori",
+          "finite": true,
+          "moves": 14,
+          "hp": [
+            7935,
+            311
+          ],
+          "brain": {
+            "recoveries": 3,
+            "fastDrops": 0,
+            "counterWaves": 0,
+            "followUps": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "CPU uses committed fast descent in real matches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Practice opens the full engine lab in training mode",
+      "passed": true
+    },
+    {
+      "name": "Local versus uses two human players and closes the lab",
+      "passed": true
+    },
+    {
+      "name": "Fight controls fit a narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

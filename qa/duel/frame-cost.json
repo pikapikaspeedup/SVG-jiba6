@@ -1,0 +1,103 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "scope": "All upgrades enabled; sequential 480-step character samples, first 120 warmup. Synchronous simulation + SVG DOM + VFX CPU time only. No display/GPU FPS, audio hardware, true mobile, balance or endurance claim.",
+  "rows": [
+    {
+      "id": "ryu",
+      "mean": 1.005000000529819,
+      "p95": 2,
+      "max": 6.400000095367432,
+      "nodes": 4205,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "ken",
+      "mean": 0.8766666664017572,
+      "p95": 1.5999999046325684,
+      "max": 3.6999998092651367,
+      "nodes": 4736,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "chun",
+      "mean": 0.8397222227520413,
+      "p95": 1.5999999046325684,
+      "max": 2.299999713897705,
+      "nodes": 4221,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "cammy",
+      "mean": 0.9974999997350905,
+      "p95": 1.8000001907348633,
+      "max": 10.900000095367432,
+      "nodes": 4773,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "luke",
+      "mean": 0.8641666664017571,
+      "p95": 1.5,
+      "max": 2.3999996185302734,
+      "nodes": 4187,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "juri",
+      "mean": 0.8274999989403619,
+      "p95": 1.5,
+      "max": 2.8000001907348633,
+      "nodes": 4763,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "mai",
+      "mean": 0.9847222222222223,
+      "p95": 1.9000000953674316,
+      "max": 3.5,
+      "nodes": 4509,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    },
+    {
+      "id": "iori",
+      "mean": 0.9497222224871318,
+      "p95": 1.700000286102295,
+      "max": 12.199999809265137,
+      "nodes": 4285,
+      "light": {
+        "actors": 2,
+        "fields": 6
+      },
+      "impacts": 12
+    }
+  ],
+  "errors": []
+}

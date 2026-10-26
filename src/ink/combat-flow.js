@@ -70,16 +70,24 @@
       if(a.m.category==='normal'&&a.m.cancel&&['special','super','branch'].includes(m.category))return {ok:true,code:'ready',kind:'special-cancel',remaining};
       if(['special','branch'].includes(a.m.category)&&m.category==='super'&&(m.super===3||a.m.od&&m.super>=2))return {ok:true,code:'ready',kind:'super-cancel',remaining};
     }
+    const chain=INK.FlowChain?.decision(f,m,G);if(chain)return chain;
     const custom=extra(f,m,G);if(custom)return custom;
     return {ok:false,code:!a.confirmed?'confirm':age(G,a)>20?'window':'recovery',kind:'link',remaining};
   }
   const Tempo={settings,profiles,reasons,age,validateTransitions:validate,cancel,
     stats:{ticks:0,action:0,freeze:0,slow:0,other:0}, events:[],
     record(G,type){this.stats.ticks++;this.stats[type]=(this.stats[type]||0)+1;},
-    contact(G,m,result,last){
+    contact(G,m,result,last,context={}){
       const p=profiles[settings.rhythm];
       const n=result==='block'?p.block:m.super?(last?p.superEnd:p.superMid):m.hits>1&&!last&&settings.rhythm==='fluid'?Math.min(3,m.level>=2?3:2):m.hits>1&&!last&&settings.rhythm==='weighted'?Math.min(5,m.level>=2?5:4):m.level>=3?p.heavy:m.level===2?p.medium:p.light;
-      this.events.push({tick:G.tick,actionFrame:G.actionTick||0,move:m.id,result,last:!!last,freeze:n,profile:settings.rhythm});if(this.events.length>120)this.events.shift();return n;
+      let freeze=n;
+      if(INK.Kinetic?.settings.enabled&&settings.rhythm!=='legacy'){
+        const intermediate=(m.hits||1)>1&&!last;
+        if(result==='hit'&&!intermediate){freeze+=m.super?2:m.level>=3?2:m.level===1?-1:0;freeze+=context.punish?2:context.counter?1:0;}
+        if(result==='block'&&m.level>=3)freeze+=1;
+        freeze=Math.max(2,Math.min(18,freeze));
+      }
+      this.events.push({tick:G.tick,actionFrame:G.actionTick||0,move:m.id,result,last:!!last,freeze,profile:settings.rhythm});if(this.events.length>120)this.events.shift();return freeze;
     },
     superStart(m){return profiles[settings.rhythm].superStart+(m.ca?6:0);},
     set(patch){

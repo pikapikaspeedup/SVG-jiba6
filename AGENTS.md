@@ -8,9 +8,15 @@
 
 - Never redeem, consume, or automatically use Codex usage reset cards on the user's behalf. Do not call `consume_usage_reset` or use a UI, API, script, automation, or delegated agent to redeem a reset. If usage is exhausted, wait for the natural reset or report the limit. Leave reset-card redemption to the user manually; continuing work or running unattended is not authorization to consume a card.
 
+## 当前主线
+
+用户明确要求：迭代要大，以整个游戏的格斗体验为核心，重点提升动作引擎、动作特效、画面效果和打击感。不为重构而重构；暂停扩张重演/回放工具，已有底层保留。当前推进动作、空中战斗和角色化特效的整轮升级，以真实可玩效果交付。必要时让 Pro 设计，每轮最多一次并先打包源码。不得把小修、文档或验证基础计为大迭代。
+
 ## 项目现状与阅读顺序
 
-- 当前版本是 **INK FLOW 09**，一个可离线运行的非官方 2.5D SVG 格斗游戏及动作工坊。
+- 用户要求至少十轮大改进，状态见 `docs/ITERATIONS.md`。已完成十轮（10/10），范围和证据见账本与 `docs/DUEL.md`。最新跨轮证据为 `qa/duel/completion.json`；后续继续围绕实际格斗体验改进，不重新启动已经暂停的重演扩张。优先阅读相应能力文档及当前源码。每轮最多向 Pro 咨询一次，先打包源码，并读取账本防止重复发送。
+- FLOW11 重演工作已暂缓，历史报告只代表其绑定的构建。不要继续扩张回放工具，也不把重演门禁当作本轮工作重点。按改动范围执行必要的真实战斗检查。
+- 基础版本是 **INK FLOW 09**，一个可离线运行的非官方 2.5D SVG 格斗游戏及动作工坊。
 - 优先阅读 `README.md` 顶部 FLOW9 说明、`docs/FLOW9-ENGINE.md`、`docs/FLOW9-PLAN.md`；已有验收范围见 `TEST-REPORT-FLOW9.md`。
 - README 下半部分、`README-FORGE.md` 和旧版计划包含历史说明。发生冲突时，以当前源码及 FLOW9 合同为依据，不照搬旧版构建注入方式或存储命名。
 - 此目录可能来自解压的源码包。使用 Git 前先确认仓库状态；没有 `.git` 时不要自行初始化仓库或假定分支、远端存在。

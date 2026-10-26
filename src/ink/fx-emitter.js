@@ -55,12 +55,13 @@
     const rnd=i=>random(birth.seed,i),a=(event.rotation+180+(rnd(0)-.5)*(cfg.spread??75))*Math.PI/180;
     const speed=(cfg.speed??3.2)*(.35+rnd(1))*scale,inherit=cfg.inheritVelocity??.18;
     const species=cfg.species||base.species;
-    return {x:birth.point[0],y:birth.point[1],birth:birth.time,life:(cfg.life??28)*(.75+rnd(2)*.25),
+    const particle={x:birth.point[0],y:birth.point[1],birth:birth.time,life:(cfg.life??28)*(.75+rnd(2)*.25),
       vx:Math.cos(a)*speed*direction+clamp(birth.velocity[0]*inherit,-14,14),vy:Math.sin(a)*speed+clamp(birth.velocity[1]*inherit,-14,14),
       gravity:cfg.gravity??base.gravity,drag:cfg.drag??.045,size:(cfg.size??2.5)*scale*(.65+rnd(3)*.7),
       angle:rnd(4)*360,spin:(rnd(5)-.5)*(species==='petal'?8:5),color:ordinalColor(birth.ordinal,event.color,base.core),species,
       opacity:event.opacity*.8,stretch:species==='shard'||species==='spark'?3.5:1,curl:cfg.curl??0,phase:rnd(6)*Math.PI*2,
       priority:0,sizeCurve:cfg.sizeCurve,opacityCurve:cfg.opacityCurve,heat:cfg.heat??(record.character==='mai'&&species==='ember')};
+    return INK.MaterialFlow?.particle(particle,birth,event,record)||particle;
   }
   function ordinalColor(ordinal,color,core){return ordinal%5===0?core:color;}
   class EmitterBank {
@@ -105,7 +106,7 @@
           for(const b of births){if(this.pool.add(makeParticle(b,event,record,{direction:f.dir,scale:f.renderScale||f.ch.scale||1})))this.stats.acceptedBirths++;else this.stats.poolDrops++;}
           if(settings.enabled&&!settings.reducedMotion&&record.category!=='normal') {
             const base=INK.Particles.materials[record.character]||INK.Particles.materials.ryu;
-            this.ribbons.push(state.key,q,stamp,{birth:stamp,memory:event.trailFrames??12,life:14,width:(event.width??16)*event.scale*.9,
+            this.ribbons.push(state.key,q,stamp,{...INK.MaterialFlow.style(record.character,event),birth:stamp,memory:event.trailFrames??12,life:14,width:(event.width??16)*event.scale*.9,
               opacity:event.opacity*.6,color:event.color,core:base.core,dark:base.dark,flame:event.type==='flame'});
           }
         }

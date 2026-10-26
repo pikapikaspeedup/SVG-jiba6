@@ -1,0 +1,118 @@
+{
+  "htmlSha256": "1f7cb06e33e56faff6099017f789f799a0f104b009ff4d02ddd953c5b3df0ac1",
+  "rows": [
+    {
+      "name": "sLP commits a real contact and matching sound tier",
+      "passed": true,
+      "details": {
+        "tick": 9,
+        "actorTick": 4,
+        "zone": "body",
+        "type": "hit",
+        "tier": "hit",
+        "pan": -0.04,
+        "multi": false,
+        "damage": 280,
+        "move": "sLP"
+      }
+    },
+    {
+      "name": "sHP commits a real contact and matching sound tier",
+      "passed": true,
+      "details": {
+        "tick": 19,
+        "actorTick": 10,
+        "zone": "body",
+        "type": "hit",
+        "tier": "heavy",
+        "pan": -0.04,
+        "multi": false,
+        "damage": 820,
+        "move": "sHP"
+      }
+    },
+    {
+      "name": "cMK commits a real contact and matching sound tier",
+      "passed": true,
+      "details": {
+        "tick": 27,
+        "actorTick": 8,
+        "zone": "leg",
+        "type": "hit",
+        "tier": "hit",
+        "pan": -0.04,
+        "multi": false,
+        "damage": 520,
+        "move": "cMK"
+      }
+    },
+    {
+      "name": "Low strike assigns leg response",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual guard contact uses braced-body response and guard sound",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual parry contact uses its own sound event",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Head classification follows evaluated head location",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "All four body regions produce different initial responses",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Impulse evolves through rebound and returns to authored pose",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Audio timbre distinguishes light heavy guard and parry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Contact position maps to bounded left/right sound",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Intermediate combo contact is quieter than the ending beat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "New response preserves actual damage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Repeated drawing never repeats contact audio or advances reaction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Real button-triggered contact schedules bounded Web Audio voices",
+      "passed": true
+    },
+    {
+      "name": "Sound can be disabled through the same user control",
+      "passed": true
+    },
+    {
+      "name": "Impact controls fit narrow viewport",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

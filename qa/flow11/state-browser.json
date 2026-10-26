@@ -1,0 +1,46 @@
+{
+  "htmlSha256": "076840e971f7902857f815510b36526518c1f355a92eb5b92aa0d7cc1e10278a",
+  "rows": [
+    {
+      "name": "CPU replay preserves grouped state despite additional renders",
+      "passed": true
+    },
+    {
+      "name": "Charge mutation is detected before HP changes",
+      "passed": true
+    },
+    {
+      "name": "Captured state is detached from subsequent mutations",
+      "passed": true
+    },
+    {
+      "name": "AI timer mutation changes actor group",
+      "passed": true
+    },
+    {
+      "name": "First divergence is retained even after later reconvergence",
+      "passed": true
+    },
+    {
+      "name": "A truncated replay reports its first missing boundary",
+      "passed": true
+    },
+    {
+      "name": "Missing field differs from explicit undefined",
+      "passed": true
+    },
+    {
+      "name": "Negative zero differs from zero",
+      "passed": true
+    },
+    {
+      "name": "New canonical session regenerates grouped initial state",
+      "passed": true
+    },
+    {
+      "name": "All eight character CPU sessions reproduce 180 grouped steps",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

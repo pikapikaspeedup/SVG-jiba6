@@ -1,0 +1,27 @@
+from pathlib import Path
+import os,json,hashlib
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];O=R/'qa/strike-feel';html=(R/'dist/INK-Street-Fighter-6.html').read_bytes()
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page(viewport={'width':1440,'height':1100});errors=[];p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(html.decode());p.wait_for_function('window.INKDuel?.ready');p.locator('.kinetic-launch button').click();p.locator('#fight-practice').click();p.evaluate('SVG_FIGHTER.state.paused=true')
+ rows=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state,S=INK.StrikeFeel,out=[],check=(name,passed,details)=>out.push({name,passed,details});
+ function setup(){A.start('ryu','ken','training','classic',1);G.paused=true;document.getElementById('dummy').value='idle';document.getElementById('autohp').checked=false;A.teleport(0,560);A.teleport(1,720);}
+ for(const [move,expected]of [['sLP','hit'],['sHP','heavy'],['cMK','hit']]){setup();A.inputMove(0,move);for(let i=0;i<70&&!S.inspect().length;i++)A.step();const e=S.inspect().at(-1);check(move+' commits a real contact and matching sound tier',!!e&&e.tier===expected&&A.fighters[1].hp<10000,e);}
+ check('Low strike assigns leg response',S.inspect().at(-1)?.zone==='leg');
+ setup();document.getElementById('dummy').value='guard';A.inputMove(0,'sHP');for(let i=0;i<70&&!S.inspect().length;i++)A.step();check('Actual guard contact uses braced-body response and guard sound',S.inspect().at(-1)?.type==='block'&&S.inspect().at(-1)?.zone==='guard'&&S.inspect().at(-1)?.tier==='block');
+ setup();A.press(1,'PAR');A.inputMove(0,'sLP');for(let i=0;i<70&&!S.inspect().length;i++)A.step();check('Actual parry contact uses its own sound event',S.inspect().at(-1)?.type==='parry'&&S.inspect().at(-1)?.tier==='parry');A.release(1,'PAR');
+ setup();const d=A.fighters[1],m=A.getMove(A.fighters[0],'sLP'),pose=A.pose(d),rig=INK.Runtime.visualRig(d,pose),head=INK.Rig.world(pose,INK.Rig.sockets(pose,rig).head,{x:d.x,y:665+d.y,scale:d.ch.scale,facing:d.dir});check('Head classification follows evaluated head location',S.zone(d,m,'hit',head)==='head');
+ const signatures=[];for(const zone of ['head','body','leg','guard']){const p=INK.copy(pose);S.response(d,p,{actorBirth:0,energy:1,worldDir:1,zone,duration:23},0);signatures.push(JSON.stringify(p));}check('All four body regions produce different initial responses',new Set(signatures).size===4);
+ const impulse={actorBirth:0,energy:1,worldDir:1,zone:'body',duration:23},p0=INK.copy(pose),p1=INK.copy(pose),p2=INK.copy(pose);S.response(d,p0,impulse,0);S.response(d,p1,impulse,9);S.response(d,p2,impulse,24);check('Impulse evolves through rebound and returns to authored pose',JSON.stringify(p0)!==JSON.stringify(p1)&&JSON.stringify(p2)===JSON.stringify(pose));
+ const l=S.audio({...m,level:1},'hit','body',{},100),h=S.audio({...m,level:3},'hit','body',{},1300),guard=S.audio(m,'block','guard'),parry=S.audio(m,'parry','guard',{perfect:true});check('Audio timbre distinguishes light heavy guard and parry',new Set([l,h,guard,parry].map(x=>JSON.stringify(x.plan))).size===4);check('Contact position maps to bounded left/right sound',l.pan<0&&h.pan>0&&Math.abs(l.pan)<=.65&&Math.abs(h.pan)<=.65);
+ const multi=S.audio({...m,hits:4},'hit','body',{last:false}),last=S.audio({...m,hits:4},'hit','body',{last:true});check('Intermediate combo contact is quieter than the ending beat',multi.strength<last.strength);
+ const hp=[];for(const enabled of [false,true]){S.settings.enabled=enabled;setup();A.inputMove(0,'sHP');A.step(50);hp.push(A.fighters[1].hp);}check('New response preserves actual damage',hp[0]===hp[1]);
+ setup();A.inputMove(0,'sHP');for(let i=0;i<70&&!S.inspect().length;i++)A.step();const count=S.inspect().length,clock=A.fighters[1]._inkVisualClock;for(let i=0;i<20;i++)A.render();check('Repeated drawing never repeats contact audio or advances reaction',S.inspect().length===count&&A.fighters[1]._inkVisualClock===clock);return out;}''')
+ p.locator('#strike-coach [data-sound]').click();p.wait_for_function('SVG_FIGHTER.soundStatus().enabled')
+ p.evaluate("()=>{const A=SVG_FIGHTER;A.reset();A.state.paused=true;A.teleport(0,560);A.teleport(1,720);}")
+ p.locator('#strike-coach [data-strike="sHP"]').click();p.evaluate("()=>{const A=SVG_FIGHTER;for(let i=0;i<70&&!INK.StrikeFeel.inspect().length;i++)A.step();A.render();INK.VFX.render(A.state,1);}")
+ rows.append({'name':'Real button-triggered contact schedules bounded Web Audio voices','passed':p.evaluate("(()=>{const s=SVG_FIGHTER.soundStatus();return s.enabled&&s.state==='running'&&s.voices.some(v=>v.type==='heavy')&&s.voices.length<=s.capacity})()")})
+ p.locator('#game').screenshot(path=str(O/'heavy.png'));p.locator('#strike-coach [data-sound]').click();p.wait_for_function('!SVG_FIGHTER.soundStatus().enabled');rows.append({'name':'Sound can be disabled through the same user control','passed':p.evaluate('!SVG_FIGHTER.soundStatus().enabled')})
+ p.set_viewport_size({'width':390,'height':844});rows.append({'name':'Impact controls fit narrow viewport','passed':p.locator('#strike-coach').evaluate('(e)=>e.getBoundingClientRect().right<=innerWidth+1')});b.close()
+for r in rows:print('PASS' if r['passed'] else 'FAIL',r['name'],r.get('details',''))
+(O/'playable.json').write_text(json.dumps({'htmlSha256':hashlib.sha256(html).hexdigest(),'rows':rows,'errors':errors},indent=2)+'\n');print(errors);assert all(r['passed'] for r in rows) and not errors
