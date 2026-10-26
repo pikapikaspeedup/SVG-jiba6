@@ -1,0 +1,1466 @@
+{
+  "suite": "flow7-v6-timing-comparison",
+  "capturedAt": "2026-10-04T21:47:19.797832+00:00",
+  "basis": "First request through final required hit; 1x 60-Hz ticks. Final-hit freeze and recovery not included. This is NOT a measured official SF6 comparison.",
+  "versions": [
+    {
+      "version": "v6",
+      "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+      "rows": [
+        {
+          "route": "ryu-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "totalTicks": 206,
+          "actionFrames": 125,
+          "nominalSeconds": 3.433333333333333,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "totalTicks": 206,
+          "actionFrames": 125,
+          "nominalSeconds": 3.433333333333333,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "totalTicks": 280,
+          "actionFrames": 177,
+          "nominalSeconds": 4.666666666666667,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "totalTicks": 280,
+          "actionFrames": 177,
+          "nominalSeconds": 4.666666666666667,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "totalTicks": 201,
+          "actionFrames": 120,
+          "nominalSeconds": 3.35,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "totalTicks": 201,
+          "actionFrames": 120,
+          "nominalSeconds": 3.35,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "totalTicks": 278,
+          "actionFrames": 175,
+          "nominalSeconds": 4.633333333333334,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "totalTicks": 278,
+          "actionFrames": 175,
+          "nominalSeconds": 4.633333333333334,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "totalTicks": 272,
+          "actionFrames": 169,
+          "nominalSeconds": 4.533333333333333,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "totalTicks": 272,
+          "actionFrames": 169,
+          "nominalSeconds": 4.533333333333333,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "totalTicks": 254,
+          "actionFrames": 158,
+          "nominalSeconds": 4.233333333333333,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "totalTicks": 254,
+          "actionFrames": 158,
+          "nominalSeconds": 4.233333333333333,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "totalTicks": 205,
+          "actionFrames": 124,
+          "nominalSeconds": 3.4166666666666665,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "totalTicks": 205,
+          "actionFrames": 124,
+          "nominalSeconds": 3.4166666666666665,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "totalTicks": 276,
+          "actionFrames": 180,
+          "nominalSeconds": 4.6,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "totalTicks": 276,
+          "actionFrames": 180,
+          "nominalSeconds": 4.6,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "totalTicks": 213,
+          "actionFrames": 125,
+          "nominalSeconds": 3.55,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "totalTicks": 213,
+          "actionFrames": 125,
+          "nominalSeconds": 3.55,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "totalTicks": 259,
+          "actionFrames": 159,
+          "nominalSeconds": 4.316666666666666,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "totalTicks": 259,
+          "actionFrames": 159,
+          "nominalSeconds": 4.316666666666666,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "totalTicks": 207,
+          "actionFrames": 126,
+          "nominalSeconds": 3.45,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "totalTicks": 207,
+          "actionFrames": 126,
+          "nominalSeconds": 3.45,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "totalTicks": 262,
+          "actionFrames": 164,
+          "nominalSeconds": 4.366666666666666,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "totalTicks": 262,
+          "actionFrames": 164,
+          "nominalSeconds": 4.366666666666666,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "totalTicks": 191,
+          "actionFrames": 116,
+          "nominalSeconds": 3.183333333333333,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "totalTicks": 191,
+          "actionFrames": 116,
+          "nominalSeconds": 3.183333333333333,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "totalTicks": 274,
+          "actionFrames": 177,
+          "nominalSeconds": 4.566666666666666,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "totalTicks": 274,
+          "actionFrames": 177,
+          "nominalSeconds": 4.566666666666666,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        }
+      ]
+    },
+    {
+      "version": "v7-legacy",
+      "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+      "rows": [
+        {
+          "route": "ryu-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "totalTicks": 206,
+          "actionFrames": 125,
+          "nominalSeconds": 3.433333333333333,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "totalTicks": 206,
+          "actionFrames": 125,
+          "nominalSeconds": 3.433333333333333,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "totalTicks": 280,
+          "actionFrames": 177,
+          "nominalSeconds": 4.666666666666667,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "totalTicks": 280,
+          "actionFrames": 177,
+          "nominalSeconds": 4.666666666666667,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "totalTicks": 201,
+          "actionFrames": 120,
+          "nominalSeconds": 3.35,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "totalTicks": 201,
+          "actionFrames": 120,
+          "nominalSeconds": 3.35,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "totalTicks": 278,
+          "actionFrames": 175,
+          "nominalSeconds": 4.633333333333334,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "totalTicks": 278,
+          "actionFrames": 175,
+          "nominalSeconds": 4.633333333333334,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "totalTicks": 272,
+          "actionFrames": 169,
+          "nominalSeconds": 4.533333333333333,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "totalTicks": 272,
+          "actionFrames": 169,
+          "nominalSeconds": 4.533333333333333,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "totalTicks": 197,
+          "actionFrames": 116,
+          "nominalSeconds": 3.283333333333333,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "totalTicks": 254,
+          "actionFrames": 158,
+          "nominalSeconds": 4.233333333333333,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "totalTicks": 254,
+          "actionFrames": 158,
+          "nominalSeconds": 4.233333333333333,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "totalTicks": 205,
+          "actionFrames": 124,
+          "nominalSeconds": 3.4166666666666665,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "totalTicks": 205,
+          "actionFrames": 124,
+          "nominalSeconds": 3.4166666666666665,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "totalTicks": 276,
+          "actionFrames": 180,
+          "nominalSeconds": 4.6,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "totalTicks": 276,
+          "actionFrames": 180,
+          "nominalSeconds": 4.6,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "totalTicks": 213,
+          "actionFrames": 125,
+          "nominalSeconds": 3.55,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "totalTicks": 213,
+          "actionFrames": 125,
+          "nominalSeconds": 3.55,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "totalTicks": 259,
+          "actionFrames": 159,
+          "nominalSeconds": 4.316666666666666,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "totalTicks": 259,
+          "actionFrames": 159,
+          "nominalSeconds": 4.316666666666666,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "totalTicks": 207,
+          "actionFrames": 126,
+          "nominalSeconds": 3.45,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "totalTicks": 207,
+          "actionFrames": 126,
+          "nominalSeconds": 3.45,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "totalTicks": 262,
+          "actionFrames": 164,
+          "nominalSeconds": 4.366666666666666,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "totalTicks": 262,
+          "actionFrames": 164,
+          "nominalSeconds": 4.366666666666666,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "totalTicks": 191,
+          "actionFrames": 116,
+          "nominalSeconds": 3.183333333333333,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "totalTicks": 191,
+          "actionFrames": 116,
+          "nominalSeconds": 3.183333333333333,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "totalTicks": 274,
+          "actionFrames": 177,
+          "nominalSeconds": 4.566666666666666,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "totalTicks": 274,
+          "actionFrames": 177,
+          "nominalSeconds": 4.566666666666666,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        }
+      ]
+    },
+    {
+      "version": "v7-weighted",
+      "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+      "rows": [
+        {
+          "route": "ryu-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "totalTicks": 207,
+          "actionFrames": 125,
+          "nominalSeconds": 3.45,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "totalTicks": 207,
+          "actionFrames": 125,
+          "nominalSeconds": 3.45,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "totalTicks": 285,
+          "actionFrames": 177,
+          "nominalSeconds": 4.75,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ryu-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "totalTicks": 285,
+          "actionFrames": 177,
+          "nominalSeconds": 4.75,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "totalTicks": 202,
+          "actionFrames": 120,
+          "nominalSeconds": 3.3666666666666667,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "totalTicks": 202,
+          "actionFrames": 120,
+          "nominalSeconds": 3.3666666666666667,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "totalTicks": 283,
+          "actionFrames": 175,
+          "nominalSeconds": 4.716666666666667,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "ken-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "totalTicks": 283,
+          "actionFrames": 175,
+          "nominalSeconds": 4.716666666666667,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "totalTicks": 198,
+          "actionFrames": 116,
+          "nominalSeconds": 3.3,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "totalTicks": 198,
+          "actionFrames": 116,
+          "nominalSeconds": 3.3,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "totalTicks": 277,
+          "actionFrames": 169,
+          "nominalSeconds": 4.616666666666666,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "chun-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "totalTicks": 277,
+          "actionFrames": 169,
+          "nominalSeconds": 4.616666666666666,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "totalTicks": 198,
+          "actionFrames": 116,
+          "nominalSeconds": 3.3,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "totalTicks": 198,
+          "actionFrames": 116,
+          "nominalSeconds": 3.3,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "totalTicks": 268,
+          "actionFrames": 158,
+          "nominalSeconds": 4.466666666666667,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "cammy-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "totalTicks": 268,
+          "actionFrames": 158,
+          "nominalSeconds": 4.466666666666667,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "totalTicks": 206,
+          "actionFrames": 124,
+          "nominalSeconds": 3.433333333333333,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "totalTicks": 206,
+          "actionFrames": 124,
+          "nominalSeconds": 3.433333333333333,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "totalTicks": 290,
+          "actionFrames": 180,
+          "nominalSeconds": 4.833333333333333,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "luke-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "totalTicks": 290,
+          "actionFrames": 180,
+          "nominalSeconds": 4.833333333333333,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "totalTicks": 219,
+          "actionFrames": 125,
+          "nominalSeconds": 3.65,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "totalTicks": 219,
+          "actionFrames": 125,
+          "nominalSeconds": 3.65,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "totalTicks": 260,
+          "actionFrames": 159,
+          "nominalSeconds": 4.333333333333333,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "juri-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "totalTicks": 260,
+          "actionFrames": 159,
+          "nominalSeconds": 4.333333333333333,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "totalTicks": 208,
+          "actionFrames": 126,
+          "nominalSeconds": 3.466666666666667,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "totalTicks": 208,
+          "actionFrames": 126,
+          "nominalSeconds": 3.466666666666667,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "totalTicks": 270,
+          "actionFrames": 164,
+          "nominalSeconds": 4.5,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "mai-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "totalTicks": 270,
+          "actionFrames": 164,
+          "nominalSeconds": 4.5,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-confirm",
+          "side": 1,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "totalTicks": 201,
+          "actionFrames": 116,
+          "nominalSeconds": 3.35,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-confirm",
+          "side": -1,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "totalTicks": 201,
+          "actionFrames": 116,
+          "nominalSeconds": 3.35,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-extended",
+          "side": 1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "totalTicks": 302,
+          "actionFrames": 177,
+          "nominalSeconds": 5.033333333333333,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        },
+        {
+          "route": "iori-extended",
+          "side": -1,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "totalTicks": 302,
+          "actionFrames": 177,
+          "nominalSeconds": 5.033333333333333,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          },
+          "reason": "连续命中成立 · 无无限资源、无脚本伤害"
+        }
+      ]
+    }
+  ],
+  "browserErrors": []
+}

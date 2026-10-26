@@ -1,0 +1,92 @@
+{
+  "suite": "flow8-final-inherited-regressions",
+  "startedAt": "2026-10-05T07:16:16.773598+00:00",
+  "finishedAt": "2026-10-05T07:18:52.468387+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "unchangedDuringRun": true,
+  "total": 9,
+  "passed": 9,
+  "commands": [
+    {
+      "command": [
+        "/opt/nvm/versions/node/v22.16.0/bin/node",
+        "tests/flow8/inherited-contracts.test.js"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-contracts.test.js.log",
+      "logSha256": "05406327959a9172429ec07af0262f31fe3fa8df079cbe1b1487b1f7f427e9dd"
+    },
+    {
+      "command": [
+        "/opt/nvm/versions/node/v22.16.0/bin/node",
+        "tests/flow8/inherited-regression-core.test.js"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-regression-core.test.js.log",
+      "logSha256": "6b51aee4020a19977768bc1c037b6b62e2775a9ebd244a86fb60c48620cd08c3"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-regress.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-regress.py.log",
+      "logSha256": "eeb12dd380c34e9c924d8eba159cd309eec6c14e107956feeb4f17cf51e48c57"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-render-and-practice.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-render-and-practice.py.log",
+      "logSha256": "a4f70201c937b952c0c06d7d1877b3e3f6e3a84bb2542989d7682d834e153ad0"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-effect-invariance.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-effect-invariance.py.log",
+      "logSha256": "963db6067965a4bb1b1e0d8425d53f04edd4604488c6d155e76dbf0742142d50"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-character-chain.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-character-chain.py.log",
+      "logSha256": "e4cbc55349d1696be7f661936f25b1f98e75192343e6fce864d982003ab2ff02"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-browser-contracts.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-browser-contracts.py.log",
+      "logSha256": "92503d95b303b73768ceed1b0b7955f9744883b5ef7d5ebc2392bbc3b607b10f"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-transition-matrix.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-transition-matrix.py.log",
+      "logSha256": "560e35400088259b480f3da90125f189ad125026d1561955fc7fc38016ab38a4"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow8/inherited-recovery-observation.py"
+      ],
+      "exitCode": 0,
+      "log": "qa/flow8/inherited/final-inherited-recovery-observation.py.log",
+      "logSha256": "c534843a042a0e98c6894ccbffb5a17ff3a24b169cd300488db0bdc42f52af6f"
+    }
+  ]
+}

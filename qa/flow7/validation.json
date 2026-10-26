@@ -1,0 +1,163 @@
+{
+  "suite": "flow7-final-validation",
+  "capturedAt": "2026-10-04T22:14:44.271748+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "playerHtmlSha256": "e0058a94a21205bd1f48b92d3985d19320d0ba4e3faf3b068a7a619ee4e21336",
+  "status": "passed",
+  "reportOnly": true,
+  "commandsThisInvocation": [],
+  "requiresSoak": true,
+  "requiresPlayback": true,
+  "evidence": {
+    "regression-core": {
+      "path": "qa/flow7/regression-core.json",
+      "sha256": "7da12b52d44069756dafb4f495a715e947316803d23c9db0fd0db19b9a96e9d8",
+      "total": 76,
+      "passed": 76
+    },
+    "browser-contracts": {
+      "path": "qa/flow7/browser-contracts.json",
+      "sha256": "d8c09e72174b588534246797d1a7240bb63b5e04859b7d78c6ecc68b95fb73ca",
+      "total": 81,
+      "passed": 81
+    },
+    "smoke": {
+      "path": "qa/flow7/smoke.json",
+      "sha256": "c4c9804207719bb113b32a978ad24e0f9e9ccaa1f986b706052cf443fbc1cc96",
+      "total": 128,
+      "passed": 128
+    },
+    "transition-matrix": {
+      "path": "qa/flow7/transition-matrix.json",
+      "sha256": "8c54f29616cf714d0ed6d4319aa092105ab034eaa33cadd4045dc7df50108bbe",
+      "total": 106,
+      "passed": 106,
+      "routeTotal": 44,
+      "routePassed": 44
+    },
+    "portability": {
+      "path": "qa/flow7/portability.json",
+      "sha256": "df70fe22753a7eaf72f4abab8d66ae00b3cb2a8fe1e19c5c41d68f1c15a34945",
+      "total": 11,
+      "passed": 11
+    },
+    "ui": {
+      "path": "qa/flow7/ui.json",
+      "sha256": "d9332147e6e9e99593ac8364a55517517558143227a23eecf473c8309ff03f65",
+      "total": 24,
+      "passed": 24
+    },
+    "character-chain": {
+      "path": "qa/flow7/character-chain.json",
+      "sha256": "f468cd1d6c1fc71703388d7c6fb169fc83f9756c60f88a3bde2a7fb2c61e5a2a",
+      "total": 16,
+      "passed": 16
+    },
+    "effect-invariance": {
+      "path": "qa/flow7/effect-invariance.json",
+      "sha256": "31749705872a4b676e072d2df8f593d5b446a0ba6cc77e765a0105118f4f61a0",
+      "total": 36,
+      "passed": 36
+    },
+    "contracts": {
+      "path": "qa/flow7/contracts.json",
+      "sha256": "7a6a7ff8f5ffdd67c48b854cea0efecb2120adc0d34bd58feffd022cc1f770c8",
+      "total": 68,
+      "passed": 68
+    },
+    "recovery-observation": {
+      "path": "qa/flow7/recovery-observation.json",
+      "sha256": "d016283727766ccb419d4b1a751284ac8d9fcec23f1dd955916fe51a76a1b00a",
+      "samples": 195,
+      "passed": 195
+    },
+    "final-regressions": {
+      "path": "qa/flow7/final-regressions.json",
+      "sha256": "719a6319304d46312c0e902914b4ff99eeb14b7f968622630f10f49ad26ada39",
+      "total": 9,
+      "passed": 9
+    },
+    "legacy-mechanics": {
+      "path": "qa/flow7/legacy-mechanics.json",
+      "sha256": "9f1fcfe31c23cc7d459e017e8fb636071ab52b52c9390f165e1257186062ac9d",
+      "total": 39,
+      "passed": 39,
+      "boundBy": "final-regressions.json command execution + stable HTML hash"
+    },
+    "legacy-replays": {
+      "path": "qa/flow7/legacy-replays.json",
+      "sha256": "7df42383b88140f976900d37baaf7bb528657278bcf5ea3f25e99980a29b6851",
+      "total": 522,
+      "passed": 522,
+      "boundBy": "final-regressions.json command execution + stable HTML hash"
+    },
+    "legacy-regression-errors": {
+      "path": "qa/flow7/legacy-regression-errors.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "render-and-practice": {
+      "path": "qa/flow7/render-and-practice.json",
+      "sha256": "d75abe85530eb3dfeee85a71ef0f56b099cfda961d0116ee893f9a023714416b",
+      "displayTotal": 72,
+      "displayPassed": 72,
+      "practiceTotal": 36,
+      "practicePassed": 36
+    },
+    "entrypoints": {
+      "path": "qa/flow7/entrypoints.json",
+      "sha256": "8303d867e7df33912f0b31398bdb6ccfbcd837c23d58724b4bce30cca3aaad6e",
+      "total": 5,
+      "passed": 5
+    },
+    "source-diff": {
+      "path": "qa/flow7/source-diff.json",
+      "sha256": "d6da0d317afcaff69be5e6849a5b0efbe9e1e223d9e8601417a8c57dbbcd9f62"
+    },
+    "source-audit": {
+      "path": "qa/flow7/source-audit.json",
+      "sha256": "cf82fc20e0918bf302df585a94cc93b480140d75325ef22f87fad002beea35cc",
+      "totalMoves": 690,
+      "clipEqual": 690,
+      "bindingEqual": 690,
+      "boxesEqual": 690,
+      "nonTransitionEqual": 690,
+      "changedMoveRecords": 35,
+      "originalRoutesUnchanged": 16,
+      "currentRoutes": 22
+    },
+    "pace-comparison": {
+      "path": "qa/flow7/pace-comparison.json",
+      "sha256": "e0b3d4cbfe0c4b9bfd933ca890d4b08438b9d4a40a9ea10a50ace61e4c61d852",
+      "versions": 3,
+      "cases": 96,
+      "legacyEquality": true
+    },
+    "freeze-origin-comparison": {
+      "path": "qa/flow7/freeze-origin-comparison.json",
+      "sha256": "9857675e46848b190845ca8bbc3bd21fb8e8b9445fc4bfce831a9d6740bd1c47",
+      "maximumRewindByVersion": {
+        "literal-v6": 40.70935320744285,
+        "v7": 0
+      }
+    },
+    "endurance": {
+      "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+      "status": "passed",
+      "elapsedWallSeconds": 1500.934,
+      "completedRoutes": 432,
+      "startedAt": "2026-10-04T21:45:15.642671+00:00",
+      "finishedAt": "2026-10-04T22:10:19.190224+00:00",
+      "fullSoakAccepted": true,
+      "sha256": "fcb56d0fad3c31474047f80d011bbac303a72660ca90b2c4b09b6f2de8f57619"
+    },
+    "playback": {
+      "accepted": true,
+      "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+      "frames": 570,
+      "seconds": 19.0,
+      "sha256": "cead182bf4430434ee85d4c30559062008ea86f0408dce06f53a097bc2da3689"
+    }
+  },
+  "errors": [],
+  "note": "Counts are distinct contracts and sampled matrices, not a sum of unique user scenarios. Report-only only validates existing evidence. Native file permissions and true device FPS are not asserted by embedded-byte browser tests."
+}

@@ -1,0 +1,28 @@
+PASS 1440: current branding and isolated v9 store 
+PASS 1440: native keyboard modal opens 
+PASS 1440: camera setting immediately applies 
+PASS 1440: explicit close-up is labelled instead of claiming fixed stage 
+PASS 1440: reselecting stable mode also clears the old close-up button 
+PASS 1440: old rhythm remains available 
+PASS 1440: explicit slow speed synchronizes with workshop 
+PASS 1440: clean mode preserves bone settings 
+PASS 1440: modal has no horizontal overflow 
+PASS 1440: diagnostics observe, never pause battle 
+PASS 1440: actual callbacks and CPU samples recorded 
+PASS 1440: downloaded diagnostics contain real time samples 
+PASS 1440: clear diagnostics resets bounded ring 
+PASS 1440: Escape closes modal 
+PASS 390: current branding and isolated v9 store 
+PASS 390: native keyboard modal opens 
+PASS 390: camera setting immediately applies 
+PASS 390: explicit close-up is labelled instead of claiming fixed stage 
+PASS 390: reselecting stable mode also clears the old close-up button 
+PASS 390: old rhythm remains available 
+PASS 390: explicit slow speed synchronizes with workshop 
+PASS 390: clean mode preserves bone settings 
+PASS 390: modal has no horizontal overflow 
+PASS 390: diagnostics observe, never pause battle 
+PASS 390: actual callbacks and CPU samples recorded 
+PASS 390: downloaded diagnostics contain real time samples 
+PASS 390: clear diagnostics resets bounded ring 
+PASS 390: Escape closes modal 

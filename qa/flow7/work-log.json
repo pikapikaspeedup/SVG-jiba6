@@ -1,0 +1,21 @@
+{
+  "iteration": "FLOW 07 · 节奏与连段决策引擎",
+  "startedAt": "2026-10-04T21:01:39Z",
+  "baseline": "INK-Flow-6-Continuity-Source.zip",
+  "baselineSha256": "8e0e8b3d81613300603a3bc38fc7f5b0efbb012095401607be1a1ea90b65fa23",
+  "scope": [
+    "unified actionable cancel clock",
+    "declarative bounded confirmed transitions",
+    "atomic move/resource decisions",
+    "weighted hitstop and phase impact FX",
+    "natural recovery articulation bridge",
+    "editable free combo lab and live timing diagnostics"
+  ],
+  "reportGeneratedAt": "2026-10-04T22:14:42.312725+00:00",
+  "elapsedWallSecondsThroughReport": 4383.313,
+  "finalCreatorSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "finalPlayerSha256": "e0058a94a21205bd1f48b92d3985d19320d0ba4e3faf3b068a7a619ee4e21336",
+  "finalSoakSeconds": 1500.934,
+  "finalSoakRoutes": 432,
+  "currentValidation": "qa/flow7/validation.json"
+}

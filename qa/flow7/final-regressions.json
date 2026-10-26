@@ -1,0 +1,81 @@
+{
+  "capturedAt": "2026-10-04T21:47:20.060542+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "unchangedDuringRun": true,
+  "tests": [
+    {
+      "command": [
+        "node",
+        "tests/flow7/contracts.test.js"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 0.444
+    },
+    {
+      "command": [
+        "node",
+        "tests/flow7/regression-core.test.js"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 2.743
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/browser-contracts.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 5.611
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/smoke.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 8.292
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/transition-matrix.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 5.311
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/recovery-observation.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 5.264
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/regress.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 51.354
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/portability.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 10.667
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/flow7/pace-comparison.py"
+      ],
+      "exitCode": 0,
+      "wallSeconds": 10.292
+    }
+  ],
+  "passed": 9,
+  "total": 9
+}

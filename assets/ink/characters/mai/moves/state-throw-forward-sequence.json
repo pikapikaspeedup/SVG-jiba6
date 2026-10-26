@@ -786,7 +786,8 @@
       "rootPolicy": "combat",
       "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。",
       "release": 26,
-      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned."
+      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned.",
+      "flowEdition": 3
     }
   },
   "boxes": {

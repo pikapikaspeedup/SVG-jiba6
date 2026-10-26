@@ -1,0 +1,166 @@
+{
+  "capturedAt": "2026-10-04T14:31:52.288210+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "description": "Diff against FLOW4 actual inlined runtime, not merely its unpatched game.js source. New modules are listed separately.",
+  "gameRuntimeAddedLines": 11,
+  "gameRuntimeRemovedLines": 5,
+  "patch": "qa/flow5/live-integration-diff.patch",
+  "changedImplementationFiles": [
+    {
+      "path": "src/ink/secondary-dynamics.js",
+      "new": true,
+      "bytes": 4567,
+      "lines": 67
+    },
+    {
+      "path": "src/ink/project.js",
+      "new": false,
+      "bytes": 21008,
+      "lines": 114
+    },
+    {
+      "path": "src/ink/motion-graph.js",
+      "new": true,
+      "bytes": 6800,
+      "lines": 104
+    },
+    {
+      "path": "src/ink/fx-emitter.js",
+      "new": true,
+      "bytes": 9378,
+      "lines": 119
+    },
+    {
+      "path": "src/ink/portable.js",
+      "new": false,
+      "bytes": 3945,
+      "lines": 17
+    },
+    {
+      "path": "src/ink/ribbon-geometry.js",
+      "new": true,
+      "bytes": 5333,
+      "lines": 76
+    },
+    {
+      "path": "src/ink/compiled-motion.js",
+      "new": true,
+      "bytes": 3599,
+      "lines": 73
+    },
+    {
+      "path": "src/ink/runtime.js",
+      "new": false,
+      "bytes": 8664,
+      "lines": 97
+    },
+    {
+      "path": "src/ink/fx-timeline.js",
+      "new": true,
+      "bytes": 2828,
+      "lines": 47
+    },
+    {
+      "path": "src/ink/effects.js",
+      "new": false,
+      "bytes": 18178,
+      "lines": 160
+    },
+    {
+      "path": "src/ink/engine-clock.js",
+      "new": true,
+      "bytes": 2514,
+      "lines": 42
+    },
+    {
+      "path": "src/ink/particles.js",
+      "new": false,
+      "bytes": 7023,
+      "lines": 86
+    },
+    {
+      "path": "src/ink/motion.js",
+      "new": false,
+      "bytes": 5920,
+      "lines": 94
+    },
+    {
+      "path": "src/ink/game-adapter.js",
+      "new": false,
+      "bytes": 1796,
+      "lines": 10
+    },
+    {
+      "path": "src/ink/core.js",
+      "new": false,
+      "bytes": 23529,
+      "lines": 300
+    },
+    {
+      "path": "src/ink/cinema.js",
+      "new": false,
+      "bytes": 3335,
+      "lines": 31
+    },
+    {
+      "path": "src/ink/mai-renderer.js",
+      "new": false,
+      "bytes": 5145,
+      "lines": 80
+    },
+    {
+      "path": "forge/shell.html",
+      "new": false,
+      "bytes": 11564,
+      "lines": 40
+    },
+    {
+      "path": "forge/mai.js",
+      "new": false,
+      "bytes": 8190,
+      "lines": 41
+    },
+    {
+      "path": "forge/flow.js",
+      "new": false,
+      "bytes": 17284,
+      "lines": 81
+    },
+    {
+      "path": "forge/app.js",
+      "new": false,
+      "bytes": 46927,
+      "lines": 156
+    },
+    {
+      "path": "forge/engine.js",
+      "new": true,
+      "bytes": 13238,
+      "lines": 91
+    },
+    {
+      "path": "forge/engine.css",
+      "new": true,
+      "bytes": 6607,
+      "lines": 17
+    },
+    {
+      "path": "tools/build_forge.py",
+      "new": false,
+      "bytes": 4978,
+      "lines": 54
+    },
+    {
+      "path": "tools/upgrade_mai_flow5.py",
+      "new": true,
+      "bytes": 3283,
+      "lines": 48
+    },
+    {
+      "path": "tools/check_flow5.py",
+      "new": true,
+      "bytes": 6381,
+      "lines": 95
+    }
+  ]
+}

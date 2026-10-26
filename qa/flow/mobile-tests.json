@@ -1,0 +1,100 @@
+{
+  "total": 7,
+  "passed": 7,
+  "tests": [
+    {
+      "name": "844×390 landscape: joystick, attack, exit and pause accessible",
+      "pass": true,
+      "detail": {
+        "w": 844,
+        "scroll": 844,
+        "items": [
+          {
+            "s": "#joystick",
+            "x": 12,
+            "y": 268,
+            "w": 110,
+            "h": 110,
+            "visible": true
+          },
+          {
+            "s": ".touch-buttons [data-btn=LP]",
+            "x": 697,
+            "y": 268,
+            "w": 41,
+            "h": 41,
+            "visible": true
+          },
+          {
+            "s": "#flow-mobile-exit",
+            "x": 10,
+            "y": 5.25,
+            "w": 54.359375,
+            "h": 27,
+            "visible": true
+          },
+          {
+            "s": "#flow-mobile-pause",
+            "x": 794,
+            "y": 4,
+            "w": 40,
+            "h": 29.5,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Route selector can be reached from fullscreen landscape arena",
+      "pass": true,
+      "detail": {
+        "x": 28,
+        "y": 179,
+        "width": 788,
+        "height": 32
+      }
+    },
+    {
+      "name": "Actual touchscreen tap requests first rhythm move without forced state",
+      "pass": true,
+      "detail": {
+        "move": "sHP",
+        "name": "站立重拳",
+        "tick": 112,
+        "frame": 6,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    },
+    {
+      "name": "Rhythm tap does not leave direction or attack inputs held",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Exit leaves lab and restores normal navigation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390px portrait lab has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "documentWidth": 390
+      }
+    },
+    {
+      "name": "No browser script errors",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "errors": []
+}

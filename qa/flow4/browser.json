@@ -1,0 +1,699 @@
+{
+  "total": 34,
+  "passed": 34,
+  "tests": [
+    {
+      "name": "Version, build and new isolated storage namespace agree",
+      "pass": true,
+      "detail": {
+        "game": "4.0.0-ink-flow",
+        "core": "4.0.0-flow",
+        "motion": "4.0.0",
+        "store": "ink-flow-sf6-v4",
+        "build": "4.0.0"
+      }
+    },
+    {
+      "name": "Fan-tip and grip emitters exactly match SVG weapon transforms",
+      "pass": true,
+      "detail": {
+        "maximum": 0.005488173699802491,
+        "samples": [
+          {
+            "t": 0,
+            "socket": "fanTip",
+            "error": 0.004208127982024608
+          },
+          {
+            "t": 0,
+            "socket": "fanGrip",
+            "error": 0.0007137481817299067
+          },
+          {
+            "t": 8,
+            "socket": "fanTip",
+            "error": 0.0051459363655433615
+          },
+          {
+            "t": 8,
+            "socket": "fanGrip",
+            "error": 0.0008850898252036277
+          },
+          {
+            "t": 15,
+            "socket": "fanTip",
+            "error": 0.0032254158355419127
+          },
+          {
+            "t": 15,
+            "socket": "fanGrip",
+            "error": 0.0005469132873658289
+          },
+          {
+            "t": 18.5,
+            "socket": "fanTip",
+            "error": 0.003234015844033885
+          },
+          {
+            "t": 18.5,
+            "socket": "fanGrip",
+            "error": 0.0005543095394498132
+          },
+          {
+            "t": 24,
+            "socket": "fanTip",
+            "error": 0.005488173699802491
+          },
+          {
+            "t": 24,
+            "socket": "fanGrip",
+            "error": 0.000944852740596979
+          },
+          {
+            "t": 36.75,
+            "socket": "fanTip",
+            "error": 0.003858742494689712
+          },
+          {
+            "t": 36.75,
+            "socket": "fanGrip",
+            "error": 0.0006357281402241293
+          },
+          {
+            "t": 60,
+            "socket": "fanTip",
+            "error": 0.001142027477120312
+          },
+          {
+            "t": 60,
+            "socket": "fanGrip",
+            "error": 0.0002106581776112267
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fan opens with retained radial ribs, not a squeezed paper sprite",
+      "pass": true,
+      "detail": {
+        "changed": true,
+        "transform": "translate(16 0) rotate(-27)",
+        "paths": 33,
+        "retained": true
+      }
+    },
+    {
+      "name": "Hair and obi ribbon deform, rewind identically, and preserve the pose",
+      "pass": true,
+      "detail": {
+        "moving": true,
+        "rewind": true,
+        "poseUnchanged": true
+      }
+    },
+    {
+      "name": "Quarter-frame FX cache interpolates rather than visibly stepping",
+      "pass": true,
+      "detail": {
+        "maxJump": 0.48258536921979683,
+        "cache": 198
+      }
+    },
+    {
+      "name": "Front/back ribbons and seeded particles reverse-seek identically",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "back": 1,
+        "front": 2
+      }
+    },
+    {
+      "name": "Low particle quality is a stable subset of high-quality births",
+      "pass": true,
+      "detail": {
+        "low": 7,
+        "high": 32,
+        "subset": true
+      }
+    },
+    {
+      "name": "Actual input survives 24-frame freeze and executes exactly once",
+      "pass": true,
+      "detail": {
+        "start": 0,
+        "afterFreeze": {
+          "frame": 0,
+          "attack": null,
+          "pending": {
+            "move": "sLP",
+            "remaining": 9,
+            "reason": "hitstop"
+          }
+        },
+        "first": "sLP",
+        "finalAttack": null,
+        "queue": 0,
+        "input": {
+          "status": "consumed",
+          "move": "sLP",
+          "age": 1
+        }
+      }
+    },
+    {
+      "name": "Real hitstop accepts a super cancel without canceling mid-freeze",
+      "pass": true,
+      "detail": {
+        "freeze": 7,
+        "queue": {
+          "move": "SA3",
+          "remaining": 9,
+          "reason": "hitstop"
+        },
+        "same": true,
+        "next": "SA3",
+        "super": 0,
+        "drive": 4
+      }
+    },
+    {
+      "name": "Buffered super cannot bypass resource checks and expires cleanly",
+      "pass": true,
+      "detail": {
+        "attack": null,
+        "super": 0,
+        "queue": 0,
+        "status": "expired"
+      }
+    },
+    {
+      "name": "World FX freeze through the final hitstop tick without time reversal",
+      "pass": true,
+      "detail": {
+        "stable": true,
+        "clock": 0,
+        "after": 0,
+        "lastFrozen": true,
+        "hitstop": 0
+      }
+    },
+    {
+      "name": "360 render-only calls do not move fighters, advance clocks or add hits",
+      "pass": true,
+      "detail": {
+        "same": true
+      }
+    },
+    {
+      "name": "Simulation-owned world trails survive cancels and expire without DOM clones",
+      "pass": true,
+      "detail": {
+        "active": 1,
+        "kept": 1,
+        "started": true,
+        "changed": true,
+        "expired": 0,
+        "births": [
+          13
+        ]
+      }
+    },
+    {
+      "name": "FX off hides both local layers, world particles and world trails",
+      "pass": true,
+      "detail": {
+        "values": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "Reduced-motion mode suppresses the actual fullscreen hit flash",
+      "pass": true,
+      "detail": {
+        "reduced": "0",
+        "full": "0.8"
+      }
+    },
+    {
+      "name": "Rhythm 6F buffer waits for real confirmation and sends one next step",
+      "pass": true,
+      "detail": {
+        "first": {
+          "status": "accepted"
+        },
+        "early": {
+          "status": "buffered",
+          "remaining": 6
+        },
+        "cursor": 2,
+        "accepted": [
+          {
+            "cursor": 0,
+            "move": "sHP",
+            "frame": 0,
+            "expires": 6,
+            "status": "accepted",
+            "delay": 0
+          },
+          {
+            "cursor": 1,
+            "move": "RUSH",
+            "frame": 7,
+            "expires": 13,
+            "status": "accepted",
+            "delay": 6
+          }
+        ],
+        "forced": false,
+        "pending": null,
+        "damage": 800
+      }
+    },
+    {
+      "name": "Rhythm inputs never cancel mid-hitstop; 3F/6F survive the freeze and 0F remains strict on both sides",
+      "pass": true,
+      "detail": [
+        {
+          "side": 1,
+          "bufferFrames": 0,
+          "freeze": 7,
+          "request": {
+            "status": "early"
+          },
+          "window": {
+            "ready": false,
+            "frozen": true,
+            "confirmed": true,
+            "link": false,
+            "move": "RUSH",
+            "attackFrame": 12,
+            "remaining": 20,
+            "targetRecovery": 30
+          },
+          "unchangedImmediately": true,
+          "frozen": true,
+          "cursor": 1,
+          "pending": null,
+          "state": "attack",
+          "accepted": 1
+        },
+        {
+          "side": 1,
+          "bufferFrames": 3,
+          "freeze": 7,
+          "request": {
+            "status": "buffered",
+            "remaining": 3
+          },
+          "window": {
+            "ready": false,
+            "frozen": true,
+            "confirmed": true,
+            "link": false,
+            "move": "RUSH",
+            "attackFrame": 12,
+            "remaining": 20,
+            "targetRecovery": 30
+          },
+          "unchangedImmediately": true,
+          "frozen": true,
+          "cursor": 2,
+          "pending": null,
+          "state": "rush",
+          "accepted": 2
+        },
+        {
+          "side": 1,
+          "bufferFrames": 6,
+          "freeze": 7,
+          "request": {
+            "status": "buffered",
+            "remaining": 6
+          },
+          "window": {
+            "ready": false,
+            "frozen": true,
+            "confirmed": true,
+            "link": false,
+            "move": "RUSH",
+            "attackFrame": 12,
+            "remaining": 20,
+            "targetRecovery": 30
+          },
+          "unchangedImmediately": true,
+          "frozen": true,
+          "cursor": 2,
+          "pending": null,
+          "state": "rush",
+          "accepted": 2
+        },
+        {
+          "side": -1,
+          "bufferFrames": 0,
+          "freeze": 7,
+          "request": {
+            "status": "early"
+          },
+          "window": {
+            "ready": false,
+            "frozen": true,
+            "confirmed": true,
+            "link": false,
+            "move": "RUSH",
+            "attackFrame": 12,
+            "remaining": 20,
+            "targetRecovery": 30
+          },
+          "unchangedImmediately": true,
+          "frozen": true,
+          "cursor": 1,
+          "pending": null,
+          "state": "attack",
+          "accepted": 1
+        },
+        {
+          "side": -1,
+          "bufferFrames": 3,
+          "freeze": 7,
+          "request": {
+            "status": "buffered",
+            "remaining": 3
+          },
+          "window": {
+            "ready": false,
+            "frozen": true,
+            "confirmed": true,
+            "link": false,
+            "move": "RUSH",
+            "attackFrame": 12,
+            "remaining": 20,
+            "targetRecovery": 30
+          },
+          "unchangedImmediately": true,
+          "frozen": true,
+          "cursor": 2,
+          "pending": null,
+          "state": "rush",
+          "accepted": 2
+        },
+        {
+          "side": -1,
+          "bufferFrames": 6,
+          "freeze": 7,
+          "request": {
+            "status": "buffered",
+            "remaining": 6
+          },
+          "window": {
+            "ready": false,
+            "frozen": true,
+            "confirmed": true,
+            "link": false,
+            "move": "RUSH",
+            "attackFrame": 12,
+            "remaining": 20,
+            "targetRecovery": 30
+          },
+          "unchangedImmediately": true,
+          "frozen": true,
+          "cursor": 2,
+          "pending": null,
+          "state": "rush",
+          "accepted": 2
+        }
+      ]
+    },
+    {
+      "name": "Strict 0F rhythm mode never silently queues or plays subsequent steps",
+      "pass": true,
+      "detail": {
+        "early": {
+          "status": "early"
+        },
+        "cursor": 1,
+        "pending": null,
+        "mode": "practice"
+      }
+    },
+    {
+      "name": "Too-early rhythm input expires instead of becoming delayed autopilot",
+      "pass": true,
+      "detail": {
+        "cursor": 1,
+        "pending": null,
+        "expired": true
+      }
+    },
+    {
+      "name": "SA1 visual rewrite leaves stock-bearing combat state and geometry finite",
+      "pass": true,
+      "detail": {
+        "keys": {
+          "stock": 0,
+          "flameStock": 5
+        },
+        "finite": true
+      }
+    },
+    {
+      "name": "Dedicated Mai showcase renders the editable assets in a keyboard-accessible dialog",
+      "pass": true,
+      "detail": {
+        "open": true,
+        "source": "ryuuenbu-heavy",
+        "paths": 33,
+        "pose": false
+      }
+    },
+    {
+      "name": "Reduced-motion showcase starts paused but honors an explicit Play request",
+      "pass": true,
+      "detail": {
+        "openPaused": 20,
+        "explicitPlay": 26.240000000000002
+      }
+    },
+    {
+      "name": "SA3 has 12 authored events and deterministic full-visual reverse seek",
+      "pass": true,
+      "detail": {
+        "rewind": true,
+        "events": 12
+      }
+    },
+    {
+      "name": "Showcase mirrored facing updates the entire actor and attached FX together",
+      "pass": true,
+      "detail": {
+        "before": "translate(355 481) scale(1 1) scale(1 1) translate(0 -1.3240321743750019) rotate(0 0 -180)",
+        "after": "translate(355 481) scale(-1 1) scale(1 1) translate(0 -1.3240321743750019) rotate(0 0 -180)"
+      }
+    },
+    {
+      "name": "Escape closes the dialog and restores focus and scrolling",
+      "pass": true,
+      "detail": {
+        "closed": true,
+        "focus": "mai-showcase-open",
+        "scrollUnlocked": true
+      }
+    },
+    {
+      "name": "Dedicated Mai button runs an actual guarded 14-hit route",
+      "pass": true,
+      "detail": {
+        "route": "mai-extended",
+        "status": "success",
+        "hits": 14,
+        "damage": 3375,
+        "remaining": {
+          "drive": 1.2220000000000002,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "Editing a pose invalidates its FX socket cache immediately, before saving or reloading",
+      "pass": true,
+      "detail": {
+        "before": [
+          221.14229976704456,
+          -307.2451185538857
+        ],
+        "after": [
+          245.6203788917001,
+          -276.67265389309614
+        ],
+        "distance": 39.16442203158528
+      }
+    },
+    {
+      "name": "New FX inspector controls persist exact data without dropping emitter fields",
+      "pass": true,
+      "detail": {
+        "id": "fan-flame",
+        "frame": 15,
+        "duration": 25,
+        "type": "flame",
+        "socket": "fanTip",
+        "scale": 1,
+        "color": "#ef835c",
+        "rotation": 0,
+        "opacity": 0.7,
+        "trailFrames": 14,
+        "width": 16.5,
+        "layer": "back",
+        "particles": {
+          "count": 28,
+          "life": 28,
+          "speed": 3.2,
+          "size": 2.2,
+          "spread": 95,
+          "species": "petal",
+          "gravity": 0.035,
+          "drag": 0.04,
+          "curl": 4.5
+        }
+      }
+    },
+    {
+      "name": "Edited HTML export reopens with Mai showcase, motion engine and new FX fields",
+      "pass": true,
+      "detail": {
+        "fx": {
+          "id": "fan-flame",
+          "frame": 15,
+          "duration": 25,
+          "type": "flame",
+          "socket": "fanTip",
+          "scale": 1,
+          "color": "#ef835c",
+          "rotation": 0,
+          "opacity": 0.7,
+          "trailFrames": 14,
+          "width": 16.5,
+          "layer": "back",
+          "particles": {
+            "count": 28,
+            "life": 28,
+            "speed": 3.2,
+            "size": 2.2,
+            "spread": 95,
+            "species": "petal",
+            "gravity": 0.035,
+            "drag": 0.04,
+            "curl": 4.5
+          }
+        },
+        "showcase": true,
+        "motion": "4.0.0"
+      }
+    },
+    {
+      "name": "Emitted petal positions and orientations remain world-aligned when the actor root rotates",
+      "pass": true,
+      "detail": {
+        "count": 47,
+        "maxPositionError": 1.9100661585268736e-05,
+        "maxAngleError": 1.52587890625e-05
+      }
+    },
+    {
+      "name": "Mai dialog and home fit portrait, landscape and desktop without horizontal overflow",
+      "pass": true,
+      "detail": [
+        {
+          "width": 390,
+          "body": 390,
+          "dialog": {
+            "x": 10,
+            "y": 10,
+            "width": 370,
+            "height": 824,
+            "top": 10,
+            "right": 380,
+            "bottom": 834,
+            "left": 10
+          },
+          "inside": 368
+        },
+        {
+          "width": 844,
+          "body": 844,
+          "dialog": {
+            "x": 21,
+            "y": 18,
+            "width": 802,
+            "height": 354,
+            "top": 18,
+            "right": 823,
+            "bottom": 372,
+            "left": 21
+          },
+          "inside": 800
+        },
+        {
+          "width": 1280,
+          "body": 1280,
+          "dialog": {
+            "x": 160,
+            "y": 18,
+            "width": 960,
+            "height": 764,
+            "top": 18,
+            "right": 1120,
+            "bottom": 782,
+            "left": 160
+          },
+          "inside": 958
+        },
+        {
+          "width": 1440,
+          "body": 1440,
+          "dialog": {
+            "x": 240,
+            "y": 133.84375,
+            "width": 960,
+            "height": 812.296875,
+            "top": 133.84375,
+            "right": 1200,
+            "bottom": 946.140625,
+            "left": 240
+          },
+          "inside": 958
+        }
+      ]
+    },
+    {
+      "name": "Standalone Player edition includes Mai preview and real 14-hit route without an editor entry",
+      "pass": true,
+      "detail": {
+        "editorHidden": true,
+        "hits": 14,
+        "status": "success",
+        "title": "INK FLOW 04 · 不知火舞 / 花焰动作与连段工坊"
+      }
+    },
+    {
+      "name": "Native file protocol is attempted and its actual result recorded",
+      "pass": true,
+      "detail": {
+        "status": "environment-blocked",
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work/INK-Flow-3/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/work/INK-Flow-3/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n",
+        "fallback": "Other tests loaded the complete standalone bytes with set_content."
+      }
+    },
+    {
+      "name": "No unhandled browser script errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "browserErrors": [],
+  "htmlSha256": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86"
+}

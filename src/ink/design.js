@@ -51,7 +51,19 @@
   s+=INK.Art[c.id].back(c,a,skin);
   return s;
  }
+ function sideTorso(c) {
+  const a=SF6Art.palette[c.id],skin=`url(#atelier-${c.id}-skin)`,cloth=`url(#atelier-${c.id}-cloth)`;
+  const fill={ryu:skin,ken:'#a35443',chun:'#277b9a',cammy:'#3c6665',luke:'#e7ded1',juri:skin,mai:'#bd4155',iori:'#292b39'}[c.id];
+  let s=P(c.female?'M-30-315Q-5-330 23-315L38-297 28-272 19-244 28-214 14-195-19-196-31-215-24-243-31-277-40-295Z':'M-40-314Q-10-331 27-315L48-299 37-267 28-233 34-204 13-185-21-188-37-208-29-238-42-273-49-296Z',fill,1.4);
+  s+=F('M-27-310Q-8-318 1-305L-2-274-10-247-3-213-20-198-29-221-23-246Z',a.skin[2],'opacity=".20"');
+  s+=L('M18-309Q29-291 19-275M6-264Q11-243 3-224',c.female?a.skin[0]:a.cloth[0],1.3,'opacity=".42"');
+  if(['ken','iori','chun','cammy','luke'].includes(c.id))s+=L('M17-290Q14-254 23-213',a.cloth[2],1.4);
+  if(c.id==='mai')s+=P('M-18-310L-6-287 1-270 18-291 27-309 18-278 9-245 23-215-7-218-18-247-8-279Z',skin,.8)+L('M-31-220Q-3-213 27-220','#fff3df',6);
+  if(c.id==='ryu')s+=P('M-32-314L-13-310-16-285-30-272-24-248-8-218-25-211-34-242-31-274Z',cloth,1.1);
+  if(c.id==='juri')s+=L('M-20-307L-3-281 24-296M-16-247L19-244',a.trim,3);
+  return s;
+ }
  const original=INK.assets.pack;
- INK.assets.pack=function(c){const a=original(c);a.heads={front:head(c),profile:head(c,'profile'),back:head(c,'back')};a.torso=torso(c);a.torsoBack=backTorso(c);return a;};
- INK.design={head,torso,backTorso,edition:'FORGE 2'};
+ INK.assets.pack=function(c){const a=original(c);a.heads={front:head(c),profile:head(c,'profile'),back:head(c,'back')};a.torso=torso(c);a.torsoBack=backTorso(c);a.torsoSide=sideTorso(c);return a;};
+ INK.design={head,torso,backTorso,sideTorso,edition:'FLOW 3'};
 })();

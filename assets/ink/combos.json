@@ -1,0 +1,956 @@
+{
+  "version": 1,
+  "kind": "ink-combo-library",
+  "routes": [
+    {
+      "character": "ryu",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "hasho_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "ryu-confirm",
+      "title": "定心 · 升龙确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 11,
+      "expectedHits": 11,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "ryu-extended",
+      "character": "ryu",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "sLP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "tatsu_3",
+          "minHits": 3,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "minTotal": 15,
+      "title": "风卷 · 拳脚连携",
+      "tier": "长段挑战",
+      "corner": true,
+      "expectedHits": 15,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "ken",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "jinrai_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "ken-confirm",
+      "title": "疾火 · 取消确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 11,
+      "expectedHits": 11,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "ken-extended",
+      "character": "ken",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "sLP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "jinrai_3",
+          "minHits": 3,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "minTotal": 15,
+      "title": "烈焰 · 迅雷终结",
+      "tier": "长段挑战",
+      "corner": true,
+      "expectedHits": 15,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "chun",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "legs_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "chun-confirm",
+      "title": "掌劲 · 百裂确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 11,
+      "expectedHits": 11,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "chun-extended",
+      "character": "chun",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "sLP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "legs_3",
+          "minHits": 3,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "minTotal": 15,
+      "title": "鹤舞 · 目押连携",
+      "tier": "长段挑战",
+      "corner": true,
+      "expectedHits": 15,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "cammy",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "arrow_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "cammy-confirm",
+      "title": "突袭 · 螺旋确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 11,
+      "expectedHits": 11,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "cammy-extended",
+      "character": "cammy",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "sLP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "arrow_3",
+          "minHits": 2,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "minTotal": 14,
+      "title": "锋线 · 近身连携",
+      "tier": "长段挑战",
+      "corner": true,
+      "expectedHits": 14,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "luke",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "flash_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "luke-confirm",
+      "title": "拳峰 · 闪光确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 11,
+      "expectedHits": 11,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "luke-extended",
+      "character": "luke",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "sLP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "flash_3",
+          "minHits": 2,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "minTotal": 14,
+      "title": "重炮 · 目押压进",
+      "tier": "长段挑战",
+      "corner": true,
+      "expectedHits": 14,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "juri",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "saiha_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "juri-confirm",
+      "title": "月刃 · 取消确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 12,
+      "expectedHits": 12,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "juri-extended",
+      "character": "juri",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "gooh_3",
+          "minHits": 3,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "minTotal": 14,
+      "title": "风破 · 连踢终结",
+      "tier": "长段挑战",
+      "corner": true,
+      "expectedHits": 14,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "mai",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "hissatsu_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "mai-confirm",
+      "title": "花焰 · 龙炎确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 11,
+      "expectedHits": 11,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "mai-extended",
+      "character": "mai",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "cMP",
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sLP",
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "hissatsu_3",
+          "minHits": 3,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 8,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "title": "舞扇 · 蹲拳连携",
+      "tier": "长段挑战",
+      "corner": true,
+      "minTotal": 14,
+      "expectedHits": 14,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "character": "iori",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "minHits": 1,
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "aoihana_3",
+          "minHits": 1,
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 7,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "id": "iori-confirm",
+      "title": "苍炎 · 葵花确认",
+      "tier": "基础取消",
+      "corner": true,
+      "minTotal": 10,
+      "expectedHits": 10,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "iori-extended",
+      "character": "iori",
+      "distance": 166,
+      "steps": [
+        {
+          "move": "sHP",
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "RUSH",
+          "minFrames": 5,
+          "hint": "命中后取消，消耗 3 格斗气"
+        },
+        {
+          "move": "sMP",
+          "hint": "迸发靠近后出招，获得额外硬直"
+        },
+        {
+          "move": "sMP",
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "sLP",
+          "hint": "目押：等上一招收势，不是普通取消"
+        },
+        {
+          "move": "aoihana_3",
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "branch_1",
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "follow_2",
+          "hint": "看命中节拍接下一步"
+        },
+        {
+          "move": "SA3",
+          "minHits": 7,
+          "hint": "确认必杀命中后取消；消耗 3 格超级能量"
+        }
+      ],
+      "title": "三段葵花 · 勾玉终结",
+      "tier": "长段挑战",
+      "corner": true,
+      "minTotal": 14,
+      "expectedHits": 14,
+      "meter": {
+        "drive": 6,
+        "super": 3
+      },
+      "note": "角落起手；首次命中后木桩自动防御。采用本项目同人规则，非官方 SF6 连段表。"
+    },
+    {
+      "id": "mai-flow-fan",
+      "title": "扇舞 · 重击衔接",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 0,
+        "super": 0
+      },
+      "expectedHits": 3,
+      "minTotal": 3,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sMP",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_0",
+          "minHits": 1
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-rise",
+      "title": "扇舞 · 炎舞终结",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 2,
+        "super": 3
+      },
+      "expectedHits": 11,
+      "minTotal": 11,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sMP",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_3",
+          "minHits": 1
+        },
+        {
+          "move": "SA3",
+          "minHits": 8
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-weave",
+      "title": "忍步 · 脚手连携",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 0,
+        "super": 0
+      },
+      "expectedHits": 4,
+      "minTotal": 4,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "cMP",
+          "minHits": 1
+        },
+        {
+          "move": "sMK",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "shinobibachi_0",
+          "minHits": 1
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-cascade",
+      "title": "忍步 · 仇樱收束",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 2,
+        "super": 3
+      },
+      "expectedHits": 12,
+      "minTotal": 12,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "cMP",
+          "minHits": 1
+        },
+        {
+          "move": "sMK",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "shinobibachi_3",
+          "minHits": 1
+        },
+        {
+          "move": "SA3",
+          "minHits": 8
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-light",
+      "title": "轻打 · 三拍入扇",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 0,
+        "super": 0
+      },
+      "expectedHits": 4,
+      "minTotal": 4,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sLK",
+          "minHits": 1
+        },
+        {
+          "move": "cLP",
+          "minHits": 1
+        },
+        {
+          "move": "sLP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_0",
+          "minHits": 1
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-gale",
+      "title": "轻打 · 超忍蜂",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 2,
+        "super": 2
+      },
+      "expectedHits": 9,
+      "minTotal": 9,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sLK",
+          "minHits": 1
+        },
+        {
+          "move": "cLP",
+          "minHits": 1
+        },
+        {
+          "move": "sLP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_3",
+          "minHits": 1
+        },
+        {
+          "move": "SA2",
+          "minHits": 5
+        }
+      ]
+    }
+  ]
+}

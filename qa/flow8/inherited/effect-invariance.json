@@ -1,0 +1,551 @@
+{
+  "suite": "flow7-FX-combat-invariance",
+  "capturedAt": "2026-10-05T07:18:29.155108+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "total": 36,
+  "passed": 36,
+  "tests": [
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "mode": "full",
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "ticks": 55,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "ticks": 55,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "mode": "off",
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "ticks": 55,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "mode": "full",
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "ticks": 55,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "ticks": 55,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "mode": "off",
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "ticks": 55,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "mode": "full",
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "ticks": 203,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "ticks": 203,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "mode": "off",
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "ticks": 203,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "mode": "full",
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "ticks": 203,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "ticks": 203,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "mode": "off",
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "ticks": 203,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "mode": "full",
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "ticks": 73,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "ticks": 73,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "mode": "off",
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "ticks": 73,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "mode": "full",
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "ticks": 73,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "ticks": 73,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "mode": "off",
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "ticks": 73,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "mode": "full",
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "ticks": 221,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "ticks": 221,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "mode": "off",
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "ticks": 221,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "mode": "full",
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "ticks": 221,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "ticks": 221,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "mode": "off",
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "ticks": 221,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "mode": "full",
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "ticks": 48,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "ticks": 48,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "mode": "off",
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "ticks": 48,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "mode": "full",
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "ticks": 48,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "ticks": 48,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "mode": "off",
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "ticks": 48,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "mode": "full",
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "ticks": 140,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "ticks": 140,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "mode": "off",
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "ticks": 140,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "mode": "full",
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "ticks": 140,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "mode": "reduced",
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "ticks": 140,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "mode": "off",
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "ticks": 140,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "pass": true
+    }
+  ],
+  "browserErrors": [],
+  "scope": "All six added routes, both directions, full/reduced/off FX. Actual combat and SVG render; exact hit/damage/step/resource comparison. Not a hardware performance benchmark."
+}

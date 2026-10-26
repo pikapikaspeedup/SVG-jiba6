@@ -1110,7 +1110,8 @@
       "kind": "install",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "SA2",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3
     }
   },
   "boxes": {

@@ -1,0 +1,50 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 13298\noom 1\noom_kill 1\noom_group_kill 0\n",
+    "memoryEventsAfter": "low 0\nhigh 0\nmax 13298\noom 1\noom_kill 1\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 1500,
+  "startedAt": "2026-10-04T21:45:15.642671+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "status": "passed",
+  "description": "FLOW 07: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause and skeleton inspector. No substituted time or hardware FPS guarantee.",
+  "finishedAt": "2026-10-04T22:10:19.190224+00:00",
+  "elapsedWallSeconds": 1500.934,
+  "completedRoutes": 432,
+  "final": {
+    "cycles": 432,
+    "raf": 86825,
+    "errors": [],
+    "maxParticles": 170,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 17524,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "inspections": 39,
+    "pausedChecks": 99,
+    "views": 39,
+    "next": 1502326.5999999996,
+    "lastStatus": "running",
+    "mode": "battle",
+    "lastClock": 59638,
+    "busy": false
+  },
+  "finalHeap": {
+    "usedSize": 26122452,
+    "totalSize": 29401088,
+    "embedderHeapUsedSize": 24083192,
+    "backingStorageSize": 4510029
+  },
+  "finalDOM": {
+    "documents": 1,
+    "nodes": 43474,
+    "jsEventListeners": 358
+  },
+  "browserErrors": []
+}

@@ -1,0 +1,1620 @@
+{
+  "suite": "flow8-state-render-purity-and-rule-invariance",
+  "capturedAt": "2026-10-05T07:07:46.877308+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "charactersTotal": 16,
+  "charactersPassed": 16,
+  "routePairsTotal": 44,
+  "routePairsPassed": 44,
+  "actualRouteExecutions": 88,
+  "browserErrors": [],
+  "rows": [
+    {
+      "character": "ryu",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "ryu",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "ken",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "ken",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "chun",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "chun",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "cammy",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "cammy",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "luke",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "luke",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "juri",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "juri",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "mai",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "mai",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "iori",
+      "side": 1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    },
+    {
+      "character": "iori",
+      "side": -1,
+      "steps": 115,
+      "states": [
+        "idle",
+        "jump",
+        "land",
+        "walk-forward"
+      ],
+      "maxAngleError": 0,
+      "finite": true,
+      "rulePure": true,
+      "pass": true
+    }
+  ],
+  "routes": [
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "ticks": 207,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "ticks": 207,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "ticks": 207,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3574,
+          "ticks": 207,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "ticks": 285,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "ticks": 285,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "ticks": 285,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 15,
+          "damage": 3485,
+          "ticks": 285,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2860000000000003,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "ticks": 202,
+          "actionFrames": 120,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "ticks": 202,
+          "actionFrames": 120,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "ticks": 202,
+          "actionFrames": 120,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3178,
+          "ticks": 202,
+          "actionFrames": 120,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "ticks": 283,
+          "actionFrames": 175,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "ticks": 283,
+          "actionFrames": 175,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "ticks": 283,
+          "actionFrames": 175,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 15,
+          "damage": 3288,
+          "ticks": 283,
+          "actionFrames": 175,
+          "remaining": {
+            "drive": 1.2900000000000003,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3176,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.092,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "ticks": 277,
+          "actionFrames": 169,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "ticks": 277,
+          "actionFrames": 169,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "ticks": 277,
+          "actionFrames": 169,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 15,
+          "damage": 3271,
+          "ticks": 277,
+          "actionFrames": 169,
+          "remaining": {
+            "drive": 1.2800000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3382,
+          "ticks": 198,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.096,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "ticks": 268,
+          "actionFrames": 158,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "ticks": 268,
+          "actionFrames": 158,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "ticks": 268,
+          "actionFrames": 158,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3580,
+          "ticks": 268,
+          "actionFrames": 158,
+          "remaining": {
+            "drive": 1.2700000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "ticks": 206,
+          "actionFrames": 124,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "ticks": 206,
+          "actionFrames": 124,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "ticks": 206,
+          "actionFrames": 124,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3733,
+          "ticks": 206,
+          "actionFrames": 124,
+          "remaining": {
+            "drive": 1.102,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "ticks": 290,
+          "actionFrames": 180,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "ticks": 290,
+          "actionFrames": 180,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "ticks": 290,
+          "actionFrames": 180,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 4036,
+          "ticks": 290,
+          "actionFrames": 180,
+          "remaining": {
+            "drive": 1.2760000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "ticks": 219,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "ticks": 219,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "ticks": 219,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 12,
+          "damage": 3412,
+          "ticks": 219,
+          "actionFrames": 125,
+          "remaining": {
+            "drive": 1.11,
+            "super": 0.07604761904761904
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "ticks": 260,
+          "actionFrames": 159,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "ticks": 260,
+          "actionFrames": 159,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "ticks": 260,
+          "actionFrames": 159,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3370,
+          "ticks": 260,
+          "actionFrames": 159,
+          "remaining": {
+            "drive": 1.2140000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "ticks": 208,
+          "actionFrames": 126,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "ticks": 208,
+          "actionFrames": 126,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "ticks": 208,
+          "actionFrames": 126,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3354,
+          "ticks": 208,
+          "actionFrames": 126,
+          "remaining": {
+            "drive": 1.104,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "ticks": 270,
+          "actionFrames": 164,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "ticks": 270,
+          "actionFrames": 164,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "ticks": 270,
+          "actionFrames": 164,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "ticks": 270,
+          "actionFrames": 164,
+          "remaining": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "ticks": 201,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "ticks": 201,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "ticks": 201,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 10,
+          "damage": 3648,
+          "ticks": 201,
+          "actionFrames": 116,
+          "remaining": {
+            "drive": 1.09,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "ticks": 302,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "ticks": 302,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "ticks": 302,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 14,
+          "damage": 3990,
+          "ticks": 302,
+          "actionFrames": 177,
+          "remaining": {
+            "drive": 1.2920000000000003,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 3,
+          "damage": 1776,
+          "ticks": 55,
+          "actionFrames": 34,
+          "remaining": {
+            "drive": 0.22800000000000004,
+            "super": 0.20542857142857146
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 3,
+          "damage": 1776,
+          "ticks": 55,
+          "actionFrames": 34,
+          "remaining": {
+            "drive": 0.22800000000000004,
+            "super": 0.20542857142857146
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 3,
+          "damage": 1776,
+          "ticks": 55,
+          "actionFrames": 34,
+          "remaining": {
+            "drive": 0.22800000000000004,
+            "super": 0.20542857142857146
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 3,
+          "damage": 1776,
+          "ticks": 55,
+          "actionFrames": 34,
+          "remaining": {
+            "drive": 0.22800000000000004,
+            "super": 0.20542857142857146
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3305,
+          "ticks": 203,
+          "actionFrames": 121,
+          "remaining": {
+            "drive": 0.22399999999999576,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3305,
+          "ticks": 203,
+          "actionFrames": 121,
+          "remaining": {
+            "drive": 0.22399999999999576,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 11,
+          "damage": 3305,
+          "ticks": 203,
+          "actionFrames": 121,
+          "remaining": {
+            "drive": 0.22399999999999576,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 11,
+          "damage": 3305,
+          "ticks": 203,
+          "actionFrames": 121,
+          "remaining": {
+            "drive": 0.22399999999999576,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 4,
+          "damage": 2235,
+          "ticks": 73,
+          "actionFrames": 43,
+          "remaining": {
+            "drive": 0.32600000000000007,
+            "super": 0.28966666666666663
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 4,
+          "damage": 2235,
+          "ticks": 73,
+          "actionFrames": 43,
+          "remaining": {
+            "drive": 0.32600000000000007,
+            "super": 0.28966666666666663
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 4,
+          "damage": 2235,
+          "ticks": 73,
+          "actionFrames": 43,
+          "remaining": {
+            "drive": 0.32600000000000007,
+            "super": 0.28966666666666663
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 4,
+          "damage": 2235,
+          "ticks": 73,
+          "actionFrames": 43,
+          "remaining": {
+            "drive": 0.32600000000000007,
+            "super": 0.28966666666666663
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 12,
+          "damage": 3640,
+          "ticks": 221,
+          "actionFrames": 130,
+          "remaining": {
+            "drive": 0.3219999999999943,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 12,
+          "damage": 3640,
+          "ticks": 221,
+          "actionFrames": 130,
+          "remaining": {
+            "drive": 0.3219999999999943,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 12,
+          "damage": 3640,
+          "ticks": 221,
+          "actionFrames": 130,
+          "remaining": {
+            "drive": 0.3219999999999943,
+            "super": 0
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 12,
+          "damage": 3640,
+          "ticks": 221,
+          "actionFrames": 130,
+          "remaining": {
+            "drive": 0.3219999999999943,
+            "super": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 4,
+          "damage": 1289,
+          "ticks": 48,
+          "actionFrames": 27,
+          "remaining": {
+            "drive": 0.29400000000000004,
+            "super": 0.20947619047619048
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 4,
+          "damage": 1289,
+          "ticks": 48,
+          "actionFrames": 27,
+          "remaining": {
+            "drive": 0.29400000000000004,
+            "super": 0.20947619047619048
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 4,
+          "damage": 1289,
+          "ticks": 48,
+          "actionFrames": 27,
+          "remaining": {
+            "drive": 0.29400000000000004,
+            "super": 0.20947619047619048
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 4,
+          "damage": 1289,
+          "ticks": 48,
+          "actionFrames": 27,
+          "remaining": {
+            "drive": 0.29400000000000004,
+            "super": 0.20947619047619048
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 9,
+          "damage": 2440,
+          "ticks": 140,
+          "actionFrames": 70,
+          "remaining": {
+            "drive": 0.26599999999999735,
+            "super": 0.27942857142857136
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 9,
+          "damage": 2440,
+          "ticks": 140,
+          "actionFrames": 70,
+          "remaining": {
+            "drive": 0.26599999999999735,
+            "super": 0.27942857142857136
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "outcomes": [
+        {
+          "enabled": false,
+          "status": "success",
+          "hits": 9,
+          "damage": 2440,
+          "ticks": 140,
+          "actionFrames": 70,
+          "remaining": {
+            "drive": 0.26599999999999735,
+            "super": 0.27942857142857136
+          }
+        },
+        {
+          "enabled": true,
+          "status": "success",
+          "hits": 9,
+          "damage": 2440,
+          "ticks": 140,
+          "actionFrames": 70,
+          "remaining": {
+            "drive": 0.26599999999999735,
+            "super": 0.27942857142857136
+          }
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "compared": 14720
+}

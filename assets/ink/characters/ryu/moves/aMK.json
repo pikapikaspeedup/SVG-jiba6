@@ -745,7 +745,8 @@
       "kind": "kick",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "aMK",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3
     }
   },
   "boxes": {
@@ -762,7 +763,15 @@
       "scale": 0.72,
       "color": "#74c4cf",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.38,
+      "particles": {
+        "count": 6,
+        "life": 16,
+        "speed": 5,
+        "size": 1.2,
+        "spread": 65,
+        "species": "spark"
+      }
     }
   ],
   "source": "migrated-atelier"

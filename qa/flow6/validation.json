@@ -1,0 +1,97 @@
+{
+  "suite": "flow6-final-validation",
+  "capturedAt": "2026-10-04T17:53:38.441990+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "playerHtmlSha256": "793b6c389443796bb184a68292c7098705436d5fcc11458bdf3fc2ae9515c59c",
+  "status": "passed",
+  "reportOnly": true,
+  "required20MinuteSoak": true,
+  "commandsThisInvocation": [],
+  "evidence": {
+    "anatomy": {
+      "path": "qa/flow6/anatomy.json",
+      "total": 14,
+      "passed": 14,
+      "sha256": "92d78702a14a86a1a747d16a237e2e42d8b154b4d80f6cad1a3ed11b76ae9a97"
+    },
+    "regression-core": {
+      "path": "qa/flow6/regression-core.json",
+      "total": 76,
+      "passed": 76,
+      "sha256": "c0577a0c407d8ac03423bd7965c5db196962dc14031dae51d7734081d2e4284c"
+    },
+    "compatibility": {
+      "path": "qa/flow6/compatibility.json",
+      "total": 96,
+      "passed": 96,
+      "sha256": "4a52e78819e4ee9190d262a33f248e7b0b52adfa09764a241b4b43698c8aef5a"
+    },
+    "socket-matrix": {
+      "path": "qa/flow6/socket-matrix.json",
+      "total": 1032,
+      "passed": 1032,
+      "sha256": "62c2b75f13d539040258dbb08a854834d6eea6f00894008703fb775bc0568862"
+    },
+    "anatomy-browser": {
+      "path": "qa/flow6/anatomy-browser.json",
+      "total": 22,
+      "passed": 22,
+      "sha256": "f6cbbc74a0fa736e884e992dd3d425b1b52c5e56c57f255af8fff7cf469c8ede"
+    },
+    "browser": {
+      "path": "qa/flow6/browser.json",
+      "total": 30,
+      "passed": 30,
+      "sha256": "05a1f4582bd6205b7252e1e9a6dd7128504d14cbca5743aba31d3eb0218815ba"
+    },
+    "portability": {
+      "path": "qa/flow6/portability.json",
+      "total": 11,
+      "passed": 11,
+      "sha256": "52f49075929e9eef541ace852989fade855497a139b0ec04c950b5becda07a48"
+    },
+    "transition-matrix": {
+      "path": "qa/flow6/transition-matrix.json",
+      "total": 68,
+      "passed": 68,
+      "sha256": "db1642351eda816a8eaf262b52c47f2ebfe34d2e38995557dcba1af8b46c68d8"
+    },
+    "key-boundary-continuity": {
+      "checks": 82812,
+      "passed": true,
+      "maximumDisplacement": 0.0031330456789076875,
+      "thresholdPixels": 0.05
+    },
+    "inherited-ink": {
+      "total": 44,
+      "passed": 44
+    },
+    "inherited-forge": {
+      "total": 720,
+      "passed": 720
+    },
+    "inherited-flow": {
+      "total": 24,
+      "passed": 24
+    },
+    "inherited-mechanics": {
+      "total": 39,
+      "passed": 39
+    },
+    "inherited-replays": {
+      "total": 522,
+      "passed": 522
+    },
+    "endurance": {
+      "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+      "status": "passed",
+      "elapsedWallSeconds": 1200.573,
+      "completedRoutes": 246,
+      "startedAt": "2026-10-04T17:30:04.787164+00:00",
+      "finishedAt": "2026-10-04T17:50:08.112538+00:00",
+      "fullSoakAccepted": true
+    }
+  },
+  "errors": [],
+  "note": "Counts are separate test contracts and sample matrices, not unique user scenarios. Report-only verifies recorded evidence; it does not run tests. Key-boundary metrics are finite sampled checks, not a proof of all possible motions."
+}

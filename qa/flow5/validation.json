@@ -1,0 +1,127 @@
+{
+  "version": "5.0.0",
+  "assembledAt": "2026-10-04T14:55:03.544461+00:00",
+  "evidenceMode": "hash-checked saved reports; see each report for execution details",
+  "suites": {
+    "core": {
+      "passed": 76,
+      "total": 76,
+      "report": "qa/flow5/core.json",
+      "sha256": "33043f68932dbe463058038d19126efed35f714995dfbdcd23e5c3d4a2e01b32"
+    },
+    "browser": {
+      "passed": 30,
+      "total": 30,
+      "report": "qa/flow5/browser.json",
+      "sha256": "ef0b847de38809708fa77af337c973a03642ceb7ec2c8f4b3933bd4c4fe4f396"
+    },
+    "compatibility": {
+      "passed": 96,
+      "total": 96,
+      "report": "qa/flow5/compatibility.json",
+      "sha256": "8b33576cf1f31ea92f4340e9150cf303582fa6d076a4d956bac4d71d8d03f9c1"
+    },
+    "socket-matrix": {
+      "passed": 1032,
+      "total": 1032,
+      "report": "qa/flow5/socket-matrix.json",
+      "sha256": "74ffc7e22b8edb0743960e7a3790dadb19c4b5e77467e9d6a22b9d45207efcaa"
+    },
+    "rhythm-matrix": {
+      "passed": 26,
+      "total": 26,
+      "report": "qa/flow5/rhythm-matrix.json",
+      "sha256": "56f01be6102c0bbe99f70aaf9b91a1c97d60cb24694369fd9bf7c496a3a3fbb1"
+    },
+    "portability": {
+      "passed": 11,
+      "total": 11,
+      "report": "qa/flow5/portability.json",
+      "sha256": "aacbb02ecc77021d2c4d39c829ecc0bb8a63394c3a94555043cd7a9717e55d0f"
+    },
+    "dual-actor": {
+      "passed": 6,
+      "total": 6,
+      "report": "qa/flow5/dual-actor.json",
+      "sha256": "9aad6b49d75efcbdfd7918409c78bc0a5581c1aef612088a5f8cf429580a851b"
+    },
+    "regression": {
+      "passed": true,
+      "total": null,
+      "report": "qa/flow5/regression.json",
+      "sha256": "3367b4ae827ccac58f4e1dc7f525a971894fd7c0f34f8864d2f4b5efd28552c0"
+    },
+    "extra-regression": {
+      "passed": true,
+      "total": null,
+      "report": "qa/flow5/extra-regression.json",
+      "sha256": "9151b1e21ebc22fb00cb2a922223616c05b3ae57c8378d420d458d10de26c574"
+    },
+    "source-audit": {
+      "passed": true,
+      "total": null,
+      "report": "qa/flow5/source-audit.json",
+      "sha256": "8f944bc0a28d9c6ee401d779d52fc622bacc289ec8ba3cc95a4bffea8863f9c1"
+    }
+  },
+  "artifacts": {
+    "INK-Street-Fighter-6.html": {
+      "bytes": 8005711,
+      "sha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba"
+    },
+    "INK-Street-Fighter-6-Player.html": {
+      "bytes": 8005869,
+      "sha256": "22835fd8cd20568e8130239d6897ebd0d1197716667876fbdb1631c56a0b95ad"
+    }
+  },
+  "endurance": {
+    "status": "passed",
+    "requestedWallSeconds": 1200,
+    "elapsedWallSeconds": 1201.483,
+    "completedRoutes": 254,
+    "startedAt": "2026-10-04T14:27:21.745827+00:00",
+    "finishedAt": "2026-10-04T14:47:25.378402+00:00",
+    "matchesCurrentBuild": true,
+    "report": "qa/flow5/endurance.json",
+    "sha256": "22e5daa3cb0d8c8b6dc67d8505a2074c59304fe41bce1e33dcabffb057363b15",
+    "errors": []
+  },
+  "samplerBenchmark": {
+    "samplesPerRun": 75000,
+    "repetitions": 7,
+    "legacyMedianMs": 614.1961719999999,
+    "compiledMedianMs": 451.83135600000014,
+    "ratio": 1.359348269755762,
+    "limitations": [
+      "Isolated Node CPU sampler only; excludes graph, DOM/SVG, springs, GPU and browser rendering.",
+      "Other tests may be active on the same host. Do not advertise this as game FPS improvement."
+    ]
+  },
+  "gameSha256": "107f7ec8455285f8fe55621c54f47fc2346df66b2e1e4b39da42819d9006a0de",
+  "legacySha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+  "nativeFileProtocol": {
+    "status": "environment-blocked-or-failed",
+    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work/INK-Flow-5/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/work/INK-Flow-5/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n"
+  },
+  "limits": {
+    "worldParticles": 320,
+    "localParticles": 144,
+    "worldRibbonStreams": 64,
+    "pointsPerRibbon": 64,
+    "rootHistory": 40,
+    "socketCache": 2048,
+    "lifecycleLog": 256
+  },
+  "failedAndInterruptedAttempts": [
+    "endurance-failed-concurrent.json",
+    "endurance-pre-freeze.json"
+  ],
+  "limitations": [
+    "Native file:// is blocked by the test environment; complete HTML byte loading is not filesystem permission verification.",
+    "Storage handle tests use doubles; mobile tests use emulation, not physical-device performance.",
+    "Support-foot correction is bounded and may leave drift at unreachable targets.",
+    "Spring chains are simplified angular dynamics, not collision-aware cloth.",
+    "Node sampler timing is not SVG/GPU frame rate.",
+    "Historical qa/flow4 evidence is not included as a current-build pass."
+  ]
+}

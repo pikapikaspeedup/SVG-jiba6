@@ -603,7 +603,7 @@
         [
           24,
           [
-            -63.773,
+            37.24,
             -276.487
           ],
           "linear"
@@ -611,7 +611,7 @@
         [
           26,
           [
-            -613.138,
+            61.31,
             -307.637
           ],
           "linear"
@@ -619,23 +619,23 @@
         [
           27,
           [
-            -743.0,
-            -315.0
+            67,
+            -315
           ],
           "linear"
         ],
         [
           31,
           [
-            -743.0,
-            -315.0
+            67,
+            -315
           ],
           "linear"
         ],
         [
           37,
           [
-            -192.711,
+            73.047,
             -259.232
           ],
           "linear"
@@ -837,7 +837,13 @@
       "kind": "overhead",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "anken_0",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -854,7 +860,15 @@
       "scale": 1,
       "color": "#c68ee0",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 5.6,
+        "size": 2.4,
+        "spread": 65,
+        "species": "shard"
+      }
     }
   ],
   "source": "migrated-atelier"

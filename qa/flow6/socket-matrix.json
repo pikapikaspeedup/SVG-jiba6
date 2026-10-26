@@ -1,0 +1,8265 @@
+{
+  "total": 1032,
+  "passed": 1032,
+  "maximumError": 0.00540954088149716,
+  "samples": [
+    {
+      "key": "aHK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006924633575229704,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004514878811366722,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006924633575229704,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004514878811366722,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00034044889896324453,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0021155333651853704,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00034044889896324453,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0021155333651853704,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006073816123691167,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003479998488062688,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006073816123691167,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003479998488062688,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0002667561172460958,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0005463613414940945,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002667561172460958,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0005463613414940945,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008404813786023365,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004666349355537697,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008404813786213704,
+      "pass": true
+    },
+    {
+      "key": "aHK",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00466634935552809,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 8.082737940281882e-05,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0002690681487668033,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 8.082737941422682e-05,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0002690681487976548,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 11.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00021797130947229145,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 11.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0013241985115563897,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 11.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00021797130945273066,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 11.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0013241985115270292,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 13.475,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007440144540845367,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 13.475,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00453486193519729,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 13.475,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007440144540845367,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 13.475,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00453486193519729,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006432743205790487,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036635254368884247,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006432743206066329,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036635254369157193,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 34.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00028366336541513,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 34.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.001602370169573456,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 34.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002836633654264273,
+      "pass": true
+    },
+    {
+      "key": "aHP",
+      "t": 34.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0016023701696280934,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00013871031126152028,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0013071718181254385,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00013871031126152028,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0013071718181254385,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003109968251960347,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0027929757819399026,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003109968251960347,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0027929757819399026,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 6.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0001861412655290593,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 6.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002158948043438638,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 6.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00018614126558434859,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 6.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0021589480434904464,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000279061557334489,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0007289465002011064,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000279061557334489,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0007289465002011064,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005479700879932292,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030112498070474325,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005479700879932292,
+      "pass": true
+    },
+    {
+      "key": "aLK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00301124980704142,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 3.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00072591443109529,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 3.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004447646756969064,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 3.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00072591443109529,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 3.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004447646756996364,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 4.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0002928731673405325,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 4.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.001452704030739625,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 4.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002928731673161967,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 4.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.001452704030739625,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 5.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00023716770629626763,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 5.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0012962759452377559,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 5.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00023716770626852924,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 5.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0012962759451831622,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00046889681865172833,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002710504021643837,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00046889681865172833,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002710504021643837,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000566867778511407,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0034151064064207306,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005668677785247687,
+      "pass": true
+    },
+    {
+      "key": "aLP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0034151064064176944,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003497185010861659,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0028476021684129406,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003497185010861659,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0028476021684129406,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00043379622502571813,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0011095950816093119,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00043379622502571813,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0011095950816093119,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 10.004999999999999,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006407718863684258,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 10.004999999999999,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018160769979100493,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 10.004999999999999,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006407718863684258,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 10.004999999999999,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018160769979100493,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005963417326771798,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0015744128550205959,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005963417326771798,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0015744128550205959,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 25.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008184717111276334,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 25.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0049240252548058885,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 25.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008184717111450373,
+      "pass": true
+    },
+    {
+      "key": "aMK",
+      "t": 25.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0049240252548058885,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004947758440044718,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0028485862021914387,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004947758439478924,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0028485862021630196,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 7.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004261468904321267,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 7.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0027007577659240592,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 7.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00042614689040425995,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 7.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002700757765979788,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 9.004999999999999,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006489750244870072,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 9.004999999999999,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036684674607665897,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 9.004999999999999,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006489750244609809,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 9.004999999999999,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003668467460740673,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004403892889188096,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0028229607391316094,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004403892889750158,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002822960739186538,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 24.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0001758210943565003,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 24.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0011945355606407687,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 24.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0001758210943565003,
+      "pass": true
+    },
+    {
+      "key": "aMP",
+      "t": 24.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0011945355606407687,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008091069643311961,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.005000362484163465,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008091069643311961,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.005000362484163465,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00046589550110514113,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0019203676551181753,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00046589550110514113,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0019203676551181753,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008527536498727071,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00462731544855995,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008527536498727071,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00462731544855995,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000643707619691751,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00444184048341008,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000643707619691751,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00444184048341008,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007537890827824627,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0045621536747189415,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007537890828202722,
+      "pass": true
+    },
+    {
+      "key": "cHK",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004562153674728031,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 9.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005970425599475492,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 9.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003670140413050637,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 9.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005970425599475492,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 9.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003670140413050637,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 10.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000699369861848207,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 10.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004229401319670243,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 10.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006993698618681992,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 10.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004229401319689808,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 12.475,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004486194792136289,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 12.475,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002744342065113188,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 12.475,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00044861947923950933,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 12.475,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0027443420651402915,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 14.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00035124511508639785,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 14.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0022735805477848287,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 14.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003512451150971989,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 14.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002273580547788157,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 39.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005908364351914126,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 39.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0033172781137081526,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 39.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005908364352480095,
+      "pass": true
+    },
+    {
+      "key": "cHP",
+      "t": 39.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0033172781137081526,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003622784209426572,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0029630243893770357,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003622784209833774,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0029630243894204563,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004860432122194599,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003933144820548356,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00048604321227500765,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003933144820605163,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 6.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039713059006108836,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 6.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003098484891126482,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 6.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039713059006108836,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 6.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003098484891126482,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005784604771659011,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004627348299849624,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005784604771659011,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004627348299849624,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005418431508159752,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0031451862162433556,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005418431508159752,
+      "pass": true
+    },
+    {
+      "key": "cLK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0031451862162351365,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 3.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006283531498036441,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 3.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003704635700908489,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 3.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006283531498036441,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 3.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0037046357009268087,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 4.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0002690973144064852,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 4.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0012904251076115347,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 4.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002690973144064852,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 4.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0012904251076115347,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 5.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006541101286135342,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 5.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0034820379367640963,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 5.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006541101286000446,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 5.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0034820379367766123,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 4.922340530902138e-05,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0003626809002199441,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 4.922340530902138e-05,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00036268090013522904,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007368803028292057,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004186715152508126,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007368803028292057,
+      "pass": true
+    },
+    {
+      "key": "cLP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004186715152522982,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006668482083299951,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004115752111947525,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006668482083299951,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004115752111947525,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007773313091840672,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004171877465683801,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007773313091487666,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004171877465643624,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 9.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00044078271133423096,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 9.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002609706709676422,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 9.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00044078271128323156,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 9.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0026097067095882894,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004318787916007722,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002165870864515366,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004318787916007722,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002165870864515366,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 27.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005205020178902219,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 27.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030669349856425176,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 27.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005205020178676551,
+      "pass": true
+    },
+    {
+      "key": "cMK",
+      "t": 27.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030669349856282473,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007097488785470257,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004436516285405414,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007097488785644893,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00443651628543783,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 7.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004780032143725487,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 7.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002840136554546083,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 7.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004780032143725487,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 7.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0028401365545602207,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 9.004999999999999,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00046686368754742023,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 9.004999999999999,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003012108261063836,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 9.004999999999999,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00046686368756825833,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 9.004999999999999,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003012108261044976,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005423253657779374,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 10.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002924663924934179,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005423253657738768,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 10.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0029246639249337148,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 24.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0001808094336453673,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 24.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0012052266969940666,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 24.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0001808094336453673,
+      "pass": true
+    },
+    {
+      "key": "cMP",
+      "t": 24.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0012052266969940666,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 8.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006140709308651543,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 8.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0034218833038466754,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 8.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006140709308131004,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 8.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003421883303826471,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 9.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003434960475570518,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 9.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018734934438751807,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 9.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003434960475703018,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 9.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018734934437887277,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 30.275,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006178449959283942,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 30.275,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00382996139050658,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 30.275,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000617844995954095,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 30.275,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00382996139050658,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 53.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006368555309281362,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 53.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003927516741126177,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 53.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006368555309025861,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 53.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003927516741126177,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 81.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000587278684826887,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 81.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00334623047668241,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 81.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005872786848526273,
+      "pass": true
+    },
+    {
+      "key": "chou-hissatsu-shinobi-bachi",
+      "t": 81.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00334623047668241,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004544269690574054,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030227409606716814,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004544269691015992,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003022740960604136,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00011169234626703722,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0005084891464344187,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00011169234626890942,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0005084891464344187,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 53.485,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00035053620278492,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 53.485,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0016707563998724245,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 53.485,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00035053620278492,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 53.485,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0016707563998447478,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 99.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00029808108163463976,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 99.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002440961326418179,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 99.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002980810816169538,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 99.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002440961326418179,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 126.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005171439649077227,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 126.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002953973043626384,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 126.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005171439649181097,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura-ca",
+      "t": 126.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002953973043626911,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004544269690574054,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030227409606716814,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004544269691015992,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003022740960604136,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00011169234626703722,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0005084891464344187,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00011169234626890942,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0005084891464344187,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 53.485,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00035053620278492,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 53.485,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0016707563998724245,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 53.485,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00035053620278492,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 53.485,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0016707563998447478,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 99.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00029808108163463976,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 99.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002440961326418179,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 99.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002980810816169538,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 99.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002440961326418179,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 126.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005171439649077227,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 126.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002953973043626384,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 126.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005171439649181097,
+      "pass": true
+    },
+    {
+      "key": "enbu-ada-zakura",
+      "t": 126.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002953973043626911,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 8.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00013233488159072665,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 8.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.001379265787181855,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 8.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00013233488159072665,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 8.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.001379265787181855,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 9.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007782068348667573,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 9.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002497737820313198,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 9.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007782068348199385,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 9.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0024977378202287043,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 20.405,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005246032854262518,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 20.405,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0037414440526264757,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 20.405,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000524603285465977,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 20.405,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0037414440526500974,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 32.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005946073982437955,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 32.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0027549912847931127,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 32.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000594607398266441,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 32.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002754991284862237,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 61.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000670272490647721,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 61.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004971124674928492,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 61.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006702724906572382,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-heavy",
+      "t": 61.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0049711246749737275,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008020461619087683,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004160470623457724,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008020461619087683,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004160470623457724,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006001509712688168,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003961025066398854,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006001509713074623,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003961025066364313,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 13.114999999999998,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004951866279375109,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 13.114999999999998,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002187263160225213,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 13.114999999999998,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004951866279305535,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 13.114999999999998,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002187263160199326,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 21.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006165722541341479,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 21.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0043113110979519234,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 21.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006165722540446029,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 21.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004311311097838196,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 43.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005942679632313727,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 43.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0025803970932229857,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 43.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005942679632573428,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-light",
+      "t": 43.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0025803970932229857,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008214085346835145,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0047189640435882545,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008214085346835145,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0047189640435882545,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 7.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005425700566552941,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 7.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002317974550168735,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 7.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005425700567161146,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 7.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0023179745502592657,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 16.525,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007565357822039595,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 16.525,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003929918242325568,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 16.525,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007565357823099097,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 16.525,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003929918242407593,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 26.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006062840056876675,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 26.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0038728749169629983,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 26.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006062840056490533,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 26.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0038728749169197724,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 51.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004643324693522514,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 51.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0028967491352499385,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 51.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00046433246933914657,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-medium",
+      "t": 51.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0028967491352753037,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 5.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005911655382400521,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 5.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004171723688264275,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 5.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005911655382400521,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 5.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004171723688264275,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 6.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003570264397349421,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 6.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00194673713520958,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 6.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003570264396853947,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 6.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0019467371352801554,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 17.405,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005754693730581468,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 17.405,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00319839585578982,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 17.405,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005754693731301019,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 17.405,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0031983958559357265,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 29.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004242315902311218,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 29.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0031586008586123784,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 29.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004242315902226924,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 29.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003158600858667105,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 57.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007332765804523297,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 57.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004868668891496391,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 57.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007332765804878078,
+      "pass": true
+    },
+    {
+      "key": "hishou-ryuuenjin-od",
+      "t": 57.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004868668891510603,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 19.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00043397041075027,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 19.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0027261994479456948,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 19.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004339704106471736,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 19.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002726199447874036,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 20.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00047412594262837145,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 20.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002857531444068525,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 20.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00047412594260687574,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 20.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002857531444038977,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 28.585,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006618493252119373,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 28.585,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003856112720488434,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 28.585,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006618493251929146,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 28.585,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003856112720488434,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 37.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006675154360769091,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 37.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003941200592873329,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 37.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006675154360954794,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 37.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003941200592885807,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 65.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00010772646890079977,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 65.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0007080246824412435,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 65.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00010772646892906395,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "t": 65.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0007080246824888597,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003486194720324693,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018124613555244517,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00034861947201924264,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018124613555865641,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 16.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005876855909133736,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 16.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003385578764129736,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 16.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005876855909497341,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 16.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0033855787641473597,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 24.585,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00034773066154879576,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 24.585,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0019788371028582963,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 24.585,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00034773066155308665,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 24.585,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0019788371028582963,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 33.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004078898025608403,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 33.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002404168306906178,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 33.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004078898025333226,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 33.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002404168306881222,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 55.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005885657220871793,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 55.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003494680158360313,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 55.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005885657221147626,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-light",
+      "t": 55.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003494680158360313,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 17.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00037261461185409783,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 17.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00234775805166846,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 17.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003726146118779007,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 17.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0023477580516586684,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 18.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007913856363090712,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 18.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004715455064933754,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 18.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007913856362897678,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 18.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004715455064933754,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 26.585,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00043941337459231115,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 26.585,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0025239943608707173,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 26.585,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004394133745846413,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 26.585,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0025239943608707173,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00022759652444259113,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0012867360738108584,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002275965244695671,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0012867360738392734,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 60.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00031585922823530813,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 60.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0019059603590229467,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 60.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003158592282632805,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-medium",
+      "t": 60.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0019059603590779438,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006361961935708971,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0037758850410400673,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000636196193516501,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003775885040884186,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00048364631599300353,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00290937113177546,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00048364631599300353,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00290937113177546,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 22.585,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00058680434495621,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 22.585,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0034136063834321237,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 22.585,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005868043450002054,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 22.585,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0034136063834321237,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 31.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007590844689401154,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 31.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004326484998363415,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 31.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007590844689897672,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 31.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004326484998403189,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 54.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004894314387477576,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 54.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0029163239567664002,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 54.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004894314387754424,
+      "pass": true
+    },
+    {
+      "key": "hissatsu-shinobi-bachi-od",
+      "t": 54.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0029163239567664002,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 29.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006498606606588769,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 29.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036571565236685833,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 29.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006498606606374996,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 29.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036571565236118856,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 30.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006498606606588769,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 30.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036565727060488443,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 30.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006498606606374996,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 30.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036565727060488443,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 58.325,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006647916030046491,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 58.325,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003652419947992198,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 58.325,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000664791602983752,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 58.325,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036524199479322375,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 89.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006001652946889007,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 89.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003594304810401703,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 89.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006001652946657534,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 89.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0035943048103808145,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 119.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000640559069654254,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 119.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036377724106738283,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 119.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006405590696434103,
+      "pass": true
+    },
+    {
+      "key": "idle",
+      "t": 119.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036377724106142657,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007119070568384747,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00408268365430944,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007119070568384747,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0040826836542742695,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 16.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004429448232975692,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 16.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002709441721023276,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 16.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00044294482329265396,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 16.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002709441721019082,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 18.945,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005848834266254835,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 18.945,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0032879269668784987,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 18.945,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005848834266729653,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 18.945,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00328792696689944,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 21.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004020966605024236,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 21.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002488154915583844,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 21.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00040209666053078947,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 21.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00248815491561,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 45.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003988463003594471,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 45.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00238922646871477,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 45.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003988463003872591,
+      "pass": true
+    },
+    {
+      "key": "kachousen-heavy",
+      "t": 45.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002389226468742513,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006726404416732807,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0038907331952177486,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006726404417261302,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00389073319526153,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00034935778876041853,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0020036580687658053,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003493577887742845,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00200365806879651,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 16.945,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00045692791649203275,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 16.945,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0028152523534564575,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 16.945,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00045692791649203275,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 16.945,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0028152523534848745,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 19.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007642056578400044,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 19.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004445156639138553,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 19.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007642056578573157,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 19.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004445156639138553,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 37.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039908944585166585,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 37.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0022397461889594084,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 37.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039908944585166585,
+      "pass": true
+    },
+    {
+      "key": "kachousen-light",
+      "t": 37.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002239746188941969,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 14.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005314800588688848,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 14.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002926387195707345,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 14.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005314800588688848,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 14.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0029263871956826666,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 15.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003917391791107837,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 15.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0022908232230663427,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 15.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000391739179100524,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 15.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002290823223068533,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 17.945,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005514340782904378,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 17.945,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0032802558770623083,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 17.945,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005514340783021968,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 17.945,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0032802558770803304,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 20.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003719716001615022,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 20.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002262673667116675,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 20.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003719716001615022,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 20.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002262673667116675,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 40.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005697805896126146,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 40.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0032425670176789213,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 40.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005697805896126146,
+      "pass": true
+    },
+    {
+      "key": "kachousen-medium",
+      "t": 40.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0032425670176789213,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039738965951148075,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0024540303728931177,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039738965951148075,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002454030372920666,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004889414809069442,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0028071133979213343,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004889414809069442,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0028071133979213343,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 14.945,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00032799000532461565,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 14.945,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0017184797438344248,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 14.945,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003279900053079481,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 14.945,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0017184797438135034,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 17.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0009187121139107987,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 17.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00540954088149716,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 17.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000918712113889816,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 17.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.005409540881471971,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 38.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006660459889696934,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 38.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0038094809044210247,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 38.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006660459889696934,
+      "pass": true
+    },
+    {
+      "key": "kachousen-od",
+      "t": 38.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003809480904398426,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005156748009562408,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003016608717613022,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005156748009562408,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030166087175879886,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00026585712961338815,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0013847040882043683,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00026585712958902027,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.001384704088205142,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 27.865,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006496171253866624,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 27.865,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004044687490004115,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 27.865,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006496171253866624,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 27.865,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004044687490004115,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 49.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 8.119114369009115e-05,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 49.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0010094411685260668,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 49.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 8.11911436651514e-05,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 49.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0010094411684408047,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 76.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00047139329888311115,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 76.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0026881711800460593,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 76.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004713932988678693,
+      "pass": true
+    },
+    {
+      "key": "kagerou-no-mai",
+      "t": 76.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0026881711800460593,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006145684608060623,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003495674724773146,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006145684608285844,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0034956747248038513,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007845418293095733,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004509352291108975,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007845418293095733,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004509352291108975,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 25.405,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575625521,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 25.405,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 25.405,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575341359,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 25.405,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 37.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281259492,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 37.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030719604210917876,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 37.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281353797,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 37.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030719604210930375,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 55.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 55.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002239746188887867,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 55.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-heavy",
+      "t": 55.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002239746188879148,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 9.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00020053025355319483,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 9.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00117202207145353,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 9.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00020053025352592582,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 9.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00117202207145353,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 10.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008779012539158472,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 10.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.005019269612452269,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 10.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008779012539373705,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 10.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.005019269612452269,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 21.405,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575625521,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 21.405,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 21.405,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575341359,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 21.405,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 33.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281259492,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 33.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030719604210917876,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 33.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281353797,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 33.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030719604210930375,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 51.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 51.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002239746188887867,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 51.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-light",
+      "t": 51.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002239746188879148,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007946035601054279,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004666752790595416,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007946035601054279,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004666752790595416,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00019713644935628907,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0012217366627823654,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0001971364493710586,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0012217366627823654,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 23.405,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575625521,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 23.405,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 23.405,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575341359,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 23.405,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281259492,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030719604210917876,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281353797,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030719604210930375,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 53.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 53.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002239746188887867,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 53.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-medium",
+      "t": 53.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002239746188879148,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003340952753751143,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018119937559492973,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 8.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005898821161646681,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 8.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036336598960500423,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 8.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000589882116151961,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 8.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036336598960500423,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 9.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000520458677908815,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 9.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0029547422209899076,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 9.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005204586779199604,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 9.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002954742221029925,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 20.405,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575625521,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 20.405,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 20.405,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005943317575341359,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 20.405,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003479515740710181,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 32.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281259492,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 32.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030719604210917876,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 32.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005559594281353797,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 32.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030719604210930375,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 50.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 50.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002239746188887867,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 50.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039908944572846926,
+      "pass": true
+    },
+    {
+      "key": "musasabi-no-mai-od",
+      "t": 50.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002239746188879148,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834900909,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003616379675081153,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834674421,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675041235,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 14.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003149476600762405,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 14.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.001987545972853785,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 14.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003149476600762405,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 14.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.001987545972853785,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 15.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000369659719225727,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 15.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018448215538818512,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 15.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003696597191734175,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 15.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018448215538586644,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 26.875,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00034384257475475,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 26.875,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0022092009352751513,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 26.875,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00034384257475642563,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 26.875,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002209200935276771,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 39.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00040722151604618076,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 39.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002553335177684982,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 39.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004072215160495172,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 39.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002553335177697511,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 60.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00043238848724279377,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 60.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0024353779694429403,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 60.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00043238848724279377,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-heavy",
+      "t": 60.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0024353779694429403,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834900909,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003616379675081153,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834674421,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675041235,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004990986711993402,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0029567525484208027,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004990986711993402,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0029567525484238263,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004654894538464093,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0020971484788832257,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00046548945384372294,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0020971484788832257,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 21.175,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007765896074803513,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 21.175,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004540040127450369,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 21.175,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007765896074970401,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 21.175,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004540040127468139,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 28.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008714574782393963,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 28.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00499667867293102,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 28.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008714574782601526,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 28.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00499667867293102,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 43.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00048449990114155455,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 43.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002739630804640925,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 43.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00048449990114155455,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-light",
+      "t": 43.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002739630804660595,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834900909,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003616379675081153,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834674421,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675041235,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005067169953945925,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 13.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0025944356755629636,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005067169953945925,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 13.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0025944356755629636,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007109387260588353,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 14.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004040251219604701,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007109387260408383,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 14.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004040251219583561,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 23.525,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006145628628577096,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 23.525,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036934181733145823,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 23.525,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006145628628105491,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 23.525,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003693418173244276,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 33.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00029393946811837767,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 33.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018871911998824095,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 33.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00029393946811837767,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 33.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0018871911998803042,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 52.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005730445559126607,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 52.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0032529637045138346,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 52.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005730445559126607,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-medium",
+      "t": 52.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0032529637045138346,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834900909,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003616379675081153,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806834674421,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675041235,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005279357240737182,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003244695803369106,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00052793572405197,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003244695803369106,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00047187609423698533,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002668873594936822,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00047187609423698533,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0026688735949394853,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 23.875,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000678959447468356,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 23.875,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004155463157095549,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 23.875,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006789594474453221,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 23.875,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004155463157072761,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 36.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000650545972868705,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 36.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0037089534083982463,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 36.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006505459728447658,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 36.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0037089534083736193,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 58.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00047133232049828295,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 58.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002605747740858523,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 58.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004713323205215073,
+      "pass": true
+    },
+    {
+      "key": "ryuuenbu-od",
+      "t": 58.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002605747740858523,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000638411990751164,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0034856179498360153,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000638411990751164,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0034856179498360153,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005636098834920071,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.001625493032810477,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005636098834920071,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.001625493032810477,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0005560950068965191,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003617441157295833,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005560950069121721,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003617441157303748,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006033573357769668,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0033623456728766295,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006033573357769668,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0033623456728766295,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007791750071491189,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 35.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004587706139642157,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007791750071664929,
+      "pass": true
+    },
+    {
+      "key": "sHK",
+      "t": 35.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004587706139659455,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004914509363107257,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030681595998228047,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004914509363308767,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030681595998615935,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000622637550063821,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 12.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0037727571876092635,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006226375500368702,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 12.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003772757187555094,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000540189689193201,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 14.475,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0035321251870051645,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0005401896892488375,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 14.475,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003532125187033321,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00043921451673207347,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0023426493146231613,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004392145167038098,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0023426493146231613,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 42.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007008561846950154,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 42.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00419274266253575,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 42.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007008561847101798,
+      "pass": true
+    },
+    {
+      "key": "sHP",
+      "t": 42.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00419274266253575,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007049659926033247,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 4.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.003999550530236645,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007049659926033247,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 4.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003999550530236645,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.000565556030272304,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 5.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002945821006723735,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000565556030272304,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 5.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002945821006723735,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 6.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00039917953214758755,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 6.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002803633586364516,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 6.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00039917953214758755,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 6.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002803633586364516,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003658988452199598,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00315511871210667,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003658988452199598,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.00315511871210667,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006539000996108428,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 16.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036577320601467412,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006539000996210853,
+      "pass": true
+    },
+    {
+      "key": "sLK",
+      "t": 16.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0036577320601467412,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 3.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003804761870551203,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 3.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.002277742219988745,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 3.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003804761870551203,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 3.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0022777422199760345,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 4.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008247873513330479,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 4.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004857722860628604,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 4.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0008247873513330479,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 4.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004857722860650328,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 5.535,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00045761379107913096,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 5.535,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0027301314494025605,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 5.535,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004576137911266824,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 5.535,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002730131449449546,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003874049362686079,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 6.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0021248155628066645,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003874049362686079,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 6.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002124815562834618,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006118069280393475,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 15.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.00361309456089132,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006118069280393475,
+      "pass": true
+    },
+    {
+      "key": "sLP",
+      "t": 15.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003613094560899431,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0004295012262842892,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0019176362710286825,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0004295012262842892,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0019176362710286825,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00012144211101794806,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0008433714384144635,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00012144211101794806,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0008433714384144635,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 10.004999999999999,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006235374910195456,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 10.004999999999999,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0030356140147695574,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 10.004999999999999,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006235374910195456,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 10.004999999999999,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0030356140147695574,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00013397411110579386,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0009463736483629658,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00013397411110579386,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0009463736483629658,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 25.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0008677811170838993,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 25.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004991457990053844,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 25.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.000867781117064811,
+      "pass": true
+    },
+    {
+      "key": "sMK",
+      "t": 25.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004991457990028655,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833858177,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 0,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0036163796750406842,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006133806833631692,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 0,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003616379675000766,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.00017017553187825282,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 7.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0011744248620422226,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.00017017553184120758,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 7.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.0011744248620283201,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0006523529942060016,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 8.25,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0039144640012662765,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0006523529942060016,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 8.25,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.003914464001237952,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 10.004999999999999,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0003932320711658663,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 10.004999999999999,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0024735593562565557,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 10.004999999999999,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0003932320711658663,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 10.004999999999999,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.002473559356280187,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0002558269618966183,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 11.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.0018634697292742167,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0002558269618966183,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 11.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.001863469729249067,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 29.75,
+      "side": 1,
+      "socket": "fanGrip",
+      "error": 0.0007323180584733433,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 29.75,
+      "side": 1,
+      "socket": "fanTip",
+      "error": 0.004128373931700895,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 29.75,
+      "side": -1,
+      "socket": "fanGrip",
+      "error": 0.0007323180584492811,
+      "pass": true
+    },
+    {
+      "key": "sMP",
+      "t": 29.75,
+      "side": -1,
+      "socket": "fanTip",
+      "error": 0.004128373931645081,
+      "pass": true
+    }
+  ],
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "note": "Final visual graph pose matched to actual SVG fan CTM. This is not the raw combat pose."
+}

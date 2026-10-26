@@ -17,7 +17,7 @@ with sync_playwright() as p:
  page.evaluate(r"""()=>{
   INKForge.route('assets');SVG_FIGHTER.state.paused=true;
   const wrap=document.createElement('div');wrap.id='qa-sheet';wrap.style.cssText='position:relative;z-index:99999;background:#e7e3d7;color:#203a34;padding:40px 38px;min-height:1060px;width:1480px;box-sizing:border-box;font-family:system-ui';
-  wrap.innerHTML='<header style="display:flex;justify-content:space-between;border-bottom:1px solid #abb6a7;padding-bottom:20px"><div><small style="letter-spacing:4px">INK / FORGE 02</small><h1 style="margin:8px 0 0;font-size:34px">八位格斗家，同一个矢量运行时。</h1></div><p style="text-align:right;font:12px monospace;line-height:1.8">ACTUAL SVG RENDER<br>MODEL / RIG / MOTION</p></header><div id="qa-cards" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-top:22px"></div>';
+  wrap.innerHTML='<header style="display:flex;justify-content:space-between;border-bottom:1px solid #abb6a7;padding-bottom:20px"><div><small style="letter-spacing:4px">INK / FLOW 04</small><h1 style="margin:8px 0 0;font-size:34px">八位格斗家，同一个矢量运行时。</h1></div><p style="text-align:right;font:12px monospace;line-height:1.8">ACTUAL SVG RENDER<br>MODEL / RIG / MOTION</p></header><div id="qa-cards" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding-top:22px"></div>';
   document.body.append(wrap);document.getElementById('forge-app').style.display='none';for(const el of document.body.children)if(el!==wrap)el.style.display='none';
   window.__qaRenders=[];
   for(const id of INK.Schema.CHARACTERS){const profile=INKForge.store.profile(id),cell=document.createElement('section');cell.style.cssText='background:#efebdf;border:1px solid #c3caba;border-radius:5px;padding:12px 12px 4px';cell.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:19px">'+profile.name+'</b><span style="font-size:12px">'+profile.cn+'</span></div><svg viewBox="0 0 330 420" width="100%"><defs></defs></svg><p style="font-size:10px;margin:0 0 7px;color:#718176">'+profile.description+'</p>';wrap.querySelector('#qa-cards').append(cell);const svg=cell.querySelector('svg');INK.SVG.node('path',{d:'M12 405H318',stroke:'#c2cbbb','stroke-width':1},svg);const group=INK.SVG.node('g',{transform:'translate(155 400) scale(.97)'},svg),renderer=new INK.Renderer(group,profile);renderer.setStyle(profile.previewStyle);renderer.render(INKForge.store.clip(INKForge.store.byGame(id,'@idle')).sample(0),{frame:0,secondary:false});window.__qaRenders.push(renderer);}
@@ -30,3 +30,5 @@ with sync_playwright() as p:
  }""")
  page.screenshot(path=str(root/'qa/forge-motions-final.png'),full_page=True)
  (root/'qa/forge-visual-errors.json').write_text(json.dumps(errors,ensure_ascii=False,indent=2));b.close();print('screenshots saved; errors:',errors)
+
+if errors:raise SystemExit(1)

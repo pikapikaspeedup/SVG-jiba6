@@ -1,0 +1,61 @@
+{
+  "requestedWallSeconds": 1200,
+  "startedAt": "2026-10-04T14:21:42.857099+00:00",
+  "htmlSha256": "9c9d29fdea366e3416abbc45757fce5d69abe202f85e1fd4b32e4af8c6b7ae6f",
+  "status": "interrupted-for-release-label-and-export-fix",
+  "description": "FLOW 05: one continuously rendered real Chromium tab; primarily Mai, mirrored routes, actual engine inspector, FX presets, scrubbing and pause checks. FPS is not a hardware guarantee.",
+  "elapsedWallSeconds": 62.227,
+  "latest": {
+    "elapsed": 62.227,
+    "cycles": 13,
+    "raf": 3313,
+    "mode": "battle",
+    "errors": [],
+    "maxParticles": 316,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 15753,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "inspections": 1,
+    "clock": {
+      "ticks": 3407,
+      "callbacks": 3317,
+      "discardedSteps": 2,
+      "clampedMs": 0,
+      "pauses": 6,
+      "alpha": 0.9879999999996549,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 16.466666666660917
+    },
+    "bank": {
+      "instances": 4,
+      "acceptedBirths": 30,
+      "poolDrops": 0,
+      "cancelledActions": 3,
+      "eventEdges": 13
+    },
+    "pausedChecks": 3,
+    "views": 2,
+    "heap": {
+      "usedSize": 20154892,
+      "totalSize": 22847488,
+      "embedderHeapUsedSize": 20612688,
+      "backingStorageSize": 963907
+    },
+    "dom": {
+      "documents": 1,
+      "nodes": 39012,
+      "jsEventListeners": 299
+    }
+  },
+  "completedRoutes": 13,
+  "errors": [],
+  "interruptedAt": "2026-10-04T14:23:05.816899+00:00",
+  "note": "Not accepted as endurance evidence; final-build run restarted."
+}

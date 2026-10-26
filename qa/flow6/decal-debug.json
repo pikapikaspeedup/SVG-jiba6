@@ -1,0 +1,134 @@
+[
+  {
+    "name": "rearArm",
+    "lengths": [
+      [
+        64,
+        67
+      ],
+      [
+        64,
+        67
+      ]
+    ],
+    "markup": [
+      [
+        "",
+        "<path d=\"M-8 54.27Q0 58.27 8 54.27L6.24 67Q0 71 -6.24 67Z\" fill=\"#ffe2b5\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-7 60.97L7 60.97\" fill=\"none\" stroke=\"#a98d99\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ],
+      [
+        "",
+        "<path d=\"M-8 54.27Q0 58.27 8 54.27L6.24 67Q0 71 -6.24 67Z\" fill=\"#ffe2b5\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-7 60.97L7 60.97\" fill=\"none\" stroke=\"#a98d99\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ]
+    ],
+    "transforms": [
+      [
+        "scale(1 0.9980413124406594)",
+        "scale(1 0.9971047151971195)"
+      ],
+      [
+        "scale(1 0.9980413124406594)",
+        "scale(1 0.9971047151971195)"
+      ]
+    ]
+  },
+  {
+    "name": "frontArm",
+    "lengths": [
+      [
+        64,
+        67
+      ],
+      [
+        64,
+        67
+      ]
+    ],
+    "markup": [
+      [
+        "",
+        "<path d=\"M-8 54.27Q0 58.27 8 54.27L6.24 67Q0 71 -6.24 67Z\" fill=\"#ffe2b5\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-7 60.97L7 60.97\" fill=\"none\" stroke=\"#a98d99\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ],
+      [
+        "",
+        "<path d=\"M-8 54.27Q0 58.27 8 54.27L6.24 67Q0 71 -6.24 67Z\" fill=\"#ffe2b5\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-7 60.97L7 60.97\" fill=\"none\" stroke=\"#a98d99\" stroke-width=\"0.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ]
+    ],
+    "transforms": [
+      [
+        "scale(1 1.0017618591548945)",
+        "scale(1 1.000185853994175)"
+      ],
+      [
+        "scale(1 1.0017618591548945)",
+        "scale(1 1.000185853994175)"
+      ]
+    ]
+  },
+  {
+    "name": "rearLeg",
+    "lengths": [
+      [
+        96,
+        98
+      ],
+      [
+        96,
+        98
+      ]
+    ],
+    "markup": [
+      [
+        "",
+        "<path d=\"M-10.7 74.48Q0 78.48 10.7 74.48L8.346 98Q0 102 -8.346 98Z\" fill=\"#f7e9d8\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-9.7 78.4L9.7 82.32M-9.7 88.2L9.7 92.11999999999999\" fill=\"none\" stroke=\"#b99994\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ],
+      [
+        "",
+        "<path d=\"M-10.7 74.48Q0 78.48 10.7 74.48L8.346 98Q0 102 -8.346 98Z\" fill=\"#f7e9d8\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-9.7 78.4L9.7 82.32M-9.7 88.2L9.7 92.11999999999999\" fill=\"none\" stroke=\"#b99994\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ]
+    ],
+    "transforms": [
+      [
+        "scale(1 0.999152267153705)",
+        "scale(1 0.99997994024735)"
+      ],
+      [
+        "scale(1 0.999152267153705)",
+        "scale(1 0.99997994024735)"
+      ]
+    ]
+  },
+  {
+    "name": "frontLeg",
+    "lengths": [
+      [
+        96,
+        98
+      ],
+      [
+        96,
+        98
+      ]
+    ],
+    "markup": [
+      [
+        "",
+        "<path d=\"M-10.7 74.48Q0 78.48 10.7 74.48L8.346 98Q0 102 -8.346 98Z\" fill=\"#f7e9d8\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-9.7 78.4L9.7 82.32M-9.7 88.2L9.7 92.11999999999999\" fill=\"none\" stroke=\"#b99994\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ],
+      [
+        "",
+        "<path d=\"M-10.7 74.48Q0 78.48 10.7 74.48L8.346 98Q0 102 -8.346 98Z\" fill=\"#f7e9d8\" stroke=\"#302735\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M-9.7 78.4L9.7 82.32M-9.7 88.2L9.7 92.11999999999999\" fill=\"none\" stroke=\"#b99994\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+      ]
+    ],
+    "transforms": [
+      [
+        "scale(1 1.0013675944321414)",
+        "scale(1 1.0001462844357507)"
+      ],
+      [
+        "scale(1 1.0013675944321414)",
+        "scale(1 1.0001462844357507)"
+      ]
+    ]
+  }
+]

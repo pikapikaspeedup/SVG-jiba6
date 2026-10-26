@@ -1,0 +1,55 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "memoryEventsAfter": "low 0\nhigh 0\nmax 126\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 1500,
+  "startedAt": "2026-10-05T07:06:27.719884+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "status": "passed",
+  "description": "FLOW 08: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause, real solved-pose recording/review and skeleton inspector. No substituted time or hardware FPS guarantee.",
+  "finishedAt": "2026-10-05T07:31:30.594992+00:00",
+  "elapsedWallSeconds": 1500.36,
+  "completedRoutes": 419,
+  "final": {
+    "cycles": 419,
+    "raf": 82284,
+    "errors": [],
+    "maxParticles": 170,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 19763,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "maxGhostSlots": 5,
+    "maxReplay": 285,
+    "maxStateEvents": 23,
+    "recordings": 140,
+    "reviews": 59,
+    "inspections": 33,
+    "pausedChecks": 82,
+    "views": 33,
+    "next": 0,
+    "lastStatus": "running",
+    "mode": "battle",
+    "lastClock": 57446,
+    "busy": false
+  },
+  "finalHeap": {
+    "usedSize": 28112100,
+    "totalSize": 30187520,
+    "embedderHeapUsedSize": 25603496,
+    "backingStorageSize": 4566808
+  },
+  "finalDOM": {
+    "documents": 1,
+    "nodes": 47295,
+    "jsEventListeners": 397
+  },
+  "browserErrors": []
+}

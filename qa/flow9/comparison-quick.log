@@ -1,0 +1,2 @@
+camera frames 12 camera counts [12, 1] last [{'tick': 24, 'action': 24, 'camera': 'translate(720 439) scale(1.0639) translate(-680.2355599290056 -452.77239910984304)', 'hit': 0, 'damage': 0, 'status': 'idle', 'summary': None}, {'tick': 24, 'action': 24, 'camera': 'matrix(1 0 0 1 0 0)', 'hit': 0, 'damage': 0, 'status': 'idle', 'summary': None}]
+COMPARISON 12 frames []

@@ -1,0 +1,456 @@
+{
+  "total": 32,
+  "passed": 32,
+  "tests": [
+    {
+      "name": "ryu-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 15,
+      "damage": 3485,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ryu-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 94,
+      "hits": 15,
+      "damage": 3485,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ryu-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 280,
+      "hits": 15,
+      "damage": 3485,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ryu-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 560,
+      "hits": 15,
+      "damage": 3485,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ken-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 15,
+      "damage": 3288,
+      "combatFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ken-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 93,
+      "hits": 15,
+      "damage": 3288,
+      "combatFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ken-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 278,
+      "hits": 15,
+      "damage": 3288,
+      "combatFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "ken-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 556,
+      "hits": 15,
+      "damage": 3288,
+      "combatFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "chun-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 15,
+      "damage": 3271,
+      "combatFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "chun-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 91,
+      "hits": 15,
+      "damage": 3271,
+      "combatFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "chun-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 272,
+      "hits": 15,
+      "damage": 3271,
+      "combatFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "chun-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 544,
+      "hits": 15,
+      "damage": 3271,
+      "combatFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "cammy-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 14,
+      "damage": 3580,
+      "combatFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "cammy-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 85,
+      "hits": 14,
+      "damage": 3580,
+      "combatFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "cammy-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 254,
+      "hits": 14,
+      "damage": 3580,
+      "combatFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "cammy-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 508,
+      "hits": 14,
+      "damage": 3580,
+      "combatFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "luke-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 14,
+      "damage": 4036,
+      "combatFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "luke-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 92,
+      "hits": 14,
+      "damage": 4036,
+      "combatFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "luke-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 276,
+      "hits": 14,
+      "damage": 4036,
+      "combatFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "luke-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 552,
+      "hits": 14,
+      "damage": 4036,
+      "combatFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "juri-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 14,
+      "damage": 3370,
+      "combatFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "juri-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 87,
+      "hits": 14,
+      "damage": 3370,
+      "combatFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "juri-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 259,
+      "hits": 14,
+      "damage": 3370,
+      "combatFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "juri-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 518,
+      "hits": 14,
+      "damage": 3370,
+      "combatFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "mai-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 14,
+      "damage": 3375,
+      "combatFrames": 166,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "mai-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 88,
+      "hits": 14,
+      "damage": 3375,
+      "combatFrames": 166,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "mai-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 264,
+      "hits": 14,
+      "damage": 3375,
+      "combatFrames": 166,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "mai-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 528,
+      "hits": 14,
+      "damage": 3375,
+      "combatFrames": 166,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "iori-extended / none",
+      "pass": true,
+      "mode": "none",
+      "renders": 0,
+      "hits": 14,
+      "damage": 3990,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "iori-extended / sparse",
+      "pass": true,
+      "mode": "sparse",
+      "renders": 92,
+      "hits": 14,
+      "damage": 3990,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "iori-extended / integer",
+      "pass": true,
+      "mode": "integer",
+      "renders": 274,
+      "hits": 14,
+      "damage": 3990,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "finite": true
+    },
+    {
+      "name": "iori-extended / subframes",
+      "pass": true,
+      "mode": "subframes",
+      "renders": 548,
+      "hits": 14,
+      "damage": 3990,
+      "combatFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "finite": true
+    }
+  ],
+  "errors": [],
+  "note": "Synthetic sparse/integer/two-subframe schedules over fixed combat steps, not hardware refresh-rate benchmarks."
+}

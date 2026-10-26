@@ -1,0 +1,163 @@
+{
+  "cold": [
+    {
+      "id": "sLP",
+      "success": true,
+      "requestMs": 1.5,
+      "firstStepMs": 1.8999999999068677,
+      "firstRenderMs": 3.2000000001862645
+    },
+    {
+      "id": "sHP",
+      "success": true,
+      "requestMs": 1.8000000002793968,
+      "firstStepMs": 2,
+      "firstRenderMs": 2.6000000000931323
+    },
+    {
+      "id": "sHK",
+      "success": true,
+      "requestMs": 0.7000000001862645,
+      "firstStepMs": 3.2999999998137355,
+      "firstRenderMs": 3.2000000001862645
+    },
+    {
+      "id": "hissatsu_2",
+      "success": true,
+      "requestMs": 1.8999999999068677,
+      "firstStepMs": 2.6000000000931323,
+      "firstRenderMs": 3.8000000002793968
+    },
+    {
+      "id": "shinobibachi_3",
+      "success": true,
+      "requestMs": 2.099999999627471,
+      "firstStepMs": 2.3000000002793968,
+      "firstRenderMs": 3.5
+    },
+    {
+      "id": "SA1",
+      "success": true,
+      "requestMs": 3.8999999999068677,
+      "firstStepMs": 1.5,
+      "firstRenderMs": 2.2999999998137355
+    },
+    {
+      "id": "SA2",
+      "success": true,
+      "requestMs": 2.3999999999068677,
+      "firstStepMs": 1.3000000002793968,
+      "firstRenderMs": 4.100000000093132
+    },
+    {
+      "id": "SA3",
+      "success": true,
+      "requestMs": 2.5,
+      "firstStepMs": 1.7999999998137355,
+      "firstRenderMs": 2.3999999999068677
+    }
+  ],
+  "samples": [
+    {
+      "id": "idle",
+      "steps": 300,
+      "simulationMean": 0.13966666667101285,
+      "simulationP95": 0.20000000018626451,
+      "renderTwoMean": 4.083666666665425,
+      "renderTwoP95": 5.899999999906868,
+      "renderTwoMax": 10.600000000093132
+    },
+    {
+      "id": "sHK",
+      "steps": 300,
+      "simulationMean": 0.2296666666616996,
+      "simulationP95": 0.6999999997206032,
+      "renderTwoMean": 3.7560000000071403,
+      "renderTwoP95": 4.899999999906868,
+      "renderTwoMax": 18.199999999720603
+    },
+    {
+      "id": "hissatsu_2",
+      "steps": 300,
+      "simulationMean": 0.304666666664804,
+      "simulationP95": 0.6000000000931323,
+      "renderTwoMean": 4.0396666666694605,
+      "renderTwoP95": 5.5,
+      "renderTwoMax": 10.399999999906868
+    },
+    {
+      "id": "shinobibachi_3",
+      "steps": 300,
+      "simulationMean": 0.460666666678153,
+      "simulationP95": 1.599999999627471,
+      "renderTwoMean": 3.9673333333230887,
+      "renderTwoP95": 5.800000000279397,
+      "renderTwoMax": 20.40000000037253
+    },
+    {
+      "id": "SA3",
+      "steps": 300,
+      "simulationMean": 0.608000000018316,
+      "simulationP95": 2,
+      "renderTwoMean": 3.1716666666495925,
+      "renderTwoP95": 6.5,
+      "renderTwoMax": 8.300000000279397
+    }
+  ],
+  "history": [
+    {
+      "move": "sMP",
+      "maxIdenticalTimePoseDelta": 0
+    },
+    {
+      "move": "sHK",
+      "maxIdenticalTimePoseDelta": 0
+    },
+    {
+      "move": "hissatsu_0",
+      "maxIdenticalTimePoseDelta": 0
+    }
+  ],
+  "calls": {
+    "compose": 7646,
+    "solveAnimation": 7606,
+    "sockets": 19349
+  },
+  "label": "final-candidate-2",
+  "utc": "2026-10-05T16:04:23.451481+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "live": {
+    "cycles": 5,
+    "errors": [],
+    "rafCount": 1481,
+    "p50": 16.699999999999818,
+    "p95": 16.799999999999272,
+    "p99": 33.29999999999927,
+    "over25ms": 16,
+    "over50ms": 1,
+    "uniqueCameraTransforms": 1,
+    "clock": {
+      "ticks": 1509,
+      "callbacks": 1487,
+      "discardedSteps": 0,
+      "clampedMs": 0,
+      "pauses": 1,
+      "alpha": 0.9359999999996809,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 15.599999999994683
+    },
+    "elapsedWallSeconds": 25.003906643999926,
+    "browserMetricsDelta": {
+      "LayoutCount": 1486,
+      "RecalcStyleCount": 1486,
+      "LayoutDuration": 0.881724,
+      "RecalcStyleDuration": 2.111032,
+      "ScriptDuration": 5.653485,
+      "TaskDuration": 14.650808
+    }
+  },
+  "browserErrors": []
+}

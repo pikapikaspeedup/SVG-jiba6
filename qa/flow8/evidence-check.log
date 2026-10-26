@@ -1,0 +1,27 @@
+PASS All inherited moves/models/rigs/routes unchanged
+PASS 690 move records and 22 routes retained
+PASS Release metadata is v8 response
+PASS Formal game source calls all four new systems
+PASS Formal build includes new modules and UI
+PASS No runtime source-string patching reintroduced
+PASS All production JavaScript parses
+PASS INK-Street-Fighter-6.html contains production response runtime
+PASS INK-Street-Fighter-6-Player.html contains production response runtime
+PASS Current-build evidence: browser-contracts
+PASS Current-build evidence: ui
+PASS Current-build evidence: portability
+PASS Current-build evidence: state-matrix
+PASS Current-build evidence: comparison
+PASS Current-build evidence: candidate-observations
+PASS Final inherited regression executions bound to current HTML and logs
+PASS Current inherited evidence: browser-contracts
+PASS Current inherited evidence: transition-matrix
+PASS Current inherited evidence: recovery-observation
+PASS Current inherited evidence: render-and-practice
+PASS Current inherited evidence: effect-invariance
+PASS Current inherited evidence: character-chain
+PASS All 39 saved original mechanic assertions passed
+PASS All 522 saved single-move replays started with finite valid SVG
+PASS Saved G-practice and actual route coverage complete
+PASS Source patch reverses to v7 and reapplies to current source
+PASS Production unchanged since final-build freeze

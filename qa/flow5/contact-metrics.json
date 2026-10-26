@@ -1,0 +1,156 @@
+{
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "capturedAt": "2026-10-04T14:31:51.750Z",
+  "conditions": "Stationary world root, same torso layers, window interior excluding fades; solved ankle position, not toe outline or actual opponent contact.",
+  "windows": 14,
+  "samples": 1078,
+  "withoutConstraintMeanPx": 10.669851668711269,
+  "withConstraintMeanPx": 6.120037529756224,
+  "rows": [
+    {
+      "move": "kachousen-heavy",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 81,
+      "withoutConstraintMeanPx": 4.476174563686531,
+      "withConstraintMeanPx": 1.4750597538591295,
+      "maxWithoutPx": 17.279273467559754,
+      "maxWithPx": 5.83348889514866
+    },
+    {
+      "move": "kachousen-light",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 73,
+      "withoutConstraintMeanPx": 4.689906131038573,
+      "withConstraintMeanPx": 1.5796281420704998,
+      "maxWithoutPx": 17.3217437776113,
+      "maxWithPx": 5.952447030239277
+    },
+    {
+      "move": "kachousen-medium",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 77,
+      "withoutConstraintMeanPx": 4.574511474227466,
+      "withConstraintMeanPx": 1.5238051863139068,
+      "maxWithoutPx": 17.299341209772606,
+      "maxWithPx": 5.892937122640507
+    },
+    {
+      "move": "kachousen-od",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 65,
+      "withoutConstraintMeanPx": 4.955839952345233,
+      "withConstraintMeanPx": 1.6945463372605942,
+      "maxWithoutPx": 17.374643584109965,
+      "maxWithPx": 6.1172554197214435
+    },
+    {
+      "move": "ryuuenbu-heavy",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 153,
+      "withoutConstraintMeanPx": 10.798072034323916,
+      "withConstraintMeanPx": 10.219907274019059,
+      "maxWithoutPx": 25.42228554812049,
+      "maxWithPx": 24.919783185763897
+    },
+    {
+      "move": "ryuuenbu-light",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 109,
+      "withoutConstraintMeanPx": 9.480315844402051,
+      "withConstraintMeanPx": 8.988164788971016,
+      "maxWithoutPx": 25.4859031054685,
+      "maxWithPx": 24.986371341288
+    },
+    {
+      "move": "ryuuenbu-medium",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 129,
+      "withoutConstraintMeanPx": 10.373161315345769,
+      "withConstraintMeanPx": 9.8201926930672,
+      "maxWithoutPx": 25.44669971282328,
+      "maxWithPx": 24.946748816155498
+    },
+    {
+      "move": "ryuuenbu-od",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 141,
+      "withoutConstraintMeanPx": 11.57988847313025,
+      "withConstraintMeanPx": 10.950487445675368,
+      "maxWithoutPx": 25.42062364992521,
+      "maxWithPx": 24.920154479579523
+    },
+    {
+      "move": "sHK",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 61,
+      "withoutConstraintMeanPx": 22.3933294126058,
+      "withConstraintMeanPx": 1.7914663530084618,
+      "maxWithoutPx": 29,
+      "maxWithPx": 2.319999999999993
+    },
+    {
+      "move": "sHP",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 61,
+      "withoutConstraintMeanPx": 10.025707603391844,
+      "withConstraintMeanPx": 4.0223072895595315,
+      "maxWithoutPx": 20.46667848467799,
+      "maxWithPx": 9.793433655650833
+    },
+    {
+      "move": "sLK",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 25,
+      "withoutConstraintMeanPx": 32.183740903735035,
+      "withConstraintMeanPx": 5.878691967779807,
+      "maxWithoutPx": 38,
+      "maxWithPx": 8.560000000000002
+    },
+    {
+      "move": "sLP",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 21,
+      "withoutConstraintMeanPx": 2.880161291232284,
+      "withConstraintMeanPx": 1.9896711224636943,
+      "maxWithoutPx": 3.8926358790202786,
+      "maxWithPx": 3.4534653242638975
+    },
+    {
+      "move": "sMK",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 41,
+      "withoutConstraintMeanPx": 28.451309341392648,
+      "withConstraintMeanPx": 4.799045299189924,
+      "maxWithoutPx": 38,
+      "maxWithPx": 8.560000000000002
+    },
+    {
+      "move": "sMP",
+      "contact": "rear-support",
+      "socket": "rearFoot",
+      "samples": 41,
+      "withoutConstraintMeanPx": 11.153571899117262,
+      "withConstraintMeanPx": 0.9950840726108386,
+      "maxWithoutPx": 19.722132008259372,
+      "maxWithPx": 1.8400000000000034
+    }
+  ],
+  "limitations": [
+    "Informational measurement, not a universal acceptance threshold or pixel-perfect foot lock guarantee.",
+    "Live combat adds translation, projection, history limits, transition blends and fading windows.",
+    "No ground-plane collision or pelvis-centering solver."
+  ]
+}

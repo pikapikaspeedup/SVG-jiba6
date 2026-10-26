@@ -1,0 +1,23 @@
+{
+  "release": "9.0.0-fluid",
+  "createdAt": "2026-10-05T16:30:13.630007+00:00",
+  "sessionStart": {
+    "unix": 1791213988.4630566,
+    "utc": "2026-10-05T15:26:28Z"
+  },
+  "elapsedWorkMinutes": 63.75278269052505,
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "evidence": {
+    "qa/flow9/contracts.json": "afce45e3fb0116513b41aee1c96591e2889b9aba1a60e31ff6a0f43a0cb38b9a",
+    "qa/flow9/response-contracts.json": "5543443fcd5f313f9cf71f161d38cb7b1077ed2e63cf8df5c35dcd5a9b10b77f",
+    "qa/flow9/response-state-matrix.json": "99ef8c9be911705cbc0c18f27948ab5fa6af48d283b5fb00ae06322439732bd8",
+    "qa/flow9/rhythm-matrix.json": "5974bed40c19fde170bb8a01ecfbcbdee85e5d9971b84aa1a4f9bd40e7d0907d",
+    "qa/flow9/ui.json": "3ae571d9046bb5d3d4068e3df4ac87be4f62c1989fdf3d07ef900c388dcab957",
+    "qa/flow9/portability.json": "7ab10a5601edd5bc6589e31c78fd0d5d3775bba24614b1ac1b9d3cb991433a78",
+    "qa/flow9/final-regressions.json": "bba3e9ef7746550b2be5e5c3e9c929cae5f3bbcbed36fbc5854df1e2fc15aa25",
+    "qa/flow9/comparison.json": "7e1849d5c4eb717134a2875526a899caa27814c5046856f1cf347208ed3eb7a2",
+    "qa/flow9/same-frame-comparison.json": "42a7d1df857438deda97374dc7e8589cc3f30cba2c0cf3cae8ea2ec314d7e316",
+    "qa/flow9/endurance.json": "9f117aa37b629a5da387ed5b455c5608d1a61bddd34b36827643698db4a093ab",
+    "qa/flow9/validation.json": "34600d0ce9c2084cf9176da11ff3504e253c3d1cdc91648e961624cb8af3fb75"
+  }
+}

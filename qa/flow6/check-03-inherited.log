@@ -1,0 +1,4 @@
+PASS node tests/ink/core.test.js
+PASS node tests/forge/core.test.js
+PASS node tests/flow/core.test.js
+PASS /opt/pyvenv/bin/python tests/forge/regress.py

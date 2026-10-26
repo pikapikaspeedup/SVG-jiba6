@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "kind": "jump",
+      "frames": 111,
+      "events": 4,
+      "bytes": 223025,
+      "types": [
+        "state",
+        "land"
+      ],
+      "states": [
+        "idle",
+        "jump",
+        "land"
+      ],
+      "maxHits": 0,
+      "maxDamage": 0
+    },
+    {
+      "kind": "walk",
+      "frames": 111,
+      "events": 4,
+      "bytes": 216198,
+      "types": [
+        "state"
+      ],
+      "states": [
+        "idle",
+        "walk-forward",
+        "walk-back"
+      ],
+      "maxHits": 0,
+      "maxDamage": 0
+    },
+    {
+      "kind": "knockdown",
+      "frames": 176,
+      "events": 8,
+      "bytes": 373249,
+      "types": [
+        "state",
+        "contact",
+        "land"
+      ],
+      "states": [
+        "idle",
+        "attack:cHK",
+        "tumble",
+        "down",
+        "rise"
+      ],
+      "maxHits": 1,
+      "maxDamage": 740
+    },
+    {
+      "kind": "combo",
+      "frames": 291,
+      "events": 22,
+      "bytes": 752052,
+      "types": [
+        "state",
+        "contact",
+        "land"
+      ],
+      "states": [
+        "idle",
+        "attack:cMP",
+        "hit-high",
+        "attack:sMK",
+        "attack:sHP",
+        "attack:shinobibachi_3",
+        "attack:SA3",
+        "tumble",
+        "down"
+      ],
+      "maxHits": 12,
+      "maxDamage": 3640
+    }
+  ],
+  "browserErrors": [],
+  "capturedAt": "2026-10-05T06:49:41.435211+00:00",
+  "htmlSha256": "aafcd835c45639319767e74232b97fa73298b1ce9a471be83d15200208f5d827"
+}

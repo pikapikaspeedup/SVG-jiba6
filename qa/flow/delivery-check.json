@@ -1,0 +1,84 @@
+{
+  "total": 9,
+  "passed": 9,
+  "tests": [
+    {
+      "name": "index.html local entry links exist",
+      "pass": true,
+      "links": [
+        "dist/INK-Street-Fighter-6.html",
+        "dist/INK-Street-Fighter-6-Player.html",
+        "README.md",
+        "CHANGELOG-FLOW4.md",
+        "TEST-REPORT-FLOW4.md",
+        "docs/FLOW4-ENGINE.md",
+        "docs/FLOW-GUIDE.html"
+      ]
+    },
+    {
+      "name": "OPEN-ME.html local entry links exist",
+      "pass": true,
+      "links": [
+        "dist/INK-Street-Fighter-6.html",
+        "dist/INK-Street-Fighter-6-Player.html",
+        "README.md",
+        "CHANGELOG-FLOW4.md",
+        "TEST-REPORT-FLOW4.md",
+        "docs/FLOW4-ENGINE.md",
+        "docs/FLOW-GUIDE.html"
+      ]
+    },
+    {
+      "name": "index.html at 1440x1000",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "images": true
+      }
+    },
+    {
+      "name": "index.html at 390x844",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "images": true
+      }
+    },
+    {
+      "name": "docs/FLOW-GUIDE.html at 1440x1000",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "images": true
+      }
+    },
+    {
+      "name": "docs/FLOW-GUIDE.html at 390x844",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "images": true
+      }
+    },
+    {
+      "version": "4.0.0-flow",
+      "project": "ink-flow-sf6-v4",
+      "game": "4.0.0-ink-flow",
+      "manifest": "4.0.0",
+      "comboRoutes": 16,
+      "pass": true,
+      "name": "Standalone version and new storage namespace"
+    },
+    {
+      "name": "Repeated HTML export does not recursively grow template",
+      "pass": true,
+      "firstBytes": 7787152,
+      "secondBytes": 7787152
+    },
+    {
+      "name": "No browser script errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

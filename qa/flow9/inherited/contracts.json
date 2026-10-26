@@ -1,0 +1,385 @@
+{
+  "suite": "flow7-contracts",
+  "capturedAt": "2026-10-05T16:05:11.873Z",
+  "sourceSha256": {
+    "combat-flow": "ad9cf3d934f0e2f01b772e13076355b7850e087715add2de067b925a7d668b09",
+    "engine-clock": "bbff8a989a4766f81ea8225dc28c59af74f7bcc85cec683d178c11d62e894f86",
+    "project": "2806db2aa73484cb7e38fa5ad0f6f3b30768e9c6bc922292cbb504c432d58c41"
+  },
+  "total": 68,
+  "passed": 68,
+  "tests": [
+    {
+      "name": "60Hz simulation at 30 display Hz / speed 0.5",
+      "pass": true,
+      "detail": {
+        "callbacks": 301,
+        "steps": 300
+      }
+    },
+    {
+      "name": "60Hz simulation at 30 display Hz / speed 0.75",
+      "pass": true,
+      "detail": {
+        "callbacks": 301,
+        "steps": 450
+      }
+    },
+    {
+      "name": "60Hz simulation at 30 display Hz / speed 0.85",
+      "pass": true,
+      "detail": {
+        "callbacks": 301,
+        "steps": 510
+      }
+    },
+    {
+      "name": "60Hz simulation at 30 display Hz / speed 1",
+      "pass": true,
+      "detail": {
+        "callbacks": 301,
+        "steps": 600
+      }
+    },
+    {
+      "name": "60Hz simulation at 60 display Hz / speed 0.5",
+      "pass": true,
+      "detail": {
+        "callbacks": 601,
+        "steps": 300
+      }
+    },
+    {
+      "name": "60Hz simulation at 60 display Hz / speed 0.75",
+      "pass": true,
+      "detail": {
+        "callbacks": 601,
+        "steps": 450
+      }
+    },
+    {
+      "name": "60Hz simulation at 60 display Hz / speed 0.85",
+      "pass": true,
+      "detail": {
+        "callbacks": 601,
+        "steps": 510
+      }
+    },
+    {
+      "name": "60Hz simulation at 60 display Hz / speed 1",
+      "pass": true,
+      "detail": {
+        "callbacks": 601,
+        "steps": 600
+      }
+    },
+    {
+      "name": "60Hz simulation at 90 display Hz / speed 0.5",
+      "pass": true,
+      "detail": {
+        "callbacks": 901,
+        "steps": 300
+      }
+    },
+    {
+      "name": "60Hz simulation at 90 display Hz / speed 0.75",
+      "pass": true,
+      "detail": {
+        "callbacks": 901,
+        "steps": 450
+      }
+    },
+    {
+      "name": "60Hz simulation at 90 display Hz / speed 0.85",
+      "pass": true,
+      "detail": {
+        "callbacks": 901,
+        "steps": 510
+      }
+    },
+    {
+      "name": "60Hz simulation at 90 display Hz / speed 1",
+      "pass": true,
+      "detail": {
+        "callbacks": 901,
+        "steps": 600
+      }
+    },
+    {
+      "name": "60Hz simulation at 120 display Hz / speed 0.5",
+      "pass": true,
+      "detail": {
+        "callbacks": 1201,
+        "steps": 300
+      }
+    },
+    {
+      "name": "60Hz simulation at 120 display Hz / speed 0.75",
+      "pass": true,
+      "detail": {
+        "callbacks": 1201,
+        "steps": 450
+      }
+    },
+    {
+      "name": "60Hz simulation at 120 display Hz / speed 0.85",
+      "pass": true,
+      "detail": {
+        "callbacks": 1201,
+        "steps": 510
+      }
+    },
+    {
+      "name": "60Hz simulation at 120 display Hz / speed 1",
+      "pass": true,
+      "detail": {
+        "callbacks": 1201,
+        "steps": 600
+      }
+    },
+    {
+      "name": "60Hz simulation at 144 display Hz / speed 0.5",
+      "pass": true,
+      "detail": {
+        "callbacks": 1441,
+        "steps": 300
+      }
+    },
+    {
+      "name": "60Hz simulation at 144 display Hz / speed 0.75",
+      "pass": true,
+      "detail": {
+        "callbacks": 1441,
+        "steps": 450
+      }
+    },
+    {
+      "name": "60Hz simulation at 144 display Hz / speed 0.85",
+      "pass": true,
+      "detail": {
+        "callbacks": 1441,
+        "steps": 510
+      }
+    },
+    {
+      "name": "60Hz simulation at 144 display Hz / speed 1",
+      "pass": true,
+      "detail": {
+        "callbacks": 1441,
+        "steps": 600
+      }
+    },
+    {
+      "name": "60Hz simulation at 240 display Hz / speed 0.5",
+      "pass": true,
+      "detail": {
+        "callbacks": 2401,
+        "steps": 300
+      }
+    },
+    {
+      "name": "60Hz simulation at 240 display Hz / speed 0.75",
+      "pass": true,
+      "detail": {
+        "callbacks": 2401,
+        "steps": 450
+      }
+    },
+    {
+      "name": "60Hz simulation at 240 display Hz / speed 0.85",
+      "pass": true,
+      "detail": {
+        "callbacks": 2401,
+        "steps": 510
+      }
+    },
+    {
+      "name": "60Hz simulation at 240 display Hz / speed 1",
+      "pass": true,
+      "detail": {
+        "callbacks": 2401,
+        "steps": 600
+      }
+    },
+    {
+      "name": "Pause discards wall time; resume never replays hidden combat",
+      "pass": true
+    },
+    {
+      "name": "Long foreground stall is bounded, not an unbounded catch-up",
+      "pass": true
+    },
+    {
+      "name": "Setting update is atomic on an invalid later field",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"buffer\":0}",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"buffer\":1000}",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"rules\":\"unlimited\"}",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"rhythm\":\"official\"}",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"speed\":null}",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"speed\":-1}",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid setting {\"script\":\"x\"}",
+      "pass": true
+    },
+    {
+      "name": "Action clock preserves a confirmation through arbitrarily long hitstop",
+      "pass": true
+    },
+    {
+      "name": "Age migrates a diagnostic record without an action timestamp",
+      "pass": true
+    },
+    {
+      "name": "Configured end frame is inclusive; next action frame is rejected",
+      "pass": true
+    },
+    {
+      "name": "Delayed edge opens only on its authored actionable frame",
+      "pass": true
+    },
+    {
+      "name": "Hit-only edge rejects guarding; contact edge accepts a confirmed block",
+      "pass": true
+    },
+    {
+      "name": "No authored edge can cancel a whiff",
+      "pass": true
+    },
+    {
+      "name": "Minimum hit count is independent of active-frame attempt count",
+      "pass": true
+    },
+    {
+      "name": "Two additional edges can execute; the third is refused",
+      "pass": true
+    },
+    {
+      "name": "Legacy rules ignore only extra edges, not existing special cancels",
+      "pass": true
+    },
+    {
+      "name": "Known category cancel conditions remain separate from authored targets",
+      "pass": true
+    },
+    {
+      "name": "Queries are pure and a failed edge does not leak into the next fighter",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: whiff gate",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: window reversed",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: fractional window",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: unbounded depth",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: zero hits",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: duplicate ID",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: duplicate target",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: invalid target",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: empty target",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: negative frame",
+      "pass": true
+    },
+    {
+      "name": "Reject authored edge: too many edges",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: SA1",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: SA2",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: SA3",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: CA",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: throw",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: backthrow",
+      "pass": true
+    },
+    {
+      "name": "Unsupported extra-cancel source is rejected: airthrow",
+      "pass": true
+    },
+    {
+      "name": "State clips cannot act as attack-cancel sources",
+      "pass": true
+    },
+    {
+      "name": "Root graph remains optional for v6 imports",
+      "pass": true
+    },
+    {
+      "name": "All 690 current move files pass schema and same-character target validation",
+      "pass": true,
+      "detail": {
+        "moves": 690,
+        "extraEdges": 35
+      }
+    },
+    {
+      "name": "Weighted impacts differentiate hit level and retain shorter intermediate beats",
+      "pass": true
+    },
+    {
+      "name": "Diagnostic contact history is bounded under repeated use",
+      "pass": true
+    }
+  ]
+}

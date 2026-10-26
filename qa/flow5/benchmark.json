@@ -1,0 +1,54 @@
+{
+  "capturedAt": "2026-10-04T14:51:59.305Z",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "files": [
+    "enbu-ada-zakura.json",
+    "hissatsu-shinobi-bachi-heavy.json",
+    "ryuuenbu-heavy.json",
+    "sMP.json"
+  ],
+  "samplesPerRun": 75000,
+  "repetitions": 7,
+  "warmup": 10000,
+  "legacyMedianMs": 614.1961719999999,
+  "compiledMedianMs": 451.83135600000014,
+  "runs": [
+    {
+      "legacyMs": 593.299353,
+      "compiledMs": 440.10359900000003
+    },
+    {
+      "legacyMs": 595.3994339999999,
+      "compiledMs": 438.12334899999996
+    },
+    {
+      "legacyMs": 599.3782329999999,
+      "compiledMs": 448.80600600000025
+    },
+    {
+      "legacyMs": 623.9519869999999,
+      "compiledMs": 451.83135600000014
+    },
+    {
+      "legacyMs": 614.1961719999999,
+      "compiledMs": 474.0474379999996
+    },
+    {
+      "legacyMs": 616.8516970000001,
+      "compiledMs": 492.16526200000044
+    },
+    {
+      "legacyMs": 620.7180060000001,
+      "compiledMs": 458.2712219999994
+    }
+  ],
+  "checksum": 51186995.68197236,
+  "limitations": [
+    "Isolated Node CPU sampler only; excludes graph, DOM/SVG, springs, GPU and browser rendering.",
+    "Other tests may be active on the same host. Do not advertise this as game FPS improvement."
+  ],
+  "ratio": 1.359348269755762
+}

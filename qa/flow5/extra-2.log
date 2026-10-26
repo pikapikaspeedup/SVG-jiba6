@@ -1,0 +1,73 @@
+{
+  "total": 34,
+  "passed": 34,
+  "benchmark": [
+    {
+      "character": "ryu",
+      "nodes": 552,
+      "samples": 240,
+      "medianMs": 1,
+      "p95Ms": 3.3999999999068677,
+      "maxMs": 13.100000000093132
+    },
+    {
+      "character": "ken",
+      "nodes": 541,
+      "samples": 240,
+      "medianMs": 0.8999999999068677,
+      "p95Ms": 2.8999999999068677,
+      "maxMs": 4
+    },
+    {
+      "character": "chun",
+      "nodes": 560,
+      "samples": 240,
+      "medianMs": 0.7999999998137355,
+      "p95Ms": 2.7999999998137355,
+      "maxMs": 4.800000000279397
+    },
+    {
+      "character": "cammy",
+      "nodes": 552,
+      "samples": 240,
+      "medianMs": 0.8000000002793968,
+      "p95Ms": 1.8999999999068677,
+      "maxMs": 2.400000000372529
+    },
+    {
+      "character": "luke",
+      "nodes": 544,
+      "samples": 240,
+      "medianMs": 0.8000000002793968,
+      "p95Ms": 2.1000000000931323,
+      "maxMs": 2.8999999999068677
+    },
+    {
+      "character": "juri",
+      "nodes": 550,
+      "samples": 240,
+      "medianMs": 0.8000000002793968,
+      "p95Ms": 2,
+      "maxMs": 2.7000000001862645
+    },
+    {
+      "character": "mai",
+      "nodes": 603,
+      "samples": 240,
+      "medianMs": 1.400000000372529,
+      "p95Ms": 5.2999999998137355,
+      "maxMs": 9.5
+    },
+    {
+      "character": "iori",
+      "nodes": 545,
+      "samples": 240,
+      "medianMs": 0.7000000001862645,
+      "p95Ms": 2,
+      "maxMs": 4.199999999720603
+    }
+  ],
+  "note": "Synchronous JavaScript render+FX time only in headless Chromium; not GPU/paint time or a device FPS guarantee.",
+  "errors": []
+}
+failures: []

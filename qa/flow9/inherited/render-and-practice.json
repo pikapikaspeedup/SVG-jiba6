@@ -1,0 +1,3403 @@
+{
+  "suite": "flow7-display-schedule-and-G-practice",
+  "capturedAt": "2026-10-05T16:06:42.796774+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "displayTotal": 72,
+  "displayPassed": 72,
+  "practiceTotal": 36,
+  "practicePassed": 36,
+  "display": [
+    {
+      "route": "mai-flow-fan",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 28,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 46,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 119,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 202,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 36,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 60,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 128,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 216,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 22,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 36,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 77,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 130,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 33,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 55,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 120,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 203,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 43,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 73,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 130,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 221,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 29,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 48,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 30,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 83,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 140,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 23,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 46,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 101,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 202,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 30,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 60,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 108,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 216,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 18,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 36,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 65,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 130,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 28,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 55,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 102,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 203,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 37,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 73,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 111,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 221,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 24,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 48,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 30,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 70,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 140,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 55,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 46,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 238,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 202,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 71,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 60,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 255,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 216,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 43,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 36,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 153,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 130,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 65,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 55,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 239,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 203,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 86,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 73,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 260,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 221,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 57,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 48,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 60,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 165,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 140,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 46,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 46,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 202,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 202,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 60,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 60,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 216,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 216,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 36,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 36,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": -1,
+      "callbacks": 130,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 130,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 55,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 55,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 203,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 203,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 73,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 73,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 221,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 221,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 48,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 48,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 60,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": -1,
+      "callbacks": 140,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 140,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 130,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 46,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 571,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 202,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 170,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 60,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 610,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 216,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 102,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 36,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 368,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 130,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 156,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 55,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 574,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 203,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 207,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 73,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 624,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 221,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 136,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 48,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 144,
+      "speed": 0.85,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 396,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 140,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 111,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 46,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 485,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 202,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 144,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 60,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 519,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 216,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 87,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 36,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "legacy",
+      "side": 1,
+      "callbacks": 312,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 130,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 132,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "elapsedTicks": 55,
+      "actionFrames": 34,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 488,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "elapsedTicks": 203,
+      "actionFrames": 121,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 176,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "elapsedTicks": 73,
+      "actionFrames": 43,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 531,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "elapsedTicks": 221,
+      "actionFrames": 130,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 116,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "elapsedTicks": 48,
+      "actionFrames": 27,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "hz": 144,
+      "speed": 1,
+      "rhythm": "weighted",
+      "side": 1,
+      "callbacks": 336,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "elapsedTicks": 140,
+      "actionFrames": 70,
+      "discarded": 0,
+      "finite": true,
+      "pass": true
+    }
+  ],
+  "practice": [
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "frozenRequests": 0,
+      "accepted": 3,
+      "expectedRequests": 3,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "frozenRequests": 1,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 32,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "frozenRequests": 0,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 7,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 27,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "frozenRequests": 1,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 7,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 27,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 41,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "frozenRequests": 0,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 5,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 9,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "frozenRequests": 1,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 5,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 9,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 25,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "frozenRequests": 2,
+      "accepted": 3,
+      "expectedRequests": 3,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 23,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 23,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 35,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 35,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 30,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 30,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 30,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 30,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 44,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 44,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 28,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 28,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "frozenRequests": 2,
+      "accepted": 3,
+      "expectedRequests": 3,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 26,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 26,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 26,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 26,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 38,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 38,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 33,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 33,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 33,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 33,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 47,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 47,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 19,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 19,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 19,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 19,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 31,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 31,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "frozenRequests": 0,
+      "accepted": 3,
+      "expectedRequests": 3,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "frozenRequests": 1,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 32,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "frozenRequests": 0,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 7,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 27,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "frozenRequests": 1,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 7,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 27,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 41,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "frozenRequests": 0,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 5,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 9,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "buffer": 0,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "frozenRequests": 1,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 5,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 9,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 25,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "frozenRequests": 2,
+      "accepted": 3,
+      "expectedRequests": 3,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 23,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 23,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 35,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 35,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 30,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 30,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 10,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 30,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 30,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 44,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 44,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "buffer": 3,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 8,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 28,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 28,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "frozenRequests": 2,
+      "accepted": 3,
+      "expectedRequests": 3,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 26,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_0",
+          "frame": 20,
+          "expires": 26,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sHP",
+          "frame": 8,
+          "expires": 14,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 26,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "hissatsu_3",
+          "frame": 20,
+          "expires": 26,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 38,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "SA3",
+          "frame": 32,
+          "expires": 38,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 33,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_0",
+          "frame": 27,
+          "expires": 33,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "cMP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "sMK",
+          "frame": 7,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sHP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 33,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "shinobibachi_3",
+          "frame": 27,
+          "expires": 33,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 47,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 41,
+          "expires": 47,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "frozenRequests": 3,
+      "accepted": 4,
+      "expectedRequests": 4,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 19,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_0",
+          "frame": 13,
+          "expires": 19,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "buffer": 6,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "frozenRequests": 4,
+      "accepted": 5,
+      "expectedRequests": 5,
+      "log": [
+        {
+          "cursor": 0,
+          "move": "sLK",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "cLP",
+          "frame": 5,
+          "expires": 11,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sLP",
+          "frame": 9,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 19,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 13,
+          "expires": 19,
+          "status": "accepted",
+          "delay": 1
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 31,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA2",
+          "frame": 25,
+          "expires": 31,
+          "status": "accepted",
+          "delay": 1
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "browserErrors": [],
+  "note": "Synthetic 30/60/144Hz callback schedules render production SVG and run actual combat. Not a real device FPS benchmark. G tests submit one explicit request per step, with 3/6F requests during actual hitstop."
+}

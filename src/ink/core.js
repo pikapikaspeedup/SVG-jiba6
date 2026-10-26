@@ -4,7 +4,7 @@
  */
 'use strict';
 globalThis.INK = (() => {
-  const VERSION = '0.1.0';
+  const VERSION = '9.0.0-fluid';
   const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
   const lerp = (a, b, t) => a + (b - a) * t;
   const rad = a => a * Math.PI / 180;
@@ -23,7 +23,7 @@ globalThis.INK = (() => {
     svg: m => 'matrix('+m.map(n=>Math.round(n*10000)/10000).join(' ')+')'
   };
   const finite = (v,label='value') => {if(typeof v!=='number'||!Number.isFinite(v))throw TypeError(label+' must be finite');return v;};
-  const copy = o => Object.fromEntries(Object.entries(o).map(([k,v])=>[k,Array.isArray(v)?v.slice():v]));
+  const copy = o => {const out={};for(const k in o)if(Object.hasOwn(o,k)){const v=o[k];out[k]=Array.isArray(v)?v.slice():v;}return out;};
   const blend = (a,b,t) => {const p=copy(a);for(const k in b){const bv=b[k],av=a[k]??(Array.isArray(bv)?bv.map(()=>0):0);p[k]=Array.isArray(bv)?bv.map((v,i)=>lerp(av[i],v,t)):lerp(av,bv,t);}return p;};
 
   /** Two-bone IK with an explicit pole sign. No history-dependent bend flips.
@@ -46,7 +46,7 @@ globalThis.INK = (() => {
   }
   function bodyMatrix(p) {return mat.multiply(mat.compose(0,-181+(p.bob||0),p.lean||0),mat.compose(0,181));}
   function bodyPoint(p,q) {return mat.point(bodyMatrix(p),q);}
-  const basePose = {lean:0,bob:0,head:0,chest:0,pelvis:0,spin:0,turn:0,depth:1,floor:0,rootShift:0,open:0,fan:0,fanAngle:0,ffoot:0,rfoot:0,reachScale:1,reachFoot:0,frontArmProjection:1,rearArmProjection:1,frontLegProjection:1,rearLegProjection:1,rw:[-8,-286],fw:[89,-298],ra:[-86,-16],fa:[103,-16]};
+  const basePose = {yaw:0,chestYaw:0,pelvisYaw:0,headYaw:0,lean:0,bob:0,head:0,chest:0,pelvis:0,spin:0,turn:0,depth:1,floor:0,rootShift:0,open:0,fan:0,fanAngle:0,ffoot:0,rfoot:0,reachScale:1,reachFoot:0,frontArmProjection:1,rearArmProjection:1,frontLegProjection:1,rearLegProjection:1,rw:[-8,-286],fw:[89,-298],ra:[-86,-16],fa:[103,-16]};
   /** Generic forward-kinematics graph. Asset data, not character names, defines
    * the graph. Parents precede children; cycles and singular transforms fail fast.
    */
@@ -78,9 +78,9 @@ globalThis.INK = (() => {
     }
     static solveAnimation(c,p) {
       const matrices=Rig.torsoMatrices(p),t=mat.multiply(mat.inverse(bodyMatrix(p)),mat.multiply(matrices[2],mat.compose(0,295)));
-      const adjusted={...c,rigRearShoulder:mat.point(t,c.rigRearShoulder||[-42,-292]),rigFrontShoulder:mat.point(t,c.rigFrontShoulder||[42,-290])};
+      const project=q=>globalThis.INK?.Turn?INK.Turn.shoulder(q,p):q;const adjusted={...c,rigRearShoulder:mat.point(t,project(c.rigRearShoulder||[-42,-292])),rigFrontShoulder:mat.point(t,project(c.rigFrontShoulder||[42,-290]))};
       const r=Rig.solveLegacy(adjusted,p),thigh=(c.rigLengths||[])[2]||(c.id==='chun'?100:96),shin=(c.rigLengths||[])[3]||98;
-      if(p.pelvis||c.rigHipWidth){r.rearLeg=twoBone(mat.point(matrices[0],[-(c.rigHipWidth||52)/2,0]),p.ra,thigh,shin,p.rearLegPole??1,1);r.frontLeg=twoBone(mat.point(matrices[0],[(c.rigHipWidth||52)/2,0]),p.fa,thigh,shin,p.frontLegPole??-1,1);}
+      if(p.pelvis||c.rigHipWidth||globalThis.INK?.Turn){const h=q=>globalThis.INK?.Turn?INK.Turn.hip(q,p):q;r.rearLeg=twoBone(mat.point(matrices[0],h([-(c.rigHipWidth||52)/2,0])),p.ra,thigh,shin,p.rearLegPole??1,1);r.frontLeg=twoBone(mat.point(matrices[0],h([(c.rigHipWidth||52)/2,0])),p.fa,thigh,shin,p.frontLegPole??-1,1);}
       // Artist-authored 2.5D projection, not anatomical stretch. Shorten the
       // projected bones at an edge-on pose instead of bending a straight limb
       // into a knee-to-chest fold. Gameplay's compatibility rig bypasses this.
@@ -138,7 +138,7 @@ globalThis.INK = (() => {
         if(Array.isArray(basePose[channel])&&sz!==2)throw TypeError('Two-vector channel expected');
         if(shape!==undefined&&shape!==sz)throw TypeError('Track shape changed');shape=sz;
         for(const v of sz?value:[value])if(Math.abs(finite(v))>10000)throw RangeError('Excessive key value');
-        if(curve!==undefined){if(Array.isArray(curve)){if(curve.length!==4)throw TypeError('Bezier needs four values');curve.forEach(v=>finite(v));if(curve[0]<0||curve[0]>1||curve[2]<0||curve[2]>1)throw RangeError('Bezier x must be 0…1');}else if(!['smooth','linear','strike','load','hold'].includes(curve))throw TypeError('Unknown curve');}
+        if(curve!==undefined){if(Array.isArray(curve)){if(curve.length!==4)throw TypeError('Bezier needs four values');curve.forEach(v=>finite(v));if(curve[0]<0||curve[0]>1||curve[2]<0||curve[2]>1)throw RangeError('Bezier x must be 0…1');}else if(!['smooth','linear','strike','load','hold','spline'].includes(curve))throw TypeError('Unknown curve');}
       }
     }
     if(data.phases){for(const name of ['startup','active','recovery']){const q=data.phases[name];if(!Array.isArray(q)||q.length!==2||!q.every(Number.isFinite)||q[0]<0||q[1]<q[0]||q[1]>data.duration)throw TypeError('Invalid phase '+name);}}
@@ -148,6 +148,10 @@ globalThis.INK = (() => {
     if(data.meta!==undefined){
       if(!data.meta||typeof data.meta!=='object'||Array.isArray(data.meta))throw TypeError('Invalid clip metadata');
       if(data.meta.socket!==undefined&&!sockets.includes(data.meta.socket))throw TypeError('Unknown attachment socket');
+      if(data.meta.secondaryBeats!==undefined){
+        const beats=data.meta.secondaryBeats;if(!Array.isArray(beats)||beats.length>64)throw RangeError('Secondary beats 0..64');
+        for(const b of beats)if(!b||!Number.isFinite(b.frame)||b.frame<0||b.frame>data.duration||!Number.isFinite(b.amplitude)||Math.abs(b.amplitude)>30)throw RangeError('Invalid secondary beat');
+      }
     }
     for(const e of data.events||[]){
       if(!e||!Number.isInteger(e.frame)||e.frame<0||e.frame>=data.duration||typeof e.type!=='string'||e.type.length>80)throw TypeError('Invalid event');
@@ -155,15 +159,40 @@ globalThis.INK = (() => {
       if(e.amplitude!==undefined&&Math.abs(finite(e.amplitude))>1000)throw RangeError('Excessive impulse amplitude');
       for(const key of ['decay','frequency'])if(e[key]!==undefined&&(finite(e[key])<0||e[key]>10))throw RangeError('Invalid impulse '+key);
     }
+    globalThis.INK?.MotionGraph?.validate(data);
     return data;
+  }
+  function sampleTrack(keys,t) {
+    if(t<=keys[0][0])return keys[0][1];
+    if(t>=keys.at(-1)[0])return keys.at(-1)[1];
+    let lo=0,hi=keys.length-1;while(hi-lo>1){const mid=(lo+hi)>>1;if(keys[mid][0]<=t)lo=mid;else hi=mid;}
+    const a=keys[lo],b=keys[hi],h=b[0]-a[0],u=(t-a[0])/h;
+    const component=j=>{
+      const val=k=>Array.isArray(k[1])?k[1][j]:k[1],x=val(a),y=val(b);
+      if(b[2]!=='spline')return lerp(x,y,easing(u,b[2]));
+      const d=(y-x)/h;
+      const tangent=(i)=>{
+        if(i===0)return (val(keys[1])-val(keys[0]))/(keys[1][0]-keys[0][0]);
+        if(i===keys.length-1)return (val(keys[i])-val(keys[i-1]))/(keys[i][0]-keys[i-1][0]);
+        const h0=keys[i][0]-keys[i-1][0],h1=keys[i+1][0]-keys[i][0],d0=(val(keys[i])-val(keys[i-1]))/h0,d1=(val(keys[i+1])-val(keys[i]))/h1;
+        if(d0*d1<=0)return 0;const w0=2*h1+h0,w1=h1+2*h0;return (w0+w1)/(w0/d0+w1/d1);
+      };
+      if(Math.abs(d)<1e-12)return x;
+      let m0=tangent(lo),m1=tangent(hi);
+      // Explicit contact/hold keys are velocity boundaries, not spline handles.
+      if(['hold','strike','load'].includes(a[2]))m0=0;
+      if(hi+1<keys.length&&['hold','strike','load'].includes(keys[hi+1][2]))m1=0;
+      const u2=u*u,u3=u2*u;
+      return clamp((2*u3-3*u2+1)*x+(u3-2*u2+u)*h*m0+(-2*u3+3*u2)*y+(u3-u2)*h*m1,Math.min(x,y),Math.max(x,y));
+    };
+    return Array.isArray(a[1])?a[1].map((_,j)=>component(j)):component(0);
   }
   class Clip {
     constructor(data) {validateClip(data);this.data=JSON.parse(JSON.stringify(data));this.id=data.id;this.duration=data.duration;this.tracks=this.data.tracks;this.events=(this.data.events||[]).slice().sort((a,b)=>a.frame-b.frame);}
     sample(frame,base=basePose) {
       const p=copy(base),t=clamp(frame,0,this.duration);
       for(const [channel,keys] of Object.entries(this.tracks)){
-        let value=keys[0][1];if(t>=keys.at(-1)[0])value=keys.at(-1)[1];
-        else for(let i=1;i<keys.length;i++){if(t<=keys[i][0]){const a=keys[i-1],b=keys[i],u=easing((t-a[0])/(b[0]-a[0]),b[2]);value=Array.isArray(a[1])?a[1].map((v,j)=>lerp(v,b[1][j],u)):lerp(a[1],b[1],u);break;}}
+        const value=sampleTrack(keys,t);
         p[channel]=Array.isArray(value)?value.slice():value;
       }return p;
     }
@@ -266,6 +295,6 @@ globalThis.INK = (() => {
     for(const {frame:at,amplitude=8,decay=.065,frequency=.31} of impulses){const t=frame-at;if(t>=0)result+=amplitude*Math.exp(-decay*t)*Math.sin(frequency*t);}
     return clamp(result,-38,38);
   }
-  return {VERSION,clamp,lerp,rad,vec,mat,finite,copy,blend,twoBone,bodyMatrix,bodyPoint,basePose,Rig,Skeleton,easing,Clip,Player,FixedClock,validateClip,compilePath,pathString,WeightedPath,MorphPath,followThrough};
+  return {VERSION,clamp,lerp,rad,vec,mat,finite,copy,blend,twoBone,bodyMatrix,bodyPoint,basePose,Rig,Skeleton,easing,Clip,Player,FixedClock,validateClip,sampleTrack,compilePath,pathString,WeightedPath,MorphPath,followThrough};
 })();
 if(typeof module!=='undefined'&&module.exports)module.exports=globalThis.INK;

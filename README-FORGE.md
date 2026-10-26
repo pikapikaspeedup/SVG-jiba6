@@ -1,3 +1,9 @@
+> 历史工坊说明；当前 FLOW 07 入口、连携与节奏用法请先读根目录 README.md。
+
+> 本文是继承的通用动作工坊说明。当前版本、舞的新增效果及测试结果见 README.md 和 TEST-REPORT-FLOW4.md。
+
+> 历史版本说明（FORGE 2）。当前 FLOW 03 的入口、粒子与连段训练见 [README-FLOW.md](README-FLOW.md)。
+
 # INK FORGE 2 — 街霸 6 / SVG 格斗创作系统
 
 **先打开 `OPEN-ME.html`。无需安装，两个成品 HTML 都可独立离线使用。**

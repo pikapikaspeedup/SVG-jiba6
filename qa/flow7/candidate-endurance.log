@@ -1,0 +1,6 @@
+CHECKPOINT 1.5 cycles 1 heap 19597444 nodes 42587 errors []
+CHECKPOINT 62.0 cycles 19 heap 22001828 nodes 44290 errors []
+CHECKPOINT 122.5 cycles 35 heap 23164228 nodes 44140 errors []
+CHECKPOINT 183.2 cycles 53 heap 26297764 nodes 44339 errors []
+CHECKPOINT 243.7 cycles 71 heap 26180136 nodes 45147 errors []
+CHECKPOINT 304.4 cycles 89 heap 26394028 nodes 44326 errors []

@@ -1,0 +1,984 @@
+diff --git a/assets/ink/project.json b/assets/ink/project.json
+index 7655f84..1facb2b 100644
+--- a/assets/ink/project.json
++++ b/assets/ink/project.json
+@@ -1,8 +1,8 @@
+ {
+   "schema": "ink-project",
+   "version": 2,
+-  "name": "INK FLOW 05 / Motion Graph & FX Runtime",
+-  "build": "5.0.0",
++  "name": "INK FLOW 06 / Continuous Articulation",
++  "build": "6.0.0",
+   "baseCommit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+   "rootPolicy": "combat",
+   "characters": [
+diff --git a/forge/app.js b/forge/app.js
+index a27618a..d00d3d7 100644
+--- a/forge/app.js
++++ b/forge/app.js
+@@ -56,7 +56,7 @@
+    html+=section('时间 / TIMING',`<p class="f-help">${r.gameId.startsWith('@')?'状态片段随模拟状态采样；步态与跳跃相位归一化。投技的抓取与判伤时刻由双人约束负责。':'改动帧数会同步调整动作、有效窗口与特效；保存后实战使用新时序。'}</p>${num('起手','f-startup',b.startup,1,180)}${num('有效','f-active',b.active,1,300)}${num('收招','f-recovery',b.recovery,1,300)}<button id="f-retime">应用时序</button>`);
+    html+=section('姿势 / POSE',`${sel('控制点','f-selected',state.selected,[['fw','前手腕'],['rw','后手腕'],['fa','前脚踝'],['ra','后脚踝']])}<div class="f-two-fields">${num('X','f-target-x',q[0])}${num('Y','f-target-y',q[1])}</div>${num('身体倾斜','f-lean',p.lean,-90,90)}${num('胸廓扭转','f-chest',p.chest||0,-70,70)}${num('身体空翻','f-spin',p.spin||0,-1080,1080)}${num('轴向转身 °','f-yaw',p.yaw||0,-1440,1440,.1)}${num('头部转向差 °','f-head-yaw',p.headYaw||0,-90,90,.1)}<button id="f-pose-apply">写入此姿势</button><p class="f-help">直接拖动画布上的手腕、脚踝，会在当前帧写入关键帧。IK 限制骨长，避免把手臂拉成橡皮筋。</p>`);
+    const graph=r.clip.meta?.motion5,springs=graph?.springs||{};
+-   html+=section('FLOW 05 / 动作图',`${num('叠加层权重','f-motion-weight',graph?.weightScale??1,0,1,.05)}${num('弹簧角频率 / F','f-motion-frequency',springs.frequency??.34,.08,1,.01)}${num('弹簧阻尼比','f-motion-damping',springs.damping??.42,.1,2,.05)}${num('发辫跟随强度','f-motion-hair',springs.hairStrength??1,0,1.8,.05)}${num('腰带跟随强度','f-motion-cloth',springs.clothStrength??1,0,1.8,.05)}<button id="f-motion-apply">更新动作图参数</button><p class="f-help">${graph?.layers?.length||0} 个分层轨道 · ${graph?.contacts?.length||0} 段支撑脚约束。参数与招式 JSON 一起保存；改变时序时同步重映射层与接触窗口。手脚控制点显示基础轨，修正仅用于表现层。</p>`);
++   html+=section('FLOW 06 / 动作图',`${num('叠加层权重','f-motion-weight',graph?.weightScale??1,0,1,.05)}${num('弹簧角频率 / F','f-motion-frequency',springs.frequency??.34,.08,1,.01)}${num('弹簧阻尼比','f-motion-damping',springs.damping??.42,.1,2,.05)}${num('发辫跟随强度','f-motion-hair',springs.hairStrength??1,0,1.8,.05)}${num('腰带跟随强度','f-motion-cloth',springs.clothStrength??1,0,1.8,.05)}<button id="f-motion-apply">更新动作图参数</button><p class="f-help">${graph?.layers?.length||0} 个分层轨道 · ${graph?.contacts?.length||0} 段支撑脚约束。参数与招式 JSON 一起保存；改变时序时同步重映射层与接触窗口。手脚控制点显示基础轨，修正仅用于表现层。</p>`);
+    html+=section('共同时间轴',`<p class="f-help">模拟 60 Hz；暂停与命中定格不推进动作。画布使用连续插值，伤害只由战斗模拟结算。</p><span class="f-socket-tag">${esc(r.command||r.gameId)}</span>`);
+   }else if(state.inspector==='model'){
+    html+=section('形体 / MODEL',`${range('头部比例','f-model-head',state.model.headScale,.6,1.1)}${range('肢体体积','f-model-volume',state.model.style.volume,.75,1.3)}${range('胸廓体量','f-model-chest',state.model.shape?.chest??1,.75,1.25)}${range('腰线','f-model-waist',state.model.shape?.waist??1,.75,1.25)}${range('髋部轮廓','f-model-hip',state.model.shape?.hip??1,.75,1.25)}${range('上臂宽度','f-model-arm',state.model.arm[0],8,34,.1)}${range('大腿宽度','f-model-leg',state.model.leg[0],17,40,.1)}<label class="f-field">新建特效默认色<input id="f-model-color" type="color" value="${state.model.accent}"></label><p class="f-help">形体单独保存为 model.json，自动用于该角色的全部动作与实战。</p>`);
+@@ -66,7 +66,7 @@
+   }else if(state.inspector==='boxes'){
+    const box=r.boxes.items[state.box];html+=section('判定模式',`${sel('规则来源','f-box-mode',r.boxes.mode,[['inherit','继承原战斗规则'],['custom','自定义近战判定']])}<p class="f-help">默认保留原来的伤害与判定规则。自定义仅替换当前动作的近战框；投技与投射物仍由原规则负责。结束帧不包含在内。</p><button id="f-box-add">＋ 攻击框</button> <button id="f-hurt-add">＋ 受击框</button>`);
+    if(box){html+=section('挂点判定框',`<select id="f-box-select" class="f-list-select">${selectHTML(r.boxes.items.map((v,i)=>[String(i),v.id+' / '+v.kind]),String(state.box))}</select>${sel('挂点','f-box-socket',box.socket,Object.entries(socketNames))}<div class="f-two-fields">${num('开始','f-box-start',box.start,0,r.clip.duration-1)}${num('结束','f-box-end',box.end,1,r.clip.duration)}${num('X','f-box-x',box.x)}${num('Y','f-box-y',box.y)}${num('宽','f-box-w',box.w,2,500)}${num('高','f-box-h',box.h,2,500)}</div><button id="f-box-apply">更新判定框</button> <button id="f-box-delete">删除</button><p class="f-help">可直接拖动画布中的矩形。位置相对所选骨骼挂点，换边时一起镜像。</p>`);}
+-   html+=section('避免“画面打中了却没判定”',`<p class="f-help">判定挂点使用基础动作与规则骨架；FLOW 05 的叠加层、支撑脚和附件修正只改变展示骨架。自定义攻击框必须位于有效阶段内。多个框只扩大命中范围，不会凭空增加连击次数。</p>`);
++   html+=section('避免“画面打中了却没判定”',`<p class="f-help">判定挂点使用基础动作与规则骨架；FLOW 06 的叠加层、支撑脚和附件修正只改变展示骨架。自定义攻击框必须位于有效阶段内。多个框只扩大命中范围，不会凭空增加连击次数。</p>`);
+   }else{
+    const e=r.fx[state.fx];html+=section('特效事件 / FX',`<p class="f-help">历史挂点形成拖尾，种子粒子按出生帧、速度、阻力与寿命重建；反向拖动不丢帧。实时命中火花由战斗事件触发。</p><button id="f-fx-add">＋ 特效事件</button>`);
+    if(e){html+=section('轨迹设置',`<select id="f-fx-select" class="f-list-select">${selectHTML(r.fx.map((v,i)=>[String(i),v.id+' / '+fxNames[v.type]]),String(state.fx))}</select>${sel('类型','f-fx-type',e.type,Object.entries(fxNames))}${sel('挂点','f-fx-socket',e.socket,Object.entries(socketNames))}<div class="f-two-fields">${num('触发帧','f-fx-frame',e.frame,0,r.clip.duration-1)}${num('持续帧','f-fx-duration',e.duration,1,120)}${num('比例','f-fx-scale',e.scale,.15,3,.05)}${num('旋转','f-fx-rotation',e.rotation,-720,720,5)}</div><label class="f-field">颜色<input id="f-fx-color" type="color" value="${e.color}"></label>${num('透明度','f-fx-opacity',e.opacity,0,1,.05)}<div class="f-two-fields">${num('拖尾采样 / F','f-fx-trailFrames',e.trailFrames??9,2,24)}${num('轨迹半宽','f-fx-width',e.width??(e.type==='flame'?22:11),.3,60,.1)}</div>${sel('绘制层','f-fx-layer',e.layer||'front',[['front','人物前方'],['back','人物后方']])}<h3>粒子发射器 / EMITTER</h3><div class="f-two-fields">${num('密度参考数','f-fx-count',e.particles?.count??24,0,100)}${num('寿命 / F','f-fx-life',e.particles?.life??24,2,90)}${num('初速度','f-fx-speed',e.particles?.speed??4,0,20,.1)}${num('尺寸','f-fx-size',e.particles?.size??2,.2,12,.1)}${num('发散角 °','f-fx-spread',e.particles?.spread??65,0,360,5)}${num('重力 / F²','f-fx-gravity',e.particles?.gravity??(e.type==='flame'?-.07:.025),-.6,.8,.005)}${num('阻力','f-fx-drag',e.particles?.drag??.03,0,.4,.005)}${num('卷曲幅度','f-fx-curl',e.particles?.curl??0,0,16,.1)}${num('距离间距 / px','f-fx-spacing',e.particles?.spacing??16,2,160,1)}${num('每帧发射率','f-fx-rate',e.particles?.rate??.25,0,10,.05)}${num('初始爆发数','f-fx-burst',e.particles?.burst??3,0,32)}${num('速度继承','f-fx-inheritVelocity',e.particles?.inheritVelocity??.18,0,1,.05)}</div>${sel('粒子形状','f-fx-species',e.particles?.species||'spark',[['spark','火花针'],['ember','火焰余烬'],['shard','锋刃碎片'],['smoke','淡烟'],['fleck','丝带碎屑'],['petal','飘旋花瓣']])}<button id="f-fx-apply">更新特效</button> <button id="f-fx-delete">删除</button>`);}
+@@ -96,7 +96,7 @@
+  }
+  function localPointer(e){const m=$('f-actor-root').getScreenCTM();if(!m)throw Error('画布尚未布局');return new DOMPoint(e.clientX,e.clientY).matrixTransform(m.inverse());}
+  $('f-work-svg').addEventListener('pointerdown',e=>{if(state.playing)return;const handle=e.target.dataset.handle,box=e.target.dataset.boxIndex;if(!handle&&box==null)return;e.preventDefault();pushUndo();state.playing=false;const q=localPointer(e);state.drag={handle,box:box==null?null:Number(box),start:[q.x,q.y],pose:clone(state.pose),record:clone(state.draft)};if(handle)state.selected=handle;else state.box=Number(box);$('f-work-svg').setPointerCapture(e.pointerId);});
+- $('f-work-svg').addEventListener('pointermove',e=>{const d=state.drag;if(!d)return;const q=localPointer(e);if(d.handle){let p=[q.x,q.y];if(d.handle.endsWith('w'))p=INK.mat.point(INK.mat.inverse(INK.bodyMatrix(d.pose)),p);d.pose[d.handle]=p.map(v=>INK.clamp(v,-600,600));$('f-coordinate').textContent=d.handle.toUpperCase()+' / '+p.map(v=>v.toFixed(1)).join(', ');}else{const b=state.draft.boxes.items[d.box],original=d.record.boxes.items[d.box];b.x=INK.clamp(original.x+q.x-d.start[0],-600,600);b.y=INK.clamp(original.y+q.y-d.start[1],-600,600);}paint();});
++ $('f-work-svg').addEventListener('pointermove',e=>{const d=state.drag;if(!d)return;const q=localPointer(e);if(d.handle){let p=[q.x,q.y];if(INK.Anatomy){const name={fw:'frontArm',rw:'rearArm',fa:'frontLeg',ra:'rearLeg'}[d.handle];p=INK.Anatomy.inverseTarget(d.pose,p,name,profile());}else if(d.handle.endsWith('w'))p=INK.mat.point(INK.mat.inverse(INK.bodyMatrix(d.pose)),p);d.pose[d.handle]=p.map(v=>INK.clamp(v,-600,600));$('f-coordinate').textContent=d.handle.toUpperCase()+' / '+p.map(v=>v.toFixed(1)).join(', ');}else{const b=state.draft.boxes.items[d.box],original=d.record.boxes.items[d.box];b.x=INK.clamp(original.x+q.x-d.start[0],-600,600);b.y=INK.clamp(original.y+q.y-d.start[1],-600,600);}paint();});
+  const endDrag=guard(e=>{if(!state.drag)return;const d=state.drag;state.drag=null;if(d.handle)writePose(d.pose);else changed(false);inspector();try{$('f-work-svg').releasePointerCapture(e.pointerId);}catch(_){};});$('f-work-svg').addEventListener('pointerup',endDrag);$('f-work-svg').addEventListener('pointercancel',endDrag);
+  function makePortrait(svg,id,x,y,scale=1){const p=store.profile(id);const paint=INK.Paints.get(svg,id);const g=N('g',{transform:`translate(${x} ${y}) scale(${scale})`},svg);g.innerHTML=INK.design.torso(p)+`<g transform="translate(6 -341) scale(${p.headScale})">${INK.design.head(p)}</g>`;paint.scope(g);return g;}
+  function buildRoster(){const root=$('f-roster');root.replaceChildren();for(const id of INK.Schema.CHARACTERS){const c=store.getModel(id),b=document.createElement('button');b.dataset.character=id;b.setAttribute('aria-label','选择'+c.cn);b.innerHTML=`<svg viewBox="0 0 150 110" aria-hidden="true"><defs></defs></svg><div class="f-character-label"><b>${esc(c.name)}</b><span>${esc(c.cn)}</span></div><i class="f-player-tag" hidden></i>`;root.append(b);makePortrait(b.querySelector('svg'),id,72,390,.91);b.addEventListener('click',()=>{state.picks[state.pick]=id;buildHero();});}buildHero();}
+diff --git a/forge/continuity.css b/forge/continuity.css
+new file mode 100644
+index 0000000..346b3c1
+--- /dev/null
++++ b/forge/continuity.css
+@@ -0,0 +1,3 @@
++.continuity6-launch{margin:28px 0;padding:26px 30px;background:#233e32;color:#f8f1dd;display:flex;align-items:center;justify-content:space-between;gap:24px;border-radius:10px}.continuity6-eyebrow{font:11px/1.5 var(--mono,monospace);letter-spacing:2px;color:#739773}.continuity6-launch .continuity6-eyebrow{color:#aac69f}.continuity6-launch h3{font-size:27px;margin:8px 0 12px}.continuity6-launch p{font-size:13px;color:#d0d9c8;margin:0;line-height:1.8}.continuity6-launch button{background:#e9eed1;color:#24382a;border:0;padding:16px 22px;white-space:nowrap;border-radius:5px;font-weight:700;cursor:pointer}.continuity6-dialog{padding:0;width:min(1110px,calc(100vw - 40px));max-height:94vh;border:1px solid #c8d0bb;border-radius:12px;background:#f7f3e8;color:#2a382b;box-shadow:0 30px 110px #1118}.continuity6-dialog::backdrop{background:#142820aa;backdrop-filter:blur(5px)}.continuity6-dialog header{padding:25px 30px 20px;display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #d7dccb}.continuity6-dialog h2{font-size:28px;margin:7px 0 10px}.continuity6-dialog header p{font-size:13px;color:#68735f;margin:0;line-height:1.7}.continuity6-dialog button,.continuity6-dialog select{font:inherit;border:1px solid #bfcbb3;border-radius:5px;background:#f8f6ec;color:#2a382b;padding:9px 12px;cursor:pointer}.continuity6-dialog button:hover{background:#e3eacb}.continuity6-dialog button:focus-visible,.continuity6-dialog select:focus-visible,.continuity6-dialog input:focus-visible{outline:2px solid #34755c;outline-offset:2px}#continuity6-close{font-size:25px;align-self:flex-start;padding:2px 11px}.continuity6-grid{display:grid;grid-template-columns:minmax(0,1fr) 305px}.continuity6-stage{padding:15px 22px 0;border-right:1px solid #d7dccb;background:radial-gradient(ellipse at 50% 48%,#fcf9ef,#f0eee0)}.continuity6-stage-label{display:flex;justify-content:space-between;font:10px/1.5 var(--mono,monospace);letter-spacing:1px;color:#78836b}.continuity6-stage svg{width:100%;display:block;max-height:58vh}.continuity6-stage p{font-size:12px;color:#6a765d;line-height:1.8;margin:8px 4px 16px}.continuity6-dialog aside{padding:22px 24px;display:flex;flex-direction:column;gap:12px}.continuity6-dialog aside>label{font-size:12px;font-weight:700}.continuity6-dialog select{width:100%;font-size:12px}.continuity6-notes h3{font-size:13px;margin:9px 0}.continuity6-notes p{font-size:12px;line-height:1.85;margin:8px 0;color:#6a745f}.continuity6-switch{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #dbe0d0}.continuity6-switch input{accent-color:#32654c;width:17px;height:17px}.continuity6-dialog dl{margin:6px 0}.continuity6-dialog dl>div{display:flex;justify-content:space-between;margin:12px 0;font-size:11px}.continuity6-dialog dd{font-family:var(--mono,monospace);margin:0;color:#34634b}.continuity6-dialog small{font-size:10px;color:#88917c;line-height:1.7}.continuity6-dialog footer{border-top:1px solid #d7dccb;padding:17px 25px 14px}.continuity6-transport{display:flex;align-items:center;gap:8px;font-size:12px}.continuity6-transport select{width:80px}.continuity6-transport input{flex:1;min-width:60px;accent-color:#3a7556}.continuity6-transport output{min-width:94px;text-align:right;font:12px var(--mono,monospace)}#continuity6-play{background:#2d5a43;color:#f8f3e0;border-color:#2d5a43;min-width:60px}.continuity6-pipeline{margin-top:13px;font:9px/1.5 var(--mono,monospace);color:#89937e;letter-spacing:.5px}.continuity6-dialog input[type=range]{height:24px}@media(max-width:760px){.continuity6-launch{padding:22px;display:block}.continuity6-launch h3{font-size:23px}.continuity6-launch button{margin-top:18px;width:100%}.continuity6-dialog{width:calc(100vw - 16px);max-height:96vh}.continuity6-dialog header{padding:18px}.continuity6-dialog h2{font-size:22px}.continuity6-grid{grid-template-columns:1fr}.continuity6-stage{border-right:0;border-bottom:1px solid #d7dccb;padding:13px}.continuity6-stage svg{height:400px;max-height:54vh}.continuity6-dialog aside{padding:18px}.continuity6-notes{display:none}.continuity6-dialog footer{padding:14px}.continuity6-transport{flex-wrap:wrap}.continuity6-transport input{flex-basis:60%}.continuity6-transport output{min-width:80px}.continuity6-pipeline{font-size:8px;overflow-wrap:anywhere}}
++
++.continuity6-dialog{color-scheme:light}.continuity6-dialog footer{display:block}.continuity6-transport{width:100%}
+diff --git a/forge/continuity.js b/forge/continuity.js
+new file mode 100644
+index 0000000..9128212
+--- /dev/null
++++ b/forge/continuity.js
+@@ -0,0 +1,49 @@
++/* FLOW 06: inspection of the actual production renderer. No pre-rendered video.
++ * Deliberately starts with FX off, so joints and seams cannot hide in particles.
++ */
++'use strict';
++(()=>{
++ const $=id=>document.getElementById(id),F=()=>INKForge;
++ const choices=[['turn','360° 连续转身'],['sHK','重脚 · 收招修复'],['sMK','中脚 · 收招修复'],['ryuuenbu-heavy','龙炎舞 · 全身转轴'],['kachousen-heavy','花蝶扇 · 肘部连续性'],['hishou-ryuuenjin-heavy','飞翔龙炎阵 · 空中姿态']];
++ let dialog,renderer,fx,record,clip,frame=0,limit=180,mode='turn',playing=false,speed=.35,stamp=0,direction=1,focus,saved,current;
++ function select(key){if(!choices.some(v=>v[0]===key))throw Error('Unknown continuity study');mode=key;record=F().store.getMove('mai',key==='turn'?'idle':key);clip=F().store.clip(record);limit=key==='turn'?180:record.clip.duration;frame=key==='sHK'?22:key==='sMK'?16:0;$('continuity6-move').value=key;$('continuity6-seek').max=limit;paint();}
++ function paint(){
++  if(!renderer)return;const profile=F().store.profile('mai'),t=mode==='turn'?0:frame;
++  let pose=INK.MotionGraph.compose(record,t,clip.sample(t),profile);
++  if(mode==='turn'){pose.yaw=frame*2;pose.turn=0;pose.headYaw=pose.chestYaw=pose.pelvisYaw=0;}
++  const rig=INK.Rig.solveAnimation(profile,pose),s=INK.Rig.sockets(pose,rig);
++  $('continuity6-root').setAttribute('transform',`translate(305 500) scale(${direction*1.04*(pose.depth||1)} 1.04) translate(${pose.rootShift||0} ${pose.floor||0}) rotate(${pose.spin||0} 0 -180)`);
++  renderer.setMode($('continuity6-rig').checked?'overlay':'skin');
++  renderer.render(pose,{rig,frame:t,secondary:mode!=='turn',motion:INK.SecondaryDynamics.sample(record.clip,t),expression:t>=record.binding.startup&&t<record.binding.startup+record.binding.active?'power':'rest'});
++  fx.visible=$('continuity6-fx').checked&&mode!=='turn';fx.render(record,t,pose,rig);
++  let boneError=0;const lengths=INK.Anatomy.lengths(profile);
++  for(const name of ['rearArm','frontArm','rearLeg','frontLeg']){const q=rig.anatomy.source[name],i=name.includes('Leg')?2:0,projection=pose[name+'Projection']??1;for(let j=0;j<2;j++)boneError=Math.max(boneError,Math.abs(INK.vec.length(INK.vec.sub(q[j+1],q[j]))-lengths[i+j]*projection));}
++  const wrist=INK.mat.point(INK.Anatomy.handMatrix(pose,rig,profile),[0,0]);
++  const wristError=Math.hypot(wrist[0]-s.frontArm[2][0],wrist[1]-s.frontArm[2][1]);
++  current={mode,frame,yaw:INK.Turn.angle(pose),pose,sourceBones:rig.anatomy.source,sockets:s,boneError,wristError,direction};
++  $('continuity6-frame').textContent=mode==='turn'?`${(frame*2).toFixed(1)}°`:`${frame.toFixed(2)} / ${limit} F`;$('continuity6-seek').value=frame;
++  $('continuity6-bones').textContent=boneError.toFixed(5)+' px';$('continuity6-wrist').textContent=wristError.toFixed(5)+' px';$('continuity6-yaw').textContent=INK.Turn.angle(pose).toFixed(1)+'°';
++  $('continuity6-caption').textContent=mode==='turn'?'同一待机姿态，只改变躯干转角。观察脚底高度、手腕与折扇接合。':'真实动作资产 → 角度连续求值 → 同轴投影 → 连续曲面。';
++ }
++ function open(key='turn'){focus=document.activeElement;const A=SVG_FIGHTER;saved={screen:A.state.screen,paused:A.state.paused,fighter:A.fighters[0]};if(A.state.screen==='battle')A.state.paused=true;playing=false;dialog.showModal();select(key);$('continuity6-play').textContent='播放';$('continuity6-play').focus();}
++ function close(){if(dialog.open)dialog.close();}
++ function seek(value){if(!Number.isFinite(value))throw TypeError('Finite frame required');playing=false;frame=INK.clamp(value,0,limit);$('continuity6-play').textContent='播放';paint();}
++ function init(){
++  if(!globalThis.INKForge?.ready||!globalThis.INKEngineLab){requestAnimationFrame(init);return;}
++  const launch=document.createElement('section');launch.className='continuity6-launch';launch.innerHTML='<div><span class="continuity6-eyebrow">FLOW 06 / CONTINUOUS ARTICULATION</span><h3>先看清动作，再打开火焰。</h3><p>共享关节 · 连续肢体曲面 · 同轴转身。无特效逐帧检查，不用光效遮住接缝。</p></div><button id="continuity6-open">打开骨架与转身检视 ↗</button>';
++  document.querySelector('.mai-feature').before(launch);const nav=document.createElement('button');nav.id='continuity6-nav';nav.textContent='骨架检视';document.querySelector('.f-top nav').appendChild(nav);
++  dialog=document.createElement('dialog');dialog.id='continuity6-dialog';dialog.className='continuity6-dialog';dialog.setAttribute('aria-labelledby','continuity6-title');
++  dialog.innerHTML=`<header><div><span class="continuity6-eyebrow">FLOW 06 / ANATOMY LAB</span><h2 id="continuity6-title">让关节接上，让转身连贯。</h2><p>这里使用与实战相同的骨架和 SVG 渲染器。默认关闭特效。</p></div><button id="continuity6-close" aria-label="关闭骨架检视">×</button></header><div class="continuity6-grid"><section class="continuity6-stage"><div class="continuity6-stage-label"><span>MAI SHIRANUI</span><span>LIVE SVG / NOT A VIDEO</span></div><svg id="continuity6-svg" viewBox="0 0 610 550" role="img" aria-label="不知火舞连续骨架回放"><defs><pattern id="continuity6-grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#526753" opacity=".11" stroke-width=".6"/></pattern></defs><path d="M0 0H610V550H0Z" fill="url(#continuity6-grid)"/><circle cx="305" cy="277" r="195" fill="none" stroke="#526753" opacity=".12"/><path d="M35 500H575M305 45V515" fill="none" stroke="#526753" opacity=".3"/><ellipse cx="305" cy="504" rx="103" ry="7" fill="#546750" opacity=".12"/><g id="continuity6-root"/></svg><p id="continuity6-caption"></p></section><aside><label for="continuity6-move">动作检查</label><select id="continuity6-move">${choices.map(([k,n])=>`<option value="${k}">${n}</option>`).join('')}</select><div class="continuity6-notes"><h3>重点观察</h3><p>转身时肩、肘、手腕采用同一个投影，手与扇不再各转各的。脚掌的零度保持平放。</p><p>重脚和中脚收招恢复正确手腕轨道。肘膝由连续角度重建，不再突然跳到另一侧。</p><p>上臂与前臂、大腿与小腿共用一条外轮廓，光影带也连续经过关节。</p></div><label class="continuity6-switch">骨架叠加<input type="checkbox" id="continuity6-rig"></label><label class="continuity6-switch">显示特效<input type="checkbox" id="continuity6-fx"></label><button id="continuity6-mirror">左右镜像</button><dl><div><dt>源骨长度误差</dt><dd id="continuity6-bones">—</dd></div><div><dt>腕部挂点误差</dt><dd id="continuity6-wrist">—</dd></div><div><dt>躯干转角</dt><dd id="continuity6-yaw">—</dd></div></dl><small>误差是当前帧的几何检查，不代表所有动作的艺术质量。当前仍为 2.5D SVG，不是完整 3D 人体。</small></aside></div><footer><div class="continuity6-transport"><button id="continuity6-play">播放</button><button id="continuity6-prev" aria-label="前一帧">−1F</button><button id="continuity6-next" aria-label="后一帧">+1F</button><select id="continuity6-speed" aria-label="播放速度"><option value=".15">0.15×</option><option value=".35" selected>0.35×</option><option value=".5">0.5×</option><option value="1">1×</option></select><input id="continuity6-seek" type="range" min="0" max="180" step=".05" value="0" aria-label="动作时间轴"><output id="continuity6-frame"></output></div><div class="continuity6-pipeline">AUTHOR TARGETS → UNWRAPPED JOINTS → FK → COHERENT TURN → SHARED SURFACE & SOCKETS</div></footer>`;
++  document.body.appendChild(dialog);renderer=new INK.Renderer($('continuity6-root'),F().store.profile('mai'));fx=new INK.Effects($('continuity6-root'));$('continuity6-root').insertBefore(fx.backRoot,renderer.group);
++  renderer.setStyle(F().store.profile('mai').previewStyle||{});
++  F().store.on(()=>{const was=frame,key=mode;renderer.destroy();fx.destroy();const profile=F().store.profile('mai');renderer=new INK.Renderer($('continuity6-root'),profile);renderer.setStyle(profile.previewStyle||{});fx=new INK.Effects($('continuity6-root'));$('continuity6-root').insertBefore(fx.backRoot,renderer.group);if(dialog.open){select(key);seek(Math.min(was,limit));}});
++  $('continuity6-open').onclick=()=>open();nav.onclick=()=>open();$('continuity6-close').onclick=close;
++  dialog.addEventListener('close',()=>{playing=false;const A=SVG_FIGHTER;if(saved&&saved.screen===A.state.screen&&saved.fighter===A.fighters[0])A.state.paused=saved.paused;saved=null;INK.EngineClock.reset();focus?.focus({preventScroll:true});});
++  $('continuity6-move').onchange=e=>select(e.target.value);$('continuity6-seek').oninput=e=>seek(Number(e.target.value));$('continuity6-rig').onchange=paint;$('continuity6-fx').onchange=paint;
++  $('continuity6-prev').onclick=()=>seek(frame-1);$('continuity6-next').onclick=()=>seek(frame+1);$('continuity6-mirror').onclick=()=>{direction*=-1;paint();};
++  $('continuity6-speed').onchange=e=>{speed=Number(e.target.value);};$('continuity6-play').onclick=()=>{playing=!playing;stamp=performance.now();$('continuity6-play').textContent=playing?'暂停':'播放';};
++  function tick(now){requestAnimationFrame(tick);if(!dialog.open||!playing||document.hidden){stamp=now;return;}const dt=Math.min(.05,(now-stamp)/1000);stamp=now;frame=(frame+dt*60*speed)%limit;paint();}requestAnimationFrame(tick);
++  window.INKContinuityLab={open,close,seek,select,paint,get state(){return current;},get renderer(){return renderer;},get limit(){return limit;},get playing(){return playing;}};
++ }
++ init();
++})();
+diff --git a/forge/engine.js b/forge/engine.js
+index bcfd570..ed577e0 100644
+--- a/forge/engine.js
++++ b/forge/engine.js
+@@ -1,4 +1,4 @@
+-/* FLOW 05 — same-frame, real-asset engine inspector. No pre-rendered animation.
++/* FLOW 06 — same-frame, real-asset engine inspector. No pre-rendered animation.
+  * Reference is the current base track with new presentation layers disabled,
+  * not an assertion that the entire previous release is running in the left pane.
+  */
+@@ -59,16 +59,16 @@
+   }
+   function init() {
+     if(!F()?.ready||!globalThis.INKMaiShowcase){requestAnimationFrame(init);return;}
+-    const launch=document.createElement('section');launch.className='engine5-launch';launch.innerHTML='<div><span class="engine5-kicker">FLOW 05 / ENGINE ITERATION</span><h3>分层控制动作，按时序发射特效。</h3><p>基础轨与新动作图同帧对照；检查支撑脚、三段弹簧链和真实挂点发射。</p></div><button id="engine5-open">打开引擎检视 ↗</button>';
++    const launch=document.createElement('section');launch.className='engine5-launch';launch.innerHTML='<div><span class="engine5-kicker">FLOW 06 / ENGINE ITERATION</span><h3>分层控制动作，按时序发射特效。</h3><p>基础轨与新动作图同帧对照；检查支撑脚、三段弹簧链和真实挂点发射。</p></div><button id="engine5-open">打开引擎检视 ↗</button>';
+     document.querySelector('.mai-feature').after(launch);
+     const nav=document.createElement('button');nav.id='engine5-nav';nav.textContent='引擎检视';document.querySelector('.f-top nav').appendChild(nav);
+     modal=document.createElement('dialog');modal.className='engine5-dialog';modal.id='engine5-inspector';modal.setAttribute('aria-labelledby','engine5-title');
+-    modal.innerHTML=`<header class="engine5-head"><div><span class="engine5-kicker">FLOW 05 / MOTION GRAPH + EMITTER RUNTIME</span><h2 id="engine5-title">同一帧，两条求值路径。</h2><p>左侧是当前资产的基础关键帧参考，并非另跑旧版程序。右侧调用实战使用的动作图、弹簧链与发射器内核；这里仅预览，不生成伤害。</p></div><button class="engine5-close" id="engine5-close" aria-label="关闭引擎检视">×</button></header>
+-    <div class="engine5-grid">${stage('engine5-base','基础轨参考','关闭新的分层、支撑脚修正与附件动力学。基础轨仍负责战斗判定。')}${stage('engine5-new','FLOW 05 输出','分层求值、接触约束和弹簧链，作用于最终 SVG；火焰沿实际扇尖发射。')}
++    modal.innerHTML=`<header class="engine5-head"><div><span class="engine5-kicker">FLOW 06 / MOTION GRAPH + EMITTER RUNTIME</span><h2 id="engine5-title">同一帧，两条求值路径。</h2><p>左侧是当前资产的基础关键帧参考，并非另跑旧版程序。右侧调用实战使用的动作图、弹簧链与发射器内核；这里仅预览，不生成伤害。</p></div><button class="engine5-close" id="engine5-close" aria-label="关闭引擎检视">×</button></header>
++    <div class="engine5-grid">${stage('engine5-base','基础轨参考','关闭新的分层、支撑脚修正与附件动力学。基础轨仍负责战斗判定。')}${stage('engine5-new','FLOW 06 输出','分层求值、接触约束和弹簧链，作用于最终 SVG；火焰沿实际扇尖发射。')}
+     <aside class="engine5-controls"><div><label class="engine5-select-label" for="engine5-move">不知火舞 / 真实动作资产</label><select id="engine5-move">${choices.map(([k,n])=>`<option value="${k}">${n}</option>`).join('')}</select><h3>逐项检查 / 局部预览开关</h3>${[['layers','分层动作'],['contacts','支撑脚约束'],['springs','弹簧链'],['fx','粒子与轨迹']].map(([k,n])=>`<label class="engine5-toggle">${n}<input type="checkbox" id="engine5-${k}" checked></label>`).join('')}<button id="engine5-mirror">⇄ 镜像</button><button class="engine5-edit" id="engine5-edit">在动作工坊编辑此招 ↗</button></div>
+     <div><h3>采样结果 / LIVE VALUES</h3><dl>${[['layer-count','分层轨道'],['contact-count','当前接触'],['chain','发辫三段 / °'],['velocity','末端角速度'],['difference','扇尖位移差'],['particles','局部粒子']].map(([k,n])=>`<div><dt>${n}</dt><dd id="engine5-${k}">—</dd></div>`).join('')}</dl><p>左/右帧号始终一致。关闭开关只作用于此窗口，不改资源、不改伤害，也不会覆盖保存的招式。</p><p>叠加权重、弹簧参数、距离间距和速度继承，均可在动作工坊保存到 JSON。</p></div></aside></div>
+     <div class="engine5-transport"><button id="engine5-play">▶ 播放</button><button id="engine5-step">+ 1F</button><select id="engine5-speed" aria-label="预览速度"><option value=".25">0.25×</option><option value=".5" selected>0.5×</option><option value="1">1×</option></select><input id="engine5-seek" type="range" min="0" max="100" step=".1" value="0" aria-label="引擎同帧比较时间轴"><span id="engine5-frame" class="engine5-frame"></span></div>
+-    <div class="engine5-timeline" id="engine5-time-tracks"></div><footer class="engine5-bottom"><div class="engine5-pipeline">60 Hz SIMULATION → BASE CLIP → MOTION LAYERS → FOOT CONTACT → IK → SOCKETS → EMITTERS → SVG</div>快进、暂停和反向拖动只做随机访问采样，不回放特效事件、不补发命中。实战发射器由模拟帧推进，取消后停止发射，已出生的粒子与拖尾继续衰减。</footer>`;
++    <div class="engine5-timeline" id="engine5-time-tracks"></div><footer class="engine5-bottom"><div class="engine5-pipeline">60 Hz → BASE CLIP → LAYERS → ANGULAR FK → COHERENT TURN → SURFACES + SOCKETS → FX</div>快进、暂停和反向拖动只做随机访问采样，不回放特效事件、不补发命中。实战发射器由模拟帧推进，取消后停止发射，已出生的粒子与拖尾继续衰减。</footer>`;
+     document.body.appendChild(modal);
+     const profile=F().store.profile('mai');left=new INK.Renderer($('engine5-base-root'),profile);right=new INK.Renderer($('engine5-new-root'),profile);fx=new INK.Effects($('engine5-new-root'));
+     $('engine5-new-root').insertBefore(fx.backRoot,right.group);left.setStyle(profile.previewStyle||{});right.setStyle(profile.previewStyle||{});
+@@ -83,9 +83,9 @@
+     const telemetry=document.createElement('div');telemetry.id='engine5-telemetry';telemetry.className='engine5-telemetry';document.querySelector('#flow-instruments')?.appendChild(telemetry);
+     let lastMetric=0;
+     requestAnimationFrame(function tick(now){requestAnimationFrame(tick);if(modal.open&&playing&&!document.hidden){const dt=Math.min(80,now-stamp);frame=(frame+dt*.06*speed)%record.clip.duration;paint();}stamp=now;
+-      if(now-lastMetric>500&&F().state.route==='battle'){lastMetric=now;const c=INK.EngineClock.inspect();telemetry.innerHTML=`<span>ENGINE <strong>05 / 60 Hz</strong></span><span>STEP <strong>${c.lastSteps}</strong></span><span>ALPHA <strong>${c.alpha.toFixed(2)}</strong></span><span>PARTICLES <strong>${INK.VFX.stats.active}/320</strong></span><span>RIBBONS <strong>${INK.VFX.trailStats.active}/64</strong></span><span>DROP <strong>${c.discardedSteps}</strong></span>`;}
++      if(now-lastMetric>500&&F().state.route==='battle'){lastMetric=now;const c=INK.EngineClock.inspect();telemetry.innerHTML=`<span>ENGINE <strong>06 / 60 Hz</strong></span><span>STEP <strong>${c.lastSteps}</strong></span><span>ALPHA <strong>${c.alpha.toFixed(2)}</strong></span><span>PARTICLES <strong>${INK.VFX.stats.active}/320</strong></span><span>RIBBONS <strong>${INK.VFX.trailStats.active}/64</strong></span><span>DROP <strong>${c.discardedSteps}</strong></span>`;}
+     });
+-    globalThis.INKEngineLab={version:'5.0.0',open,close,select,seek,setOptions,paint,snapshot:()=>structuredClone(current),get record(){return record;},get actor(){return right;},get effects(){return fx;}};
++    globalThis.INKEngineLab={version:'6.0.0',open,close,select,seek,setOptions,paint,snapshot:()=>structuredClone(current),get record(){return record;},get actor(){return right;},get effects(){return fx;}};
+   }
+   init();
+ })();
+diff --git a/forge/flow.js b/forge/flow.js
+index 6e45309..af6001a 100644
+--- a/forge/flow.js
++++ b/forge/flow.js
+@@ -1,4 +1,4 @@
+-/* FLOW 05 application layer. Uses the existing game, editor and portable build. */
++/* FLOW 06 application layer. Uses the existing game, editor and portable build. */
+ 'use strict';
+ (() => {
+  const $=id=>document.getElementById(id),escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+@@ -11,7 +11,7 @@
+  function selectedRoute(){return C.routes.routes.find(r=>r.id===selected)||C.routes.routes[0];}
+  function fillRoutes(){const char=$('flow-character').value;const list=C.routes.routes.filter(r=>r.character===char);$('flow-route').innerHTML=list.map(r=>`<option value="${r.id}">${escape(r.tier)} · ${r.expectedHits} HIT</option>`).join('');if(!list.some(r=>r.id===selected))selected=list.at(-1).id;$('flow-route').value=selected;routeDetail();}
+  function routeDetail(){const r=selectedRoute();$('flow-title').textContent=r.title;$('flow-description').textContent=r.note;$('flow-expected').textContent=r.expectedHits;$('flow-sequence').innerHTML=r.steps.map((s,i)=>`<button class="flow-step" data-index="${i}" title="${escape(s.hint)}"><span class="flow-step-num">${String(i+1).padStart(2,'0')}</span><span><b>${escape(name(r.character,s.move))}</b><small>${escape(command(r.character,s.move))}${s.minHits>1?' · '+s.minHits+' HIT':''}</small></span><i>○</i></button>`).join('');last='';}
+- async function show(){open=true;document.body.classList.add('flow-combo-active');$('flow-panel').hidden=false;$('flow-instruments').hidden=false;await F().route('battle');document.querySelector('#f-battle .f-eyebrow').textContent='FLOW 05 / COMBO LAB';document.querySelector('#f-battle h2').textContent='把每一击，连成一段。';document.querySelectorAll('.f-top nav [data-route]').forEach(n=>n.classList.remove('is-active'));$('flow-open').classList.add('is-active');routeDetail();await run('demo');}
++ async function show(){open=true;document.body.classList.add('flow-combo-active');$('flow-panel').hidden=false;$('flow-instruments').hidden=false;await F().route('battle');document.querySelector('#f-battle .f-eyebrow').textContent='FLOW 06 / COMBO LAB';document.querySelector('#f-battle h2').textContent='把每一击，连成一段。';document.querySelectorAll('.f-top nav [data-route]').forEach(n=>n.classList.remove('is-active'));$('flow-open').classList.add('is-active');routeDetail();await run('demo');}
+  async function run(mode,paused=false){const r=selectedRoute();C.stop();await F().route('battle');C.start(r,mode,{paused,side:$('flow-side').value==='left'?-1:1,control:$('flow-control').value,bufferFrames:Number($('flow-buffer').value)});
+   A().experience?.stage('forge');const stage=$('stage');if(stage){stage.value='forge';stage.dispatchEvent(new Event('change'));}document.querySelectorAll('.f-top nav [data-route]').forEach(n=>n.classList.remove('is-active'));$('flow-open').classList.add('is-active');
+   $('flow-status').textContent=mode==='demo'?'演示 / DEMONSTRATION':'跟练 / YOUR TURN';notice='';lastStatus='';ended=0;draw();$('stage-wrap').focus({preventScroll:true});
+@@ -73,7 +73,7 @@
+   document.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]'))return;if(!open||e.target.closest?.('input,select,textarea'))return;if(e.code==='KeyG'&&!e.repeat&&$('flow-control').value==='rhythm'){e.preventDefault();e.stopImmediatePropagation();rhythm();return;}if(e.code==='KeyR'){e.preventDefault();e.stopImmediatePropagation();run(C.mode);}if(e.code==='Space'){e.preventDefault();e.stopImmediatePropagation();A().state.paused=!A().state.paused;}},true);
+   const extra=document.createElement('div');extra.className='flow-editor-controls';extra.innerHTML='<label><input type="checkbox" id="flow-stepped"> 4F 步进对照</label><span id="flow-subframe">连续采样 / 60 Hz</span>';$('f-work-svg').before(extra);$('flow-stepped').onchange=()=>{INKFlowView.stepped=$('flow-stepped').checked;F().paint();};const leaveStepped=()=>{if(!INKFlowView.stepped)return;INKFlowView.stepped=false;$('flow-stepped').checked=false;F().paint();};$('f-work-svg').addEventListener('pointerdown',leaveStepped,true);$('f-key-add').addEventListener('click',leaveStepped,true);
+   const quick=document.createElement('button');quick.id='flow-home-demo';quick.className='f-primary';quick.textContent='体验 15 HIT 长连段 ↗';quick.onclick=show;document.querySelector('.f-home-top').append(quick);
+-  document.querySelector('.f-home-top h1').innerHTML='让每一击，<em>有迹可循。</em>';document.querySelector('.f-home-top p').textContent='粒子轨迹 · 连续转身 · 真实连段。制作、练习、再回到实战。';document.querySelector('.f-edition').innerHTML='INK / FLOW 05<br><span>MAI · FLOWER & FLAME</span>';
++  document.querySelector('.f-home-top h1').innerHTML='让每一招，<em>连贯成形。</em>';document.querySelector('.f-home-top p').textContent='连续骨架 · 共享曲面 · 同轴转身。先看动作本身，再打开特效。';document.querySelector('.f-edition').innerHTML='INK / FLOW 06<br><span>MAI · CONTINUOUS ARTICULATION</span>';
+   function tick(now){requestAnimationFrame(tick);if(document.hidden||now-uiTime<(open&&C.mode==='practice'?14:50))return;uiTime=now;draw();if(F().state.route==='studio')$('flow-subframe').textContent=(INKFlowView.stepped?'4F 无补间对照':'连续数值补间')+' · '+F().state.frame.toFixed(2)+' F · '+INK.Turn.angle(F().state.pose).toFixed(1)+'°';}
+   requestAnimationFrame(tick);globalThis.INKComboUI={show,run,close,draw,selectedRoute,select(id){const r=C.routes.routes.find(r=>r.id===id);if(!r)throw Error('Unknown route');selected=id;$('flow-character').value=r.character;fillRoutes();},get open(){return open;}};
+  }
+diff --git a/forge/mai.js b/forge/mai.js
+index 1a1c49a..a6195d7 100644
+--- a/forge/mai.js
++++ b/forge/mai.js
+@@ -1,4 +1,4 @@
+-/* FLOW 05 · a preview of the REAL editable Mai assets, not a separate movie. */
++/* FLOW 06 · a preview of the REAL editable Mai assets, not a separate movie. */
+ 'use strict';
+ (() => {
+  const $=id=>document.getElementById(id),F=()=>globalThis.INKForge;
+@@ -16,7 +16,7 @@
+   const banner=document.createElement('section');banner.className='mai-feature';banner.innerHTML=`<div class="mai-feature-mark" aria-hidden="true">舞<span>05</span></div><div><span class="f-eyebrow">MAI / FLOWER & FLAME</span><h2>扇起有风，收势留焰。</h2><p>分层动作图 · 支撑脚约束 · 弹簧链 · 距离发射器</p></div><div class="mai-feature-actions"><button id="mai-showcase-open">查看动作演武 <span>↗</span></button><button id="mai-combo" class="f-primary">舞 · 14 HIT 实战连段</button></div>`;
+   document.querySelector('.f-home-top').after(banner);
+   modal=document.createElement('dialog');modal.id='mai-showcase';modal.setAttribute('aria-labelledby','mai-dialog-title');modal.innerHTML=`
+-   <header class="mai-dialog-head"><div><span class="f-eyebrow">FLOW 05 / LIVE SVG MOTION</span><h2 id="mai-dialog-title">不知火舞 <small>花焰演武</small></h2></div><button id="mai-preview-close" aria-label="关闭动作演武">✕</button></header>
++   <header class="mai-dialog-head"><div><span class="f-eyebrow">FLOW 06 / LIVE SVG MOTION</span><h2 id="mai-dialog-title">不知火舞 <small>花焰演武</small></h2></div><button id="mai-preview-close" aria-label="关闭动作演武">✕</button></header>
+    <div class="mai-preview-layout"><div class="mai-preview-stage"><div class="mai-stage-label"><span>SHIRANUI / MOTION STUDY</span><b id="mai-preview-phase"></b></div>
+     <svg id="mai-preview-svg" viewBox="0 0 720 560" role="img" aria-label="由真实关键帧驱动的不知火舞动作预览"><defs><pattern id="mai-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8a7264" stroke-width=".4" opacity=".18"/></pattern><radialGradient id="mai-stage-glow"><stop stop-color="#f4ede0"/><stop offset="1" stop-color="#dcd9ca"/></radialGradient></defs><path d="M0 0H720V560H0Z" fill="url(#mai-stage-glow)"/><path d="M0 0H720V560H0Z" fill="url(#mai-grid)"/><circle cx="355" cy="285" r="193" fill="none" stroke="#947968" opacity=".17"/><path d="M0 482H720M355 80V516" fill="none" stroke="#809383" stroke-width="1" opacity=".4"/><ellipse cx="355" cy="487" rx="101" ry="7" fill="#526859" opacity=".15"/><g id="mai-preview-root"></g></svg>
+     <div class="mai-preview-scrub"><button id="mai-preview-play" aria-label="播放或暂停动作">Ⅱ 暂停</button><input id="mai-seek" type="range" min="0" max="100" step=".1" value="0" aria-label="逐帧查看舞的动作"><span id="mai-preview-frame"></span></div>
+diff --git a/game.js b/game.js
+index df04ab3..2659151 100644
+--- a/game.js
++++ b/game.js
+@@ -983,7 +983,7 @@ function renderFighter(f,dt=1/60,alpha=1){
+  sa(f.root,'transform',`translate(${rx.toFixed(2)} ${(FLOOR+ry).toFixed(2)}) scale(${s})`);
+  sa(f.facing,'transform',`scale(${f.dir*(p.depth||1)} 1) translate(${p.rootShift||0} ${(p.floor||0).toFixed(2)}) rotate(${p.spin.toFixed(2)} 0 -180)`);
+ 
+- const limbs=poseRig(f,p),ar=limbs.rearArm,af=limbs.frontArm;
++ const limbs=INK.Runtime.visualRig(f,p),ar=limbs.rearArm,af=limbs.frontArm;
+  for(const name of ['rearArm','frontArm','rearLeg','frontLeg'])f[name].points=limbs[name];
+  const inkHurt=['hit','stun','tumble','captured','down','ko'].includes(f.state);
+  const inkPower=!inkHurt&&(f.portraitPower||f.attack&&f.attack.t>=f.attack.m.startup&&f.attack.t<f.attack.m.startup+f.attack.m.active);
+@@ -1107,7 +1107,7 @@ function buildSuperFX(f,m){const col=SKILL_FX[f.ch.id].color,x=f.index?706:154;c
+ 
+ const enemy=f=>fighters[1-f.index];
+ function newInput(){return{held:new Set(),dirs:[],history:[],dir:5,queue:[],batch:null,chargeB:0,chargeD:0,savedB:0,savedD:0,releaseB:-99,releaseD:-99,lastButton:-99,touchX:0,touchY:0,lastDash:-99}}
+-function initFighter(f,index){Object.assign(f,{_inkState:null,_inkFXEvents:[],_inkTransition:null,_inkVisualTransition:null,_inkTrail:null,_inkInput:null,_inkStateBlend:null,_inkActionOrigin:null,index,hp:10000,displayHp:10000,trailHp:10000,drive:6,super:G.mode==='training'?3:0,burnout:false,burnT:0,driveDelay:0,x:index?960:480,px:index?960:480,y:0,py:0,vy:0,vx:0,push:0,dir:index?-1:1,move:0,state:'idle',stateT:0,stateAge:0,attack:null,branchT:0,branchReady:0,denjin:0,stock:0,flameStock:0,maiFollowUntil:0,maiFollowEnhanced:false,maiAirFollow:0,install:0,invuln:0,rushBuff:0,combo:0,comboDamage:0,comboTimer:0,comboScale:1,captured:false,captureKind:null,capturedBy:null,captureWasParry:false,capturePhase:0,captureX:0,captureY:0,throwAction:null,throwInvuln:0,juggle:0,knockOnLand:false,landT:0,landMax:0,airLock:false,parryAge:0,parryPaid:0,aiWait:45,crouch:false,input:newInput(),lastMove:'准备就绪',lastMessage:0,lastHitTick:-99,lastThrow:-99,hitstun:0,blockstun:0,walkT:0,pose:null,downPoseFrom:null,tumbleFrom:null,roundResult:null,_attackAtContact:null,_renderSignature:null,_poseSimulationFrame:null,aiGuard:false,aiParry:false,win:false,lastHitDamage:0,perfectScale:1,jumpPre:0,jumpDir:0,ai:null});const track=$('input-'+f.id);if(track)track.replaceChildren();const label=$('move-'+f.id);if(label)label.textContent='准备就绪';return f}
++function initFighter(f,index){Object.assign(f,{_inkState:null,_inkFXEvents:[],_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkTrail:null,_inkInput:null,_inkStateBlend:null,_inkActionOrigin:null,index,hp:10000,displayHp:10000,trailHp:10000,drive:6,super:G.mode==='training'?3:0,burnout:false,burnT:0,driveDelay:0,x:index?960:480,px:index?960:480,y:0,py:0,vy:0,vx:0,push:0,dir:index?-1:1,move:0,state:'idle',stateT:0,stateAge:0,attack:null,branchT:0,branchReady:0,denjin:0,stock:0,flameStock:0,maiFollowUntil:0,maiFollowEnhanced:false,maiAirFollow:0,install:0,invuln:0,rushBuff:0,combo:0,comboDamage:0,comboTimer:0,comboScale:1,captured:false,captureKind:null,capturedBy:null,captureWasParry:false,capturePhase:0,captureX:0,captureY:0,throwAction:null,throwInvuln:0,juggle:0,knockOnLand:false,landT:0,landMax:0,airLock:false,parryAge:0,parryPaid:0,aiWait:45,crouch:false,input:newInput(),lastMove:'准备就绪',lastMessage:0,lastHitTick:-99,lastThrow:-99,hitstun:0,blockstun:0,walkT:0,pose:null,downPoseFrom:null,tumbleFrom:null,roundResult:null,_attackAtContact:null,_renderSignature:null,_poseSimulationFrame:null,aiGuard:false,aiParry:false,win:false,lastHitDamage:0,perfectScale:1,jumpPre:0,jumpDir:0,ai:null});const track=$('input-'+f.id);if(track)track.replaceChildren();const label=$('move-'+f.id);if(label)label.textContent='准备就绪';return f}
+ function clearBattleFX(){INK.VFX.clear();for(let a of [G.fx,G.shots,G.ghosts]){for(let e of a)e.node?.remove();a.length=0}for(let id of ['impact-fx','ground-fx','ghosts','projectiles','hitboxes'])$(id).replaceChildren();G.superFx=0;G.superOwner=null;G.hitstop=0;G.slow=0;G.shake=0;G.flash=0;G.pendingMelee=[];$('super-overlay').setAttribute('opacity',0)}
+ function makeFighters(){for(let f of fighters){f.root.remove();f.shadow.remove()}fighters=[];selected.forEach((id,i)=>fighters.push(initFighter(createFighter(i?'k':'p',id,i?960:480,i?-1:1,i===1),i)));buildHUD()}
+ function setState(f,state,t=0){INK.Runtime.stateChange(f,state);f.state=state;f.stateT=t;f.stateAge=0;if(!['attack','stance'].includes(state))f.attack=null;f.move=0;if(state!=='attack'&&f.y===0)f.airLock=false;if(['hit','tumble','down','rise','captured','throwing','stun','ko'].includes(state)){f.crouch=false;f.jumpPre=0;f.aiGuard=false;f.aiParry=false}}
+@@ -1432,7 +1432,7 @@ accumulator=engineClock.accumulator;
+ if(G.screen==='battle'){const alpha=G.paused?1:renderAlpha;for(let f of fighters)renderFighter(f,G.paused||G.hitstop>0?0:Math.min(dt/1000,.04),alpha);sa($('camera'),'transform',artCamera(now));sa($('hit-flash'),'opacity',(!INK.VFX.settings.enabled||INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)?0:G.flash*INK.VFX.settings.intensity);sa($('super-overlay'),'opacity',G.superFx>0?clamp(Math.min((75-G.superFx)/8,G.superFx/15),0,.98):0)}else{gameTime+=dt/1000;for(let i=0;i<portraits.length;i++){const f=portraits[i];renderFighter(f,dt/1000,1);sa(f.root,'transform',`translate(166 438) scale(1.02)`);sa(f.facing,'transform',`scale(${i?-1:1} 1)`)} }
+ INK.VFX.render(G,G.paused?1:clamp(accumulator/STEP,0,1));SF6Studio.update();requestAnimationFrame(frame)}
+ // Inspectable, dependency-free development hooks. All gameplay still uses the same engine paths.
+-window.SVG_FIGHTER={version:'5.0.0-ink-flow',characters:CHARACTERS,moves:MOVES,state:G,get fighters(){return fighters},start:(p1='ryu',p2='ken',mode='training',control='classic')=>{selected=[p1,p2];$('mode').value=mode;$('control').value=control;startBattle()},step:(n=1)=>{for(let i=0;i<n;i++)simulate(true)},press:(i,b)=>inputPress(fighters[i],b),release:(i,b)=>inputRelease(fighters[i],b),move:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id)),motion:(i,p)=>motion(fighters[i],p),reset:resetMatch,setState,contact,practice:practiceMove,getMove,clearFX:clearBattleFX,pause,render:(dt=1/60)=>fighters.forEach(f=>renderFighter(f,dt,1)),pose:desiredPose,visualPose:(f)=>INK.Runtime.visual(f,desiredPose(f),{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1,dir:f.dir}),clock:engineClock,clip:clipFor,geometry:getCombatGeometry,rig:poseRig,canRush:canRushCancel,canCancel:canCancel,canRekka:canRekkaContinue,tryMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),false),inputMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),true),describe:(f,m)=>SF6Motion.describe(f,m),audit:()=>CHARACTERS.map(c=>({character:c.name,specials:MOVES[c.id].filter(m=>m.category==='special').length,branches:MOVES[c.id].filter(m=>m.category==='branch').length,supers:MOVES[c.id].filter(m=>m.category==='super').length,normals:MOVES[c.id].filter(m=>m.category==='normal').length,total:MOVES[c.id].length}))};
++window.SVG_FIGHTER={version:'6.0.0-ink-continuity',characters:CHARACTERS,moves:MOVES,state:G,get fighters(){return fighters},start:(p1='ryu',p2='ken',mode='training',control='classic')=>{selected=[p1,p2];$('mode').value=mode;$('control').value=control;startBattle()},step:(n=1)=>{for(let i=0;i<n;i++)simulate(true)},press:(i,b)=>inputPress(fighters[i],b),release:(i,b)=>inputRelease(fighters[i],b),move:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id)),motion:(i,p)=>motion(fighters[i],p),reset:resetMatch,setState,contact,practice:practiceMove,getMove,clearFX:clearBattleFX,pause,render:(dt=1/60)=>fighters.forEach(f=>renderFighter(f,dt,1)),pose:desiredPose,visualPose:(f)=>INK.Runtime.visual(f,desiredPose(f),{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1,dir:f.dir}),clock:engineClock,clip:clipFor,geometry:getCombatGeometry,rig:poseRig,canRush:canRushCancel,canCancel:canCancel,canRekka:canRekkaContinue,tryMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),false),inputMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),true),describe:(f,m)=>SF6Motion.describe(f,m),audit:()=>CHARACTERS.map(c=>({character:c.name,specials:MOVES[c.id].filter(m=>m.category==='special').length,branches:MOVES[c.id].filter(m=>m.category==='branch').length,supers:MOVES[c.id].filter(m=>m.category==='super').length,normals:MOVES[c.id].filter(m=>m.category==='normal').length,total:MOVES[c.id].length}))};
+ // Inspection controls operate on the same combat engine and the same live SVG rigs.
+ const lab=document.createElement('div');lab.className='motion-lab';lab.id='motion-lab';lab.hidden=true;lab.innerHTML=`<b>动作鉴赏 / MOTION LAB</b><select id="lab-char" aria-label="鉴赏角色">${CHARACTERS.map(c=>`<option value="${c.id}">${c.cn} / ${c.name}</option>`).join('')}</select><select id="lab-move" aria-label="鉴赏动作"></select><button class="lab-play" id="lab-play">▶ 播放招式</button><select id="lab-speed" aria-label="演示速度"><option value="1">正常速度</option><option value="0.5">慢放 × 0.5</option><option value="0.25">慢放 × 0.25</option></select><button class="lab-small" id="lab-close" aria-pressed="false">特写 关</button><button class="lab-small" id="lab-freeze">定格</button><button class="lab-small" id="lab-step">逐帧 +1</button><small>LIVE SVG · 非视频 · 逐帧可检查</small>`;
+ $('training-bar').after(lab);
+diff --git a/src/atelier-motion.js b/src/atelier-motion.js
+index b230486..5c4ccc9 100644
+--- a/src/atelier-motion.js
++++ b/src/atelier-motion.js
+@@ -49,7 +49,9 @@ window.SF6Motion = (() => {
+   clawCut:{lean:20,bob:13,head:-13,fw:[159,-275],rw:[-73,-306],ra:[-124,-16],fa:[132,-16],open:1,turn:.3},
+   clawRake:{lean:32,bob:30,head:-17,fw:[126,-207],rw:[-120,-319],ra:[-147,-16],fa:[129,-16],open:1,turn:.48}
+  };
+- const K=(name,over={})=>Object.assign({},pose[name]||{},over);
++ // Own every vector: normal/branch recipes edit their copies during sampling.
++ // A shallow copy here used to corrupt shared poses on every sample.
++ const K=(name,over={})=>merge(pose[name]||{},over);
+  const clips={};
+  function add(id,key,wind,active,recover=null,meta={}){clips[id+':'+key]={wind,active,recover,meta};}
+  const W=(p)=>[[0,{}],[.55,p],[.77,p]], A=(p)=>[[0,p],[.7,p],[1,p]];
+@@ -127,5 +129,5 @@ window.SF6Motion = (() => {
+   return p;
+  }
+  function describe(f,m){const c=select(f,m);return {name:m.name,identity:c.meta.line,material:c.meta.material,key:f.ch.id+':'+(m.id==='CA'?'SA3':m.base||m.id),phases:['预备','发力','命中','收势']};}
+- return {neutral,sample,describe,clips,register:add,author:{K,W,A,neutralData},version:'5.0.0'};
++ return {neutral,sample,describe,clips,register:add,author:{K,W,A,neutralData},version:'6.0.0'};
+ })();
+diff --git a/src/ink/anatomy.js b/src/ink/anatomy.js
+new file mode 100644
+index 0000000..2bacb0a
+--- /dev/null
++++ b/src/ink/anatomy.js
+@@ -0,0 +1,143 @@
++/* FLOW 06 · coherent 2.5D articulation.
++ * Author-space IK -> torso-local turn -> actor-space sockets -> SVG.
++ * A turn projects the whole solved limb, NEVER just its root. Projected elbows
++ * are not solved again, so foreshortening cannot reverse a knee or fold an arm.
++ * The legacy battle solver is retained separately as Rig.solveCombat.
++ * No wall clock, previous rendered frame, or mutable pose is used here.
++ */
++'use strict';
++(() => {
++ const {Rig,mat,vec,clamp,rad,lerp}=INK;
++ const legacySolve=Rig.solveAnimation,legacySockets=Rig.sockets;
++ const parts=['rearArm','frontArm','rearLeg','frontLeg'];
++ const binding=[mat.compose(0,-191),mat.compose(0,-246),mat.compose(0,-295)];
++ const inverseBind=binding.map(mat.inverse);
++ const settings={enabled:true,softReach:true};
++ const weights=q=>{const y=q[1];if(y>=-246){const t=INK.easing(clamp((-191-y)/55));return [1-t,t,0];}const t=INK.easing(clamp((-246-y)/49));return [0,1-t,t];};
++ const yaw=(p,part)=>INK.Turn.angle(p,part==='leg'?'pelvis':part==='head'?'head':'body');
++ function lengths(c){return c.rigLengths||[c.id==='iori'?67:c.female?64:68,c.id==='iori'?76:c.female?67:71,c.id==='chun'?100:96,98];}
++ const frameCache=new WeakMap();
++ function frameInfo(p){
++  const signature=[p.lean,p.bob,p.chest,p.pelvis,p.yaw,p.turn,p.chestYaw,p.pelvisYaw,p.headYaw].join('|');
++  const old=frameCache.get(p);if(old?.signature===signature)return old;
++  const source=Rig.torsoMatrices(p),body=INK.bodyMatrix(p),invBody=mat.inverse(body);
++  const frame={source,body,invBody,inverse:source.map(mat.inverse),signature};frameCache.set(p,frame);return frame;
++ }
++ // The unturned source bones remain constant length. Exponential soft reach
++ // approaches extension continuously; minimum reach limits elbow/knee folding.
++ function chain(root,target,l1,l2,side,leg=false){
++  const dx=target[0]-root[0],dy=target[1]-root[1],distance=Math.hypot(dx,dy);
++  const maxFlex=rad(leg?153:157),minimum=Math.sqrt(l1*l1+l2*l2+2*l1*l2*Math.cos(maxFlex));
++  const maximum=l1+l2-.02,zone=leg?7:5;
++  let d=distance;if(settings.softReach&&d>maximum-zone)d=maximum-zone*Math.exp(-(d-maximum+zone)/zone);
++  d=clamp(d,minimum,maximum);
++  const u=distance>1e-8?[dx/distance,dy/distance]:[side<0?-1:1,0];
++  const at=[root[0]+u[0]*d,root[1]+u[1]*d];
++  return INK.twoBone(root,at,l1,l2,side,0);
++ }
++ // A small depth offset gives separate front/back joints at profile. A solved
++ // limb is a plane in the torso frame; its virtual depth is continuous in x.
++ // It does NOT change the source IK bone lengths or any collision geometry.
++ function projectLocal(q,angle,z=0,rootX=0,depthSlope=0){
++  const a=rad(angle),c=Math.cos(a),s=Math.sin(a),depth=z+(q[0]-rootX)*depthSlope;
++  return [q[0]*c+depth*s,q[1]];
++ }
++ function projectedPoint(p,q,bone=2,z=0){
++  const f=frameInfo(p),local=mat.point(f.inverse[bone],q);
++  return mat.point(f.source[bone],projectLocal(local,yaw(p,bone===0?'leg':'arm'),z));
++ }
++ function skinMatrices(p){
++  const f=frameInfo(p);
++  if(f.skin)return f.skin;
++  return f.skin=f.source.map((m,i)=>{
++   const angle=i===0?yaw(p,'leg'):i===2?yaw(p,'arm'):lerp(yaw(p,'leg'),yaw(p,'arm'),.5);
++   const a=rad(angle),c=Math.cos(a),s=Math.sin(a),thickness=i===0?.62:.64;
++   const width=Math.sqrt(c*c+thickness*thickness*s*s);
++   return mat.multiply(m,[width,0,0,1,0,0]);
++  });
++ }
++ function skinPoint(p,q){
++  const f=frameInfo(p),matrices=f.deforms||(f.deforms=skinMatrices(p).map((m,i)=>mat.multiply(m,inverseBind[i]))),w=weights(q),out=[0,0];
++  for(let i=0;i<3;i++){const v=mat.point(matrices[i],q);out[0]+=w[i]*v[0];out[1]+=w[i]*v[1];}
++  return out;
++ }
++ function sourceRig(c,p,rawOnly=false){
++  const f=frameInfo(p),l=lengths(c),as=c.female?35:43;
++  const rear=c.rigRearShoulder||[-as,-292],front=c.rigFrontShoulder||[as,-290],half=(c.rigHipWidth||52)/2;
++  const shoulder=q=>mat.point(mat.multiply(f.invBody,f.source[2]),[q[0],q[1]+295]);
++  const r={};
++  for(const name of parts){
++   const leg=name.includes('Leg'),isRear=name.startsWith('rear'),key=leg?(isRear?'ra':'fa'):(isRear?'rw':'fw');
++   const root=leg?mat.point(f.source[0],[isRear?-half:half,0]):shoulder(isRear?rear:front);
++   const k=clamp(p[name+'Projection']??1,.12,1),index=leg?2:0;
++   const side=p[name+'Pole']??(name==='frontLeg'?-1:1);
++   r[name]=chain(root,p[key],l[index]*k,l[index+1]*k,side,leg);
++  }
++  return !rawOnly&&INK.Articulation?INK.Articulation.stabilize(c,p,r):r;
++ }
++ function solve(c,p){
++  if(!settings.enabled)return legacySolve(c,p);
++  const source=sourceRig(c,p),f=frameInfo(p),r={},sockets={},depth={},turns={},projectors={};
++  for(const name of parts){
++   const leg=name.includes('Leg'),rear=name.startsWith('rear'),bone=leg?0:2;
++   const angle=yaw(p,leg?'leg':'arm'),sign=rear?-1:1,z=sign*(leg?5:8);
++   // Legs turn about the gravity axis so a planted ankle stays at its
++   // authored height. Arms turn in the chest frame, including torso lean.
++   const basis=leg?mat.compose(f.source[0][4],f.source[0][5]):f.source[bone],inverse=mat.inverse(basis);
++   const original=source[name].map(q=>leg?q:mat.point(f.body,q));
++   const local=original.map(q=>mat.point(inverse,q));
++   const rootX=local[0][0],slope=sign*(leg?.12:.2),a=rad(angle),cs=Math.cos(a),sn=Math.sin(a);
++   const projector=mat.multiply(basis,mat.multiply([cs+slope*sn,0,0,1,(z-rootX*slope)*sn,0],inverse));
++   projectors[name]=projector;
++   const world=original.map(q=>mat.point(projector,q));
++   // Arms retain the documented body-local compatibility representation. All
++   // downstream users read world sockets from this same result, exactly once.
++   r[name]=world.map(q=>leg?q:mat.point(f.invBody,q));sockets[name]=world;
++   depth[name]=local.map(q=>-q[0]*Math.sin(a)+(z+(q[0]-rootX)*slope)*Math.cos(a));
++   turns[name]=angle;
++  }
++  // Head, neckline, belt and hair anchors share the skinned torso frame.
++  sockets.pelvis=skinPoint(p,[0,-191]);sockets.chest=skinPoint(p,[0,-292]);
++  sockets.neck=skinPoint(p,[5,-324]);
++  const h=c.rigHeadOffset||[6,-46];sockets.head=skinPoint(p,[h[0],-295+h[1]]);
++  const anatomy={version:6,source,sockets,depth,turns,projectors};
++  Object.defineProperties(r,{profile:{value:c},anatomy:{value:anatomy}});
++  return r;
++ }
++ function sockets(p,r){return r.anatomy?r.anatomy.sockets:legacySockets(p,r);}
++ function handMatrix(p,r,c,rear=false){
++  const name=rear?'rearArm':'frontArm',pts=sockets(p,r)[name],at=pts[2],scale=c.female?.7:c.id==='luke'?.88:.82;
++  if(r.anatomy){
++   const src=r.anatomy.source[name].map(q=>mat.point(INK.bodyMatrix(p),q)),d=vec.sub(src[2],src[1]);
++   const angle=Math.atan2(d[1],d[0])*180/Math.PI;
++   // Project the complete hand + fan basis. A profile view foreshortens it
++   // continuously instead of normalizing a zero vector into a 180-degree snap.
++   return mat.multiply(r.anatomy.projectors[name],mat.compose(src[2][0],src[2][1],angle,scale,scale));
++  }
++  const d=vec.sub(at,pts[1]);return mat.compose(at[0],at[1],Math.atan2(d[1],d[0])*180/Math.PI,scale,scale);
++ }
++ function footMatrix(p,r,c,rear=false){
++  const pts=sockets(p,r)[rear?'rearLeg':'frontLeg'],at=pts[2];
++  // 0 degrees is authored flat. It is not an absent value.
++  const authored=rear?p.rfoot:p.ffoot,rot=Number.isFinite(authored)?authored:0;
++  const s=c.female?.79:.88;
++  return mat.compose(at[0],at[1],rot,s,s);
++ }
++ function inverseTarget(p,world,name,c){
++  // Editor drag and planted-foot correction invert the same visual projection.
++  // At edge-on yaw, horizontal dragging is geometrically underdetermined: keep
++  // its authored local x instead of dividing by a nearly singular cosine.
++  const leg=name.includes('Leg'),rear=name.startsWith('rear'),f=frameInfo(p),bone=leg?0:2;
++  const basis=leg?mat.compose(f.source[0][4],f.source[0][5]):f.source[bone],inverse=mat.inverse(basis);
++  const q=mat.point(inverse,world),angle=yaw(p,leg?'leg':'arm'),a=rad(angle),sign=rear?-1:1;
++  const z=sign*(leg?5:8),slope=sign*(leg?.12:.2),k=Math.cos(a)+slope*Math.sin(a);
++  const source=sourceRig(c,p),root=mat.point(inverse,leg?source[name][0]:mat.point(f.body,source[name][0]));
++  const key=leg?(rear?'ra':'fa'):(rear?'rw':'fw');
++  const prev=mat.point(inverse,leg?p[key]:mat.point(f.body,p[key]));
++  const x=Math.abs(k)>.18?(q[0]-(z-root[0]*slope)*Math.sin(a))/k:prev[0];
++  const actor=mat.point(basis,[x,q[1]]);
++  return leg?actor:mat.point(f.invBody,actor);
++ }
++ Rig.solveCombat=legacySolve;Rig.solveAnimation=solve;Rig.sockets=sockets;
++ INK.Anatomy={version:'6.0.0',settings,solve,sourceRig,chain,skinPoint,skinMatrices,weights,frameInfo,projectLocal,projectedPoint,handMatrix,footMatrix,inverseTarget,lengths};
++})();
+diff --git a/src/ink/articulation.js b/src/ink/articulation.js
+new file mode 100644
+index 0000000..67cdb3e
+--- /dev/null
++++ b/src/ink/articulation.js
+@@ -0,0 +1,65 @@
++/* FLOW 06 · deterministic angular articulation, not render-frame smoothing.
++ * Targets are compiled to source-space joint rotations at 1/4-frame resolution.
++ * Shoulder/hip angles are unwrapped and rate-limited before FK reconstruction.
++ * This prevents a wrist crossing a shoulder, or a foot crossing a hip, from
++ * instantaneously switching to the opposite IK solution. A random seek uses
++ * exactly the same cache as sequential playback. Combat never reads this cache.
++ */
++'use strict';
++(() => {
++ const {mat,vec,rad,clamp}=INK,parts=['rearArm','frontArm','rearLeg','frontLeg'],step=.25;
++ const settings={enabled:true,armSpeed:32,legSpeed:26,bendSpeed:38};
++ const bodyLimits={lean:16,chest:18,pelvis:12,head:18,yaw:40,spin:60,headYaw:24,chestYaw:24,pelvisYaw:24,turn:.22,bob:24,floor:24,ffoot:40,rfoot:40};
++ let cache=new WeakMap(),contexts=new WeakMap();
++ const stats={bakes:0,evaluations:0,limited:0};
++ const shortest=x=>((x+180)%360+360)%360-180;
++ function signature(c){return JSON.stringify([c.id,c.female,c.rigLengths,c.rigHipWidth,c.rigRearShoulder,c.rigFrontShoulder,settings.armSpeed,settings.legSpeed,settings.bendSpeed]);}
++ function angles(chain){const a=vec.sub(chain[1],chain[0]),b=vec.sub(chain[2],chain[1]),u=Math.atan2(a[1],a[0])*180/Math.PI,v=Math.atan2(b[1],b[0])*180/Math.PI;return[u,shortest(v-u)];}
++ function reference(c,p){return INK.Anatomy.sourceRig(c,p,true);}
++ function bake(data,c){
++  let profiles=cache.get(data);if(!profiles){profiles=new Map();cache.set(data,profiles);}const key=signature(c);if(profiles.has(key))return profiles.get(key);
++  const clip=new INK.CompiledClip(data),count=Math.ceil(data.duration/step)+1,tracks=Object.fromEntries(parts.map(k=>[k,new Float64Array(count*2)]));
++  const body=Object.fromEntries(Object.keys(bodyLimits).map(k=>[k,new Float64Array(count)]));
++  let limited=0;
++  for(let i=0;i<count;i++){
++   const p=clip.sample(Math.min(data.duration,i*step));
++   for(const [name,speed]of Object.entries(bodyLimits)){const raw=p[name]??0,prev=i?body[name][i-1]:raw,delta=raw-prev,limit=speed*step;if(Math.abs(delta)>limit+.0001)limited++;body[name][i]=prev+clamp(delta,-limit,limit);p[name]=body[name][i];}
++   const r=reference(c,p);
++   for(const name of parts){const raw=angles(r[name]),a=tracks[name],speed=name.includes('Leg')?settings.legSpeed:settings.armSpeed;
++    for(let j=0;j<2;j++){if(!i){a[j]=raw[j];continue;}const prev=a[(i-1)*2+j],delta=shortest(raw[j]-prev),limit=(j?settings.bendSpeed:speed)*step;
++     if(Math.abs(delta)>limit+.0001)limited++;a[i*2+j]=prev+clamp(delta,-limit,limit);
++    }
++   }
++  }
++  const value={clip,tracks,body,count,limited};if(profiles.size>=4)profiles.delete(profiles.keys().next().value);profiles.set(key,value);stats.bakes++;stats.limited+=limited;return value;
++ }
++ function sampleBody(b,frame,p,base=null){const index=Math.min(b.count-1,frame/step),i=Math.floor(index),j=Math.min(b.count-1,i+1),u=index-i;for(const [name,a]of Object.entries(b.body)){const correction=base?(p[name]??0)-(base[name]??0):0;p[name]=a[i]+(a[j]-a[i])*u+correction;}return p;}
++ function prepare(p,data,frame,c){if(c&&data&&Number.isFinite(frame)){frame=clamp(frame,0,data.duration);contexts.set(p,{data,frame,c});if(settings.enabled){const b=bake(data,c);sampleBody(b,frame,p,b.clip.sample(frame));}}return p;}
++ function inherit(from,to){const ctx=contexts.get(from);if(ctx)contexts.set(to,ctx);return to;}
++ function stabilize(c,p,raw){
++  const ctx=contexts.get(p);if(!settings.enabled||!ctx)return raw;
++  const b=bake(ctx.data,c),index=Math.min(b.count-1,ctx.frame/step),i=Math.floor(index),j=Math.min(b.count-1,i+1),u=index-i;
++  const base=sampleBody(b,ctx.frame,b.clip.sample(ctx.frame)),ref=reference(c,base),out={};
++  for(const name of parts){
++   const tr=b.tracks[name],a0=angles(raw[name]),a1=angles(ref[name]);
++   // Preserve bounded, current-frame layer/contact corrections. Rate control
++   // applies to the authored path, not to an accumulated previous render pose.
++   const a=[0,1].map(k=>tr[i*2+k]+(tr[j*2+k]-tr[i*2+k])*u+clamp(shortest(a0[k]-a1[k]),-14,14));
++   const jt=ctx.transition;if(jt&&ctx.transitionTime<jt.duration&&jt.duration>0){
++    const u=clamp(ctx.transitionTime/jt.duration),h=2*u*u*u-3*u*u+1,g=u*u*u-2*u*u+u;
++    for(let k=0;k<2;k++)a[k]+=jt.offsets[name][k]*h+jt.velocities[name][k]*jt.duration*g;
++   }
++   const root=raw[name][0],l0=vec.length(vec.sub(raw[name][1],root)),l1=vec.length(vec.sub(raw[name][2],raw[name][1]));
++   const first=[root[0]+Math.cos(rad(a[0]))*l0,root[1]+Math.sin(rad(a[0]))*l0];
++   out[name]=[root,first,[first[0]+Math.cos(rad(a[0]+a[1]))*l1,first[1]+Math.sin(rad(a[0]+a[1]))*l1]];
++  }
++  stats.evaluations++;return out;
++ }
++ function attachTransition(p,transition,t){const c=contexts.get(p);if(c&&transition&&t<transition.duration)contexts.set(p,{...c,transition,transitionTime:Math.max(0,t)});return p;}
++ function bridge(from,previous,target,next,duration,dt=.25){
++  const offsets={},velocities={};for(const name of parts){const a=angles(from.anatomy.source[name]),b=angles(previous.anatomy.source[name]),c=angles(target.anatomy.source[name]),d=angles(next.anatomy.source[name]);
++   offsets[name]=a.map((v,k)=>shortest(v-c[k]));velocities[name]=a.map((v,k)=>clamp((shortest(v-b[k])-shortest(d[k]-c[k]))/Math.max(.001,dt),-64,64));}
++  return{offsets,velocities,duration};
++ }
++ INK.Articulation={version:'6.0.0',settings,stats,prepare,inherit,stabilize,bake,angles,bodyLimits,attachTransition,bridge,clear(){cache=new WeakMap();contexts=new WeakMap();}};
++})();
+diff --git a/src/ink/core.js b/src/ink/core.js
+index 9985932..5b62e50 100644
+--- a/src/ink/core.js
++++ b/src/ink/core.js
+@@ -4,7 +4,7 @@
+  */
+ 'use strict';
+ globalThis.INK = (() => {
+-  const VERSION = '5.0.0-flow';
++  const VERSION = '6.0.0-continuity';
+   const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+   const lerp = (a, b, t) => a + (b - a) * t;
+   const rad = a => a * Math.PI / 180;
+diff --git a/src/ink/game-adapter.js b/src/ink/game-adapter.js
+index 571c922..a8db5c1 100644
+--- a/src/ink/game-adapter.js
++++ b/src/ink/game-adapter.js
+@@ -1,6 +1,6 @@
+ /* One production renderer, reversible only for regression inspection. */
+ 'use strict';
+-(()=>{INK.Game={enabled:true,mode:'skin',version:'5.0.0',
++(()=>{INK.Game={enabled:true,mode:'skin',version:'6.0.0',
+  legacyNodes:f=>[f.core,f.rearLeg.g,f.frontLeg.g,f.trailing,f.beltLink].filter(Boolean),
+  show(f,on){for(const n of this.legacyNodes(f))n.style.display=on?'none':'';if(f.inkRenderer)f.inkRenderer.group.style.display=on?'':'none';if(f.inkFX){f.inkFX.group.style.display=on?'':'none';f.inkFX.backRoot.style.display=on?'':'none';}},
+  mount(f){if(f.inkRenderer)return f.inkRenderer;const profile=INK.Runtime.store?INK.Runtime.profile(f.ch.id):INK.assets.byID[f.ch.id];const r=f.inkRenderer=new INK.Renderer(f.facing,profile);r.setStyle(profile.previewStyle||{});r.setMode(this.mode);f.facing.insertBefore(r.group,f.charge);f.inkFX=new INK.Effects(f.facing);f.facing.insertBefore(f.inkFX.backRoot,r.group);f.facing.insertBefore(f.inkFX.group,f.charge);return r;},
+diff --git a/src/ink/motion-graph.js b/src/ink/motion-graph.js
+index 9c1ebb8..cdcf654 100644
+--- a/src/ink/motion-graph.js
++++ b/src/ink/motion-graph.js
+@@ -1,4 +1,4 @@
+-/* FLOW 05 — data-driven presentation graph.
++/* FLOW 06 — data-driven presentation graph.
+  * Base clip + inertial handoff (caller) -> masked additive/override layers ->
+  * contact constraints -> the shared IK solver. World root motion remains combat
+  * owned. Visual corrections never feed damage, hitboxes or movement rules.
+@@ -83,7 +83,8 @@
+   function compose(record,frame,base,profile,context=null,options=settings) {
+     const data=record?.clip||record;if(!data)return copy(base);
+     const p=layers(data,frame,base,options);stats.evaluations++;
+-    if(!options.enabled||!options.contacts||!profile||context?.airborne)return p;
++    const ready=()=>INK.Articulation?INK.Articulation.prepare(p,data,frame,profile):p;
++    if(!options.enabled||!options.contacts||!profile||context?.airborne)return ready();
+     const contacts=data.meta?.motion5?.contacts||[];
+     for(const c of contacts) {
+       if(frame<c.start||frame>=c.end)continue;
+@@ -93,12 +94,13 @@
+       const ref=layers(data,c.start,compiled(data).clip.sample(c.start),options),rig=INK.Rig.solveAnimation(profile,ref);
+       const part=c.socket==='frontFoot'?'frontLeg':'rearLeg',key=c.socket==='frontFoot'?'fa':'ra';
+       const world=mat.point(rootMatrix(ref,rootAt(context,c.start)),rig[part][2]);
+-      const target=mat.point(mat.inverse(rootMatrix(p,context||{})),world);
++      const projected=mat.point(mat.inverse(rootMatrix(p,context||{})),world);
++      const target=INK.Anatomy?INK.Anatomy.inverseTarget(p,projected,part,profile):projected;
+       let dx=target[0]-p[key][0],dy=target[1]-p[key][1],distance=Math.hypot(dx,dy);
+       const limit=c.maxCorrection??32;if(distance>limit){dx*=limit/distance;dy*=limit/distance;}
+       p[key]=[p[key][0]+dx*weight,p[key][1]+dy*weight];stats.contactEvaluations++;
+     }
+-    return p;
++    return ready();
+   }
+-  INK.MotionGraph={compose,layers,rootMatrix,rootAt,validate,settings,stats,version:'5.0.0',clear(){cache=new WeakMap();}};
++  INK.MotionGraph={compose,layers,rootMatrix,rootAt,validate,settings,stats,version:'6.0.0',clear(){cache=new WeakMap();}};
+ })();
+diff --git a/src/ink/motion.js b/src/ink/motion.js
+index 46571ed..9a597c7 100644
+--- a/src/ink/motion.js
++++ b/src/ink/motion.js
+@@ -1,4 +1,4 @@
+-/* FLOW 05 · presentation math and deadline-constrained inertial transitions.
++/* FLOW 06 · presentation math and deadline-constrained inertial transitions.
+  * Pure, random-access functions. Never writes a fighter, collision, or meter.
+  * Angles are unwrapped only BETWEEN clips: authored 360/720-degree turns remain.
+  */
+@@ -40,7 +40,7 @@
+     // Keep scale and weapon openness in their physical domains during handoff.
+     for(const k of ['depth','reachScale','frontArmProjection','rearArmProjection','frontLegProjection','rearLegProjection'])if(k in out)out[k]=clamp(out[k],.12,3);
+     if('fan' in out)out.fan=clamp(out.fan);
+-    return out;
++    return INK.Articulation?INK.Articulation.inherit(p,out):out;
+   }
+   function velocity(a,b,dt=.25) {
+     const out={};if(dt<=0)return out;
+@@ -84,11 +84,16 @@
+   // Shared by the weapon rendering and emitter sockets. These are visual sockets,
+   // not a replacement for the original fan's fixed weaponReach combat rule.
+   function fanSocket(p,rig,name='fanTip') {
++    if(INK.Anatomy&&rig.anatomy){
++      const m=INK.Anatomy.handMatrix(p,rig,rig.profile||{id:'mai',female:true});
++      const fan=INK.mat.multiply(m,INK.mat.compose(16,0,-18+(p.fanAngle??0)));
++      return INK.mat.point(fan,name==='fanGrip'?[0,0]:[79,0]);
++    }
+     const r=INK.Rig.sockets(p,rig),hand=r.frontArm[2],elbow=r.frontArm[1];
+     const theta=Math.atan2(hand[1]-elbow[1],hand[0]-elbow[0]);
+     const grip=[hand[0]+Math.cos(theta)*11.2,hand[1]+Math.sin(theta)*11.2];
+     if(name==='fanGrip')return grip;
+     const angle=theta+rad(-18+(p.fanAngle||0));return[grip[0]+Math.cos(angle)*55.3,grip[1]+Math.sin(angle)*55.3];
+   }
+-  INK.Motion={version:'5.0.0',angles,shortest,smoother,residual,bridge,apply,velocity,secondary,blendSecondary,resample,fanSocket};
++  INK.Motion={version:'6.0.0',angles,shortest,smoother,residual,bridge,apply,velocity,secondary,blendSecondary,resample,fanSocket};
+ })();
+diff --git a/src/ink/portable.js b/src/ink/portable.js
+index d46b836..391b6fc 100644
+--- a/src/ink/portable.js
++++ b/src/ink/portable.js
+@@ -12,6 +12,6 @@
+  function safeJSON(o){return JSON.stringify(o).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');}
+  function html(store,{playerOnly=false}={}){const el=document.getElementById('ink-export-template');if(!el)throw Error('此源码页面没有离线模板，请先运行构建器');const t=JSON.parse(el.textContent),snapshot=store.snapshot();snapshot.projectId='ink-portable-'+Date.now().toString(36)+(playerOnly?'-play':'');snapshot.presentation=playerOnly?'player':'studio';const slot=(doc,id,value)=>{const start='<script id="'+id+'" type="application/json">',a=doc.indexOf(start);if(a<0)throw Error('导出模板缺少 '+id);const b=doc.indexOf('</script>',a);return doc.slice(0,a+start.length)+safeJSON(value)+doc.slice(b);};return slot(slot(t,'ink-export-template',t),'ink-user-project',snapshot);}
+  function download(name,content,type='application/octet-stream'){const blob=content instanceof Blob?content:new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);return blob;}
+- function packageFiles(store,playable=true){const files={};const routes=document.getElementById('ink-combo-library');if(routes)files['assets/ink/combos.json']=routes.textContent;for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK FLOW 5 / Motion Graph & FX Runtime\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
++ function packageFiles(store,playable=true){const files={};const routes=document.getElementById('ink-combo-library');if(routes)files['assets/ink/combos.json']=routes.textContent;for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK FLOW 6 / Continuous Articulation\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
+  INK.Portable={zip,crc32,html,download,packageFiles,safeJSON};
+ })();
+diff --git a/src/ink/project.js b/src/ink/project.js
+index 9a1dc77..0699085 100644
+--- a/src/ink/project.js
++++ b/src/ink/project.js
+@@ -49,7 +49,7 @@
+   async set(value){if(this.mode==='indexedDB')return new Promise((resolve,reject)=>{const tx=this.db.transaction('projects','readwrite');tx.objectStore('projects').put(value,this.name);tx.oncomplete=()=>resolve(true);tx.onerror=tx.onabort=()=>reject(tx.error||Error('无法保存数据库'));});if(this.mode==='localStorage'){localStorage.setItem(this.name,JSON.stringify(value));return true;}return false;}
+  }
+  class AssetStore {
+-  constructor(bundle,embedded=null){this.bundle=bundle;this.manifest=bundle.manifest;this.overrides={models:{},rigs:{},moves:{}};this.revision=0;this.listeners=new Set();this.cache=new Map();this.queue=Promise.resolve();this.id=embedded?.projectId||'ink-flow-sf6-v5';this.persistence=new Persistence(this.id);this.embedded=embedded;this.pathHandle=null;this.directoryQueue=Promise.resolve();this.lastSaved=0;this.mode='loading';this.gameMap={};for(const id of CHARACTERS){for(const rec of Object.values(bundle.characters[id].moves))this.gameMap[id+':'+rec.gameId]=id+':'+rec.key;}}
++  constructor(bundle,embedded=null){this.bundle=bundle;this.manifest=bundle.manifest;this.overrides={models:{},rigs:{},moves:{}};this.revision=0;this.listeners=new Set();this.cache=new Map();this.queue=Promise.resolve();this.id=embedded?.projectId||'ink-flow-sf6-v6';this.persistence=new Persistence(this.id);this.embedded=embedded;this.pathHandle=null;this.directoryQueue=Promise.resolve();this.lastSaved=0;this.mode='loading';this.gameMap={};for(const id of CHARACTERS){for(const rec of Object.values(bundle.characters[id].moves))this.gameMap[id+':'+rec.gameId]=id+':'+rec.key;}}
+   async init(){
+    validateBundle(this.bundle);
+    await this.persistence.init();this.mode=this.persistence.mode;
+diff --git a/src/ink/renderer.js b/src/ink/renderer.js
+index dd740d7..8f51bf4 100644
+--- a/src/ink/renderer.js
++++ b/src/ink/renderer.js
+@@ -45,12 +45,11 @@
+    };for(const c of tmp.children)walk(c,mat.identity());
+   }
+   render(p,stats){
+-   if(!p.chest&&!p.pelvis){
+-    setTransform(this.group,INK.bodyMatrix(p),stats);if(!this.rigid){for(const {dom,rest}of this.paths)assign(dom,'d',rest,stats);this.rigid=true;}return;
+-   }
+-   this.rigid=false;assign(this.group,'transform','',stats);const matrices=Rig.torsoMatrices(p);
+-   for(const {dom,skin}of this.paths)assign(dom,'d',skin.deform(matrices),stats);
++   this.rigid=false;assign(this.group,'transform','',stats);
++   const matrices=INK.Anatomy.skinMatrices(p);
++   for(const {dom,skin} of this.paths)assign(dom,'d',skin.deform(matrices),stats);
+   }
++
+  }
+  function segmentShape(length,top,bottom,bulge=1,lower=false){
+   const L=length,w=top,b=bottom,peak=w*bulge;
+@@ -69,34 +68,31 @@
+  let serial=0;
+  // One uninterrupted anatomical envelope. Bone-local shading is clipped into it;
+  // knees and elbows are not two outlined cylinders meeting at a visible seam.
+- function envelope(chain,widths,outer,flex=0){
+-  const [a,b,c]=chain,[w,e,z]=widths,u=vec.normal(vec.sub(b,a)),v=vec.normal(vec.sub(c,b));
+-  const normal=t=>[-t[1],t[0]],n0=normal(u),n1=normal(v),nj=vec.normal(vec.add(n0,n1));
+-  const cross=[{q:vec.sub(a,vec.mul(u,w*.45)),n:n0,w:w*.58}];
+-  for(const t of [0,.2,.5,.78])cross.push({q:vec.mix(a,b,t),n:n0,w:lerp(w,e,t)+(Math.sin(t*Math.PI)*w*(.075+flex*.06))});
+-  cross.push({q:b,n:nj,w:e});
+-  for(const t of [.2,.5,.8,1])cross.push({q:vec.mix(b,c,t),n:n1,w:lerp(e,z,t)+Math.sin(t*Math.PI)*e*.16});
+-  cross.push({q:vec.add(c,vec.mul(v,z*.45)),n:n1,w:z*.6});
+-  const pts=[...cross.map(q=>mat.point(outer,vec.add(q.q,vec.mul(q.n,q.w)))),...cross.slice().reverse().map(q=>mat.point(outer,vec.sub(q.q,vec.mul(q.n,q.w*.95))))];
+-  let d='M'+pts[0].join(' ');const N=pts.length;for(let i=0;i<N;i++){const a=pts[(i-1+N)%N],b=pts[i],c=pts[(i+1)%N],e=pts[(i+2)%N];d+='C'+vec.add(b,vec.mul(vec.sub(c,a),.15)).join(' ')+' '+vec.sub(c,vec.mul(vec.sub(e,b),.15)).join(' ')+' '+c.join(' ');}return d+'Z';
+- }
+  class Limb {
+   constructor(parent,c,leg,rear,profile){
+    this.c=c;this.leg=leg;this.rear=rear;this.widths=leg?profile.leg:profile.arm;this.material=material(c,leg,rear);
+    this.group=node('g',{'data-ink-part':(rear?'rear-':'front-')+(leg?'leg':'arm')},parent);
+-   this.surface=node('path',{fill:this.material.base,stroke:INKLINE,'stroke-width':1.25,'stroke-linejoin':'round'},this.group);this.clip=node('clipPath',{id:'ink-limb-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.group);this.clipShape=node('path',{},this.clip);this.details=node('g',{'clip-path':'url(#'+this.clip.id+')'},this.group);
+-   this.pieces=[0,1].map(()=>{const group=node('g',{},this.details);return {group,outline:node('path',{fill:this.material.base,stroke:'none','stroke-width':0,'stroke-linejoin':'round'},group),shade:node('path',{fill:this.material.shade,opacity:rear?.46:.28},group),light:node('path',{fill:this.material.light,opacity:rear?.12:.32},group),line:node('path',{fill:'none',stroke:this.material.shade,'stroke-width':1,'stroke-linecap':'round',opacity:.68},group),cloth:node('g',{},group)};});
++   this.surface=node('path',{fill:this.material.base,stroke:INKLINE,'stroke-width':1.1,'stroke-linejoin':'round'},this.group);this.clip=node('clipPath',{id:'ink6-limb-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.group);this.clipShape=node('path',{},this.clip);this.details=node('g',{'clip-path':'url(#'+this.clip.id+')'},this.group);
++   this.pieces=[0,1].map(()=>{const group=node('g',{},this.details);return {group,outline:node('path',{fill:this.material.base,stroke:'none','stroke-width':0,'stroke-linejoin':'round'},group),shade:node('path',{fill:this.material.shade,opacity:rear?.28:.16},group),light:node('path',{fill:this.material.light,opacity:rear?.12:.2},group),line:node('path',{fill:'none',stroke:this.material.shade,'stroke-width':1,'stroke-linecap':'round',opacity:.68},group),cloth:node('g',{},group)};});
++   this.skinShade=node('path',{fill:this.material.shade,opacity:this.rear?.22:.16},this.details);this.details.insertBefore(this.skinShade,this.details.firstChild);
++   this.skinLight=node('path',{fill:this.material.light,opacity:.22},this.details);this.details.insertBefore(this.skinLight,this.details.firstChild);
+    this.joint=node('ellipse',{fill:this.material.base},this.group);
+    this.crease=node('path',{fill:'none',stroke:this.material.shade,'stroke-width':.95,'stroke-linecap':'round',opacity:.7},this.group);
+    this.end=node('g',{},this.group);
+-   if(leg)this.end.innerHTML=SF6Art.feet(c);else{
++   if(leg){
++    const bare=['ryu','juri','luke','mai'].includes(c.id),p=SF6Art.palette[c.id];
++    this.shoe=node('path',{fill:bare?`url(#atelier-${c.id}-skin)`:`url(#atelier-${c.id}-dark)`,stroke:INKLINE,'stroke-width':1.3,'stroke-linejoin':'round'},this.end);
++    this.sole=node('path',{fill:'none',stroke:bare?p.skin[2]:p.dark[2],'stroke-width':2.1,'stroke-linecap':'round'},this.end);
++    this.ankle=node('path',{d:'M-10 -16L10 -16 10 -3Q0 1-10 -3Z',fill:c.id==='mai'?'#f3e5d4':bare?p.dark[1]:p.dark[0],stroke:INKLINE,'stroke-width':.8},this.end);
++    this.ankleDetail=node('path',{d:'M-9 -12L9 -10M-9 -7L9 -5',fill:'none',stroke:c.id==='mai'?'#b39a90':p.dark[2],'stroke-width':.8},this.end);
++   }else{
+     this.fist=node('g',{},this.end);this.fist.innerHTML=INK.assets.hand(c);this.palm=node('g',{},this.end);this.palm.innerHTML=INK.assets.hand(c,true);
+     if(c.id==='mai'&&!rear){this.fan=node('g',{},this.end);this.fanRig=new INK.MaiFan(this.fan);this.end.insertBefore(this.fan,this.fist);}
+    }
+    this.decalsReady=false;
+   }
+   decals(lengths){
+-   if(this.decalsReady)return;this.decalsReady=true;const c=this.c,id=c.id,p=SF6Art.palette[id],[w,e,a]=this.widths,[u,l]=lengths,{P,F,L}=INK.assets;
++   if(this.decalsReady)return;this.decalsReady=true;this.decalLengths=lengths.slice();const c=this.c,id=c.id,p=SF6Art.palette[id],[w,e,a]=this.widths,[u,l]=lengths,{P,F,L}=INK.assets;
+    const band=(top,bottom,width,fill)=>P(`M${-width} ${top}Q0 ${top+4} ${width} ${top}L${width*.78} ${bottom}Q0 ${bottom+4} ${-width*.78} ${bottom}Z`,fill,1);
+    let upper='',lower='';
+    if(!this.leg){
+@@ -115,30 +111,39 @@
+    }
+    this.pieces[0].cloth.innerHTML=upper;this.pieces[1].cloth.innerHTML=lower;
+   }
+-  render(chain,p,stats,style={}) {
++  render(chain,p,stats,style={},rig=null) {
+    const[a,b,c]=chain,outer=this.leg?mat.identity():INK.bodyMatrix(p),ab=vec.sub(b,a),bc=vec.sub(c,b),lengths=[vec.length(ab),vec.length(bc)];
+-   const dot=clamp((ab[0]*bc[0]+ab[1]*bc[1])/(lengths[0]*lengths[1]),-1,1),flex=(1-dot)*.5;
++   const dot=clamp((ab[0]*bc[0]+ab[1]*bc[1])/Math.max(1e-8,lengths[0]*lengths[1]),-1,1),flex=(1-dot)*.5;
+    const volume=style.volume??1,baseWidths=this.widths.map(w=>w*volume*(this.rear?.94:1));
+    const[w,e,z]=baseWidths;
+-   this.decals(lengths);
+-   const contour=envelope(chain,baseWidths,outer,flex);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
++   // Decals are authored at invariant source-bone length, not at the
++   // foreshortened length of whichever frame happened to mount first.
++   const name=(this.rear?'rear':'front')+(this.leg?'Leg':'Arm'),source=rig.anatomy?.source[name];
++   const invariant=INK.Anatomy.lengths(this.c),index=this.leg?2:0,sourceLengths=[invariant[index],invariant[index+1]];
++   this.decals(sourceLengths);
++   const contour=INK.SkinGeometry.sweep(chain,baseWidths,outer);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
++   assign(this.skinShade,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer):'',stats);
++   assign(this.skinLight,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,.38,.61):'',stats);
+    for(let i=0;i<2;i++){
+     const part=this.pieces[i],L=lengths[i],top=i?e*(this.leg?1.05:1.14):w,bottom=i?z:e;
+     const bulge=i?(this.leg?1.19:this.c.id==='luke'?1.47:1.24):(this.material.skin?1+flex*.1:1.015);
+     setTransform(part.group,boneMatrix(i?b:a,i?c:b,outer),stats);
+-    assign(part.outline,'d',segmentShape(L,top,bottom,bulge,!!i),stats);
++    assign(part.cloth,'transform',`scale(1 ${L/Math.max(.0001,this.decalLengths[i])})`,stats);
++    assign(part.outline,'d',this.material.skin?'':segmentShape(L,top,bottom,bulge,!!i),stats);
++    assign(part.shade,'display',this.material.skin?'none':'inline',stats);assign(part.light,'display',this.material.skin?'none':'inline',stats);
+     assign(part.shade,'d',segmentShadow(L,top,bottom,!!i),stats);assign(part.light,'d',segmentLight(L,top,bottom),stats);
+     assign(part.line,'d',this.material.skin?`M${top*.35} ${L*.36}Q${top*.47} ${L*.56} ${bottom*.23} ${L*.76}`:'',stats);
+    }
+    const joint=mat.point(outer,b),ang=Math.atan2(bc[1],bc[0])*180/Math.PI;
+    assign(this.joint,'cx',joint[0],stats);assign(this.joint,'cy',joint[1],stats);assign(this.joint,'rx',e*.82,stats);assign(this.joint,'ry',e*.71,stats);
+-   // Only skin joints need a patch; trousers retain their authored fold.
++   // The shared continuous surface replaces the old overlaid joint patch.
+    assign(this.joint,'visibility','hidden',stats);
+-   const n=[-bc[1]/lengths[1],bc[0]/lengths[1]],q0=mat.point(outer,[b[0]+n[0]*e*.55,b[1]+n[1]*e*.55]),q1=mat.point(outer,[b[0]-n[0]*e*.4,b[1]-n[1]*e*.4]);
+-   assign(this.crease,'d',`M${q0}Q${joint[0]+3} ${joint[1]+2} ${q1}`,stats);
+-   const at=mat.point(outer,c),rot=this.leg?((this.rear?p.rfoot:p.ffoot)||clamp((ang-90)*.24,-26,30)):ang+(p.lean||0);
+-   const scale=this.leg?(this.c.female?.79:.88):(this.c.female?.7:this.c.id==='luke'?.88:.82);
+-   setTransform(this.end,mat.compose(at[0],at[1],rot,scale,scale),stats);
++   const n=[-bc[1]/Math.max(.0001,lengths[1]),bc[0]/Math.max(.0001,lengths[1])],q0=mat.point(outer,[b[0]+n[0]*e*.55,b[1]+n[1]*e*.55]),q1=mat.point(outer,[b[0]-n[0]*e*.4,b[1]-n[1]*e*.4]);
++   assign(this.crease,'d',`M${q0}Q${joint[0]+3} ${joint[1]+2} ${q1}`,stats);assign(this.crease,'opacity',this.material.skin?.16+flex*.19:.4,stats);
++   const endMatrix=this.leg?INK.Anatomy.footMatrix(p,rig,this.c,this.rear):INK.Anatomy.handMatrix(p,rig,this.c,this.rear);
++   setTransform(this.end,endMatrix,stats);
++   if(this.leg){const shoe=INK.SkinGeometry.foot(INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
++
+    if(!this.leg){const open=p.open>.45;assign(this.palm,'visibility',open?'visible':'hidden',stats);assign(this.fist,'visibility',open?'hidden':'visible',stats);
+     if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1);assign(this.fan,'transform',`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
+    }
+@@ -156,6 +161,7 @@
+    this.hair=node('g',{'data-ink-part':'hair-followthrough'},this.art);this.hair.innerHTML=a.hair;
+    this.rearArm=new Limb(this.art,this.c,false,true,this.c);
+    this.torso=new SkinGroup(this.art,a.torso,this.c.shape);this.torsoBack=new SkinGroup(this.art,a.torsoBack,this.c.shape);this.torsoSide=new SkinGroup(this.art,a.torsoSide||a.torso,this.c.shape);
++   this.pelvisSurface=node('path',{'data-ink-part':'pelvis-bridge',fill:this.c.id==='mai'?'#b42d47':material(this.c,true,false).base,stroke:'none'},this.art);
+    this.coat=node('g',{'data-ink-part':'coat-followthrough'},this.art);this.coat.innerHTML=a.coat;
+    this.strap=node('path',{fill:'none',stroke:'#a23c56','stroke-width':5,'stroke-linecap':'round'},this.art);
+    this.head=node('g',{'data-ink-part':'head-slot'},this.art);this.heads={};
+@@ -163,12 +169,17 @@
+    this.expressions=[...this.head.querySelectorAll('[data-expression]')];
+    this.turnMasks={};this.turnDefs=node('defs',{},this.group);
+    for(const part of ['body','face'])for(const view of ['front','profile','back']){
+-    const mask=node('clipPath',{id:'ink-turn-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs);
+-    const rect=node('rect',{x:-600,y:-600,width:1200,height:1200},mask);this.turnMasks[part+view]=rect;
++    const mask=node('clipPath',{id:'ink6-turn-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs);
++    const rect=part==='body'?node('path',{},mask):node('rect',{x:-600,y:-600,width:1200,height:1200},mask);this.turnMasks[part+view]=rect;
+     const target=part==='body'?({front:this.torso,profile:this.torsoSide,back:this.torsoBack}[view].group):this.heads[view];
+     target.setAttribute('clip-path','url(#'+mask.id+')');
+    }
+    this.frontArm=new Limb(this.art,this.c,false,false,this.c);
++   this.foregroundArms={};
++   for(const name of ['rearArm','frontArm']){const id='ink6-arm-source-'+(++serial);this[name].group.id=id;
++    const clip=node('clipPath',{id:'ink6-arm-depth-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs),path=node('path',{},clip);
++    const use=node('use',{href:'#'+id,'clip-path':'url(#'+clip.id+')','data-ink-part':name+'-depth-overlay'},this.art);this.foregroundArms[name]={clip,path,use};
++   }
+    this.debug=node('g',{'data-ink-layer':'rig','pointer-events':'none'},this.group);
+    this.bones=Array.from({length:11},()=>node('line',{stroke:'#3a8f87','stroke-width':1.35,'stroke-dasharray':'4 3'},this.debug));
+    this.joints=Array.from({length:15},()=>node('circle',{r:3.4,fill:'#f6fbeb',stroke:'#238b81','stroke-width':1.4},this.debug));
+@@ -176,42 +187,53 @@
+    if(this.c.id==='mai')this.maiSecondary=new INK.MaiSecondary(this);
+    this.stats.mountNodes=this.group.querySelectorAll('*').length;
+   }
+-  setMode(mode){if(!['skin','rig','silhouette','overlay'].includes(mode))throw Error('Unknown mode');this.mode=mode;assign(this.group,'data-ink-mode',mode,this.stats);assign(this.art,'visibility',mode==='rig'?'hidden':'visible',this.stats);assign(this.debug,'visibility',['rig','overlay'].includes(mode)?'visible':'hidden',this.stats);}
++  setMode(mode){if(!['skin','rig','silhouette','overlay'].includes(mode))throw Error('Unknown mode');this.mode=mode;assign(this.group,'data-ink-mode',mode,this.stats);assign(this.art,'visibility',mode==='rig'?'hidden':'visible',this.stats);assign(this.debug,'display',['rig','overlay'].includes(mode)?'inline':'none',this.stats);assign(this.debug,'visibility',['rig','overlay'].includes(mode)?'visible':'hidden',this.stats);}
+   setStyle(style){if(style.volume!==undefined)this.style.volume=clamp(style.volume,.75,1.3);if(style.head!==undefined)this.style.head=clamp(style.head,.8,1.25);}
+   render(p,{rig=null,frame=0,expression='rest',impulses=[],secondary=true,motion=null}={}) {
+    if(this.destroyed)throw Error('Renderer already destroyed');const start=performance.now();this.stats.writes=0;this.stats.frames++;
+    const signature=JSON.stringify([p,rig,secondary?frame:0,expression,impulses,motion,this.style,this.mode]);if(signature===this.signature){this.stats.cpuMs=performance.now()-start;return this.stats;}this.signature=signature;
+-   const inputRig=rig||Rig.solveAnimation(this.c,p),r={...inputRig},s=this.stats,turn=INK.Turn.view(INK.Turn.angle(p)),back=turn.far;
+-   // The legacy game can hand us a collapsed chain when target == shoulder.
+-   // Repair the drawing only; authoritative gameplay geometry remains untouched.
+-   for(const [name,chain]of Object.entries(r))if(vec.length(vec.sub(chain[1],chain[0]))<1e-5||vec.length(vec.sub(chain[2],chain[1]))<1e-5){const leg=name.includes('Leg'),male=!this.c.female,upper=leg?(this.c.id==='chun'?100:96):this.c.id==='iori'?67:male?68:64,lower=leg?98:this.c.id==='iori'?76:male?71:67;r[name]=INK.twoBone(chain[0],chain[2],upper,lower,leg&&name.startsWith('front')?-1:1,1);}
++   const inputRig=rig?.anatomy?rig:Rig.solveAnimation(this.c,p),r=inputRig,s=this.stats,turn=INK.Turn.view(INK.Turn.angle(p)),back=turn.far;
+    this.inputRig=inputRig;
+-   for(const name of ['rearLeg','frontLeg','rearArm','frontArm'])this[name].render(r[name],p,s,this.style);
++   for(const name of ['rearLeg','frontLeg','rearArm','frontArm'])this[name].render(r[name],p,s,this.style,r);
+    this.torso.render(p,s);this.torsoBack.render(p,s);this.torsoSide.render(p,s);
+-   const shape=INK.Turn.projection(p),bodyBands=INK.Turn.bands(INK.Turn.angle(p),64),faceBands=INK.Turn.bands(INK.Turn.angle(p,'head'),48);
++   const bodyBands=INK.Turn.bands(INK.Turn.angle(p),64),faceBands=INK.Turn.bands(INK.Turn.angle(p,'head'),48);
+    for(const name of ['front','profile','back']){
+     const skin={front:this.torso,profile:this.torsoSide,back:this.torsoBack}[name],band=bodyBands[name],rect=this.turnMasks['body'+name];
+     assign(skin.group,'display',band[1]<.001?'none':'inline',s);
+-    const m=skin.rigid?mat.multiply(INK.bodyMatrix(p),shape):shape;setTransform(skin.group,m,s);
+-    assign(rect,'x',band[0],s);assign(rect,'width',Math.max(0,band[1]),s);assign(rect,'y',-430,s);assign(rect,'height',310,s);
+-    if(!skin.rigid)setTransform(rect,INK.bodyMatrix(p),s);else assign(rect,'transform','',s);
++    assign(skin.group,'transform','',s);
++    assign(rect,'d',INK.SkinGeometry.torsoClip(p,band[0],band[1]),s);
+     const fb=faceBands[name],fr=this.turnMasks['face'+name];assign(fr,'x',fb[0],s);assign(fr,'width',Math.max(0,fb[1]),s);assign(fr,'y',-100,s);assign(fr,'height',200,s);
+     assign(this.heads[name],'display',fb[1]<.001?'none':'inline',s);
+    }
+    this.turnState=turn;
+-   const rearInFront=!back&&p.rw[0]>-37&&p.rw[1]<-258;const order=(back?'back':'front')+(rearInFront?'guard':'');if(order!==this._order){this._order=order;
+-    const ordered=back?[this.trail,this.frontLeg.group,this.rearLeg.group,this.hair,this.frontArm.group,this.torso.group,this.torsoSide.group,this.torsoBack.group,this.coat,this.head,this.rearArm.group]:[this.trail,this.rearLeg.group,this.frontLeg.group,this.hair,this.rearArm.group,this.torso.group,this.torsoSide.group,this.torsoBack.group,this.coat,this.head,this.frontArm.group];
+-    for(const n of ordered)this.art.appendChild(n);this.art.insertBefore(this.strap,this.torso.group);if(rearInFront)this.art.insertBefore(this.rearArm.group,this.head);
++   const hipShape=[[-24,-222],[-31,-212],[-33,-196],[-25,-180],[0,-171],[25,-180],[33,-196],[31,-212],[24,-222]];
++   assign(this.pelvisSurface,'d',INK.SkinGeometry.closed(hipShape.map(q=>INK.Anatomy.skinPoint(p,q)),.15),s);
++
++   // Opaque back pass + clipped near-depth pass. An elbow can cross the
++   // torso while its shoulder remains behind it; there is no whole-arm swap.
++   for(const name of ['rearArm','frontArm']){
++    const chain=Rig.sockets(p,r)[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
++    if(name==='rearArm'){
++     const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
++     const facing=Math.max(0,Math.cos(INK.rad(INK.Turn.angle(p))));depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;
++    }
++    assign(this.foregroundArms[name].path,'d',INK.SkinGeometry.frontClip(chain,depth,this.c.arm,this.c.id==='mai'&&name==='frontArm'?91:43),s);
++   }
++   const order=back?'back':'front';if(order!==this._order){this._order=order;
++    const legs=back?[this.frontLeg.group,this.rearLeg.group]:[this.rearLeg.group,this.frontLeg.group];
++    const ordered=[this.trail,...legs,this.hair,this.rearArm.group,this.frontArm.group,this.pelvisSurface,this.strap,this.torso.group,this.torsoSide.group,this.torsoBack.group,this.coat,this.head,this.foregroundArms.frontArm.use,this.foregroundArms.rearArm.use];
++    for(const n of ordered)this.art.appendChild(n);
+    }
+    if(this.c.id==='iori'){const a=vec.mix(r.rearLeg[0],r.rearLeg[1],.69),b=vec.mix(r.frontLeg[0],r.frontLeg[1],.69);assign(this.strap,'d',`M${a}Q${(a[0]+b[0])/2} ${Math.max(a[1],b[1])+55} ${b}`,s);}
+-   Object.defineProperty(r,'profile',{value:this.c});const body=INK.bodyMatrix(p),h=Rig.sockets(p,r).head,headScale=this.c.headScale*this.style.head;
++   const body=INK.bodyMatrix(p),h=Rig.sockets(p,r).head,headScale=this.c.headScale*this.style.head;
+    const hv=INK.Turn.view(INK.Turn.angle(p,'head'));setTransform(this.head,mat.compose(h[0]+hv.offset*.5,h[1],(p.lean||0)+(p.head||0)+(p.chest||0),headScale*(.8+.2*hv.width),headScale),s);
+    // Face attachments have continuous disjoint surface masks above.
+    for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===expression?'visible':'hidden',s);
+    const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
+    setTransform(this.hair,mat.multiply(mat.compose(h[0]-6,h[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365)),s);
+-   setTransform(this.coat,mat.multiply(body,mat.multiply(mat.compose(0,-205,(dynamics?.cloth??lag)*.38-(p.lean||0)*.12),mat.compose(0,205))),s);
+-   setTransform(this.trail,mat.multiply(mat.compose(0,(p.bob||0)*.6),mat.multiply(mat.compose(0,-200,(dynamics?.cloth??lag)*.22-(p.lean||0)*.19),mat.compose(0,200))),s);
++   const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);
++   setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
++   setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);
+    this.maiSecondary?.render(p,dynamics,secondary?frame:0,s);
+    if(['rig','overlay'].includes(this.mode)){
+     const sockets=Rig.sockets(p,r),lines=[],points=[];for(const name of ['rearLeg','frontLeg','rearArm','frontArm']){const q=sockets[name];lines.push([q[0],q[1]],[q[1],q[2]]);points.push(...q);}
+@@ -223,5 +245,5 @@
+   }
+   destroy(){this.group.remove();this.destroyed=true;this.heads={};this.expressions=[];}
+  }
+- INK.SVG={NS,node,assign,transform};INK.Paints={get:paints};INK.SkinGroup=SkinGroup;INK.Renderer=Renderer;
++ INK.SVG={NS,node,assign,transform};INK.Paints={get:paints};INK.SkinGroup=SkinGroup;INK.Renderer=Renderer;INK.Limb=Limb;
+ })();
+diff --git a/src/ink/runtime.js b/src/ink/runtime.js
+index 6a88bda..9839425 100644
+--- a/src/ink/runtime.js
++++ b/src/ink/runtime.js
+@@ -9,7 +9,7 @@
+  function phaseMap(t,from,to){for(let i=0;i<3;i++)if(t<=from[i+1]||i===2)return to[i]+clamp((t-from[i])/Math.max(.001,from[i+1]-from[i]))*(to[i+1]-to[i]);return to[3];}
+  function socket(p,rig,name){if(name==='fanGrip'||name==='fanTip')return INK.Motion.fanSocket(p,rig,name);const r=Rig.sockets(p,rig),lut={frontHand:['frontArm',2],rearHand:['rearArm',2],frontElbow:['frontArm',1],rearElbow:['rearArm',1],frontFoot:['frontLeg',2],rearFoot:['rearLeg',2],frontKnee:['frontLeg',1],rearKnee:['rearLeg',1]};if(name==='root')return[0,0];if(lut[name])return r[lut[name][0]][lut[name][1]];return r[name]||r.chest;}
+  const Runtime={enabled:true,store:null,eventLog:[],profileCache:new Map(),lifecycleLog:[],actionSerial:0,
+-  install(store){this.store=store;store.on(()=>{this.profileCache.clear();INK.MotionGraph.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}});return this;},
++  install(store){this.store=store;store.on(()=>{this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}});return this;},
+   get revision(){return this.store?.revision||0;},
+   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
+   record(f,m){return this.store?.byGame(f.ch.id,m?.id||'@idle')||null;},
+@@ -19,7 +19,11 @@
+    const profile=this.profile(f.ch.id),world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},visualFrom=this.visual(f,from,world);
+    let previous=from,visualPrevious=visualFrom,dt=.25;
+    if(f.attack&&f.attack.t>0){dt=Math.min(.25,f.attack.t);const view=Object.create(f);view.attack={...f.attack,t:f.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,world);}
+-   const clip=this.store.clip(rec),target=clip.sample(0,from),next=clip.sample(this.clipFrame(rec,m,.25),from);
++   // Sample the real incoming game pose with clean transition ownership.
++   // Falling back to the outgoing pose for absent channels fabricated a yaw
++   // target which the incoming Runtime.sample would never actually produce.
++   const incomingView=Object.create(f);Object.assign(incomingView,{state:'attack',stateAge:0,crouch:m.normalState==='c',move:0,jumpPre:0,attack:{m,t:0},_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkStateBlend:null});
++   const target=A.pose(incomingView);incomingView.attack={m,t:.25};const next=A.pose(incomingView);
+    const oldRec=f.attack?this.record(f,f.attack.m):null;
+    const oldSecondary=INK.Motion.secondary(oldRec?.clip,f.attack&&oldRec?this.clipFrame(oldRec,f.attack.m,f.attack.t):f.stateAge||0);
+    f._inkActionOrigin={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1,t:0};
+@@ -30,6 +34,11 @@
+    const graphAt=(p,t)=>INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});
+    const visualTarget=graphAt(target,0),visualNext=graphAt(next,.25);
+    f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),deadline)};
++   // A pose-value bridge alone cannot preserve a compiled skeleton: the next
++   // clip owns a different angular trajectory. Carry actual joint rotations
++   // and their derivatives, then expire before the first active frame.
++   const incoming=INK.Motion.apply(visualTarget,f._inkVisualTransition.bridge,0),incomingNext=INK.Motion.apply(visualNext,f._inkVisualTransition.bridge,.25);
++   f._inkJointTransition={id:m.id,...INK.Articulation.bridge(Rig.solveAnimation(profile,visualFrom),Rig.solveAnimation(profile,visualPrevious),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),deadline,dt)};
+   },
+   sample(f,m,t,base){
+    if(!this.enabled||!this.store)return null;const record=this.record(f,m);if(!record)return null;
+@@ -38,7 +47,8 @@
+   },
+   presentation(f,record,frame,simulationFrame=f.attack?.t||0){const v=INK.Motion.secondary(record?.clip,frame);const tr=f._inkTransition;return f.attack&&tr?.id===f.attack.m.id?INK.Motion.blendSecondary(tr.secondary,v,simulationFrame,8):v;},
+   neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((time*60+(f.index||0)*13)%rec.clip.duration,base);},
+-  rig(f,p){if(!this.enabled||!this.store)return null;return Rig.solveAnimation(this.profile(f.ch.id),p);},
++  rig(f,p){if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
++  visualRig(f,p){return Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
+   prepare(f,m){if(!this.enabled||!this.store||!m)return m;const record=this.record(f,m);if(!record?.binding.retimed)return m;const b=record.binding;return{...m,startup:b.startup,active:b.active,recovery:b.recovery,total:record.clip.duration};},
+   geometry(f,original,p,rig,world){if(!this.enabled||!f.attack)return original;const a=f.attack,rec=this.record(f,a.m);if(!rec||rec.boxes.mode!=='custom')return original;const t=this.clipFrame(rec,a.m,a.t),out={...original};const hit=[],hurt=[];
+    for(const b of rec.boxes.items){if(t<b.start||t>=b.end)continue;const q=socket(p,rig,b.socket),pts=[[b.x,b.y],[b.x+b.w,b.y],[b.x+b.w,b.y+b.h],[b.x,b.y+b.h]].map(x=>world([q[0]+x[0],q[1]+x[1]],false)),xs=pts.map(x=>x[0]),ys=pts.map(x=>x[1]),x=Math.min(...xs),y=Math.min(...ys);const box={x,y,w:Math.max(...xs)-x,h:Math.max(...ys)-y,part:'ink-'+b.kind+':'+b.id};(b.kind==='hit'?hit:hurt).push(box);}
+@@ -81,12 +91,13 @@
+    p=INK.MotionGraph.compose(ctx.record,ctx.frame,p,this.profile(f.ch.id),context);
+    const visualTransition=f._inkVisualTransition;
+    if(INK.MotionGraph.settings.enabled&&f.attack&&visualTransition?.id===f.attack.m.id)p=INK.Motion.apply(p,visualTransition.bridge,f.attack.t);
++   if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
+    return p;
+   },
+   visualSample(f,record,frame,root){
+    const m=f.attack.m,b=record.binding,gameFrame=phaseMap(frame,[0,b.startup,b.startup+b.active,record.clip.duration],[0,m.startup,m.startup+m.active,m.total]);
+    const view=Object.create(f);view.attack={...f.attack,t:gameFrame};view.x=root.x;view.y=root.y;
+-   const base=globalThis.SVG_FIGHTER.pose(view),p=this.visual(view,base,root),rig=this.rig(view,p);
++   const base=globalThis.SVG_FIGHTER.pose(view),p=this.visual(view,base,root),rig=this.visualRig(view,p);
+    return {pose:p,rig};
+   },
+   socket,
+diff --git a/src/ink/skin-geometry.js b/src/ink/skin-geometry.js
+new file mode 100644
+index 0000000..41cf528
+--- /dev/null
++++ b/src/ink/skin-geometry.js
+@@ -0,0 +1,67 @@
++/* FLOW 06 · continuous, variable-radius surfaces for articulated SVG limbs.
++ * Geometry is generated in actor space from the SAME joint array as sockets.
++ * Rounded centerlines avoid unbounded miter intersections at folded elbows.
++ */
++'use strict';
++(() => {
++ const {vec,mat,clamp,lerp}=INK;
++ const length=(a,b)=>Math.hypot(b[0]-a[0],b[1]-a[1]);
++ const fmt=q=>q.map(x=>Math.round(x*1000)/1000).join(' ');
++ function closed(points,tension=.13){
++  if(!points.length)return '';
++  let d='M'+fmt(points[0]);const n=points.length;
++  for(let i=0;i<n;i++){
++   const a=points[(i-1+n)%n],b=points[i],c=points[(i+1)%n],e=points[(i+2)%n];
++   d+='C'+fmt(vec.add(b,vec.mul(vec.sub(c,a),tension)))+' '+fmt(vec.sub(c,vec.mul(vec.sub(e,b),tension)))+' '+fmt(c);
++  }
++  return d+'Z';
++ }
++ function sampled(chain,widths){
++  const [a,b,c]=chain,[w,j,z]=widths,L0=length(a,b),L1=length(b,c);
++  if(L0+L1<.01)return null;
++  const cut=Math.min(j*.9,L0*.23,L1*.23),u0=vec.normal(vec.sub(b,a)),u1=vec.normal(vec.sub(c,b));
++  const before=vec.sub(b,vec.mul(u0,cut)),after=vec.add(b,vec.mul(u1,cut));
++  const centers=[],radii=[];
++  for(let i=0;i<=6;i++){const t=i/6;centers.push(vec.mix(a,before,t));radii.push(lerp(w,j,t)+Math.sin(t*Math.PI)*w*.04);}
++  for(let i=1;i<=5;i++){const t=i/5,s=1-t;centers.push([s*s*before[0]+2*s*t*b[0]+t*t*after[0],s*s*before[1]+2*s*t*b[1]+t*t*after[1]]);radii.push(j);}
++  for(let i=1;i<=6;i++){const t=i/6;centers.push(vec.mix(after,c,t));radii.push(lerp(j,z,t)+Math.sin(t*Math.PI)*j*.055);}
++  const normals=centers.map((q,i)=>{const a=centers[Math.max(0,i-1)],b=centers[Math.min(centers.length-1,i+1)];let v=vec.sub(b,a);if(vec.length(v)<1e-6)v=i<centers.length/2?u0:u1;const u=vec.normal(v);return[-u[1],u[0]];});
++  return {centers,radii,normals,a,c,u0,u1,w,z};
++ }
++ function sweep(chain,widths,outer=mat.identity()){
++  const g=sampled(chain,widths);
++  if(!g){const at=mat.point(outer,chain[0]),r=Math.max(...widths);return `M${at[0]-r} ${at[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
++  const {centers,radii,normals,a,c,u0,u1,w,z}=g;
++  const left=centers.map((q,i)=>vec.add(q,vec.mul(normals[i],radii[i]))),right=centers.map((q,i)=>vec.sub(q,vec.mul(normals[i],radii[i])));
++  const head=vec.sub(a,vec.mul(u0,w*.75)),tip=vec.add(c,vec.mul(u1,z*.8));
++  return closed([...left,tip,...right.reverse(),head].map(q=>mat.point(outer,q)),.105);
++ }
++ function band(chain,widths,outer,from=-.92,to=-.48){
++  const g=sampled(chain,widths);if(!g)return '';
++  const edge=f=>g.centers.map((q,i)=>mat.point(outer,vec.add(q,vec.mul(g.normals[i],g.radii[i]*f))));
++  return closed([...edge(from),...edge(to).reverse()],.09);
++ }
++ function frontClip(chain,depth,widths,handRadius=44){
++  let d='';for(let i=0;i<2;i++){
++   const a=depth[i],b=depth[i+1];if(Math.max(a,b)<=0)continue;
++   const from=a>=0?0:clamp(-a/(b-a)),to=b>=0?1:clamp(-a/(b-a));
++   const p=vec.mix(chain[i],chain[i+1],from),q=vec.mix(chain[i],chain[i+1],to),w=lerp(widths[i],widths[i+1],from)+2,z=lerp(widths[i],widths[i+1],to)+2;
++   const fade=clamp(Math.max(a,b)/7);d+=sweep([p,vec.mix(p,q,.5),q],[w*fade,(w+z)*.5*fade,z*fade]);
++  }
++  if(depth[2]>0){const r=handRadius*clamp(depth[2]/8),q=chain[2];d+=`M${q[0]-r} ${q[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
++  return d||'M0 0Z';
++ }
++ function torsoClip(p,x,width){
++  if(width<=0)return 'M0 0Z';const ys=[-430,-360,-324,-295,-270,-246,-218,-191,-140];
++  const left=ys.map(y=>INK.Anatomy.skinPoint(p,[x,y])),right=ys.slice().reverse().map(y=>INK.Anatomy.skinPoint(p,[x+width,y]));
++  return 'M'+[...left,...right].map(fmt).join('L')+'Z';
++ }
++ function foot(angle){
++  const c=Math.cos(INK.rad(angle)),s=Math.sin(INK.rad(angle));
++  const heel=[-2*c,5],toe=[30*c,9+Math.abs(s)*2];
++  const outline=sweep([[0,-13],heel,toe],[9.8,11,8]);
++  const sole=`M${fmt([heel[0]-7*c,heel[1]+8])}Q${fmt([toe[0]*.5,16+Math.abs(s)])} ${fmt([toe[0]+4*c,toe[1]+5])}`;
++  return {outline,sole,toe,angle};
++ }
++ INK.SkinGeometry={sweep,band,frontClip,closed,torsoClip,foot,version:'6.0.0'};
++})();
+diff --git a/tools/build_forge.py b/tools/build_forge.py
+index 67c2ad6..3e84a77 100644
+--- a/tools/build_forge.py
++++ b/tools/build_forge.py
+@@ -35,17 +35,17 @@ def build():
+     base_hash=hashlib.sha256((ROOT/'game.js').read_bytes()).hexdigest()
+     source=game();(ROOT/'dist/game-forge.js').write_text(source,encoding='utf-8',newline='\n')
+     html=read('street-fighter-6.html')
+-    html=re.sub(r'<title>.*?</title>','<title>INK FLOW 05 · 动作图与特效引擎</title>',html,count=1)
+-    html=html.replace('</head>','<style>\n'+read('forge/style.css')+'\n'+read('forge/flow.css')+'\n'+read('forge/mai.css')+'\n'+read('forge/engine.css')+'\n</style></head>')
+-    includes=['src/ink/core.js','src/ink/compiled-motion.js','src/ink/engine-clock.js','src/ink/inbetween.js','src/ink/motion.js','src/ink/secondary-dynamics.js','src/ink/motion-graph.js','src/ink/input.js','src/ink/assets.js',*['src/ink/art/'+id+'.js' for id in ['ryu','ken','chun','cammy','luke','juri','mai','iori']],'src/ink/design.js','src/ink/renderer.js','src/ink/mai-renderer.js','src/ink/project.js','src/ink/runtime.js','src/ink/states.js','src/ink/particles.js','src/ink/trails.js','src/ink/fx-timeline.js','src/ink/ribbon-geometry.js','src/ink/fx-emitter.js','src/ink/effects.js','src/ink/combo.js','src/ink/cinema.js','src/ink/portable.js','src/ink/game-adapter.js','dist/game-forge.js']
++    html=re.sub(r'<title>.*?</title>','<title>INK FLOW 06 · 连续骨架与动作引擎</title>',html,count=1)
++    html=html.replace('</head>','<style>\n'+read('forge/style.css')+'\n'+read('forge/flow.css')+'\n'+read('forge/mai.css')+'\n'+read('forge/engine.css')+'\n'+read('forge/continuity.css')+'\n</style></head>')
++    includes=['src/ink/core.js','src/ink/compiled-motion.js','src/ink/engine-clock.js','src/ink/inbetween.js','src/ink/anatomy.js','src/ink/articulation.js','src/ink/motion.js','src/ink/secondary-dynamics.js','src/ink/motion-graph.js','src/ink/input.js','src/ink/assets.js',*['src/ink/art/'+id+'.js' for id in ['ryu','ken','chun','cammy','luke','juri','mai','iori']],'src/ink/design.js','src/ink/skin-geometry.js','src/ink/renderer.js','src/ink/mai-renderer.js','src/ink/project.js','src/ink/runtime.js','src/ink/states.js','src/ink/particles.js','src/ink/trails.js','src/ink/fx-timeline.js','src/ink/ribbon-geometry.js','src/ink/fx-emitter.js','src/ink/effects.js','src/ink/combo.js','src/ink/cinema.js','src/ink/portable.js','src/ink/game-adapter.js','dist/game-forge.js']
+     html=patch(html,'<script src="game.js"></script>','\n'.join('<script src="'+x+'"></script>' for x in includes))
+     html=html.replace('<script src="src/atelier-studio.js"></script>','<script src="src/atelier-studio.js"></script>')
+-    html=html.replace('</body>',read('forge/shell.html')+'\n<script id="ink-asset-bundle" type="application/json">'+jsdata(assets())+'</script>\n<script id="ink-export-template" type="application/json">__INK_TEMPLATE_DATA__</script>\n<script id="ink-user-project" type="application/json">__INK_PROJECT_DATA__</script>\n<script id="ink-combo-library" type="application/json">'+jsdata(json.loads(read('assets/ink/combos.json'))) +' </script>\n<script src="forge/app.js"></script>\n<script src="forge/flow.js"></script>\n<script src="forge/mai.js"></script>\n<script src="forge/engine.js"></script>\n</body>')
++    html=html.replace('</body>',read('forge/shell.html')+'\n<script id="ink-asset-bundle" type="application/json">'+jsdata(assets())+'</script>\n<script id="ink-export-template" type="application/json">__INK_TEMPLATE_DATA__</script>\n<script id="ink-user-project" type="application/json">__INK_PROJECT_DATA__</script>\n<script id="ink-combo-library" type="application/json">'+jsdata(json.loads(read('assets/ink/combos.json'))) +' </script>\n<script src="forge/app.js"></script>\n<script src="forge/flow.js"></script>\n<script src="forge/mai.js"></script>\n<script src="forge/engine.js"></script>\n<script src="forge/continuity.js"></script>\n</body>')
+     html=re.sub(r'<script src="([^\"]+)"></script>',lambda m:script(read(m[1])),html)
+     template=html
+     html=html.replace('>__INK_TEMPLATE_DATA__</script>','>'+jsdata(template)+'</script>',1).replace('>__INK_PROJECT_DATA__</script>','>{}</script>',1)
+     path=ROOT/'dist/INK-Street-Fighter-6.html';path.write_text(html,encoding='utf-8',newline='\n')
+-    player_seed={'version':2,'kind':'ink-project-overrides','projectId':'ink-flow-player-5','revision':0,'createdAt':0,'models':{},'rigs':{},'moves':{},'presentation':'player'}
++    player_seed={'version':2,'kind':'ink-project-overrides','projectId':'ink-flow-player-6','revision':0,'createdAt':0,'models':{},'rigs':{},'moves':{},'presentation':'player'}
+     player_html=html.replace('<script id="ink-user-project" type="application/json">{}</script>','<script id="ink-user-project" type="application/json">'+jsdata(player_seed)+'</script>',1)
+     (ROOT/'dist/INK-Street-Fighter-6-Player.html').write_text(player_html,encoding='utf-8',newline='\n')
+     (ROOT/'dist/forge-template.html').write_text(template,encoding='utf-8',newline='\n')

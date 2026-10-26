@@ -1,0 +1,7 @@
+walk {'distinctPoseSamples': 5}
+jump-rise-hold {'distinctPoseSamples': 1}
+jump-apex {'distinctPoseSamples': 5}
+land {'distinctPoseSamples': 5}
+ground-impact-with-FX-off {'legacyFxCount': 0, 'groundChildren': 0, 'groundDisplay': 'inline'}
+idle-to-hit {'maximumImmediateSocketChange': 48.121451556083805}
+errors []

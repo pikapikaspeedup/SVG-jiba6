@@ -480,7 +480,7 @@
         [
           2,
           [
-            -289.484,
+            79.656,
             -316.898
           ],
           "linear"
@@ -488,7 +488,7 @@
         [
           3,
           [
-            -466.486,
+            67.449,
             -315.067
           ],
           "linear"
@@ -520,7 +520,7 @@
         [
           10,
           [
-            -398.713,
+            66.585,
             -312.925
           ],
           "linear"
@@ -528,7 +528,7 @@
         [
           13,
           [
-            -182.157,
+            87.058,
             -318.009
           ],
           "linear"
@@ -698,7 +698,13 @@
       "kind": "kick",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "aLK",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -715,7 +721,15 @@
       "scale": 0.72,
       "color": "#e8b573",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.38,
+      "particles": {
+        "count": 6,
+        "life": 16,
+        "speed": 5,
+        "size": 1.2,
+        "spread": 65,
+        "species": "spark"
+      }
     }
   ],
   "source": "migrated-atelier"

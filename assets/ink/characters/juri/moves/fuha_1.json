@@ -619,15 +619,15 @@
         [
           21,
           [
-            68.0,
-            -229.0
+            68,
+            -229
           ],
           "linear"
         ],
         [
           26,
           [
-            -723.442,
+            67.024,
             -312.926
           ],
           "linear"
@@ -635,7 +635,7 @@
         [
           32,
           [
-            -282.653,
+            72.059,
             -268.347
           ],
           "linear"
@@ -837,7 +837,13 @@
       "kind": "store",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "fuha_1",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -854,7 +860,15 @@
       "scale": 1,
       "color": "#c68ee0",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 5.6,
+        "size": 2.4,
+        "spread": 65,
+        "species": "shard"
+      }
     }
   ],
   "source": "migrated-atelier"

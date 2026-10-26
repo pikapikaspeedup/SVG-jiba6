@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-10-05T07:29:49.420070+00:00",
+  "exitCode": 0,
+  "stdout": "Built INK-Street-Fighter-6.html 8341294 bytes; game source d4ef80a16f6d1b21\n",
+  "stderr": "",
+  "rows": [
+    {
+      "file": "INK-Street-Fighter-6.html",
+      "original": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+      "rebuilt": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+      "pass": true
+    },
+    {
+      "file": "INK-Street-Fighter-6-Player.html",
+      "original": "2568454038c9d9b81e5f1a78eb675dfc53a8eb95f5d548d4e4392c7a84b0dd11",
+      "rebuilt": "2568454038c9d9b81e5f1a78eb675dfc53a8eb95f5d548d4e4392c7a84b0dd11",
+      "pass": true
+    }
+  ],
+  "scope": "Pre-package clean rebuild from current production source. Final ZIP gets a separate extraction and full-fingerprint proof."
+}

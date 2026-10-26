@@ -1,0 +1,151 @@
+{
+  "kind": "actual-browser-visual-contact-sheet",
+  "capturedAt": "2026-10-04T10:14:04.182682+00:00",
+  "htmlSha256": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86",
+  "total": 20,
+  "passed": 20,
+  "captures": [
+    {
+      "frame": 9.5,
+      "key": "ryuuenbu-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "14006cbad72fcba5658a72f4612016142c6930b61a473d0eb7b5834fbe641229"
+    },
+    {
+      "frame": 18.5,
+      "key": "ryuuenbu-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "9b44f6cc8fd025e846b205db17623779fb73524e923a2e6aca52009626bd9f97"
+    },
+    {
+      "frame": 27.25,
+      "key": "ryuuenbu-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "9e9837325ee4eca95811c5cbcb67cd06fd328dcf44bed9b49bca0ae07289e0f6"
+    },
+    {
+      "frame": 45.5,
+      "key": "ryuuenbu-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "29e685dd7f5b63355d0c0acb4ae933968ab06a5be95000f2fcce110e04bdb67e"
+    },
+    {
+      "frame": 7.5,
+      "key": "hishou-ryuuenjin-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "3b727b43e807429c7e791707914e0bc8fc2d8d423bcbd1d76eca6c0d57b1d401"
+    },
+    {
+      "frame": 14.5,
+      "key": "hishou-ryuuenjin-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "f712fa31d1bc0d77b1a0c1b5a16a738c313353ff65d5b6888b19e55c92d3a0e1"
+    },
+    {
+      "frame": 26.25,
+      "key": "hishou-ryuuenjin-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "208357c7a8fb8fd197dcf26ecafeda379783437ab3122d102e901269073e9224"
+    },
+    {
+      "frame": 46,
+      "key": "hishou-ryuuenjin-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "0d110742ce9d93653883074b932fbd88f6961550603ba1ed1e1c29589e5d494a"
+    },
+    {
+      "frame": 12,
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "ebf64f12bc104345d8dcdec0192ef9ae3c39985efb501127aeca7c6adf16d3ec"
+    },
+    {
+      "frame": 23.5,
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "b2a937338c982389f5a0fd7119ac466c312b6563e8f71f76ea8070171e5c0a47"
+    },
+    {
+      "frame": 31.5,
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "e8f017aebfe4f56233d8b1a6909067c13ba1b6b91b52914a29f6e69ce64f6fc9"
+    },
+    {
+      "frame": 49,
+      "key": "hissatsu-shinobi-bachi-heavy",
+      "events": 2,
+      "finite": true,
+      "captureSha256": "45f060d079e53a9390114ff4c13c7c26b725d6ed1ea618b70771022ab5e00d02"
+    },
+    {
+      "frame": 5.5,
+      "key": "kagerou-no-mai",
+      "events": 3,
+      "finite": true,
+      "captureSha256": "8edbefa58dd7f60f84d411ea86883360b0ea4e84e425a6487ef99c80bec7bb8b"
+    },
+    {
+      "frame": 14.5,
+      "key": "kagerou-no-mai",
+      "events": 3,
+      "finite": true,
+      "captureSha256": "a20a95dc67fb2959de13159a8f6d198f6e6d7d05d3e112bfbb0b357f521a1e84"
+    },
+    {
+      "frame": 32.5,
+      "key": "kagerou-no-mai",
+      "events": 3,
+      "finite": true,
+      "captureSha256": "b069123d1bf95f03629ed511e023a95837fa664ff2ab427a2df2193b0900c930"
+    },
+    {
+      "frame": 59,
+      "key": "kagerou-no-mai",
+      "events": 3,
+      "finite": true,
+      "captureSha256": "ce770068c4757dbafeded4370a134f1bdf6b0ea803b2ddae32e7ce566946ca41"
+    },
+    {
+      "frame": 8.5,
+      "key": "enbu-ada-zakura",
+      "events": 12,
+      "finite": true,
+      "captureSha256": "b551e68233805f2afc94e29db47bee7dbf450ccfcf303463b29115f5d00f278f"
+    },
+    {
+      "frame": 30.5,
+      "key": "enbu-ada-zakura",
+      "events": 12,
+      "finite": true,
+      "captureSha256": "d0344e4d2f46ed04c2bb2821a80bd66e8336352afcb0a1bdb4e08e707e7f257f"
+    },
+    {
+      "frame": 68.5,
+      "key": "enbu-ada-zakura",
+      "events": 12,
+      "finite": true,
+      "captureSha256": "415d8872bd7eac57be0d78329b9fb8d369bda7af011f60015b232e89cd6d6d96"
+    },
+    {
+      "frame": 98.25,
+      "key": "enbu-ada-zakura",
+      "events": 12,
+      "finite": true,
+      "captureSha256": "a278b7270ac4dde2e2ad30271a0218127280d4233a38933afb13bdd7a3594268"
+    }
+  ],
+  "browserErrors": [],
+  "note": "Finite/identity checks are automatic; visual quality is manually inspected. This is not an extra set of combat simulations."
+}

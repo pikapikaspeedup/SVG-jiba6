@@ -1,0 +1,5 @@
+walk frames 220 total 220 result [{'steps': 110, 'actorStates': ['idle', 'idle'], 'hits': 0, 'damage': 0, 'fx': 0, 'ghosts': 0, 'move': None}, {'steps': 110, 'actorStates': ['idle', 'idle'], 'hits': 0, 'damage': 0, 'fx': 0, 'ghosts': 0, 'move': None}]
+jump frames 220 total 440 result [{'steps': 110, 'actorStates': ['idle', 'idle'], 'hits': 0, 'damage': 0, 'fx': 0, 'ghosts': 0, 'move': None}, {'steps': 110, 'actorStates': ['idle', 'idle'], 'hits': 0, 'damage': 0, 'fx': 0, 'ghosts': 0, 'move': None}]
+knockdown frames 175 total 615 result [{'steps': 175, 'actorStates': ['idle', 'idle'], 'hits': 0, 'damage': 0, 'fx': 0, 'ghosts': 0, 'move': None}, {'steps': 175, 'actorStates': ['idle', 'idle'], 'hits': 0, 'damage': 0, 'fx': 0, 'ghosts': 0, 'move': None}]
+echo frames 100 total 715 result [{'steps': 100, 'actorStates': ['idle', 'rise'], 'hits': 1, 'damage': 612, 'fx': 0, 'ghosts': 0, 'move': 'shinobibachi_3'}, {'steps': 100, 'actorStates': ['idle', 'rise'], 'hits': 1, 'damage': 612, 'fx': 0, 'ghosts': 0, 'move': 'shinobibachi_3'}]
+COMPARISON 715 frames []

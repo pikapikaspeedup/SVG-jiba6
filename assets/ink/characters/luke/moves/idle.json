@@ -150,7 +150,8 @@
     "events": [],
     "meta": {
       "source": "authored-idle",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3
     }
   },
   "boxes": {

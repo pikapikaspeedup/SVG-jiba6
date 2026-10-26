@@ -1,0 +1,13 @@
+PASS Save edited transition, current route library and settings before export 
+PASS Export preserves all response settings 
+PASS Independent creator export reopens with new engine, custom edge/route/settings 
+PASS Exported route title is inert text, not executable script 
+PASS Export has no external runtime script/style/image dependency 
+PASS Exported edited route executes 12 real hits with configured starting resources 
+PASS Second-generation export retains response settings 
+PASS Second-generation export retains route, edge, tempo and safe text 
+PASS Player export hides edge authoring but retains custom route composer and settings 
+PASS Independent original v8 remains unmodified by portable exports 
+PASS Older v6-shaped motion import remains accepted without silent edge injection 
+PASS No unhandled browser script errors across reopens 
+PASS No network request needed for tested local or embedded HTML 

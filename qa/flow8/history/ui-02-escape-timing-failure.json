@@ -1,0 +1,125 @@
+{
+  "suite": "flow8-review-ui",
+  "capturedAt": "2026-10-05T07:03:27.819028+00:00",
+  "htmlSha256": "75aba3497483d5b1c6a1e1d4a51b90e6af677e46b0dad808982813c37bac7348",
+  "passed": 19,
+  "total": 20,
+  "tests": [
+    {
+      "name": "1440: click next frame",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: keyboard ten-frame step",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: seek actual state bookmark",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: dialog fits viewport without horizontal scroll",
+      "pass_": true,
+      "detail": {
+        "vw": 1440,
+        "body": 1440,
+        "dialog": 1228,
+        "client": 1228,
+        "left": 105,
+        "right": 1335
+      }
+    },
+    {
+      "name": "1440: real sweep records down and rise",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: actual download contains solved angles",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: actual file upload reopens frame zero",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: review closes and fresh scenario remains paused",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: opening real recording pauses the combat clock",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1440: Escape restores prior running state",
+      "pass_": false,
+      "detail": null
+    },
+    {
+      "name": "390: click next frame",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: keyboard ten-frame step",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: seek actual state bookmark",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: dialog fits viewport without horizontal scroll",
+      "pass_": true,
+      "detail": {
+        "vw": 390,
+        "body": 390,
+        "dialog": 372,
+        "client": 372,
+        "left": 7.796875,
+        "right": 382.1875
+      }
+    },
+    {
+      "name": "390: real sweep records down and rise",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: actual download contains solved angles",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: actual file upload reopens frame zero",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: review closes and fresh scenario remains paused",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: opening real recording pauses the combat clock",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390: Escape restores prior running state",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Desktop and emulated 390px touch viewport. Not a native phone."
+}

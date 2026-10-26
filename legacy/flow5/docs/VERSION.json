@@ -1,0 +1,22 @@
+{
+  "name": "INK FLOW · Motion Graph & FX Runtime",
+  "version": "5.0.0",
+  "date": "2026-10-04",
+  "sourceBaseline": {
+    "repository": "pikapikaspeedup/SVG-jiba6",
+    "commit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+    "gameSha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+    "archivedAt": "legacy/game-flow3.js"
+  },
+  "entry": "dist/INK-Street-Fighter-6.html",
+  "playerEntry": "dist/INK-Street-Fighter-6-Player.html",
+  "build": "python tools/build_forge.py",
+  "validate": "python tools/check_flow5.py",
+  "githubWritten": false,
+  "scope": "Fan-made 2D SVG adaptation, not official Street Fighter 6 models or frame data.",
+  "engineIteration": {
+    "productionGameSource": "game.js",
+    "runtimeSourcePatching": false,
+    "rulesVisualSeparation": true
+  }
+}

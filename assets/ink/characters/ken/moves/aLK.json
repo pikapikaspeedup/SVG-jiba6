@@ -733,7 +733,8 @@
       "kind": "kick",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "aLK",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3
     }
   },
   "boxes": {
@@ -750,7 +751,15 @@
       "scale": 0.72,
       "color": "#ff8c55",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.38,
+      "particles": {
+        "count": 6,
+        "life": 16,
+        "speed": 3.4,
+        "size": 1.2,
+        "spread": 100,
+        "species": "ember"
+      }
     }
   ],
   "source": "migrated-atelier"

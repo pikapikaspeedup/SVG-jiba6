@@ -1,0 +1,24 @@
+{
+  "suite": "flow6-standalone-resource-audit",
+  "capturedAt": "2026-10-04T17:50:07.417664+00:00",
+  "files": [
+    {
+      "file": "INK-Street-Fighter-6.html",
+      "bytes": 8135493,
+      "sha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+      "externalScriptTags": [],
+      "externalResourceAttributes": [],
+      "pass": true
+    },
+    {
+      "file": "INK-Street-Fighter-6-Player.html",
+      "bytes": 8135651,
+      "sha256": "793b6c389443796bb184a68292c7098705436d5fcc11458bdf3fc2ae9515c59c",
+      "externalScriptTags": [],
+      "externalResourceAttributes": [],
+      "pass": true
+    }
+  ],
+  "fontFilesInSource": [],
+  "note": "Static HTML resource-attribute check, in addition to the runtime no-network check in portability.json. User-clicked hyperlinks and dynamic runtime behavior are not proven solely by this parser."
+}

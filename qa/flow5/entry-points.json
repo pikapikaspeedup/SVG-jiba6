@@ -1,0 +1,158 @@
+{
+  "suite": "flow5-entry-points",
+  "capturedAt": "2026-10-04T14:54:09.381027+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "landingSha256": "02879566208a9f878f2959b393769c8a9f2ef7b48163858a28e8dc6585628f6c",
+  "total": 6,
+  "passed": 6,
+  "tests": [
+    {
+      "name": "OPEN-ME.html local links",
+      "pass": true,
+      "links": [
+        "dist/INK-Street-Fighter-6.html",
+        "dist/INK-Street-Fighter-6-Player.html",
+        "qa/flow5/inspector-desktop.png",
+        "README.md",
+        "PLAN-FLOW5.md",
+        "docs/FLOW5-ENGINE.md",
+        "TEST-REPORT-FLOW5.md",
+        "qa/flow5/validation.json",
+        "CHANGELOG-FLOW5.md"
+      ]
+    },
+    {
+      "name": "index.html local links",
+      "pass": true,
+      "links": [
+        "dist/INK-Street-Fighter-6.html",
+        "dist/INK-Street-Fighter-6-Player.html",
+        "qa/flow5/inspector-desktop.png",
+        "README.md",
+        "PLAN-FLOW5.md",
+        "docs/FLOW5-ENGINE.md",
+        "TEST-REPORT-FLOW5.md",
+        "qa/flow5/validation.json",
+        "CHANGELOG-FLOW5.md"
+      ]
+    },
+    {
+      "name": "Landing 1440 x 1000",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "links": [
+          {
+            "text": "打开创作版 →",
+            "left": 180,
+            "right": 326.171875,
+            "height": 54.796875
+          },
+          {
+            "text": "打开玩家版 →",
+            "left": 338.171875,
+            "right": 484.34375,
+            "height": 54.796875
+          }
+        ],
+        "headings": [
+          "动作分层。火焰沿路径出生。",
+          "三项已经接入游戏的改造",
+          "先这样检查变化",
+          "源码、规划与验收"
+        ],
+        "imageLoaded": true
+      }
+    },
+    {
+      "name": "Landing 844 x 390",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "scrollWidth": 844,
+        "links": [
+          {
+            "text": "打开创作版 →",
+            "left": 20,
+            "right": 166.171875,
+            "height": 54.796875
+          },
+          {
+            "text": "打开玩家版 →",
+            "left": 178.171875,
+            "right": 324.34375,
+            "height": 54.796875
+          }
+        ],
+        "headings": [
+          "动作分层。火焰沿路径出生。",
+          "三项已经接入游戏的改造",
+          "先这样检查变化",
+          "源码、规划与验收"
+        ],
+        "imageLoaded": true
+      }
+    },
+    {
+      "name": "Landing 390 x 844",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390,
+        "links": [
+          {
+            "text": "打开创作版 →",
+            "left": 20,
+            "right": 189,
+            "height": 54.796875
+          },
+          {
+            "text": "打开玩家版 →",
+            "left": 201,
+            "right": 370,
+            "height": 54.796875
+          }
+        ],
+        "headings": [
+          "动作分层。火焰沿路径出生。",
+          "三项已经接入游戏的改造",
+          "先这样检查变化",
+          "源码、规划与验收"
+        ],
+        "imageLoaded": true
+      }
+    },
+    {
+      "name": "Landing 360 x 800",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scrollWidth": 360,
+        "links": [
+          {
+            "text": "打开创作版 →",
+            "left": 20,
+            "right": 174,
+            "height": 54.796875
+          },
+          {
+            "text": "打开玩家版 →",
+            "left": 186,
+            "right": 340,
+            "height": 54.796875
+          }
+        ],
+        "headings": [
+          "动作分层。火焰沿路径出生。",
+          "三项已经接入游戏的改造",
+          "先这样检查变化",
+          "源码、规划与验收"
+        ],
+        "imageLoaded": true
+      }
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Static shipped relative-path checks plus set_content layout with screenshot bytes injected. Not native filesystem navigation."
+}

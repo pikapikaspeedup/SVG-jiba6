@@ -49,7 +49,9 @@ window.SF6Motion = (() => {
   clawCut:{lean:20,bob:13,head:-13,fw:[159,-275],rw:[-73,-306],ra:[-124,-16],fa:[132,-16],open:1,turn:.3},
   clawRake:{lean:32,bob:30,head:-17,fw:[126,-207],rw:[-120,-319],ra:[-147,-16],fa:[129,-16],open:1,turn:.48}
  };
- const K=(name,over={})=>Object.assign({},pose[name]||{},over);
+ // Own every vector: normal/branch recipes edit their copies during sampling.
+ // A shallow copy here used to corrupt shared poses on every sample.
+ const K=(name,over={})=>merge(pose[name]||{},over);
  const clips={};
  function add(id,key,wind,active,recover=null,meta={}){clips[id+':'+key]={wind,active,recover,meta};}
  const W=(p)=>[[0,{}],[.55,p],[.77,p]], A=(p)=>[[0,p],[.7,p],[1,p]];
@@ -127,5 +129,5 @@ window.SF6Motion = (() => {
   return p;
  }
  function describe(f,m){const c=select(f,m);return {name:m.name,identity:c.meta.line,material:c.meta.material,key:f.ch.id+':'+(m.id==='CA'?'SA3':m.base||m.id),phases:['预备','发力','命中','收势']};}
- return {neutral,sample,describe,clips,register:add,author:{K,W,A,neutralData},version:'5.0.0'};
+ return {neutral,sample,describe,clips,register:add,author:{K,W,A,neutralData},version:'6.0.0'};
 })();

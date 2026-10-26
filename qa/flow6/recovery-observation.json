@@ -1,0 +1,1375 @@
+{
+  "suite": "flow6-recovery-observation",
+  "capturedAt": "2026-10-04T17:39:58.288462+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "samples": 195,
+  "maximumJointDisplacement": 4.193329465515643,
+  "rows": [
+    {
+      "id": "iori",
+      "key": "kototsuki_0",
+      "end": 42,
+      "age": 0,
+      "maximum": 4.193329465515643
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_3",
+      "end": 59,
+      "age": 0,
+      "maximum": 3.5307913788605316
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_1",
+      "end": 53,
+      "age": 0,
+      "maximum": 3.5307913788568377
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_1",
+      "end": 47,
+      "age": 0,
+      "maximum": 2.422974869627339
+    },
+    {
+      "id": "juri",
+      "key": "fuha_1",
+      "end": 40,
+      "age": 0,
+      "maximum": 2.270178500667634
+    },
+    {
+      "id": "juri",
+      "key": "anken_0",
+      "end": 43,
+      "age": 0,
+      "maximum": 2.2076234172369285
+    },
+    {
+      "id": "juri",
+      "key": "fuha_0",
+      "end": 35,
+      "age": 0,
+      "maximum": 2.144555714042361
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_1",
+      "end": 38,
+      "age": 0,
+      "maximum": 2.052894835029529
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 2.0281012872386044
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_0",
+      "end": 40,
+      "age": 0,
+      "maximum": 2.010307545510175
+    },
+    {
+      "id": "cammy",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.9931505519596708
+    },
+    {
+      "id": "mai",
+      "key": "shinobibachi_2",
+      "end": 66,
+      "age": 0,
+      "maximum": 1.9678908982024077
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_2",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.9678908982016392
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_1",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.9584199039446761
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_3",
+      "end": 55,
+      "age": 0,
+      "maximum": 1.9136818058546081
+    },
+    {
+      "id": "iori",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.8438265303298291
+    },
+    {
+      "id": "mai",
+      "key": "shinobibachi_1",
+      "end": 61,
+      "age": 0,
+      "maximum": 1.8430811340374866
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_3",
+      "end": 56,
+      "age": 0,
+      "maximum": 1.8366173270432538
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_2",
+      "end": 34,
+      "age": 0,
+      "maximum": 1.836617327041484
+    },
+    {
+      "id": "juri",
+      "key": "anken_1",
+      "end": 48,
+      "age": 0,
+      "maximum": 1.8254283029085658
+    },
+    {
+      "id": "iori",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.8218808783082618
+    },
+    {
+      "id": "mai",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.8172991209064906
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_2",
+      "end": 51,
+      "age": 0,
+      "maximum": 1.8119436688145478
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_0",
+      "end": 27,
+      "age": 0,
+      "maximum": 1.7880850641892088
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_3",
+      "end": 57,
+      "age": 0,
+      "maximum": 1.7742984706410772
+    },
+    {
+      "id": "chun",
+      "key": "hazan_1",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.7727697758943304
+    },
+    {
+      "id": "mai",
+      "key": "sHP",
+      "end": 43,
+      "age": 0,
+      "maximum": 1.7588300202664133
+    },
+    {
+      "id": "mai",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.75883002026593
+    },
+    {
+      "id": "ken",
+      "key": "cMK",
+      "end": 27,
+      "age": 0,
+      "maximum": 1.7582175928069586
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_2",
+      "end": 53,
+      "age": 0,
+      "maximum": 1.7582175928061923
+    },
+    {
+      "id": "ken",
+      "key": "sMP",
+      "end": 21,
+      "age": 0,
+      "maximum": 1.7484457440577204
+    },
+    {
+      "id": "ryu",
+      "key": "blade_0",
+      "end": 38,
+      "age": 0,
+      "maximum": 1.7359070657060411
+    },
+    {
+      "id": "cammy",
+      "key": "sHP",
+      "end": 32,
+      "age": 0,
+      "maximum": 1.7269843719421545
+    },
+    {
+      "id": "cammy",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.7269843719416709
+    },
+    {
+      "id": "ken",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.7233583407561097
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_2",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.7227408852348531
+    },
+    {
+      "id": "iori",
+      "key": "sMP",
+      "end": 21,
+      "age": 0,
+      "maximum": 1.7179109973122384
+    },
+    {
+      "id": "ken",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.7118103684114454
+    },
+    {
+      "id": "mai",
+      "key": "shinobibachi_0",
+      "end": 56,
+      "age": 0,
+      "maximum": 1.6927500654938419
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_1",
+      "end": 48,
+      "age": 0,
+      "maximum": 1.688755428883642
+    },
+    {
+      "id": "luke",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.6643133808892352
+    },
+    {
+      "id": "ryu",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.656251438711779
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_3",
+      "end": 49,
+      "age": 0,
+      "maximum": 1.6466776366661118
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_0",
+      "end": 40,
+      "age": 0,
+      "maximum": 1.6316412983228554
+    },
+    {
+      "id": "luke",
+      "key": "flash_2",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.627451355475464
+    },
+    {
+      "id": "mai",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.6115678312328146
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_2",
+      "end": 51,
+      "age": 0,
+      "maximum": 1.5974985049357155
+    },
+    {
+      "id": "luke",
+      "key": "cMK",
+      "end": 33,
+      "age": 0,
+      "maximum": 1.5901721357672665
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_1",
+      "end": 53,
+      "age": 0,
+      "maximum": 1.5469318541267583
+    },
+    {
+      "id": "iori",
+      "key": "cMK",
+      "end": 30,
+      "age": 0,
+      "maximum": 1.5402004763963915
+    },
+    {
+      "id": "chun",
+      "key": "bird_1",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.5205487804812334
+    },
+    {
+      "id": "ryu",
+      "key": "sHP",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.5071005262855866
+    },
+    {
+      "id": "ryu",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.5071005262855866
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_3",
+      "end": 56,
+      "age": 0,
+      "maximum": 1.470673002847595
+    },
+    {
+      "id": "chun",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 1.4681403590143827
+    },
+    {
+      "id": "chun",
+      "key": "hazan_2",
+      "end": 51,
+      "age": 0,
+      "maximum": 1.4681403590104751
+    },
+    {
+      "id": "mai",
+      "key": "sMP",
+      "end": 30,
+      "age": 0,
+      "maximum": 1.4663567491217784
+    },
+    {
+      "id": "cammy",
+      "key": "cMK",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.4651017881380999
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_1",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.460577042230879
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_0",
+      "end": 35,
+      "age": 0,
+      "maximum": 1.4469816087387923
+    },
+    {
+      "id": "luke",
+      "key": "cHP",
+      "end": 39,
+      "age": 0,
+      "maximum": 1.4425767193590913
+    },
+    {
+      "id": "ryu",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.4415164257222477
+    },
+    {
+      "id": "chun",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.4285534951475136
+    },
+    {
+      "id": "mai",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.4040327729127893
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 1.4011132606168297
+    },
+    {
+      "id": "juri",
+      "key": "saiha_1",
+      "end": 44,
+      "age": 0,
+      "maximum": 1.393581844157241
+    },
+    {
+      "id": "cammy",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.378084235622794
+    },
+    {
+      "id": "chun",
+      "key": "bird_2",
+      "end": 64,
+      "age": 0,
+      "maximum": 1.358284831888595
+    },
+    {
+      "id": "juri",
+      "key": "gooh_3",
+      "end": 66,
+      "age": 0,
+      "maximum": 1.3315230814909105
+    },
+    {
+      "id": "chun",
+      "key": "cHP",
+      "end": 41,
+      "age": 0,
+      "maximum": 1.3288282624650858
+    },
+    {
+      "id": "ryu",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.3257252013460676
+    },
+    {
+      "id": "juri",
+      "key": "anken_3",
+      "end": 57,
+      "age": 0,
+      "maximum": 1.2997503316196202
+    },
+    {
+      "id": "luke",
+      "key": "sand_1",
+      "end": 42,
+      "age": 0,
+      "maximum": 1.2964880170255577
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_2",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.2826184759034072
+    },
+    {
+      "id": "mai",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.2704237793642401
+    },
+    {
+      "id": "luke",
+      "key": "sand_0",
+      "end": 37,
+      "age": 0,
+      "maximum": 1.270309737579494
+    },
+    {
+      "id": "cammy",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.2625231464705813
+    },
+    {
+      "id": "juri",
+      "key": "anken_2",
+      "end": 53,
+      "age": 0,
+      "maximum": 1.254690871375178
+    },
+    {
+      "id": "juri",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.254690871373384
+    },
+    {
+      "id": "juri",
+      "key": "gooh_2",
+      "end": 69,
+      "age": 0,
+      "maximum": 1.23651630552412
+    },
+    {
+      "id": "chun",
+      "key": "bird_3",
+      "end": 61,
+      "age": 0,
+      "maximum": 1.2298175298786838
+    },
+    {
+      "id": "chun",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.229817529875937
+    },
+    {
+      "id": "chun",
+      "key": "sHP",
+      "end": 38,
+      "age": 0,
+      "maximum": 1.2298175298754814
+    },
+    {
+      "id": "ryu",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.215221844550136
+    },
+    {
+      "id": "luke",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 1.2030682658406386
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_1",
+      "end": 41,
+      "age": 0,
+      "maximum": 1.1684777677027414
+    },
+    {
+      "id": "chun",
+      "key": "hazan_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 1.1608750004200041
+    },
+    {
+      "id": "cammy",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.1587096608867518
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_3",
+      "end": 55,
+      "age": 0,
+      "maximum": 1.139551568953652
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_1",
+      "end": 47,
+      "age": 0,
+      "maximum": 1.135578658568021
+    },
+    {
+      "id": "luke",
+      "key": "flash_1",
+      "end": 41,
+      "age": 0,
+      "maximum": 1.1320349211935445
+    },
+    {
+      "id": "chun",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.1227855798807975
+    },
+    {
+      "id": "cammy",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.115358962992625
+    },
+    {
+      "id": "juri",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.1124903469671887
+    },
+    {
+      "id": "juri",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.0919553559315578
+    },
+    {
+      "id": "ken",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.088434123071052
+    },
+    {
+      "id": "ryu",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.0871673409797937
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_2",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.0820586263600434
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_2",
+      "end": 65,
+      "age": 0,
+      "maximum": 1.0820586263586798
+    },
+    {
+      "id": "chun",
+      "key": "hazan_3",
+      "end": 55,
+      "age": 0,
+      "maximum": 1.050561493466737
+    },
+    {
+      "id": "chun",
+      "key": "bird_0",
+      "end": 40,
+      "age": 0,
+      "maximum": 1.0387364663319218
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_1",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.0067084068216063
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_3",
+      "end": 61,
+      "age": 0,
+      "maximum": 0.966698307136529
+    },
+    {
+      "id": "luke",
+      "key": "flash_3",
+      "end": 50,
+      "age": 0,
+      "maximum": 0.9501470133597937
+    },
+    {
+      "id": "juri",
+      "key": "sHP",
+      "end": 35,
+      "age": 0,
+      "maximum": 0.9489214494790691
+    },
+    {
+      "id": "juri",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 0.9489214494787737
+    },
+    {
+      "id": "ken",
+      "key": "cHP",
+      "end": 37,
+      "age": 0,
+      "maximum": 0.9427692485930689
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_3",
+      "end": 62,
+      "age": 0,
+      "maximum": 0.9380478241746785
+    },
+    {
+      "id": "juri",
+      "key": "saiha_2",
+      "end": 49,
+      "age": 0,
+      "maximum": 0.9197425569443697
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_3",
+      "end": 56,
+      "age": 0,
+      "maximum": 0.9169712617547028
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 0.9085884222049553
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_2",
+      "end": 64,
+      "age": 0,
+      "maximum": 0.9052345064483289
+    },
+    {
+      "id": "luke",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.8967983261732154
+    },
+    {
+      "id": "juri",
+      "key": "cMK",
+      "end": 29,
+      "age": 0,
+      "maximum": 0.8822628559562863
+    },
+    {
+      "id": "juri",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.8821362057401123
+    },
+    {
+      "id": "juri",
+      "key": "fuha_2",
+      "end": 45,
+      "age": 0,
+      "maximum": 0.8821362057396431
+    },
+    {
+      "id": "juri",
+      "key": "gooh_0",
+      "end": 45,
+      "age": 0,
+      "maximum": 0.8821362057376325
+    },
+    {
+      "id": "ryu",
+      "key": "cMK",
+      "end": 29,
+      "age": 0,
+      "maximum": 0.844803436127156
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_2",
+      "end": 45,
+      "age": 0,
+      "maximum": 0.8422796467314824
+    },
+    {
+      "id": "chun",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.8422796467308596
+    },
+    {
+      "id": "iori",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.8319395503434343
+    },
+    {
+      "id": "iori",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.8250035005472764
+    },
+    {
+      "id": "ryu",
+      "key": "blade_3",
+      "end": 52,
+      "age": 0,
+      "maximum": 0.8208341878038614
+    },
+    {
+      "id": "luke",
+      "key": "sMP",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.8127046968123879
+    },
+    {
+      "id": "chun",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.8096999107265419
+    },
+    {
+      "id": "juri",
+      "key": "sMP",
+      "end": 22,
+      "age": 0,
+      "maximum": 0.7528002506462353
+    },
+    {
+      "id": "ryu",
+      "key": "sMP",
+      "end": 23,
+      "age": 0,
+      "maximum": 0.7525171183509104
+    },
+    {
+      "id": "iori",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 0.7402310356256693
+    },
+    {
+      "id": "iori",
+      "key": "sHP",
+      "end": 38,
+      "age": 0,
+      "maximum": 0.7402310356169644
+    },
+    {
+      "id": "luke",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0.7120648641440942
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_1",
+      "end": 45,
+      "age": 0,
+      "maximum": 0.7110339338894204
+    },
+    {
+      "id": "iori",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.679624458356508
+    },
+    {
+      "id": "juri",
+      "key": "gooh_1",
+      "end": 57,
+      "age": 0,
+      "maximum": 0.6598729174277953
+    },
+    {
+      "id": "mai",
+      "key": "cMK",
+      "end": 28,
+      "age": 0,
+      "maximum": 0.6553581949665463
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_0",
+      "end": 43,
+      "age": 0,
+      "maximum": 0.6508815231271197
+    },
+    {
+      "id": "juri",
+      "key": "saiha_0",
+      "end": 39,
+      "age": 0,
+      "maximum": 0.6199354988845168
+    },
+    {
+      "id": "mai",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.616222632516478
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_2",
+      "end": 43,
+      "age": 0,
+      "maximum": 0.5879600611514749
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_1",
+      "end": 40,
+      "age": 0,
+      "maximum": 0.5840798978547985
+    },
+    {
+      "id": "chun",
+      "key": "legs_0",
+      "end": 38,
+      "age": 0,
+      "maximum": 0.5681729511872446
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_0",
+      "end": 33,
+      "age": 0,
+      "maximum": 0.5342697485766117
+    },
+    {
+      "id": "ken",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.532899588647592
+    },
+    {
+      "id": "juri",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0.5274300375586646
+    },
+    {
+      "id": "luke",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.5097893172113606
+    },
+    {
+      "id": "juri",
+      "key": "saiha_3",
+      "end": 53,
+      "age": 0,
+      "maximum": 0.46992542644808966
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_3",
+      "end": 39,
+      "age": 0,
+      "maximum": 0.4312820941194
+    },
+    {
+      "id": "iori",
+      "key": "cHP",
+      "end": 38,
+      "age": 0,
+      "maximum": 0.4278736829404504
+    },
+    {
+      "id": "ken",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.4112549408671472
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_2",
+      "end": 61,
+      "age": 0,
+      "maximum": 0.4104312041239479
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_1",
+      "end": 47,
+      "age": 0,
+      "maximum": 0.4091080515125229
+    },
+    {
+      "id": "ryu",
+      "key": "blade_1",
+      "end": 43,
+      "age": 0,
+      "maximum": 0.3798910748657783
+    },
+    {
+      "id": "cammy",
+      "key": "sMP",
+      "end": 18,
+      "age": 0,
+      "maximum": 0.3724480540901462
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_0",
+      "end": 44,
+      "age": 0,
+      "maximum": 0.35612188487232804
+    },
+    {
+      "id": "chun",
+      "key": "cMK",
+      "end": 31,
+      "age": 0,
+      "maximum": 0.345854799949297
+    },
+    {
+      "id": "iori",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0.3171178815366285
+    },
+    {
+      "id": "ken",
+      "key": "sHP",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.30663715321736895
+    },
+    {
+      "id": "ken",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 0.3066371532170369
+    },
+    {
+      "id": "luke",
+      "key": "sand_2",
+      "end": 47,
+      "age": 0,
+      "maximum": 0.27317751406895024
+    },
+    {
+      "id": "mai",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.2707595725874978
+    },
+    {
+      "id": "cammy",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.2652457516681539
+    },
+    {
+      "id": "luke",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0.23666177560422338
+    },
+    {
+      "id": "ryu",
+      "key": "blade_2",
+      "end": 48,
+      "age": 0,
+      "maximum": 0.20064787782089244
+    },
+    {
+      "id": "juri",
+      "key": "fuha_3",
+      "end": 49,
+      "age": 0,
+      "maximum": 0.17762562890862396
+    },
+    {
+      "id": "ryu",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.17733188741196576
+    },
+    {
+      "id": "juri",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.15005122466116938
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_3",
+      "end": 54,
+      "age": 0,
+      "maximum": 0.14464037683706657
+    },
+    {
+      "id": "ken",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.1251068665929261
+    },
+    {
+      "id": "iori",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.10159615656920618
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_0",
+      "end": 42,
+      "age": 0,
+      "maximum": 0.10159615656041251
+    },
+    {
+      "id": "mai",
+      "key": "cHP",
+      "end": 40,
+      "age": 0,
+      "maximum": 0.09082268517473216
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_0",
+      "end": 42,
+      "age": 0,
+      "maximum": 0.07986905366360049
+    },
+    {
+      "id": "chun",
+      "key": "legs_2",
+      "end": 62,
+      "age": 0,
+      "maximum": 0.07373800741833861
+    },
+    {
+      "id": "juri",
+      "key": "cHP",
+      "end": 37,
+      "age": 0,
+      "maximum": 0.07267740684262339
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_1",
+      "end": 30,
+      "age": 0,
+      "maximum": 0.06037786370706451
+    },
+    {
+      "id": "chun",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0.053070791808595454
+    },
+    {
+      "id": "luke",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 0.051938705992828446
+    },
+    {
+      "id": "luke",
+      "key": "sHP",
+      "end": 42,
+      "age": 0,
+      "maximum": 0.0519387059925059
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_0",
+      "end": 38,
+      "age": 0,
+      "maximum": 0.050461640950652906
+    },
+    {
+      "id": "chun",
+      "key": "legs_3",
+      "end": 59,
+      "age": 0,
+      "maximum": 0.04108674182749957
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_3",
+      "end": 47,
+      "age": 0,
+      "maximum": 0.030905629263846855
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_3",
+      "end": 27,
+      "age": 0,
+      "maximum": 0.029174347060368026
+    },
+    {
+      "id": "ryu",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.027785134189811683
+    },
+    {
+      "id": "ken",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0.018860495687048253
+    },
+    {
+      "id": "chun",
+      "key": "legs_1",
+      "end": 50,
+      "age": 0,
+      "maximum": 0.0173750971223263
+    },
+    {
+      "id": "chun",
+      "key": "sMP",
+      "end": 20,
+      "age": 0,
+      "maximum": 0.017364858314212594
+    },
+    {
+      "id": "luke",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.0169650715812426
+    },
+    {
+      "id": "juri",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0.014113654073859897
+    },
+    {
+      "id": "mai",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.00961098224949708
+    },
+    {
+      "id": "cammy",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0.009418207543744506
+    },
+    {
+      "id": "cammy",
+      "key": "cHP",
+      "end": 35,
+      "age": 0,
+      "maximum": 0.009414326774453675
+    },
+    {
+      "id": "chun",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.007828250971157597
+    },
+    {
+      "id": "luke",
+      "key": "sand_3",
+      "end": 51,
+      "age": 0,
+      "maximum": 0.00764591622614627
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_2",
+      "end": 50,
+      "age": 0,
+      "maximum": 0.0037926741932793433
+    },
+    {
+      "id": "ryu",
+      "key": "cHP",
+      "end": 37,
+      "age": 0,
+      "maximum": 0.0002402431564858963
+    },
+    {
+      "id": "luke",
+      "key": "flash_0",
+      "end": 36,
+      "age": 0,
+      "maximum": 0.0002172634250999503
+    }
+  ],
+  "note": "Observational, not a zero-gap pass. Grounded normal/special training moves which finish naturally into idle are sampled; air, stance, branches and other finish states are excluded. Ordinary idle return remains separate from the exact natural-cancel bridge."
+}

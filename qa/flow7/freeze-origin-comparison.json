@@ -1,0 +1,70 @@
+{
+  "suite": "flow7-literal-freeze-comparison",
+  "capturedAt": "2026-10-04T21:50:32.937083+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "status": "passed",
+  "versions": [
+    {
+      "version": "literal-v6",
+      "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+      "frame": 8,
+      "endFrame": 8,
+      "freeze": 5,
+      "differences": [
+        {
+          "alpha": 0,
+          "max": 40.70935320744285
+        },
+        {
+          "alpha": 0.15,
+          "max": 34.511156745228014
+        },
+        {
+          "alpha": 0.5,
+          "max": 20.102125349511194
+        },
+        {
+          "alpha": 0.85,
+          "max": 5.8822167965832115
+        },
+        {
+          "alpha": 1,
+          "max": 0
+        }
+      ],
+      "maximum": 40.70935320744285
+    },
+    {
+      "version": "v7",
+      "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+      "frame": 8,
+      "endFrame": 8,
+      "freeze": 5,
+      "differences": [
+        {
+          "alpha": 0,
+          "max": 0
+        },
+        {
+          "alpha": 0.15,
+          "max": 0
+        },
+        {
+          "alpha": 0.5,
+          "max": 0
+        },
+        {
+          "alpha": 0.85,
+          "max": 0
+        },
+        {
+          "alpha": 1,
+          "max": 0
+        }
+      ],
+      "maximum": 0
+    }
+  ],
+  "browserErrors": [],
+  "units": "Actor-local SVG coordinates, not screen/device pixels. One real sMP contact, same legacy stop length, actual unpaused renderer, sampled interpolation alpha."
+}

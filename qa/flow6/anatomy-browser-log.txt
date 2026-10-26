@@ -1,0 +1,14 @@
+PASS New anatomy lab opens with FX off and uses the real production Renderer 
+PASS 1441 quarter-degree turn seeks keep output finite and source bones fixed 
+PASS Every visible source limb has a single shared contour for fill and detail clip 
+PASS Rig overlay is actually displayed rather than hidden by display=none 
+PASS Random seeks leave retained DOM count and source assets unchanged 
+PASS Wrist/shin decals are independent of first mounted frame and remain endpoint-bound 
+PASS Every actual SVG hand and foot origin matches the displayed joint across 8 characters and 12 angles 
+PASS Production battle rendering passes new anatomy metadata, not the compatibility battle IK 
+PASS Natural special-to-super cancellation preserves actual joint positions, not just pose numbers 
+PASS Joint bridge expires exactly at its deadline and never changes collision result 
+PASS Reset clears joint-transition ownership 
+PASS Natural rendered Mai 14-hit route uses the new surface during real combat 
+PASS Primary lab Escape/close restores paused battle state and native focus 
+ANATOMY BROWSER 22 / 22 ERRORS []

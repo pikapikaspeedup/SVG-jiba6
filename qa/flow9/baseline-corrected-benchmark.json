@@ -1,0 +1,163 @@
+{
+  "cold": [
+    {
+      "id": "sLP",
+      "success": true,
+      "requestMs": 2.5,
+      "firstStepMs": 1.8999999999068677,
+      "firstRenderMs": 6
+    },
+    {
+      "id": "sHP",
+      "success": true,
+      "requestMs": 3.699999999953434,
+      "firstStepMs": 1.900000000023283,
+      "firstRenderMs": 5
+    },
+    {
+      "id": "sHK",
+      "success": true,
+      "requestMs": 0.7999999999301508,
+      "firstStepMs": 1.8000000000465661,
+      "firstRenderMs": 4.099999999976717
+    },
+    {
+      "id": "hissatsu_2",
+      "success": true,
+      "requestMs": 6.300000000046566,
+      "firstStepMs": 1.400000000023283,
+      "firstRenderMs": 6.299999999930151
+    },
+    {
+      "id": "shinobibachi_3",
+      "success": true,
+      "requestMs": 5.099999999976717,
+      "firstStepMs": 1.6999999999534339,
+      "firstRenderMs": 8.600000000093132
+    },
+    {
+      "id": "SA1",
+      "success": true,
+      "requestMs": 6.5,
+      "firstStepMs": 1.8000000000465661,
+      "firstRenderMs": 4.900000000023283
+    },
+    {
+      "id": "SA2",
+      "success": true,
+      "requestMs": 9,
+      "firstStepMs": 1.900000000023283,
+      "firstRenderMs": 5.099999999976717
+    },
+    {
+      "id": "SA3",
+      "success": true,
+      "requestMs": 9.300000000046566,
+      "firstStepMs": 1.7999999999301508,
+      "firstRenderMs": 8.900000000023283
+    }
+  ],
+  "samples": [
+    {
+      "id": "idle",
+      "steps": 300,
+      "simulationMean": 0.23366666667085761,
+      "simulationP95": 0.5,
+      "renderTwoMean": 5.315999999996275,
+      "renderTwoP95": 8.29999999993015,
+      "renderTwoMax": 29.900000000023283
+    },
+    {
+      "id": "sHK",
+      "steps": 300,
+      "simulationMean": 0.18166666666278616,
+      "simulationP95": 0.5,
+      "renderTwoMean": 4.610000000003493,
+      "renderTwoP95": 8.20000000006985,
+      "renderTwoMax": 12.29999999993015
+    },
+    {
+      "id": "hissatsu_2",
+      "steps": 300,
+      "simulationMean": 0.26900000000178503,
+      "simulationP95": 0.7000000000698492,
+      "renderTwoMean": 6.798666666665037,
+      "renderTwoP95": 14.300000000046566,
+      "renderTwoMax": 22
+    },
+    {
+      "id": "shinobibachi_3",
+      "steps": 300,
+      "simulationMean": 0.4416666666655025,
+      "simulationP95": 0.6000000000931323,
+      "renderTwoMean": 5.155666666668064,
+      "renderTwoP95": 9,
+      "renderTwoMax": 19.79999999993015
+    },
+    {
+      "id": "SA3",
+      "steps": 300,
+      "simulationMean": 0.6583333333317811,
+      "simulationP95": 2.200000000069849,
+      "renderTwoMean": 6.532666666668762,
+      "renderTwoP95": 13.800000000046566,
+      "renderTwoMax": 39
+    }
+  ],
+  "history": [
+    {
+      "move": "sMP",
+      "maxIdenticalTimePoseDelta": 14.838539381365038
+    },
+    {
+      "move": "sHK",
+      "maxIdenticalTimePoseDelta": 14.279309070251564
+    },
+    {
+      "move": "hissatsu_0",
+      "maxIdenticalTimePoseDelta": 8.316594968409603
+    }
+  ],
+  "calls": {
+    "compose": 40202,
+    "solveAnimation": 50883,
+    "sockets": 32553
+  },
+  "label": "baseline-corrected",
+  "utc": "2026-10-05T15:34:49.500643+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "live": {
+    "cycles": 6,
+    "errors": [],
+    "rafCount": 1577,
+    "p50": 16.699999999999818,
+    "p95": 33.39999999999782,
+    "p99": 33.400000000001455,
+    "over25ms": 213,
+    "over50ms": 2,
+    "uniqueCameraTransforms": 883,
+    "clock": {
+      "ticks": 1805,
+      "callbacks": 1582,
+      "discardedSteps": 3,
+      "clampedMs": 0,
+      "pauses": 1,
+      "alpha": 0.9279999999994998,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 15.46666666665833
+    },
+    "elapsedWallSeconds": 30.000749756000005,
+    "browserMetricsDelta": {
+      "LayoutCount": 1584,
+      "RecalcStyleCount": 1584,
+      "LayoutDuration": 2.6464459999999996,
+      "RecalcStyleDuration": 2.574532,
+      "ScriptDuration": 9.091764000000001,
+      "TaskDuration": 21.102094
+    }
+  },
+  "browserErrors": []
+}

@@ -1,0 +1,368 @@
+{
+  "suite": "flow6-regression-browser",
+  "capturedAt": "2026-10-04T17:48:54.957149+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "total": 30,
+  "passed": 30,
+  "tests": [
+    {
+      "name": "Production modules, build and isolated v6 persistence agree",
+      "pass": true,
+      "detail": {
+        "game": "6.0.0-ink-continuity",
+        "core": "6.0.0-continuity",
+        "graph": "6.0.0",
+        "fx": "5.0.0",
+        "store": "ink-flow-sf6-v6",
+        "build": "6.0.0"
+      }
+    },
+    {
+      "name": "Real requestAnimationFrame loop advances the production fixed clock",
+      "pass": true,
+      "detail": {
+        "before": {
+          "ticks": 0,
+          "callbacks": 7,
+          "discardedSteps": 0,
+          "clampedMs": 0,
+          "pauses": 1,
+          "alpha": 1,
+          "lastSteps": 0,
+          "hz": 60,
+          "active": false,
+          "paused": true,
+          "pendingMs": 0
+        },
+        "after": {
+          "ticks": 24,
+          "callbacks": 17,
+          "discardedSteps": 4,
+          "clampedMs": 0,
+          "pauses": 1,
+          "alpha": 0.9979999999999959,
+          "lastSteps": 1,
+          "hz": 60,
+          "active": true,
+          "paused": false,
+          "pendingMs": 16.633333333333265
+        }
+      }
+    },
+    {
+      "name": "Same-frame inspector changes final pose without modifying raw assets or global graph state",
+      "pass": true,
+      "detail": {
+        "onDelta": 32.414202127909356,
+        "offDelta": 1.180976748471683e-13
+      }
+    },
+    {
+      "name": "Inspector reverse seeking reproduces geometry, spring state and particles",
+      "pass": true,
+      "detail": {
+        "frame": 27.25
+      }
+    },
+    {
+      "name": "Live visual graph is separate from collision and is not a new hitbox multiplier",
+      "pass": true,
+      "detail": {
+        "visualChanged": true,
+        "hitboxesUnchanged": true,
+        "t": 22
+      }
+    },
+    {
+      "name": "Cancelled layer handoff preserves its visual pose at the next move start",
+      "pass": true,
+      "detail": {
+        "maxComponentError": 5.551115123125783e-14,
+        "deadline": 5,
+        "next": "SA3"
+      }
+    },
+    {
+      "name": "Visual handoff fully ends before the first active frame",
+      "pass": true,
+      "detail": {
+        "frame": 5,
+        "deadline": 5,
+        "startup": 12
+      }
+    },
+    {
+      "name": "Real SVG fan socket follows the final layered pose, not the raw combat pose",
+      "pass": true,
+      "detail": {
+        "checks": 148,
+        "maximumError": 0.005339080469305264
+      }
+    },
+    {
+      "name": "360 render-only calls do not advance simulation, emitter births, events or damage",
+      "pass": true,
+      "detail": {
+        "renders": 360
+      }
+    },
+    {
+      "name": "Runtime timeline feeds live emitter bank and dispatches each serial exactly once",
+      "pass": true,
+      "detail": {
+        "edges": 1,
+        "activeEvents": 1,
+        "bankEmitters": 1
+      }
+    },
+    {
+      "name": "Hitstop freezes particle time, ribbon geometry, emission ordinal and event edges",
+      "pass": true,
+      "detail": {
+        "ticks": 13,
+        "fxTime": 15
+      }
+    },
+    {
+      "name": "Cancellation immediately closes emitters but retains already born particles and ribbons",
+      "pass": true,
+      "detail": {
+        "p": 35,
+        "r": 1
+      }
+    },
+    {
+      "name": "World particle and ribbon node pools do not grow after repeated cancels",
+      "pass": true,
+      "detail": {
+        "cycles": 20,
+        "particleNodes": 320,
+        "ribbonGroups": 64
+      }
+    },
+    {
+      "name": "Low-quality preview is a stable subset of high-quality particle geometry",
+      "pass": true,
+      "detail": {
+        "low": 16,
+        "high": 49
+      }
+    },
+    {
+      "name": "Editing graph spring settings updates live preview before saving",
+      "pass": true,
+      "detail": {
+        "before": [
+          -12.811006748536837,
+          -10.050199244668583,
+          -3.435009758414791
+        ],
+        "after": [
+          -11.98208626669479,
+          -17.338013657327195,
+          -13.430307827810491
+        ]
+      }
+    },
+    {
+      "name": "Editor saves distance rate, burst, inherited velocity and spring metadata to reusable JSON",
+      "pass": true,
+      "detail": {
+        "particles": {
+          "count": 28,
+          "life": 28,
+          "speed": 3.2,
+          "size": 2.2,
+          "spread": 95,
+          "species": "ember",
+          "gravity": -0.06,
+          "drag": 0.04,
+          "curl": 1.3,
+          "spacing": 23,
+          "rate": 0.65,
+          "burst": 4,
+          "inheritVelocity": 0.4,
+          "sizeCurve": [
+            [
+              0,
+              0.3
+            ],
+            [
+              0.12,
+              1.25
+            ],
+            [
+              0.48,
+              0.9
+            ],
+            [
+              1,
+              0.1
+            ]
+          ],
+          "opacityCurve": [
+            [
+              0,
+              0.2
+            ],
+            [
+              0.1,
+              1
+            ],
+            [
+              0.7,
+              0.65
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "heat": true
+        },
+        "springs": {
+          "frequency": 0.82,
+          "damping": 0.4,
+          "hairStrength": 1.15,
+          "clothStrength": 1.1
+        }
+      }
+    },
+    {
+      "name": "Undo and redo restore newly added emitter parameters without changing combat bindings",
+      "pass": true,
+      "detail": {
+        "undo": 23,
+        "redo": 41
+      }
+    },
+    {
+      "name": "FX disabled suppresses local layers and world retained pools",
+      "pass": true,
+      "detail": {
+        "hiddenPools": 4
+      }
+    },
+    {
+      "name": "Inspector opened over rhythm practice cannot run G, R or Space behind the modal",
+      "pass": true,
+      "detail": {
+        "blocked": [
+          "KeyG",
+          "KeyR",
+          "Space"
+        ]
+      }
+    },
+    {
+      "name": "Reset discards action transitions, event instances and histories",
+      "pass": true,
+      "detail": {
+        "clean": true
+      }
+    },
+    {
+      "name": "Engine inspector responsive 1440x1050",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "docWidth": 1440,
+        "dialogWidth": 1238,
+        "dialogContentWidth": 1238,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Engine inspector responsive 1280x800",
+      "pass": true,
+      "detail": {
+        "width": 1280,
+        "docWidth": 1280,
+        "dialogWidth": 1227,
+        "dialogContentWidth": 1227,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Engine inspector responsive 1024x768",
+      "pass": true,
+      "detail": {
+        "width": 1024,
+        "docWidth": 1024,
+        "dialogWidth": 981,
+        "dialogContentWidth": 981,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Engine inspector responsive 844x390",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "docWidth": 844,
+        "dialogWidth": 808,
+        "dialogContentWidth": 808,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Engine inspector responsive 390x844",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "docWidth": 390,
+        "dialogWidth": 376,
+        "dialogContentWidth": 376,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Engine inspector responsive 360x740",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "docWidth": 360,
+        "dialogWidth": 347,
+        "dialogContentWidth": 347,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Native Escape closes inspector without activating battle controls",
+      "pass": true
+    },
+    {
+      "name": "Player-only build exposes inspection but not editing",
+      "pass": true,
+      "detail": {
+        "player": true,
+        "lab": true,
+        "editVisible": false,
+        "id": "ink-flow-player-6"
+      }
+    },
+    {
+      "name": "Touch toggles update actual graph output without modifying base data",
+      "pass": true
+    },
+    {
+      "name": "Touch close dismisses engine modal",
+      "pass": true
+    }
+  ],
+  "browserErrors": [],
+  "fileProtocol": {
+    "status": "environment-blocked-or-failed",
+    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/flow6-work/INK-Flow-6-Continuity/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/flow6-work/INK-Flow-6-Continuity/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n"
+  },
+  "limitations": [
+    "Chromium viewport/touch emulation is not physical-phone performance evidence.",
+    "set_content loads complete HTML bytes; file protocol and persistence capabilities are reported separately."
+  ]
+}

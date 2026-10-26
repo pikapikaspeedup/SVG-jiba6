@@ -1,0 +1,141 @@
+{
+  "suite": "flow8-unmodified-v7-comparison",
+  "capturedAt": "2026-10-05T07:16:15.729642+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "baselineSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "frames": 715,
+  "fps": 30,
+  "durationSeconds": 23.833333333333332,
+  "segments": [
+    {
+      "kind": "walk",
+      "simulationSteps": 110,
+      "slowMotion": 0.25,
+      "frames": 220,
+      "final": [
+        {
+          "steps": 110,
+          "actorStates": [
+            "idle",
+            "idle"
+          ],
+          "hits": 0,
+          "damage": 0,
+          "fx": 0,
+          "ghosts": 0,
+          "move": null
+        },
+        {
+          "steps": 110,
+          "actorStates": [
+            "idle",
+            "idle"
+          ],
+          "hits": 0,
+          "damage": 0,
+          "fx": 0,
+          "ghosts": 0,
+          "move": null
+        }
+      ]
+    },
+    {
+      "kind": "jump",
+      "simulationSteps": 110,
+      "slowMotion": 0.25,
+      "frames": 220,
+      "final": [
+        {
+          "steps": 110,
+          "actorStates": [
+            "idle",
+            "idle"
+          ],
+          "hits": 0,
+          "damage": 0,
+          "fx": 0,
+          "ghosts": 0,
+          "move": null
+        },
+        {
+          "steps": 110,
+          "actorStates": [
+            "idle",
+            "idle"
+          ],
+          "hits": 0,
+          "damage": 0,
+          "fx": 0,
+          "ghosts": 0,
+          "move": null
+        }
+      ]
+    },
+    {
+      "kind": "knockdown",
+      "simulationSteps": 175,
+      "slowMotion": 0.5,
+      "frames": 175,
+      "final": [
+        {
+          "steps": 175,
+          "actorStates": [
+            "idle",
+            "idle"
+          ],
+          "hits": 0,
+          "damage": 0,
+          "fx": 0,
+          "ghosts": 0,
+          "move": null
+        },
+        {
+          "steps": 175,
+          "actorStates": [
+            "idle",
+            "idle"
+          ],
+          "hits": 0,
+          "damage": 0,
+          "fx": 0,
+          "ghosts": 0,
+          "move": null
+        }
+      ]
+    },
+    {
+      "kind": "echo",
+      "simulationSteps": 100,
+      "slowMotion": 0.5,
+      "frames": 100,
+      "final": [
+        {
+          "steps": 100,
+          "actorStates": [
+            "idle",
+            "rise"
+          ],
+          "hits": 1,
+          "damage": 612,
+          "fx": 0,
+          "ghosts": 0,
+          "move": "shinobibachi_3"
+        },
+        {
+          "steps": 100,
+          "actorStates": [
+            "idle",
+            "rise"
+          ],
+          "hits": 1,
+          "damage": 612,
+          "fx": 0,
+          "ghosts": 0,
+          "move": "shinobibachi_3"
+        }
+      ]
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Both original source runtimes executed independently. Actual contact/inputs, common fixed camera. Deliberately labelled slow-motion. Not hardware FPS or official-game data."
+}

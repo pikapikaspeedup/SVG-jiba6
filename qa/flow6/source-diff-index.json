@@ -1,0 +1,40 @@
+{
+  "note": "SHA index for preserved baseline modules; this is not a line-by-line diff and does not include all changed files.",
+  "comparisons": [
+    {
+      "baseline": "legacy/flow5/core.js",
+      "current": "src/ink/core.js",
+      "baselineSha256": "4da18849f0afb61c5f940979d2c582e22a58ada50de6ade2763b52386d075687",
+      "currentSha256": "4745fc55ce5bd70b0bf5661ffc525e6e153df00c0884c85b6f017168fb3ce10e",
+      "changed": true
+    },
+    {
+      "baseline": "legacy/flow5/runtime.js",
+      "current": "src/ink/runtime.js",
+      "baselineSha256": "fe50823171a087930c8532aaba27cac1d5d802e465801de604b7fde2e1864ea3",
+      "currentSha256": "05766c6913bc8c2d13ecc6da6420dbfbf792c4aab75903a025f87be7f9921eb6",
+      "changed": true
+    },
+    {
+      "baseline": "legacy/flow5/renderer.js",
+      "current": "src/ink/renderer.js",
+      "baselineSha256": "265963be99dbc14a5b39db20d96a8f3a26727b05acfe183478a8600b334584ff",
+      "currentSha256": "33295b3d5fd256fc69875dd8c2f33061c942625daceefb4ee9e1839313fb9b84",
+      "changed": true
+    },
+    {
+      "baseline": "legacy/flow5/motion.js",
+      "current": "src/ink/motion.js",
+      "baselineSha256": "8d03a05058811d34af56de94a3a265cd65f225379392c8031c23ef8f48d194cf",
+      "currentSha256": "5269c2bcb3d661df34aa8719fd210255ca2b1f8fbfe08cfa3566d973adf50cd3",
+      "changed": true
+    },
+    {
+      "baseline": "legacy/flow5/inbetween.js",
+      "current": "src/ink/inbetween.js",
+      "baselineSha256": "f6aa78e1a7964b638e5b09ec4b302eec278fd806dec645712189aed6891962a9",
+      "currentSha256": "f6aa78e1a7964b638e5b09ec4b302eec278fd806dec645712189aed6891962a9",
+      "changed": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "suite": "flow5-source-audit",
+  "capturedAt": "2026-10-04T14:47:01.862184+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "passed": true,
+  "checks": {
+    "archiveIntact": true,
+    "liveSourceDifferentFromLegacy": true,
+    "builderReadsLiveSourceDirectly": true,
+    "embeddedModules": true,
+    "generatedIntegrationMatchesSource": true,
+    "unchangedBaseTracksAndCombatContracts": true,
+    "changedRecordsOnlyMai": true
+  },
+  "records": 690,
+  "changedRecords": 43,
+  "failures": [],
+  "gameSha256": "107f7ec8455285f8fe55621c54f47fc2346df66b2e1e4b39da42819d9006a0de",
+  "legacySha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+  "baselineArchiveSha256": "c8f6e8472e1b265fb1d9d7902f96b70b81189b1ccb445e237b13e3dc8bda18ec",
+  "note": "Checks uploaded FLOW4 base tracks and bindings/boxes; current visual additions are metadata and FX configuration. This is not a claim that the whole game was rewritten."
+}

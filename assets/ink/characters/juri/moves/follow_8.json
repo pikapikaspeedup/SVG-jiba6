@@ -737,7 +737,7 @@
         [
           5,
           [
-            -723.925,
+            67.21,
             -313.067
           ],
           "linear"
@@ -745,7 +745,7 @@
         [
           8,
           [
-            -455.656,
+            76.932,
             -299.246
           ],
           "linear"
@@ -785,7 +785,7 @@
         [
           18,
           [
-            -213.609,
+            85.298,
             -285.975
           ],
           "linear"
@@ -793,7 +793,7 @@
         [
           19,
           [
-            -567.959,
+            73.05,
             -305.403
           ],
           "linear"
@@ -801,23 +801,23 @@
         [
           20,
           [
-            -743.0,
-            -315.0
+            67,
+            -315
           ],
           "linear"
         ],
         [
           27,
           [
-            -743.0,
-            -315.0
+            67,
+            -315
           ],
           "linear"
         ],
         [
           36,
           [
-            -210.356,
+            72.853,
             -261.02
           ],
           "linear"
@@ -1051,7 +1051,13 @@
       "kind": "projectile",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "follow_8",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -1068,7 +1074,15 @@
       "scale": 1,
       "color": "#c68ee0",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 5.6,
+        "size": 2.4,
+        "spread": 65,
+        "species": "shard"
+      }
     }
   ],
   "source": "migrated-atelier"

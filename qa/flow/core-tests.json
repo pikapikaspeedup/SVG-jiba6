@@ -1,0 +1,102 @@
+{
+  "total": 24,
+  "passed": 24,
+  "tests": [
+    {
+      "name": "Spline keyframes hit exact authored values",
+      "pass": true
+    },
+    {
+      "name": "Monotone segment never overshoots",
+      "pass": true
+    },
+    {
+      "name": "Reversing spline has bounded extremum",
+      "pass": true
+    },
+    {
+      "name": "Vector track has independent bounded coordinates",
+      "pass": true
+    },
+    {
+      "name": "Fractional frames really differ",
+      "pass": true
+    },
+    {
+      "name": "Authored full revolution is not shortest-arc collapsed",
+      "pass": true
+    },
+    {
+      "name": "Before/after track clamp at endpoint",
+      "pass": true
+    },
+    {
+      "name": "Hold retains exact earlier key until endpoint",
+      "pass": true
+    },
+    {
+      "name": "Pure sampling does not mutate keyframe input",
+      "pass": true
+    },
+    {
+      "name": "Fractional turn weights continuously sum to one",
+      "pass": true
+    },
+    {
+      "name": "Ribcage never collapses to zero-width card",
+      "pass": true
+    },
+    {
+      "name": "Head offset lags body by independently authored yaw",
+      "pass": true
+    },
+    {
+      "name": "Front/profile/back endpoints are unambiguous",
+      "pass": true
+    },
+    {
+      "name": "Opaque clipping bands exactly cover width without overlap",
+      "pass": true
+    },
+    {
+      "name": "Equivalent revolutions have same silhouette projection",
+      "pass": true
+    },
+    {
+      "name": "Shoulder projection crosses depth only at edge-on",
+      "pass": true
+    },
+    {
+      "name": "IK chains remain finite and preserve lengths at every view",
+      "pass": true
+    },
+    {
+      "name": "Seeded randomness reproducible without global RNG",
+      "pass": true
+    },
+    {
+      "name": "Different particle births have different deterministic samples",
+      "pass": true
+    },
+    {
+      "name": "Particle absent before birth and at expiry",
+      "pass": true
+    },
+    {
+      "name": "Particle analytic rewind returns exact same output",
+      "pass": true
+    },
+    {
+      "name": "Particle age uses fractional frame, not render-call count",
+      "pass": true
+    },
+    {
+      "name": "Drag reduces travel compared with zero drag",
+      "pass": true
+    },
+    {
+      "name": "Particle sample cannot alter emitter definition",
+      "pass": true
+    }
+  ]
+}

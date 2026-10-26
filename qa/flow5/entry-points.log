@@ -1,0 +1,10 @@
+{
+  "suite": "flow5-entry-points",
+  "capturedAt": "2026-10-04T14:54:09.381027+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "landingSha256": "02879566208a9f878f2959b393769c8a9f2ef7b48163858a28e8dc6585628f6c",
+  "total": 6,
+  "passed": 6,
+  "browserErrors": [],
+  "scope": "Static shipped relative-path checks plus set_content layout with screenshot bytes injected. Not native filesystem navigation."
+}

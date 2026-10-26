@@ -996,7 +996,8 @@
       "kind": "burst",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "follow_0",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3
     }
   },
   "boxes": {
@@ -1013,7 +1014,15 @@
       "scale": 1,
       "color": "#70b9d5",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 5.6,
+        "size": 2.4,
+        "spread": 65,
+        "species": "spark"
+      }
     }
   ],
   "source": "migrated-atelier"

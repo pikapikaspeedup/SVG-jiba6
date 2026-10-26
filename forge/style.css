@@ -38,3 +38,7 @@ body.forge-player #f-download,body.forge-player #f-home-edit,
 body.forge-player #f-return-studio,body.forge-player #showcase-btn,
 body.forge-player #select-showcase,body.forge-player .f-runtime-bar,
 body.forge-player #f-storage-warning{display:none!important}
+
+/* FLOW 08: real-pose retained silhouettes. No legacy contour snapshots. */
+[data-ink-afterimage] [data-ink-layer=art] path:not([fill=none]),[data-ink-afterimage] [data-ink-layer=art] ellipse,[data-ink-afterimage] [data-ink-layer=art] circle{fill:var(--ink-echo-color,#82a798)!important;stroke:none!important;opacity:1!important}
+[data-ink-afterimage] [data-ink-layer=art] path[fill=none]{stroke:none!important}

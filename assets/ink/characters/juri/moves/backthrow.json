@@ -550,7 +550,7 @@
         [
           2,
           [
-            -644.156,
+            32.676,
             -253.253
           ],
           "linear"
@@ -558,7 +558,7 @@
         [
           3,
           [
-            -805,
+            23,
             -258
           ],
           "linear"
@@ -768,7 +768,13 @@
       "kind": "throw",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "backthrow",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {

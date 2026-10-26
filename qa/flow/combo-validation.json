@@ -1,0 +1,8213 @@
+{
+  "scenarios": [
+    {
+      "status": "success",
+      "character": "ryu",
+      "route": "ryu-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 125,
+      "hits": 11,
+      "damage": 3574,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 1,
+          "frame": 1,
+          "hits": 1,
+          "damage": 820,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 18,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 23,
+          "frame": 16,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "hasho_3",
+          "name": "OD 波掌击",
+          "tick": 34,
+          "frame": 22,
+          "hits": 1,
+          "damage": 473,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "真·升龙拳",
+          "tick": 59,
+          "frame": 40,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 10,
+          "move": "sHP",
+          "damage": 820,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 28,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 22,
+          "move": "hasho_3",
+          "name": "OD 波掌击"
+        },
+        {
+          "type": "hit",
+          "frame": 39,
+          "tick": 51,
+          "move": "hasho_3",
+          "damage": 473,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 40,
+          "move": "SA3",
+          "name": "真·升龙拳"
+        },
+        {
+          "type": "hit",
+          "frame": 51,
+          "tick": 90,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 62,
+          "tick": 107,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 123,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 83,
+          "tick": 140,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 156,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 173,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 114,
+          "tick": 189,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 125,
+          "tick": 206,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 11,
+      "hpLost": 3574,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ryu",
+      "route": "ryu-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 125,
+      "hits": 11,
+      "damage": 3574,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 207,
+          "frame": 1,
+          "hits": 1,
+          "damage": 820,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 224,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 229,
+          "frame": 16,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "hasho_3",
+          "name": "OD 波掌击",
+          "tick": 240,
+          "frame": 22,
+          "hits": 1,
+          "damage": 473,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "真·升龙拳",
+          "tick": 265,
+          "frame": 40,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 216,
+          "move": "sHP",
+          "damage": 820,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 234,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 22,
+          "move": "hasho_3",
+          "name": "OD 波掌击"
+        },
+        {
+          "type": "hit",
+          "frame": 39,
+          "tick": 257,
+          "move": "hasho_3",
+          "damage": 473,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 40,
+          "move": "SA3",
+          "name": "真·升龙拳"
+        },
+        {
+          "type": "hit",
+          "frame": 51,
+          "tick": 296,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 62,
+          "tick": 313,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 329,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 83,
+          "tick": 346,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 362,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 379,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 114,
+          "tick": 395,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 125,
+          "tick": 412,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 11,
+      "hpLost": 3574,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ryu",
+      "route": "ryu-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 177,
+      "hits": 15,
+      "damage": 3485,
+      "maxCombo": 15,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 413,
+          "frame": 1,
+          "hits": 1,
+          "damage": 820,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 430,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 435,
+          "frame": 16,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 463,
+          "frame": 39,
+          "hits": 1,
+          "damage": 415,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 491,
+          "frame": 62,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "tatsu_3",
+          "name": "OD 龙卷旋风脚",
+          "tick": 498,
+          "frame": 66,
+          "hits": 3,
+          "damage": 476,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "真·升龙拳",
+          "tick": 545,
+          "frame": 92,
+          "hits": 8,
+          "damage": 1085,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 422,
+          "move": "sHP",
+          "damage": 820,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 440,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 39,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 44,
+          "tick": 468,
+          "move": "sMP",
+          "damage": 415,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 62,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 65,
+          "tick": 494,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 66,
+          "move": "tatsu_3",
+          "name": "OD 龙卷旋风脚"
+        },
+        {
+          "type": "hit",
+          "frame": 77,
+          "tick": 509,
+          "move": "tatsu_3",
+          "damage": 182,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 523,
+          "move": "tatsu_3",
+          "damage": 159,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 91,
+          "tick": 537,
+          "move": "tatsu_3",
+          "damage": 135,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 92,
+          "move": "SA3",
+          "name": "真·升龙拳"
+        },
+        {
+          "type": "hit",
+          "frame": 103,
+          "tick": 576,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 114,
+          "tick": 593,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 124,
+          "tick": 609,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 135,
+          "tick": 626,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 145,
+          "tick": 642,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 156,
+          "tick": 659,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 166,
+          "tick": 675,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        },
+        {
+          "type": "hit",
+          "frame": 177,
+          "tick": 692,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 15
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 15,
+      "hpLost": 3485,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ryu",
+      "route": "ryu-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 177,
+      "hits": 15,
+      "damage": 3485,
+      "maxCombo": 15,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 693,
+          "frame": 1,
+          "hits": 1,
+          "damage": 820,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 710,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 715,
+          "frame": 16,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 743,
+          "frame": 39,
+          "hits": 1,
+          "damage": 415,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 771,
+          "frame": 62,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "tatsu_3",
+          "name": "OD 龙卷旋风脚",
+          "tick": 778,
+          "frame": 66,
+          "hits": 3,
+          "damage": 476,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "真·升龙拳",
+          "tick": 825,
+          "frame": 92,
+          "hits": 8,
+          "damage": 1085,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 702,
+          "move": "sHP",
+          "damage": 820,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 720,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 39,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 44,
+          "tick": 748,
+          "move": "sMP",
+          "damage": 415,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 62,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 65,
+          "tick": 774,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 66,
+          "move": "tatsu_3",
+          "name": "OD 龙卷旋风脚"
+        },
+        {
+          "type": "hit",
+          "frame": 77,
+          "tick": 789,
+          "move": "tatsu_3",
+          "damage": 182,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 803,
+          "move": "tatsu_3",
+          "damage": 159,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 91,
+          "tick": 817,
+          "move": "tatsu_3",
+          "damage": 135,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 92,
+          "move": "SA3",
+          "name": "真·升龙拳"
+        },
+        {
+          "type": "hit",
+          "frame": 103,
+          "tick": 856,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 114,
+          "tick": 873,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 124,
+          "tick": 889,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 135,
+          "tick": 906,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 145,
+          "tick": 922,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 156,
+          "tick": 939,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 166,
+          "tick": 955,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        },
+        {
+          "type": "hit",
+          "frame": 177,
+          "tick": 972,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 15
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 15,
+      "hpLost": 3485,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ken",
+      "route": "ken-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 120,
+      "hits": 11,
+      "damage": 3178,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 973,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 990,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 995,
+          "frame": 16,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚",
+          "tick": 1005,
+          "frame": 21,
+          "hits": 1,
+          "damage": 234,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "神龙烈破",
+          "tick": 1026,
+          "frame": 35,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 982,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 20,
+          "tick": 999,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 21,
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚"
+        },
+        {
+          "type": "hit",
+          "frame": 34,
+          "tick": 1018,
+          "move": "jinrai_3",
+          "damage": 234,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 35,
+          "move": "SA3",
+          "name": "神龙烈破"
+        },
+        {
+          "type": "hit",
+          "frame": 46,
+          "tick": 1057,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 57,
+          "tick": 1074,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 67,
+          "tick": 1090,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 78,
+          "tick": 1107,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 88,
+          "tick": 1123,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 99,
+          "tick": 1140,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 109,
+          "tick": 1156,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 120,
+          "tick": 1173,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 11,
+      "hpLost": 3178,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ken",
+      "route": "ken-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 120,
+      "hits": 11,
+      "damage": 3178,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 1174,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 1191,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 1196,
+          "frame": 16,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚",
+          "tick": 1206,
+          "frame": 21,
+          "hits": 1,
+          "damage": 234,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "神龙烈破",
+          "tick": 1227,
+          "frame": 35,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 1183,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 20,
+          "tick": 1200,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 21,
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚"
+        },
+        {
+          "type": "hit",
+          "frame": 34,
+          "tick": 1219,
+          "move": "jinrai_3",
+          "damage": 234,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 35,
+          "move": "SA3",
+          "name": "神龙烈破"
+        },
+        {
+          "type": "hit",
+          "frame": 46,
+          "tick": 1258,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 57,
+          "tick": 1275,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 67,
+          "tick": 1291,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 78,
+          "tick": 1308,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 88,
+          "tick": 1324,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 99,
+          "tick": 1341,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 109,
+          "tick": 1357,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 120,
+          "tick": 1374,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 11,
+      "hpLost": 3178,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ken",
+      "route": "ken-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 175,
+      "hits": 15,
+      "damage": 3288,
+      "maxCombo": 15,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 1375,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 1392,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 1397,
+          "frame": 16,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 1423,
+          "frame": 37,
+          "hits": 1,
+          "damage": 365,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 1449,
+          "frame": 58,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚",
+          "tick": 1456,
+          "frame": 62,
+          "hits": 3,
+          "damage": 486,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "神龙烈破",
+          "tick": 1505,
+          "frame": 90,
+          "hits": 8,
+          "damage": 1085,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 1384,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 20,
+          "tick": 1401,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 37,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 41,
+          "tick": 1427,
+          "move": "sMP",
+          "damage": 365,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 58,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 61,
+          "tick": 1452,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 62,
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚"
+        },
+        {
+          "type": "hit",
+          "frame": 75,
+          "tick": 1469,
+          "move": "jinrai_3",
+          "damage": 186,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 82,
+          "tick": 1483,
+          "move": "jinrai_3",
+          "damage": 162,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 89,
+          "tick": 1497,
+          "move": "jinrai_3",
+          "damage": 138,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 90,
+          "move": "SA3",
+          "name": "神龙烈破"
+        },
+        {
+          "type": "hit",
+          "frame": 101,
+          "tick": 1536,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 112,
+          "tick": 1553,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 122,
+          "tick": 1569,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 133,
+          "tick": 1586,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 143,
+          "tick": 1602,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 154,
+          "tick": 1619,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 164,
+          "tick": 1635,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        },
+        {
+          "type": "hit",
+          "frame": 175,
+          "tick": 1652,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 15
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 15,
+      "hpLost": 3288,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "ken",
+      "route": "ken-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 175,
+      "hits": 15,
+      "damage": 3288,
+      "maxCombo": 15,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 1653,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 1670,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 1675,
+          "frame": 16,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 1701,
+          "frame": 37,
+          "hits": 1,
+          "damage": 365,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 1727,
+          "frame": 58,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚",
+          "tick": 1734,
+          "frame": 62,
+          "hits": 3,
+          "damage": 486,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "神龙烈破",
+          "tick": 1783,
+          "frame": 90,
+          "hits": 8,
+          "damage": 1085,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 1662,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 20,
+          "tick": 1679,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 37,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 41,
+          "tick": 1705,
+          "move": "sMP",
+          "damage": 365,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 58,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 61,
+          "tick": 1730,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 62,
+          "move": "jinrai_3",
+          "name": "OD 迅雷脚"
+        },
+        {
+          "type": "hit",
+          "frame": 75,
+          "tick": 1747,
+          "move": "jinrai_3",
+          "damage": 186,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 82,
+          "tick": 1761,
+          "move": "jinrai_3",
+          "damage": 162,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 89,
+          "tick": 1775,
+          "move": "jinrai_3",
+          "damage": 138,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 90,
+          "move": "SA3",
+          "name": "神龙烈破"
+        },
+        {
+          "type": "hit",
+          "frame": 101,
+          "tick": 1814,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 112,
+          "tick": 1831,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 122,
+          "tick": 1847,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 133,
+          "tick": 1864,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 143,
+          "tick": 1880,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 154,
+          "tick": 1897,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 164,
+          "tick": 1913,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        },
+        {
+          "type": "hit",
+          "frame": 175,
+          "tick": 1930,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 15
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 15,
+      "hpLost": 3288,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "chun",
+      "route": "chun-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 116,
+      "hits": 11,
+      "damage": 3176,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 1931,
+          "frame": 1,
+          "hits": 1,
+          "damage": 730,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 1949,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 1954,
+          "frame": 17,
+          "hits": 1,
+          "damage": 433,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "legs_3",
+          "name": "OD 百裂脚",
+          "tick": 1964,
+          "frame": 22,
+          "hits": 1,
+          "damage": 212,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍天乱华",
+          "tick": 1980,
+          "frame": 31,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 1941,
+          "move": "sHP",
+          "damage": 730,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 1958,
+          "move": "sMP",
+          "damage": 433,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 22,
+          "move": "legs_3",
+          "name": "OD 百裂脚"
+        },
+        {
+          "type": "hit",
+          "frame": 30,
+          "tick": 1972,
+          "move": "legs_3",
+          "damage": 212,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 31,
+          "move": "SA3",
+          "name": "苍天乱华"
+        },
+        {
+          "type": "hit",
+          "frame": 42,
+          "tick": 2011,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 53,
+          "tick": 2028,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 63,
+          "tick": 2044,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 74,
+          "tick": 2061,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 2077,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 2094,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 2110,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 2127,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 11,
+      "hpLost": 3176,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "chun",
+      "route": "chun-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 116,
+      "hits": 11,
+      "damage": 3176,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 2128,
+          "frame": 1,
+          "hits": 1,
+          "damage": 730,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 2146,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 2151,
+          "frame": 17,
+          "hits": 1,
+          "damage": 433,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "legs_3",
+          "name": "OD 百裂脚",
+          "tick": 2161,
+          "frame": 22,
+          "hits": 1,
+          "damage": 212,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍天乱华",
+          "tick": 2177,
+          "frame": 31,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 2138,
+          "move": "sHP",
+          "damage": 730,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 2155,
+          "move": "sMP",
+          "damage": 433,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 22,
+          "move": "legs_3",
+          "name": "OD 百裂脚"
+        },
+        {
+          "type": "hit",
+          "frame": 30,
+          "tick": 2169,
+          "move": "legs_3",
+          "damage": 212,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 31,
+          "move": "SA3",
+          "name": "苍天乱华"
+        },
+        {
+          "type": "hit",
+          "frame": 42,
+          "tick": 2208,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 53,
+          "tick": 2225,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 63,
+          "tick": 2241,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 74,
+          "tick": 2258,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 2274,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 2291,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 2307,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 2324,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 11,
+      "hpLost": 3176,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "chun",
+      "route": "chun-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 169,
+      "hits": 15,
+      "damage": 3271,
+      "maxCombo": 15,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 2325,
+          "frame": 1,
+          "hits": 1,
+          "damage": 730,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 2343,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 2348,
+          "frame": 17,
+          "hits": 1,
+          "damage": 433,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 2373,
+          "frame": 37,
+          "hits": 1,
+          "damage": 374,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 2398,
+          "frame": 57,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "legs_3",
+          "name": "OD 百裂脚",
+          "tick": 2405,
+          "frame": 61,
+          "hits": 3,
+          "damage": 440,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍天乱华",
+          "tick": 2449,
+          "frame": 84,
+          "hits": 8,
+          "damage": 1085,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 2335,
+          "move": "sHP",
+          "damage": 730,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 2352,
+          "move": "sMP",
+          "damage": 433,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 37,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 41,
+          "tick": 2377,
+          "move": "sMP",
+          "damage": 374,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 57,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 60,
+          "tick": 2401,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 61,
+          "move": "legs_3",
+          "name": "OD 百裂脚"
+        },
+        {
+          "type": "hit",
+          "frame": 69,
+          "tick": 2413,
+          "move": "legs_3",
+          "damage": 168,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 76,
+          "tick": 2427,
+          "move": "legs_3",
+          "damage": 147,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 83,
+          "tick": 2441,
+          "move": "legs_3",
+          "damage": 125,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 84,
+          "move": "SA3",
+          "name": "苍天乱华"
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 2480,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 106,
+          "tick": 2497,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 2513,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 127,
+          "tick": 2530,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 137,
+          "tick": 2546,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 148,
+          "tick": 2563,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 158,
+          "tick": 2579,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        },
+        {
+          "type": "hit",
+          "frame": 169,
+          "tick": 2596,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 15
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 15,
+      "hpLost": 3271,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "chun",
+      "route": "chun-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 169,
+      "hits": 15,
+      "damage": 3271,
+      "maxCombo": 15,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 2597,
+          "frame": 1,
+          "hits": 1,
+          "damage": 730,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 2615,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 2620,
+          "frame": 17,
+          "hits": 1,
+          "damage": 433,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 2645,
+          "frame": 37,
+          "hits": 1,
+          "damage": 374,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 2670,
+          "frame": 57,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "legs_3",
+          "name": "OD 百裂脚",
+          "tick": 2677,
+          "frame": 61,
+          "hits": 3,
+          "damage": 440,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍天乱华",
+          "tick": 2721,
+          "frame": 84,
+          "hits": 8,
+          "damage": 1085,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 2607,
+          "move": "sHP",
+          "damage": 730,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 2624,
+          "move": "sMP",
+          "damage": 433,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 37,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 41,
+          "tick": 2649,
+          "move": "sMP",
+          "damage": 374,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 57,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 60,
+          "tick": 2673,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 61,
+          "move": "legs_3",
+          "name": "OD 百裂脚"
+        },
+        {
+          "type": "hit",
+          "frame": 69,
+          "tick": 2685,
+          "move": "legs_3",
+          "damage": 168,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 76,
+          "tick": 2699,
+          "move": "legs_3",
+          "damage": 147,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 83,
+          "tick": 2713,
+          "move": "legs_3",
+          "damage": 125,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 84,
+          "move": "SA3",
+          "name": "苍天乱华"
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 2752,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 106,
+          "tick": 2769,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 2785,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 127,
+          "tick": 2802,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 137,
+          "tick": 2818,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 148,
+          "tick": 2835,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 158,
+          "tick": 2851,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        },
+        {
+          "type": "hit",
+          "frame": 169,
+          "tick": 2868,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 15
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 15,
+      "hpLost": 3271,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "cammy",
+      "route": "cammy-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 116,
+      "hits": 11,
+      "damage": 3382,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 2869,
+          "frame": 1,
+          "hits": 1,
+          "damage": 700,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 2885,
+          "frame": 10,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 2890,
+          "frame": 15,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "arrow_3",
+          "name": "OD 螺旋箭",
+          "tick": 2900,
+          "frame": 20,
+          "hits": 1,
+          "damage": 458,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三角绞杀",
+          "tick": 2918,
+          "frame": 31,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 9,
+          "tick": 2877,
+          "move": "sHP",
+          "damage": 700,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 10,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 15,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 19,
+          "tick": 2894,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 20,
+          "move": "arrow_3",
+          "name": "OD 螺旋箭"
+        },
+        {
+          "type": "hit",
+          "frame": 30,
+          "tick": 2910,
+          "move": "arrow_3",
+          "damage": 458,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 31,
+          "move": "SA3",
+          "name": "三角绞杀"
+        },
+        {
+          "type": "hit",
+          "frame": 42,
+          "tick": 2949,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 53,
+          "tick": 2966,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 63,
+          "tick": 2982,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 74,
+          "tick": 2999,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 3015,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 3032,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 3048,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 3065,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 11,
+      "hpLost": 3382,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "cammy",
+      "route": "cammy-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 116,
+      "hits": 11,
+      "damage": 3382,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 3066,
+          "frame": 1,
+          "hits": 1,
+          "damage": 700,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 3082,
+          "frame": 10,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 3087,
+          "frame": 15,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "arrow_3",
+          "name": "OD 螺旋箭",
+          "tick": 3097,
+          "frame": 20,
+          "hits": 1,
+          "damage": 458,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三角绞杀",
+          "tick": 3115,
+          "frame": 31,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 9,
+          "tick": 3074,
+          "move": "sHP",
+          "damage": 700,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 10,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 15,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 19,
+          "tick": 3091,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 20,
+          "move": "arrow_3",
+          "name": "OD 螺旋箭"
+        },
+        {
+          "type": "hit",
+          "frame": 30,
+          "tick": 3107,
+          "move": "arrow_3",
+          "damage": 458,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 31,
+          "move": "SA3",
+          "name": "三角绞杀"
+        },
+        {
+          "type": "hit",
+          "frame": 42,
+          "tick": 3146,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 53,
+          "tick": 3163,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 63,
+          "tick": 3179,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 74,
+          "tick": 3196,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 3212,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 3229,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 3245,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 3262,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 11,
+      "hpLost": 3382,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "cammy",
+      "route": "cammy-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 158,
+      "hits": 14,
+      "damage": 3580,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 3263,
+          "frame": 1,
+          "hits": 1,
+          "damage": 700,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 3279,
+          "frame": 10,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 3284,
+          "frame": 15,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 3307,
+          "frame": 33,
+          "hits": 1,
+          "damage": 365,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 3330,
+          "frame": 51,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "arrow_3",
+          "name": "OD 螺旋箭",
+          "tick": 3337,
+          "frame": 55,
+          "hits": 2,
+          "damage": 681,
+          "needed": 2,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三角绞杀",
+          "tick": 3369,
+          "frame": 73,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 9,
+          "tick": 3271,
+          "move": "sHP",
+          "damage": 700,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 10,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 15,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 19,
+          "tick": 3288,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 33,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 37,
+          "tick": 3311,
+          "move": "sMP",
+          "damage": 365,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 51,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 54,
+          "tick": 3333,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 55,
+          "move": "arrow_3",
+          "name": "OD 螺旋箭"
+        },
+        {
+          "type": "hit",
+          "frame": 65,
+          "tick": 3347,
+          "move": "arrow_3",
+          "damage": 364,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 3361,
+          "move": "arrow_3",
+          "damage": 317,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 73,
+          "move": "SA3",
+          "name": "三角绞杀"
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 3400,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 3417,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 3433,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 3450,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 126,
+          "tick": 3466,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 137,
+          "tick": 3483,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 147,
+          "tick": 3499,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 158,
+          "tick": 3516,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 14,
+      "hpLost": 3580,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "cammy",
+      "route": "cammy-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 158,
+      "hits": 14,
+      "damage": 3580,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 3517,
+          "frame": 1,
+          "hits": 1,
+          "damage": 700,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 3533,
+          "frame": 10,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 3538,
+          "frame": 15,
+          "hits": 1,
+          "damage": 423,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 3561,
+          "frame": 33,
+          "hits": 1,
+          "damage": 365,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 3584,
+          "frame": 51,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "arrow_3",
+          "name": "OD 螺旋箭",
+          "tick": 3591,
+          "frame": 55,
+          "hits": 2,
+          "damage": 681,
+          "needed": 2,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三角绞杀",
+          "tick": 3623,
+          "frame": 73,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 9,
+          "tick": 3525,
+          "move": "sHP",
+          "damage": 700,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 10,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 15,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 19,
+          "tick": 3542,
+          "move": "sMP",
+          "damage": 423,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 33,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 37,
+          "tick": 3565,
+          "move": "sMP",
+          "damage": 365,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 51,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 54,
+          "tick": 3587,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 55,
+          "move": "arrow_3",
+          "name": "OD 螺旋箭"
+        },
+        {
+          "type": "hit",
+          "frame": 65,
+          "tick": 3601,
+          "move": "arrow_3",
+          "damage": 364,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 3615,
+          "move": "arrow_3",
+          "damage": 317,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 73,
+          "move": "SA3",
+          "name": "三角绞杀"
+        },
+        {
+          "type": "hit",
+          "frame": 84,
+          "tick": 3654,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 95,
+          "tick": 3671,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 3687,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 3704,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 126,
+          "tick": 3720,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 137,
+          "tick": 3737,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 147,
+          "tick": 3753,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 158,
+          "tick": 3770,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 14,
+      "hpLost": 3580,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "luke",
+      "route": "luke-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 124,
+      "hits": 11,
+      "damage": 3733,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 3771,
+          "frame": 1,
+          "hits": 1,
+          "damage": 910,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 3790,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 3795,
+          "frame": 18,
+          "hits": 1,
+          "damage": 519,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "flash_3",
+          "name": "OD 闪光拳",
+          "tick": 3807,
+          "frame": 25,
+          "hits": 1,
+          "damage": 503,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍白骑士",
+          "tick": 3828,
+          "frame": 39,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 3782,
+          "move": "sHP",
+          "damage": 910,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 24,
+          "tick": 3801,
+          "move": "sMP",
+          "damage": 519,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 25,
+          "move": "flash_3",
+          "name": "OD 闪光拳"
+        },
+        {
+          "type": "hit",
+          "frame": 38,
+          "tick": 3820,
+          "move": "flash_3",
+          "damage": 503,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 39,
+          "move": "SA3",
+          "name": "苍白骑士"
+        },
+        {
+          "type": "hit",
+          "frame": 50,
+          "tick": 3859,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 61,
+          "tick": 3876,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 71,
+          "tick": 3892,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 82,
+          "tick": 3909,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 92,
+          "tick": 3925,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 103,
+          "tick": 3942,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 113,
+          "tick": 3958,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 124,
+          "tick": 3975,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 11,
+      "hpLost": 3733,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "luke",
+      "route": "luke-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 124,
+      "hits": 11,
+      "damage": 3733,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 3976,
+          "frame": 1,
+          "hits": 1,
+          "damage": 910,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 3995,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4000,
+          "frame": 18,
+          "hits": 1,
+          "damage": 519,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "flash_3",
+          "name": "OD 闪光拳",
+          "tick": 4012,
+          "frame": 25,
+          "hits": 1,
+          "damage": 503,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍白骑士",
+          "tick": 4033,
+          "frame": 39,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 3987,
+          "move": "sHP",
+          "damage": 910,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 24,
+          "tick": 4006,
+          "move": "sMP",
+          "damage": 519,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 25,
+          "move": "flash_3",
+          "name": "OD 闪光拳"
+        },
+        {
+          "type": "hit",
+          "frame": 38,
+          "tick": 4025,
+          "move": "flash_3",
+          "damage": 503,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 39,
+          "move": "SA3",
+          "name": "苍白骑士"
+        },
+        {
+          "type": "hit",
+          "frame": 50,
+          "tick": 4064,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 61,
+          "tick": 4081,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 71,
+          "tick": 4097,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 82,
+          "tick": 4114,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 92,
+          "tick": 4130,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 103,
+          "tick": 4147,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 113,
+          "tick": 4163,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 124,
+          "tick": 4180,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 11,
+      "hpLost": 3733,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "luke",
+      "route": "luke-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 180,
+      "hits": 14,
+      "damage": 4036,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 4181,
+          "frame": 1,
+          "hits": 1,
+          "damage": 910,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 4200,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4205,
+          "frame": 18,
+          "hits": 1,
+          "damage": 519,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4236,
+          "frame": 44,
+          "hits": 1,
+          "damage": 448,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 4267,
+          "frame": 70,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "flash_3",
+          "name": "OD 闪光拳",
+          "tick": 4274,
+          "frame": 74,
+          "hits": 2,
+          "damage": 748,
+          "needed": 2,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍白骑士",
+          "tick": 4309,
+          "frame": 95,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 4192,
+          "move": "sHP",
+          "damage": 910,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 24,
+          "tick": 4211,
+          "move": "sMP",
+          "damage": 519,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 44,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 50,
+          "tick": 4242,
+          "move": "sMP",
+          "damage": 448,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 70,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 73,
+          "tick": 4270,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 74,
+          "move": "flash_3",
+          "name": "OD 闪光拳"
+        },
+        {
+          "type": "hit",
+          "frame": 87,
+          "tick": 4287,
+          "move": "flash_3",
+          "damage": 400,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 94,
+          "tick": 4301,
+          "move": "flash_3",
+          "damage": 348,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 95,
+          "move": "SA3",
+          "name": "苍白骑士"
+        },
+        {
+          "type": "hit",
+          "frame": 106,
+          "tick": 4340,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 117,
+          "tick": 4357,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 127,
+          "tick": 4373,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 138,
+          "tick": 4390,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 148,
+          "tick": 4406,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 159,
+          "tick": 4423,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 169,
+          "tick": 4439,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 180,
+          "tick": 4456,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 14,
+      "hpLost": 4036,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "luke",
+      "route": "luke-extended",
+      "mode": "demo",
+      "cursor": 7,
+      "frames": 180,
+      "hits": 14,
+      "damage": 4036,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 4457,
+          "frame": 1,
+          "hits": 1,
+          "damage": 910,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 4476,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4481,
+          "frame": 18,
+          "hits": 1,
+          "damage": 519,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4512,
+          "frame": 44,
+          "hits": 1,
+          "damage": 448,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "站立轻拳",
+          "tick": 4543,
+          "frame": 70,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "flash_3",
+          "name": "OD 闪光拳",
+          "tick": 4550,
+          "frame": 74,
+          "hits": 2,
+          "damage": 748,
+          "needed": 2,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "苍白骑士",
+          "tick": 4585,
+          "frame": 95,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 4468,
+          "move": "sHP",
+          "damage": 910,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 24,
+          "tick": 4487,
+          "move": "sMP",
+          "damage": 519,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 44,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 50,
+          "tick": 4518,
+          "move": "sMP",
+          "damage": 448,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 70,
+          "move": "sLP",
+          "name": "站立轻拳"
+        },
+        {
+          "type": "hit",
+          "frame": 73,
+          "tick": 4546,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 74,
+          "move": "flash_3",
+          "name": "OD 闪光拳"
+        },
+        {
+          "type": "hit",
+          "frame": 87,
+          "tick": 4563,
+          "move": "flash_3",
+          "damage": 400,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 94,
+          "tick": 4577,
+          "move": "flash_3",
+          "damage": 348,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 95,
+          "move": "SA3",
+          "name": "苍白骑士"
+        },
+        {
+          "type": "hit",
+          "frame": 106,
+          "tick": 4616,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 117,
+          "tick": 4633,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 127,
+          "tick": 4649,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 138,
+          "tick": 4666,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 148,
+          "tick": 4682,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 159,
+          "tick": 4699,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 169,
+          "tick": 4715,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 180,
+          "tick": 4732,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 14,
+      "hpLost": 4036,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "juri",
+      "route": "juri-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 125,
+      "hits": 12,
+      "damage": 3412,
+      "maxCombo": 12,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 4733,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 4750,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4755,
+          "frame": 16,
+          "hits": 1,
+          "damage": 442,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "saiha_3",
+          "name": "OD 岁破冲",
+          "tick": 4766,
+          "frame": 22,
+          "hits": 2,
+          "damage": 690,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "回旋断界落",
+          "tick": 4791,
+          "frame": 40,
+          "hits": 8,
+          "damage": 1560,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 4742,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 4760,
+          "move": "sMP",
+          "damage": 442,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 22,
+          "move": "saiha_3",
+          "name": "OD 岁破冲"
+        },
+        {
+          "type": "hit",
+          "frame": 39,
+          "tick": 4783,
+          "move": "saiha_3",
+          "damage": 364,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 40,
+          "move": "SA3",
+          "name": "回旋断界落"
+        },
+        {
+          "type": "hit",
+          "frame": 47,
+          "tick": 4818,
+          "move": "saiha_3",
+          "damage": 326,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 51,
+          "tick": 4829,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 62,
+          "tick": 4846,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 4862,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 83,
+          "tick": 4879,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 4895,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 4912,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 114,
+          "tick": 4928,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 125,
+          "tick": 4945,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 12,
+      "hpLost": 3412,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "juri",
+      "route": "juri-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 125,
+      "hits": 12,
+      "damage": 3412,
+      "maxCombo": 12,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 4946,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 4963,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 4968,
+          "frame": 16,
+          "hits": 1,
+          "damage": 442,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "saiha_3",
+          "name": "OD 岁破冲",
+          "tick": 4979,
+          "frame": 22,
+          "hits": 2,
+          "damage": 690,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "回旋断界落",
+          "tick": 5004,
+          "frame": 40,
+          "hits": 8,
+          "damage": 1560,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 4955,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 4973,
+          "move": "sMP",
+          "damage": 442,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 22,
+          "move": "saiha_3",
+          "name": "OD 岁破冲"
+        },
+        {
+          "type": "hit",
+          "frame": 39,
+          "tick": 4996,
+          "move": "saiha_3",
+          "damage": 364,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 40,
+          "move": "SA3",
+          "name": "回旋断界落"
+        },
+        {
+          "type": "hit",
+          "frame": 47,
+          "tick": 5031,
+          "move": "saiha_3",
+          "damage": 326,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 51,
+          "tick": 5042,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 62,
+          "tick": 5059,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 5075,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 83,
+          "tick": 5092,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 5108,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 5125,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 114,
+          "tick": 5141,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 125,
+          "tick": 5158,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 12,
+      "hpLost": 3412,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "juri",
+      "route": "juri-extended",
+      "mode": "demo",
+      "cursor": 6,
+      "frames": 159,
+      "hits": 14,
+      "damage": 3370,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 5159,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 5176,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 5181,
+          "frame": 16,
+          "hits": 1,
+          "damage": 442,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 5208,
+          "frame": 38,
+          "hits": 1,
+          "damage": 382,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "gooh_3",
+          "name": "OD 五黄杀",
+          "tick": 5219,
+          "frame": 44,
+          "hits": 3,
+          "damage": 624,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "回旋断界落",
+          "tick": 5270,
+          "frame": 74,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 5168,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 5186,
+          "move": "sMP",
+          "damage": 442,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 38,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 43,
+          "tick": 5213,
+          "move": "sMP",
+          "damage": 382,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 44,
+          "move": "gooh_3",
+          "name": "OD 五黄杀"
+        },
+        {
+          "type": "hit",
+          "frame": 59,
+          "tick": 5234,
+          "move": "gooh_3",
+          "damage": 235,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 66,
+          "tick": 5248,
+          "move": "gooh_3",
+          "damage": 208,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 73,
+          "tick": 5262,
+          "move": "gooh_3",
+          "damage": 181,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 74,
+          "move": "SA3",
+          "name": "回旋断界落"
+        },
+        {
+          "type": "hit",
+          "frame": 85,
+          "tick": 5301,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 96,
+          "tick": 5318,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 106,
+          "tick": 5334,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 117,
+          "tick": 5351,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 127,
+          "tick": 5367,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 138,
+          "tick": 5384,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 148,
+          "tick": 5400,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 159,
+          "tick": 5417,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 14,
+      "hpLost": 3370,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "juri",
+      "route": "juri-extended",
+      "mode": "demo",
+      "cursor": 6,
+      "frames": 159,
+      "hits": 14,
+      "damage": 3370,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "站立重拳",
+          "tick": 5418,
+          "frame": 1,
+          "hits": 1,
+          "damage": 720,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 5435,
+          "frame": 11,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 5440,
+          "frame": 16,
+          "hits": 1,
+          "damage": 442,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "站立中拳",
+          "tick": 5467,
+          "frame": 38,
+          "hits": 1,
+          "damage": 382,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "gooh_3",
+          "name": "OD 五黄杀",
+          "tick": 5478,
+          "frame": 44,
+          "hits": 3,
+          "damage": 624,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "回旋断界落",
+          "tick": 5529,
+          "frame": 74,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "站立重拳"
+        },
+        {
+          "type": "hit",
+          "frame": 10,
+          "tick": 5427,
+          "move": "sHP",
+          "damage": 720,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 11,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 16,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 21,
+          "tick": 5445,
+          "move": "sMP",
+          "damage": 442,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 38,
+          "move": "sMP",
+          "name": "站立中拳"
+        },
+        {
+          "type": "hit",
+          "frame": 43,
+          "tick": 5472,
+          "move": "sMP",
+          "damage": 382,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 44,
+          "move": "gooh_3",
+          "name": "OD 五黄杀"
+        },
+        {
+          "type": "hit",
+          "frame": 59,
+          "tick": 5493,
+          "move": "gooh_3",
+          "damage": 235,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 66,
+          "tick": 5507,
+          "move": "gooh_3",
+          "damage": 208,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 73,
+          "tick": 5521,
+          "move": "gooh_3",
+          "damage": 181,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 74,
+          "move": "SA3",
+          "name": "回旋断界落"
+        },
+        {
+          "type": "hit",
+          "frame": 85,
+          "tick": 5560,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 96,
+          "tick": 5577,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 106,
+          "tick": 5593,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 117,
+          "tick": 5610,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 127,
+          "tick": 5626,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 138,
+          "tick": 5643,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 148,
+          "tick": 5659,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 159,
+          "tick": 5676,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 14,
+      "hpLost": 3370,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "mai",
+      "route": "mai-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 126,
+      "hits": 11,
+      "damage": 3354,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "回身扇",
+          "tick": 5677,
+          "frame": 1,
+          "hits": 1,
+          "damage": 800,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 5696,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "横扇切",
+          "tick": 5701,
+          "frame": 18,
+          "hits": 1,
+          "damage": 461,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞",
+          "tick": 5714,
+          "frame": 26,
+          "hits": 1,
+          "damage": 292,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱",
+          "tick": 5733,
+          "frame": 38,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "回身扇"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 5688,
+          "move": "sHP",
+          "damage": 800,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "sMP",
+          "name": "横扇切"
+        },
+        {
+          "type": "hit",
+          "frame": 25,
+          "tick": 5708,
+          "move": "sMP",
+          "damage": 461,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 26,
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞"
+        },
+        {
+          "type": "hit",
+          "frame": 37,
+          "tick": 5725,
+          "move": "hissatsu_3",
+          "damage": 292,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 38,
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱"
+        },
+        {
+          "type": "hit",
+          "frame": 49,
+          "tick": 5764,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 60,
+          "tick": 5781,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 71,
+          "tick": 5798,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 82,
+          "tick": 5815,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 5832,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 5849,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 115,
+          "tick": 5866,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 126,
+          "tick": 5883,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 11,
+      "hpLost": 3354,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "mai",
+      "route": "mai-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 126,
+      "hits": 11,
+      "damage": 3354,
+      "maxCombo": 11,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "回身扇",
+          "tick": 5884,
+          "frame": 1,
+          "hits": 1,
+          "damage": 800,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 5903,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "横扇切",
+          "tick": 5908,
+          "frame": 18,
+          "hits": 1,
+          "damage": 461,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞",
+          "tick": 5921,
+          "frame": 26,
+          "hits": 1,
+          "damage": 292,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱",
+          "tick": 5940,
+          "frame": 38,
+          "hits": 8,
+          "damage": 1801,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "回身扇"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 5895,
+          "move": "sHP",
+          "damage": 800,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "sMP",
+          "name": "横扇切"
+        },
+        {
+          "type": "hit",
+          "frame": 25,
+          "tick": 5915,
+          "move": "sMP",
+          "damage": 461,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 26,
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞"
+        },
+        {
+          "type": "hit",
+          "frame": 37,
+          "tick": 5932,
+          "move": "hissatsu_3",
+          "damage": 292,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 38,
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱"
+        },
+        {
+          "type": "hit",
+          "frame": 49,
+          "tick": 5971,
+          "move": "SA3",
+          "damage": 363,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 60,
+          "tick": 5988,
+          "move": "SA3",
+          "damage": 322,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 71,
+          "tick": 6005,
+          "move": "SA3",
+          "damage": 280,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 82,
+          "tick": 6022,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 6039,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 6056,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 115,
+          "tick": 6073,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 126,
+          "tick": 6090,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 11,
+      "hpLost": 3354,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "mai",
+      "route": "mai-extended",
+      "mode": "demo",
+      "cursor": 6,
+      "frames": 166,
+      "hits": 14,
+      "damage": 3375,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "回身扇",
+          "tick": 6091,
+          "frame": 1,
+          "hits": 1,
+          "damage": 800,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 6110,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "cMP",
+          "name": "蹲·横扇切",
+          "tick": 6115,
+          "frame": 18,
+          "hits": 1,
+          "damage": 457,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "扇柄突",
+          "tick": 6145,
+          "frame": 43,
+          "hits": 1,
+          "damage": 220,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞",
+          "tick": 6152,
+          "frame": 47,
+          "hits": 3,
+          "damage": 696,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱",
+          "tick": 6204,
+          "frame": 78,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "回身扇"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 6102,
+          "move": "sHP",
+          "damage": 800,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "cMP",
+          "name": "蹲·横扇切"
+        },
+        {
+          "type": "hit",
+          "frame": 24,
+          "tick": 6121,
+          "move": "cMP",
+          "damage": 457,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 43,
+          "move": "sLP",
+          "name": "扇柄突"
+        },
+        {
+          "type": "hit",
+          "frame": 46,
+          "tick": 6148,
+          "move": "sLP",
+          "damage": 220,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 47,
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞"
+        },
+        {
+          "type": "hit",
+          "frame": 58,
+          "tick": 6163,
+          "move": "hissatsu_3",
+          "damage": 262,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 67,
+          "tick": 6179,
+          "move": "hissatsu_3",
+          "damage": 232,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 77,
+          "tick": 6196,
+          "move": "hissatsu_3",
+          "damage": 202,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 78,
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱"
+        },
+        {
+          "type": "hit",
+          "frame": 89,
+          "tick": 6235,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 100,
+          "tick": 6252,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 111,
+          "tick": 6269,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 122,
+          "tick": 6286,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 133,
+          "tick": 6303,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 144,
+          "tick": 6320,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 155,
+          "tick": 6337,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 166,
+          "tick": 6354,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 14,
+      "hpLost": 3375,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "mai",
+      "route": "mai-extended",
+      "mode": "demo",
+      "cursor": 6,
+      "frames": 166,
+      "hits": 14,
+      "damage": 3375,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "回身扇",
+          "tick": 6355,
+          "frame": 1,
+          "hits": 1,
+          "damage": 800,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 6374,
+          "frame": 13,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "cMP",
+          "name": "蹲·横扇切",
+          "tick": 6379,
+          "frame": 18,
+          "hits": 1,
+          "damage": 457,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "扇柄突",
+          "tick": 6409,
+          "frame": 43,
+          "hits": 1,
+          "damage": 220,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞",
+          "tick": 6416,
+          "frame": 47,
+          "hits": 3,
+          "damage": 696,
+          "needed": 3,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱",
+          "tick": 6468,
+          "frame": 78,
+          "hits": 8,
+          "damage": 1202,
+          "needed": 8,
+          "command": "",
+          "cost": {
+            "drive": 1.1600000000000001,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "回身扇"
+        },
+        {
+          "type": "hit",
+          "frame": 12,
+          "tick": 6366,
+          "move": "sHP",
+          "damage": 800,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 13,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 18,
+          "move": "cMP",
+          "name": "蹲·横扇切"
+        },
+        {
+          "type": "hit",
+          "frame": 24,
+          "tick": 6385,
+          "move": "cMP",
+          "damage": 457,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 43,
+          "move": "sLP",
+          "name": "扇柄突"
+        },
+        {
+          "type": "hit",
+          "frame": 46,
+          "tick": 6412,
+          "move": "sLP",
+          "damage": 220,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 47,
+          "move": "hissatsu_3",
+          "name": "OD 龙炎舞"
+        },
+        {
+          "type": "hit",
+          "frame": 58,
+          "tick": 6427,
+          "move": "hissatsu_3",
+          "damage": 262,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 67,
+          "tick": 6443,
+          "move": "hissatsu_3",
+          "damage": 232,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 77,
+          "tick": 6460,
+          "move": "hissatsu_3",
+          "damage": 202,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 78,
+          "move": "SA3",
+          "name": "不知火流·炎舞仇樱"
+        },
+        {
+          "type": "hit",
+          "frame": 89,
+          "tick": 6499,
+          "move": "SA3",
+          "damage": 239,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 100,
+          "tick": 6516,
+          "move": "SA3",
+          "damage": 197,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 111,
+          "tick": 6533,
+          "move": "SA3",
+          "damage": 156,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 122,
+          "tick": 6550,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 133,
+          "tick": 6567,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 144,
+          "tick": 6584,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 155,
+          "tick": 6601,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 166,
+          "tick": 6618,
+          "move": "SA3",
+          "damage": 122,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 14,
+      "hpLost": 3375,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "iori",
+      "route": "iori-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 116,
+      "hits": 10,
+      "damage": 3648,
+      "maxCombo": 10,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "荒咬",
+          "tick": 6619,
+          "frame": 1,
+          "hits": 1,
+          "damage": 850,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 6637,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "逆掌",
+          "tick": 6642,
+          "frame": 17,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段",
+          "tick": 6653,
+          "frame": 23,
+          "hits": 1,
+          "damage": 473,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉",
+          "tick": 6670,
+          "frame": 33,
+          "hits": 7,
+          "damage": 1845,
+          "needed": 7,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "荒咬"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 6629,
+          "move": "sHP",
+          "damage": 850,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "逆掌"
+        },
+        {
+          "type": "hit",
+          "frame": 22,
+          "tick": 6647,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 23,
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段"
+        },
+        {
+          "type": "hit",
+          "frame": 32,
+          "tick": 6662,
+          "move": "aoihana_3",
+          "damage": 473,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 33,
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉"
+        },
+        {
+          "type": "hit",
+          "frame": 44,
+          "tick": 6701,
+          "move": "SA3",
+          "damage": 399,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 56,
+          "tick": 6719,
+          "move": "SA3",
+          "damage": 354,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 68,
+          "tick": 6737,
+          "move": "SA3",
+          "damage": 308,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 80,
+          "tick": 6755,
+          "move": "SA3",
+          "damage": 262,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 92,
+          "tick": 6773,
+          "move": "SA3",
+          "damage": 217,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 6791,
+          "move": "SA3",
+          "damage": 171,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 6809,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 10
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 10,
+      "hpLost": 3648,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "iori",
+      "route": "iori-confirm",
+      "mode": "demo",
+      "cursor": 5,
+      "frames": 116,
+      "hits": 10,
+      "damage": 3648,
+      "maxCombo": 10,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "荒咬",
+          "tick": 6810,
+          "frame": 1,
+          "hits": 1,
+          "damage": 850,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 6828,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "逆掌",
+          "tick": 6833,
+          "frame": 17,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段",
+          "tick": 6844,
+          "frame": 23,
+          "hits": 1,
+          "damage": 473,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉",
+          "tick": 6861,
+          "frame": 33,
+          "hits": 7,
+          "damage": 1845,
+          "needed": 7,
+          "command": "",
+          "cost": {
+            "drive": 1.08,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "荒咬"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 6820,
+          "move": "sHP",
+          "damage": 850,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "逆掌"
+        },
+        {
+          "type": "hit",
+          "frame": 22,
+          "tick": 6838,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 23,
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段"
+        },
+        {
+          "type": "hit",
+          "frame": 32,
+          "tick": 6853,
+          "move": "aoihana_3",
+          "damage": 473,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 33,
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉"
+        },
+        {
+          "type": "hit",
+          "frame": 44,
+          "tick": 6892,
+          "move": "SA3",
+          "damage": 399,
+          "combo": 4
+        },
+        {
+          "type": "hit",
+          "frame": 56,
+          "tick": 6910,
+          "move": "SA3",
+          "damage": 354,
+          "combo": 5
+        },
+        {
+          "type": "hit",
+          "frame": 68,
+          "tick": 6928,
+          "move": "SA3",
+          "damage": 308,
+          "combo": 6
+        },
+        {
+          "type": "hit",
+          "frame": 80,
+          "tick": 6946,
+          "move": "SA3",
+          "damage": 262,
+          "combo": 7
+        },
+        {
+          "type": "hit",
+          "frame": 92,
+          "tick": 6964,
+          "move": "SA3",
+          "damage": 217,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 104,
+          "tick": 6982,
+          "move": "SA3",
+          "damage": 171,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 116,
+          "tick": 7000,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 10
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 10,
+      "hpLost": 3648,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "iori",
+      "route": "iori-extended",
+      "mode": "demo",
+      "cursor": 9,
+      "frames": 177,
+      "hits": 14,
+      "damage": 3990,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 1169,
+        "targetX": 1335,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "荒咬",
+          "tick": 7001,
+          "frame": 1,
+          "hits": 1,
+          "damage": 850,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 7019,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "逆掌",
+          "tick": 7024,
+          "frame": 17,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "逆掌",
+          "tick": 7050,
+          "frame": 38,
+          "hits": 1,
+          "damage": 415,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "爪突",
+          "tick": 7076,
+          "frame": 59,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段",
+          "tick": 7083,
+          "frame": 63,
+          "hits": 1,
+          "damage": 376,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "branch_1",
+          "name": "葵花·二段",
+          "tick": 7100,
+          "frame": 73,
+          "hits": 1,
+          "damage": 259,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "follow_2",
+          "name": "葵花·三段",
+          "tick": 7115,
+          "frame": 81,
+          "hits": 1,
+          "damage": 343,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉",
+          "tick": 7135,
+          "frame": 94,
+          "hits": 7,
+          "damage": 1058,
+          "needed": 7,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "荒咬"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 7011,
+          "move": "sHP",
+          "damage": 850,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "逆掌"
+        },
+        {
+          "type": "hit",
+          "frame": 22,
+          "tick": 7029,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 38,
+          "move": "sMP",
+          "name": "逆掌"
+        },
+        {
+          "type": "hit",
+          "frame": 43,
+          "tick": 7055,
+          "move": "sMP",
+          "damage": 415,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 59,
+          "move": "sLP",
+          "name": "爪突"
+        },
+        {
+          "type": "hit",
+          "frame": 62,
+          "tick": 7079,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 63,
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段"
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 7092,
+          "move": "aoihana_3",
+          "damage": 376,
+          "combo": 5
+        },
+        {
+          "type": "action",
+          "frame": 73,
+          "move": "branch_1",
+          "name": "葵花·二段"
+        },
+        {
+          "type": "hit",
+          "frame": 80,
+          "tick": 7107,
+          "move": "branch_1",
+          "damage": 259,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 81,
+          "move": "follow_2",
+          "name": "葵花·三段"
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 7127,
+          "move": "follow_2",
+          "damage": 343,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 94,
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉"
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 7166,
+          "move": "SA3",
+          "damage": 217,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 117,
+          "tick": 7184,
+          "move": "SA3",
+          "damage": 171,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 129,
+          "tick": 7202,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 141,
+          "tick": 7220,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 153,
+          "tick": 7238,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 165,
+          "tick": 7256,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 177,
+          "tick": 7274,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": 1,
+      "expected": 14,
+      "hpLost": 3990,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    },
+    {
+      "status": "success",
+      "character": "iori",
+      "route": "iori-extended",
+      "mode": "demo",
+      "cursor": 9,
+      "frames": 177,
+      "hits": 14,
+      "damage": 3990,
+      "maxCombo": 14,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "initial": {
+        "x": 271,
+        "targetX": 105,
+        "super": 3,
+        "drive": 6
+      },
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "actions": [
+        {
+          "move": "sHP",
+          "name": "荒咬",
+          "tick": 7275,
+          "frame": 1,
+          "hits": 1,
+          "damage": 850,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 6,
+            "super": 3
+          }
+        },
+        {
+          "move": "RUSH",
+          "name": "斗气取消迸发",
+          "tick": 7293,
+          "frame": 12,
+          "hits": 0,
+          "damage": 0,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "逆掌",
+          "tick": 7298,
+          "frame": 17,
+          "hits": 1,
+          "damage": 480,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3,
+            "super": 3
+          }
+        },
+        {
+          "move": "sMP",
+          "name": "逆掌",
+          "tick": 7324,
+          "frame": 38,
+          "hits": 1,
+          "damage": 415,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.08,
+            "super": 3
+          }
+        },
+        {
+          "move": "sLP",
+          "name": "爪突",
+          "tick": 7350,
+          "frame": 59,
+          "hits": 1,
+          "damage": 209,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 3.16,
+            "super": 3
+          }
+        },
+        {
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段",
+          "tick": 7357,
+          "frame": 63,
+          "hits": 1,
+          "damage": 376,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "branch_1",
+          "name": "葵花·二段",
+          "tick": 7374,
+          "frame": 73,
+          "hits": 1,
+          "damage": 259,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "follow_2",
+          "name": "葵花·三段",
+          "tick": 7389,
+          "frame": 81,
+          "hits": 1,
+          "damage": 343,
+          "needed": 1,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 3
+          }
+        },
+        {
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉",
+          "tick": 7409,
+          "frame": 94,
+          "hits": 7,
+          "damage": 1058,
+          "needed": 7,
+          "command": "",
+          "cost": {
+            "drive": 1.2400000000000002,
+            "super": 0
+          }
+        }
+      ],
+      "log": [
+        {
+          "type": "action",
+          "frame": 1,
+          "move": "sHP",
+          "name": "荒咬"
+        },
+        {
+          "type": "hit",
+          "frame": 11,
+          "tick": 7285,
+          "move": "sHP",
+          "damage": 850,
+          "combo": 1
+        },
+        {
+          "type": "action",
+          "frame": 12,
+          "move": "RUSH",
+          "name": "斗气取消迸发"
+        },
+        {
+          "type": "action",
+          "frame": 17,
+          "move": "sMP",
+          "name": "逆掌"
+        },
+        {
+          "type": "hit",
+          "frame": 22,
+          "tick": 7303,
+          "move": "sMP",
+          "damage": 480,
+          "combo": 2
+        },
+        {
+          "type": "action",
+          "frame": 38,
+          "move": "sMP",
+          "name": "逆掌"
+        },
+        {
+          "type": "hit",
+          "frame": 43,
+          "tick": 7329,
+          "move": "sMP",
+          "damage": 415,
+          "combo": 3
+        },
+        {
+          "type": "action",
+          "frame": 59,
+          "move": "sLP",
+          "name": "爪突"
+        },
+        {
+          "type": "hit",
+          "frame": 62,
+          "tick": 7353,
+          "move": "sLP",
+          "damage": 209,
+          "combo": 4
+        },
+        {
+          "type": "action",
+          "frame": 63,
+          "move": "aoihana_3",
+          "name": "OD 葵花·一段"
+        },
+        {
+          "type": "hit",
+          "frame": 72,
+          "tick": 7366,
+          "move": "aoihana_3",
+          "damage": 376,
+          "combo": 5
+        },
+        {
+          "type": "action",
+          "frame": 73,
+          "move": "branch_1",
+          "name": "葵花·二段"
+        },
+        {
+          "type": "hit",
+          "frame": 80,
+          "tick": 7381,
+          "move": "branch_1",
+          "damage": 259,
+          "combo": 6
+        },
+        {
+          "type": "action",
+          "frame": 81,
+          "move": "follow_2",
+          "name": "葵花·三段"
+        },
+        {
+          "type": "hit",
+          "frame": 93,
+          "tick": 7401,
+          "move": "follow_2",
+          "damage": 343,
+          "combo": 7
+        },
+        {
+          "type": "action",
+          "frame": 94,
+          "move": "SA3",
+          "name": "三神技之贰·八尺琼勾玉"
+        },
+        {
+          "type": "hit",
+          "frame": 105,
+          "tick": 7440,
+          "move": "SA3",
+          "damage": 217,
+          "combo": 8
+        },
+        {
+          "type": "hit",
+          "frame": 117,
+          "tick": 7458,
+          "move": "SA3",
+          "damage": 171,
+          "combo": 9
+        },
+        {
+          "type": "hit",
+          "frame": 129,
+          "tick": 7476,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 10
+        },
+        {
+          "type": "hit",
+          "frame": 141,
+          "tick": 7494,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 11
+        },
+        {
+          "type": "hit",
+          "frame": 153,
+          "tick": 7512,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 12
+        },
+        {
+          "type": "hit",
+          "frame": 165,
+          "tick": 7530,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 13
+        },
+        {
+          "type": "hit",
+          "frame": 177,
+          "tick": 7548,
+          "move": "SA3",
+          "damage": 134,
+          "combo": 14
+        }
+      ],
+      "inputLog": [],
+      "bufferFrames": 6,
+      "side": -1,
+      "expected": 14,
+      "hpLost": 3990,
+      "cheats": false,
+      "guard": "guard",
+      "finiteSVG": true,
+      "valid": true
+    }
+  ],
+  "browserErrors": []
+}

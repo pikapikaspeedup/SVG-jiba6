@@ -1,67 +1,148 @@
 {
-  "build": "INK FORGE 2.0",
-  "testedAt": "2026-09-12T16:02:35.596168+00:00",
+  "build": "INK FLOW 4.0.0",
+  "assembledAt": "2026-10-04T10:34:05.541608+00:00",
+  "sourceBaseline": {
+    "repository": "pikapikaspeedup/SVG-jiba6",
+    "commit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+    "gameSha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c"
+  },
   "suites": {
-    "core": {
+    "original_core": {
       "total": 44,
       "passed": 44,
-      "report": "test-results/ink-core.json"
+      "report": "test-results/ink-core.json",
+      "reportSha256": "7e02b1e2c07fb52488ab8c8ba331be5e94cfbdc49657686faec601baafce12c5"
     },
-    "assets_and_contracts": {
+    "interpolation_particles": {
+      "total": 24,
+      "passed": 24,
+      "report": "qa/flow/core-tests.json",
+      "reportSha256": "ec50fc0b7466974780585ddabdcdd0e784710006055557c0ce6699e188bfdbff"
+    },
+    "asset_schema_contracts": {
       "total": 720,
       "passed": 720,
-      "report": "qa/forge-core.json"
+      "report": "qa/forge-core.json",
+      "reportSha256": "c4480cf8dfa2f988356190bb3164a87107a4df84c3cbd07249a687e79adf4d8d"
     },
     "storage_contract_doubles": {
       "total": 9,
       "passed": 9,
-      "report": "qa/forge-storage.json"
+      "report": "qa/forge-storage.json",
+      "reportSha256": "bd93af3f455123b6f898e98cb3e02131f931371b2cb00726892947af35ca0d81"
     },
-    "browser_workflow": {
+    "editor_roundtrip": {
       "total": 24,
       "passed": 24,
-      "report": "qa/forge-browser.json"
+      "report": "qa/forge-browser.json",
+      "reportSha256": "b816279fa7fe9f9d01a3be2701e794f567d0b39715fb981f0e4af46bbdd693cb"
+    },
+    "flow_browser_workflow": {
+      "total": 22,
+      "passed": 22,
+      "report": "qa/flow/browser-tests.json",
+      "reportSha256": "4f9b987a821c8b6fbcdead70395ddcb893145ab16bd7372f0805671df30f906e"
     },
     "combat_mechanics": {
       "total": 39,
       "passed": 39,
-      "report": "qa/forge-mechanics.json"
+      "report": "qa/forge-mechanics.json",
+      "reportSha256": "9f1fcfe31c23cc7d459e017e8fb636071ab52b52c9390f165e1257186062ac9d"
     },
     "combat_replays": {
       "total": 522,
       "passed": 522,
-      "report": "qa/forge-replays.json"
+      "report": "qa/forge-replays.json",
+      "reportSha256": "71b9718a2da4724275554d5529f3245823997c492f6f409237c722638caa7d60"
     },
     "states_and_throws": {
       "total": 164,
       "passed": 164,
-      "report": "qa/forge-states.json"
+      "report": "qa/forge-states.json",
+      "reportSha256": "d1e34ee6c115391d41ba4c8796344d467662787bfaa6fdb5e5ac0aafa78f0b85"
     },
-    "real_mobile_touch": {
+    "combo_both_directions": {
+      "total": 32,
+      "passed": 32,
+      "report": "qa/flow/combo-validation.json",
+      "reportSha256": "6df37d831a3643bc0b38edec59a51b53e484359df3cc058e89f5630368e34d14"
+    },
+    "render_schedule_invariance": {
+      "total": 32,
+      "passed": 32,
+      "report": "qa/flow/render-invariance.json",
+      "reportSha256": "6a564cf9449f8c02ace142034d97af50a3a8b190c86b6123b9fb44addf3b62df"
+    },
+    "original_two_finger_touch": {
       "total": 7,
       "passed": 7,
-      "report": "qa/forge-mobile.json"
+      "report": "qa/forge-mobile.json",
+      "reportSha256": "036b8185004953ef48f6bca2021422c62b004c03ac1e0f48795af8aa4fdf3dd8"
+    },
+    "flow_mobile_ui": {
+      "total": 7,
+      "passed": 7,
+      "report": "qa/flow/mobile-tests.json",
+      "reportSha256": "3c3cbc96d13c655df685462c6661566c28a290903feca56efad0090a29e77324"
     },
     "retained_rendering": {
       "total": 34,
       "passed": 34,
-      "report": "qa/forge-retained.json"
+      "report": "qa/forge-retained.json",
+      "reportSha256": "2723edeef56f982a4427156497718e1277d8c11760d4bbc0c62db3b7928156ab"
+    },
+    "delivery_checks": {
+      "total": 9,
+      "passed": 9,
+      "report": "qa/flow/delivery-check.json",
+      "reportSha256": "778056bf21e04869af6a7f1b0b736da7f150ef7de85c36ff78caeb09ef3e3451"
     }
   },
   "artifacts": {
     "INK-Street-Fighter-6.html": {
-      "bytes": 7373873,
-      "sha256": "318afb65a553faad6c5a22fb1f0a331541fa41e892afccf103728a7e388eaba2"
+      "bytes": 7786990,
+      "sha256": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86"
     },
     "INK-Street-Fighter-6-Player.html": {
-      "bytes": 7374032,
-      "sha256": "c2c329eacfa44a31b055c7a51d68bb827e29dadc5e57d215f169e6a80cb0d5ef"
+      "bytes": 7787148,
+      "sha256": "ea8360ec6b80a694199091866867c35977f88f197d5ad1ad9f86c3a4ddd2563b"
     }
   },
+  "scope": {
+    "characters": 8,
+    "combatAndStateAssets": 690,
+    "authoredYawVariantsInheritedFromFlow3": 52,
+    "configuredEmitters": 499,
+    "maiRevisedAssets": 44,
+    "comboRoutes": 16,
+    "maxVerifiedHits": 15,
+    "combatHz": 60
+  },
   "limitations": [
-    "Headless Chromium only; set_content was used because this environment blocks URL navigation.",
-    "Native IndexedDB persistence and directory permission UI were not exercised. Storage/file-handle contracts use explicit doubles. Portable HTML/ZIP round trips were tested in a real browser.",
-    "Render benchmark is synchronous JavaScript time, not GPU paint or device FPS.",
-    "Passing tests is not a claim of official SF6 frame accuracy or perfect artwork."
-  ]
+    "Tests used real headless Chromium with set_content of full standalone bytes. file:// navigation is blocked by administrator policy in this runtime.",
+    "Native directory authorization and persistent storage were not tested end to end; storage contracts use explicit doubles. Browser HTML/ZIP round trips were real.",
+    "Touch testing used Chromium mobile emulation and actual browser touch events, not physical-device frame-rate measurements.",
+    "Synchronous JS render timings exclude paint/GPU. Not a claimed 120Hz/144Hz performance guarantee.",
+    "Fan-game 2.5D SVG choreography and combo rules, not official SF6 models/frame data. No optical flow, 3D reconstruction, networking or rollback.",
+    "No GitHub write was performed. Apply the update files locally and review before pushing."
+  ],
+  "sourceDistribution": {
+    "report": "qa/flow/source-rebuild.json",
+    "matchesCurrentHTML": true,
+    "reportSha256": "cc15626ad1752db4824f7214e9495c53af97c4189651268ae80f4912050f487d",
+    "result": {
+      "kind": "isolated-source-tree-rebuild",
+      "cleanRebuild": true,
+      "verifiedAt": "2026-10-04T10:28:55.481934+00:00",
+      "sourceFileCount": 763,
+      "sourceTreeSha256": "9d7689bbe33965c052dbda50f7af37f95a57530a120ab141de6b57aa9645fac4",
+      "artifacts": {
+        "INK-Street-Fighter-6.html": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86",
+        "INK-Street-Fighter-6-Player.html": "ea8360ec6b80a694199091866867c35977f88f197d5ad1ad9f86c3a4ddd2563b"
+      },
+      "note": "No generated HTML was provided to the temporary builder. Final archive integrity is separately checked by tools/check_source_zip.py."
+    }
+  },
+  "unchangedCombatBaseline": true,
+  "note": "Compatibility alias; canonical current report is qa/flow/validation.json"
 }

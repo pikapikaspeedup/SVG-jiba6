@@ -1,0 +1,461 @@
+
+=== /opt/pyvenv/bin/python tools/build_forge.py ===
+Built INK-Street-Fighter-6.html 8005711 bytes; game source 107f7ec8455285f8
+
+=== node tests/flow5/core.test.js ===
+PASS All 690 assets validate with strict FLOW 05 schema
+PASS Compiled sampler preserves legacy values across every asset and subframe
+PASS Compiled easing parity: "smooth"
+PASS Compiled easing parity: "linear"
+PASS Compiled easing parity: "strike"
+PASS Compiled easing parity: "load"
+PASS Compiled easing parity: "hold"
+PASS Compiled easing parity: "spline"
+PASS Compiled easing parity: [0.2,0.4,0.7,0.9]
+PASS Compiled clips retain authored 720-degree winding
+PASS Compiled sampling returns independent objects and validates frames
+PASS Production game source is compiled directly, without build-time runtime replacements
+PASS Fixed clock: 30 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 60 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 120 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 144 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 240 Hz display yields 600 simulation steps in 10s
+PASS Pause/resume discards pending wall time and does not catch up
+PASS Inactive scene transition consumes no stale simulation time
+PASS Overload is bounded and reports discarded steps explicitly
+PASS Fixed clock respects half speed and validates inputs
+PASS Spring exact integration semigroup, damping 0
+PASS Spring exact integration semigroup, damping 0.42
+PASS Spring exact integration semigroup, damping 1
+PASS Spring exact integration semigroup, damping 1.7
+PASS Damped spring converges to the target rather than oscillating forever
+PASS Spring random seek is deterministic and includes actual angular velocity
+PASS Secondary bake never mutates assets and remains finite at all Mai subframes
+PASS Spring disable returns zero arrays and zero velocity
+PASS Graph is a copy-only presentation path; off returns raw values
+PASS Additive and override layers are weighted and masked
+PASS Graph zero weight exactly preserves clip values
+PASS Foot contact reduces world-space drift under translated roots
+PASS Airborne state bypasses planted-foot constraints
+PASS Strict asset schema rejects combat-owned root channel
+PASS Strict asset schema rejects weight above one
+PASS Strict asset schema rejects duplicate layer id
+PASS Strict asset schema rejects overlapping foot contacts
+PASS Strict asset schema rejects contact out of range
+PASS Strict asset schema rejects negative spring damping
+PASS Strict asset schema rejects unbounded spring stiffness
+PASS Strict asset schema rejects bad emitter spacing
+PASS Strict asset schema rejects bad inherited velocity
+PASS Strict asset schema rejects unbounded initial burst
+PASS Strict asset schema rejects nonmonotone opacity curve
+PASS Retime remaps layers, weights, contacts and event windows
+PASS Timeline dispatches zero-frame events once and never on repeat render frame
+PASS Timeline processes all crossed edges in end-before-start order
+PASS Timeline cancellation closes each active event only once
+PASS Silent seek reconstructs active events without emitting historical starts
+PASS Timeline rejects duplicate identities and invalid time windows
+PASS Distance emissions maintain spatial spacing independent of sample partitions
+PASS Low-quality births preserve ordinal seeds and are a subset, not rerandomized
+PASS Teleport resets distance debt and does not generate a connecting beam
+PASS Emitter closes on cancellation and rejects reverse time before closure
+PASS Emission cap advances ordinals even when dropping overloaded births
+PASS Disabled emitters produce no particles while preserving deterministic sequence
+PASS Ribbon geometry stays finite with line
+PASS Ribbon geometry stays finite with duplicates
+PASS Ribbon geometry stays finite with reverse
+PASS Ribbon geometry stays finite with tiny
+PASS Ribbon fixed-width normal offsets cannot explode at a reversal
+PASS Ribbon pool retains allocated SVG nodes through expiry and reuse
+PASS Ribbon sample history stays bounded at 64 vertices per emitter
+PASS Particle damping integrates acceleration consistently, not ballistic gravity with damped velocity
+PASS Zero-drag particle limit recovers ballistic motion
+PASS Particle lifetime curves and heat color are seek-stable
+PASS Huge elapsed emitter time is bounded in allocation while preserving ordinals
+PASS Zero quality cannot emit even a zero-threshold random sample
+PASS Preview emitter baking cannot increment world emission telemetry
+PASS Zero-size ring lifetime curve never writes Infinity into SVG stroke width
+PASS Two simultaneous actors own independent emitter instances and cancellation
+PASS All 43 graph-authored Mai records retime safely across short, long and mixed phases
+PASS All 690 combat bindings and hitbox contracts remain unchanged
+PASS All sixteen combo route definitions are unchanged
+PASS Historical source is archived intact; live source is genuinely different
+CORE 76/76
+
+=== /opt/pyvenv/bin/python tests/flow5/source_audit.py ===
+{
+  "suite": "flow5-source-audit",
+  "capturedAt": "2026-10-04T14:50:28.709861+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "passed": true,
+  "checks": {
+    "archiveIntact": true,
+    "liveSourceDifferentFromLegacy": true,
+    "builderReadsLiveSourceDirectly": true,
+    "embeddedModules": true,
+    "generatedIntegrationMatchesSource": true,
+    "unchangedBaseTracksAndCombatContracts": true,
+    "changedRecordsOnlyMai": true
+  },
+  "records": 690,
+  "changedRecords": 43,
+  "failures": [],
+  "gameSha256": "107f7ec8455285f8fe55621c54f47fc2346df66b2e1e4b39da42819d9006a0de",
+  "legacySha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+  "baselineArchiveSha256": "c8f6e8472e1b265fb1d9d7902f96b70b81189b1ccb445e237b13e3dc8bda18ec",
+  "note": "Checks uploaded FLOW4 base tracks and bindings/boxes; current visual additions are metadata and FX configuration. This is not a claim that the whole game was rewritten."
+}
+
+=== /opt/pyvenv/bin/python tests/flow5/browser.py ===
+PASS Production modules, build and isolated v5 persistence agree 
+PASS Real requestAnimationFrame loop advances the production fixed clock 
+PASS Same-frame inspector changes final pose without modifying raw assets or global graph state 
+PASS Inspector reverse seeking reproduces geometry, spring state and particles 
+PASS Live visual graph is separate from collision and is not a new hitbox multiplier 
+PASS Cancelled layer handoff preserves its visual pose at the next move start 
+PASS Visual handoff fully ends before the first active frame 
+PASS Real SVG fan socket follows the final layered pose, not the raw combat pose 
+PASS 360 render-only calls do not advance simulation, emitter births, events or damage 
+PASS Runtime timeline feeds live emitter bank and dispatches each serial exactly once 
+PASS Hitstop freezes particle time, ribbon geometry, emission ordinal and event edges 
+PASS Cancellation immediately closes emitters but retains already born particles and ribbons 
+PASS World particle and ribbon node pools do not grow after repeated cancels 
+PASS Low-quality preview is a stable subset of high-quality particle geometry 
+PASS Editing graph spring settings updates live preview before saving 
+PASS Editor saves distance rate, burst, inherited velocity and spring metadata to reusable JSON 
+PASS Undo and redo restore newly added emitter parameters without changing combat bindings 
+PASS FX disabled suppresses local layers and world retained pools 
+PASS Inspector opened over rhythm practice cannot run G, R or Space behind the modal 
+PASS Reset discards action transitions, event instances and histories 
+BROWSER 30 / 30 ERRORS []
+
+=== /opt/pyvenv/bin/python tests/flow5/compatibility.py ===
+MIRRORED GRAPH MATRIX 64 / 64
+RENDER SCHEDULE MATRIX 32 / 32
+SOCKETS 1032 / 1032 MAX 0.00540954088149716
+COMPATIBILITY 96 / 96 []
+
+=== /opt/pyvenv/bin/python tests/flow5/rhythm_matrix.py ===
+PASS mai-confirm 1 0 0 success 11
+PASS mai-confirm 1 0 2 failed 5
+PASS mai-confirm 1 3 0 success 11
+PASS mai-confirm 1 3 2 success 11
+PASS mai-confirm 1 6 0 success 11
+PASS mai-confirm 1 6 2 success 11
+PASS mai-confirm -1 0 0 success 11
+PASS mai-confirm -1 0 2 failed 5
+PASS mai-confirm -1 3 0 success 11
+PASS mai-confirm -1 3 2 success 11
+PASS mai-confirm -1 6 0 success 11
+PASS mai-confirm -1 6 2 success 11
+PASS mai-extended 1 0 0 success 14
+PASS mai-extended 1 0 2 failed 1
+PASS mai-extended 1 3 0 success 14
+PASS mai-extended 1 3 2 success 14
+PASS mai-extended 1 6 0 success 14
+PASS mai-extended 1 6 2 success 14
+PASS mai-extended -1 0 0 success 14
+PASS mai-extended -1 0 2 failed 1
+PASS mai-extended -1 3 0 success 14
+PASS mai-extended -1 3 2 success 14
+PASS mai-extended -1 6 0 success 14
+PASS mai-extended -1 6 2 success 14
+PASS Held G repeats do not auto-request a second step
+PASS G while editing a focused setting does not start a move
+{
+  "capturedAt": "2026-10-04T14:51:00.215094+00:00",
+  "total": 26,
+  "passed": 26,
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "browserErrors": [],
+  "note": "Complete Mai routes through DOM G keyboard events. Early strict-mode cases intentionally fail to complete; a pass means the game rejected rather than auto-playing. Timings are simulation-controlled test schedules, not human reaction-time measurements."
+}
+
+=== /opt/pyvenv/bin/python tests/flow5/portability.py ===
+PASS New graph and emitter data save before portable export
+PASS Creator HTML export reopens with actual FLOW5 engines and edited JSON
+PASS Portable export contains no external runtime script/style/image dependency
+PASS Edited portable game still executes real Mai 14 HIT / 3375 damage route
+PASS Edited player export retains inspector and edits but hides authoring entry
+PASS Second-generation HTML export preserves engines, curves and parameters
+PASS In-app asset package has 690 moves and FLOW5 identity, not a stale FLOW4 export
+PASS Unsafe graph-channel import is transactional and preserves prior saved project
+PASS FLOW4-shaped legacy move imports without silently replacing user tracks or adding graph layers
+PASS No unhandled script errors during independent HTML reopens
+PASS No network request required by the tested standalone pages
+
+=== /opt/pyvenv/bin/python tests/flow5/dual_actor.py ===
+{
+  "suite": "flow5-two-actor-and-input",
+  "capturedAt": "2026-10-04T14:51:11.074822+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "total": 6,
+  "passed": 6,
+  "tests": [
+    {
+      "name": "Two real Mai fighters own distinct simultaneous timelines and emitter banks",
+      "pass": true,
+      "detail": {
+        "actors": 2,
+        "keys": [
+          [
+            "0:1:fan-flame",
+            "0:1:fan-silk"
+          ],
+          [
+            "1:2:fan-flame",
+            "1:2:fan-silk"
+          ]
+        ],
+        "particles": 38,
+        "ribbons": 4
+      }
+    },
+    {
+      "name": "Same-character renderers keep owned SVG clip identities separate",
+      "pass": true,
+      "detail": {
+        "paintIdCounts": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "name": "Closing only player one preserves player two identity and particles already born",
+      "pass": true,
+      "detail": {
+        "survivingInstance": 2,
+        "newAcceptedBirths": 10
+      }
+    },
+    {
+      "name": "Two-actor teardown expires all effects without allocating more pool nodes",
+      "pass": true,
+      "detail": {
+        "particleNodes": 320,
+        "ribbonGroups": 64
+      }
+    },
+    {
+      "name": "Engine dialog rejects emulated gamepad Start and attack input",
+      "pass": true,
+      "detail": {
+        "paused": true,
+        "controllers": {
+          "supported": true,
+          "gamepads": [
+            {
+              "index": 0,
+              "player": 1,
+              "ready": false
+            }
+          ],
+          "sources": []
+        }
+      }
+    },
+    {
+      "name": "Held gamepad inputs require neutral after inspection, then new input works",
+      "pass": true,
+      "detail": {
+        "neutralLatchRespected": true
+      }
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Actual two-fighter runtime, forced simulation steps for state coverage; browser gamepad object is emulated, not physical hardware."
+}
+
+=== /opt/pyvenv/bin/python tests/flow5/regression.py ===
+PASS node tests/ink/core.test.js
+PASS node tests/forge/core.test.js
+PASS node tests/flow/core.test.js
+PASS /opt/pyvenv/bin/python tests/forge/regress.py
+
+=== /opt/pyvenv/bin/python tests/flow5/extra_regression.py ===
+PASS node tests/forge/storage.test.js
+PASS /opt/pyvenv/bin/python tests/forge/states.py
+PASS /opt/pyvenv/bin/python tests/forge/retained.py
+
+=== node tests/flow5/benchmark.js ===
+{
+  "capturedAt": "2026-10-04T14:51:59.305Z",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "files": [
+    "enbu-ada-zakura.json",
+    "hissatsu-shinobi-bachi-heavy.json",
+    "ryuuenbu-heavy.json",
+    "sMP.json"
+  ],
+  "samplesPerRun": 75000,
+  "repetitions": 7,
+  "warmup": 10000,
+  "legacyMedianMs": 614.1961719999999,
+  "compiledMedianMs": 451.83135600000014,
+  "runs": [
+    {
+      "legacyMs": 593.299353,
+      "compiledMs": 440.10359900000003
+    },
+    {
+      "legacyMs": 595.3994339999999,
+      "compiledMs": 438.12334899999996
+    },
+    {
+      "legacyMs": 599.3782329999999,
+      "compiledMs": 448.80600600000025
+    },
+    {
+      "legacyMs": 623.9519869999999,
+      "compiledMs": 451.83135600000014
+    },
+    {
+      "legacyMs": 614.1961719999999,
+      "compiledMs": 474.0474379999996
+    },
+    {
+      "legacyMs": 616.8516970000001,
+      "compiledMs": 492.16526200000044
+    },
+    {
+      "legacyMs": 620.7180060000001,
+      "compiledMs": 458.2712219999994
+    }
+  ],
+  "checksum": 51186995.68197236,
+  "limitations": [
+    "Isolated Node CPU sampler only; excludes graph, DOM/SVG, springs, GPU and browser rendering.",
+    "Other tests may be active on the same host. Do not advertise this as game FPS improvement."
+  ],
+  "ratio": 1.359348269755762
+}
+{
+  "version": "5.0.0",
+  "assembledAt": "2026-10-04T14:51:59.344064+00:00",
+  "evidenceMode": "hash-checked saved reports; see each report for execution details",
+  "suites": {
+    "core": {
+      "passed": 76,
+      "total": 76,
+      "report": "qa/flow5/core.json",
+      "sha256": "33043f68932dbe463058038d19126efed35f714995dfbdcd23e5c3d4a2e01b32"
+    },
+    "browser": {
+      "passed": 30,
+      "total": 30,
+      "report": "qa/flow5/browser.json",
+      "sha256": "ef0b847de38809708fa77af337c973a03642ceb7ec2c8f4b3933bd4c4fe4f396"
+    },
+    "compatibility": {
+      "passed": 96,
+      "total": 96,
+      "report": "qa/flow5/compatibility.json",
+      "sha256": "8b33576cf1f31ea92f4340e9150cf303582fa6d076a4d956bac4d71d8d03f9c1"
+    },
+    "socket-matrix": {
+      "passed": 1032,
+      "total": 1032,
+      "report": "qa/flow5/socket-matrix.json",
+      "sha256": "74ffc7e22b8edb0743960e7a3790dadb19c4b5e77467e9d6a22b9d45207efcaa"
+    },
+    "rhythm-matrix": {
+      "passed": 26,
+      "total": 26,
+      "report": "qa/flow5/rhythm-matrix.json",
+      "sha256": "56f01be6102c0bbe99f70aaf9b91a1c97d60cb24694369fd9bf7c496a3a3fbb1"
+    },
+    "portability": {
+      "passed": 11,
+      "total": 11,
+      "report": "qa/flow5/portability.json",
+      "sha256": "aacbb02ecc77021d2c4d39c829ecc0bb8a63394c3a94555043cd7a9717e55d0f"
+    },
+    "dual-actor": {
+      "passed": 6,
+      "total": 6,
+      "report": "qa/flow5/dual-actor.json",
+      "sha256": "9aad6b49d75efcbdfd7918409c78bc0a5581c1aef612088a5f8cf429580a851b"
+    },
+    "regression": {
+      "passed": true,
+      "total": null,
+      "report": "qa/flow5/regression.json",
+      "sha256": "3367b4ae827ccac58f4e1dc7f525a971894fd7c0f34f8864d2f4b5efd28552c0"
+    },
+    "extra-regression": {
+      "passed": true,
+      "total": null,
+      "report": "qa/flow5/extra-regression.json",
+      "sha256": "9151b1e21ebc22fb00cb2a922223616c05b3ae57c8378d420d458d10de26c574"
+    },
+    "source-audit": {
+      "passed": true,
+      "total": null,
+      "report": "qa/flow5/source-audit.json",
+      "sha256": "8f944bc0a28d9c6ee401d779d52fc622bacc289ec8ba3cc95a4bffea8863f9c1"
+    }
+  },
+  "artifacts": {
+    "INK-Street-Fighter-6.html": {
+      "bytes": 8005711,
+      "sha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba"
+    },
+    "INK-Street-Fighter-6-Player.html": {
+      "bytes": 8005869,
+      "sha256": "22835fd8cd20568e8130239d6897ebd0d1197716667876fbdb1631c56a0b95ad"
+    }
+  },
+  "endurance": {
+    "status": "passed",
+    "requestedWallSeconds": 1200,
+    "elapsedWallSeconds": 1201.483,
+    "completedRoutes": 254,
+    "startedAt": "2026-10-04T14:27:21.745827+00:00",
+    "finishedAt": "2026-10-04T14:47:25.378402+00:00",
+    "matchesCurrentBuild": true,
+    "report": "qa/flow5/endurance.json",
+    "sha256": "22e5daa3cb0d8c8b6dc67d8505a2074c59304fe41bce1e33dcabffb057363b15",
+    "errors": []
+  },
+  "samplerBenchmark": {
+    "samplesPerRun": 75000,
+    "repetitions": 7,
+    "legacyMedianMs": 614.1961719999999,
+    "compiledMedianMs": 451.83135600000014,
+    "ratio": 1.359348269755762,
+    "limitations": [
+      "Isolated Node CPU sampler only; excludes graph, DOM/SVG, springs, GPU and browser rendering.",
+      "Other tests may be active on the same host. Do not advertise this as game FPS improvement."
+    ]
+  },
+  "gameSha256": "107f7ec8455285f8fe55621c54f47fc2346df66b2e1e4b39da42819d9006a0de",
+  "legacySha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+  "nativeFileProtocol": {
+    "status": "environment-blocked-or-failed",
+    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work/INK-Flow-5/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/work/INK-Flow-5/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n"
+  },
+  "limits": {
+    "worldParticles": 320,
+    "localParticles": 144,
+    "worldRibbonStreams": 64,
+    "pointsPerRibbon": 64,
+    "rootHistory": 40,
+    "socketCache": 2048,
+    "lifecycleLog": 256
+  },
+  "failedAndInterruptedAttempts": [
+    "endurance-failed-concurrent.json",
+    "endurance-pre-freeze.json"
+  ],
+  "limitations": [
+    "Native file:// is blocked by the test environment; complete HTML byte loading is not filesystem permission verification.",
+    "Storage handle tests use doubles; mobile tests use emulation, not physical-device performance.",
+    "Support-foot correction is bounded and may leave drift at unreachable targets.",
+    "Spring chains are simplified angular dynamics, not collision-aware cloth.",
+    "Node sampler timing is not SVG/GPU frame rate.",
+    "Historical qa/flow4 evidence is not included as a current-build pass."
+  ]
+}

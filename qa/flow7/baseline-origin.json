@@ -1,0 +1,12 @@
+{
+  "suite": "flow7-reference-origin",
+  "capturedAt": "2026-10-04T22:02:57.650113+00:00",
+  "status": "passed",
+  "archive": "INK-Flow-6-Continuity-Source.zip",
+  "archiveSha256": "8e0e8b3d81613300603a3bc38fc7f5b0efbb012095401607be1a1ea90b65fa23",
+  "archiveEntry": "INK-Flow-6-Continuity/dist/INK-Street-Fighter-6.html",
+  "standaloneFile": "INK-Flow-6-Continuity.html",
+  "bundledReference": "legacy/flow6/baseline-v6.html",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "allThreeByteIdentical": true
+}

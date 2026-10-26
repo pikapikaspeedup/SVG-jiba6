@@ -1,0 +1,81 @@
+{
+  "suite": "flow5-two-actor-and-input",
+  "capturedAt": "2026-10-04T14:51:11.074822+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "total": 6,
+  "passed": 6,
+  "tests": [
+    {
+      "name": "Two real Mai fighters own distinct simultaneous timelines and emitter banks",
+      "pass": true,
+      "detail": {
+        "actors": 2,
+        "keys": [
+          [
+            "0:1:fan-flame",
+            "0:1:fan-silk"
+          ],
+          [
+            "1:2:fan-flame",
+            "1:2:fan-silk"
+          ]
+        ],
+        "particles": 38,
+        "ribbons": 4
+      }
+    },
+    {
+      "name": "Same-character renderers keep owned SVG clip identities separate",
+      "pass": true,
+      "detail": {
+        "paintIdCounts": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "name": "Closing only player one preserves player two identity and particles already born",
+      "pass": true,
+      "detail": {
+        "survivingInstance": 2,
+        "newAcceptedBirths": 10
+      }
+    },
+    {
+      "name": "Two-actor teardown expires all effects without allocating more pool nodes",
+      "pass": true,
+      "detail": {
+        "particleNodes": 320,
+        "ribbonGroups": 64
+      }
+    },
+    {
+      "name": "Engine dialog rejects emulated gamepad Start and attack input",
+      "pass": true,
+      "detail": {
+        "paused": true,
+        "controllers": {
+          "supported": true,
+          "gamepads": [
+            {
+              "index": 0,
+              "player": 1,
+              "ready": false
+            }
+          ],
+          "sources": []
+        }
+      }
+    },
+    {
+      "name": "Held gamepad inputs require neutral after inspection, then new input works",
+      "pass": true,
+      "detail": {
+        "neutralLatchRespected": true
+      }
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Actual two-fighter runtime, forced simulation steps for state coverage; browser gamepad object is emulated, not physical hardware."
+}

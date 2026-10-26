@@ -1,0 +1,75 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 1500,
+  "startedAt": "2026-10-05T15:57:35.182560+00:00",
+  "htmlSha256": "3f0006074319568d2aa6c4a9ae411ebb2bc6da3f9da6e420facee71a2b4c0ce6",
+  "status": "interrupted-for-UI-correction",
+  "description": "FLOW 09: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause, real solved-pose recording/review and skeleton inspector; stable/follow camera, bounded real socket history and diagnostics; three rhythm profiles. No substituted time or hardware FPS guarantee.",
+  "elapsedWallSeconds": 244.009,
+  "latest": {
+    "elapsed": 244.009,
+    "cycles": 72,
+    "raf": 13904,
+    "mode": "pause",
+    "errors": [],
+    "maxParticles": 275,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 19737,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "inspections": 6,
+    "maxSocketHistory": 96,
+    "maxProbe": 600,
+    "stableChecks": 1035,
+    "clock": {
+      "ticks": 9332,
+      "callbacks": 13908,
+      "discardedSteps": 8,
+      "clampedMs": 0,
+      "pauses": 32,
+      "alpha": 1,
+      "lastSteps": 0,
+      "hz": 60,
+      "active": true,
+      "paused": true,
+      "pendingMs": 0
+    },
+    "bank": {
+      "instances": 6,
+      "acceptedBirths": 106,
+      "poolDrops": 0,
+      "cancelledActions": 6,
+      "eventEdges": 7
+    },
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "maxGhostSlots": 5,
+    "maxReplay": 251,
+    "maxStateEvents": 22,
+    "recordings": 25,
+    "reviews": 10,
+    "pausedChecks": 14,
+    "views": 6,
+    "heap": {
+      "usedSize": 27794188,
+      "totalSize": 29663232,
+      "embedderHeapUsedSize": 24838008,
+      "backingStorageSize": 4998891
+    },
+    "dom": {
+      "documents": 1,
+      "nodes": 46750,
+      "jsEventListeners": 409
+    }
+  },
+  "completedRoutes": 72,
+  "errors": [],
+  "interruptedAt": "2026-10-05T16:02:31.657170+00:00",
+  "reason": "Correct diagnostics badge for explicitly enabled close-up and synchronize old close-up button when stable mode is reselected. This is not counted as a completed endurance test."
+}

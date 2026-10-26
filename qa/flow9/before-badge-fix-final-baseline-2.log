@@ -1,0 +1,163 @@
+{
+  "cold": [
+    {
+      "id": "sLP",
+      "success": true,
+      "requestMs": 2.300000000046566,
+      "firstStepMs": 1.6000000000931323,
+      "firstRenderMs": 5
+    },
+    {
+      "id": "sHP",
+      "success": true,
+      "requestMs": 3.5999999998603016,
+      "firstStepMs": 2.199999999953434,
+      "firstRenderMs": 4.600000000093132
+    },
+    {
+      "id": "sHK",
+      "success": true,
+      "requestMs": 1.1000000000931323,
+      "firstStepMs": 1.3999999999068677,
+      "firstRenderMs": 3.5
+    },
+    {
+      "id": "hissatsu_2",
+      "success": true,
+      "requestMs": 5.800000000046566,
+      "firstStepMs": 1.5999999998603016,
+      "firstRenderMs": 6.5
+    },
+    {
+      "id": "shinobibachi_3",
+      "success": true,
+      "requestMs": 5.600000000093132,
+      "firstStepMs": 1.3999999999068677,
+      "firstRenderMs": 12.800000000046566
+    },
+    {
+      "id": "SA1",
+      "success": true,
+      "requestMs": 6.600000000093132,
+      "firstStepMs": 1.6999999999534339,
+      "firstRenderMs": 3.800000000046566
+    },
+    {
+      "id": "SA2",
+      "success": true,
+      "requestMs": 6.5,
+      "firstStepMs": 1.8999999999068677,
+      "firstRenderMs": 3.300000000046566
+    },
+    {
+      "id": "SA3",
+      "success": true,
+      "requestMs": 8,
+      "firstStepMs": 2.4000000001396984,
+      "firstRenderMs": 9.099999999860302
+    }
+  ],
+  "samples": [
+    {
+      "id": "idle",
+      "steps": 300,
+      "simulationMean": 0.15066666665952652,
+      "simulationP95": 0.30000000004656613,
+      "renderTwoMean": 4.368666666673962,
+      "renderTwoP95": 6.300000000046566,
+      "renderTwoMax": 15.400000000139698
+    },
+    {
+      "id": "sHK",
+      "steps": 300,
+      "simulationMean": 0.1863333333330229,
+      "simulationP95": 0.6000000000931323,
+      "renderTwoMean": 4.705,
+      "renderTwoP95": 8.099999999860302,
+      "renderTwoMax": 11.100000000093132
+    },
+    {
+      "id": "hissatsu_2",
+      "steps": 300,
+      "simulationMean": 0.30299999999503296,
+      "simulationP95": 0.7000000001862645,
+      "renderTwoMean": 7.536666666671323,
+      "renderTwoP95": 16.100000000093132,
+      "renderTwoMax": 26.800000000046566
+    },
+    {
+      "id": "shinobibachi_3",
+      "steps": 300,
+      "simulationMean": 0.46699999999953434,
+      "simulationP95": 1.1000000000931323,
+      "renderTwoMean": 5.563000000002018,
+      "renderTwoP95": 9.400000000139698,
+      "renderTwoMax": 38.800000000046566
+    },
+    {
+      "id": "SA3",
+      "steps": 300,
+      "simulationMean": 0.6710000000071401,
+      "simulationP95": 2.5,
+      "renderTwoMean": 6.667333333325417,
+      "renderTwoP95": 14.599999999860302,
+      "renderTwoMax": 29.200000000186265
+    }
+  ],
+  "history": [
+    {
+      "move": "sMP",
+      "maxIdenticalTimePoseDelta": 14.838539381365038
+    },
+    {
+      "move": "sHK",
+      "maxIdenticalTimePoseDelta": 14.279309070251564
+    },
+    {
+      "move": "hissatsu_0",
+      "maxIdenticalTimePoseDelta": 8.316594968409603
+    }
+  ],
+  "calls": {
+    "compose": 40202,
+    "solveAnimation": 50883,
+    "sockets": 32553
+  },
+  "label": "final-baseline-2",
+  "utc": "2026-10-05T15:56:33.727328+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "live": {
+    "cycles": 5,
+    "errors": [],
+    "rafCount": 1321,
+    "p50": 16.699999999999818,
+    "p95": 33.30000000000109,
+    "p99": 33.400000000001455,
+    "over25ms": 171,
+    "over50ms": 1,
+    "uniqueCameraTransforms": 751,
+    "clock": {
+      "ticks": 1507,
+      "callbacks": 1326,
+      "discardedSteps": 2,
+      "clampedMs": 0,
+      "pauses": 1,
+      "alpha": 0.9419999999996584,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 15.699999999994308
+    },
+    "elapsedWallSeconds": 25.000661318000084,
+    "browserMetricsDelta": {
+      "LayoutCount": 1327,
+      "RecalcStyleCount": 1327,
+      "LayoutDuration": 2.077571,
+      "RecalcStyleDuration": 2.133109,
+      "ScriptDuration": 7.624936,
+      "TaskDuration": 17.598240999999998
+    }
+  },
+  "browserErrors": []
+}

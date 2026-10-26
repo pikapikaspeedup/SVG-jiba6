@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-10-04T14:34:15.512839+00:00",
+  "archive": "INK-Flow-5-Engine-Preflight.zip",
+  "archiveSha256": "c8cb1178fbe400bce668e72057de1bc23a326fabe44890856ae7980e28131b9c",
+  "manifestFilesVerified": 944,
+  "freshDirectory": true,
+  "buildCommand": [
+    "/opt/pyvenv/bin/python",
+    "tools/build_forge.py"
+  ],
+  "buildOutput": "Built INK-Street-Fighter-6.html 8005711 bytes; game source 107f7ec8455285f8",
+  "before": {
+    "INK-Street-Fighter-6.html": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+    "INK-Street-Fighter-6-Player.html": "22835fd8cd20568e8130239d6897ebd0d1197716667876fbdb1631c56a0b95ad"
+  },
+  "after": {
+    "INK-Street-Fighter-6.html": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+    "INK-Street-Fighter-6-Player.html": "22835fd8cd20568e8130239d6897ebd0d1197716667876fbdb1631c56a0b95ad"
+  },
+  "passed": true,
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "note": "Byte-for-byte rebuild of the two shipped HTML games from an extracted source archive; native browser file permissions are separate."
+}

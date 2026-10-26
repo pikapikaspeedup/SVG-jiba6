@@ -928,7 +928,8 @@
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "branch_1",
       "rootPolicy": "combat",
-      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned."
+      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned.",
+      "flowEdition": 3
     }
   },
   "boxes": {
@@ -945,7 +946,15 @@
       "scale": 1,
       "color": "#ef995a",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 4.6,
+        "size": 4.2,
+        "spread": 100,
+        "species": "ember"
+      }
     }
   ],
   "source": "migrated-atelier"

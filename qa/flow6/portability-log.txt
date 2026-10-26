@@ -1,0 +1,11 @@
+PASS New graph and emitter data save before portable export
+PASS Creator HTML export reopens with actual FLOW6 engines and edited JSON
+PASS Portable export contains no external runtime script/style/image dependency
+PASS Edited portable game still executes real Mai 14 HIT / 3375 damage route
+PASS Edited player export retains inspector and edits but hides authoring entry
+PASS Second-generation HTML export preserves engines, curves and parameters
+PASS In-app asset package has 690 moves and FLOW6 identity, not a stale FLOW4 export
+PASS Unsafe graph-channel import is transactional and preserves prior saved project
+PASS FLOW4-shaped legacy move imports without silently replacing user tracks or adding graph layers
+PASS No unhandled script errors during independent HTML reopens
+PASS No network request required by the tested standalone pages

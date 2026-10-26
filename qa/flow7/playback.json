@@ -1,0 +1,187 @@
+{
+  "suite": "flow7-controlled-real-combat-playback",
+  "capturedAt": "2026-10-04T22:14:41.111136+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "baselineSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "frames": 570,
+  "fps": 30,
+  "durationSeconds": 19.0,
+  "segments": [
+    {
+      "label": "旧路线，同一时间标尺",
+      "seconds": 6,
+      "left": {
+        "label": "FLOW 06 / 1.00×",
+        "route": "mai-extended",
+        "speed": 1,
+        "rhythm": "legacy",
+        "subtitle": "原始 14 HIT 路线 · 原始停顿"
+      },
+      "right": {
+        "label": "FLOW 07 / 1.00×",
+        "route": "mai-extended",
+        "speed": 1,
+        "rhythm": "weighted",
+        "subtitle": "相同路线 · 强弱分拍 / 末击收束"
+      },
+      "final": [
+        {
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "gameTicks": 360,
+          "elapsedTicks": null,
+          "actions": [
+            "sHP",
+            "RUSH",
+            "cMP",
+            "sLP",
+            "hissatsu_3",
+            "SA3"
+          ],
+          "resources": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        },
+        {
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "gameTicks": 360,
+          "elapsedTicks": 270,
+          "actions": [
+            "sHP",
+            "RUSH",
+            "cMP",
+            "sLP",
+            "hissatsu_3",
+            "SA3"
+          ],
+          "resources": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "整体降速与停顿风格分离",
+      "seconds": 7,
+      "left": {
+        "label": "FLOW 07 / 1.00×",
+        "route": "mai-extended",
+        "speed": 1,
+        "rhythm": "weighted",
+        "subtitle": "重心节奏 · 标准速度"
+      },
+      "right": {
+        "label": "FLOW 07 / 0.85×",
+        "route": "mai-extended",
+        "speed": 0.85,
+        "rhythm": "weighted",
+        "subtitle": "重心节奏 · 双方同步舒缓"
+      },
+      "final": [
+        {
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "gameTicks": 420,
+          "elapsedTicks": 270,
+          "actions": [
+            "sHP",
+            "RUSH",
+            "cMP",
+            "sLP",
+            "hissatsu_3",
+            "SA3"
+          ],
+          "resources": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        },
+        {
+          "status": "success",
+          "hits": 14,
+          "damage": 3375,
+          "gameTicks": 357,
+          "elapsedTicks": 270,
+          "actions": [
+            "sHP",
+            "RUSH",
+            "cMP",
+            "sLP",
+            "hissatsu_3",
+            "SA3"
+          ],
+          "resources": {
+            "drive": 1.2180000000000002,
+            "super": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "新的有限命中连携",
+      "seconds": 6,
+      "left": {
+        "label": "扇舞 · 重击衔接",
+        "route": "mai-flow-fan",
+        "speed": 1,
+        "rhythm": "weighted",
+        "subtitle": "中拳 → 重拳 → 轻龙炎舞 / 无起手能量"
+      },
+      "right": {
+        "label": "忍步 · 仇樱收束",
+        "route": "mai-flow-cascade",
+        "speed": 1,
+        "rhythm": "weighted",
+        "subtitle": "蹲中拳 → 中脚 → 重拳 → OD 忍蜂 → SA3"
+      },
+      "final": [
+        {
+          "status": "success",
+          "hits": 3,
+          "damage": 1776,
+          "gameTicks": 360,
+          "elapsedTicks": 55,
+          "actions": [
+            "sMP",
+            "sHP",
+            "hissatsu_0"
+          ],
+          "resources": {
+            "drive": 0.22800000000000004,
+            "super": 0.20542857142857146
+          }
+        },
+        {
+          "status": "success",
+          "hits": 12,
+          "damage": 3640,
+          "gameTicks": 360,
+          "elapsedTicks": 221,
+          "actions": [
+            "cMP",
+            "sMK",
+            "sHP",
+            "shinobibachi_3",
+            "SA3"
+          ],
+          "resources": {
+            "drive": 0.3219999999999943,
+            "super": 0
+          }
+        }
+      ]
+    }
+  ],
+  "browserErrors": [],
+  "notes": [
+    "Actual production combat, assets, damage and particles. Fixed common camera suppresses camera shake only.",
+    "Controlled 60Hz simulation stepping; 0.85x consumes 51 simulation ticks per movie second. Not measured native device FPS.",
+    "Last-hit summary timing excludes subsequent freeze/recovery. The recording includes the tail animation."
+  ]
+}

@@ -1,0 +1,3183 @@
+{
+  "requestedWallSeconds": 1200,
+  "startedAt": "2026-10-04T10:13:48.886545+00:00",
+  "htmlSha256": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86",
+  "status": "passed",
+  "description": "One continuously rendered real Chromium tab; primarily Mai, mirrored routes, FX presets, scrubbing and pause checks. FPS is not a hardware guarantee.",
+  "finishedAt": "2026-10-04T10:33:53.108799+00:00",
+  "elapsedWallSeconds": 1201.504,
+  "completedRoutes": 262,
+  "final": {
+    "cycles": 262,
+    "raf": 67862,
+    "errors": [],
+    "maxParticles": 320,
+    "maxTrails": 19,
+    "maxLocal": 67,
+    "maxRoots": 40,
+    "maxCache": 552,
+    "maxDom": 14596,
+    "pausedChecks": 56,
+    "views": 39,
+    "next": 0,
+    "lastStatus": "running",
+    "mode": "battle",
+    "lastClock": 64695
+  },
+  "finalHeap": {
+    "usedSize": 18326236,
+    "totalSize": 19177472,
+    "embedderHeapUsedSize": 20123752,
+    "backingStorageSize": 659153
+  },
+  "finalDOM": {
+    "documents": 1,
+    "nodes": 36255,
+    "jsEventListeners": 282
+  },
+  "checkpoints": [
+    {
+      "elapsed": 1.509,
+      "cycles": 0,
+      "raf": 74,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 58,
+      "maxTrails": 16,
+      "maxLocal": 4,
+      "maxRoots": 21,
+      "maxCache": 113,
+      "maxDom": 14551,
+      "pausedChecks": 0,
+      "views": 0,
+      "heap": {
+        "usedSize": 15322876,
+        "totalSize": 16556032,
+        "embedderHeapUsedSize": 18502752,
+        "backingStorageSize": 663090
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 35003,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 62.119,
+      "cycles": 14,
+      "raf": 3291,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 46,
+      "maxRoots": 40,
+      "maxCache": 546,
+      "maxDom": 14590,
+      "pausedChecks": 3,
+      "views": 1,
+      "heap": {
+        "usedSize": 16725152,
+        "totalSize": 17604608,
+        "embedderHeapUsedSize": 18907928,
+        "backingStorageSize": 654254
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 34779,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 122.781,
+      "cycles": 27,
+      "raf": 6499,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 548,
+      "maxDom": 14596,
+      "pausedChecks": 6,
+      "views": 3,
+      "heap": {
+        "usedSize": 17795452,
+        "totalSize": 19177472,
+        "embedderHeapUsedSize": 19440032,
+        "backingStorageSize": 657363
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36309,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 183.212,
+      "cycles": 40,
+      "raf": 9996,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 548,
+      "maxDom": 14596,
+      "pausedChecks": 10,
+      "views": 5,
+      "heap": {
+        "usedSize": 17370384,
+        "totalSize": 18653184,
+        "embedderHeapUsedSize": 19858440,
+        "backingStorageSize": 656988
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36294,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 243.576,
+      "cycles": 53,
+      "raf": 13497,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 548,
+      "maxDom": 14596,
+      "pausedChecks": 12,
+      "views": 7,
+      "heap": {
+        "usedSize": 18472024,
+        "totalSize": 19177472,
+        "embedderHeapUsedSize": 20243760,
+        "backingStorageSize": 657644
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36328,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 304.213,
+      "cycles": 66,
+      "raf": 16959,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 14,
+      "views": 10,
+      "heap": {
+        "usedSize": 18660212,
+        "totalSize": 19701760,
+        "embedderHeapUsedSize": 20100568,
+        "backingStorageSize": 659945
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36339,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 364.686,
+      "cycles": 79,
+      "raf": 20370,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 17,
+      "views": 12,
+      "heap": {
+        "usedSize": 17991592,
+        "totalSize": 19439616,
+        "embedderHeapUsedSize": 19766296,
+        "backingStorageSize": 657814
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 35959,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 425.235,
+      "cycles": 92,
+      "raf": 23759,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 20,
+      "views": 14,
+      "heap": {
+        "usedSize": 18974624,
+        "totalSize": 20488192,
+        "embedderHeapUsedSize": 21153088,
+        "backingStorageSize": 659682
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36329,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 485.696,
+      "cycles": 106,
+      "raf": 27265,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 23,
+      "views": 16,
+      "heap": {
+        "usedSize": 17993712,
+        "totalSize": 19701760,
+        "embedderHeapUsedSize": 19976288,
+        "backingStorageSize": 657408
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36318,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 546.148,
+      "cycles": 119,
+      "raf": 30811,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 26,
+      "views": 17,
+      "heap": {
+        "usedSize": 18051860,
+        "totalSize": 19439616,
+        "embedderHeapUsedSize": 20094928,
+        "backingStorageSize": 657645
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 35960,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 606.621,
+      "cycles": 132,
+      "raf": 34293,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 28,
+      "views": 20,
+      "heap": {
+        "usedSize": 18627064,
+        "totalSize": 19701760,
+        "embedderHeapUsedSize": 20143912,
+        "backingStorageSize": 657644
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36329,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 667.116,
+      "cycles": 146,
+      "raf": 37674,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 31,
+      "views": 22,
+      "heap": {
+        "usedSize": 18024532,
+        "totalSize": 19963904,
+        "embedderHeapUsedSize": 19793568,
+        "backingStorageSize": 657182
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36300,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 727.559,
+      "cycles": 159,
+      "raf": 41035,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 34,
+      "views": 24,
+      "heap": {
+        "usedSize": 18062808,
+        "totalSize": 19439616,
+        "embedderHeapUsedSize": 19625544,
+        "backingStorageSize": 655865
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 35948,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 788.184,
+      "cycles": 172,
+      "raf": 44365,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 38,
+      "views": 25,
+      "heap": {
+        "usedSize": 18174852,
+        "totalSize": 19701760,
+        "embedderHeapUsedSize": 20115224,
+        "backingStorageSize": 657156
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36329,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 848.746,
+      "cycles": 185,
+      "raf": 47614,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 39,
+      "views": 27,
+      "heap": {
+        "usedSize": 18680580,
+        "totalSize": 20226048,
+        "embedderHeapUsedSize": 20839112,
+        "backingStorageSize": 657361
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36341,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 909.569,
+      "cycles": 198,
+      "raf": 51066,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 42,
+      "views": 30,
+      "heap": {
+        "usedSize": 18829288,
+        "totalSize": 19963904,
+        "embedderHeapUsedSize": 20031936,
+        "backingStorageSize": 659842
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36329,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 970.012,
+      "cycles": 211,
+      "raf": 54548,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 45,
+      "views": 32,
+      "heap": {
+        "usedSize": 18535352,
+        "totalSize": 19701760,
+        "embedderHeapUsedSize": 20406912,
+        "backingStorageSize": 657385
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36338,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 1030.437,
+      "cycles": 225,
+      "raf": 58031,
+      "mode": "showcase",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 48,
+      "views": 34,
+      "heap": {
+        "usedSize": 20002016,
+        "totalSize": 22323200,
+        "embedderHeapUsedSize": 24601320,
+        "backingStorageSize": 732331
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 41181,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 1090.945,
+      "cycles": 238,
+      "raf": 61565,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 51,
+      "views": 35,
+      "heap": {
+        "usedSize": 19021168,
+        "totalSize": 19963904,
+        "embedderHeapUsedSize": 20635344,
+        "backingStorageSize": 659762
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36329,
+        "jsEventListeners": 282
+      }
+    },
+    {
+      "elapsed": 1151.549,
+      "cycles": 252,
+      "raf": 65022,
+      "mode": "pause",
+      "errors": [],
+      "maxParticles": 320,
+      "maxTrails": 19,
+      "maxLocal": 67,
+      "maxRoots": 40,
+      "maxCache": 552,
+      "maxDom": 14596,
+      "pausedChecks": 53,
+      "views": 37,
+      "heap": {
+        "usedSize": 17801672,
+        "totalSize": 19701760,
+        "embedderHeapUsedSize": 19359352,
+        "backingStorageSize": 656804
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 36227,
+        "jsEventListeners": 282
+      }
+    }
+  ],
+  "routeResults": [
+    {
+      "cycle": 1,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 2,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 3,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 4,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 5,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 6,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 7,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 8,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 9,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 10,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 11,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 12,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 13,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 14,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 15,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 16,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 17,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 18,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 19,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 20,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 21,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 22,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 23,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 24,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 25,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 26,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 27,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 28,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 29,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 30,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 31,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 32,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 33,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 34,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 35,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 36,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 37,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 38,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 39,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 40,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 41,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 42,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 43,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 44,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 45,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 46,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 47,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 48,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 49,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 50,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 51,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 52,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 53,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 54,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 55,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 56,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 57,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 58,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 59,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 60,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 61,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 62,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 63,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 64,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 65,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 66,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 67,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 68,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 69,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 70,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 71,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 72,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 73,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 74,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 75,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 76,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 77,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 78,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 79,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 80,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 81,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 82,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 83,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 84,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 85,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 86,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 87,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 88,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 89,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 90,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 91,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 92,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 93,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 94,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 95,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 96,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 97,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 98,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 99,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 100,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 101,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 102,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 103,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 104,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 105,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 106,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 107,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 108,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 109,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 110,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 111,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 112,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 113,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 114,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 115,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 116,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 117,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 118,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 119,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 120,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 121,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 122,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 123,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 124,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 125,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 126,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 127,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 128,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 129,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 130,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 131,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 132,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 133,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 134,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 135,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 136,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 137,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 138,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 139,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 140,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 141,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 142,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 143,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 144,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 145,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 146,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 147,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 148,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 149,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 150,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 151,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 152,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 153,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 154,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 155,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 156,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 157,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 158,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 159,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 160,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 161,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 162,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 163,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 164,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 165,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 166,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 167,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 168,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 169,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 170,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 171,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 172,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 173,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 174,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 175,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 176,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 177,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 178,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 179,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 180,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 181,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 182,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 183,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 184,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 185,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 186,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 187,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 188,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 189,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 190,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 191,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 192,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 193,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 194,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 195,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 196,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 197,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 198,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 199,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 200,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 201,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 202,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 203,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 204,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 205,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 206,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 207,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 208,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 209,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 210,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 211,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 212,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 213,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 214,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 215,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 216,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 217,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 218,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 219,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 220,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 221,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 222,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 223,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 224,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 225,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 226,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 227,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 228,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 229,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 230,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 231,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 232,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 233,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 234,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 235,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 236,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 237,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 238,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 239,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 240,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 241,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 242,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 243,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 244,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 245,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 246,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 247,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 248,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 249,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 250,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 251,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 252,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 253,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 254,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 255,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 256,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 257,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 258,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 259,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 260,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 261,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      }
+    },
+    {
+      "cycle": 262,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      }
+    }
+  ],
+  "browserErrors": []
+}

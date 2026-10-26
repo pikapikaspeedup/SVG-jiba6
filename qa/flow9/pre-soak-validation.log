@@ -1,0 +1,31 @@
+PASS 707 original move/model/rig/route files preserved
+PASS 690 moves / 22 routes
+PASS Version 9 and explicit defaults
+PASS Formal production entrypoints call new systems
+PASS Build includes source modules and UI without function-body patching
+PASS Production JavaScript syntax
+PASS INK-Street-Fighter-6.html embeds current runtime
+PASS INK-Street-Fighter-6-Player.html embeds current runtime
+PASS Current evidence: contracts
+PASS Current evidence: response-contracts
+PASS Current evidence: ui
+PASS Current evidence: portability
+PASS Current evidence: rhythm-matrix
+PASS Original/current world joint same-time comparison
+PASS Response-state purity and 44 real route pairs
+PASS Nine inherited commands and exact log hashes
+PASS Inherited current browser-contracts
+PASS Inherited current transition-matrix
+PASS Inherited current recovery-observation
+PASS Inherited current render-and-practice
+PASS Inherited current effect-invariance
+PASS Inherited current character-chain
+PASS 39 original mechanics
+PASS 522 original single-move replays
+PASS Independent benchmark: final-candidate-1
+PASS Independent benchmark: final-candidate-2
+PASS Independent benchmark: final-baseline-1
+PASS Independent benchmark: final-baseline-2
+PASS Native-camera visual comparison bound to current HTML
+PASS Source patch reverses and reapplies exactly
+PASS All production/build inputs unchanged since final freeze

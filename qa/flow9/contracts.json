@@ -1,0 +1,168 @@
+{
+  "suite": "flow9-engine-contracts",
+  "utc": "2026-10-05T16:05:10.908835+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "passed": 24,
+  "total": 24,
+  "browserErrors": [],
+  "rows": [
+    {
+      "name": "Defaults: stationary camera, fluid hitstop and unchanged 1x speed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ryu: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "ken: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "chun: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "cammy: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "luke: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "juri: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "mai: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "iori: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "Simulation remains independent of render frequency",
+      "pass": true,
+      "detail": {
+        "cadences": 4
+      }
+    },
+    {
+      "name": "Pause boundary holds the completed pose until the next action step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Hitstop ownership does not depend on drawing any frozen frame",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Bone compilation is prefix-lazy and bit-identical to a full bake",
+      "pass": true,
+      "detail": {
+        "coldRows": 2,
+        "intermediateRows": 97,
+        "fullRows": 509
+      }
+    },
+    {
+      "name": "Spring prefix, forward and reverse seeks are exactly equivalent",
+      "pass": true,
+      "detail": {
+        "coldRows": 2,
+        "fullRows": 255
+      }
+    },
+    {
+      "name": "Compiler and render passes do not mutate authored assets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Actual socket history joins the rendered fan in direction 1",
+      "pass": true,
+      "detail": {
+        "maxSocketError": 5.859285502108464e-14
+      }
+    },
+    {
+      "name": "Actual socket history joins the rendered fan in direction -1",
+      "pass": true,
+      "detail": {
+        "maxSocketError": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Live historical traces read captured geometry without re-solving poses",
+      "pass": true,
+      "detail": {
+        "cacheReads": 40
+      }
+    },
+    {
+      "name": "Disable/re-enable FX keeps bounded histories and valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Stable stage never moves for attacks, flash, shake or airborne roots",
+      "pass": true,
+      "detail": {
+        "frames": 780,
+        "uniqueTransforms": 1
+      }
+    },
+    {
+      "name": "Following camera ignores body silhouette and obeys pause",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Viewport and FX preferences reject invalid input atomically",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Diagnostics ring is bounded and does not mutate combat",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Intentional stop counts are separate from long callback intervals",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "repeatCases": 32,
+  "maxRepeatPoseError": 0,
+  "socketSamples": 74,
+  "maxSocketError": 1.1368683772161603e-13
+}

@@ -1,0 +1,14 @@
+{
+  "capturedAt": "2026-10-04T10:21:52.124590+00:00",
+  "os": "Linux",
+  "machine": "x86_64",
+  "python": "3.13.5",
+  "node": "v22.16.0",
+  "chromium": "Chromium 144.0.7559.96 built on Debian GNU/Linux 13 (trixie)",
+  "playwright": "1.57.0",
+  "pillow": "12.3.0",
+  "browserMode": "headless",
+  "mainViewport": "1440×1080; dedicated cases also 390×844, 844×390, 1280×800",
+  "execution": "Full standalone HTML bytes via Playwright set_content; file:// and local HTTP navigation policy-blocked",
+  "performanceCaveat": "Shared container; synchronous JS timing includes no GPU/paint guarantee. Some checks ran concurrently with the sustained browser test."
+}

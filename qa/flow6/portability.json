@@ -1,0 +1,828 @@
+{
+  "suite": "flow6-portability",
+  "capturedAt": "2026-10-04T17:49:06.414823+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "total": 11,
+  "passed": 11,
+  "tests": [
+    {
+      "name": "New graph and emitter data save before portable export",
+      "pass": true,
+      "detail": {
+        "motion": {
+          "version": 1,
+          "weightScale": 0.6,
+          "layers": [
+            {
+              "id": "mai-torso-counterrotation",
+              "mode": "additive",
+              "weight": 1,
+              "tracks": {
+                "chest": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    -4,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    10,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    5,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    -3,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ],
+                "pelvis": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    3,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    -5,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    -3,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    2,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ],
+                "headYaw": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    2,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    -5,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    -2,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    2,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "mai-fan-follow-through",
+              "mode": "additive",
+              "weight": 1,
+              "tracks": {
+                "fanAngle": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    -6,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    11,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    6,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    -4,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ]
+              }
+            }
+          ],
+          "contacts": [
+            {
+              "id": "rear-support",
+              "socket": "rearFoot",
+              "start": 0,
+              "end": 43,
+              "fadeIn": 2,
+              "fadeOut": 3,
+              "strength": 0.92,
+              "maxCorrection": 32
+            }
+          ],
+          "springs": {
+            "frequency": 0.75,
+            "damping": 0.4,
+            "hairStrength": 1.15,
+            "clothStrength": 1.1
+          }
+        },
+        "fx": {
+          "id": "fan-flame",
+          "frame": 15,
+          "duration": 25,
+          "type": "flame",
+          "socket": "fanTip",
+          "scale": 1,
+          "color": "#ef835c",
+          "rotation": 0,
+          "opacity": 0.7,
+          "trailFrames": 11,
+          "width": 15,
+          "layer": "front",
+          "particles": {
+            "count": 28,
+            "life": 28,
+            "speed": 3.2,
+            "size": 2.2,
+            "spread": 95,
+            "species": "ember",
+            "gravity": -0.065,
+            "drag": 0.035,
+            "curl": 1.3,
+            "spacing": 23,
+            "rate": 0.426,
+            "burst": 3,
+            "inheritVelocity": 0.28,
+            "sizeCurve": [
+              [
+                0,
+                0.3
+              ],
+              [
+                0.12,
+                1.25
+              ],
+              [
+                0.48,
+                0.9
+              ],
+              [
+                1,
+                0.1
+              ]
+            ],
+            "opacityCurve": [
+              [
+                0,
+                0
+              ],
+              [
+                0.2,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "heat": true
+          }
+        },
+        "snapshot": 1
+      }
+    },
+    {
+      "name": "Creator HTML export reopens with actual FLOW6 engines and edited JSON",
+      "pass": true,
+      "detail": {
+        "motion": {
+          "version": 1,
+          "weightScale": 0.6,
+          "layers": [
+            {
+              "id": "mai-torso-counterrotation",
+              "mode": "additive",
+              "weight": 1,
+              "tracks": {
+                "chest": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    -4,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    10,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    5,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    -3,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ],
+                "pelvis": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    3,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    -5,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    -3,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    2,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ],
+                "headYaw": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    2,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    -5,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    -2,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    2,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "mai-fan-follow-through",
+              "mode": "additive",
+              "weight": 1,
+              "tracks": {
+                "fanAngle": [
+                  [
+                    0,
+                    0,
+                    "spline"
+                  ],
+                  [
+                    9.75,
+                    -6,
+                    "spline"
+                  ],
+                  [
+                    21,
+                    11,
+                    "spline"
+                  ],
+                  [
+                    40,
+                    6,
+                    "spline"
+                  ],
+                  [
+                    50.92,
+                    -4,
+                    "spline"
+                  ],
+                  [
+                    61,
+                    0,
+                    "spline"
+                  ]
+                ]
+              }
+            }
+          ],
+          "contacts": [
+            {
+              "id": "rear-support",
+              "socket": "rearFoot",
+              "start": 0,
+              "end": 43,
+              "fadeIn": 2,
+              "fadeOut": 3,
+              "strength": 0.92,
+              "maxCorrection": 32
+            }
+          ],
+          "springs": {
+            "frequency": 0.75,
+            "damping": 0.4,
+            "hairStrength": 1.15,
+            "clothStrength": 1.1
+          }
+        },
+        "fx": {
+          "id": "fan-flame",
+          "frame": 15,
+          "duration": 25,
+          "type": "flame",
+          "socket": "fanTip",
+          "scale": 1,
+          "color": "#ef835c",
+          "rotation": 0,
+          "opacity": 0.7,
+          "trailFrames": 11,
+          "width": 15,
+          "layer": "front",
+          "particles": {
+            "count": 28,
+            "life": 28,
+            "speed": 3.2,
+            "size": 2.2,
+            "spread": 95,
+            "species": "ember",
+            "gravity": -0.065,
+            "drag": 0.035,
+            "curl": 1.3,
+            "spacing": 23,
+            "rate": 0.426,
+            "burst": 3,
+            "inheritVelocity": 0.28,
+            "sizeCurve": [
+              [
+                0,
+                0.3
+              ],
+              [
+                0.12,
+                1.25
+              ],
+              [
+                0.48,
+                0.9
+              ],
+              [
+                1,
+                0.1
+              ]
+            ],
+            "opacityCurve": [
+              [
+                0,
+                0
+              ],
+              [
+                0.2,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "heat": true
+          }
+        },
+        "id": "ink-portable-muu47l7h",
+        "game": "6.0.0-ink-continuity",
+        "compiled": true,
+        "graph": "6.0.0",
+        "lab": true,
+        "external": false
+      }
+    },
+    {
+      "name": "Portable export contains no external runtime script/style/image dependency",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Edited portable game still executes real Mai 14 HIT / 3375 damage route",
+      "pass": true,
+      "detail": {
+        "status": "success",
+        "character": "mai",
+        "route": "mai-extended",
+        "mode": "demo",
+        "cursor": 6,
+        "frames": 164,
+        "hits": 14,
+        "damage": 3375,
+        "maxCombo": 14,
+        "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+        "initial": {
+          "x": 1169,
+          "targetX": 1335,
+          "super": 3,
+          "drive": 6
+        },
+        "remaining": {
+          "drive": 1.2180000000000002,
+          "super": 0
+        },
+        "actions": [
+          {
+            "move": "sHP",
+            "name": "回身扇",
+            "tick": 1,
+            "frame": 1,
+            "hits": 1,
+            "damage": 800,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 6,
+              "super": 3
+            }
+          },
+          {
+            "move": "RUSH",
+            "name": "斗气取消迸发",
+            "tick": 20,
+            "frame": 13,
+            "hits": 0,
+            "damage": 0,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 3,
+              "super": 3
+            }
+          },
+          {
+            "move": "cMP",
+            "name": "蹲·横扇切",
+            "tick": 25,
+            "frame": 18,
+            "hits": 1,
+            "damage": 457,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 3,
+              "super": 3
+            }
+          },
+          {
+            "move": "sLP",
+            "name": "扇柄突",
+            "tick": 55,
+            "frame": 43,
+            "hits": 1,
+            "damage": 220,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 3.08,
+              "super": 3
+            }
+          },
+          {
+            "move": "hissatsu_3",
+            "name": "OD 龙炎舞",
+            "tick": 62,
+            "frame": 47,
+            "hits": 3,
+            "damage": 696,
+            "needed": 3,
+            "command": "",
+            "cost": {
+              "drive": 1.1600000000000001,
+              "super": 3
+            }
+          },
+          {
+            "move": "SA3",
+            "name": "不知火流·炎舞仇樱",
+            "tick": 112,
+            "frame": 76,
+            "hits": 8,
+            "damage": 1202,
+            "needed": 8,
+            "command": "",
+            "cost": {
+              "drive": 1.1600000000000001,
+              "super": 0
+            }
+          }
+        ],
+        "log": [
+          {
+            "type": "action",
+            "frame": 1,
+            "move": "sHP",
+            "name": "回身扇"
+          },
+          {
+            "type": "hit",
+            "frame": 12,
+            "tick": 12,
+            "move": "sHP",
+            "damage": 800,
+            "combo": 1
+          },
+          {
+            "type": "action",
+            "frame": 13,
+            "move": "RUSH",
+            "name": "斗气取消迸发"
+          },
+          {
+            "type": "action",
+            "frame": 18,
+            "move": "cMP",
+            "name": "蹲·横扇切"
+          },
+          {
+            "type": "hit",
+            "frame": 24,
+            "tick": 31,
+            "move": "cMP",
+            "damage": 457,
+            "combo": 2
+          },
+          {
+            "type": "action",
+            "frame": 43,
+            "move": "sLP",
+            "name": "扇柄突"
+          },
+          {
+            "type": "hit",
+            "frame": 46,
+            "tick": 58,
+            "move": "sLP",
+            "damage": 220,
+            "combo": 3
+          },
+          {
+            "type": "action",
+            "frame": 47,
+            "move": "hissatsu_3",
+            "name": "OD 龙炎舞"
+          },
+          {
+            "type": "hit",
+            "frame": 58,
+            "tick": 73,
+            "move": "hissatsu_3",
+            "damage": 262,
+            "combo": 4
+          },
+          {
+            "type": "hit",
+            "frame": 67,
+            "tick": 89,
+            "move": "hissatsu_3",
+            "damage": 232,
+            "combo": 5
+          },
+          {
+            "type": "hit",
+            "frame": 75,
+            "tick": 104,
+            "move": "hissatsu_3",
+            "damage": 202,
+            "combo": 6
+          },
+          {
+            "type": "action",
+            "frame": 76,
+            "move": "SA3",
+            "name": "不知火流·炎舞仇樱"
+          },
+          {
+            "type": "hit",
+            "frame": 87,
+            "tick": 143,
+            "move": "SA3",
+            "damage": 239,
+            "combo": 7
+          },
+          {
+            "type": "hit",
+            "frame": 98,
+            "tick": 160,
+            "move": "SA3",
+            "damage": 197,
+            "combo": 8
+          },
+          {
+            "type": "hit",
+            "frame": 109,
+            "tick": 177,
+            "move": "SA3",
+            "damage": 156,
+            "combo": 9
+          },
+          {
+            "type": "hit",
+            "frame": 120,
+            "tick": 194,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 10
+          },
+          {
+            "type": "hit",
+            "frame": 131,
+            "tick": 211,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 11
+          },
+          {
+            "type": "hit",
+            "frame": 142,
+            "tick": 228,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 12
+          },
+          {
+            "type": "hit",
+            "frame": 153,
+            "tick": 245,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 13
+          },
+          {
+            "type": "hit",
+            "frame": 164,
+            "tick": 262,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 14
+          }
+        ],
+        "inputLog": [],
+        "bufferFrames": 6
+      }
+    },
+    {
+      "name": "Edited player export retains inspector and edits but hides authoring entry",
+      "pass": true,
+      "detail": {
+        "player": true,
+        "lab": true,
+        "edit": false,
+        "spacing": 23
+      }
+    },
+    {
+      "name": "Second-generation HTML export preserves engines, curves and parameters",
+      "pass": true,
+      "detail": {
+        "frequency": 0.75,
+        "spacing": 23,
+        "curve": [
+          [
+            0,
+            0
+          ],
+          [
+            0.2,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "version": "6.0.0"
+      }
+    },
+    {
+      "name": "In-app asset package has 690 moves and FLOW6 identity, not a stale FLOW4 export",
+      "pass": true,
+      "detail": {
+        "moves": 690,
+        "name": "INK FLOW 06 / Continuous Articulation",
+        "build": "6.0.0",
+        "spacing": 23,
+        "readme": "INK FLOW 6 / Continuous Articulation\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n"
+      }
+    },
+    {
+      "name": "Unsafe graph-channel import is transactional and preserves prior saved project",
+      "pass": true,
+      "detail": {
+        "rejected": true,
+        "unchanged": true
+      }
+    },
+    {
+      "name": "FLOW4-shaped legacy move imports without silently replacing user tracks or adding graph layers",
+      "pass": true,
+      "detail": {
+        "absent": true,
+        "tracksPreserved": true,
+        "finite": true,
+        "compiled": true
+      }
+    },
+    {
+      "name": "No unhandled script errors during independent HTML reopens",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No network request required by the tested standalone pages",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "browserErrors": [],
+  "networkRequests": [],
+  "scope": "Independent complete-HTML byte loads and re-export with edited JSON. Native file:// and OS filesystem permissions are not asserted."
+}

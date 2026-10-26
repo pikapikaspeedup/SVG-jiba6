@@ -1,0 +1,10 @@
+{
+  "kind": "flow8-current-turn-work-session",
+  "startedAt": "2026-10-05T06:32:46+00:00",
+  "reportCompletedAt": "2026-10-05T07:34:38.232806+00:00",
+  "elapsedWallSeconds": 3712.233,
+  "method": "UTC wall-clock observations from the current tool session; includes coding, debugging, review, documentation and actively inspected real-browser endurance/stress. Not a claim that every second was CPU execution.",
+  "finalHtmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "enduranceElapsedWallSeconds": 1500.36,
+  "replayStressElapsedWallSeconds": 180.208
+}

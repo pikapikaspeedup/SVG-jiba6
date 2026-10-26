@@ -1,0 +1,284 @@
+{
+  "suite": "flow7-real-ui-controls",
+  "capturedAt": "2026-10-04T21:48:22.703464+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "total": 24,
+  "passed": 24,
+  "tests": [
+    {
+      "name": "Home entry opens the real combo studio and pause control stops combat",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Lesson controller is not displayed alongside combo controller",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Visible tempo controls update the real engine settings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Selecting a route yields an idle draft, not an old result relabeled as new",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Add step changes the real draft",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reorder changes sequence rather than only DOM",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Delete restores three steps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid step field restores previous value and explains rejection",
+      "pass": true,
+      "detail": {
+        "value": "1",
+        "min": 1,
+        "note": "无效连段：minHits 越界"
+      }
+    },
+    {
+      "name": "Save creates a user route copy rather than overwriting builtin",
+      "pass": true,
+      "detail": {
+        "id": "user-muucr80z",
+        "title": "我的舞连段",
+        "library": 23
+      }
+    },
+    {
+      "name": "Visible route export downloads valid JSON with the current draft",
+      "pass": true,
+      "detail": {
+        "suggestedFilename": "INK-my-route.json"
+      }
+    },
+    {
+      "name": "Legacy-rule toggle actually refuses the new hit-confirm chain",
+      "pass": true,
+      "detail": {
+        "status": "failed",
+        "reason": "断连：木桩已经恢复行动"
+      }
+    },
+    {
+      "name": "Same draft succeeds through the new finite cancel graph",
+      "pass": true,
+      "detail": {
+        "status": "success",
+        "character": "mai",
+        "route": "mai-flow-fan",
+        "mode": "demo",
+        "cursor": 3,
+        "frames": 34,
+        "hits": 3,
+        "damage": 1776,
+        "maxCombo": 3,
+        "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+        "initial": {
+          "x": 1167,
+          "targetX": 1335,
+          "super": 0,
+          "drive": 0
+        },
+        "remaining": {
+          "drive": 0.22800000000000004,
+          "super": 0.20542857142857146
+        },
+        "elapsedTicks": 55,
+        "actionFrames": 34,
+        "tempo": {
+          "rhythm": "weighted",
+          "speed": 0.85,
+          "rules": "flow",
+          "buffer": 12
+        },
+        "actions": [
+          {
+            "move": "sMP",
+            "name": "横扇切",
+            "tick": 65,
+            "frame": 1,
+            "hits": 1,
+            "damage": 480,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 0,
+              "super": 0
+            }
+          },
+          {
+            "move": "sHP",
+            "name": "回身扇",
+            "tick": 82,
+            "frame": 9,
+            "hits": 1,
+            "damage": 732,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 0.096,
+              "super": 0.09071428571428572
+            }
+          },
+          {
+            "move": "hissatsu_0",
+            "name": "轻·龙炎舞",
+            "tick": 106,
+            "frame": 21,
+            "hits": 1,
+            "damage": 564,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 0.2,
+              "super": 0.20542857142857146
+            }
+          }
+        ],
+        "log": [
+          {
+            "type": "action",
+            "frame": 1,
+            "move": "sMP",
+            "name": "横扇切"
+          },
+          {
+            "type": "hit",
+            "frame": 8,
+            "tick": 72,
+            "move": "sMP",
+            "damage": 480,
+            "combo": 1
+          },
+          {
+            "type": "action",
+            "frame": 9,
+            "move": "sHP",
+            "name": "回身扇"
+          },
+          {
+            "type": "hit",
+            "frame": 20,
+            "tick": 93,
+            "move": "sHP",
+            "damage": 732,
+            "combo": 2
+          },
+          {
+            "type": "action",
+            "frame": 21,
+            "move": "hissatsu_0",
+            "name": "轻·龙炎舞"
+          },
+          {
+            "type": "hit",
+            "frame": 34,
+            "tick": 119,
+            "move": "hissatsu_0",
+            "damage": 564,
+            "combo": 3
+          }
+        ],
+        "inputLog": [],
+        "bufferFrames": 6
+      }
+    },
+    {
+      "name": "Holding G does not advance subsequent moves automatically",
+      "pass": true,
+      "detail": {
+        "cursor": 1,
+        "logs": 1,
+        "mode": "practice",
+        "status": "running"
+      }
+    },
+    {
+      "name": "Typing G in the title is not interpreted as gameplay",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "Single-step advances exactly one simulation tick even when paused",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Unsupported super sources cannot be selected as custom-cancel origins",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Visible edge editor commits actual JSON rules",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Edge deletion updates the saved asset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Desktop studio has no horizontal overflow or non-finite SVG",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "finite": true
+      }
+    },
+    {
+      "name": "Return home closes composer and pauses its fight",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Touch action button requests the first real practice step",
+      "pass": true,
+      "detail": {
+        "cursor": 1,
+        "mode": "practice",
+        "touch": 1,
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "390px touch layout has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "cursor": 1,
+        "mode": "practice",
+        "touch": 1,
+        "width": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "name": "Touch pause prevents ongoing simulation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No unhandled scripts in desktop and touch interaction",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Chromium desktop + 390px touch emulation, not a true phone FPS claim."
+}

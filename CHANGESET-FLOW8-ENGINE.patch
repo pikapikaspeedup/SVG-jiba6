@@ -1,0 +1,1004 @@
+--- a/OPEN-ME.html
++++ b/OPEN-ME.html
+@@ -1,3 +1,3 @@
+-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 07 · 打开游戏</title><style>
++<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 08 · 打开游戏</title><style>
+ :root{color-scheme:dark;--bg:#141d20;--panel:#20332e;--ink:#e9e6d8;--muted:#a2b2a5;--edge:#40594c;--accent:#f2b882}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.8}main{max-width:1120px;margin:auto;padding:54px 28px 70px}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--edge)}.brand{font-size:26px;font-weight:800}.tag{font-size:12px;letter-spacing:.18em;color:var(--accent)}h1{font-size:clamp(32px,6vw,64px);line-height:1.25;margin:46px 0 20px}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 18px;color:var(--muted)}.lead{max-width:750px;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 40px}a{color:var(--accent);text-decoration:none}.btn{display:inline-block;padding:13px 23px;border:1px solid var(--edge);border-radius:4px;font-weight:600}.primary{background:var(--accent);color:#1c2524}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:24px;background:var(--panel);border:1px solid var(--edge);border-radius:5px}.number{font-size:12px;color:var(--accent);letter-spacing:.2em}.card p{font-size:14px;margin:0}.note{padding:24px;border-left:3px solid var(--accent);margin:32px 0;background:#1d2a29}.note strong{color:var(--ink)}code{color:var(--ink);overflow-wrap:anywhere;font-size:.94em}.foot{border-top:1px solid var(--edge);padding-top:26px;margin-top:34px;font-size:13px;color:var(--muted)}@media(max-width:740px){main{padding:25px 18px}.grid{grid-template-columns:1fr}header{align-items:flex-start;gap:12px}.tag{max-width:190px;text-align:right}.actions{margin-bottom:25px}.card{padding:20px}}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+-</style></head><body><main><header><div class="brand">INK / FLOW <sup>07</sup></div><div class="tag">RHYTHM &amp; FINITE CANCEL GRAPH</div></header><div class="tag" style="margin-top:38px">连得自由，打得有分量。</div><h1>让接招，有更多选择。</h1><p class="lead">统一动作时间、命中停顿与输入缓冲。有限的多出口连携，真实的路线编排与验证；舞的六条新路线已经接入实战。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow7/flow7-playback.mp4">观看 19 秒对照</a></div><div class="grid"><section class="card"><div class="number">01 / COMPOSE</div><h2>自由连段与节奏</h2><p>从游戏首页进入同名入口。先试「扇舞·重击衔接」的零能量 3 HIT，再看「忍步·仇樱收束」的 12 HIT。验证模式是真实出招和命中，不是脚本扣血。</p></section><section class="card"><div class="number">02 / FEEL</div><h2>调强弱拍，也能整体慢放</h2><p>默认「重心节奏 · 1.00×」。需要更从容时选择 0.85×，两位角色一起降速。停顿风格不是速度倍率，也不标榜官方游戏的帧数据。</p></section><section class="card"><div class="number">03 / PRACTICE</div><h2>每一次输入都有依据</h2><p>G 键或触摸按钮每次只请求下一步。0F／3F／6F 教学窗口可选，界面解释命中确认、冻结、资源、取消窗口和额外连携上限。</p></section></div><section class="note"><strong>先保留旧工程，再体验新版资产。</strong><p>v7 使用独立存储，不自动覆盖 v6。旧动作整份导入可能覆盖新增连携规则；浏览器提示不能存储时，关闭前导出工程或游戏 HTML。玩家版隐藏编辑入口，不是权限隔离。</p><p style="margin:0">文件名仍保留原来的 <code>INK-Street-Fighter-6.html</code> 构建路径，页面与内嵌引擎已经是 FLOW 07。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow7.py</code><br>完整使用说明：README.md · 引擎合同：docs/FLOW7-ENGINE.md · 本轮验收：TEST-REPORT-FLOW7.md<br>非官方 SVG 同人格斗娱乐作品。2.5D 表现、手机视口模拟；不承诺官方节奏等价或任意设备帧率。</div></main></body></html>
+\ No newline at end of file
++</style></head><body><main><header><div class="brand">INK / FLOW <sup>08</sup></div><div class="tag">RESPONSE &amp; SOLVED POSE REPLAY</div></header><div class="tag" style="margin-top:38px">动作接续，细节可复现。</div><h1>每次落地，都有回应。</h1><p class="lead">统一运动采样，接续落地、受击和起身。录下真正的实战姿态，逐帧查看、导出和分享；保留既有自由连段与节奏工坊。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow8/flow8-comparison.mp4">观看原始 v7 / v8 对照</a></div><div class="grid"><section class="card"><div class="number">01 / COMPOSE</div><h2>先看实战动作回放</h2><p>首页进入「打开实战动作回放」，生成跳跃或真实扫腿场景。观察落地、倒地和起身，拖动到小数帧；不是预制姿势轮播。</p></section><section class="card"><div class="number">02 / FEEL</div><h2>调强弱拍，也能整体慢放</h2><p>默认「重心节奏 · 1.00×」。需要更从容时选择 0.85×，两位角色一起降速。停顿风格不是速度倍率，也不标榜官方游戏的帧数据。</p></section><section class="card"><div class="number">03 / PRACTICE</div><h2>记录自己的连段</h2><p>在对战中点击「录制实战姿态」，完成操作后再次点击查看。保存最近 600 模拟步，逐帧、倒拖、事件定位和独立 JSON 导入导出。</p></section></div><section class="note"><strong>先保留旧工程，再体验新版资产。</strong><p>v8 使用独立存储，不自动覆盖 v7。旧工程导入会替换同名资产，请先备份；浏览器提示不能存储时，关闭前导出工程或游戏 HTML。玩家版隐藏编辑入口，不是权限隔离。</p><p style="margin:0">文件名仍保留原来的 <code>INK-Street-Fighter-6.html</code> 构建路径，页面与内嵌引擎已经是 FLOW 08。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow8.py</code><br>完整使用说明：README.md · 引擎合同：docs/FLOW8-ENGINE.md · 本轮验收：TEST-REPORT-FLOW8.md<br>非官方 SVG 同人格斗娱乐作品。2.5D 表现、手机视口模拟；不承诺官方节奏等价或任意设备帧率。</div></main></body></html>
+\ No newline at end of file
+--- a/README-FLOW.md
++++ b/README-FLOW.md
+@@ -1,3 +1,3 @@
+-# 当前版本 FLOW 07
++# FLOW 08
+ 
+-打开根目录 README.md 和 OPEN-ME.html。新引擎说明为 docs/FLOW7-ENGINE.md，新验收为 TEST-REPORT-FLOW7.md；FLOW 04/05/06 文档与 qa 记录仅供历史对照。
++当前版本说明请先阅读 `README.md`、`docs/FLOW8-ENGINE.md` 和 `TEST-REPORT-FLOW8.md`。旧版本说明保留在 legacy 与相应版本文档中，不代表本轮验收。
+--- a/README.md
++++ b/README.md
+@@ -1,79 +1,60 @@
+-# INK FLOW 07 · 节奏与连段引擎
++# INK FLOW 08 · 动作响应与实战姿态回放
+ 
+-本版基于用户交付的 **FLOW 06 连续骨架版**，将命中停顿、取消时钟、输入缓冲和动作交接接入实际战斗，并加入可编辑的有限连携规则。不是单纯加速播放已有连段，也不是靠无限资源、延长受击硬直来凑命中数。
++基于用户提供的 FLOW 07，继续修复实际运行中的动作与特效问题。本版没有新增伤害、判定、硬直或免费资源，也没有再新增一批预制连段：707 份既有动作／模型／骨架／连段 JSON 与 v7 逐字节一致，其中包含 690 份动作和 22 条路线。新代码处理的是同一招式在显示帧之间如何运动、状态变化时怎样接续，以及场景特效如何共享暂停和冻结。
+ 
+-## 先体验
++## 打开与体验
+ 
+-解压后打开 **OPEN-ME.html**，或直接打开 **dist/INK-Street-Fighter-6.html**。文件名中的 `6` 保留原构建路径；页面内版本是 **FLOW 07 / 7.0.0**。玩家版是 `dist/INK-Street-Fighter-6-Player.html`。两者都是内嵌脚本、SVG、场景和动作资产的独立 HTML，不需要 npm、素材服务器或联网字体。
++解压后打开 `OPEN-ME.html`，或直接打开 `dist/INK-Street-Fighter-6.html`。玩家版为 `dist/INK-Street-Fighter-6-Player.html`。文件名中的 6 是延续的构建路径，内嵌版本为 `8.0.0-ink-response`。两份 HTML 均内嵌运行脚本、SVG 和资产，不需要 npm、联网字体或外部素材服务。
+ 
+-首页进入 **「自由连段与节奏」**。先播放默认的 **「不知火舞 / 忍步·仇樱收束」**：蹲中拳 → 中脚 → 重拳 → OD 必杀忍蜂 → SA3。它在角落、168 起手距离、2 格斗气／3 格超级能量下形成 **12 HIT / 3640 伤害**。再试 **「扇舞·重击衔接」**：中拳 → 重拳 → 轻龙炎舞，零起手能量，**3 HIT / 1776 伤害**。这些是本作品规则下的路线，不是官方招式帧表的复刻。
++先从首页进入 **「打开实战动作回放」**。选择「跳跃 → 落地 → 缓冲」，点击「运行并记录」，将时间轴拖到约 48–60F；再选择「真实扫腿 → 倒地 → 起身」，看接触事件、倒地和起身。场景按钮会重新建立训练对战，并通过真实输入、真实命中运行；不是仅仅摆好几张姿势。
+ 
+-需要更从容的手感时，将顶部设为 **重心节奏 + 0.85× 舒缓 + 拓展连携**。默认仍为 1.00×；停顿风格和全局速度是独立设置，两位角色同时受速度影响，招式启动／持续／收招的动作帧数不变。训练的其他慢放工具若同时启用，会在全局速度上叠加，比较速度时应将其他慢放恢复为 1×。
++普通对战中，点击 **「录制实战姿态」**，操作自己的招式，再点一次停止并查看。最多保留最近 **600 个模拟步**，包括命中定格；1× 下名义上约 10 秒。时间轴支持小数帧、倒拖、±1F、事件书签和 0.25×／0.5×／1× 回放。方向键逐帧，Shift＋方向键移动十帧，Esc 关闭并恢复打开前的暂停状态；生成了新的训练场景时则保持暂停，避免自动接着打。
+ 
+-**验证连段**使用真实出招、真实资源扣除和命中判定。**G 键跟练**每次只请求一步，支持 0F／3F／6F 提前窗口；长按 G 不会持续代打。手机宽度下可以点“发动当前一步”。实战输入缓冲的 3F／6F／9F／12F 与 G 键教学窗口是两个不同参数。
++导出的是已解算的姿态 JSON，包含两位角色、骨架、装扮模型、关节角、发辫／衣带等附件姿态与事件。对方可在本版的同一入口导入查看。`qa/flow8/sample-knockdown-replay.json` 是实际扫腿后的示例。**这不是输入重演、录像或回滚存档；不回放音频、粒子和判定框，也不重新计算伤害。**
+ 
+-## 这次变化
++## 这轮变化
+ 
+-**同一个时间口径。** 取消窗口、舞的追投／空中追击、派生和输入缓冲按可推进的动作帧计时。命中定格不再吃掉本来属于玩家的取消窗口。界面和真实执行共用 `decideMove`，会区分等待命中、定格、资源不足、取消窗口结束、空地限制、连携次数上限等原因；查询本身不扣资源。
++**运动采样。** v7 的攻击时间已有插值，但行走周期、跳跃速度、落地时间和部分附件仍在整步切换。现在在模拟侧保存上一完整状态，让身体、附件及投射物在同一小数帧位置取样。不是插值完后再去改战斗数据。跨状态、命中定格、暂停和双人投技的特殊约束不会被强行混为普通移动。
+ 
+-**有限、多出口的连携。** 35 份普通技资产新增 `transitions` 元数据，8 位角色的部分轻攻击支持有限衔接，舞另有中拳／脚技接重击等出口。额外连携必须命中或接触确认，默认最多 2 次；编辑器允许 1–3 次上限和 0–20 动作帧窗口，不支持挥空取消。原有普通技接必杀、必杀接超级必杀等规则仍保留；额外规则是“新增出口”，不是重写或封禁已有出口。超级必杀和投技不能作为额外连携的起点。
++**状态交接。** 普通收招之外，接入行走／停步、起跳、落地、受击、防御、倒地与起身。交接来源是当时真实求值的姿势与速度，不读取“上一次恰好绘制的姿势”。受击的躯干反馈立即发生，手臂和武器短时接续，避免为追求平滑而让中招显得迟钝。规则换边依然镜像；没有用缩放穿过零来假装转身。
+ 
+-**真实的时间连续性修复。** 命中停顿结束时，渲染不再从已经显示的动作帧退回前一帧做插值。普通地面动作自然收招时，也会接管最终的关节姿势与速度，再平滑交接到待机；舞的 OD 忍蜂反弹走正式状态生命周期。取消和自然收招的连续性都有实际关节采样，不能由此推出落地、受击、抓投或任意极端编辑也都连续。
++**落地反馈。** 着地的竖直速度产生有界缓冲和附件响应，普通身体压缩最多 7 个角色局部单位、附件信号最多 22 个可行动作帧。发辫、衣带采用可随机访问的阻尼响应。招式开始时交接这些表现，不增加落地硬直，不把回弹带进下一招攻击判定。
+ 
+-**打击分拍而非堆光。** 轻／中／重击、超级必杀起手／中间击／终结击采用不同定格。新命中形状区分防御、拳击、踢击、扇切、上挑、终结击；接触核心、2F 后续切痕、3F 后碎屑共用冻结时钟。中间连击减少烟雾堆叠，终结击有独立收束。沿用有上限的粒子与拖尾池，支持清爽和关闭特效。
++**场景特效。** 倒地地面冲击纳入统一池和开关；残影来自真实解算身体与附件，而非不再更新的旧部件 DOM；最多保留六个复用残影渲染器。镜头震动按世界特效时钟采样，暂停和命中停顿不会仍按现实时间晃动。清爽模式不生成残影，关闭特效会立即隐藏已有残影；作为攻击实体的投射物本体不会因关闭装饰特效而消失。
+ 
+-## 自己编排与保存
++## 保留的工具与节奏
+ 
+-右侧选择角色和招式，添加、删除、上移／下移步骤；“命中”是上一招至少命中几次才能继续，“间隔”是从上一招开始计算的动作帧间隔。起手资源、距离、角落和朝向在“起手资源与距离”内设置。路线最多 48 步。
++v7 的「自由连段与节奏」、G 键单步练习、有限取消规则、舞的六条拓展路线、48 步编排、保存副本和独立 HTML 导出均保留。希望从容观察时仍可选择 **重心节奏＋0.85×**，但 v8 没有悄悄降低默认速度；默认 1×，逻辑仍为 60 Hz。没有标定官方游戏的真实招式节奏，不声称与官方逐帧等价。回放速度和对战速度是两个不同控制。
+ 
+-保存创建个人副本，不覆盖内置路线。可导出当前路线 JSON、整个路线库和本次真实运行记录。原 16 条路线逐项保留，新加舞的 6 条路线，共 22 条。路线只能证明在其指定起手资源、距离和朝向下是否成立，不保证换到中场、不同距离或任意木桩状态仍成立。
++回放右侧的三个开关影响后续实际模拟，不会重算已录数据。需要 A/B 比较时，先改设置，再重新运行同一场景。独立 HTML 导出携带这些设置；导出的 JSON 则保存已经得到的姿态。
+ 
+-创作版展开“创作者 · 编辑有限连携规则”，编辑实际动作 JSON 的 `transitions`，不是只更改演示脚本。玩家版隐藏这个编辑入口，但保留路线编排、练习和节奏选择；它只是 UI 裁剪，不是安全隔离。
++## 保存、迁移与离线
+ 
+-导出独立创作版或玩家版 HTML，会同时带上动作修改、路线库和节奏设置。重新打开导出的 HTML，再次导出，仍保留这些内容。工程／路线 JSON 的导入会校验后一次性提交，未知招式、越界窗口、重复规则等不会形成半导入状态。
++v8 使用独立的 `ink-flow-sf6-v8` 存储，不自动覆盖 v7。旧工程先导出备份。既有动作、模型、骨架和连段格式继续兼容，直接导入即可；导入旧资产仍会以用户文件替换同名资产。姿态回放单独通过「导入回放」读取，不要拿它当动作工程导入。
+ 
+-## 节奏是否比官方更快
++浏览器限制本地存储时，界面会提示暂存，此时请在关闭前导出工程／HTML／回放。玩家版隐藏编辑入口，不是安全权限隔离。本次环境阻止 `file://`，测试使用完整 HTML 字节独立打开；已实际执行浏览器文件上传和下载，但未替用户验证原生目录授权。
+ 
+-v6 已是固定 **60 Hz** 逻辑，没有发现“显示器刷新越快、逻辑就越快”的推进方式。这里的 60 Hz 是模拟步频，不是任何设备一定达到 60 FPS 的承诺。
++## 构建与检查
+ 
+-但 60 Hz 不代表手感相同。v6 普通轻／中／重击定格为 **3／5／7 帧**，本版重心预设为 **7／9／12 帧**；超级必杀中间击反而更紧凑，避免每击都拖慢。旧“舞·14 HIT”从首次请求到最后要求命中，v6 与本版 v6 停顿预设都是 **262 个模拟步（4.367 秒的 1× 标尺）**，重心预设是 **270 步（4.500 秒）**。最后一击后的定格与收招不在这个统计口径内。
+-
+-因此，重心预设改变的是强弱拍，不是所有招式统一变慢。需要整体更慢时用 0.85×。本轮没有同版本官方实机逐帧基准，不能断言比官方快多少，也不把某个预设标为“官方速度”。
+-
+-## 构建与验证
+-
+-构建只需 Python 3.10+ 标准库：
+-
+-```sh
++```text
+ python tools/build_forge.py
++python tools/check_flow8.py
+ ```
+ 
+-测试需要 Node、`requirements-dev.txt` 中的 Python 包和已安装 Chromium／Chrome。Windows PowerShell 可指定：
++构建只使用 Python 标准库；浏览器运行无外部依赖。源代码语法检查在安装 Node 时执行。自动化浏览器测试需要 Python Playwright 和 Chromium，报告中的环境与此相同。
+ 
+-```powershell
+-$env:PYTHONUTF8 = "1"
+-$env:INK_CHROMIUM = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+-python tools/check_flow7.py
++```text
++python tools/check_flow8.py --run
++python tests/flow8/final-regressions.py
++python tests/flow8/endurance.py --seconds 1500
++python tests/flow8/capture-comparison.py
++python tools/check_flow8.py --evidence --require-soak
+ ```
+ 
+-持续运行、受控对照视频及验收单独执行；视频还需 ffmpeg。不要在内存不足的机器上同时开多组浏览器任务：
++`--evidence` 只是核对已存在的结果及其 HTML 指纹，不会冒充重新执行测试。所有本轮证据在 `qa/flow8/`；`qa/flow8/history/` 保留候选失败及短测记录。`qa/flow7` 等是历史资料，不能当成本轮通过数。原始 v7 HTML 在 `legacy/flow7/baseline-v7.html`，对照视频两侧分别运行各自真实版本，不是把新版关掉某个开关充当旧版。
+ 
+-```sh
+-python tests/flow7/endurance.py --seconds 1500
+-python tests/flow7/capture-playback.py
+-python tools/check_flow7.py --report-only --require-soak --require-playback
+-python tools/package_flow7.py ..
+-python tools/verify_flow7_package.py ../INK-Flow-7-Rhythm-Source.zip
+-```
++## 文档与边界
+ 
+-`--report-only` 仅验证已有结果的指纹，不会补跑缺失或过期测试。默认 endurance 只有 60 秒；显式传入 1500 才是 25 分钟实时时长。`check_flow6.py` 等历史入口不是本版验收入口。`qa/flow4`、`qa/flow5`、`qa/flow6` 是历史证据；本轮证据在 **qa/flow7**。
++引擎合同：`docs/FLOW8-ENGINE.md`；迭代目标：`docs/FLOW8-PLAN.md`；实际验收：`TEST-REPORT-FLOW8.md`；逐行源码变化：`CHANGESET-FLOW8-ENGINE.patch`。
+ 
+-完整说明见 **docs/FLOW7-ENGINE.md**、**TEST-REPORT-FLOW7.md**。`CHANGESET-FLOW7-ENGINE.patch` 对照真实 v6 源码，包含运行时代码、界面与本次连携资产，不能用它替代完整游戏包。`tests/fixtures/flow6-asset-signatures.json` 来自原始 v6 ZIP，审计确认所有 690 份动作的既有内容、轨道、判定配置均未改动；35 份只新增连携元数据。
+-
+-## 迁移和边界
+-
+-v7 使用独立存储 `ink-flow-sf6-v7`／`ink-flow-player-7`，不自动覆盖 v6。先备份旧工程，再有选择地导入。旧动作是整份覆盖，可能覆盖本版新增连携字段；系统不会偷偷向个人旧动作注入新规则。浏览器不允许存储时，关闭前务必导出。
+-
+-本作品仍是非官方 **2.5D SVG**，不是完整 3D 人体、联网对战或专业动画素材重制。本轮没有重画全部角色，也没有解决任意转身、极端姿势、服装穿插或脚锁问题。已有 v6 骨架与连续曲面继续使用；本轮重点修复动作衔接的时序，并增加可玩、可编辑的连携。
+-
+-本环境原生 `file://` 导航仍被管理员策略阻止；独立 HTML 检查使用完整字节加载，不等于测试了你本机的文件夹授权和持久化授权。手机是视口与触摸模拟，不是真机帧率保证。演示视频是受控 60 Hz 真实战斗采样、输出 30 FPS 的无声对照，不是性能录像。
++这是非官方 2.5D SVG 同人格斗娱乐作品，不是完整 3D 人体或布料碰撞。双人投技继续使用原有握持求解器，不混入独立状态过渡；换边仍离散镜像，极端自定义轨道也没有“全部自然”的保证。手机宽度和触摸仅做模拟，不承诺真机帧率。
+--- a/VERSION.json
++++ b/VERSION.json
+@@ -1,11 +1,11 @@
+ {
+-  "name": "INK FLOW · Rhythm & Finite Cancel Graph",
+-  "version": "7.0.0",
+-  "date": "2026-10-04",
++  "name": "INK FLOW · Response & Solved Pose Replay",
++  "version": "8.0.0",
++  "date": "2026-10-05",
+   "entry": "dist/INK-Street-Fighter-6.html",
+   "playerEntry": "dist/INK-Street-Fighter-6-Player.html",
+   "build": "python tools/build_forge.py",
+-  "validate": "python tools/check_flow7.py",
++  "validate": "python tools/check_flow8.py",
+   "sourceBaseline": {
+     "repository": "pikapikaspeedup/SVG-jiba6",
+     "commit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+@@ -13,8 +13,8 @@
+     "archivedAt": "legacy/game-flow3.js"
+   },
+   "inputArchive": {
+-    "name": "INK-Flow-6-Continuity-Source.zip",
+-    "sha256": "8e0e8b3d81613300603a3bc38fc7f5b0efbb012095401607be1a1ea90b65fa23"
++    "name": "INK-Flow-7-Rhythm-Source.zip",
++    "sha256": "098cc759ac84aec70cc9e442823b9b6b937158472947500c672d7b8631161d77"
+   },
+   "githubWritten": false,
+   "scope": "Non-official 2.5D SVG fan game. No official frame-data equivalence or real-device FPS promise.",
+@@ -23,20 +23,20 @@
+     "runtimeSourcePatching": false,
+     "rulesVisualSeparation": true,
+     "inheritsGeometryFrom": "FLOW 06",
+-    "combat": "src/ink/combat-flow.js",
+-    "input": "src/ink/input.js",
+-    "articulationHandoff": "src/ink/runtime.js",
+-    "impacts": "src/ink/impact-feedback.js",
+-    "comboStudio": "forge/rhythm.js",
++    "inheritsCombatFrom": "FLOW 07",
++    "presentationClock": "src/ink/presentation-clock.js",
++    "stateTransitions": "src/ink/state-transitions.js",
++    "sceneFeedback": "src/ink/scene-feedback.js",
++    "poseReplay": "src/ink/pose-replay.js",
++    "reviewer": "forge/response.js",
+     "loopHz": 60,
+-    "defaultRhythm": "weighted",
+-    "defaultSpeed": 1,
+-    "extraRules": "confirmed and bounded",
+-    "newComboRoutes": 6,
+-    "existingMoves": 690,
+-    "transitionOnlyAssetUpdates": 35
++    "replayCapacity": 600,
++    "replayMeaning": "Solved visual poses, not input resimulation",
++    "afterimageCapacity": 6,
++    "moveAssetChanges": 0,
++    "comboRouteChanges": 0
+   },
+-  "archiveQA": "qa/flow7/validation.json",
+-  "guide": "docs/FLOW7-ENGINE.md",
+-  "report": "TEST-REPORT-FLOW7.md"
++  "archiveQA": "qa/flow8/validation.json",
++  "guide": "docs/FLOW8-ENGINE.md",
++  "report": "TEST-REPORT-FLOW8.md"
+ }
+--- a/assets/ink/project.json
++++ b/assets/ink/project.json
+@@ -1,8 +1,8 @@
+ {
+   "schema": "ink-project",
+   "version": 2,
+-  "name": "INK FLOW 07 / Rhythm & Finite Cancel Graph",
+-  "build": "7.0.0",
++  "name": "INK FLOW 08 / Response & Solved Pose Replay",
++  "build": "8.0.0",
+   "baseCommit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+   "rootPolicy": "combat",
+   "characters": [
+--- /dev/null
++++ b/docs/FLOW8-ENGINE.md
+@@ -0,0 +1,59 @@
++# FLOW 08 · 动作响应与姿态回放合同
++
++## 真实调用路径
++
++`simulate()` 包装原有规则步 `simulateCore()`；只有真实 tick 前进才允许记录姿态。原有 60 Hz 规则仍独立运行。
++
++可行动作步开始时 `Presentation.begin` 保存两个角色的前态并推进角色表现时钟；投射物的前位置／年龄则在 `updateFX` 之前保存。输入和移动、状态切换、碰撞与投射物更新沿原规则执行。`Presentation.finish` 记录实际运动通道差分，供下一次切换估计出站速度。结束后 `Replay.capture` 可选择记录完整的已解算姿态。
++
++绘制时 `Presentation.view` 为当前对象创建只读用途的浅派生视图：插值 y、vy、walkT、landT、stateAge、jumpPre、表现时钟、攻击时间和状态时间。不同状态标识、攻击实例或方向不可强行插值。投技保持原有握持约束；命中、暂停及冻结出口按既有精确显示帧处理。
++
++同一视图贯穿 `desiredPose → Runtime.visual → visualRig → Game.update → Renderer`，特别是附件求值也读视图，不能重新读整数帧实体。渲染可以更新 DOM 缓存，但不能改变规则时间、物理根、生命、资源、取消记录或输入队列。
++
++## 三种姿态所有权
++
++规则姿态用于碰撞和正式行动条件。视觉姿态加入动作图、合法取消桥、落地缓冲与状态桥。记录姿态再固化已经求出的源空间关节角，供检视恢复，而不是导入后重新猜测肘膝朝向。
++
++`Articulation.attachSnapshot` 通过 WeakMap 为特定姿势携带源关节角；恢复时正向运动学使用该角度和录制时骨架长度，再经过既有统一 2.5D 投影。普通游戏路径不因回放功能变成读快照。原矩阵、蒙皮与战斗碰撞求解继续分离。
++
++## 状态切换与落地
++
++`StateTransitions.capture(f)` 求值当前真实姿态，并沿上一模拟步通道速度回看 0.25F，获得姿势差分、关节差分和附件结果；它不读取 `f.pose`。`Runtime.stateChange` 在正式状态改变前取源状态。派生的行走、跳跃、落地等 clip 变化由 `State.tick` 接管。
++
++交接默认最长 2–8 个可行动作帧；受击／防御／眩晕的躯干通道立即切换，肢体与武器仍做短桥。常用落地桥 4F，倒地 6F，起身 7F。此处是表现长度，不是硬直长度。规则切换方向不会插值成 scale=0；双人投技不走单人状态桥。
++
++落地事件保存实际入地速度、表现时间和是否倒地；速度上界 40，只供表现。普通着地身体压缩使用解析阻尼响应，最大 7 个局部坐标单位，22F 后不再生效；新攻击不叠加这段身体压缩。发辫／衣带逐段延迟响应并限幅；清爽模式和关闭弹簧时不施加新增附件冲量。倒地不会被当作普通脚落地压缩。
++
++新攻击的出站附件取完整表现结果，随后清理旧落地事件，避免已承接的冲量又加第二遍。
++
++## 场景特效
++
++`SceneFeedback.ground` 使用既有有界世界池；关闭时返回“已处理”，不落回旧粒子分支。清爽模式保留低透明度接触圈，不发扬尘／碎屑。其物理落地与命中不依赖是否成功分配粒子。
++
++`SceneFeedback.ghost` 获取 `visualPose/visualRig/Runtime.presentation`，将真实身体绘制到最多六个复用的 silhouette Renderer。过载丢弃装饰残影并计数，不扩大池、不阻塞规则。寿命按世界 VFX 时间算 15F；关闭或清爽模式立即隐藏既有残影。重置和资产切换清理其 DOM。旧 fallback 保留给关闭 INK 渲染器时的兼容路径，正常游戏不会使用旧分段 DOM 剪影。
++
++`SceneFeedback.camera` 对世界时间采样有限幅度的确定性位移；暂停和命中冻结期间返回相同偏移。系统减弱动态、清爽或关闭特效时返回零。它不是摄像机实体碰撞系统。投射物本体仍可见，其位置和可旋转扇面按同一 alpha 绘制；关闭装饰特效不隐藏攻击实体。
++
++世界粒子 320、拖尾 64、每角色局部粒子 144、残影渲染器 6；状态事件 160，回放事件 240，回放帧 600。实际长期观测见持续运行报告。
++
++## 姿态回放 API
++
++`INK.Replay.begin(title)` 显式开启；`stop()` 停止但保留数据；`export()` 返回独立 JSON 对象；`parse(text)` 按 8 MB、schema 和有限数值约束验证；`load(data)` 先验证再替换，失败不清掉旧记录；`sample(index)` 返回只读用途快照，允许小数帧；`clear()` 清空。
++
++JSON 顶层为 `version=1`、`kind=ink-pose-replay`、`hz=60`、title、engine、characters、frames、events。每帧包含 tick、action、frozen 与两个 actor；actor 保存人物身份、位置、方向、尺度、状态／招式时间、完整基础姿态通道、四肢两段关节角、附件姿态和记录时生命／资源／连击。characters 内嵌模型与骨架。事件类型仅 state、land、facing、contact。
++
++整数采样精确恢复记录的解算关节。小数帧仅在同一人物、同一方向内插值；角度走最短弧，方向跳变离散显示，状态标签采用前一快照。导入时不允许同一 actor 槽位中途变成人物 B，不接受脚本、SVG、URL、未知顶层字段、原型污染键、非有限值、缺少的基本通道或倒序时间。
++
++回放帧从模拟步骤记录，包括 hitstop，不依赖当时显示器抽了多少次样。它不是输入回放，也不是全世界回滚；不保存粒子、声音、碰撞框或 AI 内部状态。不能把导入的 HP 数值写回对战。
++
++## UI 与持久化
++
++`INKResponseLab.open/close/run/load/seek/paint/record` 为界面 API。run 只允许 jump、walk、knockdown、combo 四个检查场景，通过真实训练步骤生成记录。combo 运行当前自由连段草稿，并允许按真实返回报错，不补血、改伤害或伪造命中。
++
++回放打开时暂停原战斗。关闭时仅在战斗对象与屏幕仍是原对象时恢复先前状态；改成新的训练场景后保持暂停。Esc 与关闭按钮走相同显式恢复路径。录制按钮是开始／停止查看，不是默认永远录制。
++
++三项布尔设置 `interpolate/stateBlends/landingResponse` 原子验证；独立 HTML 的 portable snapshot 保存它们，浏览器可用时另存 `${store.id}/response8`。已有回放不因开关重算。
++
++## 尚未覆盖的质量目标
++
++脚接触仍是有界约束，不是全身动力学或永久锁脚；严格的关节速度连续和极端姿态自然度没有普遍证明。规则换边仍镜像，双人握持不重写。投射物判定起点保留原战斗求解，未来可独立增强视觉发射挂点到世界弹体的短程交接。没有全布料自碰撞、真实 3D 遮挡或官方动作／节奏标定。
+--- /dev/null
++++ b/docs/FLOW8-PLAN.md
+@@ -0,0 +1,35 @@
++# FLOW 08 迭代计划与验收口径
++
++本轮从用户提供的 v7 源码和原始 HTML 开始，目标是修复“动作衔接能成立，但播放与响应仍不连续”的运行缺陷。不能用粒子数量、模块数量或连段是否成功代替动作质量证据。
++
++## 目标一：同一模拟步内，人物和投射物采用一致时间
++
++检查行走、跳跃、落地及附件，而不只检查攻击关键帧。落地速度、行走周期、角色根位置、招式时间和附件应同相位取样；暂停、命中定格不得继续运动。验证方式是五个显示分数取样、渲染前后物理数据对照，以及八角色双方向重复取样。原本刻意保持的起跳姿势不应被人为制造摆动。
++
++实现：`presentation-clock.js`，正式 `simulateCore`、`renderFighter`、`Game.update` 接入；投射物位置和扇面旋转共用分数，投射物碰撞状态不变。
++
++## 目标二：把落地、受击和倒地衔接纳入实际生命周期
++
++不再把最后渲染缓存当作动画源状态。切换时获取真实姿势、关节角和速度，短时交接；受击躯干保留立即反馈，附件不能等整个硬直结束才响应。着地速度可以影响表现，但不能影响真实位置、落地锁、命中框、攻击恢复和资源。
++
++实现：`state-transitions.js`；统一时钟上的姿势／角速度交接；有界的落地身体响应和附件阻尼响应。投技握持、规则换向等约束明确分流，不宣称已实现物理人体或所有状态零误差。
++
++## 目标三：场景特效真正服从开关、冻结和容量边界
++
++用真实解算后的整个人物生成残影；地面冲击和镜头不能留在旧生命周期里。验证关闭特效、清爽模式、暂停、定格、重置和持续出招。容量检查包含地面池、六个残影渲染器与历史事件，不只数火星。
++
++实现：`scene-feedback.js`，并接入正式 `ghost`、`groundImpact`、`artCameraTransform` 和世界 VFX 的 render/clear 路径。
++
++## 目标四：给爱好者一个可以复现问题的实战姿态记录
++
++只看预制演武不足以判断连段接续。记录真实对战的两个人物和已求解的关节角，让录制、导出、导入、倒拖、整数帧重建可验证。容量与导入格式必须受限。不得称作输入回放、录像或战斗重演。
++
++实现：`pose-replay.js`、`forge/response.js/css`；600 模拟步，事件书签，独立装扮／骨架与已解算姿态；严格 JSON 验证、8 MB 限制和原子失败；创作版与玩家版均可用。
++
++## 不扩大范围
++
++保留所有 690 个动作资产和 22 条路线；不新增伤害、碰撞框、硬直、取消特权或免费资源。继承 v7 的节奏设置，不声称官方等速。不接服务器、不增加外部依赖、不写远端仓库。
++
++## 最终验收
++
++按最终 HTML 指纹绑定新专项、原回归、独立导出、响应式 UI、原始 v7 对照及至少 25 分钟实时时钟持续运行。完整保存失败、中止、测试夹具修正和成功记录；最终源码包解压后重新构建，两份 HTML 应逐字节一致。最终数值以 `TEST-REPORT-FLOW8.md` 和 `qa/flow8/validation.json` 为准。
+--- /dev/null
++++ b/forge/response.css
+@@ -0,0 +1,4 @@
++.r8-launch{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px 34px;margin:20px 0 30px;background:#dfe8d8;border:1px solid #aebfa5;color:#304d3e}.r8-launch span,.r8-kicker{font:10px/1.5 monospace;letter-spacing:2px;color:#7b947e}.r8-launch h3{font-size:23px!important;font-weight:500;margin:9px 0!important}.r8-launch p{font-size:12px;line-height:1.8;margin:0;color:#5f7565}.r8-launch button{flex-shrink:0}
++#r8-dialog{width:min(1230px,96vw);max-width:96vw;max-height:94vh;padding:0;background:#f0eee3;border:1px solid #849781;border-radius:10px;color:#304737;box-shadow:0 25px 100px #07120daf;overflow:auto}#r8-dialog::backdrop{background:#101c18bb;backdrop-filter:blur(6px)}#r8-dialog header{display:flex;justify-content:space-between;gap:20px;padding:27px 32px 24px;border-bottom:1px solid #cbd2bf;background:#263e34;color:#f2f0e4}#r8-dialog h2{margin:8px 0 9px;font-size:26px;font-weight:500;letter-spacing:1px}#r8-dialog header p{margin:0;font-size:12px;color:#b4c3b1}#r8-close{align-self:start;border:1px solid #657c69!important;color:#e8ecd9!important;background:none!important;font-size:24px!important;min-width:38px;min-height:38px}
++.r8-layout{display:grid;grid-template-columns:minmax(0,1fr) 274px}.r8-main{min-width:0;padding:20px 24px 12px}.r8-stage-head,.r8-state-line{display:flex;justify-content:space-between;gap:14px;font:10px/1.6 monospace;color:#6e806d}.r8-stage-head{padding:0 0 10px}.r8-stage-head span:first-child{font-family:inherit;color:#3c5645}.r8-state-line{padding:9px 0;border-bottom:1px solid #c6d0bd;overflow-wrap:anywhere}#r8-svg{display:block;width:100%;height:auto;border:1px solid #c1cbb6;border-radius:4px}.r8-layout aside{min-width:0;border-left:1px solid #cbd2bf;padding:24px 23px;background:#e8ebdf}#r8-dialog h3{font-size:18px;font-weight:500;margin:9px 0 22px}#r8-dialog label{display:block;font-size:11px;line-height:1.6;color:#4f6754;margin:12px 0}#r8-dialog select{display:block;width:100%;min-height:35px;padding:8px;background:#f5f3e9;color:#334e3a;border:1px solid #b6c5af;border-radius:3px;font-size:11px}#r8-dialog button{padding:9px 12px;min-height:34px;font-size:11px;border:1px solid #a4b89e;border-radius:3px;background:transparent;color:#35533e;cursor:pointer}#r8-dialog .r8-primary{background:#355f47;color:#f1f2e0;border-color:#355f47}#r8-dialog button:focus-visible,#r8-dialog input:focus-visible,#r8-dialog select:focus-visible{outline:3px solid #c98d51;outline-offset:2px}#r8-dialog p{font-size:11px;line-height:1.85;color:#65765e}#r8-dialog details{border-top:1px solid #bfccb5;padding:14px 0}#r8-dialog summary{font-size:11px;cursor:pointer;line-height:1.8}.r8-score{margin:20px 0;display:flex;align-items:baseline;justify-content:space-between}.r8-score strong{font:26px monospace;color:#4f6950}.r8-score span{font:10px monospace;color:#768368}.r8-transport{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:16px 0 8px}.r8-transport label{margin:0!important}.r8-transport select{width:auto!important}.r8-transport strong{margin-left:auto;font:11px monospace;color:#5d715e}#r8-seek{width:100%;accent-color:#476e50;margin:12px 0;cursor:pointer}.r8-bookmarks{display:flex;align-items:center;justify-content:space-between;gap:10px}.r8-bookmarks span{font:10px/1.5 monospace;text-align:center;color:#738066;overflow-wrap:anywhere}.r8-files{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 22px}#r8-events{max-height:210px;overflow:auto;padding-top:10px}#r8-events button{display:block;text-align:left;width:100%;margin:4px 0;font:10px/1.6 monospace;overflow-wrap:anywhere}.r8-limits{border-top:1px solid #bdc8b1;padding-top:13px}#r8-note{min-height:35px;margin:12px 0!important}#r8-note.is-error{color:#a34d3f}
++@media(max-width:780px){.r8-launch{display:block;padding:24px}.r8-launch button{margin-top:16px}#r8-dialog{width:96vw}#r8-dialog header{padding:21px 18px}#r8-dialog h2{font-size:22px}.r8-layout{grid-template-columns:minmax(0,1fr)}.r8-main{padding:16px 12px 8px}.r8-layout aside{border-left:0;border-top:1px solid #cbd2bf;padding:22px}.r8-transport{gap:6px}.r8-transport strong{font-size:10px}.r8-state-line{font-size:8px}.r8-stage-head{font-size:9px}.r8-transport button{padding:8px!important}.r8-bookmarks span{font-size:9px}.r8-bookmarks button{white-space:nowrap}}
+--- /dev/null
++++ b/forge/response.js
+@@ -0,0 +1,52 @@
++/* FLOW 08 — real-simulation pose recorder/reviewer. No scripted damage.
++ * Integer snapshots are exact; subframes interpolate solved joint angles.
++ * Replay does NOT advance combat and deliberately omits particles/hitboxes.
++ */
++'use strict';
++(() => {
++ const $=id=>document.getElementById(id),Q=()=>INK.Replay;let dialog,renderers=[],roots=[],index=0,playing=false,stamp=0,speed=.5,focus,saved,profileKey='',ready=false;
++ const captions={jump:'跳跃 → 落地 → 缓冲回弹',walk:'行走 → 停步 → 后退',knockdown:'真实扫腿 → 倒地 → 起身',combo:'当前自由连段草稿'};
++ function notice(text,error=false){$('r8-note').textContent=text;$('r8-note').classList.toggle('is-error',error);}
++ const guard=fn=>async(...args)=>{try{return await fn(...args);}catch(e){notice(e.message,true);console.error('FLOW08 review:',e);}};
++ function mount(){const key=JSON.stringify(Q().characters);if(key===profileKey&&renderers.length===2)return;renderers.forEach(r=>r.destroy());roots.forEach(r=>r.remove());renderers=[];roots=[];profileKey=key;
++  if(!Q().frames.length)return;for(const f of Q().frames[0].actors){const root=INK.SVG.node('g',{},$('r8-actors'));roots.push(root);renderers.push(new INK.Renderer(root,Q().profile(f.character)));}}
++ function paint(){if(!Q().frames.length){$('r8-empty').style.display='';return;}$('r8-empty').style.display='none';mount();const s=Q().sample(index);for(let i=0;i<2;i++){const f=s.actors[i],profile=Q().profile(f.character),{pose,rig}=INK.PoseFrame.restore(f,profile);
++   roots[i].setAttribute('transform',`translate(${f.x} ${665+f.y}) scale(${f.scale}) scale(${f.dir*(pose.depth||1)} 1) translate(${pose.rootShift||0} ${pose.floor||0}) rotate(${pose.spin||0} 0 -180)`);
++   renderers[i].setMode($('r8-bones').checked?'overlay':'skin');renderers[i].render(pose,{rig,frame:f.frame,secondary:true,motion:f.secondary,expression:f.expression});}
++  $('r8-seek').max=Math.max(0,Q().frames.length-1);$('r8-seek').value=index;$('r8-index').textContent=index.toFixed(2)+' / '+(Q().frames.length-1)+' F';$('r8-title-record').textContent=Q().title;
++  $('r8-time').textContent=((Q().frames.at(-1).tick-Q().frames[0].tick)/60).toFixed(2)+' 秒 / 1× · 60 Hz 记录';$('r8-state-a').textContent=s.actors[0].clip;$('r8-state-b').textContent=s.actors[1].clip;$('r8-phase').textContent=s.frozen?'命中定格／模拟等待':'可行动帧';$('r8-hits').textContent=s.actors[0].combo+' HIT';$('r8-damage').textContent=s.actors[0].damage+' DAMAGE';
++  $('r8-current-event').textContent=Q().events.filter(e=>e.tick<=s.tick).at(-1)?.label||'开始记录';$('r8-play').textContent=playing?'暂停回放':'播放回放';
++ }
++ function events(){const target=$('r8-events');target.replaceChildren();for(const e of Q().events){const b=document.createElement('button');b.textContent=`${e.tick}F · P${e.actor+1} · ${e.label}`;b.onclick=()=>seek(Q().frames.findIndex(f=>f.tick>=e.tick));target.append(b);}if(!Q().events.length){const p=document.createElement('p');p.textContent='此段没有状态／接触事件。';target.append(p);}}
++ function seek(value){if(!Number.isFinite(value))throw TypeError('有效帧位置必需');playing=false;index=INK.clamp(value,0,Math.max(0,Q().frames.length-1));paint();}
++ function jumpEvent(direction){const tick=Q().frames[Math.floor(index)]?.tick||0,events=Q().events.filter(e=>direction>0?e.tick>tick:e.tick<tick),event=direction>0?events[0]:events.at(-1);if(event)seek(Q().frames.findIndex(f=>f.tick>=event.tick));}
++ function load(data){Q().load(data);profileKey='';index=0;events();paint();return Q().frames.length;}
++ async function run(kind=$('r8-scenario').value){if(!Object.hasOwn(captions,kind))throw Error('未知回放场景');playing=false;const A=SVG_FIGHTER,C=INK.Combo;Q().stop();C.stop();await INKForge.route('battle');
++  if(kind==='combo'){const draft=INKRhythmLab.draft;C.start(draft,'demo',{paused:true,side:1});}
++  else {A.start('mai','ryu','training','classic');document.querySelector('#dummy').value='idle';document.querySelector('#infinite').checked=false;document.querySelector('#autohp').checked=false;const[f,d]=A.fighters;f.x=f.px=570;d.x=d.px=kind==='knockdown'?728:1020;f.dir=1;d.dir=-1;}
++  A.state.paused=true;Q().begin(captions[kind]);const f=A.fighters[0];let end=kind==='combo'?560:kind==='knockdown'?175:110;
++  try{for(let n=0;n<end;n++){if(kind==='jump'){if(n===5)f.input.held.add('up');if(n===9)f.input.held.clear();}else if(kind==='walk'){if(n===5)f.input.held.add('right');if(n===35)f.input.held.clear();if(n===55)f.input.held.add('left');if(n===85)f.input.held.clear();}else if(kind==='knockdown'&&n===8)A.move(0,'cHK');
++   A.step();if(kind==='combo'&&C.status==='failed')throw Error('实际连段未成立：'+C.reason);if(kind==='combo'&&C.status==='success'&&end===560)end=Math.min(559,n+70);}}finally{Q().stop();A.state.paused=true;}
++  Q().stop();A.state.paused=true;A.render();profileKey='';index=0;events();paint();notice(kind==='combo'?'已记录真实连段与收招；这里回放已解算的姿态，不重新计算伤害。':'已通过真实训练模拟生成记录。回放窗口不发射粒子，也不改变战斗判定。');return Q().export();
++ }
++ async function open(){focus=document.activeElement;const A=SVG_FIGHTER;saved={paused:A.state.paused,screen:A.state.screen,actor:A.fighters[0]};if(A.state.screen==='battle')A.state.paused=true;Q().stop();playing=false;dialog.showModal();if(!Q().frames.length)await run('jump');else{events();paint();}notice('按 ← / → 逐帧；Shift＋方向键移动 10 帧。实际录制数据，不是预制动画。');$('r8-play').focus();}
++ function restorePause(){playing=false;const prior=saved;saved=null;if(prior&&SVG_FIGHTER.fighters[0]===prior.actor&&SVG_FIGHTER.state.screen===prior.screen)SVG_FIGHTER.state.paused=prior.paused;$('r8-record').textContent='录制实战姿态';focus?.focus();}
++ function close(){if(dialog.open){dialog.close();restorePause();}}
++ function record(){const A=SVG_FIGHTER;if(A.state.screen!=='battle')throw Error('请先进入训练对战');if(Q().recording){Q().stop();return open();}Q().begin('我的实战录制');$('r8-record').textContent='停止并查看录制';INKForge.toast('开始记录实际姿态，保留最近 600 模拟步（1× 约 10 秒）。再次点击查看。');}
++ function init(){if(!globalThis.INKRhythmLab?.ready){requestAnimationFrame(init);return;}if(ready)return;ready=true;
++  const launch=document.createElement('section');launch.className='r8-launch';launch.innerHTML='<div><span>FLOW 08 / MOTION RESPONSE</span><h3>让动作接续，也让问题可复现。</h3><p>落地缓冲 · 受击响应 · 已解算姿态回放。录下一段实战，逐帧检查再分享。</p></div><button id="r8-open" class="f-primary">打开实战动作回放 ↗</button>';document.querySelector('.continuity6-launch').before(launch);
++  const btn=document.createElement('button');btn.id='r8-record';btn.textContent='录制实战姿态';btn.onclick=guard(record);document.querySelector('.f-battle-head').append(btn);
++  dialog=document.createElement('dialog');dialog.id='r8-dialog';dialog.setAttribute('aria-labelledby','r8-title');dialog.innerHTML=`<header><div><span class="r8-kicker">FLOW 08 / REAL POSE REVIEW</span><h2 id="r8-title">把一次落地，慢慢看清。</h2><p>已解算骨架 · 双人同一时钟 · 无特效遮挡</p></div><button id="r8-close" aria-label="关闭实战回放">×</button></header><div class="r8-layout"><section class="r8-main"><div class="r8-stage-head"><span id="r8-title-record">暂无记录</span><span id="r8-time"></span></div><svg id="r8-svg" viewBox="0 0 1440 750" role="img" aria-label="双人实战姿态回放"><defs><pattern id="r8-grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#74816d" opacity=".13" stroke-width="1"/></pattern></defs><path d="M0 0H1440V750H0Z" fill="#e8e6d9"/><path d="M0 0H1440V750H0Z" fill="url(#r8-grid)"/><path d="M40 665H1400" stroke="#74816d" stroke-width="2"/><text id="r8-empty" x="720" y="350" text-anchor="middle" fill="#697969" font-size="24">先生成或导入一段实战姿态</text><g id="r8-actors"/></svg><div class="r8-state-line"><span id="r8-state-a"></span><span id="r8-phase"></span><span id="r8-state-b"></span></div><div class="r8-transport"><button id="r8-prev" aria-label="前一帧">−1F</button><button id="r8-play" class="r8-primary">播放回放</button><button id="r8-next" aria-label="后一帧">＋1F</button><select id="r8-speed" aria-label="回放速度"><option value=".25">0.25×</option><option value=".5" selected>0.5×</option><option value="1">1×</option></select><label><input id="r8-bones" type="checkbox"> 骨架</label><strong id="r8-index">0 F</strong></div><input id="r8-seek" type="range" min="0" max="1" step=".05" value="0" aria-label="回放时间轴"><div class="r8-bookmarks"><button id="r8-event-prev">上个事件</button><span id="r8-current-event">未录制</span><button id="r8-event-next">下个事件</button></div><p id="r8-note" role="status"></p></section><aside><span class="r8-kicker">RECORD / 真实模拟</span><h3>一段动作，留住细节。</h3><label>生成检查场景<select id="r8-scenario"><option value="jump">跳跃 → 落地 → 缓冲</option><option value="walk">行走 → 停步 → 后退</option><option value="knockdown">真实扫腿 → 倒地 → 起身</option><option value="combo">当前自由连段草稿</option></select></label><button id="r8-run" class="r8-primary">运行并记录</button><p>此按钮会重新建立训练场景。普通录制请回到对战，点击「录制实战姿态」。最多保留 600 模拟步。</p><div class="r8-score"><strong id="r8-hits">0 HIT</strong><span id="r8-damage">0 DAMAGE</span></div><details open><summary>动作引擎设置</summary><label><input id="r8-interpolate" type="checkbox" checked> 运动通道小数帧采样</label><label><input id="r8-blends" type="checkbox" checked> 状态姿势交接</label><label><input id="r8-landing" type="checkbox" checked> 落地缓冲与附件响应</label><p>作用于后续实际模拟；已有回放不会被重算。导出的独立 HTML 携带设置。</p></details><div class="r8-files"><button id="r8-export">导出姿态 JSON</button><button id="r8-import">导入回放</button><input id="r8-file" type="file" accept=".json,application/json" hidden></div><details><summary>状态与接触书签</summary><div id="r8-events"></div></details><p class="r8-limits">姿态回放，不是录像或战斗重演。暂不回放粒子、音频、判定框；规则换向仍为镜像。</p></aside></div>`;
++  document.body.append(dialog);$('r8-open').onclick=guard(open);$('r8-close').onclick=close;dialog.addEventListener('close',restorePause);dialog.addEventListener('cancel',e=>{e.preventDefault();close();});
++  $('r8-run').onclick=guard(()=>run());$('r8-prev').onclick=()=>seek(Math.ceil(index)-1);$('r8-next').onclick=()=>seek(Math.floor(index)+1);$('r8-seek').oninput=e=>seek(Number(e.target.value));$('r8-bones').onchange=paint;$('r8-speed').onchange=e=>speed=Number(e.target.value);
++  $('r8-play').onclick=()=>{if(!Q().frames.length)return;if(index>=Q().frames.length-1)index=0;playing=!playing;stamp=performance.now();paint();};$('r8-event-prev').onclick=()=>jumpEvent(-1);$('r8-event-next').onclick=()=>jumpEvent(1);
++  $('r8-export').onclick=guard(()=>INK.Portable.download('INK-flow8-pose-replay.json',JSON.stringify(Q().export()),'application/json'));$('r8-import').onclick=()=>$('r8-file').click();$('r8-file').onchange=guard(async()=>{const file=$('r8-file').files[0];try{if(!file)return;if(file.size>8000000)throw Error('回放不能超过 8 MB');load(Q().parse(await file.text()));notice('已载入数据；没有执行代码或修改战斗资产。');}finally{$('r8-file').value='';}});
++  const settings=INK.Presentation.settings,storageKey=INKForge.store.id+'/response8';try{const seed=INKForge.store.embedded?.presentationSettings;if(seed)INK.Presentation.set(seed);const local=JSON.parse(localStorage.getItem(storageKey)||'null');if(local)INK.Presentation.set(local);}catch(e){if(e.name!=='SecurityError')notice('设置未载入：'+e.message,true);}
++  for(const [id,key]of [['interpolate','interpolate'],['blends','stateBlends'],['landing','landingResponse']]){const el=$('r8-'+id);el.checked=settings[key];el.onchange=()=>{INK.Presentation.set({[key]:el.checked});try{localStorage.setItem(storageKey,JSON.stringify(settings));notice('设置已保存；请重新运行场景生成对照。');}catch{notice('设置已生效；此环境仅暂存，请导出独立 HTML 备份。');}};}
++  dialog.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();close();return;}if(e.target.closest('input,select,textarea,summary'))return;if(['ArrowLeft','ArrowRight',' '].includes(e.key)){e.preventDefault();e.stopPropagation();if(e.key===' ')$('r8-play').click();else seek(index+(e.key==='ArrowLeft'?-1:1)*(e.shiftKey?10:1));}});
++  document.querySelector('.f-home-top h1').innerHTML='每次落地，<em>都有回应。</em>';document.querySelector('.f-home-top p').textContent='从落地、受击到回身。统一运动采样与状态交接，把真实姿态录下来，逐帧看清。';document.querySelector('.f-edition').innerHTML='INK / FLOW 08<br><span>RESPONSE · SOLVED POSE REPLAY</span>';
++  requestAnimationFrame(function tick(now){requestAnimationFrame(tick);if(!dialog.open||!playing||document.hidden){stamp=now;return;}const dt=Math.min(.05,(now-stamp)/1000);stamp=now;index=Math.min(Q().frames.length-1,index+dt*60*speed);if(index>=Q().frames.length-1)playing=false;paint();});
++  globalThis.INKResponseLab={ready:true,open,close,run,load,seek,paint,record,get index(){return index;},get renderers(){return renderers;},get playing(){return playing;}};
++ }
++ init();
++})();
+--- a/forge/style.css
++++ b/forge/style.css
+@@ -38,3 +38,7 @@
+ body.forge-player #f-return-studio,body.forge-player #showcase-btn,
+ body.forge-player #select-showcase,body.forge-player .f-runtime-bar,
+ body.forge-player #f-storage-warning{display:none!important}
++
++/* FLOW 08: real-pose retained silhouettes. No legacy contour snapshots. */
++[data-ink-afterimage] [data-ink-layer=art] path:not([fill=none]),[data-ink-afterimage] [data-ink-layer=art] ellipse,[data-ink-afterimage] [data-ink-layer=art] circle{fill:var(--ink-echo-color,#82a798)!important;stroke:none!important;opacity:1!important}
++[data-ink-afterimage] [data-ink-layer=art] path[fill=none]{stroke:none!important}
+--- a/game.js
++++ b/game.js
+@@ -967,7 +967,7 @@
+  if(f.shadow){const lying=['down','ko'].includes(f.state),spread=lying?1.3:clamp(1+ry/720,.4,1);sa(f.shadow,'transform',`translate(${rx} ${FLOOR}) scale(${spread} 1)`);sa(f.shadow,'opacity',clamp(1+ry/600,.24,1));}
+  let aura=f.state==='rush'||f.rushBuff>0?'#7dffac':f.state==='parry'?'#93bbff':f.attack?.m.od?'#ffe5a8':f.install>0?f.ch.color:f.attack?.m.kind==='impact'?'#ff9966':null;
+  sa(f.aura,'opacity',aura?.33+Math.sin(gameTime*19)*.07:0);if(aura)sa(f.aura.children[0],'fill',aura);
+- const charge=f.attack&&(f.attack.m.kind.includes('projectile')||f.attack.m.kind==='charge')&&f.attack.t<f.attack.m.startup;sa(f.charge,'opacity',charge?1:0);if(charge){const cp=bodyPoint(f,['luke','mai','iori'].includes(f.ch.id)?af[2]:lerp2(af[2],ar[2],.5)),q=f.attack.t/f.attack.m.startup;sa(f.charge,'transform',`translate(${cp[0]+10} ${cp[1]}) scale(${.15+q*q*.45})`);sa(f.chargeRing,'transform',`rotate(${gameTime*350})`)}
++ const charge=INK.VFX.settings.enabled&&f.attack&&(f.attack.m.kind.includes('projectile')||f.attack.m.kind==='charge')&&f.attack.t<f.attack.m.startup;sa(f.charge,'opacity',charge?1:0);if(charge){const cp=bodyPoint(f,['luke','mai','iori'].includes(f.ch.id)?af[2]:lerp2(af[2],ar[2],.5)),q=f.attack.t/f.attack.m.startup;sa(f.charge,'transform',`translate(${cp[0]+10} ${cp[1]}) scale(${.15+q*q*.45})`);sa(f.chargeRing,'transform',`rotate(${gameTime*350})`)}
+  const hurt=['hit','stun','tumble','captured','down','ko'].includes(f.state),power=!hurt&&(f.portraitPower||f.attack&&(f.attack.m.super||f.attack.m.od||f.attack.m.level>=3)&&f.attack.t>f.attack.m.startup*.6);sa(f.faceHurt,'opacity',hurt?1:0);sa(f.facePower,'opacity',power?1:0);
+  renderMoveFX(f);f.root.style.opacity=f.hp<=0?.91:1;
+ }
+@@ -979,7 +979,7 @@
+  let view=f;
+  // Interpolate along the authored simulation timeline, never toward an old pose.
+  // A contact frame is shown once immediately and remains exact during hitstop.
+- if(!changed&&G.screen==='battle'&&!renderHold&&alpha<1){view=Object.create(f);view.stateAge=Math.max(0,(f.stateAge||0)-1+alpha);if(f.attack)view.attack={...f.attack,t:Math.max(0,f.attack.t-1+alpha)};if(f.throwAction)view.throwAction={...f.throwAction,t:Math.max(0,f.throwAction.t-1+alpha)};if(f.throwAction?.owner===f)view.throwAction.owner=view;}
++ if(!changed&&G.screen==='battle'&&!renderHold&&alpha<1)view=INK.Presentation.view(f,alpha,false);
+  const reusePose=!f._inkFractionalView&&renderHold&&f._poseSimulationFrame===simFrame&&f.pose;let d=reusePose?f.pose:desiredPose(view);
+  f._inkFractionalView=view!==f;f.pose=d;f._renderSignature=signature;f._poseSimulationFrame=simFrame;
+  const s=f.renderScale||f.ch.scale||SCALE,frozen=renderHold,rx=mix(f.px??f.x,f.x,frozen?1:alpha),ry=mix(f.py??f.y,f.y,frozen?1:alpha);
+@@ -991,11 +991,11 @@
+  for(const name of ['rearArm','frontArm','rearLeg','frontLeg'])f[name].points=limbs[name];
+  const inkHurt=['hit','stun','tumble','captured','down','ko'].includes(f.state);
+  const inkPower=!inkHurt&&(f.portraitPower||f.attack&&f.attack.t>=f.attack.m.startup&&f.attack.t<f.attack.m.startup+f.attack.m.active);
+- INK.Game.update(f,p,limbs,f.attack?view.attack.t:gameTime*60,inkHurt?'hurt':inkPower?'power':'rest',frozen,{x:rx,y:ry,scale:s,dir:f.dir});
++ INK.Game.update(f,p,limbs,f.attack?view.attack.t:gameTime*60,inkHurt?'hurt':inkPower?'power':'rest',frozen,{x:rx,y:ry,scale:s,dir:f.dir},view);
+  if(f.shadow){const lying=['down','ko'].includes(f.state),spread=lying?1.3:clamp(1+ry/720,.4,1);sa(f.shadow,'transform',`translate(${rx} ${FLOOR}) scale(${spread} 1)`);sa(f.shadow,'opacity',clamp(1+ry/600,.24,1));}
+  let aura=f.state==='rush'||f.rushBuff>0?'#7dffac':f.state==='parry'?'#93bbff':f.attack?.m.od?'#ffe5a8':f.install>0?f.ch.color:f.attack?.m.kind==='impact'?'#ff9966':null;
+  sa(f.aura,'opacity',0);if(aura)sa(f.aura.children[0],'fill',aura);
+- const charge=f.attack&&(f.attack.m.kind.includes('projectile')||f.attack.m.kind==='charge')&&f.attack.t<f.attack.m.startup;sa(f.charge,'opacity',charge?1:0);if(charge){const cp=bodyPoint(f,['luke','mai','iori'].includes(f.ch.id)?af[2]:lerp2(af[2],ar[2],.5)),q=f.attack.t/f.attack.m.startup;sa(f.charge,'transform',`translate(${cp[0]+10} ${cp[1]}) scale(${.15+q*q*.45})`);sa(f.chargeRing,'transform',`rotate(${gameTime*350})`)}
++ const charge=INK.VFX.settings.enabled&&f.attack&&(f.attack.m.kind.includes('projectile')||f.attack.m.kind==='charge')&&f.attack.t<f.attack.m.startup;sa(f.charge,'opacity',charge?1:0);if(charge){const cp=bodyPoint(f,['luke','mai','iori'].includes(f.ch.id)?af[2]:lerp2(af[2],ar[2],.5)),q=f.attack.t/f.attack.m.startup;sa(f.charge,'transform',`translate(${cp[0]+10} ${cp[1]}) scale(${.15+q*q*.45})`);sa(f.chargeRing,'transform',`rotate(${gameTime*350})`)}
+  const hurt=['hit','stun','tumble','captured','down','ko'].includes(f.state),power=!hurt&&(f.portraitPower||f.attack&&(f.attack.m.super||f.attack.m.od||f.attack.m.level>=3)&&f.attack.t>f.attack.m.startup*.6);sa(f.faceHurt,'opacity',hurt?1:0);sa(f.facePower,'opacity',power?1:0);
+  renderMoveFX(f);f.root.style.opacity=f.hp<=0?.91:1;
+ }
+@@ -1051,7 +1051,7 @@
+  if(f._fxExtra!==extra){f._fxExtra=extra;patchMoveFX(f.fxExtra,extra)}sa(f.fxExtra,'opacity',alpha);
+ }
+ function snapshotSilhouette(f,color){const clean=n=>n.outerHTML.replace(/fill="[^"]*"/g,`fill="${color}"`).replace(/stroke="[^"]*"/g,'stroke="none"');return`<g transform="${f.facing.getAttribute('transform')||''}" fill="${color}">${clean(f.rearLeg.contour)}${clean(f.frontLeg.contour)}<g transform="${f.core.getAttribute('transform')||''}">${clean(f.rearArm.contour)}${clean(f.torso.children[0])}${clean(f.frontArm.contour)}<path d="M-17-309L-23-350-9-389 22-397 40-367 36-332 18-311Z" fill="${color}"/></g></g>`}
+-function ghost(f){if(G.ghosts.length>=6||!f.pose)return;let color=f.state==='rush'?'#6dffc0':f.ch.color;const n=el('g',{transform:`translate(${f.x} ${FLOOR+f.y}) scale(${f.ch.scale})`,opacity:.34},$('ghosts'));n.innerHTML=snapshotSilhouette(f,color);G.ghosts.push({node:n,life:17,max:17})}
++function ghost(f){if(INK.Game.enabled&&INK.SceneFeedback.ghost(f))return;if(G.ghosts.length>=6||!f.pose)return;let color=f.state==='rush'?'#6dffc0':f.ch.color;const n=el('g',{transform:`translate(${f.x} ${FLOOR+f.y}) scale(${f.ch.scale})`,opacity:.34},$('ghosts'));n.innerHTML=snapshotSilhouette(f,color);G.ghosts.push({node:n,life:17,max:17})}
+ function particle(x,y,vx,vy,col,size=5,life=24,kind='spark'){if(G.fx.length>=96)return;const n=kind==='ring'?el('ellipse',{rx:size,ry:size*.75,fill:'none',stroke:col,'stroke-width':1.8},$('impact-fx')):kind==='dust'?el('ellipse',{rx:size*2,ry:size,fill:col},$('ground-fx')):path(`M${-size*.4} 0L0 ${-size*.23}L${size*3.4} 0L0 ${size*.23}Z`,col,$('impact-fx'));n.setAttribute('transform',`translate(${x} ${y}) rotate(${Math.atan2(vy,vx)*180/Math.PI})`);G.fx.push({node:n,x,y,vx,vy,life,max:life,size,kind,rot:Math.atan2(vy,vx)*180/Math.PI})}
+ function impactResidue(style,col,core){switch(style){
+  case'fire':return flat('M-31 13Q-10 15-10-8L-4-27 6-8Q17-18 20-29L25-7 13 18 29 9Q23 35-3 30Z',col,'opacity=".25"')+mark('M-31-17L-24-10M24-21L31-34M25 20L35 27',core,1.4);
+@@ -1074,6 +1074,7 @@
+  if(guard||!profile||['wave','flow','air','wind'].includes(profile.style))particle(x,y,0,0,main,guard?13:7,guard?10:12,'ring');
+ }
+ function groundImpact(x,col='#c9b9b2',strength=1){
++ if(INK.Game.enabled&&INK.SceneFeedback.ground(x,col,strength,G))return;
+  const n=el('g',{transform:`translate(${x} ${FLOOR+5})`},$('ground-fx'));n.innerHTML=`<ellipse rx="45" ry="7" fill="none" stroke="${col}" stroke-width="2.2"/><path d="M-46-1L-93-4M39 1L87-2M-11-7L-31-17M18-5L33-13" fill="none" stroke="${col}" stroke-width="1.3"/>`;G.fx.push({node:n,x,y:FLOOR+5,vx:0,vy:0,life:16,max:16,size:38,kind:'impact',rot:0,impactScale:strength});
+  for(let i=0;i<8;i++){const side=i%2?-1:1;particle(x+side*rand(12,35),FLOOR+4,side*rand(2,6)*strength,rand(-2.7,-.8),col,rand(3,6),rand(16,25),'dust')}
+ }
+@@ -1127,8 +1128,8 @@
+ 
+ const enemy=f=>fighters[1-f.index];
+ function newInput(){return{held:new Set(),dirs:[],history:[],dir:5,queue:[],batch:null,chargeB:0,chargeD:0,savedB:0,savedD:0,releaseB:-99,releaseD:-99,lastButton:-99,touchX:0,touchY:0,lastDash:-99}}
+-function initFighter(f,index){Object.assign(f,{_inkState:null,_inkFXEvents:[],_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkTrail:null,_inkInput:null,_inkInputLog:[],_inkHoldAction:-1,_inkStateBlend:null,_inkStateVisualBlend:null,_inkDecision:null,_inkActionOrigin:null,index,hp:10000,displayHp:10000,trailHp:10000,drive:6,super:G.mode==='training'?3:0,burnout:false,burnT:0,driveDelay:0,x:index?960:480,px:index?960:480,y:0,py:0,vy:0,vx:0,push:0,dir:index?-1:1,move:0,state:'idle',stateT:0,stateAge:0,attack:null,branchT:0,branchReady:0,denjin:0,stock:0,flameStock:0,maiFollowUntil:0,maiFollowEnhanced:false,maiAirFollow:0,install:0,invuln:0,rushBuff:0,combo:0,comboDamage:0,comboTimer:0,comboScale:1,captured:false,captureKind:null,capturedBy:null,captureWasParry:false,capturePhase:0,captureX:0,captureY:0,throwAction:null,throwInvuln:0,juggle:0,knockOnLand:false,landT:0,landMax:0,airLock:false,parryAge:0,parryPaid:0,aiWait:45,crouch:false,input:newInput(),lastMove:'准备就绪',lastMessage:0,lastHitTick:-99,lastThrow:-99,hitstun:0,blockstun:0,walkT:0,pose:null,downPoseFrom:null,tumbleFrom:null,roundResult:null,_attackAtContact:null,_renderSignature:null,_poseSimulationFrame:null,aiGuard:false,aiParry:false,win:false,lastHitDamage:0,perfectScale:1,jumpPre:0,jumpDir:0,ai:null});const track=$('input-'+f.id);if(track)track.replaceChildren();const label=$('move-'+f.id);if(label)label.textContent='准备就绪';return f}
+-function clearBattleFX(){INK.VFX.clear();for(let a of [G.fx,G.shots,G.ghosts]){for(let e of a)e.node?.remove();a.length=0}for(let id of ['impact-fx','ground-fx','ghosts','projectiles','hitboxes'])$(id).replaceChildren();G.superFx=0;G.superOwner=null;G.hitstop=0;G.slow=0;G.shake=0;G.flash=0;G.pendingMelee=[];$('super-overlay').setAttribute('opacity',0)}
++function initFighter(f,index){Object.assign(f,{_inkVisualClock:0,_inkPoseVelocity:null,_inkPrevView:null,_inkHistory:null,_inkLanding:null,_inkState:null,_inkFXEvents:[],_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkTrail:null,_inkInput:null,_inkInputLog:[],_inkHoldAction:-1,_inkStateBlend:null,_inkStateVisualBlend:null,_inkDecision:null,_inkActionOrigin:null,index,hp:10000,displayHp:10000,trailHp:10000,drive:6,super:G.mode==='training'?3:0,burnout:false,burnT:0,driveDelay:0,x:index?960:480,px:index?960:480,y:0,py:0,vy:0,vx:0,push:0,dir:index?-1:1,move:0,state:'idle',stateT:0,stateAge:0,attack:null,branchT:0,branchReady:0,denjin:0,stock:0,flameStock:0,maiFollowUntil:0,maiFollowEnhanced:false,maiAirFollow:0,install:0,invuln:0,rushBuff:0,combo:0,comboDamage:0,comboTimer:0,comboScale:1,captured:false,captureKind:null,capturedBy:null,captureWasParry:false,capturePhase:0,captureX:0,captureY:0,throwAction:null,throwInvuln:0,juggle:0,knockOnLand:false,landT:0,landMax:0,airLock:false,parryAge:0,parryPaid:0,aiWait:45,crouch:false,input:newInput(),lastMove:'准备就绪',lastMessage:0,lastHitTick:-99,lastThrow:-99,hitstun:0,blockstun:0,walkT:0,pose:null,downPoseFrom:null,tumbleFrom:null,roundResult:null,_attackAtContact:null,_renderSignature:null,_poseSimulationFrame:null,aiGuard:false,aiParry:false,win:false,lastHitDamage:0,perfectScale:1,jumpPre:0,jumpDir:0,ai:null});const track=$('input-'+f.id);if(track)track.replaceChildren();const label=$('move-'+f.id);if(label)label.textContent='准备就绪';return f}
++function clearBattleFX(){INK.Replay?.stop();INK.VFX.clear();for(let a of [G.fx,G.shots,G.ghosts]){for(let e of a)e.node?.remove();a.length=0}for(let id of ['impact-fx','ground-fx','ghosts','projectiles','hitboxes'])$(id).replaceChildren();G.superFx=0;G.superOwner=null;G.hitstop=0;G.slow=0;G.shake=0;G.flash=0;G.pendingMelee=[];$('super-overlay').setAttribute('opacity',0)}
+ function makeFighters(){for(let f of fighters){f.root.remove();f.shadow.remove()}fighters=[];selected.forEach((id,i)=>fighters.push(initFighter(createFighter(i?'k':'p',id,i?960:480,i?-1:1,i===1),i)));buildHUD()}
+ function setState(f,state,t=0){INK.Runtime.stateChange(f,state);f.state=state;f.stateT=t;f.stateAge=0;if(!['attack','stance'].includes(state))f.attack=null;f.move=0;if(state!=='attack'&&f.y===0)f.airLock=false;if(['hit','tumble','down','rise','captured','throwing','stun','ko'].includes(state)){f.crouch=false;f.jumpPre=0;f.aiGuard=false;f.aiParry=false}}
+ function notify(f,text){f.lastMove=text;f.lastMessage=G.tick;$('move-'+f.id).textContent=text;const n=$('call-'+f.id);if(n)n.textContent=text}
+@@ -1384,7 +1385,7 @@
+ }
+ }
+ SF6Mai.tick(f,G,spawnShot,notify);
+-if(f.y<0||f.vy!==0){if(!f.captured){f.y+=f.vy;f.vy+=.7;if(f.y>=0){const landingSpeed=f.vy;f.y=0;f.vy=0;if(f.knockOnLand||f.state==='tumble'){throwImpact(f);f.knockOnLand=false;f.downPoseFrom=f.pose?poseCopy(f.pose):null;setState(f,'down',25);f.invuln=25;f.throwInvuln=51;f.push=0;f.juggle=0;f.capturedBy=null;f.captureKind=null;groundImpact(f.x,f.ch.color,landingSpeed>10?1.25:1);sound('land');if(landingSpeed>8){G.shake=Math.max(G.shake,4);burst(f.x,FLOOR-12,'#d8c8a2',7)}}else if(f.airLock){dust(f.x);const recovery=f.attack?.m.kind==='upper'?10:6;setState(f,'recovery',recovery);f.landT=f.landMax=recovery}else if(f.attack?.m.air){dust(f.x);setState(f,'recovery',5);f.landT=f.landMax=5}else if(!f.attack){dust(f.x);f.landT=f.landMax=6}f.airLock=false;f.vx=0}else if(!['dash','rush'].includes(f.state))f.x+=f.vx}}
++if(f.y<0||f.vy!==0){if(!f.captured){const landingFrom=f.y+f.vy>=0?INK.StateTransitions.capture(f):null;f.y+=f.vy;f.vy+=.7;if(f.y>=0){const landingSpeed=f.vy;f.y=0;f.vy=0;if(f.knockOnLand||f.state==='tumble'){throwImpact(f);f.knockOnLand=false;f.downPoseFrom=landingFrom?poseCopy(landingFrom.pose):null;setState(f,'down',25);f.invuln=25;f.throwInvuln=51;f.push=0;f.juggle=0;f.capturedBy=null;f.captureKind=null;groundImpact(f.x,f.ch.color,landingSpeed>10?1.25:1);sound('land');if(landingSpeed>8){G.shake=Math.max(G.shake,4);burst(f.x,FLOOR-12,'#d8c8a2',7)}}else if(f.airLock){dust(f.x);const recovery=f.attack?.m.kind==='upper'?10:6;setState(f,'recovery',recovery);f.landT=f.landMax=recovery}else if(f.attack?.m.air){dust(f.x);setState(f,'recovery',5);f.landT=f.landMax=5}else if(!f.attack){dust(f.x);f.landT=f.landMax=6}f.airLock=false;f.vx=0;INK.StateTransitions.land(f,landingFrom,landingSpeed)}else if(!['dash','rush'].includes(f.state))f.x+=f.vx}}
+ // A launch cannot recover to a standing pose until the body reaches the ground.
+ if(f.y<0&&f.state==='hit'&&!f.captured&&f.stateT<=0){setState(f,'tumble');f.knockOnLand=true}
+ if(f.captured&&f.captureKind==='super'){const owner=f.capturedBy;if(!owner?.attack||owner.attack.m.kind!=='superrush'){f.captured=false;f.captureKind=null;f.capturedBy=null;setState(f,'tumble');f.knockOnLand=true;f.vy=-3}}
+@@ -1407,18 +1408,19 @@
+ function tickRoundEnd(){for(const f of fighters){f.stateAge++;if(f.y<0||f.vy!==0){f.y+=f.vy;f.vy+=.7;f.x=clamp(f.x+f.vx+f.push,105,1335);f.push*=.82;if(f.y>=0){f.y=0;f.vy=f.vx=f.push=0;dust(f.x);setState(f,f.roundResult||'ko');if(f.state==='ko'){f.stateAge=20;sound('land');G.shake=Math.max(G.shake,6)}}}else if(f.state!==f.roundResult){setState(f,f.roundResult||'ko')}}}
+ function nextRound(){clearBattleFX();fighters.forEach((f,i)=>{const sup=f.super;initFighter(f,i);f.super=sup});G.round++;G.clock=99*60;G.phase='intro';G.phaseT=90;announce('ROUND '+G.round,'BEST OF THREE');updateHUD()}
+ function resetMatch(){clearBattleFX();G.wins=[0,0];G.round=1;G.clock=99*60;G.phase=G.mode==='training'?'fight':'intro';G.phaseT=90;G.result=false;G.paused=false;G.lastCombatEvent=null;G.combatEvents=[];G.stats.damage=0;G.stats.maxCombo=0;fighters.forEach((f,i)=>initFighter(f,i));$('pause-overlay').hidden=true;$('game-frame').classList.remove('is-paused');announce(G.mode==='training'?'':'ROUND 1',G.mode==='training'?'':'FIRST TO 2 WINS',G.mode==='training'?0:1);$('pause-btn').textContent='暂停';updateHUD()}
+-function simulate(force=false){if(G.screen!=='battle'||G.paused&&!force)return;G.tick++;G._inkStepFrozen=false;INK.Input.begin(G);INK.VFX.step(G,fighters);for(const f of fighters){f.px=f.x;f.py=f.y}updateFX();for(let f of fighters)tickInput(f);
++function simulate(force=false){const before=G.tick;simulateCore(force);if(G.tick!==before)INK.Replay.capture(G,fighters);}
++function simulateCore(force=false){if(G.screen!=='battle'||G.paused&&!force)return;G.tick++;G._inkStepFrozen=false;INK.Input.begin(G);INK.VFX.step(G,fighters);INK.Presentation.beginProjectiles(G);for(const f of fighters){f.px=f.x;f.py=f.y}updateFX();for(let f of fighters)tickInput(f);
+ if(G.hitstop>0){G._inkStepFrozen=true;INK.CombatFlow.record(G,'freeze');G.hitstop--;updateHUD();return}
+ if(G.phase==='intro'){gameTime+=1/60;INK.CombatFlow.record(G,'other');G.phaseT--;if(G.phaseT===30)announce('FIGHT','');if(G.phaseT<=0){G.phase='fight';announce('','',0)}updateHUD();return}
+ if(G.phase==='ko'){gameTime+=1/60;INK.CombatFlow.record(G,'other');G.phaseT--;tickRoundEnd();if(G.phaseT<=0){if(G.wins.some(n=>n>=2)){G.result=true;G.paused=true;showPause(true)}else nextRound()}updateHUD();return}
+ if(G.phase!=='fight')return;
+ if(G.slow>0){G.slow--;if(G.tick%2===0){G._inkStepFrozen=true;INK.CombatFlow.record(G,'slow');return}}
+-gameTime+=1/60;G.actionTick++;INK.CombatFlow.record(G,'action');
++INK.Presentation.begin(G,fighters);gameTime+=1/60;G.actionTick++;INK.CombatFlow.record(G,'action');
+ INK.Combo.beforeStep(G,fighters);tickThrowActions();G.pendingMelee=[];
+ for(let f of fighters){const d=enemy(f);if(!f.attack&&!['down','rise','tumble','captured','throwing','ko','rush','dash','hit','block','stun'].includes(f.state)&&Math.abs(d.x-f.x)>10)f.dir=d.x>f.x?1:-1;const ai=G.mode==='demo'||f.index===1&&(G.mode==='cpu'||G.mode==='training'&&$('dummy').value==='cpu');if(ai)updateAI(f);else if(f.index===1&&G.mode==='training'){f.aiGuard=['guard','crouch'].includes($('dummy').value);f.crouch=$('dummy').value==='crouch';f.move=0}else playerMovement(f);updateFighter(f);INK.State.tick(f,G.tick)}
+ resolveMelee();
+ const [a,b]=fighters,dist=Math.abs(a.x-b.x);if(dist<119&&Math.abs(a.y-b.y)<170&&!a.captured&&!b.captured&&!a.attack?.m.throw&&!b.attack?.m.throw&&a.state!=='throwing'&&b.state!=='throwing'&&a.state!=='down'&&b.state!=='down'){const sign=a.x<b.x?-1:1,shift=(119-dist)/2;a.x=clamp(a.x+sign*shift,105,1335);b.x=clamp(b.x-sign*shift,105,1335)}
+-updateShots();INK.VFX.captureRoots(fighters);INK.Combo.afterStep(G,fighters);if(G.mode!=='training'){G.clock--;if(G.clock<=0||(a.hp<=0||b.hp<=0)&&!fighters.some(f=>f.hp<=0&&f.captured&&f.capturedBy?.attack?.m.kind==='superrush'))finishRound()}else{for(let f of fighters)if(f.hp<=0){f.hp=10000;f.invuln=50;notify(f,'TRAINING RESET · 木桩复位')}}updateHUD()}
++updateShots();INK.Presentation.finish(fighters);INK.VFX.captureRoots(fighters);INK.Combo.afterStep(G,fighters);if(G.mode!=='training'){G.clock--;if(G.clock<=0||(a.hp<=0||b.hp<=0)&&!fighters.some(f=>f.hp<=0&&f.captured&&f.capturedBy?.attack?.m.kind==='superrush'))finishRound()}else{for(let f of fighters)if(f.hp<=0){f.hp=10000;f.invuln=50;notify(f,'TRAINING RESET · 木桩复位')}}updateHUD()}
+ 
+ 
+ function headRef(c){return 'v3-head-'+c.id}
+@@ -1498,10 +1500,10 @@
+ if(G.screen==='battle'&&typeof pollGamepads==='function')pollGamepads();
+ const renderAlpha=engineClock.advance(now,{active:G.screen==='battle'&&!document.hidden,paused:G.paused,speed:INK.CombatFlow.settings.speed*((G.mode==='training'||G.mode==='demo')?(G.artSpeed||1):1)},()=>simulate());
+ accumulator=engineClock.accumulator;
+-if(G.screen==='battle'){const alpha=G.paused?1:renderAlpha;for(let f of fighters)renderFighter(f,G.paused||G.hitstop>0?0:Math.min(dt/1000,.04),alpha);sa($('camera'),'transform',artCamera(now));sa($('hit-flash'),'opacity',(!INK.VFX.settings.enabled||INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)?0:G.flash*INK.VFX.settings.intensity);sa($('super-overlay'),'opacity',G.superFx>0?clamp(Math.min((75-G.superFx)/8,G.superFx/15),0,.98):0)}else{gameTime+=dt/1000;for(let i=0;i<portraits.length;i++){const f=portraits[i];renderFighter(f,dt/1000,1);sa(f.root,'transform',`translate(166 438) scale(1.02)`);sa(f.facing,'transform',`scale(${i?-1:1} 1)`)} }
+-INK.VFX.render(G,G.paused?1:clamp(accumulator/STEP,0,1));SF6Studio.update();requestAnimationFrame(frame)}
++if(G.screen==='battle'){const alpha=G.paused?1:renderAlpha;for(let f of fighters)renderFighter(f,G.paused||G.hitstop>0?0:Math.min(dt/1000,.04),alpha);sa($('camera'),'transform',artCamera(now,alpha));sa($('hit-flash'),'opacity',(!INK.VFX.settings.enabled||INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)?0:G.flash*INK.VFX.settings.intensity);sa($('super-overlay'),'opacity',G.superFx>0?clamp(Math.min((75-G.superFx)/8,G.superFx/15),0,.98):0)}else{gameTime+=dt/1000;for(let i=0;i<portraits.length;i++){const f=portraits[i];renderFighter(f,dt/1000,1);sa(f.root,'transform',`translate(166 438) scale(1.02)`);sa(f.facing,'transform',`scale(${i?-1:1} 1)`)} }
++INK.Presentation.projectiles(G,G.paused?1:renderAlpha);INK.VFX.render(G,G.paused?1:clamp(accumulator/STEP,0,1));SF6Studio.update();requestAnimationFrame(frame)}
+ // Inspectable, dependency-free development hooks. All gameplay still uses the same engine paths.
+-window.SVG_FIGHTER={version:'7.0.0-ink-rhythm',characters:CHARACTERS,moves:MOVES,state:G,get fighters(){return fighters},start:(p1='ryu',p2='ken',mode='training',control='classic')=>{selected=[p1,p2];$('mode').value=mode;$('control').value=control;startBattle()},step:(n=1)=>{for(let i=0;i<n;i++)simulate(true)},press:(i,b)=>inputPress(fighters[i],b),release:(i,b)=>inputRelease(fighters[i],b),move:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id)),motion:(i,p)=>motion(fighters[i],p),reset:resetMatch,setState,contact,practice:practiceMove,getMove,clearFX:clearBattleFX,pause,render:(dt=1/60)=>fighters.forEach(f=>renderFighter(f,dt,1)),pose:desiredPose,visualPose:(f)=>INK.Runtime.visual(f,desiredPose(f),{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1,dir:f.dir}),clock:engineClock,clip:clipFor,geometry:getCombatGeometry,rig:poseRig,canRush:canRushCancel,canCancel:canCancel,canRekka:canRekkaContinue,decide:(i,id)=>decideMove(fighters[i],getMove(fighters[i],id)),tempo:INK.CombatFlow,tryMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),false),inputMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),true),describe:(f,m)=>SF6Motion.describe(f,m),audit:()=>CHARACTERS.map(c=>({character:c.name,specials:MOVES[c.id].filter(m=>m.category==='special').length,branches:MOVES[c.id].filter(m=>m.category==='branch').length,supers:MOVES[c.id].filter(m=>m.category==='super').length,normals:MOVES[c.id].filter(m=>m.category==='normal').length,total:MOVES[c.id].length}))};
++window.SVG_FIGHTER={version:'8.0.0-ink-response',characters:CHARACTERS,moves:MOVES,state:G,get fighters(){return fighters},start:(p1='ryu',p2='ken',mode='training',control='classic')=>{selected=[p1,p2];$('mode').value=mode;$('control').value=control;startBattle()},step:(n=1)=>{for(let i=0;i<n;i++)simulate(true)},press:(i,b)=>inputPress(fighters[i],b),release:(i,b)=>inputRelease(fighters[i],b),move:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id)),motion:(i,p)=>motion(fighters[i],p),reset:resetMatch,setState,contact,practice:practiceMove,getMove,clearFX:clearBattleFX,pause,render:(dt=1/60)=>fighters.forEach(f=>renderFighter(f,dt,1)),pose:desiredPose,visualPose:(f)=>INK.Runtime.visual(f,desiredPose(f),{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1,dir:f.dir}),clock:engineClock,clip:clipFor,geometry:getCombatGeometry,rig:poseRig,canRush:canRushCancel,canCancel:canCancel,canRekka:canRekkaContinue,decide:(i,id)=>decideMove(fighters[i],getMove(fighters[i],id)),tempo:INK.CombatFlow,tryMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),false),inputMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),true),describe:(f,m)=>SF6Motion.describe(f,m),audit:()=>CHARACTERS.map(c=>({character:c.name,specials:MOVES[c.id].filter(m=>m.category==='special').length,branches:MOVES[c.id].filter(m=>m.category==='branch').length,supers:MOVES[c.id].filter(m=>m.category==='super').length,normals:MOVES[c.id].filter(m=>m.category==='normal').length,total:MOVES[c.id].length}))};
+ // Inspection controls operate on the same combat engine and the same live SVG rigs.
+ const lab=document.createElement('div');lab.className='motion-lab';lab.id='motion-lab';lab.hidden=true;lab.innerHTML=`<b>动作鉴赏 / MOTION LAB</b><select id="lab-char" aria-label="鉴赏角色">${CHARACTERS.map(c=>`<option value="${c.id}">${c.cn} / ${c.name}</option>`).join('')}</select><select id="lab-move" aria-label="鉴赏动作"></select><button class="lab-play" id="lab-play">▶ 播放招式</button><select id="lab-speed" aria-label="演示速度"><option value="1">正常速度</option><option value="0.5">慢放 × 0.5</option><option value="0.25">慢放 × 0.25</option></select><button class="lab-small" id="lab-close" aria-pressed="false">特写 关</button><button class="lab-small" id="lab-freeze">定格</button><button class="lab-small" id="lab-step">逐帧 +1</button><small>LIVE SVG · 非视频 · 逐帧可检查</small>`;
+ $('training-bar').after(lab);
+@@ -1529,11 +1531,11 @@
+  const points=[bodyPoint(f,[0,-401]),bodyPoint(f,[-45,-300]),bodyPoint(f,[45,-300]),bodyPoint(f,[0,-165]),...f.rearArm.points.map(p=>bodyPoint(f,p)),...f.frontArm.points.map(p=>bodyPoint(f,p)),...f.rearLeg.points,...f.frontLeg.points];
+  const ys=points.map(q=>FLOOR+f.y+(q[0]*si+(q[1]+180)*co-180+shift)*f.ch.scale);return[Math.min(...ys)-21,Math.max(...ys)+25];
+ }
+-function artCamera(now){if(!fighters.length)return'';let target=G.artCloseup?1.28:1.045;const a=fighters[0],b=fighters[1],dist=Math.abs(a.x-b.x),superActor=fighters.find(f=>f.attack?.m.super&&f.attack.confirmed);if(superActor)target=G.artCloseup?1.33:1.15;else if(dist<320)target=Math.max(target,1.065);
++function artCamera(now,alpha=1){if(!fighters.length)return'';let target=G.artCloseup?1.28:1.045;const a=fighters[0],b=fighters[1],dist=Math.abs(a.x-b.x),superActor=fighters.find(f=>f.attack?.m.super&&f.attack.confirmed);if(superActor)target=G.artCloseup?1.33:1.15;else if(dist<320)target=Math.max(target,1.065);
+  const bounds=fighters.map(actorYBounds),lo=Math.min(...bounds.map(b=>b[0])),hi=Math.max(...bounds.map(b=>b[1]));target=Math.min(target,545/Math.max(440,hi-lo+14));
+- const dt=camStamp?clamp((now-camStamp)/1000,0,.1):1/60;camStamp=now;const k=1-Math.exp(-dt*(target<camZoom?15:7));camZoom=mix(camZoom,clamp(target,.79,1.3),k);
++ const dt=camStamp?clamp((now-camStamp)/1000,0,.1):1/60;camStamp=now;const k=G.paused||G.hitstop||G._inkStepFrozen?0:1-Math.exp(-dt*(target<camZoom?15:7));camZoom=mix(camZoom,clamp(target,.79,1.3),k);
+  const tracking=INK.Cinema.enabled&&INK.Combo.status!=='idle';INK.Cinema.sync(tracking);const cx=tracking?(a.x+b.x)/2:camZoom<=1?720:clamp((a.x+b.x)/2,720/camZoom,1440-720/camZoom);camX=mix(camX,cx,k);camY=mix(camY,(lo+hi)/2,k);
+- const reduced=INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches,shake=reduced?0:G.shake;return`translate(${720+Math.sin(now*.14)*shake} ${439+Math.cos(now*.11)*shake*.32}) scale(${(reduced?Math.min(1,camZoom):camZoom).toFixed(4)}) translate(${-camX} ${-camY})`;}
++ const reduced=INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches,offset=INK.SceneFeedback.camera(G,alpha);return`translate(${720+offset[0]} ${439+offset[1]}) scale(${(reduced?Math.min(1,camZoom):camZoom).toFixed(4)}) translate(${-camX} ${-camY})`;}
+ const originalStartBattle=startBattle;startBattle=function(){G.artSpeed=1;G.artCloseup=false;labEnabled=false;labFrozen=false;lab.hidden=true;show.classList.remove('active');$('lab-close').textContent='特写 关';$('lab-close').setAttribute('aria-pressed','false');$('lab-speed').value='1';camZoom=1.045;camX=720;camY=480;camStamp=0;originalStartBattle();};
+ // Rebind handlers captured before the wrapper; the development API also reaches this function.
+ $('start-btn').onclick=startBattle;
+@@ -1918,6 +1920,6 @@
+ const externalStage=el('image',{x:0,y:0,width:1440,height:810,preserveAspectRatio:'xMidYMid slice'},null);$('camera').insertBefore(externalStage,$('ground-fx'));externalStage.setAttribute('visibility','hidden');
+ function applyStage(value=$('stage-choice').value){const names={forge:'FORGE / 日落训练场',neon:'雨夜街角 / NEON DISTRICT',courtyard:'朱桥庭院 / VERMILION GATE',rooftop:'午夜天台 / MOONLIT ROOFTOP'};$('background').setAttribute('visibility',value==='neon'?'visible':'hidden');externalStage.setAttribute('visibility',value==='neon'?'hidden':'visible');if(value!=='neon')externalStage.setAttribute('href',({"rooftop":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMCIgdmlld0JveD0iMCAwIDE0NDAgODEwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzExMTgyYiIvPjxzdG9wIG9mZnNldD0iLjY1IiBzdG9wLWNvbG9yPSIjMzgzNTUwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzM0OTU3Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImZsb29yIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiMzYzNjNGMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNTI3MzMiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0ibW9vbiI+PHN0b3Agc3RvcC1jb2xvcj0iI2I5YzlkZiIgc3RvcC1vcGFjaXR5PSIuMTciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiOWM5ZGYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9IndpbmRvd3MiIHdpZHRoPSIyNSIgaGVpZ2h0PSIzNCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHJlY3QgeD0iOCIgeT0iOCIgd2lkdGg9IjUiIGhlaWdodD0iMTAiIGZpbGw9IiNjZWEyODUiIG9wYWNpdHk9Ii4zNiIvPjxyZWN0IHg9IjE4IiB5PSIyMyIgd2lkdGg9IjQiIGhlaWdodD0iNyIgZmlsbD0iIzlhYWVjMyIgb3BhY2l0eT0iLjI3Ii8+PC9wYXR0ZXJuPjxwYXR0ZXJuIGlkPSJmZW5jZSIgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNMCAwTDM1IDM1TTM1IDBMMCAzNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNzY4MjkyIiBzdHJva2Utb3BhY2l0eT0iLjIyIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI4MTAiIGZpbGw9InVybCgjc2t5KSIvPjxlbGxpcHNlIGN4PSI0MzUiIGN5PSIyMzIiIHJ4PSIyNDUiIHJ5PSIxOTMiIGZpbGw9InVybCgjbW9vbikiLz48Y2lyY2xlIGN4PSI0MzUiIGN5PSIyMzIiIHI9IjUyIiBmaWxsPSIjYzZjOWQyIi8+PGNpcmNsZSBjeD0iNDU1IiBjeT0iMjE3IiByPSI0NSIgZmlsbD0iIzI1MjkzYyIvPjxwYXRoIGQ9Ik0zMSAyMTRRMjA4IDE4MSAzNDEgMjExVDY3MCAyMTNNNzUwIDMzMFE5ODMgMjk0IDExNTMgMzIxVDE1MTMgMzI3IiBzdHJva2U9IiM5YjkxYTEiIHN0cm9rZS1vcGFjaXR5PSIuMDgiIHN0cm9rZS13aWR0aD0iMjMiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgNDY3SDcwVjM5MkgxMzlWNDI0SDE4MVYzNTNIMjUzVjQ2NkgzMTFWMzkySDM5OFY0NDVINDY3VjM0OUg1MzNWNDI3SDU3N1YyODZINjM3VjQwNUg2OTdWNDQySDc2OFYzNzFIODI1VjQ0OUg4OTBWMzI2SDk3N1YzOTFIMTAzMFY0NjlIMTEwMVY0MDZIMTE3OVYzNDhIMTI1N1Y0MjdIMTMzN1YzNjRIMTQ0MFY2NTZIMFoiIGZpbGw9IiMxZDI1MzYiLz48cGF0aCBkPSJNMCA0NjdINzBWMzkySDEzOVY0MjRIMTgxVjM1M0gyNTNWNDY2SDMxMVYzOTJIMzk4VjQ0NUg0NjdWMzQ5SDUzM1Y0MjdINTc3VjI4Nkg2MzdWNDA1SDY5N1Y0NDJINzY4VjM3MUg4MjVWNDQ5SDg5MFYzMjZIOTc3VjM5MUgxMDMwVjQ2OUgxMTAxVjQwNkgxMTc5VjM0OEgxMjU3VjQyN0gxMzM3VjM2NEgxNDQwVjY1NkgwWiIgZmlsbD0idXJsKCN3aW5kb3dzKSIvPgo8cGF0aCBkPSJNNTg1IDI4OFYyNTVNNjE0IDI4OFYyMTNNOTQyIDMyNlYyNTFNMTM0MiAzNjVWMjkxIiBzdHJva2U9IiMyNDI2MzgiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjYxNCIgY3k9IjIxMCIgcj0iMyIgZmlsbD0iI2RlODE4MiIvPjxjaXJjbGUgY3g9Ijk0MiIgY3k9IjI0OSIgcj0iMyIgZmlsbD0iI2RlODE4MiIvPgo8cGF0aCBkPSJNMCA1MDlIMTQ0MFY2MTZIMFoiIGZpbGw9IiMyMDI3MzUiLz48cGF0aCBkPSJNMCA1MTRIMTQ0MCIgc3Ryb2tlPSIjN2E3ODg2IiBzdHJva2Utd2lkdGg9IjUiLz48cmVjdCB5PSIzNzYiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjE3MCIgZmlsbD0idXJsKCNmZW5jZSkiLz48cGF0aCBkPSJNMCAzNzlIMTQ0ME0wIDU0NkgxNDQwTTEwNyAzNzZWNjE2TTM0MyAzNzZWNjE2TTU4MSAzNzZWNjE2TTgyMCAzNzZWNjE2TTEwNTggMzc2VjYxNk0xMjk2IDM3NlY2MTYiIHN0cm9rZT0iIzQ5NTU2NSIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTAgMzc5SDE0NDAiIHN0cm9rZT0iIzlhOTVhMyIgc3Ryb2tlLW9wYWNpdHk9Ii4zNSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkxIDM1MikiPjxwYXRoIGQ9Ik0wIDBIOTlWMjI2SDBaIiBmaWxsPSIjMzMzODQ5IiBzdHJva2U9IiM3ODgwOGMiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0xMyAxNEg4NlYxNjNIMTNaIiBmaWxsPSIjMWIyNjM2Ii8+PHBhdGggZD0iTTIzIDMwSDc2TTIzIDQ0SDc2TTIzIDU4SDc2TTIzIDcySDc2TTIzIDg2SDc2TTIzIDEwMEg3Nk0yMyAxMTRINzZNMjMgMTI4SDc2IiBzdHJva2U9IiM0YjU4NmQiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik0wIDE3M0g5OSIgc3Ryb2tlPSIjODE4MThjIiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSI0OSIgY3k9IjE5OCIgcj0iNyIgZmlsbD0iIzg3OTQ3YyIvPjwvZz4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE4MSA0MDMpIj48cmVjdCB3aWR0aD0iMTk1IiBoZWlnaHQ9IjE3MiIgcng9IjQiIGZpbGw9IiMzZDQwNTAiIHN0cm9rZT0iIzg0ODI4ZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iMTY2IiBoZWlnaHQ9Ijg2IiByeD0iNCIgZmlsbD0iIzIxMmMzYyIvPjxjaXJjbGUgY3g9IjU2IiBjeT0iNTgiIHI9IjMzIiBmaWxsPSIjMTYxZTJjIiBzdHJva2U9IiM1ODY1NzYiIHN0cm9rZS13aWR0aD0iMyIvPjxjaXJjbGUgY3g9IjEzOCIgY3k9IjU4IiByPSIzMyIgZmlsbD0iIzE2MWUyYyIgc3Ryb2tlPSIjNTg2NTc2IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNNTYgMzBWODZNMjkgNThIODNNMTM4IDMwVjg2TTExMSA1OEgxNjUiIHN0cm9rZT0iIzRkNTk2OCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTE3IDExN0gxNzhNMTcgMTMwSDE3OE0xNyAxNDNIMTc4IiBzdHJva2U9IiM2OTczN2YiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjIzIiB5PSIxNzIiIHdpZHRoPSIxNyIgaGVpZ2h0PSIyOSIgZmlsbD0iIzIzMmQzOSIvPjxyZWN0IHg9IjE1NSIgeT0iMTcyIiB3aWR0aD0iMTciIGhlaWdodD0iMjkiIGZpbGw9IiMyMzJkMzkiLz48L2c+CjxyZWN0IHk9IjYxNCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iMTk2IiBmaWxsPSJ1cmwoI2Zsb29yKSIvPjxwYXRoIGQ9Ik0wIDYxOEgxNDQwTTAgNjg2SDE0NDBNMCA3ODFIMTQ0ME0yOTUgNjE0TDE3MSA4MTBNNTgxIDYxNEw1NDEgODEwTTg2MyA2MTRMOTAzIDgxME0xMTQ5IDYxNEwxMjczIDgxMCIgc3Ryb2tlPSIjODg4NTkxIiBzdHJva2Utb3BhY2l0eT0iLjE4IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMCA2MzRIMTQ0MCIgc3Ryb2tlPSIjMTUxZTJjIiBzdHJva2Utd2lkdGg9IjgiLz48cGF0aCBkPSJNMzI0IDc1NEw0MTUgNjk2SDEwMjVMMTExNiA3NTRaIiBmaWxsPSJub25lIiBzdHJva2U9IiNjNGI2OWEiIHN0cm9rZS1vcGFjaXR5PSIuMiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTQ5NCA3OThMNTczIDc0NE05NTQgNzk4TDg3NSA3NDQiIHN0cm9rZT0iI2FjYWE5ZCIgc3Ryb2tlLW9wYWNpdHk9Ii4xOCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTIzMCA2NTlMMzE0IDY0NSAzMjUgNjUwIDI0OCA2NjVNMTA3OSA2NzdMMTE3OCA2NzkgMTE5NyA2ODUgMTA4OCA2ODUiIGZpbGw9IiNjM2IzYmIiIG9wYWNpdHk9Ii4wOSIvPgo8L3N2Zz4K","courtyard":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMCIgdmlld0JveD0iMCAwIDE0NDAgODEwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzEwMjIzYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzQxNjE3NCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJncm91bmQiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzNlNDY1NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI0MmIzYiIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJoYWxvIj48c3RvcCBzdG9wLWNvbG9yPSIjZWRjNThiIiBzdG9wLW9wYWNpdHk9Ii4zOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VkYzU4YiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Indvb2QiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iIzYzMzgzYiIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiM5ODQ3NDciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0ODJmMzYiLz48L2xpbmVhckdyYWRpZW50PjxwYXR0ZXJuIGlkPSJ0aWxlcyIgd2lkdGg9IjExMiIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgNTlIMTEyTTU2IDBWNjAiIHN0cm9rZT0iIzlhYTVhZSIgc3Ryb2tlLW9wYWNpdHk9Ii4wOCIgZmlsbD0ibm9uZSIvPjwvcGF0dGVybj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMCIgZmlsbD0idXJsKCNza3kpIi8+PGNpcmNsZSBjeD0iMTA2MCIgY3k9IjI0MCIgcj0iMTgwIiBmaWxsPSJ1cmwoI2hhbG8pIi8+PGNpcmNsZSBjeD0iMTA2MCIgY3k9IjI0MCIgcj0iNTgiIGZpbGw9IiNkOWQ5YzkiLz48Y2lyY2xlIGN4PSIxMDg0IiBjeT0iMjI1IiByPSI1MSIgZmlsbD0iIzI2Mzk0ZSIgb3BhY2l0eT0iLjIiLz4KPHBhdGggZD0iTTAgNDcwTDgzIDM5OSAxNDEgNDI5IDIzOSAzNTAgMzMxIDQwNSA0MTQgMzY5IDQ5NSA0MzcgNjE0IDM5MSA3MjMgNDU3IDgyMyAzOTUgOTA3IDQyMyAxMDIxIDM2NyAxMTE5IDQyNCAxMjM1IDM4OSAxNDQwIDQ1OVY2NDlIMFoiIGZpbGw9IiMyMzNiNGMiLz48cGF0aCBkPSJNMCA0OTlMMTQ0IDQ3NyAyODMgNTA1IDQwMSA0NjggNTU4IDUwNSA3NDEgNDg5IDkxOSA1MTUgMTA5NSA0NzUgMTI4NyA1MDggMTQ0MCA0NzFWNjY1SDBaIiBmaWxsPSIjMTcyYjNiIi8+CjxwYXRoIGQ9Ik0wIDUwM0gxNDQwVjYwOUgwWiIgZmlsbD0iIzI4Mzc0NCIvPjxwYXRoIGQ9Ik0wIDUwMkgxNDQwTTAgNTMySDE0NDBNMCA2MDNIMTQ0MCIgc3Ryb2tlPSIjNjA3MDc4IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMCA1MzVIMTQ0MCIgc3Ryb2tlPSIjMTMxZjJhIiBzdHJva2Utd2lkdGg9IjgiLz4KPGcgZmlsbD0iIzIwMmYzYyIgc3Ryb2tlPSIjNWI2ODcwIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yOSA1NDFIMTM2VjU5MkgyOVpNMTYzIDU0MUgyNzBWNTkySDE2M1pNMjk5IDU0MUg0MDZWNTkySDI5OVpNNDM1IDU0MUg1NDJWNTkySDQzNVpNNTcxIDU0MUg2NzhWNTkySDU3MVpNNzA3IDU0MUg4MTRWNTkySDcwN1pNODQzIDU0MUg5NTBWNTkySDg0M1pNOTc5IDU0MUgxMDg2VjU5Mkg5NzlaTTExMTUgNTQxSDEyMjJWNTkySDExMTVaTTEyNTEgNTQxSDEzNThWNTkySDEyNTFaIi8+PC9nPgo8ZyBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiMzNzI4MmYiIHN0cm9rZS13aWR0aD0iNCI+PHBhdGggZD0iTTE4NiAyMjFIMjI4TDIxNSA2MTRIMTc4Wk0xMjEyIDIyMUgxMjU0TDEyNjIgNjE0SDEyMjVaIi8+PHBhdGggZD0iTTE2NCAyOTJIMTI3NVYzMjJIMTY0WiIvPjxwYXRoIGQ9Ik0xMTggMjEzUTcxMSAyNjQgMTMyMSAyMTNMMTM0MSAxOTFRNzM1IDIyMyA5OCAxOTBaIi8+PHBhdGggZD0iTTE0MyAyNTNRNzIwIDI4NSAxMjk2IDI1MUwxMjgzIDI3NlE3MjAgMzA4IDE1NyAyNzhaIi8+PC9nPjxwYXRoIGQ9Ik0xMDMgMTg5UTcwNiAyMjIgMTMzOCAxOTAiIHN0cm9rZT0iI2JmOGQ3MCIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE5NyAzMjlWNjA5TTEyNDAgMzI5VjYwOSIgc3Ryb2tlPSIjYzA2YzU5IiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9Ii42Ii8+PHJlY3QgeD0iNjcxIiB5PSIyNjkiIHdpZHRoPSI5OCIgaGVpZ2h0PSI3MSIgcng9IjMiIGZpbGw9IiMyNzMyM2QiIHN0cm9rZT0iI2FhN2U1OCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHRleHQgeD0iNzIwIiB5PSIzMTMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNjY2JjOTEiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyNSIgbGV0dGVyLXNwYWNpbmc9IjMiPuatpumBkzwvdGV4dD4KPGc+PHBhdGggZD0iTTI3NSAzMDZWMzUwTTExNjUgMzA2VjM1MCIgc3Ryb2tlPSIjMzAyYjMxIiBzdHJva2Utd2lkdGg9IjQiLz48ZWxsaXBzZSBjeD0iMjc1IiBjeT0iMzk5IiByeD0iOTQiIHJ5PSIxMDYiIGZpbGw9InVybCgjaGFsbykiLz48ZWxsaXBzZSBjeD0iMTE2NSIgY3k9IjM5OSIgcng9Ijk0IiByeT0iMTA2IiBmaWxsPSJ1cmwoI2hhbG8pIi8+PHBhdGggZD0iTTI1MSAzNTZRMjc1IDM0NSAyOTkgMzU2TDMwNCA0MjVRMjc2IDQ0MiAyNDYgNDI1WiIgZmlsbD0iI2NhNzY1YiIvPjxwYXRoIGQ9Ik0xMTQxIDM1NlExMTY1IDM0NSAxMTg5IDM1NkwxMTk0IDQyNVExMTY2IDQ0MiAxMTM2IDQyNVoiIGZpbGw9IiNjYTc2NWIiLz48cGF0aCBkPSJNMjUwIDM2OEgzMDBNMjQ4IDQxMUgzMDNNMTE0MCAzNjhIMTE5ME0xMTM4IDQxMUgxMTkzIiBzdHJva2U9IiM3NDQ4NDUiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0yNjggMzU0VjQzMk0yODIgMzU0VjQzMk0xMTU4IDM1NFY0MzJNMTE3MiAzNTRWNDMyIiBzdHJva2U9IiNlOGFjNzgiIHN0cm9rZS1vcGFjaXR5PSIuNDUiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz4KPGcgZmlsbD0iIzE0MmMzNSI+PHBhdGggZD0iTTAgMTYxUTYwIDE4OCAxMDEgMjU1TDExNSA1MTUgODUgNTcxSDM5TDY3IDUwNSA1NyAzMzRRMjQgMjk3IDAgMzA0VjI3MUw0NiAyODdRMzYgMjQzIDAgMjMxWk0xNDQwIDI3NFExMzU3IDI5NyAxMzUxIDM5OUwxMzMxIDU1MkgxMzY4TDEzNzYgNDA1UTE0MDQgMzM2IDE0NDAgMzM5WiIvPjwvZz48ZyBmaWxsPSIjMjU0NzQ2Ij48ZWxsaXBzZSBjeD0iNDIiIGN5PSIyMDQiIHJ4PSIxMTEiIHJ5PSI1NSIvPjxlbGxpcHNlIGN4PSIxMDciIGN5PSIyNjYiIHJ4PSI4NyIgcnk9IjQ3Ii8+PGVsbGlwc2UgY3g9IjEyIiBjeT0iMzIyIiByeD0iMTAxIiByeT0iNDMiLz48ZWxsaXBzZSBjeD0iMTQwMiIgY3k9IjI4OCIgcng9IjEwNCIgcnk9IjUxIi8+PGVsbGlwc2UgY3g9IjEzNjIiIGN5PSIzNDYiIHJ4PSI4MSIgcnk9IjM5Ii8+PC9nPgo8cGF0aCBkPSJNMCA2MTNIMTQ0MFY4MTBIMFoiIGZpbGw9InVybCgjZ3JvdW5kKSIvPjxyZWN0IHk9IjYxNSIgd2lkdGg9IjE0NDAiIGhlaWdodD0iMTk1IiBmaWxsPSJ1cmwoI3RpbGVzKSIvPjxwYXRoIGQ9Ik0wIDYxN0gxNDQwTTAgNjY4SDE0NDBNMCA3MzlIMTQ0ME0xNzAgNjE1TDEzIDgxME00MjAgNjE1TDM0MSA4MTBNMTAyMCA2MTVMMTA5OSA4MTBNMTI3MCA2MTVMMTQyNyA4MTAiIHN0cm9rZT0iIzgwOTA5YSIgc3Ryb2tlLW9wYWNpdHk9Ii4xNyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTAgNjM1SDE0NDAiIHN0cm9rZT0iIzExMWUyYiIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTE0OSA2NjVRMjYyIDY1NCAzNTEgNjY4TTEwOTAgNjcxUTExOTMgNjU0IDEyODQgNjYzIiBmaWxsPSJub25lIiBzdHJva2U9IiNjMDkwNzYiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iLjE1Ii8+CjxwYXRoIGQ9Ik0wIDgwOEgxNDQwIiBzdHJva2U9IiMxMTE5MjUiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2Zz4K","forge":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDQwIDgxMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzE3MjUyZSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZlNjk2MCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJmbG9vciIgeDI9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNTk1YjU4Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTcyNjJiIi8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9InN1biI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmYzE4YyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VkOGM2MSIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9Im1lc2giIHdpZHRoPSIxOCIgaGVpZ2h0PSIyNCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMTJMOSAwIDE4IDEyIDkgMjRaIiBmaWxsPSJub25lIiBzdHJva2U9IiM4NzkyOGIiIHN0cm9rZS1vcGFjaXR5PSIuMjIiIHN0cm9rZS13aWR0aD0iLjYiLz48L3BhdHRlcm4+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjc2t5KSIgZD0iTTAgMEgxNDQwVjgxMEgwWiIvPjxjaXJjbGUgY3g9IjExMDAiIGN5PSIyODMiIHI9IjEzMiIgZmlsbD0idXJsKCNzdW4pIi8+PHBhdGggZD0iTTAgNDYwVjI4NUg4NlYzOTRIMTI4VjIyMEgxNzdWMzc4SDIwMFYxNTJIMjExVjM3NUgyODVWMjg2SDM1OFYzODJINDAyVjE4NUg0NTZWMzI5SDUwNFYyNTdINTkwVjM3NUg2MzNWMzEzSDY3MVYzNjRINzEwVjE5M0g3NDVWMzUwSDc5N1YyNTRIODQzVjM4OUg4OThWMzQ0SDk0MVYyMThIOTY3VjM4N0gxMDMwVjMzNEgxMDkyVjQwMEgxMTQyVjE5MkgxMTg3VjM1NUgxMjEyVjI4NUgxMzEwVjQwNUgxMzU0VjI0MkgxNDQwVjYzMkgwWiIgZmlsbD0iIzIwMzEzYSIgb3BhY2l0eT0iLjU4Ii8+PHBhdGggZD0iTTAgMzg2SDE0NDBWNDA0SDBaTTAgNTQxSDE0NDBWNTUwSDBaIiBmaWxsPSIjMWUyZjM1Ii8+PHBhdGggZD0iTTAgMzk1SDE0NDBWNTYySDBaIiBmaWxsPSJ1cmwoI21lc2gpIi8+PHBhdGggZD0iTTUwIDU1MFYyNzBNNDA1IDU1MFYyOTdNNzY1IDU1MFYzMDBNMTEzMCA1NTBWMzAwTTE0MDEgNTUwVjI3MCIgc3Ryb2tlPSIjMjYzYTQwIiBzdHJva2Utd2lkdGg9IjEwIi8+PHBhdGggZD0iTTAgNTY1SDE0NDBWODEwSDBaIiBmaWxsPSJ1cmwoI2Zsb29yKSIvPjxwYXRoIGQ9Ik0wIDU2NkgxNDQwTTAgNTk0SDE0NDBNMCA2NTJIMTQ0ME0wIDc0NEgxNDQwTS0yMDAgODEwTDQxMiA1NjVNMjU1IDgxMEw1NjAgNTY1TTcyMCA4MTBWNTY1TTExODUgODEwTDg4MCA1NjVNMTY0MCA4MTBMMTAyOCA1NjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2FlYjVhMyIgc3Ryb2tlLW9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xMDQgNzAwSDEzMzZNMzAwIDU5OUgxMTQwTDEzNTAgNzU2SDkwWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTljMWEyIiBzdHJva2Utb3BhY2l0eT0iLjI3IiBzdHJva2Utd2lkdGg9IjMiLz48ZyBmaWxsPSIjY2ZhYjg4IiBvcGFjaXR5PSIuMzUiPjxwYXRoIGQ9Ik01ODIgNjc2TDYwNiA2MzVINjIwTDU5NiA2NzZaTTYyNCA2NzZMNjQ4IDYzNUg2NjJMNjM4IDY3NlpNNjY2IDY3Nkw2OTAgNjM1SDcwNEw2ODAgNjc2Wk03MDggNjc2TDczMiA2MzVINzQ2TDcyMiA2NzZaTTc1MCA2NzZMNzc0IDYzNUg3ODhMNzY0IDY3NloiLz48L2c+PHBhdGggZD0iTTAgMEgxNDQwVjg1SDBaIiBmaWxsPSIjMTAxYzIzIi8+PHBhdGggZD0iTTAgOTNIMTQ0MCIgc3Ryb2tlPSIjZmZjNzljIiBzdHJva2Utb3BhY2l0eT0iLjYiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0wIDBMMTY3IDEyNU0xNDQwIDBMMTI3MyAxMjUiIHN0cm9rZT0iIzEwMWIyMSIgc3Ryb2tlLXdpZHRoPSIzMiIvPjxnIGZpbGw9IiNlYWM2OTciPjxwYXRoIGQ9Ik02MyA1MDVIMTY2VjU0Nkg2M1oiLz48cGF0aCBkPSJNMTI2NiA1MDVIMTM3MVY1NDZIMTI2NloiLz48L2c+PHRleHQgeD0iNzIwIiB5PSI1MzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNkN2M3YjEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBsZXR0ZXItc3BhY2luZz0iMTIiIG9wYWNpdHk9Ii42NSI+SU5LICAvICBGSUdIVElORyBBVEVMSUVSPC90ZXh0Pjwvc3ZnPgo="})[value]);$('stage-name').textContent=names[value]||names.neon;G.stage=value;}
+ SVG_FIGHTER.experience.stage=applyStage;
+-SVG_FIGHTER.focusCamera=()=>{camX=(fighters[0].x+fighters[1].x)/2;const bs=fighters.map(actorYBounds);camY=(Math.min(...bs.map(b=>b[0]))+Math.max(...bs.map(b=>b[1])))/2;camZoom=1.065;camStamp=0;};SVG_FIGHTER.renderFraction=alpha=>{if(!Number.isFinite(alpha))throw TypeError('Finite interpolation fraction required');for(const f of fighters)renderFighter(f,0,clamp(alpha,0,1));INK.VFX.render(G,clamp(alpha,0,1));};SF6Studio.install(SVG_FIGHTER);
++SVG_FIGHTER.focusCamera=()=>{camX=(fighters[0].x+fighters[1].x)/2;const bs=fighters.map(actorYBounds);camY=(Math.min(...bs.map(b=>b[0]))+Math.max(...bs.map(b=>b[1])))/2;camZoom=1.065;camStamp=0;};SVG_FIGHTER.renderFraction=alpha=>{if(!Number.isFinite(alpha))throw TypeError('Finite interpolation fraction required');for(const f of fighters)renderFighter(f,0,clamp(alpha,0,1));INK.Presentation.projectiles(G,clamp(alpha,0,1));INK.VFX.render(G,clamp(alpha,0,1));};SF6Studio.install(SVG_FIGHTER);
+ 
+ })();
+--- a/index.html
++++ b/index.html
+@@ -1,3 +1,3 @@
+-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 07 · 打开游戏</title><style>
++<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 08 · 打开游戏</title><style>
+ :root{color-scheme:dark;--bg:#141d20;--panel:#20332e;--ink:#e9e6d8;--muted:#a2b2a5;--edge:#40594c;--accent:#f2b882}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.8}main{max-width:1120px;margin:auto;padding:54px 28px 70px}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--edge)}.brand{font-size:26px;font-weight:800}.tag{font-size:12px;letter-spacing:.18em;color:var(--accent)}h1{font-size:clamp(32px,6vw,64px);line-height:1.25;margin:46px 0 20px}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 18px;color:var(--muted)}.lead{max-width:750px;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 40px}a{color:var(--accent);text-decoration:none}.btn{display:inline-block;padding:13px 23px;border:1px solid var(--edge);border-radius:4px;font-weight:600}.primary{background:var(--accent);color:#1c2524}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:24px;background:var(--panel);border:1px solid var(--edge);border-radius:5px}.number{font-size:12px;color:var(--accent);letter-spacing:.2em}.card p{font-size:14px;margin:0}.note{padding:24px;border-left:3px solid var(--accent);margin:32px 0;background:#1d2a29}.note strong{color:var(--ink)}code{color:var(--ink);overflow-wrap:anywhere;font-size:.94em}.foot{border-top:1px solid var(--edge);padding-top:26px;margin-top:34px;font-size:13px;color:var(--muted)}@media(max-width:740px){main{padding:25px 18px}.grid{grid-template-columns:1fr}header{align-items:flex-start;gap:12px}.tag{max-width:190px;text-align:right}.actions{margin-bottom:25px}.card{padding:20px}}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+-</style></head><body><main><header><div class="brand">INK / FLOW <sup>07</sup></div><div class="tag">RHYTHM &amp; FINITE CANCEL GRAPH</div></header><div class="tag" style="margin-top:38px">连得自由，打得有分量。</div><h1>让接招，有更多选择。</h1><p class="lead">统一动作时间、命中停顿与输入缓冲。有限的多出口连携，真实的路线编排与验证；舞的六条新路线已经接入实战。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow7/flow7-playback.mp4">观看 19 秒对照</a></div><div class="grid"><section class="card"><div class="number">01 / COMPOSE</div><h2>自由连段与节奏</h2><p>从游戏首页进入同名入口。先试「扇舞·重击衔接」的零能量 3 HIT，再看「忍步·仇樱收束」的 12 HIT。验证模式是真实出招和命中，不是脚本扣血。</p></section><section class="card"><div class="number">02 / FEEL</div><h2>调强弱拍，也能整体慢放</h2><p>默认「重心节奏 · 1.00×」。需要更从容时选择 0.85×，两位角色一起降速。停顿风格不是速度倍率，也不标榜官方游戏的帧数据。</p></section><section class="card"><div class="number">03 / PRACTICE</div><h2>每一次输入都有依据</h2><p>G 键或触摸按钮每次只请求下一步。0F／3F／6F 教学窗口可选，界面解释命中确认、冻结、资源、取消窗口和额外连携上限。</p></section></div><section class="note"><strong>先保留旧工程，再体验新版资产。</strong><p>v7 使用独立存储，不自动覆盖 v6。旧动作整份导入可能覆盖新增连携规则；浏览器提示不能存储时，关闭前导出工程或游戏 HTML。玩家版隐藏编辑入口，不是权限隔离。</p><p style="margin:0">文件名仍保留原来的 <code>INK-Street-Fighter-6.html</code> 构建路径，页面与内嵌引擎已经是 FLOW 07。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow7.py</code><br>完整使用说明：README.md · 引擎合同：docs/FLOW7-ENGINE.md · 本轮验收：TEST-REPORT-FLOW7.md<br>非官方 SVG 同人格斗娱乐作品。2.5D 表现、手机视口模拟；不承诺官方节奏等价或任意设备帧率。</div></main></body></html>
+\ No newline at end of file
++</style></head><body><main><header><div class="brand">INK / FLOW <sup>08</sup></div><div class="tag">RESPONSE &amp; SOLVED POSE REPLAY</div></header><div class="tag" style="margin-top:38px">动作接续，细节可复现。</div><h1>每次落地，都有回应。</h1><p class="lead">统一运动采样，接续落地、受击和起身。录下真正的实战姿态，逐帧查看、导出和分享；保留既有自由连段与节奏工坊。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow8/flow8-comparison.mp4">观看原始 v7 / v8 对照</a></div><div class="grid"><section class="card"><div class="number">01 / COMPOSE</div><h2>先看实战动作回放</h2><p>首页进入「打开实战动作回放」，生成跳跃或真实扫腿场景。观察落地、倒地和起身，拖动到小数帧；不是预制姿势轮播。</p></section><section class="card"><div class="number">02 / FEEL</div><h2>调强弱拍，也能整体慢放</h2><p>默认「重心节奏 · 1.00×」。需要更从容时选择 0.85×，两位角色一起降速。停顿风格不是速度倍率，也不标榜官方游戏的帧数据。</p></section><section class="card"><div class="number">03 / PRACTICE</div><h2>记录自己的连段</h2><p>在对战中点击「录制实战姿态」，完成操作后再次点击查看。保存最近 600 模拟步，逐帧、倒拖、事件定位和独立 JSON 导入导出。</p></section></div><section class="note"><strong>先保留旧工程，再体验新版资产。</strong><p>v8 使用独立存储，不自动覆盖 v7。旧工程导入会替换同名资产，请先备份；浏览器提示不能存储时，关闭前导出工程或游戏 HTML。玩家版隐藏编辑入口，不是权限隔离。</p><p style="margin:0">文件名仍保留原来的 <code>INK-Street-Fighter-6.html</code> 构建路径，页面与内嵌引擎已经是 FLOW 08。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow8.py</code><br>完整使用说明：README.md · 引擎合同：docs/FLOW8-ENGINE.md · 本轮验收：TEST-REPORT-FLOW8.md<br>非官方 SVG 同人格斗娱乐作品。2.5D 表现、手机视口模拟；不承诺官方节奏等价或任意设备帧率。</div></main></body></html>
+\ No newline at end of file
+--- a/src/ink/anatomy.js
++++ b/src/ink/anatomy.js
+@@ -75,8 +75,8 @@
+   }
+   return !rawOnly&&INK.Articulation?INK.Articulation.stabilize(c,p,r):r;
+  }
+- function solve(c,p){
+-  if(!settings.enabled)return legacySolve(c,p);
++ function solve(c,p,{force=false}={}){
++  if(!settings.enabled&&!force)return legacySolve(c,p);
+   const source=sourceRig(c,p),f=frameInfo(p),r={},sockets={},depth={},turns={},projectors={};
+   for(const name of parts){
+    const leg=name.includes('Leg'),rear=name.startsWith('rear'),bone=leg?0:2;
+--- a/src/ink/articulation.js
++++ b/src/ink/articulation.js
+@@ -10,7 +10,7 @@
+  const {mat,vec,rad,clamp}=INK,parts=['rearArm','frontArm','rearLeg','frontLeg'],step=.25;
+  const settings={enabled:true,armSpeed:32,legSpeed:26,bendSpeed:38};
+  const bodyLimits={lean:16,chest:18,pelvis:12,head:18,yaw:40,spin:60,headYaw:24,chestYaw:24,pelvisYaw:24,turn:.22,bob:24,floor:24,ffoot:40,rfoot:40};
+- let cache=new WeakMap(),contexts=new WeakMap();
++ let cache=new WeakMap(),contexts=new WeakMap();const snapshots=new WeakMap();
+  const stats={bakes:0,evaluations:0,limited:0};
+  const shortest=x=>((x+180)%360+360)%360-180;
+  function signature(c){return JSON.stringify([c.id,c.female,c.rigLengths,c.rigHipWidth,c.rigRearShoulder,c.rigFrontShoulder,settings.armSpeed,settings.legSpeed,settings.bendSpeed]);}
+@@ -37,6 +37,7 @@
+  function prepare(p,data,frame,c){if(c&&data&&Number.isFinite(frame)){frame=clamp(frame,0,data.duration);contexts.set(p,{data,frame,c});if(settings.enabled){const b=bake(data,c);sampleBody(b,frame,p,b.clip.sample(frame));}}return p;}
+  function inherit(from,to){const ctx=contexts.get(from);if(ctx)contexts.set(to,ctx);return to;}
+  function stabilize(c,p,raw){
++  const snapshot=snapshots.get(p);if(snapshot){const out={};for(const name of parts){const a=snapshot[name],root=raw[name][0],l0=vec.length(vec.sub(raw[name][1],root)),l1=vec.length(vec.sub(raw[name][2],raw[name][1])),first=[root[0]+Math.cos(rad(a[0]))*l0,root[1]+Math.sin(rad(a[0]))*l0];out[name]=[root,first,[first[0]+Math.cos(rad(a[0]+a[1]))*l1,first[1]+Math.sin(rad(a[0]+a[1]))*l1]];}return out;}
+   const ctx=contexts.get(p);if(!settings.enabled||!ctx)return raw;
+   const b=bake(ctx.data,c),index=Math.min(b.count-1,ctx.frame/step),i=Math.floor(index),j=Math.min(b.count-1,i+1),u=index-i;
+   const base=sampleBody(b,ctx.frame,b.clip.sample(ctx.frame)),ref=reference(c,base),out={};
+@@ -61,5 +62,5 @@
+    offsets[name]=a.map((v,k)=>shortest(v-c[k]));velocities[name]=a.map((v,k)=>clamp((shortest(v-b[k])-shortest(d[k]-c[k]))/Math.max(.001,dt),-64,64));}
+   return{offsets,velocities,duration};
+  }
+- INK.Articulation={version:'6.0.0',settings,stats,prepare,inherit,stabilize,bake,angles,bodyLimits,attachTransition,bridge,clear(){cache=new WeakMap();contexts=new WeakMap();}};
++ INK.Articulation={version:'8.0.0',attachSnapshot(p,angles){for(const k of parts){if(!Array.isArray(angles?.[k])||angles[k].length!==2||!angles[k].every(Number.isFinite))throw TypeError('Invalid solved pose angles');}snapshots.set(p,Object.fromEntries(parts.map(k=>[k,angles[k].slice()])));return p;},settings,stats,prepare,inherit,stabilize,bake,angles,bodyLimits,attachTransition,bridge,clear(){cache=new WeakMap();contexts=new WeakMap();}};
+ })();
+--- a/src/ink/core.js
++++ b/src/ink/core.js
+@@ -4,7 +4,7 @@
+  */
+ 'use strict';
+ globalThis.INK = (() => {
+-  const VERSION = '7.0.0-rhythm';
++  const VERSION = '8.0.0-response';
+   const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+   const lerp = (a, b, t) => a + (b - a) * t;
+   const rad = a => a * Math.PI / 180;
+--- a/src/ink/effects.js
++++ b/src/ink/effects.js
+@@ -145,13 +145,13 @@
+       if(!this.frozen)this.time++;
+       pool.step(this.time);this.trails.step(this.time);pool.quality=setting.quality*(setting.reducedMotion?.55:1);
+     },
+-    render(G,alpha){if(!this.pool)return;
++    render(G,alpha){INK.SceneFeedback?.render(G,alpha);if(!this.pool)return;
+       const visible=setting.enabled?'inline':'none';assign(this.pool.root,'display',visible);assign(this.trails.root,'display',visible);if(!setting.enabled)return;
+       assign(this.pool.root,'opacity',setting.intensity);assign(this.trails.root,'opacity',setting.intensity);
+       const t=G.paused||G.hitstop||this.frozen?this.time:this.time-1+clamp(alpha);
+       this.pool.render(t);this.trails.render(t);
+     },
+-    clear(){INK.ImpactFeedback?.clear();this.bank?.clear();this.pool?.clear();this.trails?.clear();this.time=0;this.frozen=false;for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkTrail=null;f._inkFxPrevious=null;}},
++    clear(){INK.SceneFeedback?.clear();INK.StateTransitions?.clear();INK.ImpactFeedback?.clear();this.bank?.clear();this.pool?.clear();this.trails?.clear();this.time=0;this.frozen=false;for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkTrail=null;f._inkFxPrevious=null;}},
+     quality(value){if(!Number.isFinite(value))throw TypeError('Finite FX quality required');setting.quality=clamp(value,.25,1.5);},
+     setEnabled(value){setting.enabled=!!value;},
+     get stats(){return this.pool?.stats||{active:0,peak:0,dropped:0,capacity:320};},
+--- a/src/ink/game-adapter.js
++++ b/src/ink/game-adapter.js
+@@ -1,10 +1,10 @@
+ /* One production renderer, reversible only for regression inspection. */
+ 'use strict';
+-(()=>{INK.Game={enabled:true,mode:'skin',version:'7.0.0',
++(()=>{INK.Game={enabled:true,mode:'skin',version:'8.0.0',
+  legacyNodes:f=>[f.core,f.rearLeg.g,f.frontLeg.g,f.trailing,f.beltLink].filter(Boolean),
+  show(f,on){for(const n of this.legacyNodes(f))n.style.display=on?'none':'';if(f.inkRenderer)f.inkRenderer.group.style.display=on?'':'none';if(f.inkFX){f.inkFX.group.style.display=on?'':'none';f.inkFX.backRoot.style.display=on?'':'none';}},
+  mount(f){if(f.inkRenderer)return f.inkRenderer;const profile=INK.Runtime.store?INK.Runtime.profile(f.ch.id):INK.assets.byID[f.ch.id];const r=f.inkRenderer=new INK.Renderer(f.facing,profile);r.setStyle(profile.previewStyle||{});r.setMode(this.mode);f.facing.insertBefore(r.group,f.charge);f.inkFX=new INK.Effects(f.facing);f.facing.insertBefore(f.inkFX.backRoot,r.group);f.facing.insertBefore(f.inkFX.group,f.charge);return r;},
+- update(f,pose,rig,frame,expression,freeze,world=null){const r=this.mount(f);this.show(f,true);const ctx=INK.State.contextForFX(f);const localFrame=ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):frame;r.render(pose,{rig,frame:localFrame,expression,secondary:!INK.VFX.settings.reducedMotion,motion:INK.Runtime.presentation(f,ctx?.record,localFrame,frame)});f.inkFX.render(ctx?.record,ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):0,pose,rig,world?{...world,history:f._inkTrail?.attack===f.attack?f._inkTrail.rows:null}:null);},
++ update(f,pose,rig,frame,expression,freeze,world=null,view=f){const r=this.mount(f);this.show(f,true);const ctx=INK.State.contextForFX(view);const localFrame=ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):frame;r.render(pose,{rig,frame:localFrame,expression,secondary:!INK.VFX.settings.reducedMotion,motion:INK.Runtime.presentation(view,ctx?.record,localFrame,frame)});f.inkFX.render(ctx?.record,ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):0,pose,rig,world?{...world,history:f._inkTrail?.attack===f.attack?f._inkTrail.rows:null}:null);},
+  setEnabled(value){this.enabled=!!value;INK.Runtime.setEnabled(value);for(const f of globalThis.SVG_FIGHTER?.fighters||[])this.show(f,this.enabled);globalThis.SVG_FIGHTER?.render();},
+  setMode(mode){this.mode=mode;for(const f of globalThis.SVG_FIGHTER?.fighters||[])f.inkRenderer?.setMode(mode);}
+ };})();
+--- a/src/ink/portable.js
++++ b/src/ink/portable.js
+@@ -10,8 +10,8 @@
+  function zip(files){const chunks=[],central=[];let offset=0;const now=new Date(),time=((now.getHours()&31)<<11)|((now.getMinutes()&63)<<5)|(now.getSeconds()>>1),date=((now.getFullYear()-1980)<<9)|((now.getMonth()+1)<<5)|now.getDate();for(const [name,content]of Object.entries(files)){const n=enc.encode(name),data=typeof content==='string'?enc.encode(content):content,c=crc32(data),h=[];u32(h,0x04034b50);u16(h,20);u16(h,0x800);u16(h,0);u16(h,time);u16(h,date);u32(h,c);u32(h,data.length);u32(h,data.length);u16(h,n.length);u16(h,0);chunks.push(new Uint8Array(h),n,data);const d=[];u32(d,0x02014b50);u16(d,20);u16(d,20);u16(d,0x800);u16(d,0);u16(d,time);u16(d,date);u32(d,c);u32(d,data.length);u32(d,data.length);u16(d,n.length);u16(d,0);u16(d,0);u16(d,0);u16(d,0);u32(d,0);u32(d,offset);central.push(new Uint8Array(d),n);offset+=h.length+n.length+data.length;}
+  const centralSize=central.reduce((a,b)=>a+b.length,0),end=[],count=Object.keys(files).length;u32(end,0x06054b50);u16(end,0);u16(end,0);u16(end,count);u16(end,count);u32(end,centralSize);u32(end,offset);u16(end,0);return new Blob([...chunks,...central,new Uint8Array(end)],{type:'application/zip'});}
+  function safeJSON(o){return JSON.stringify(o).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');}
+- function html(store,{playerOnly=false}={}){const el=document.getElementById('ink-export-template');if(!el)throw Error('此源码页面没有离线模板，请先运行构建器');let t=JSON.parse(el.textContent);const snapshot=store.snapshot();snapshot.rhythmSettings={...INK.CombatFlow.settings};snapshot.projectId='ink-portable-'+Date.now().toString(36)+(playerOnly?'-play':'');snapshot.presentation=playerOnly?'player':'studio';const slot=(doc,id,value)=>{const start='<script id="'+id+'" type="application/json">',a=doc.indexOf(start);if(a<0)throw Error('导出模板缺少 '+id);const b=doc.indexOf('</script>',a);return doc.slice(0,a+start.length)+safeJSON(value)+doc.slice(b);};if(INK.Combo?.routes){INK.Combo.configure(INK.Combo.routes);t=slot(t,'ink-combo-library',INK.Combo.routes);}return slot(slot(t,'ink-export-template',t),'ink-user-project',snapshot);}
++ function html(store,{playerOnly=false}={}){const el=document.getElementById('ink-export-template');if(!el)throw Error('此源码页面没有离线模板，请先运行构建器');let t=JSON.parse(el.textContent);const snapshot=store.snapshot();snapshot.rhythmSettings={...INK.CombatFlow.settings};snapshot.presentationSettings={...INK.Presentation.settings};snapshot.projectId='ink-portable-'+Date.now().toString(36)+(playerOnly?'-play':'');snapshot.presentation=playerOnly?'player':'studio';const slot=(doc,id,value)=>{const start='<script id="'+id+'" type="application/json">',a=doc.indexOf(start);if(a<0)throw Error('导出模板缺少 '+id);const b=doc.indexOf('</script>',a);return doc.slice(0,a+start.length)+safeJSON(value)+doc.slice(b);};if(INK.Combo?.routes){INK.Combo.configure(INK.Combo.routes);t=slot(t,'ink-combo-library',INK.Combo.routes);}return slot(slot(t,'ink-export-template',t),'ink-user-project',snapshot);}
+  function download(name,content,type='application/octet-stream'){const blob=content instanceof Blob?content:new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);return blob;}
+- function packageFiles(store,playable=true){const files={};const routes=document.getElementById('ink-combo-library');if(routes)files['assets/ink/combos.json']=safeJSON(INK.Combo?.routes||JSON.parse(routes.textContent));for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK FLOW 7 / Rhythm & Cancel Graph\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
++ function packageFiles(store,playable=true){const files={};const routes=document.getElementById('ink-combo-library');if(routes)files['assets/ink/combos.json']=safeJSON(INK.Combo?.routes||JSON.parse(routes.textContent));for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK FLOW 8 / Response & Pose Replay\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
+  INK.Portable={zip,crc32,html,download,packageFiles,safeJSON};
+ })();
+--- /dev/null
++++ b/src/ink/pose-replay.js
+@@ -0,0 +1,48 @@
++/* FLOW 08 — evaluated-pose interchange and bounded real-simulation recording.
++ * Records the solved source joint angles, NOT only authored wrist targets.
++ * This is pose playback/diagnostics, not rollback netcode or input resimulation.
++ * Imported data contains no executable code, SVG, URLs or DOM fragments.
++ */
++'use strict';
++(() => {
++ const clone=v=>JSON.parse(JSON.stringify(v)),parts=['rearArm','frontArm','rearLeg','frontLeg'];
++ const finite=(v,a=-10000,b=10000)=>{if(!Number.isFinite(v)||v<a||v>b)throw TypeError('回放数值无效');return v;};
++ const plain=o=>!!o&&typeof o==='object'&&!Array.isArray(o);
++ function keys(o,allowed){if(!plain(o)||Object.keys(o).some(k=>!allowed.includes(k)))throw TypeError('回放字段无效');}
++ function text(v,n=120){if(typeof v!=='string'||v.length>n)throw TypeError('回放文本无效');return v;}
++ function numeric(o,maxKeys=60){if(!plain(o)||Object.keys(o).length>maxKeys)throw TypeError('回放通道无效');for(const[k,v]of Object.entries(o)){if(!/^[a-zA-Z][a-zA-Z0-9]*$/.test(k))throw TypeError('回放通道名无效');if(Array.isArray(v)){if(v.length>4||!v.length)throw TypeError('回放向量无效');v.forEach(x=>finite(x));}else finite(v);}return o;}
++ const PoseFrame={version:1,
++  capture(f){const R=INK.Runtime,p=SVG_FIGHTER.visualPose(f),rig=R.visualRig(f,p),ctx=INK.State.contextForFX(f);
++   return{character:f.ch.id,x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1,state:f.state,clip:INK.Presentation.key(f),frame:ctx?.frame||0,pose:clone({...INK.basePose,...p}),angles:Object.fromEntries(parts.map(k=>[k,INK.Articulation.angles(rig.anatomy.source[k])])),secondary:Object.fromEntries(Object.entries(R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0)).filter(([,v])=>typeof v==='number'||Array.isArray(v)).map(([k,v])=>[k,clone(v)])),expression:['hit','tumble','down','ko'].includes(f.state)?'hurt':f.attack&&f.attack.t>=f.attack.m.startup&&f.attack.t<f.attack.m.startup+f.attack.m.active?'power':'rest',hp:f.hp,drive:f.drive,super:f.super,combo:f.combo,damage:f.comboDamage};
++  },
++  restore(frame,profile){const p=clone(frame.pose);INK.Articulation.attachSnapshot(p,frame.angles);return{pose:p,rig:INK.Anatomy.solve(profile,p,{force:true})};},
++  interpolate(a,b,u){if(u<=0||a.dir!==b.dir||a.character!==b.character)return clone(a);if(u>=1)return clone(b);const out=clone(a);out.pose=INK.blend(a.pose,b.pose,u);for(const k of ['x','y','scale','frame'])out[k]=INK.lerp(a[k],b[k],u);for(const name of parts)out.angles[name]=a.angles[name].map((v,i)=>v+((((b.angles[name][i]-v+180)%360)+360)%360-180)*u);out.secondary=INK.blend(a.secondary,b.secondary,u);return out;},
++  validate(f){keys(f,['character','x','y','dir','scale','state','clip','frame','pose','angles','secondary','expression','hp','drive','super','combo','damage']);if(!INK.Schema.CHARACTERS.includes(f.character))throw TypeError('未知回放角色');finite(f.x,-100,1540);finite(f.y,-1800,200);if(![-1,1].includes(f.dir))throw TypeError('回放朝向无效');finite(f.scale,.2,3);text(f.state,40);text(f.clip,140);finite(f.frame,0,100000);numeric(f.pose);for(const k of Object.keys(INK.basePose))if(!Object.hasOwn(f.pose,k))throw TypeError('缺少必需姿态通道：'+k);for(const k of ['rw','fw','ra','fa'])if(!Array.isArray(f.pose[k])||f.pose[k].length!==2)throw TypeError('缺少回放肢体坐标');finite(f.pose.depth??1,.05,3);keys(f.angles,parts);for(const k of parts){if(!Array.isArray(f.angles[k])||f.angles[k].length!==2)throw TypeError('缺少已解算关节角');f.angles[k].forEach(v=>finite(v,-100000,100000));}numeric(f.secondary,20);if(!['rest','power','hurt'].includes(f.expression))throw TypeError('回放表情无效');finite(f.hp,0,10000);finite(f.drive,0,6.001);finite(f.super,0,3.001);finite(f.combo,0,1000);finite(f.damage,0,100000);return f;}
++ };
++ const Replay={version:1,capacity:600,recording:false,frames:[],events:[],characters:{},title:'实战姿态记录',startTick:0,totalCaptured:0,
++  begin(title='实战姿态记录'){text(title);if(!INK.Game.enabled||!INK.Anatomy.settings.enabled)throw Error('录制需要启用连续骨架引擎');if(SVG_FIGHTER.fighters.length!==2)throw Error('请先进入训练对战');this.title=title;this.frames=[];this.events=[];this.characters={};this.totalCaptured=0;this.startTick=SVG_FIGHTER.state.tick;
++   for(const f of SVG_FIGHTER.fighters)this.characters[f.ch.id]={model:clone(INK.Runtime.store.getModel(f.ch.id)),rig:clone(INK.Runtime.store.getRig(f.ch.id))};this.recording=true;this.capture(SVG_FIGHTER.state,SVG_FIGHTER.fighters);return true;
++  },
++  capture(G,fighters){if(!this.recording||fighters.length!==2)return;const old=this.frames.at(-1),tick=G.tick-this.startTick;if(old?.tick===tick)return;if(old&&tick<old.tick){this.recording=false;return;}
++   if(fighters.some(f=>!this.characters[f.ch.id])){this.recording=false;return;}
++   const frame={tick,action:G.actionTick||0,frozen:!!G.hitstop||!!G._inkStepFrozen,actors:fighters.map(PoseFrame.capture)};this.frames.push(frame);this.totalCaptured++;
++   if(old)fighters.forEach((f,i)=>{const a=old.actors[i],b=frame.actors[i];if(a.clip!==b.clip)this.events.push({tick,actor:i,type:'state',label:a.clip+' → '+b.clip});if(a.y<0&&b.y>=0)this.events.push({tick,actor:i,type:'land',label:'落地'});if(a.dir!==b.dir)this.events.push({tick,actor:i,type:'facing',label:'规则换向'});});
++   for(const e of G.combatEvents||[])if(e.tick===G.tick)this.events.push({tick,actor:e.defender,type:'contact',label:e.type+' · '+e.move+' · '+e.damage});
++   if(this.frames.length>this.capacity)this.frames.shift();const start=this.frames[0].tick;this.events=this.events.filter(e=>e.tick>=start).slice(-240);
++  },
++  stop(){this.recording=false;return this.frames.length;},
++  export(){if(!this.frames.length)throw Error('还没有录制的姿态');return{version:1,kind:'ink-pose-replay',hz:60,title:this.title,engine:INK.VERSION,characters:clone(this.characters),frames:clone(this.frames),events:clone(this.events)};},
++  validate(data){INK.Schema.safeData(data);keys(data,['version','kind','hz','title','engine','characters','frames','events']);if(data.version!==1||data.kind!=='ink-pose-replay'||data.hz!==60)throw TypeError('不支持的姿态回放格式');text(data.title);text(data.engine,100);if(!plain(data.characters)||Object.keys(data.characters).length<1||Object.keys(data.characters).length>2)throw TypeError('回放包含 1–2 种角色');
++   for(const[id,c]of Object.entries(data.characters)){keys(c,['model','rig']);INK.Schema.model(c.model);INK.Schema.rig(c.rig);if(c.model.character!==id||c.rig.character!==id)throw TypeError('回放角色绑定不一致');}
++   if(!Array.isArray(data.frames)||!data.frames.length||data.frames.length>600)throw TypeError('回放最多 600 帧');let tick=-1;
++   for(const f of data.frames){keys(f,['tick','action','frozen','actors']);finite(f.tick,0,100000000);if(!Number.isInteger(f.tick)||f.tick<=tick)throw TypeError('回放时间必须递增');tick=f.tick;finite(f.action,0,1e9);if(typeof f.frozen!=='boolean'||!Array.isArray(f.actors)||f.actors.length!==2)throw TypeError('回放帧无效');for(const [i,a]of f.actors.entries()){PoseFrame.validate(a);if(a.character!==data.frames[0].actors[i]?.character)throw TypeError('同一角色槽位不能中途换人');if(!data.characters[a.character])throw TypeError('缺少回放角色资产');}}
++   if(!Array.isArray(data.events)||data.events.length>240)throw TypeError('回放事件过多');for(const e of data.events){keys(e,['tick','actor','type','label']);finite(e.tick,data.frames[0].tick,tick);if(!Number.isInteger(e.tick)||![0,1].includes(e.actor)||!['state','land','facing','contact'].includes(e.type))throw TypeError('回放事件无效');text(e.label,300);}return clone(data);
++  },
++  parse(source){if(typeof source!=='string'||new TextEncoder().encode(source).length>8000000)throw TypeError('姿态回放不超过 8 MB');return this.validate(JSON.parse(source));},
++  load(data){const v=this.validate(data);this.recording=false;this.title=v.title;this.characters=v.characters;this.frames=v.frames;this.events=v.events;return this.frames.length;},
++  profile(id){const c=this.characters[id];if(!c)throw Error('缺少回放角色');const a=c.model,b=c.rig;return{...INK.assets.byID[id],...a,id,rigLengths:b.lengths.slice(),rigRearShoulder:b.rearShoulder.slice(),rigFrontShoulder:b.frontShoulder.slice(),rigHipWidth:b.hipWidth,rigHeadOffset:b.headOffset,previewStyle:{...a.style}};},
++  sample(index){if(!Number.isFinite(index)||!this.frames.length)throw Error('无有效回放帧');const at=INK.clamp(index,0,this.frames.length-1),i=Math.floor(at),a=this.frames[i],b=this.frames[Math.min(i+1,this.frames.length-1)],u=at-i;return{...a,actors:a.actors.map((p,j)=>PoseFrame.interpolate(p,b.actors[j],u))};},
++  clear(){this.stop();this.frames=[];this.events=[];this.characters={};}
++ };
++ INK.PoseFrame=PoseFrame;INK.Replay=Replay;
++})();
+--- /dev/null
++++ b/src/ink/presentation-clock.js
+@@ -0,0 +1,52 @@
++/* FLOW 08 — simulation-owned presentation history.
++ * A rendered subframe is a pure view of two completed simulation states. Walking,
++ * jump velocity, landing phase, state clips and projectiles use the SAME alpha.
++ * No render mutates a fighter, projectile, RNG, input buffer or combat clock.
++ */
++'use strict';
++(() => {
++ const {clamp}=INK;
++ const settings={interpolate:true,stateBlends:true,landingResponse:true};
++ const scalar=['y','vy','walkT','landT','stateAge','jumpPre','_inkVisualClock'];
++ function key(f){return f.attack?'attack:'+f.attack.m.id:INK.State.id(f)||'idle';}
++ function snapshot(f){
++  const s={...f};s.attack=f.attack?{...f.attack}:null;s._inkState=f._inkState?{...f._inkState}:null;
++  s._inkHistory=null;s._inkPrevView=null;
++  return s;
++ }
++ const Clock={version:'8.0.0',settings,stats:{steps:0,views:0,projectileViews:0},key,snapshot,
++  begin(G,fighters){
++   this.stats.steps++;
++   for(const f of fighters){f._inkPrevView=snapshot(f);f._inkHistory={key:key(f),dir:f.dir,attack:f.attack};f._inkVisualClock=(f._inkVisualClock||0)+1;}
++  },
++  finish(fighters){for(const f of fighters){const previous=f._inkPrevView;if(!previous)continue;f._inkPoseVelocity=Object.fromEntries(scalar.filter(k=>Number.isFinite(f[k])&&Number.isFinite(previous[k])).map(k=>[k,f[k]-previous[k]]));}},
++  previous(f,dt=.25){const v=Object.create(f),velocity=f._inkPoseVelocity||{};for(const k of ['y','vy','walkT','landT'])if(Number.isFinite(f[k]))v[k]=f[k]-(velocity[k]||0)*dt;v.landT=Math.max(0,v.landT||0);v.stateAge=Math.max(0,(f.stateAge||0)-dt);v._inkVisualClock=Math.max(0,(f._inkVisualClock||0)-dt);if(f.attack)v.attack={...f.attack,t:Math.max(0,f.attack.t-dt)};if(f._inkState)v._inkState={...f._inkState,age:Math.max(0,f._inkState.age-dt)};return v;},
++  beginProjectiles(G){for(const s of G.shots||[])s._inkPrevious={x:s.x,y:s.y,age:s.age||0,dir:s.dir};},
++  view(f,alpha,hold=false){
++   if(!Number.isFinite(alpha))throw TypeError('Finite presentation fraction required');
++   alpha=clamp(alpha);const prev=f._inkPrevView,h=f._inkHistory;
++   if(hold||!settings.interpolate||alpha===1||!prev||!h||h.key!==key(f)||h.dir!==f.dir||h.attack!==f.attack)return f;
++   const v=Object.create(f);
++   for(const k of scalar){const a=prev[k],b=f[k];if(Number.isFinite(a)&&Number.isFinite(b))v[k]=a+(b-a)*alpha;}
++   if(f.attack)v.attack={...f.attack,t:prev.attack.t+(f.attack.t-prev.attack.t)*alpha};
++   if(f._inkState&&prev._inkState?.id===f._inkState.id)v._inkState={...f._inkState,age:prev._inkState.age+(f._inkState.age-prev._inkState.age)*alpha};
++   // Coupled throws keep their existing grip solver. Interpolating one body in
++   // isolation would violate that constraint; the production throw path owns it.
++   if(f.throwAction)return f;
++   this.stats.views++;return v;
++  },
++  projectiles(G,alpha=1){
++   const frozen=G.paused||G.hitstop>0||G._inkStepFrozen||INK.VFX?.frozen;
++   for(const s of G.shots||[]){
++    const prev=s._inkPrevious,u=frozen||!settings.interpolate||!prev||prev.dir!==s.dir?1:clamp(alpha);
++    const x=prev?prev.x+(s.x-prev.x)*u:s.x,y=prev?prev.y+(s.y-prev.y)*u:s.y,age=prev?prev.age+((s.age||0)-prev.age)*u:s.age||0;
++    INK.SVG.assign(s.node,'transform',`translate(${x.toFixed(3)} ${y.toFixed(3)}) scale(${s.dir} 1)`);
++    if(s.spin)INK.SVG.assign(s.spin,'transform',s.spinKind==='energy'?`rotate(${age*10})`:`rotate(${age*27}) translate(-47 0)`);
++    this.stats.projectileViews++;
++   }
++  },
++  set(values){if(!values||typeof values!=='object'||Array.isArray(values))throw TypeError('Presentation settings object required');for(const [k,v]of Object.entries(values)){if(!(k in settings)||typeof v!=='boolean')throw TypeError('Invalid presentation setting: '+k);}Object.assign(settings,values);return{...settings};},
++  reset(f){f._inkVisualClock=0;f._inkPoseVelocity=null;f._inkHistory=null;f._inkPrevView=null;f._inkLanding=null;f._inkStateVisualBlend=null;}
++ };
++ INK.Presentation=Clock;
++})();
+--- a/src/ink/project.js
++++ b/src/ink/project.js
+@@ -51,7 +51,7 @@
+   async set(value){if(this.mode==='indexedDB')return new Promise((resolve,reject)=>{const tx=this.db.transaction('projects','readwrite');tx.objectStore('projects').put(value,this.name);tx.oncomplete=()=>resolve(true);tx.onerror=tx.onabort=()=>reject(tx.error||Error('无法保存数据库'));});if(this.mode==='localStorage'){localStorage.setItem(this.name,JSON.stringify(value));return true;}return false;}
+  }
+  class AssetStore {
+-  constructor(bundle,embedded=null){this.bundle=bundle;this.manifest=bundle.manifest;this.overrides={models:{},rigs:{},moves:{}};this.revision=0;this.listeners=new Set();this.cache=new Map();this.queue=Promise.resolve();this.id=embedded?.projectId||'ink-flow-sf6-v7';this.persistence=new Persistence(this.id);this.embedded=embedded;this.pathHandle=null;this.directoryQueue=Promise.resolve();this.lastSaved=0;this.mode='loading';this.gameMap={};for(const id of CHARACTERS){for(const rec of Object.values(bundle.characters[id].moves))this.gameMap[id+':'+rec.gameId]=id+':'+rec.key;}}
++  constructor(bundle,embedded=null){this.bundle=bundle;this.manifest=bundle.manifest;this.overrides={models:{},rigs:{},moves:{}};this.revision=0;this.listeners=new Set();this.cache=new Map();this.queue=Promise.resolve();this.id=embedded?.projectId||'ink-flow-sf6-v8';this.persistence=new Persistence(this.id);this.embedded=embedded;this.pathHandle=null;this.directoryQueue=Promise.resolve();this.lastSaved=0;this.mode='loading';this.gameMap={};for(const id of CHARACTERS){for(const rec of Object.values(bundle.characters[id].moves))this.gameMap[id+':'+rec.gameId]=id+':'+rec.key;}}
+   async init(){
+    validateBundle(this.bundle);
+    await this.persistence.init();this.mode=this.persistence.mode;
+--- a/src/ink/runtime.js
++++ b/src/ink/runtime.js
+@@ -9,7 +9,7 @@
+  function phaseMap(t,from,to){for(let i=0;i<3;i++)if(t<=from[i+1]||i===2)return to[i]+clamp((t-from[i])/Math.max(.001,from[i+1]-from[i]))*(to[i+1]-to[i]);return to[3];}
+  function socket(p,rig,name){if(name==='fanGrip'||name==='fanTip')return INK.Motion.fanSocket(p,rig,name);const r=Rig.sockets(p,rig),lut={frontHand:['frontArm',2],rearHand:['rearArm',2],frontElbow:['frontArm',1],rearElbow:['rearArm',1],frontFoot:['frontLeg',2],rearFoot:['rearLeg',2],frontKnee:['frontLeg',1],rearKnee:['rearLeg',1]};if(name==='root')return[0,0];if(lut[name])return r[lut[name][0]][lut[name][1]];return r[name]||r.chest;}
+  const Runtime={enabled:true,store:null,eventLog:[],profileCache:new Map(),lifecycleLog:[],actionSerial:0,
+-  install(store){this.store=store;store.on(()=>{this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}});return this;},
++  install(store){this.store=store;store.on(()=>{INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Presentation?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}});return this;},
+   get revision(){return this.store?.revision||0;},
+   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
+   record(f,m){return this.store?.byGame(f.ch.id,m?.id||'@idle')||null;},
+@@ -18,14 +18,14 @@
+    if(!this.store)return;const A=globalThis.SVG_FIGHTER,from=A?.pose(f),rec=this.record(f,m);if(!from||!rec)return;
+    const profile=this.profile(f.ch.id),world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},visualFrom=this.visual(f,from,world);
+    let previous=from,visualPrevious=visualFrom,dt=.25;
+-   if(f.attack&&f.attack.t>0){dt=Math.min(.25,f.attack.t);const view=Object.create(f);view.attack={...f.attack,t:f.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,world);}
++   if(f.attack&&f.attack.t>0){dt=Math.min(.25,f.attack.t);const view=Object.create(f);view.attack={...f.attack,t:f.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,world);}else if(INK.Presentation){const view=INK.Presentation.previous(f,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,world);}
+    // Sample the real incoming game pose with clean transition ownership.
+    // Falling back to the outgoing pose for absent channels fabricated a yaw
+    // target which the incoming Runtime.sample would never actually produce.
+    const incomingView=Object.create(f);Object.assign(incomingView,{state:'attack',stateAge:0,crouch:m.normalState==='c',move:0,jumpPre:0,attack:{m,t:0},_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkStateBlend:null});
+    const target=A.pose(incomingView);incomingView.attack={m,t:.25};const next=A.pose(incomingView);
+-   const oldRec=f.attack?this.record(f,f.attack.m):null;
+-   const oldSecondary=INK.Motion.secondary(oldRec?.clip,f.attack&&oldRec?this.clipFrame(oldRec,f.attack.m,f.attack.t):f.stateAge||0);
++   const oldCtx=INK.State.contextForFX(f);
++   const oldSecondary=this.presentation(f,oldCtx?.record,oldCtx?.frame||0,f.attack?.t||0);
+    f._inkActionOrigin={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1,t:0};
+    const deadline=Math.min(5,Math.max(0,m.startup-1));
+    f._inkTransition={id:m.id,bridge:INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,next),deadline),secondary:oldSecondary};
+@@ -45,7 +45,7 @@
+    let p=this.store.clip(record).sample(this.clipFrame(record,m,t),base);delete p.rootX;delete p.rootY;
+    const tr=f._inkTransition;if(tr?.id===m.id)p=INK.Motion.apply(p,tr.bridge,t);return p;
+   },
+-  presentation(f,record,frame,simulationFrame=f.attack?.t||0){const v=INK.Motion.secondary(record?.clip,frame);const tr=f._inkTransition;return f.attack&&tr?.id===f.attack.m.id?INK.Motion.blendSecondary(tr.secondary,v,simulationFrame,8):v;},
++  presentation(f,record,frame,simulationFrame=f.attack?.t||0){const v=INK.Motion.secondary(record?.clip,frame);const tr=f._inkTransition;const out=f.attack&&tr?.id===f.attack.m.id?INK.Motion.blendSecondary(tr.secondary,v,simulationFrame,8):v;return INK.StateTransitions?INK.StateTransitions.secondary(f,out):out;},
+   neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((time*60+(f.index||0)*13)%rec.clip.duration,base);},
+   rig(f,p){if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
+   visualRig(f,p){return Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
+@@ -71,32 +71,10 @@
+   },
+   stateChange(f,next){
+    if(!this.enabled||!this.store)return;
+-   const A=globalThis.SVG_FIGHTER,old=f.attack;
+-   // Capture the FINAL outgoing surface, before the battle clears the attack.
+-   // Contact reactions remain immediate; free recoveries get a visual-only bridge.
+-   const blend=A&&['idle','recovery'].includes(next)&&f.state!==next;
+-   const world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1};
+-   let from,previous,dt=.25;
+-   if(blend){
+-    from=this.visual(f,A.pose(f),world);
+-    const v=Object.create(f);v.stateAge=Math.max(0,(f.stateAge||0)-dt);
+-    if(old)v.attack={...old,t:Math.max(0,old.t-dt)};
+-    previous=this.visual(v,A.pose(v),world);
+-   }
++   const old=f.attack;INK.StateTransitions.change(f,next);
+    if(old)INK.VFX?.bank?.cancel(f.index,INK.VFX.time,'state:'+next);
+    if(old?._inkTimeline)for(const e of old._inkTimeline.cancel('state:'+next))this.lifecycleLog.push({character:f.ch.id,move:old.m.id,event:e.event.id,frame:e.frame,kind:e.kind,instance:e.instance,serial:e.serial});
+    if(this.lifecycleLog.length>256)this.lifecycleLog.splice(0,this.lifecycleLog.length-256);
+-   f._inkStateBlend=null;f._inkStateVisualBlend=null;
+-   if(blend){
+-    const view=Object.create(f);
+-    Object.assign(view,{state:next,stateAge:0,attack:null,move:0,_inkState:null,_inkStateBlend:null,_inkStateVisualBlend:null,_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null});
+-    const target=this.visual(view,A.pose(view),world);view.stateAge=dt;
+-    const following=this.visual(view,A.pose(view),world),duration=5,profile=this.profile(f.ch.id);
+-    const poseBridge=INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,following,dt),duration);
+-    const incoming=INK.Motion.apply(target,poseBridge,0),incomingNext=INK.Motion.apply(following,poseBridge,dt);
+-    const jointBridge=INK.Articulation.bridge(Rig.solveAnimation(profile,from),Rig.solveAnimation(profile,previous),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),duration,dt);
+-    f._inkStateVisualBlend={to:next,duration,poseBridge,jointBridge};
+-   }
+   },
+   visual(f,base,world=null){
+    if(!this.enabled||!this.store)return base;
+@@ -108,11 +86,8 @@
+    const visualTransition=f._inkVisualTransition;
+    if(INK.MotionGraph.settings.enabled&&f.attack&&visualTransition?.id===f.attack.m.id)p=INK.Motion.apply(p,visualTransition.bridge,f.attack.t);
+    if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
+-   const stateBridge=f._inkStateVisualBlend;
+-   if(stateBridge&&f.state===stateBridge.to&&(f.stateAge||0)<stateBridge.duration){
+-    p=INK.Motion.apply(p,stateBridge.poseBridge,f.stateAge||0);
+-    INK.Articulation.attachTransition(p,stateBridge.jointBridge,f.stateAge||0);
+-   }
++   p=INK.StateTransitions.compression(f,p);
++   p=INK.StateTransitions.apply(f,p);
+    return p;
+   },
+   visualSample(f,record,frame,root){
+--- /dev/null
++++ b/src/ink/scene-feedback.js
+@@ -0,0 +1,49 @@
++/* FLOW 08 — bounded scene feedback sampled from real evaluated poses.
++ * Ground contact, afterimages and camera displacement obey the world FX clock.
++ * Retained silhouette renderers never read stale legacy DOM or last f.pose.
++ */
++'use strict';
++(() => {
++ const {node,assign}=INK.SVG,{clamp}=INK;
++ const Scene={version:'8.0.0',slots:[],capacity:6,stats:{captures:0,peak:0,dropped:0,groundContacts:0},
++  ground(x,color,strength,G){
++   const W=INK.VFX,pool=W.mount();if(!pool)return false;
++   if(!W.settings.enabled)return true;
++   const s=clamp(Number.isFinite(strength)?strength:1,.2,2.5),t=W.time,reduced=W.settings.reducedMotion;
++   const seed=INK.Particles.hash('ground:'+G.tick+':'+x),material={...INK.Particles.materials.luke,color,core:'#eee0cd'};
++   pool.add({x,y:670,birth:t,life:reduced?10:16,vx:0,vy:0,gravity:0,size:14*s,angle:0,color,species:'ring',stretch:4.5,opacity:reduced?.2:.35,priority:2});
++   if(!reduced){pool.emit({x,y:668,frame:t,seed,count:Math.round(5*s),material,angle:-90,spread:155,speed:2.2*s,life:25,size:4.8,species:'smoke',gravity:.025,opacity:.15,priority:0});
++    pool.emit({x,y:669,frame:t,seed:seed+1,count:Math.round(3*s),material,angle:-90,spread:160,speed:2.8*s,life:18,size:1.6,species:'spark',gravity:.12,opacity:.42,priority:1});}
++   this.stats.groundContacts++;return true;
++  },
++  ghost(f){
++   const W=INK.VFX;if(!W.settings.enabled||W.settings.reducedMotion||!INK.Runtime.enabled)return true;
++   const parent=document.getElementById('ghosts');if(!parent)return false;
++   this.slots=this.slots.filter(s=>s.root.isConnected);
++   const t=W.time;let slot=this.slots.find(s=>s.end<=t);
++   if(!slot&&this.slots.length<this.capacity){slot={root:node('g',{'data-ink-afterimage':'true','pointer-events':'none'},parent),renderer:null,end:0};this.slots.push(slot);}
++   if(!slot){this.stats.dropped++;return true;}
++   const R=INK.Runtime,profile=R.profile(f.ch.id),p=SVG_FIGHTER.visualPose(f),rig=R.visualRig(f,p),ctx=INK.State.contextForFX(f);
++   if(!slot.renderer||slot.character!==f.ch.id){slot.renderer?.destroy();slot.renderer=new INK.Renderer(slot.root,profile);slot.renderer.setMode('silhouette');slot.character=f.ch.id;}
++   slot.renderer.render(p,{rig,frame:ctx?.frame||0,secondary:true,motion:R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0),expression:['hit','tumble','down'].includes(f.state)?'hurt':'neutral'});
++   const scale=f.renderScale||f.ch.scale||1;
++   assign(slot.root,'transform',`translate(${f.x} ${665+f.y}) scale(${scale}) scale(${f.dir*(p.depth||1)} 1) translate(${p.rootShift||0} ${p.floor||0}) rotate(${p.spin||0} 0 -180)`);
++   slot.root.style.setProperty('--ink-echo-color',f.state==='rush'?'#6dffc0':f.ch.color);
++   assign(slot.root,'display','inline');assign(slot.root,'opacity',.22*W.settings.intensity);
++   slot.start=t;slot.end=t+15;slot.actor=f.index;slot.pose=INK.copy(p);slot.sockets=INK.copy(INK.Rig.sockets(p,rig));slot.clock=f._inkVisualClock;
++   this.stats.captures++;this.stats.peak=Math.max(this.stats.peak,this.slots.filter(s=>s.end>t).length);return true;
++  },
++  render(G,alpha=1){const W=INK.VFX,visible=W.settings.enabled&&!W.settings.reducedMotion,t=G.paused||G.hitstop||W.frozen?W.time:W.time-1+clamp(alpha);
++   for(const s of this.slots){const age=t-s.start,life=s.end-s.start,on=visible&&age>=0&&age<life;assign(s.root,'display',on?'inline':'none');if(on)assign(s.root,'opacity',.22*Math.pow(1-age/life,1.35)*W.settings.intensity);}
++  },
++  camera(G,alpha=1){const W=INK.VFX;if(!W.settings.enabled||W.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)return[0,0];
++   const frozen=G.paused||G.hitstop||G._inkStepFrozen||W.frozen,t=frozen?W.time:W.time-1+clamp(alpha),amplitude=clamp(G.shake||0,0,11);
++   // A deterministic, band-limited displacement. It is sampled, not integrated
++   // by display frames; pause/hitstop cannot keep oscillating the camera.
++   return[Math.sin(t*.63)*amplitude,Math.sin(t*.43+.6)*amplitude*.26];
++  },
++  clear(){for(const s of this.slots){s.renderer?.destroy();s.root.remove();}this.slots=[];},
++  inspect(){return{...this.stats,capacity:this.capacity,retained:this.slots.length,active:this.slots.filter(s=>s.end>INK.VFX.time).length};}
++ };
++ INK.SceneFeedback=Scene;
++})();
+--- /dev/null
++++ b/src/ink/state-transitions.js
+@@ -0,0 +1,92 @@
++/* FLOW 08 — state/locomotion transactions and velocity-driven landing response.
++ * Captures come from the evaluator, NEVER from the last rendered f.pose.
++ * Presentation-only: no hitbox, physical root, stun, landing lock or meter write.
++ */
++'use strict';
++(() => {
++ const {Rig,Motion,clamp,copy}=INK;
++ const duration={idle:5,recovery:5,rise:7,down:6,tumble:4,ko:6,win:8,land:4,jump:3,crouch:4,'walk-forward':4,'walk-back':4,dash:3,rush:3,parry:3,stance:4,hit:3,block:2,stun:4};
++ const immediateBody=new Set(['lean','bob','head','chest','pelvis','yaw','turn','spin','floor','headYaw','chestYaw','pelvisYaw']);
++ const excluded=f=>f.state==='throwing'||f.state==='captured'||f.captureKind==='throw';
++ const world=f=>({x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1});
++ function capture(f){
++  if(!INK.Runtime.enabled||!INK.Runtime.store||excluded(f)||!globalThis.SVG_FIGHTER)return null;
++  const A=SVG_FIGHTER,R=INK.Runtime,ctx=INK.State.contextForFX(f),p=R.visual(f,A.pose(f),world(f));
++  const dt=.25,previous=INK.Presentation.previous(f,dt);
++  const q=R.visual(previous,A.pose(previous),world(previous));
++  return{pose:p,previous:q,secondary:R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0),state:f.state,key:INK.Presentation.key(f),dir:f.dir,dt};
++ }
++ function cleanView(f){const v=Object.create(f);v._inkStateVisualBlend=null;v._inkStateBlend=null;v._inkVisualTransition=null;v._inkJointTransition=null;v._inkTransition=null;return v;}
++ function bind(f,from,{next=f.state,kind=next,age=0,override=null}={}){
++  if(!from||!INK.Presentation.settings.stateBlends||!INK.Runtime.enabled||excluded(f)||from.dir!==f.dir)return null;
++  const A=SVG_FIGHTER,R=INK.Runtime,view=cleanView(f);if(override)Object.assign(view,override);
++  const dt=from.dt||.25,n=duration[kind]??5,profile=R.profile(f.ch.id);
++  const target=R.visual(view,A.pose(view),world(view));view.stateAge=(view.stateAge||0)+dt;view._inkVisualClock=(view._inkVisualClock||0)+dt;
++  if(view._inkState)view._inkState={...view._inkState,age:view._inkState.age+dt};
++  const following=R.visual(view,A.pose(view),world(view));
++  const poseBridge=Motion.bridge(from.pose,Motion.velocity(from.previous,from.pose,dt),target,Motion.velocity(target,following,dt),n);
++  // The torso registers a strike immediately. Only the limbs/weapon catch up;
++  // delaying all recoil until hitstop expires would make a hit feel unresponsive.
++  const impact=['hit','block','stun'].includes(kind);
++  if(impact)for(const k of immediateBody){delete poseBridge.offsets[k];delete poseBridge.velocities[k];}
++  const incoming=Motion.apply(target,poseBridge,0),incomingNext=Motion.apply(following,poseBridge,dt);
++  const jointBridge=INK.Articulation.bridge(Rig.solveAnimation(profile,from.pose),Rig.solveAnimation(profile,from.previous),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),n,dt);
++  const bridge={to:next,kind,duration:n,start:f._inkVisualClock||0,poseBridge,jointBridge,secondaryFrom:from.secondary,impact};
++  f._inkStateVisualBlend=bridge;
++  Transitions.events.push({clock:bridge.start,actor:f.index,from:from.key,to:kind,duration:n,impact});
++  if(Transitions.events.length>160)Transitions.events.shift();
++  return bridge;
++ }
++ const Transitions={version:'8.0.0',duration,events:[],capture,bind,
++  change(f,next){
++   if(!INK.Runtime.enabled||!INK.Runtime.store)return;
++   const from=(f.state!==next||['hit','block','stun'].includes(next))?capture(f):null;
++   f._inkStateBlend=null;f._inkStateVisualBlend=null;if(next==='attack')f._inkLanding=null;
++   const poseState={state:next,stateAge:0,attack:null,move:0,_inkState:null};
++   if(['hit','tumble','down','rise','captured','throwing','stun','ko'].includes(next))Object.assign(poseState,{crouch:false,jumpPre:0});
++   if(from&&!['attack','captured','throwing'].includes(next))bind(f,from,{next,kind:next,override:poseState});
++  },
++  clipChanged(f,oldKey,key){
++   if(f.attack||oldKey===key||excluded(f)||f._inkStateVisualBlend?.start===(f._inkVisualClock||0))return;
++   const previous=f._inkPrevView;
++   if(!previous||excluded(previous))return;
++   // A facing sign change is not a body crossfade. Do not produce a singular
++   // scale or interpolate an arm through the opponent while switching sides.
++   const from=capture(previous);if(from)bind(f,from,{kind:key||'idle'});
++  },
++  land(f,from,speed){
++   if(!Number.isFinite(speed)||speed<0)throw RangeError('Finite non-negative landing speed required');
++   f._inkLanding={start:f._inkVisualClock||0,speed:Math.min(speed,40),duration:22,down:['down','ko'].includes(f.state)};
++   if(from)bind(f,from,{kind:f._inkLanding.down?'down':'land'});
++   this.events.push({clock:f._inkVisualClock||0,actor:f.index,from:from?.key||'air',to:'ground-contact',speed:Math.min(speed,40)});if(this.events.length>160)this.events.shift();
++  },
++  elapsed(f,bridge=f._inkStateVisualBlend){return Math.max(0,(f._inkVisualClock||0)-(bridge?.start||0));},
++  apply(f,p){
++   const tr=f._inkStateVisualBlend,t=this.elapsed(f,tr);
++   if(INK.Presentation.settings.stateBlends&&tr&&f.state===tr.to&&t<tr.duration){p=Motion.apply(p,tr.poseBridge,t);INK.Articulation.attachTransition(p,tr.jointBridge,t);}
++   return p;
++  },
++  compression(f,p){
++   const e=f._inkLanding,t=(f._inkVisualClock||0)-(e?.start||0);
++   if(!INK.Presentation.settings.landingResponse||!e||e.down||t<0||t>=e.duration||f.y<0||['hit','block','tumble','captured','throwing','down','ko'].includes(f.state))return p;
++   // A new attack owns its startup. Do not carry landing compression into an
++   // active strike: the normal landing lock is still enforced by combat.
++   if(f.attack)return p;
++   const value=INK.SecondaryDynamics.stepSpring(0,clamp(e.speed*.36,0,5.5),0,.48,.72,t).position;
++   const out=copy(p),q=clamp(value,0,7);out.bob=(out.bob||0)+q;out.chest=(out.chest||0)-q*.22;out.head=(out.head||0)+q*.32;
++   return INK.Articulation.inherit(p,out);
++  },
++  secondary(f,value){
++   const tr=f._inkStateVisualBlend,t=this.elapsed(f,tr);let out=value;
++   if(INK.Presentation.settings.stateBlends&&tr?.secondaryFrom&&f.state===tr.to&&t<tr.duration+3)out=Motion.blendSecondary(tr.secondaryFrom,out,t,tr.duration+3);
++   const e=f._inkLanding,age=(f._inkVisualClock||0)-(e?.start||0);
++   if(!INK.Presentation.settings.landingResponse||!e||age<0||age>=22||!INK.MotionGraph.settings.springs||INK.VFX?.settings.reducedMotion)return out;
++   out=copy(out);for(const [key,k]of [['hairChain',1],['clothChain',.75]]){
++    out[key]=(out[key]||[0,0,0]).map((v,i)=>{const q=INK.SecondaryDynamics.stepSpring(0,Math.min(e.speed,20)*.38*k,0,.4/(1+i*.22),.58,Math.max(0,age-i*.6));return clamp(v+q.position,-40,40);});
++   }
++   out.hair=out.hairChain[2];out.cloth=out.clothChain[2];return out;
++  },
++  clear(){this.events=[];}
++ };
++ INK.StateTransitions=Transitions;
++})();
+--- a/src/ink/states.js
++++ b/src/ink/states.js
+@@ -8,7 +8,7 @@
+  function id(f){if(f.state==='throwing'||f.state==='captured')return null;if(['tumble','down','ko','rise','win'].includes(f.state))return f.state;if(['hit','stun'].includes(f.state))return f.hitHeight==='low'?'hit-low':'hit-high';if(f.state==='block')return f.crouch?'block-low':'block-high';if(f.attack)return null;if(f.state==='rush')return'drive-rush';if(['dash','parry','stance'].includes(f.state))return f.state;if(f.jumpPre>0)return null;if(f.y<0)return'jump';if(f.landT>0)return'land';if(f.crouch)return'crouch';if(Math.abs(f.move||0)>.05)return(f.move*f.dir<0)?'walk-back':'walk-forward';return null;}
+  function frame(f,r,key){const d=r.clip.duration,age=f._inkState?.id===key?f._inkState.age:0;if(key.startsWith('walk'))return(((f.walkT||0)/(Math.PI*2)%1)+1)%1*d;if(key==='jump')return clamp(((f.vy||0)+14)/28)*d;if(key==='land')return clamp(1-f.landT/Math.max(1,f.landMax||6))*d;if(['parry','stance'].includes(key))return age%d;if(['hit-high','hit-low','block-high','block-low','rise','win','down','ko','tumble'].includes(key))return Math.min(f.stateAge||0,d);return Math.min(age,d);}
+  const State={id,frame,
+-  tick(f,tick){const key=id(f),old=f._inkState;if(!old||old.id!==key)f._inkState={id:key,age:0};else f._inkState.age++;},
++  tick(f,tick){const key=id(f),old=f._inkState;if(!old||old.id!==key){f._inkState={id:key,age:0};if(old)INK.StateTransitions?.clipChanged(f,old.id,key);}else f._inkState.age++;},
+   context(f){if(!INK.Runtime.enabled||!INK.Runtime.store)return null;const key=id(f);if(!key)return null;const r=INK.Runtime.store.byGame(f.ch.id,'@'+key);return r?{record:r,frame:frame(f,r,key)}:null;},
+   sample(f,base){const ctx=this.context(f);if(!ctx)return null;let p=INK.Runtime.store.clip(ctx.record).sample(ctx.frame,base);if(ctx.record.gameId==='@jump'){const weight=f.vy<0?clamp(-f.y/110):clamp(-f.y/65);p=INK.blend(base,p,weight);}return p;},
+   throwContext(f){const a=f.throwAction;if(!INK.Runtime.enabled||!INK.Runtime.store||!a||a.owner!==f)return null;const r=INK.Runtime.store.byGame(f.ch.id,a.back?'@throw-back-sequence':'@throw-forward-sequence');if(!r)return null;const b=r.binding,t=INK.Runtime.phaseMap(a.t,[0,18,a.release+5,a.duration],[0,b.startup,b.startup+b.active,r.clip.duration]);return{record:r,frame:t};},
+--- a/tools/build_forge.py
++++ b/tools/build_forge.py
+@@ -35,17 +35,17 @@
+     base_hash=hashlib.sha256((ROOT/'game.js').read_bytes()).hexdigest()
+     source=game();(ROOT/'dist/game-forge.js').write_text(source,encoding='utf-8',newline='\n')
+     html=read('street-fighter-6.html')
+-    html=re.sub(r'<title>.*?</title>','<title>INK FLOW 07 · 节奏与连段引擎</title>',html,count=1)
+-    html=html.replace('</head>','<style>\n'+read('forge/style.css')+'\n'+read('forge/flow.css')+'\n'+read('forge/mai.css')+'\n'+read('forge/engine.css')+'\n'+read('forge/continuity.css')+'\n'+read('forge/rhythm.css')+'\n</style></head>')
+-    includes=['src/ink/core.js','src/ink/compiled-motion.js','src/ink/engine-clock.js','src/ink/inbetween.js','src/ink/anatomy.js','src/ink/articulation.js','src/ink/motion.js','src/ink/secondary-dynamics.js','src/ink/motion-graph.js','src/ink/combat-flow.js','src/ink/input.js','src/ink/assets.js',*['src/ink/art/'+id+'.js' for id in ['ryu','ken','chun','cammy','luke','juri','mai','iori']],'src/ink/design.js','src/ink/skin-geometry.js','src/ink/renderer.js','src/ink/mai-renderer.js','src/ink/project.js','src/ink/runtime.js','src/ink/states.js','src/ink/particles.js','src/ink/impact-feedback.js','src/ink/trails.js','src/ink/fx-timeline.js','src/ink/ribbon-geometry.js','src/ink/fx-emitter.js','src/ink/effects.js','src/ink/combo.js','src/ink/cinema.js','src/ink/portable.js','src/ink/game-adapter.js','dist/game-forge.js']
++    html=re.sub(r'<title>.*?</title>','<title>INK FLOW 08 · 落地响应与实战回放</title>',html,count=1)
++    html=html.replace('</head>','<style>\n'+read('forge/style.css')+'\n'+read('forge/flow.css')+'\n'+read('forge/mai.css')+'\n'+read('forge/engine.css')+'\n'+read('forge/continuity.css')+'\n'+read('forge/rhythm.css')+'\n'+read('forge/response.css')+'\n</style></head>')
++    includes=['src/ink/core.js','src/ink/compiled-motion.js','src/ink/engine-clock.js','src/ink/inbetween.js','src/ink/anatomy.js','src/ink/articulation.js','src/ink/motion.js','src/ink/secondary-dynamics.js','src/ink/motion-graph.js','src/ink/combat-flow.js','src/ink/input.js','src/ink/assets.js',*['src/ink/art/'+id+'.js' for id in ['ryu','ken','chun','cammy','luke','juri','mai','iori']],'src/ink/design.js','src/ink/skin-geometry.js','src/ink/renderer.js','src/ink/mai-renderer.js','src/ink/project.js','src/ink/runtime.js','src/ink/states.js','src/ink/presentation-clock.js','src/ink/state-transitions.js','src/ink/particles.js','src/ink/impact-feedback.js','src/ink/trails.js','src/ink/fx-timeline.js','src/ink/ribbon-geometry.js','src/ink/fx-emitter.js','src/ink/effects.js','src/ink/scene-feedback.js','src/ink/pose-replay.js','src/ink/combo.js','src/ink/cinema.js','src/ink/portable.js','src/ink/game-adapter.js','dist/game-forge.js']
+     html=patch(html,'<script src="game.js"></script>','\n'.join('<script src="'+x+'"></script>' for x in includes))
+     html=html.replace('<script src="src/atelier-studio.js"></script>','<script src="src/atelier-studio.js"></script>')
+-    html=html.replace('</body>',read('forge/shell.html')+'\n<script id="ink-asset-bundle" type="application/json">'+jsdata(assets())+'</script>\n<script id="ink-export-template" type="application/json">__INK_TEMPLATE_DATA__</script>\n<script id="ink-user-project" type="application/json">__INK_PROJECT_DATA__</script>\n<script id="ink-combo-library" type="application/json">'+jsdata(json.loads(read('assets/ink/combos.json'))) +' </script>\n<script src="forge/app.js"></script>\n<script src="forge/flow.js"></script>\n<script src="forge/mai.js"></script>\n<script src="forge/engine.js"></script>\n<script src="forge/continuity.js"></script>\n<script src="forge/rhythm.js"></script>\n</body>')
++    html=html.replace('</body>',read('forge/shell.html')+'\n<script id="ink-asset-bundle" type="application/json">'+jsdata(assets())+'</script>\n<script id="ink-export-template" type="application/json">__INK_TEMPLATE_DATA__</script>\n<script id="ink-user-project" type="application/json">__INK_PROJECT_DATA__</script>\n<script id="ink-combo-library" type="application/json">'+jsdata(json.loads(read('assets/ink/combos.json'))) +' </script>\n<script src="forge/app.js"></script>\n<script src="forge/flow.js"></script>\n<script src="forge/mai.js"></script>\n<script src="forge/engine.js"></script>\n<script src="forge/continuity.js"></script>\n<script src="forge/rhythm.js"></script>\n<script src="forge/response.js"></script>\n</body>')
+     html=re.sub(r'<script src="([^\"]+)"></script>',lambda m:script(read(m[1])),html)
+     template=html
+     html=html.replace('>__INK_TEMPLATE_DATA__</script>','>'+jsdata(template)+'</script>',1).replace('>__INK_PROJECT_DATA__</script>','>{}</script>',1)
+     path=ROOT/'dist/INK-Street-Fighter-6.html';path.write_text(html,encoding='utf-8',newline='\n')
+-    player_seed={'version':2,'kind':'ink-project-overrides','projectId':'ink-flow-player-7','revision':0,'createdAt':0,'models':{},'rigs':{},'moves':{},'presentation':'player'}
++    player_seed={'version':2,'kind':'ink-project-overrides','projectId':'ink-flow-player-8','revision':0,'createdAt':0,'models':{},'rigs':{},'moves':{},'presentation':'player'}
+     player_html=html.replace('<script id="ink-user-project" type="application/json">{}</script>','<script id="ink-user-project" type="application/json">'+jsdata(player_seed)+'</script>',1)
+     (ROOT/'dist/INK-Street-Fighter-6-Player.html').write_text(player_html,encoding='utf-8',newline='\n')
+     (ROOT/'dist/forge-template.html').write_text(template,encoding='utf-8',newline='\n')

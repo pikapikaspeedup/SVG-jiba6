@@ -45,12 +45,11 @@
    };for(const c of tmp.children)walk(c,mat.identity());
   }
   render(p,stats){
-   if(!p.chest&&!p.pelvis){
-    setTransform(this.group,INK.bodyMatrix(p),stats);if(!this.rigid){for(const {dom,rest}of this.paths)assign(dom,'d',rest,stats);this.rigid=true;}return;
-   }
-   this.rigid=false;assign(this.group,'transform','',stats);const matrices=Rig.torsoMatrices(p);
-   for(const {dom,skin}of this.paths)assign(dom,'d',skin.deform(matrices),stats);
+   this.rigid=false;assign(this.group,'transform','',stats);
+   const matrices=INK.Anatomy.skinMatrices(p);
+   for(const {dom,skin} of this.paths)assign(dom,'d',skin.deform(matrices),stats);
   }
+
  }
  function segmentShape(length,top,bottom,bulge=1,lower=false){
   const L=length,w=top,b=bottom,peak=w*bulge;
@@ -69,34 +68,31 @@
  let serial=0;
  // One uninterrupted anatomical envelope. Bone-local shading is clipped into it;
  // knees and elbows are not two outlined cylinders meeting at a visible seam.
- function envelope(chain,widths,outer,flex=0){
-  const [a,b,c]=chain,[w,e,z]=widths,u=vec.normal(vec.sub(b,a)),v=vec.normal(vec.sub(c,b));
-  const normal=t=>[-t[1],t[0]],n0=normal(u),n1=normal(v),nj=vec.normal(vec.add(n0,n1));
-  const cross=[{q:vec.sub(a,vec.mul(u,w*.45)),n:n0,w:w*.58}];
-  for(const t of [0,.2,.5,.78])cross.push({q:vec.mix(a,b,t),n:n0,w:lerp(w,e,t)+(Math.sin(t*Math.PI)*w*(.075+flex*.06))});
-  cross.push({q:b,n:nj,w:e});
-  for(const t of [.2,.5,.8,1])cross.push({q:vec.mix(b,c,t),n:n1,w:lerp(e,z,t)+Math.sin(t*Math.PI)*e*.16});
-  cross.push({q:vec.add(c,vec.mul(v,z*.45)),n:n1,w:z*.6});
-  const pts=[...cross.map(q=>mat.point(outer,vec.add(q.q,vec.mul(q.n,q.w)))),...cross.slice().reverse().map(q=>mat.point(outer,vec.sub(q.q,vec.mul(q.n,q.w*.95))))];
-  let d='M'+pts[0].join(' ');const N=pts.length;for(let i=0;i<N;i++){const a=pts[(i-1+N)%N],b=pts[i],c=pts[(i+1)%N],e=pts[(i+2)%N];d+='C'+vec.add(b,vec.mul(vec.sub(c,a),.15)).join(' ')+' '+vec.sub(c,vec.mul(vec.sub(e,b),.15)).join(' ')+' '+c.join(' ');}return d+'Z';
- }
  class Limb {
   constructor(parent,c,leg,rear,profile){
    this.c=c;this.leg=leg;this.rear=rear;this.widths=leg?profile.leg:profile.arm;this.material=material(c,leg,rear);
    this.group=node('g',{'data-ink-part':(rear?'rear-':'front-')+(leg?'leg':'arm')},parent);
-   this.surface=node('path',{fill:this.material.base,stroke:INKLINE,'stroke-width':1.25,'stroke-linejoin':'round'},this.group);this.clip=node('clipPath',{id:'ink-limb-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.group);this.clipShape=node('path',{},this.clip);this.details=node('g',{'clip-path':'url(#'+this.clip.id+')'},this.group);
-   this.pieces=[0,1].map(()=>{const group=node('g',{},this.details);return {group,outline:node('path',{fill:this.material.base,stroke:'none','stroke-width':0,'stroke-linejoin':'round'},group),shade:node('path',{fill:this.material.shade,opacity:rear?.46:.28},group),light:node('path',{fill:this.material.light,opacity:rear?.12:.32},group),line:node('path',{fill:'none',stroke:this.material.shade,'stroke-width':1,'stroke-linecap':'round',opacity:.68},group),cloth:node('g',{},group)};});
+   this.surface=node('path',{fill:this.material.base,stroke:INKLINE,'stroke-width':1.1,'stroke-linejoin':'round'},this.group);this.clip=node('clipPath',{id:'ink6-limb-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.group);this.clipShape=node('path',{},this.clip);this.details=node('g',{'clip-path':'url(#'+this.clip.id+')'},this.group);
+   this.pieces=[0,1].map(()=>{const group=node('g',{},this.details);return {group,outline:node('path',{fill:this.material.base,stroke:'none','stroke-width':0,'stroke-linejoin':'round'},group),shade:node('path',{fill:this.material.shade,opacity:rear?.28:.16},group),light:node('path',{fill:this.material.light,opacity:rear?.12:.2},group),line:node('path',{fill:'none',stroke:this.material.shade,'stroke-width':1,'stroke-linecap':'round',opacity:.68},group),cloth:node('g',{},group)};});
+   this.skinShade=node('path',{fill:this.material.shade,opacity:this.rear?.22:.16},this.details);this.details.insertBefore(this.skinShade,this.details.firstChild);
+   this.skinLight=node('path',{fill:this.material.light,opacity:.22},this.details);this.details.insertBefore(this.skinLight,this.details.firstChild);
    this.joint=node('ellipse',{fill:this.material.base},this.group);
    this.crease=node('path',{fill:'none',stroke:this.material.shade,'stroke-width':.95,'stroke-linecap':'round',opacity:.7},this.group);
    this.end=node('g',{},this.group);
-   if(leg)this.end.innerHTML=SF6Art.feet(c);else{
+   if(leg){
+    const bare=['ryu','juri','luke','mai'].includes(c.id),p=SF6Art.palette[c.id];
+    this.shoe=node('path',{fill:bare?`url(#atelier-${c.id}-skin)`:`url(#atelier-${c.id}-dark)`,stroke:INKLINE,'stroke-width':1.3,'stroke-linejoin':'round'},this.end);
+    this.sole=node('path',{fill:'none',stroke:bare?p.skin[2]:p.dark[2],'stroke-width':2.1,'stroke-linecap':'round'},this.end);
+    this.ankle=node('path',{d:'M-10 -16L10 -16 10 -3Q0 1-10 -3Z',fill:c.id==='mai'?'#f3e5d4':bare?p.dark[1]:p.dark[0],stroke:INKLINE,'stroke-width':.8},this.end);
+    this.ankleDetail=node('path',{d:'M-9 -12L9 -10M-9 -7L9 -5',fill:'none',stroke:c.id==='mai'?'#b39a90':p.dark[2],'stroke-width':.8},this.end);
+   }else{
     this.fist=node('g',{},this.end);this.fist.innerHTML=INK.assets.hand(c);this.palm=node('g',{},this.end);this.palm.innerHTML=INK.assets.hand(c,true);
-    if(c.id==='mai'&&!rear){this.fan=node('g',{},this.end);this.fan.innerHTML=SF6Art.fan(c);this.end.insertBefore(this.fan,this.fist);}
+    if(c.id==='mai'&&!rear){this.fan=node('g',{},this.end);this.fanRig=new INK.MaiFan(this.fan);this.end.insertBefore(this.fan,this.fist);}
    }
    this.decalsReady=false;
   }
   decals(lengths){
-   if(this.decalsReady)return;this.decalsReady=true;const c=this.c,id=c.id,p=SF6Art.palette[id],[w,e,a]=this.widths,[u,l]=lengths,{P,F,L}=INK.assets;
+   if(this.decalsReady)return;this.decalsReady=true;this.decalLengths=lengths.slice();const c=this.c,id=c.id,p=SF6Art.palette[id],[w,e,a]=this.widths,[u,l]=lengths,{P,F,L}=INK.assets;
    const band=(top,bottom,width,fill)=>P(`M${-width} ${top}Q0 ${top+4} ${width} ${top}L${width*.78} ${bottom}Q0 ${bottom+4} ${-width*.78} ${bottom}Z`,fill,1);
    let upper='',lower='';
    if(!this.leg){
@@ -115,32 +111,42 @@
    }
    this.pieces[0].cloth.innerHTML=upper;this.pieces[1].cloth.innerHTML=lower;
   }
-  render(chain,p,stats,style={}) {
+  render(chain,p,stats,style={},rig=null) {
    const[a,b,c]=chain,outer=this.leg?mat.identity():INK.bodyMatrix(p),ab=vec.sub(b,a),bc=vec.sub(c,b),lengths=[vec.length(ab),vec.length(bc)];
-   const dot=clamp((ab[0]*bc[0]+ab[1]*bc[1])/(lengths[0]*lengths[1]),-1,1),flex=(1-dot)*.5;
+   const dot=clamp((ab[0]*bc[0]+ab[1]*bc[1])/Math.max(1e-8,lengths[0]*lengths[1]),-1,1),flex=(1-dot)*.5;
    const volume=style.volume??1,baseWidths=this.widths.map(w=>w*volume*(this.rear?.94:1));
    const[w,e,z]=baseWidths;
-   this.decals(lengths);
-   const contour=envelope(chain,baseWidths,outer,flex);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
+   // Decals are authored at invariant source-bone length, not at the
+   // foreshortened length of whichever frame happened to mount first.
+   const name=(this.rear?'rear':'front')+(this.leg?'Leg':'Arm'),source=rig.anatomy?.source[name];
+   const invariant=INK.Anatomy.lengths(this.c),index=this.leg?2:0,sourceLengths=[invariant[index],invariant[index+1]];
+   this.decals(sourceLengths);
+   const centerline=INK.SkinGeometry.sampled(chain,baseWidths);
+   const contour=INK.SkinGeometry.sweep(chain,baseWidths,outer,centerline);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
+   assign(this.skinShade,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,-.92,-.48,centerline):'',stats);
+   assign(this.skinLight,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,.38,.61,centerline):'',stats);
    for(let i=0;i<2;i++){
     const part=this.pieces[i],L=lengths[i],top=i?e*(this.leg?1.05:1.14):w,bottom=i?z:e;
     const bulge=i?(this.leg?1.19:this.c.id==='luke'?1.47:1.24):(this.material.skin?1+flex*.1:1.015);
     setTransform(part.group,boneMatrix(i?b:a,i?c:b,outer),stats);
-    assign(part.outline,'d',segmentShape(L,top,bottom,bulge,!!i),stats);
-    assign(part.shade,'d',segmentShadow(L,top,bottom,!!i),stats);assign(part.light,'d',segmentLight(L,top,bottom),stats);
+    assign(part.cloth,'transform',`scale(1 ${L/Math.max(.0001,this.decalLengths[i])})`,stats);
+    assign(part.outline,'d',this.material.skin?'':segmentShape(L,top,bottom,bulge,!!i),stats);
+    assign(part.shade,'display',this.material.skin?'none':'inline',stats);assign(part.light,'display',this.material.skin?'none':'inline',stats);
+    if(!this.material.skin){assign(part.shade,'d',segmentShadow(L,top,bottom,!!i),stats);assign(part.light,'d',segmentLight(L,top,bottom),stats);}
     assign(part.line,'d',this.material.skin?`M${top*.35} ${L*.36}Q${top*.47} ${L*.56} ${bottom*.23} ${L*.76}`:'',stats);
    }
    const joint=mat.point(outer,b),ang=Math.atan2(bc[1],bc[0])*180/Math.PI;
    assign(this.joint,'cx',joint[0],stats);assign(this.joint,'cy',joint[1],stats);assign(this.joint,'rx',e*.82,stats);assign(this.joint,'ry',e*.71,stats);
-   // Only skin joints need a patch; trousers retain their authored fold.
+   // The shared continuous surface replaces the old overlaid joint patch.
    assign(this.joint,'visibility','hidden',stats);
-   const n=[-bc[1]/lengths[1],bc[0]/lengths[1]],q0=mat.point(outer,[b[0]+n[0]*e*.55,b[1]+n[1]*e*.55]),q1=mat.point(outer,[b[0]-n[0]*e*.4,b[1]-n[1]*e*.4]);
-   assign(this.crease,'d',`M${q0}Q${joint[0]+3} ${joint[1]+2} ${q1}`,stats);
-   const at=mat.point(outer,c),rot=this.leg?((this.rear?p.rfoot:p.ffoot)||clamp((ang-90)*.24,-26,30)):ang+(p.lean||0);
-   const scale=this.leg?(this.c.female?.79:.88):(this.c.female?.7:this.c.id==='luke'?.88:.82);
-   setTransform(this.end,mat.compose(at[0],at[1],rot,scale,scale),stats);
+   const n=[-bc[1]/Math.max(.0001,lengths[1]),bc[0]/Math.max(.0001,lengths[1])],q0=mat.point(outer,[b[0]+n[0]*e*.55,b[1]+n[1]*e*.55]),q1=mat.point(outer,[b[0]-n[0]*e*.4,b[1]-n[1]*e*.4]);
+   assign(this.crease,'d',`M${q0}Q${joint[0]+3} ${joint[1]+2} ${q1}`,stats);assign(this.crease,'opacity',this.material.skin?.16+flex*.19:.4,stats);
+   const endMatrix=this.leg?INK.Anatomy.footMatrix(p,rig,this.c,this.rear):INK.Anatomy.handMatrix(p,rig,this.c,this.rear);
+   setTransform(this.end,endMatrix,stats);
+   if(this.leg){const shoe=INK.SkinGeometry.foot(INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
+
    if(!this.leg){const open=p.open>.45;assign(this.palm,'visibility',open?'visible':'hidden',stats);assign(this.fist,'visibility',open?'hidden':'visible',stats);
-    if(this.fan){const openness=clamp(p.fan??.9,.07,1);assign(this.fan,'transform',`translate(16 0) rotate(${-18+(1-openness)*9+(p.fanAngle||0)}) scale(1 ${openness}) translate(-16 0)`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
+    if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1);assign(this.fan,'transform',`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
    }
   }
  }
@@ -155,45 +161,83 @@
    this.rearLeg=new Limb(this.art,this.c,true,true,this.c);this.frontLeg=new Limb(this.art,this.c,true,false,this.c);
    this.hair=node('g',{'data-ink-part':'hair-followthrough'},this.art);this.hair.innerHTML=a.hair;
    this.rearArm=new Limb(this.art,this.c,false,true,this.c);
-   this.torso=new SkinGroup(this.art,a.torso,this.c.shape);this.torsoBack=new SkinGroup(this.art,a.torsoBack,this.c.shape);
+   this.torso=new SkinGroup(this.art,a.torso,this.c.shape);this.torsoBack=new SkinGroup(this.art,a.torsoBack,this.c.shape);this.torsoSide=new SkinGroup(this.art,a.torsoSide||a.torso,this.c.shape);
+   this.pelvisSurface=node('path',{'data-ink-part':'pelvis-bridge',fill:this.c.id==='mai'?'#b42d47':material(this.c,true,false).base,stroke:'none'},this.art);
    this.coat=node('g',{'data-ink-part':'coat-followthrough'},this.art);this.coat.innerHTML=a.coat;
    this.strap=node('path',{fill:'none',stroke:'#a23c56','stroke-width':5,'stroke-linecap':'round'},this.art);
    this.head=node('g',{'data-ink-part':'head-slot'},this.art);this.heads={};
    for(const [name,markup]of Object.entries(a.heads)){this.heads[name]=node('g',{'data-ink-attachment':name},this.head);this.heads[name].innerHTML=markup;}
    this.expressions=[...this.head.querySelectorAll('[data-expression]')];
+   this.turnMasks={};this.turnDefs=node('defs',{},this.group);
+   for(const part of ['body','face'])for(const view of ['front','profile','back']){
+    const mask=node('clipPath',{id:'ink6-turn-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs);
+    const rect=part==='body'?node('path',{},mask):node('rect',{x:-600,y:-600,width:1200,height:1200},mask);this.turnMasks[part+view]=rect;
+    const target=part==='body'?({front:this.torso,profile:this.torsoSide,back:this.torsoBack}[view].group):this.heads[view];
+    target.setAttribute('clip-path','url(#'+mask.id+')');
+   }
    this.frontArm=new Limb(this.art,this.c,false,false,this.c);
+   this.foregroundArms={};
+   for(const name of ['rearArm','frontArm']){const id='ink6-arm-source-'+(++serial);this[name].group.id=id;
+    const clip=node('clipPath',{id:'ink6-arm-depth-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.turnDefs),path=node('path',{},clip);
+    const use=node('use',{href:'#'+id,'clip-path':'url(#'+clip.id+')','data-ink-part':name+'-depth-overlay'},this.art);this.foregroundArms[name]={clip,path,use};
+   }
    this.debug=node('g',{'data-ink-layer':'rig','pointer-events':'none'},this.group);
    this.bones=Array.from({length:11},()=>node('line',{stroke:'#3a8f87','stroke-width':1.35,'stroke-dasharray':'4 3'},this.debug));
    this.joints=Array.from({length:15},()=>node('circle',{r:3.4,fill:'#f6fbeb',stroke:'#238b81','stroke-width':1.4},this.debug));
    this.debug.setAttribute('display','none');this._order='';this.mode='skin';this.destroyed=false;
+   if(this.c.id==='mai')this.maiSecondary=new INK.MaiSecondary(this);
    this.stats.mountNodes=this.group.querySelectorAll('*').length;
   }
-  setMode(mode){if(!['skin','rig','silhouette','overlay'].includes(mode))throw Error('Unknown mode');this.mode=mode;assign(this.group,'data-ink-mode',mode,this.stats);assign(this.art,'visibility',mode==='rig'?'hidden':'visible',this.stats);assign(this.debug,'visibility',['rig','overlay'].includes(mode)?'visible':'hidden',this.stats);}
+  setMode(mode){if(!['skin','rig','silhouette','overlay'].includes(mode))throw Error('Unknown mode');this.mode=mode;assign(this.group,'data-ink-mode',mode,this.stats);assign(this.art,'visibility',mode==='rig'?'hidden':'visible',this.stats);assign(this.debug,'display',['rig','overlay'].includes(mode)?'inline':'none',this.stats);assign(this.debug,'visibility',['rig','overlay'].includes(mode)?'visible':'hidden',this.stats);}
   setStyle(style){if(style.volume!==undefined)this.style.volume=clamp(style.volume,.75,1.3);if(style.head!==undefined)this.style.head=clamp(style.head,.8,1.25);}
-  render(p,{rig=null,frame=0,expression='rest',impulses=[],secondary=true}={}) {
+  render(p,{rig=null,frame=0,expression='rest',impulses=[],secondary=true,motion=null}={}) {
    if(this.destroyed)throw Error('Renderer already destroyed');const start=performance.now();this.stats.writes=0;this.stats.frames++;
-   const signature=JSON.stringify([p,rig,secondary?frame:0,expression,impulses,this.style,this.mode]);if(signature===this.signature){this.stats.cpuMs=performance.now()-start;return this.stats;}this.signature=signature;
-   const inputRig=rig||Rig.solveAnimation(this.c,p),r={...inputRig},s=this.stats,back=p.turn>.64;
-   // The legacy game can hand us a collapsed chain when target == shoulder.
-   // Repair the drawing only; authoritative gameplay geometry remains untouched.
-   for(const [name,chain]of Object.entries(r))if(vec.length(vec.sub(chain[1],chain[0]))<1e-5||vec.length(vec.sub(chain[2],chain[1]))<1e-5){const leg=name.includes('Leg'),male=!this.c.female,upper=leg?(this.c.id==='chun'?100:96):this.c.id==='iori'?67:male?68:64,lower=leg?98:this.c.id==='iori'?76:male?71:67;r[name]=INK.twoBone(chain[0],chain[2],upper,lower,leg&&name.startsWith('front')?-1:1,1);}
+   const signature=JSON.stringify([p,rig,secondary?frame:0,expression,impulses,motion,this.style,this.mode]);if(signature===this.signature){this.stats.cpuMs=performance.now()-start;return this.stats;}this.signature=signature;
+   const inputRig=rig?.anatomy?rig:Rig.solveAnimation(this.c,p),r=inputRig,s=this.stats,turn=INK.Turn.view(INK.Turn.angle(p)),back=turn.far;
    this.inputRig=inputRig;
-   for(const name of ['rearLeg','frontLeg','rearArm','frontArm'])this[name].render(r[name],p,s,this.style);
-   this.torso.render(p,s);this.torsoBack.render(p,s);
-   assign(this.torso.group,'visibility',back?'hidden':'visible',s);assign(this.torsoBack.group,'visibility',back?'visible':'hidden',s);
-   const rearInFront=!back&&p.rw[0]>-37&&p.rw[1]<-258;const order=(back?'back':'front')+(rearInFront?'guard':'');if(order!==this._order){this._order=order;
-    const ordered=back?[this.trail,this.frontLeg.group,this.rearLeg.group,this.hair,this.frontArm.group,this.torso.group,this.torsoBack.group,this.coat,this.head,this.rearArm.group]:[this.trail,this.rearLeg.group,this.frontLeg.group,this.hair,this.rearArm.group,this.torso.group,this.torsoBack.group,this.coat,this.head,this.frontArm.group];
-    for(const n of ordered)this.art.appendChild(n);this.art.insertBefore(this.strap,this.torso.group);if(rearInFront)this.art.insertBefore(this.rearArm.group,this.head);
+   for(const name of ['rearLeg','frontLeg','rearArm','frontArm'])this[name].render(r[name],p,s,this.style,r);
+   const bodyBands=INK.Turn.bands(INK.Turn.angle(p),64),faceBands=INK.Turn.bands(INK.Turn.angle(p,'head'),48);
+   if(bodyBands.front[1]>=.001)this.torso.render(p,s);
+   if(bodyBands.back[1]>=.001)this.torsoBack.render(p,s);
+   if(bodyBands.profile[1]>=.001)this.torsoSide.render(p,s);
+   for(const name of ['front','profile','back']){
+    const skin={front:this.torso,profile:this.torsoSide,back:this.torsoBack}[name],band=bodyBands[name],rect=this.turnMasks['body'+name];
+    assign(skin.group,'display',band[1]<.001?'none':'inline',s);
+    assign(skin.group,'transform','',s);
+    assign(rect,'d',INK.SkinGeometry.torsoClip(p,band[0],band[1]),s);
+    const fb=faceBands[name],fr=this.turnMasks['face'+name];assign(fr,'x',fb[0],s);assign(fr,'width',Math.max(0,fb[1]),s);assign(fr,'y',-100,s);assign(fr,'height',200,s);
+    assign(this.heads[name],'display',fb[1]<.001?'none':'inline',s);
+   }
+   this.turnState=turn;
+   const hipShape=[[-24,-222],[-31,-212],[-33,-196],[-25,-180],[0,-171],[25,-180],[33,-196],[31,-212],[24,-222]];
+   assign(this.pelvisSurface,'d',INK.SkinGeometry.closed(hipShape.map(q=>INK.Anatomy.skinPoint(p,q)),.15),s);
+
+   // Opaque back pass + clipped near-depth pass. An elbow can cross the
+   // torso while its shoulder remains behind it; there is no whole-arm swap.
+   for(const name of ['rearArm','frontArm']){
+    const chain=Rig.sockets(p,r)[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
+    if(name==='rearArm'){
+     const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
+     const facing=Math.max(0,Math.cos(INK.rad(INK.Turn.angle(p))));depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;
+    }
+    assign(this.foregroundArms[name].path,'d',INK.SkinGeometry.frontClip(chain,depth,this.c.arm,this.c.id==='mai'&&name==='frontArm'?91:43),s);
+   }
+   const order=back?'back':'front';if(order!==this._order){this._order=order;
+    const legs=back?[this.frontLeg.group,this.rearLeg.group]:[this.rearLeg.group,this.frontLeg.group];
+    const ordered=[this.trail,...legs,this.hair,this.rearArm.group,this.frontArm.group,this.pelvisSurface,this.strap,this.torso.group,this.torsoSide.group,this.torsoBack.group,this.coat,this.head,this.foregroundArms.frontArm.use,this.foregroundArms.rearArm.use];
+    for(const n of ordered)this.art.appendChild(n);
    }
    if(this.c.id==='iori'){const a=vec.mix(r.rearLeg[0],r.rearLeg[1],.69),b=vec.mix(r.frontLeg[0],r.frontLeg[1],.69);assign(this.strap,'d',`M${a}Q${(a[0]+b[0])/2} ${Math.max(a[1],b[1])+55} ${b}`,s);}
-   Object.defineProperty(r,'profile',{value:this.c});const body=INK.bodyMatrix(p),h=Rig.sockets(p,r).head,headScale=this.c.headScale*this.style.head;
-   setTransform(this.head,mat.compose(h[0],h[1],(p.lean||0)+(p.head||0)+(p.chest||0),headScale,headScale),s);
-   const view=back?'back':p.turn>.27?'profile':'front';for(const[k,n]of Object.entries(this.heads))assign(n,'visibility',k===view?'visible':'hidden',s);
+   const body=INK.bodyMatrix(p),h=Rig.sockets(p,r).head,headScale=this.c.headScale*this.style.head;
+   const hv=INK.Turn.view(INK.Turn.angle(p,'head'));setTransform(this.head,mat.compose(h[0]+hv.offset*.5,h[1],(p.lean||0)+(p.head||0)+(p.chest||0),headScale*(.8+.2*hv.width),headScale),s);
+   // Face attachments have continuous disjoint surface masks above.
    for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===expression?'visible':'hidden',s);
-   const lag=secondary?followThrough(frame,impulses,1.15):0;
-   setTransform(this.hair,mat.multiply(mat.compose(h[0]-6,h[1]-14,lag*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365)),s);
-   setTransform(this.coat,mat.multiply(body,mat.multiply(mat.compose(0,-205,lag*.8-(p.lean||0)*.12),mat.compose(0,205))),s);
-   setTransform(this.trail,mat.multiply(mat.compose(0,(p.bob||0)*.6),mat.multiply(mat.compose(0,-200,lag-(p.lean||0)*.19),mat.compose(0,200))),s);
+   const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
+   setTransform(this.hair,mat.multiply(mat.compose(h[0]-6,h[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365)),s);
+   const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);
+   setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
+   setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);
+   this.maiSecondary?.render(p,dynamics,secondary?frame:0,s);
    if(['rig','overlay'].includes(this.mode)){
     const sockets=Rig.sockets(p,r),lines=[],points=[];for(const name of ['rearLeg','frontLeg','rearArm','frontArm']){const q=sockets[name];lines.push([q[0],q[1]],[q[1],q[2]]);points.push(...q);}
     lines.push([sockets.pelvis,sockets.chest],[sockets.chest,sockets.neck],[sockets.neck,sockets.head]);points.push(sockets.pelvis,sockets.chest,sockets.head);
@@ -204,5 +248,5 @@
   }
   destroy(){this.group.remove();this.destroyed=true;this.heads={};this.expressions=[];}
  }
- INK.SVG={NS,node,assign,transform};INK.Paints={get:paints};INK.SkinGroup=SkinGroup;INK.Renderer=Renderer;
+ INK.SVG={NS,node,assign,transform};INK.Paints={get:paints};INK.SkinGroup=SkinGroup;INK.Renderer=Renderer;INK.Limb=Limb;
 })();

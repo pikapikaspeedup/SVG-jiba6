@@ -1,0 +1,1376 @@
+{
+  "suite": "flow7-recovery-observation",
+  "capturedAt": "2026-10-05T07:18:52.126147+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "samples": 195,
+  "passed": 195,
+  "maximumJointDisplacement": 2.6963201038669064e-13,
+  "rows": [
+    {
+      "id": "cammy",
+      "key": "knuckle_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 2.6963201038669064e-13
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_1",
+      "end": 46,
+      "age": 0,
+      "maximum": 2.561898267191502e-13
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_1",
+      "end": 47,
+      "age": 0,
+      "maximum": 2.352315015805125e-13
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_1",
+      "end": 40,
+      "age": 0,
+      "maximum": 2.3437142008433856e-13
+    },
+    {
+      "id": "juri",
+      "key": "gooh_0",
+      "end": 45,
+      "age": 0,
+      "maximum": 2.2469334198890888e-13
+    },
+    {
+      "id": "chun",
+      "key": "hazan_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 2.1504925414350218e-13
+    },
+    {
+      "id": "mai",
+      "key": "shinobibachi_1",
+      "end": 61,
+      "age": 0,
+      "maximum": 2.034684749684793e-13
+    },
+    {
+      "id": "chun",
+      "key": "bird_2",
+      "end": 64,
+      "age": 0,
+      "maximum": 1.9328852131274408e-13
+    },
+    {
+      "id": "chun",
+      "key": "bird_3",
+      "end": 61,
+      "age": 0,
+      "maximum": 1.9328852131274408e-13
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_0",
+      "end": 42,
+      "age": 0,
+      "maximum": 1.9065862296939058e-13
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_0",
+      "end": 40,
+      "age": 0,
+      "maximum": 1.797546735911271e-13
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_1",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.757785650632539e-13
+    },
+    {
+      "id": "juri",
+      "key": "gooh_2",
+      "end": 69,
+      "age": 0,
+      "maximum": 1.7288250917028502e-13
+    },
+    {
+      "id": "juri",
+      "key": "gooh_3",
+      "end": 66,
+      "age": 0,
+      "maximum": 1.7288250917028502e-13
+    },
+    {
+      "id": "juri",
+      "key": "fuha_1",
+      "end": 40,
+      "age": 0,
+      "maximum": 1.6077746776921858e-13
+    },
+    {
+      "id": "juri",
+      "key": "anken_1",
+      "end": 48,
+      "age": 0,
+      "maximum": 1.6077746776921858e-13
+    },
+    {
+      "id": "chun",
+      "key": "hazan_1",
+      "end": 46,
+      "age": 0,
+      "maximum": 1.5106345774618504e-13
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_3",
+      "end": 57,
+      "age": 0,
+      "maximum": 1.46309704135021e-13
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_0",
+      "end": 35,
+      "age": 0,
+      "maximum": 1.4210854715202004e-13
+    },
+    {
+      "id": "juri",
+      "key": "fuha_0",
+      "end": 35,
+      "age": 0,
+      "maximum": 1.2710574864626038e-13
+    },
+    {
+      "id": "juri",
+      "key": "anken_0",
+      "end": 43,
+      "age": 0,
+      "maximum": 1.2710574864626038e-13
+    },
+    {
+      "id": "ryu",
+      "key": "blade_1",
+      "end": 43,
+      "age": 0,
+      "maximum": 1.214175959108492e-13
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_1",
+      "end": 45,
+      "age": 0,
+      "maximum": 1.214175959108492e-13
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 1.214175959108492e-13
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_1",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.214175959108492e-13
+    },
+    {
+      "id": "ryu",
+      "key": "sHP",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "ryu",
+      "key": "cHP",
+      "end": 37,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_1",
+      "end": 47,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_2",
+      "end": 52,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_3",
+      "end": 56,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_0",
+      "end": 44,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_1",
+      "end": 53,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_2",
+      "end": 61,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "mai",
+      "key": "hissatsu_3",
+      "end": 59,
+      "age": 0,
+      "maximum": 1.1718571004216928e-13
+    },
+    {
+      "id": "ryu",
+      "key": "blade_0",
+      "end": 38,
+      "age": 0,
+      "maximum": 1.1457157353758233e-13
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_0",
+      "end": 40,
+      "age": 0,
+      "maximum": 1.1457157353758233e-13
+    },
+    {
+      "id": "ryu",
+      "key": "hadoken_0",
+      "end": 42,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "saiha_0",
+      "end": 39,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "juri",
+      "key": "gooh_1",
+      "end": 57,
+      "age": 0,
+      "maximum": 1.1368683772161603e-13
+    },
+    {
+      "id": "iori",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_2",
+      "end": 52,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "iori",
+      "key": "kototsuki_3",
+      "end": 56,
+      "age": 0,
+      "maximum": 9.099386826154683e-14
+    },
+    {
+      "id": "juri",
+      "key": "sMP",
+      "end": 22,
+      "age": 0,
+      "maximum": 8.316689495813723e-14
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_3",
+      "end": 56,
+      "age": 0,
+      "maximum": 8.316689495813723e-14
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_2",
+      "end": 34,
+      "age": 0,
+      "maximum": 8.316689495813723e-14
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_0",
+      "end": 33,
+      "age": 0,
+      "maximum": 6.898122193969271e-14
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_3",
+      "end": 47,
+      "age": 0,
+      "maximum": 6.898122193969271e-14
+    },
+    {
+      "id": "ken",
+      "key": "sHP",
+      "end": 36,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "luke",
+      "key": "sHP",
+      "end": 42,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "luke",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "iori",
+      "key": "sHP",
+      "end": 38,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "iori",
+      "key": "cHP",
+      "end": 38,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_0",
+      "end": 42,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_1",
+      "end": 47,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_0",
+      "end": 27,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_3",
+      "end": 27,
+      "age": 0,
+      "maximum": 6.355287432313019e-14
+    },
+    {
+      "id": "luke",
+      "key": "flash_0",
+      "end": 36,
+      "age": 0,
+      "maximum": 5.684341886080802e-14
+    },
+    {
+      "id": "luke",
+      "key": "flash_1",
+      "end": 41,
+      "age": 0,
+      "maximum": 5.684341886080802e-14
+    },
+    {
+      "id": "luke",
+      "key": "flash_2",
+      "end": 46,
+      "age": 0,
+      "maximum": 5.684341886080802e-14
+    },
+    {
+      "id": "luke",
+      "key": "flash_3",
+      "end": 50,
+      "age": 0,
+      "maximum": 5.684341886080802e-14
+    },
+    {
+      "id": "ryu",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "sMP",
+      "end": 23,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "cMK",
+      "end": 29,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_0",
+      "end": 41,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_1",
+      "end": 53,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_2",
+      "end": 65,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "tatsu_3",
+      "end": 62,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "blade_2",
+      "end": 48,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "blade_3",
+      "end": 52,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_2",
+      "end": 50,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "ryu",
+      "key": "hasho_3",
+      "end": 54,
+      "age": 0,
+      "maximum": 5.1237965343830035e-14
+    },
+    {
+      "id": "mai",
+      "key": "shinobibachi_0",
+      "end": 56,
+      "age": 0,
+      "maximum": 4.973799150320701e-14
+    },
+    {
+      "id": "mai",
+      "key": "shinobibachi_2",
+      "end": 66,
+      "age": 0,
+      "maximum": 4.973799150320701e-14
+    },
+    {
+      "id": "chun",
+      "key": "bird_0",
+      "end": 40,
+      "age": 0,
+      "maximum": 4.618527782440651e-14
+    },
+    {
+      "id": "ken",
+      "key": "cHP",
+      "end": 37,
+      "age": 0,
+      "maximum": 4.0194366942304644e-14
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_2",
+      "end": 51,
+      "age": 0,
+      "maximum": 4.0194366942304644e-14
+    },
+    {
+      "id": "ken",
+      "key": "hadoken_3",
+      "end": 55,
+      "age": 0,
+      "maximum": 4.0194366942304644e-14
+    },
+    {
+      "id": "juri",
+      "key": "sHP",
+      "end": 35,
+      "age": 0,
+      "maximum": 4.0194366942304644e-14
+    },
+    {
+      "id": "chun",
+      "key": "hazan_2",
+      "end": 51,
+      "age": 0,
+      "maximum": 3.776586443654626e-14
+    },
+    {
+      "id": "chun",
+      "key": "hazan_3",
+      "end": 55,
+      "age": 0,
+      "maximum": 3.776586443654626e-14
+    },
+    {
+      "id": "chun",
+      "key": "sMP",
+      "end": 20,
+      "age": 0,
+      "maximum": 3.1776437161565096e-14
+    },
+    {
+      "id": "chun",
+      "key": "sHP",
+      "end": 38,
+      "age": 0,
+      "maximum": 3.1776437161565096e-14
+    },
+    {
+      "id": "chun",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 3.1776437161565096e-14
+    },
+    {
+      "id": "chun",
+      "key": "cHP",
+      "end": 41,
+      "age": 0,
+      "maximum": 3.1776437161565096e-14
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_2",
+      "end": 45,
+      "age": 0,
+      "maximum": 3.1776437161565096e-14
+    },
+    {
+      "id": "chun",
+      "key": "kikoken_3",
+      "end": 49,
+      "age": 0,
+      "maximum": 3.1776437161565096e-14
+    },
+    {
+      "id": "chun",
+      "key": "bird_1",
+      "end": 52,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "luke",
+      "key": "cHP",
+      "end": 39,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "cHP",
+      "end": 37,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "cMK",
+      "end": 29,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "fuha_2",
+      "end": 45,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "fuha_3",
+      "end": 49,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "saiha_1",
+      "end": 44,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "saiha_2",
+      "end": 49,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "saiha_3",
+      "end": 53,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "anken_2",
+      "end": 53,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "juri",
+      "key": "anken_3",
+      "end": 57,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_0",
+      "end": 38,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_1",
+      "end": 41,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_2",
+      "end": 46,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "mai",
+      "key": "kachosen_3",
+      "end": 39,
+      "age": 0,
+      "maximum": 2.842170943040401e-14
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_1",
+      "end": 38,
+      "age": 0,
+      "maximum": 1.7763568394002505e-14
+    },
+    {
+      "id": "cammy",
+      "key": "arrow_2",
+      "end": 43,
+      "age": 0,
+      "maximum": 1.7763568394002505e-14
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_2",
+      "end": 64,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "ken",
+      "key": "tatsu_3",
+      "end": 61,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "sMP",
+      "end": 18,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "sHP",
+      "end": 32,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "cHP",
+      "end": 35,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "cMK",
+      "end": 25,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "cammy",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 1.4210854715202004e-14
+    },
+    {
+      "id": "ken",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "sMP",
+      "end": 21,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "cMK",
+      "end": 27,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_0",
+      "end": 43,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_1",
+      "end": 48,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "ken",
+      "key": "dragonlash_2",
+      "end": 53,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "cMK",
+      "end": 31,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "legs_0",
+      "end": 38,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "legs_1",
+      "end": 50,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "legs_2",
+      "end": 62,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "chun",
+      "key": "legs_3",
+      "end": 59,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "cammy",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "cammy",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "cammy",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "cammy",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_2",
+      "end": 51,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "cammy",
+      "key": "knuckle_3",
+      "end": 55,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sMP",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "cMK",
+      "end": 33,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sand_0",
+      "end": 37,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sand_1",
+      "end": 42,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sand_2",
+      "end": 47,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "luke",
+      "key": "sand_3",
+      "end": 51,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "sLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "sMP",
+      "end": 30,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "sHP",
+      "end": 43,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "sLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "sHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "cLP",
+      "end": 16,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "cMP",
+      "end": 25,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "cHP",
+      "end": 40,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "cMK",
+      "end": 28,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "mai",
+      "key": "cHK",
+      "end": 36,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "iori",
+      "key": "sMP",
+      "end": 21,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "iori",
+      "key": "sMK",
+      "end": 26,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "iori",
+      "key": "cLK",
+      "end": 17,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "iori",
+      "key": "cMK",
+      "end": 30,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "iori",
+      "key": "yamibarai_2",
+      "end": 52,
+      "age": 0,
+      "maximum": 0
+    },
+    {
+      "id": "iori",
+      "key": "aoihana_1",
+      "end": 30,
+      "age": 0,
+      "maximum": 0
+    }
+  ],
+  "note": "Actual naturally completed grounded normal/special moves into idle, sampled immediately before/after the handoff. Pass tolerance .002 SVG units; excludes airborne, stance, branches, hit reactions and opponent-relative facing changes. This checks pose continuity, not every derivative throughout blending."
+}

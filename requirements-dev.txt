@@ -1,0 +1,3 @@
+# Exact Python packages observed during FLOW 07 QA; building the game needs only Python standard library.
+playwright==1.57.0
+Pillow==12.3.0

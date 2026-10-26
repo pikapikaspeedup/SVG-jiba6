@@ -1,0 +1,69 @@
+{
+  "version": "4.0.0",
+  "assembledAt": "2026-10-04T10:34:06.159418+00:00",
+  "suites": {
+    "core": {
+      "total": 55,
+      "passed": 55,
+      "report": "qa/flow4/core.json",
+      "sha256": "b4b14f8ed91cdeb32f12e5e8f69ea394c874ca3f8566a75f2f4a0d4b0d6ad83a"
+    },
+    "browser": {
+      "total": 34,
+      "passed": 34,
+      "report": "qa/flow4/browser.json",
+      "sha256": "20fc76b5886b70f398dc1fd2c679c97a47a1b1041ceeab005e621cbd55f00525"
+    },
+    "rhythm-matrix": {
+      "total": 26,
+      "passed": 26,
+      "report": "qa/flow4/rhythm-matrix.json",
+      "sha256": "e8de12f84492899855621a7c8bc3aa24a11bc3793b80eb1213768a1fb1775fec"
+    },
+    "fan-matrix": {
+      "total": 1056,
+      "passed": 1056,
+      "report": "qa/flow4/fan-matrix.json",
+      "sha256": "a402e8677ffb11e0d86db900eca4d0218146bff8218aecca3dcb92426c31aa1f"
+    }
+  },
+  "artifacts": {
+    "INK-Street-Fighter-6.html": {
+      "bytes": 7786990,
+      "sha256": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86"
+    },
+    "INK-Street-Fighter-6-Player.html": {
+      "bytes": 7787148,
+      "sha256": "ea8360ec6b80a694199091866867c35977f88f197d5ad1ad9f86c3a4ddd2563b"
+    }
+  },
+  "endurance": {
+    "status": "passed",
+    "matchesCurrentBuild": true,
+    "elapsedWallSeconds": 1201.504,
+    "requestedWallSeconds": 1200,
+    "completedRoutes": 262,
+    "report": "qa/flow4/endurance.json",
+    "sha256": "e138ca3fcd483460f1db0eac468daf8c443658743a47d4614935e524df56db9f"
+  },
+  "unchangedGameJs": true,
+  "originalRegressionReport": "qa/flow/validation.json",
+  "contractFixture": "tests/fixtures/flow3-combat-contracts.json",
+  "limits": {
+    "worldParticles": 320,
+    "localParticlesPerActor": 144,
+    "persistentTrailSegments": 64,
+    "rootHistoryFrames": 40,
+    "socketCacheEntries": 2048
+  },
+  "fileProtocol": {
+    "status": "environment-blocked",
+    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work/INK-Flow-3/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/work/INK-Flow-3/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n",
+    "fallback": "Other tests loaded the complete standalone bytes with set_content."
+  },
+  "limitations": [
+    "Chromium emulation is not a measurement of a physical phone or 120/144 Hz display.",
+    "Native filesystem permissions and browser persistent-storage permissions were not verified end-to-end.",
+    "This remains a fan-made 2.5D SVG adaptation, not official models or frame data."
+  ]
+}

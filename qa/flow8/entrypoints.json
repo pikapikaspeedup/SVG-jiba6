@@ -1,0 +1,44 @@
+{
+  "capturedAt": "2026-10-05T07:28:37.666324+00:00",
+  "indexMatchesOpenMe": true,
+  "links": [
+    {
+      "path": "dist/INK-Street-Fighter-6.html",
+      "exists": true
+    },
+    {
+      "path": "dist/INK-Street-Fighter-6-Player.html",
+      "exists": true
+    },
+    {
+      "path": "qa/flow8/flow8-comparison.mp4",
+      "exists": true
+    }
+  ],
+  "note": "Entrypoint text and local linked targets verified; no game runtime changed after freeze.",
+  "visualChecks": [
+    {
+      "title": "INK FLOW 08 · 打开游戏",
+      "width": 1440,
+      "scroll": 1440,
+      "buttons": [
+        "打开独立创作版 →",
+        "打开玩家版",
+        "观看原始 v7 / v8 对照"
+      ],
+      "pass": true
+    },
+    {
+      "title": "INK FLOW 08 · 打开游戏",
+      "width": 390,
+      "scroll": 390,
+      "buttons": [
+        "打开独立创作版 →",
+        "打开玩家版",
+        "观看原始 v7 / v8 对照"
+      ],
+      "pass": true
+    }
+  ],
+  "updatedAt": "2026-10-05T07:29:27.857690+00:00"
+}

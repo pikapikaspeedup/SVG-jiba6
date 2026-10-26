@@ -1,0 +1,77 @@
+PASS All 690 assets validate with strict FLOW 05 schema
+PASS Compiled sampler preserves legacy values across every asset and subframe
+PASS Compiled easing parity: "smooth"
+PASS Compiled easing parity: "linear"
+PASS Compiled easing parity: "strike"
+PASS Compiled easing parity: "load"
+PASS Compiled easing parity: "hold"
+PASS Compiled easing parity: "spline"
+PASS Compiled easing parity: [0.2,0.4,0.7,0.9]
+PASS Compiled clips retain authored 720-degree winding
+PASS Compiled sampling returns independent objects and validates frames
+PASS Production game source is compiled directly, without build-time runtime replacements
+PASS Fixed clock: 30 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 60 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 120 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 144 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 240 Hz display yields 600 simulation steps in 10s
+PASS Pause/resume discards pending wall time and does not catch up
+PASS Inactive scene transition consumes no stale simulation time
+PASS Overload is bounded and reports discarded steps explicitly
+PASS Fixed clock respects half speed and validates inputs
+PASS Spring exact integration semigroup, damping 0
+PASS Spring exact integration semigroup, damping 0.42
+PASS Spring exact integration semigroup, damping 1
+PASS Spring exact integration semigroup, damping 1.7
+PASS Damped spring converges to the target rather than oscillating forever
+PASS Spring random seek is deterministic and includes actual angular velocity
+PASS Secondary bake never mutates assets and remains finite at all Mai subframes
+PASS Spring disable returns zero arrays and zero velocity
+PASS Graph is a copy-only presentation path; off returns raw values
+PASS Additive and override layers are weighted and masked
+PASS Graph zero weight exactly preserves clip values
+PASS Foot contact reduces world-space drift under translated roots
+PASS Airborne state bypasses planted-foot constraints
+PASS Strict asset schema rejects combat-owned root channel
+PASS Strict asset schema rejects weight above one
+PASS Strict asset schema rejects duplicate layer id
+PASS Strict asset schema rejects overlapping foot contacts
+PASS Strict asset schema rejects contact out of range
+PASS Strict asset schema rejects negative spring damping
+PASS Strict asset schema rejects unbounded spring stiffness
+PASS Strict asset schema rejects bad emitter spacing
+PASS Strict asset schema rejects bad inherited velocity
+PASS Strict asset schema rejects unbounded initial burst
+PASS Strict asset schema rejects nonmonotone opacity curve
+PASS Retime remaps layers, weights, contacts and event windows
+PASS Timeline dispatches zero-frame events once and never on repeat render frame
+PASS Timeline processes all crossed edges in end-before-start order
+PASS Timeline cancellation closes each active event only once
+PASS Silent seek reconstructs active events without emitting historical starts
+PASS Timeline rejects duplicate identities and invalid time windows
+PASS Distance emissions maintain spatial spacing independent of sample partitions
+PASS Low-quality births preserve ordinal seeds and are a subset, not rerandomized
+PASS Teleport resets distance debt and does not generate a connecting beam
+PASS Emitter closes on cancellation and rejects reverse time before closure
+PASS Emission cap advances ordinals even when dropping overloaded births
+PASS Disabled emitters produce no particles while preserving deterministic sequence
+PASS Ribbon geometry stays finite with line
+PASS Ribbon geometry stays finite with duplicates
+PASS Ribbon geometry stays finite with reverse
+PASS Ribbon geometry stays finite with tiny
+PASS Ribbon fixed-width normal offsets cannot explode at a reversal
+PASS Ribbon pool retains allocated SVG nodes through expiry and reuse
+PASS Ribbon sample history stays bounded at 64 vertices per emitter
+PASS Particle damping integrates acceleration consistently, not ballistic gravity with damped velocity
+PASS Zero-drag particle limit recovers ballistic motion
+PASS Particle lifetime curves and heat color are seek-stable
+PASS Huge elapsed emitter time is bounded in allocation while preserving ordinals
+PASS Zero quality cannot emit even a zero-threshold random sample
+PASS Preview emitter baking cannot increment world emission telemetry
+PASS Zero-size ring lifetime curve never writes Infinity into SVG stroke width
+PASS Two simultaneous actors own independent emitter instances and cancellation
+PASS All 43 graph-authored Mai records retime safely across short, long and mixed phases
+PASS All 690 combat bindings and hitbox contracts remain unchanged
+PASS All sixteen combo route definitions are unchanged
+PASS Historical source is archived intact; live source is genuinely different
+CORE 76/76

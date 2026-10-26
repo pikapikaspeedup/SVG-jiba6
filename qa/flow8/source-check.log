@@ -1,0 +1,9 @@
+PASS All inherited moves/models/rigs/routes unchanged
+PASS 690 move records and 22 routes retained
+PASS Release metadata is v8 response
+PASS Formal game source calls all four new systems
+PASS Formal build includes new modules and UI
+PASS No runtime source-string patching reintroduced
+PASS All production JavaScript parses
+PASS INK-Street-Fighter-6.html contains production response runtime
+PASS INK-Street-Fighter-6-Player.html contains production response runtime

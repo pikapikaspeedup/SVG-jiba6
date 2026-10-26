@@ -1,0 +1,21 @@
+PASS Production modules, build and isolated v6 persistence agree 
+PASS Real requestAnimationFrame loop advances the production fixed clock 
+PASS Same-frame inspector changes final pose without modifying raw assets or global graph state 
+PASS Inspector reverse seeking reproduces geometry, spring state and particles 
+PASS Live visual graph is separate from collision and is not a new hitbox multiplier 
+PASS Cancelled layer handoff preserves its visual pose at the next move start 
+PASS Visual handoff fully ends before the first active frame 
+PASS Real SVG fan socket follows the final layered pose, not the raw combat pose 
+PASS 360 render-only calls do not advance simulation, emitter births, events or damage 
+PASS Runtime timeline feeds live emitter bank and dispatches each serial exactly once 
+PASS Hitstop freezes particle time, ribbon geometry, emission ordinal and event edges 
+PASS Cancellation immediately closes emitters but retains already born particles and ribbons 
+PASS World particle and ribbon node pools do not grow after repeated cancels 
+PASS Low-quality preview is a stable subset of high-quality particle geometry 
+PASS Editing graph spring settings updates live preview before saving 
+PASS Editor saves distance rate, burst, inherited velocity and spring metadata to reusable JSON 
+PASS Undo and redo restore newly added emitter parameters without changing combat bindings 
+PASS FX disabled suppresses local layers and world retained pools 
+PASS Inspector opened over rhythm practice cannot run G, R or Space behind the modal 
+PASS Reset discards action transitions, event instances and histories 
+BROWSER 30 / 30 ERRORS []

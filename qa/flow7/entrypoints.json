@@ -1,0 +1,84 @@
+{
+  "suite": "flow7-root-entrypoints",
+  "capturedAt": "2026-10-04T21:56:43.624125+00:00",
+  "sourceSha256": {
+    "OPEN-ME.html": "0882f8dae11949d65fdac742258c929fb922f29f365d48c2c8ceeff524a02eda",
+    "index.html": "0882f8dae11949d65fdac742258c929fb922f29f365d48c2c8ceeff524a02eda"
+  },
+  "total": 5,
+  "passed": 5,
+  "tests": [
+    {
+      "name": "OPEN-ME.html local targets exist",
+      "pass": true,
+      "links": [
+        "dist/INK-Street-Fighter-6.html",
+        "dist/INK-Street-Fighter-6-Player.html",
+        "qa/flow7/flow7-playback.mp4"
+      ],
+      "missing": []
+    },
+    {
+      "name": "index.html local targets exist",
+      "pass": true,
+      "links": [
+        "dist/INK-Street-Fighter-6.html",
+        "dist/INK-Street-Fighter-6-Player.html",
+        "qa/flow7/flow7-playback.mp4"
+      ],
+      "missing": []
+    },
+    {
+      "name": "Root launch pages match",
+      "pass": true
+    },
+    {
+      "name": "1440px root launcher layout",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "title": "INK FLOW 07 · 打开游戏",
+        "links": [
+          {
+            "text": "打开独立创作版 →",
+            "width": 180.171875
+          },
+          {
+            "text": "打开玩家版",
+            "width": 128.015625
+          },
+          {
+            "text": "观看 19 秒对照",
+            "width": 154.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390px root launcher layout",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "title": "INK FLOW 07 · 打开游戏",
+        "links": [
+          {
+            "text": "打开独立创作版 →",
+            "width": 180.171875
+          },
+          {
+            "text": "打开玩家版",
+            "width": 128.015625
+          },
+          {
+            "text": "观看 19 秒对照",
+            "width": 154.625
+          }
+        ]
+      }
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Local file existence plus embedded document layout. Not a file:// authorization test."
+}

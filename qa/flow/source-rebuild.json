@@ -1,0 +1,12 @@
+{
+  "kind": "isolated-source-tree-rebuild",
+  "cleanRebuild": true,
+  "verifiedAt": "2026-10-04T10:28:55.481934+00:00",
+  "sourceFileCount": 763,
+  "sourceTreeSha256": "9d7689bbe33965c052dbda50f7af37f95a57530a120ab141de6b57aa9645fac4",
+  "artifacts": {
+    "INK-Street-Fighter-6.html": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86",
+    "INK-Street-Fighter-6-Player.html": "ea8360ec6b80a694199091866867c35977f88f197d5ad1ad9f86c3a4ddd2563b"
+  },
+  "note": "No generated HTML was provided to the temporary builder. Final archive integrity is separately checked by tools/check_source_zip.py."
+}

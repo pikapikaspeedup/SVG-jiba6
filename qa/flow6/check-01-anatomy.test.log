@@ -1,0 +1,15 @@
+PASS Motion author clones own every nested vector; 10000 edits cannot contaminate templates ""
+PASS All corrected assets have plausible wrist range; contaminated <-700 coordinates are gone {"keys":15087}
+PASS 690 assets: quarter-frame output is finite, source bone lengths are invariant {"samples":113674,"components":2728176,"maxError":1.1368683772161603e-13}
+PASS Angular bake rate limits hold for every limb and every clip {"steps":903872,"limitedCorrections":39362}
+PASS Random/reverse seeks produce identical source and projected joints, without touching clip data ""
+PASS Continuous yaw 0..360 keeps both ankle Y positions fixed and closes the loop {"samples":5768,"maximumYError":0}
+PASS Every hand matrix origin is the same wrist used by the surface and fan, including profile singularities {"cases":11536,"maximumError":0}
+PASS Explicit zero-degree foot rotation never falls back to the shin angle ""
+PASS Editor inverse transform recovers the target at non-singular turn angles {"cases":36}
+PASS Near-edge-on editor inverse is finite and refuses singular horizontal amplification ""
+PASS Continuous surfaces remain finite for collapsed, extended and folded chains {"paths":12}
+PASS Hand-painted 720 degree windings are not reduced to shortest turns ""
+PASS Main game calls visualRig while collision retains separate combat solver ""
+PASS 690 timing/damage bindings and hitbox definitions remain unchanged {"records":690}
+ANATOMY 14/14

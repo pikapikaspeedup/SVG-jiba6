@@ -1,16 +1,51 @@
 {
-  "name": "INK FORGE",
-  "version": "2.0.0",
-  "date": "2026-09-12",
-  "sourceBaseline": {
-    "repository": "pikapikaspeedup/html-playground",
-    "commit": "fcf9890c6f3810c919890ae6ec42fbfdae4a5c1b",
-    "gameSha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c"
-  },
+  "name": "INK FLOW · Fluid Motion & Stable Stage",
+  "version": "9.0.0",
+  "date": "2026-10-05",
   "entry": "dist/INK-Street-Fighter-6.html",
   "playerEntry": "dist/INK-Street-Fighter-6-Player.html",
   "build": "python tools/build_forge.py",
-  "validate": "python tools/check_forge.py",
+  "validate": "python tools/check_flow9.py",
+  "sourceBaseline": {
+    "repository": "pikapikaspeedup/SVG-jiba6",
+    "commit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+    "gameSha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+    "archivedAt": "legacy/game-flow3.js"
+  },
+  "inputArchive": {
+    "name": "INK-Flow-8-Response-Source.zip",
+    "sha256": "8c3308af282c966eba23330582290e61cc03d8608599bab39f97731bc365ede7"
+  },
   "githubWritten": false,
-  "scope": "Fan-made 2D SVG adaptation, not official Street Fighter 6 models or frame data."
+  "scope": "Non-official 2.5D SVG fan game. No official frame-data equivalence or real-device FPS promise.",
+  "engineIteration": {
+    "productionGameSource": "game.js",
+    "runtimeSourcePatching": false,
+    "rulesVisualSeparation": true,
+    "inheritsGeometryFrom": "FLOW 06",
+    "inheritsCombatFrom": "FLOW 07",
+    "presentationClock": "src/ink/presentation-clock.js",
+    "stateTransitions": "src/ink/state-transitions.js",
+    "sceneFeedback": "src/ink/scene-feedback.js",
+    "poseReplay": "src/ink/pose-replay.js",
+    "reviewer": "forge/response.js",
+    "loopHz": 60,
+    "replayCapacity": 600,
+    "replayMeaning": "Solved visual poses, not input resimulation",
+    "afterimageCapacity": 6,
+    "moveAssetChanges": 0,
+    "comboRouteChanges": 0,
+    "viewport": "src/ink/viewport.js",
+    "diagnostics": "src/ink/frame-probe.js",
+    "inspector": "forge/fluid.js",
+    "jointCompilation": "deterministic prefix-lazy 240Hz",
+    "springCompilation": "deterministic prefix-lazy 120Hz",
+    "socketHistoryCapacityPerSocket": 96,
+    "defaultRhythm": "fluid",
+    "defaultViewport": "stable",
+    "defaultSpeed": 1
+  },
+  "archiveQA": "qa/flow9/validation.json",
+  "guide": "docs/FLOW9-ENGINE.md",
+  "report": "TEST-REPORT-FLOW9.md"
 }

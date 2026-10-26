@@ -1,0 +1,21 @@
+{
+  "capturedAt": "2026-10-04T14:53:42.643777+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "passed": true,
+  "completedSequentialCommands": [
+    "/opt/pyvenv/bin/python tools/build_forge.py",
+    "node tests/flow5/core.test.js",
+    "/opt/pyvenv/bin/python tests/flow5/source_audit.py",
+    "/opt/pyvenv/bin/python tests/flow5/browser.py",
+    "/opt/pyvenv/bin/python tests/flow5/compatibility.py",
+    "/opt/pyvenv/bin/python tests/flow5/rhythm_matrix.py",
+    "/opt/pyvenv/bin/python tests/flow5/portability.py",
+    "/opt/pyvenv/bin/python tests/flow5/dual_actor.py",
+    "/opt/pyvenv/bin/python tests/flow5/regression.py",
+    "/opt/pyvenv/bin/python tests/flow5/extra_regression.py",
+    "node tests/flow5/benchmark.js"
+  ],
+  "completionEvidence": "The check=True runner reached and emitted the final hash-verification summary after all eleven subprocesses. Earlier outer-tool timeout is retained separately.",
+  "summaryAssembledAt": "2026-10-04T14:51:59.344064+00:00",
+  "logSha256": "2bf000a9ebad4419a52be58145ae82b0bfef3b26158fec329b17c10a9f76a3b0"
+}

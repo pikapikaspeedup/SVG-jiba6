@@ -1,0 +1,264 @@
+{
+  "suite": "flow9-original-v8-comparison",
+  "capturedAt": "2026-10-05T16:08:58.147146+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "baselineSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "frames": 12,
+  "fps": 30,
+  "durationSeconds": 0.4,
+  "segments": [
+    {
+      "kind": "camera",
+      "playbackScale": 1,
+      "frames": 12,
+      "rows": [
+        [
+          {
+            "tick": 2,
+            "action": 2,
+            "camera": "translate(720 439) scale(1.0509) translate(-709.9117057311041 -471.5182961223301)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 2,
+            "action": 2,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 4,
+            "action": 4,
+            "camera": "translate(720 439) scale(1.0538) translate(-704.3560766652271 -467.3187515598357)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 4,
+            "action": 4,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 6,
+            "action": 6,
+            "camera": "translate(720 439) scale(1.0562) translate(-699.6439471203863 -463.99993047213144)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 6,
+            "action": 6,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 8,
+            "action": 8,
+            "camera": "translate(720 439) scale(1.0580) translate(-695.6658230773712 -461.3755939055063)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 8,
+            "action": 8,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 10,
+            "action": 10,
+            "camera": "translate(720 439) scale(1.0595) translate(-692.3208858146429 -459.2977716417218)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 10,
+            "action": 10,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 12,
+            "action": 12,
+            "camera": "translate(720 439) scale(1.0606) translate(-689.5182615521951 -457.6492129115479)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 12,
+            "action": 12,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 14,
+            "action": 14,
+            "camera": "translate(720 439) scale(1.0615) translate(-687.177334509373 -456.33753224441625)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 14,
+            "action": 14,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 16,
+            "action": 16,
+            "camera": "translate(720 439) scale(1.0622) translate(-685.2274665054987 -455.29007075509156)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 16,
+            "action": 16,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 18,
+            "action": 18,
+            "camera": "translate(720 439) scale(1.0628) translate(-683.607368859313 -454.449888855649)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 18,
+            "action": 18,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 20,
+            "action": 20,
+            "camera": "translate(720 439) scale(1.0633) translate(-682.2642910628686 -453.7721693729222)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 20,
+            "action": 20,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 22,
+            "action": 22,
+            "camera": "translate(720 439) scale(1.0636) translate(-681.1531344161791 -453.2220166765418)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 22,
+            "action": 22,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ],
+        [
+          {
+            "tick": 24,
+            "action": 24,
+            "camera": "translate(720 439) scale(1.0639) translate(-680.2355599290056 -452.77239910984304)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          },
+          {
+            "tick": 24,
+            "action": 24,
+            "camera": "matrix(1 0 0 1 0 0)",
+            "hit": 0,
+            "damage": 0,
+            "status": "idle",
+            "summary": null
+          }
+        ]
+      ],
+      "cameraTransforms": [
+        12,
+        1
+      ]
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Original v8 and current production rAF callback executed independently at the same supplied timestamps, same weighted rhythm, full FX and 1x setting. Camera is native, NOT manually fixed. Offline capture is a visual comparison, not hardware FPS evidence."
+}

@@ -1,0 +1,3675 @@
+{
+  "suite": "flow6-direct-input-archive-contracts",
+  "capturedAt": "2026-10-04T17:52:59.348061+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "inputArchiveSha256": "3c6dccdc7f931e64ea15a7993f24b3e9d0623b65ec9bd24f8635e698455933a5",
+  "total": 690,
+  "passed": 690,
+  "routeLibraryIdentical": true,
+  "distinctChangedAssetRecords": 150,
+  "changedAssets": [
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_6.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_6.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/backthrow.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_6.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/throw.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/CA.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/DI.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/REV.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/SA1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/SA3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/backthrow.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_4.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_11.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_6.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_8.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_9.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/throw.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/DI.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/REV.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/backthrow.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_11.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_6.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sHP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sMP.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/throw.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/backthrow.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_4.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-heavy.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-light.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-medium.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-od.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/midare.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-heavy.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-light.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-medium.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-od.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sHK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMK.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/throw.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_5.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_7.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_0.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_1.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_2.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_3.json",
+      "tracksChanged": true,
+      "fxChanged": false,
+      "metadataChanged": true
+    }
+  ],
+  "tests": [
+    {
+      "path": "assets/ink/characters/cammy/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/arrow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/arrow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/arrow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/arrow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_10.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_11.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_8.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/follow_9.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/hooligan_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/hooligan_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/hooligan_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/hooligan_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/knuckle_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/knuckle_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/knuckle_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/knuckle_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/spike_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/spike_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/spike_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/spike_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/strike_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/strike_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/strike_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/strike_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/bird_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/bird_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/bird_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/bird_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_10.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_11.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_8.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/follow_9.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/hazan_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/hazan_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/hazan_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/hazan_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/kikoken_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/kikoken_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/kikoken_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/kikoken_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/legs_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/legs_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/legs_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/legs_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/tensho_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/tensho_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/tensho_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/tensho_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aoihana_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aoihana_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aoihana_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/aoihana_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kototsuki_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kototsuki_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kototsuki_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kototsuki_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kuzukaze_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kuzukaze_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kuzukaze_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/kuzukaze_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/oniYaki_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/oniYaki_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/oniYaki_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/oniYaki_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/yamibarai_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/yamibarai_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/yamibarai_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/yamibarai_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/anken_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_10.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_11.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_8.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/follow_9.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/fuha_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/gooh_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/gooh_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/gooh_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/gooh_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/saiha_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/saiha_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/saiha_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/saiha_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/tensen_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/tensen_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/tensen_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/tensen_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/dragonlash_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/dragonlash_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/dragonlash_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/dragonlash_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_10.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_11.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_8.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/follow_9.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/hadoken_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/hadoken_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/hadoken_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/hadoken_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/jinrai_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/jinrai_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/jinrai_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/jinrai_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/shoryu_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/shoryu_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/shoryu_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/shoryu_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/tatsu_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/airflash_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/airflash_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/airflash_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/airflash_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/avenger_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/avenger_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/avenger_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/avenger_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/flash_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_10.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_11.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_8.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/follow_9.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/rising_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/rising_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/rising_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/rising_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sand_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sand_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sand_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sand_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/chou-hissatsu-shinobi-bachi.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/enbu-ada-zakura-ca.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/enbu-ada-zakura.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hishou-ryuuenjin-heavy.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hishou-ryuuenjin-light.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hishou-ryuuenjin-medium.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hishou-ryuuenjin-od.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hissatsu-shinobi-bachi-heavy.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hissatsu-shinobi-bachi-light.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hissatsu-shinobi-bachi-medium.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/hissatsu-shinobi-bachi-od.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-heavy.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-light.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-medium.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kachousen-od.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/kagerou-no-mai.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/midare.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/musasabi-no-mai-heavy.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/musasabi-no-mai-light.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/musasabi-no-mai-medium.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/musasabi-no-mai-od.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-heavy.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-light.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-medium.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/ryuuenbu-od.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/throw.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/CA.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/DENJIN.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/DI.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/PAR.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/REV.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/RUSH.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/SA1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/SA2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/SA3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/aHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/aHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/aLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/aLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/aMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/aMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/backthrow.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/blade_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/blade_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/blade_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/blade_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/branch_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/branch_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/branch_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/branch_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/branch_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/branch_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_10.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_11.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_4.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_5.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_6.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_7.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_8.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/follow_9.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hadoken_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hasho_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hasho_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hasho_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/hasho_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/idle.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sHK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sHP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sLK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sLP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sMK.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sMP.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/shoryu_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/shoryu_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/shoryu_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/shoryu_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-block-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-block-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-crouch.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-dash.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-down.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-drive-rush.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-hit-high.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-hit-low.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-jump.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-ko.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-land.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-parry.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-rise.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-stance.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-throw-back-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-throw-forward-sequence.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-tumble.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-walk-back.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-walk-forward.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/state-win.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/tatsu_0.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/tatsu_1.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/tatsu_2.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/tatsu_3.json",
+      "pass": true
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/throw.json",
+      "pass": true
+    }
+  ],
+  "note": "Directly compares the actual supplied V5 ZIP, not only an intermediate test fixture. Pose coordinates are intentionally changed; only the stated binding/box/identity contracts and route library are asserted identical."
+}

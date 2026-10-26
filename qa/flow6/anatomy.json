@@ -1,0 +1,93 @@
+{
+  "suite": "flow6-anatomy",
+  "total": 14,
+  "passed": 14,
+  "tests": [
+    {
+      "name": "Motion author clones own every nested vector; 10000 edits cannot contaminate templates",
+      "pass": true
+    },
+    {
+      "name": "All corrected assets have plausible wrist range; contaminated <-700 coordinates are gone",
+      "pass": true,
+      "detail": {
+        "keys": 15087
+      }
+    },
+    {
+      "name": "690 assets: quarter-frame output is finite, source bone lengths are invariant",
+      "pass": true,
+      "detail": {
+        "samples": 113674,
+        "components": 2728176,
+        "maxError": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Angular bake rate limits hold for every limb and every clip",
+      "pass": true,
+      "detail": {
+        "steps": 903872,
+        "limitedCorrections": 39362
+      }
+    },
+    {
+      "name": "Random/reverse seeks produce identical source and projected joints, without touching clip data",
+      "pass": true
+    },
+    {
+      "name": "Continuous yaw 0..360 keeps both ankle Y positions fixed and closes the loop",
+      "pass": true,
+      "detail": {
+        "samples": 5768,
+        "maximumYError": 0
+      }
+    },
+    {
+      "name": "Every hand matrix origin is the same wrist used by the surface and fan, including profile singularities",
+      "pass": true,
+      "detail": {
+        "cases": 11536,
+        "maximumError": 0
+      }
+    },
+    {
+      "name": "Explicit zero-degree foot rotation never falls back to the shin angle",
+      "pass": true
+    },
+    {
+      "name": "Editor inverse transform recovers the target at non-singular turn angles",
+      "pass": true,
+      "detail": {
+        "cases": 36
+      }
+    },
+    {
+      "name": "Near-edge-on editor inverse is finite and refuses singular horizontal amplification",
+      "pass": true
+    },
+    {
+      "name": "Continuous surfaces remain finite for collapsed, extended and folded chains",
+      "pass": true,
+      "detail": {
+        "paths": 12
+      }
+    },
+    {
+      "name": "Hand-painted 720 degree windings are not reduced to shortest turns",
+      "pass": true
+    },
+    {
+      "name": "Main game calls visualRig while collision retains separate combat solver",
+      "pass": true
+    },
+    {
+      "name": "690 timing/damage bindings and hitbox definitions remain unchanged",
+      "pass": true,
+      "detail": {
+        "records": 690
+      }
+    }
+  ],
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f"
+}

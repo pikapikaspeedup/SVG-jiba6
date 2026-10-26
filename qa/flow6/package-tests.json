@@ -1,0 +1,24 @@
+{
+  "suite": "flow6-package-verifier-negative-tests",
+  "capturedAt": "2026-10-04T17:50:42.185974+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "testedSourceSnapshotSha256": "34e420707652aaee73f63504e95d9a018e1708437338ae592becd8b2600cf8e4",
+  "verifierSha256": "b59486f1ee93e1b1c6b5ee25625b7211c7c23b43c15f0043a497834fbca3bbc3",
+  "total": 2,
+  "passed": 2,
+  "tests": [
+    {
+      "name": "tampered-source",
+      "pass": true,
+      "exitCode": 1,
+      "expectedRejection": "ValueError: Packaged file hashes do not match."
+    },
+    {
+      "name": "traversal",
+      "pass": true,
+      "exitCode": 1,
+      "expectedRejection": "ValueError: Unsafe archive entry: ../../must-not-be-written.txt"
+    }
+  ],
+  "note": "Expected rejection of corrupted temporary archives; not a successful delivery check of those archives. The clean final archive is checked independently after packaging."
+}

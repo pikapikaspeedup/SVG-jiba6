@@ -1,0 +1,65 @@
+{
+  "suite": "flow8-source-and-evidence-validation",
+  "capturedAt": "2026-10-05T07:10:10.476750+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "total": 9,
+  "passed": 7,
+  "tests": [
+    {
+      "name": "All inherited moves/models/rigs/routes unchanged",
+      "pass": true,
+      "detail": {
+        "files": 707,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "690 move records and 22 routes retained",
+      "pass": false,
+      "detail": {
+        "moves": 0,
+        "routes": 22
+      }
+    },
+    {
+      "name": "Release metadata is v8 response",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal game source calls all four new systems",
+      "pass": false,
+      "detail": null
+    },
+    {
+      "name": "Formal build includes new modules and UI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime source-string patching reintroduced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All production JavaScript parses",
+      "pass": true,
+      "detail": {
+        "scripts": 42,
+        "errors": []
+      }
+    },
+    {
+      "name": "INK-Street-Fighter-6.html contains production response runtime",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INK-Street-Fighter-6-Player.html contains production response runtime",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "commands": [],
+  "evidenceValidated": false
+}

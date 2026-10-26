@@ -1,0 +1,18 @@
+{
+  "firstRecordedAt": "2026-10-04T13:53:39.725809+00:00",
+  "work": "Audit, actual engine implementation, browser integration, tests and packaging. Timing is wall clock, not simulated frames.",
+  "estimatedStartedAt": "2026-10-04T13:51:00Z",
+  "timingBasis": "Use firstRecordedAt as the conservative start; estimatedStartedAt is not used for acceptance.",
+  "activities": [
+    "FLOW4 real-runtime and builder audit",
+    "Production scheduler, compiled sampler, motion graph and FX lifecycle implementation",
+    "Mai asset metadata, editor, inspector and portable export integration",
+    "Browser and numeric regressions tied to frozen HTML hashes",
+    "Failed concurrent-browser attempt retained; full sequential 1200-second rerun",
+    "Source-package rebuild, documentation, final artifact checks"
+  ],
+  "measuredToAt": "2026-10-04T14:54:06.937106+00:00",
+  "measuredElapsedSeconds": 3627.211297,
+  "minimumRequestedWallSeconds": 3600,
+  "measurement": "Real UTC elapsed from the first saved record; packaging after this milestone is not added to this conservative total."
+}

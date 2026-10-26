@@ -1,0 +1,986 @@
+{
+  "suite": "flow7-source-audit",
+  "capturedAt": "2026-10-04T21:47:01.161841+00:00",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "baseline": "INK-Flow-6-Continuity-Source.zip",
+  "baselineSha256": "8e0e8b3d81613300603a3bc38fc7f5b0efbb012095401607be1a1ea90b65fa23",
+  "status": "passed",
+  "totalMoves": 690,
+  "nonTransitionEqual": 690,
+  "clipEqual": 690,
+  "bindingEqual": 690,
+  "boxesEqual": 690,
+  "changedMoveRecords": 35,
+  "changed": [
+    {
+      "path": "assets/ink/characters/cammy/moves/cLK.json",
+      "sha256": "718fea58d0c5889ad502f0ed5fc973a117213eb012609179e0f6f5b4a3c882b7",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cLP.json",
+      "sha256": "33777f141463cfbe328b2360a498938af7a86bb5d0e723c4c3182ac033980957",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLK.json",
+      "sha256": "ff3d358ebd5e04ab2ec72b593e524186430d784a8ec16f09017c9cad554e5c56",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLP.json",
+      "sha256": "b84e56c1496e2d2bd9e48002ea86c3844a7b6542ef1a872ed219bad898dbfb95",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cLK.json",
+      "sha256": "3296a5babad70e13acb4cb549a622e7e0f7702d04d562f56d4138998e34ad4e5",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cLP.json",
+      "sha256": "007934c0cfb387a0d291f742aec0d5e21e7b13ad1dcd09b0cd7268694bb685d7",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLK.json",
+      "sha256": "1ac68483ec44ec8289594f8a4802aa5668cb0274278bc623606fd779fc14690e",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLP.json",
+      "sha256": "ca7478ee5f9d494cacb87105f3c9c166cec51440b1b8529e067c1a5bc581dd6c",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLK.json",
+      "sha256": "39ca7b9541c3743bff56204b9eb5c6e0015b187519966be68f7a9b0cef89a5b5",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLP.json",
+      "sha256": "8cd8a24b896dc89ae3b3caf01038e9553cd025d2ed603909a38b41e6225e2013",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLK.json",
+      "sha256": "d9081e5dced378d49a919069da03f846f28222eaa788fab9b6440680ab349d4f",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLP.json",
+      "sha256": "954ecc976290953afe2b02543046b756384c657892d623cfa5378e23b298660f",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLK.json",
+      "sha256": "be1f5cf535df7cf715c618b24365ce46e1957e5186f1b12d86c806a5ba73e544",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLP.json",
+      "sha256": "2fbd30a8e4da229ddb77ab828a6038907c87d4a32b9b9f6ae7599d9692595ea9",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLK.json",
+      "sha256": "e16d40e35411b2421b70fc9b48a00209659d1c1683679c7d5afb107637cfb3e8",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLP.json",
+      "sha256": "d0d3f7a7ed354473d9654ddde93c1f395c1f7504f9f1143a423ad82d41348090",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cLK.json",
+      "sha256": "e8c7cfef76eb3372a1424d0973b7c64b9b16637d178882542b70e5267de1208a",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cLP.json",
+      "sha256": "d074bf6d6dc554d591a1770113d15760a6f6119161d9152ff51587f193f0082f",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sLK.json",
+      "sha256": "855a26035436f98b16b0ff78886cf226348589c735a38703999aa07b023971ab",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sLP.json",
+      "sha256": "ba6ed6a1e5f3802f632d501bf0e40594b195895bad8fa72f6b40d4590959b5ca",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLK.json",
+      "sha256": "eee4614d455e7957282cb35850da13030638667878f00f9f52202133df488b75",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLP.json",
+      "sha256": "e3d05f10eadb048c33670abb375b431f65d4b4442a8e757276f0a775e3b4a61a",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLK.json",
+      "sha256": "3de8506db9b833103565bcedc47e97a42a7bf5055f36498ef1ba94f040ee9776",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLP.json",
+      "sha256": "68906ba2554e88b715707e1d5bb4dfea064e5598f96d3880e682ba4cbe031988",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLK.json",
+      "sha256": "af7776763dfba47c5cf63edee1f4ce7ec8c0eca52095b67651089a8db7f48d79",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLP.json",
+      "sha256": "535f033b4f7f4edb00e1fde35392d29c3cca4d46b7daa0385ab9fcad03ab7395",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cMP.json",
+      "sha256": "9f0d4e6976558d7cec0f2fa6674111e56e63c55f6cd622146e2796ca1169f165",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "mai-cmp",
+            "label": "舞 · 下中拳双出口",
+            "targets": [
+              "sMK",
+              "sHP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 12,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLK.json",
+      "sha256": "4f909bb19300a90bbe8fb2d4ec365a4b75c9fa89ab7f58d92ce1083e7713f31f",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLP.json",
+      "sha256": "14ee13b95bcc2395f3b38885e4537155228f24eead09fc12ebaa312f93de1533",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMK.json",
+      "sha256": "812ee8ab3aad4d4c0b29f94536f6b6d0203953f89b7cf980a9bf1c1859a3b9c9",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "mai-smk",
+            "label": "舞 · 中脚接重拳",
+            "targets": [
+              "sHP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 12,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMP.json",
+      "sha256": "1b087cdb01888bb293eddd926cd4533ee19d3b68613cd9bffb6eb341bbed7135",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "mai-smp",
+            "label": "舞 · 中拳双出口",
+            "targets": [
+              "sHP",
+              "cMK"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 12,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cLK.json",
+      "sha256": "8bf16de3f24ed4eacb52d604e2ecdbd5ff45b8e8fc294b8bb40ebb4f8166a2ac",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cLP.json",
+      "sha256": "91c95e4586d89922258ad4f18f23b037262905ac226c47563ba5ced28974d6f2",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sLK.json",
+      "sha256": "7a16d324874880e757d309a01b47008a92817ec3a08a710761e9748055bd456c",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "sLP",
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sLP.json",
+      "sha256": "2cfcbd9509dc53b7ae420f0bc336b07730e20861cc071f7a05117766f1db2e65",
+      "transitions": {
+        "version": 1,
+        "edges": [
+          {
+            "id": "light-confirm",
+            "label": "轻攻击命中连携",
+            "targets": [
+              "cLP"
+            ],
+            "on": "hit",
+            "start": 0,
+            "end": 10,
+            "minHits": 1,
+            "maxChain": 2
+          }
+        ]
+      }
+    }
+  ],
+  "modelAndRigTotal": 16,
+  "modelAndRigUnchanged": 16,
+  "originalRoutes": 16,
+  "originalRoutesUnchanged": 16,
+  "currentRoutes": 22,
+  "newRoutes": [
+    {
+      "id": "mai-flow-fan",
+      "title": "扇舞 · 重击衔接",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 0,
+        "super": 0
+      },
+      "expectedHits": 3,
+      "minTotal": 3,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sMP",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_0",
+          "minHits": 1
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-rise",
+      "title": "扇舞 · 炎舞终结",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 2,
+        "super": 3
+      },
+      "expectedHits": 11,
+      "minTotal": 11,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sMP",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_3",
+          "minHits": 1
+        },
+        {
+          "move": "SA3",
+          "minHits": 8
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-weave",
+      "title": "忍步 · 脚手连携",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 0,
+        "super": 0
+      },
+      "expectedHits": 4,
+      "minTotal": 4,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "cMP",
+          "minHits": 1
+        },
+        {
+          "move": "sMK",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "shinobibachi_0",
+          "minHits": 1
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-cascade",
+      "title": "忍步 · 仇樱收束",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 2,
+        "super": 3
+      },
+      "expectedHits": 12,
+      "minTotal": 12,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "cMP",
+          "minHits": 1
+        },
+        {
+          "move": "sMK",
+          "minHits": 1
+        },
+        {
+          "move": "sHP",
+          "minHits": 1
+        },
+        {
+          "move": "shinobibachi_3",
+          "minHits": 1
+        },
+        {
+          "move": "SA3",
+          "minHits": 8
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-light",
+      "title": "轻打 · 三拍入扇",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 0,
+        "super": 0
+      },
+      "expectedHits": 4,
+      "minTotal": 4,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sLK",
+          "minHits": 1
+        },
+        {
+          "move": "cLP",
+          "minHits": 1
+        },
+        {
+          "move": "sLP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_0",
+          "minHits": 1
+        }
+      ]
+    },
+    {
+      "id": "mai-flow-gale",
+      "title": "轻打 · 超忍蜂",
+      "character": "mai",
+      "distance": 168,
+      "corner": true,
+      "rulesPreset": "flow",
+      "tier": "FLOW 07 · 有限连携",
+      "meter": {
+        "drive": 2,
+        "super": 2
+      },
+      "expectedHits": 9,
+      "minTotal": 9,
+      "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+      "steps": [
+        {
+          "move": "sLK",
+          "minHits": 1
+        },
+        {
+          "move": "cLP",
+          "minHits": 1
+        },
+        {
+          "move": "sLP",
+          "minHits": 1
+        },
+        {
+          "move": "hissatsu_3",
+          "minHits": 1
+        },
+        {
+          "move": "SA2",
+          "minHits": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "note": "This is asset/config equality only, not a claim that new clock, hitstop, input or cancel runtime rules are unchanged."
+}

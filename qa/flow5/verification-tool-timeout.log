@@ -1,0 +1,150 @@
+
+=== /opt/pyvenv/bin/python tools/build_forge.py ===
+Built INK-Street-Fighter-6.html 8005711 bytes; game source 107f7ec8455285f8
+
+=== node tests/flow5/core.test.js ===
+PASS All 690 assets validate with strict FLOW 05 schema
+PASS Compiled sampler preserves legacy values across every asset and subframe
+PASS Compiled easing parity: "smooth"
+PASS Compiled easing parity: "linear"
+PASS Compiled easing parity: "strike"
+PASS Compiled easing parity: "load"
+PASS Compiled easing parity: "hold"
+PASS Compiled easing parity: "spline"
+PASS Compiled easing parity: [0.2,0.4,0.7,0.9]
+PASS Compiled clips retain authored 720-degree winding
+PASS Compiled sampling returns independent objects and validates frames
+PASS Production game source is compiled directly, without build-time runtime replacements
+PASS Fixed clock: 30 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 60 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 120 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 144 Hz display yields 600 simulation steps in 10s
+PASS Fixed clock: 240 Hz display yields 600 simulation steps in 10s
+PASS Pause/resume discards pending wall time and does not catch up
+PASS Inactive scene transition consumes no stale simulation time
+PASS Overload is bounded and reports discarded steps explicitly
+PASS Fixed clock respects half speed and validates inputs
+PASS Spring exact integration semigroup, damping 0
+PASS Spring exact integration semigroup, damping 0.42
+PASS Spring exact integration semigroup, damping 1
+PASS Spring exact integration semigroup, damping 1.7
+PASS Damped spring converges to the target rather than oscillating forever
+PASS Spring random seek is deterministic and includes actual angular velocity
+PASS Secondary bake never mutates assets and remains finite at all Mai subframes
+PASS Spring disable returns zero arrays and zero velocity
+PASS Graph is a copy-only presentation path; off returns raw values
+PASS Additive and override layers are weighted and masked
+PASS Graph zero weight exactly preserves clip values
+PASS Foot contact reduces world-space drift under translated roots
+PASS Airborne state bypasses planted-foot constraints
+PASS Strict asset schema rejects combat-owned root channel
+PASS Strict asset schema rejects weight above one
+PASS Strict asset schema rejects duplicate layer id
+PASS Strict asset schema rejects overlapping foot contacts
+PASS Strict asset schema rejects contact out of range
+PASS Strict asset schema rejects negative spring damping
+PASS Strict asset schema rejects unbounded spring stiffness
+PASS Strict asset schema rejects bad emitter spacing
+PASS Strict asset schema rejects bad inherited velocity
+PASS Strict asset schema rejects unbounded initial burst
+PASS Strict asset schema rejects nonmonotone opacity curve
+PASS Retime remaps layers, weights, contacts and event windows
+PASS Timeline dispatches zero-frame events once and never on repeat render frame
+PASS Timeline processes all crossed edges in end-before-start order
+PASS Timeline cancellation closes each active event only once
+PASS Silent seek reconstructs active events without emitting historical starts
+PASS Timeline rejects duplicate identities and invalid time windows
+PASS Distance emissions maintain spatial spacing independent of sample partitions
+PASS Low-quality births preserve ordinal seeds and are a subset, not rerandomized
+PASS Teleport resets distance debt and does not generate a connecting beam
+PASS Emitter closes on cancellation and rejects reverse time before closure
+PASS Emission cap advances ordinals even when dropping overloaded births
+PASS Disabled emitters produce no particles while preserving deterministic sequence
+PASS Ribbon geometry stays finite with line
+PASS Ribbon geometry stays finite with duplicates
+PASS Ribbon geometry stays finite with reverse
+PASS Ribbon geometry stays finite with tiny
+PASS Ribbon fixed-width normal offsets cannot explode at a reversal
+PASS Ribbon pool retains allocated SVG nodes through expiry and reuse
+PASS Ribbon sample history stays bounded at 64 vertices per emitter
+PASS Particle damping integrates acceleration consistently, not ballistic gravity with damped velocity
+PASS Zero-drag particle limit recovers ballistic motion
+PASS Particle lifetime curves and heat color are seek-stable
+PASS Huge elapsed emitter time is bounded in allocation while preserving ordinals
+PASS Zero quality cannot emit even a zero-threshold random sample
+PASS Preview emitter baking cannot increment world emission telemetry
+PASS Zero-size ring lifetime curve never writes Infinity into SVG stroke width
+PASS Two simultaneous actors own independent emitter instances and cancellation
+PASS All 43 graph-authored Mai records retime safely across short, long and mixed phases
+PASS All 690 combat bindings and hitbox contracts remain unchanged
+PASS All sixteen combo route definitions are unchanged
+PASS Historical source is archived intact; live source is genuinely different
+CORE 76/76
+
+=== /opt/pyvenv/bin/python tests/flow5/source_audit.py ===
+{
+  "suite": "flow5-source-audit",
+  "capturedAt": "2026-10-04T14:49:27.545212+00:00",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "passed": true,
+  "checks": {
+    "archiveIntact": true,
+    "liveSourceDifferentFromLegacy": true,
+    "builderReadsLiveSourceDirectly": true,
+    "embeddedModules": true,
+    "generatedIntegrationMatchesSource": true,
+    "unchangedBaseTracksAndCombatContracts": true,
+    "changedRecordsOnlyMai": true
+  },
+  "records": 690,
+  "changedRecords": 43,
+  "failures": [],
+  "gameSha256": "107f7ec8455285f8fe55621c54f47fc2346df66b2e1e4b39da42819d9006a0de",
+  "legacySha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+  "baselineArchiveSha256": "c8f6e8472e1b265fb1d9d7902f96b70b81189b1ccb445e237b13e3dc8bda18ec",
+  "note": "Checks uploaded FLOW4 base tracks and bindings/boxes; current visual additions are metadata and FX configuration. This is not a claim that the whole game was rewritten."
+}
+
+=== /opt/pyvenv/bin/python tests/flow5/browser.py ===
+PASS Production modules, build and isolated v5 persistence agree 
+PASS Real requestAnimationFrame loop advances the production fixed clock 
+PASS Same-frame inspector changes final pose without modifying raw assets or global graph state 
+PASS Inspector reverse seeking reproduces geometry, spring state and particles 
+PASS Live visual graph is separate from collision and is not a new hitbox multiplier 
+PASS Cancelled layer handoff preserves its visual pose at the next move start 
+PASS Visual handoff fully ends before the first active frame 
+PASS Real SVG fan socket follows the final layered pose, not the raw combat pose 
+PASS 360 render-only calls do not advance simulation, emitter births, events or damage 
+PASS Runtime timeline feeds live emitter bank and dispatches each serial exactly once 
+PASS Hitstop freezes particle time, ribbon geometry, emission ordinal and event edges 
+PASS Cancellation immediately closes emitters but retains already born particles and ribbons 
+PASS World particle and ribbon node pools do not grow after repeated cancels 
+PASS Low-quality preview is a stable subset of high-quality particle geometry 
+PASS Editing graph spring settings updates live preview before saving 
+PASS Editor saves distance rate, burst, inherited velocity and spring metadata to reusable JSON 
+PASS Undo and redo restore newly added emitter parameters without changing combat bindings 
+PASS FX disabled suppresses local layers and world retained pools 
+PASS Inspector opened over rhythm practice cannot run G, R or Space behind the modal 
+PASS Reset discards action transitions, event instances and histories 
+BROWSER 30 / 30 ERRORS []
+
+=== /opt/pyvenv/bin/python tests/flow5/compatibility.py ===
+MIRRORED GRAPH MATRIX 64 / 64
+RENDER SCHEDULE MATRIX 32 / 32
+SOCKETS 1032 / 1032 MAX 0.00540954088149716
+COMPATIBILITY 96 / 96 []
+
+=== /opt/pyvenv/bin/python tests/flow5/rhythm_matrix.py ===
+PASS mai-confirm 1 0 0 success 11
+PASS mai-confirm 1 0 2 failed 5
+PASS mai-confirm 1 3 0 success 11
+PASS mai-confirm 1 3 2 success 11
+PASS mai-confirm 1 6 0 success 11
+PASS mai-confirm 1 6 2 success 11
+PASS mai-confirm -1 0 0 success 11
+PASS mai-confirm -1 0 2 failed 5
+PASS mai-confirm -1 3 0 success 11
+PASS mai-confirm -1 3 2 success 11
+PASS mai-confirm -1 6 0 success 11
+PASS mai-confirm -1 6 2 success 11
+PASS mai-extended 1 0 0 success 14

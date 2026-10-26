@@ -1,0 +1,20 @@
+{
+  htmlSha256: '6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f',
+  capturedAt: '2026-10-04T17:49:14.495Z',
+  suite: 'flow6-key-boundary-continuity',
+  epsilonFrames: 0.00001,
+  checks: 82812,
+  thresholdPixels: 0.05,
+  maximumDisplacement: 0.0031330456789076875,
+  worst: {
+    id: 'cammy',
+    key: 'spike_0',
+    t: 5,
+    name: 'frontLeg',
+    j: 2,
+    d: 0.0031330456789076875
+  },
+  failures: [],
+  totalFailures: 0,
+  passed: true
+}

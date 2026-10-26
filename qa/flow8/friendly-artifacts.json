@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "name": "INK-Flow-8-Response.html",
+      "source": "dist/INK-Street-Fighter-6.html",
+      "bytes": 8341294,
+      "sha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3"
+    },
+    {
+      "name": "INK-Flow-8-Response-Player.html",
+      "source": "dist/INK-Street-Fighter-6-Player.html",
+      "bytes": 8341452,
+      "sha256": "2568454038c9d9b81e5f1a78eb675dfc53a8eb95f5d548d4e4392c7a84b0dd11"
+    },
+    {
+      "name": "INK-Flow-8-Response-Comparison.mp4",
+      "source": "qa/flow8/flow8-comparison.mp4",
+      "bytes": 2796440,
+      "sha256": "fb9d4bf1ed5f28fb2860404a2db202d3299c318b7cea35d71b1b213be192996b"
+    },
+    {
+      "name": "INK-Flow-8-Response-Comparison.png",
+      "source": "qa/flow8/flow8-comparison.png",
+      "bytes": 1024709,
+      "sha256": "03dc0ed1d7389c37dfbaa6e9e88df30c62c4b38f5f345df361803c3700a2d622"
+    },
+    {
+      "name": "INK-Flow-8-Response-Review.png",
+      "source": "qa/flow8/review-1440.png",
+      "bytes": 214014,
+      "sha256": "a172f734e890f55eeaf5cccfbcddb603e349fd62acc090b0517cc89421e90094"
+    },
+    {
+      "name": "INK-Flow-8-Response-Plan.md",
+      "source": "docs/FLOW8-PLAN.md",
+      "bytes": 3196,
+      "sha256": "67b2bd13038c5769211bc03abbf82290378b2041e5c7e62ee828ebce800d200c"
+    },
+    {
+      "name": "INK-Flow-8-Response-Example-Replay.json",
+      "source": "qa/flow8/sample-knockdown-replay.json",
+      "bytes": 400716,
+      "sha256": "c1a03cdeab09c8bd38d7d5bb5263913d32bed6a1f372c3bba28cde12c3ade171"
+    }
+  ]
+}

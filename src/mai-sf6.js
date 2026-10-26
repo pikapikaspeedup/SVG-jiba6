@@ -71,21 +71,21 @@ function holdTick(f){
 }
 function tick(f,G,spawn,notify){
  if(f.ch.id!=='mai')return;const a=f.attack,m=a?.m;
- if(f.maiFollowUntil&&G.tick>f.maiFollowUntil)f.maiFollowUntil=0;
+ if(f.maiFollowUntil&&G.actionTick>f.maiFollowUntil)f.maiFollowUntil=0;
  if(!a)return;
  if(m.id==='SA1'&&a.t===m.startup&&!a.stockGranted){a.stockGranted=true;f.flameStock=5;notify(f,'FLAME STOCK · 火焰库存 5 / 5');}
- if(m.base==='kachosen'&&m.od&&m.fanCharged&&a.projectileSent&&!a.followOpened){a.followOpened=true;f.maiFollowUntil=G.tick+32;f.maiFollowEnhanced=!!m.flameEnhanced;}
+ if(m.base==='kachosen'&&m.od&&m.fanCharged&&a.projectileSent&&!a.followOpened){a.followOpened=true;f.maiFollowUntil=G.actionTick+32;f.maiFollowEnhanced=!!m.flameEnhanced;}
  if(m.id==='midare'&&[m.startup,m.startup+8].includes(a.t))spawn(f,{...m,kind:'projectile',fanCharged:true,fanFollow:true,flameEnhanced:f.maiFollowEnhanced,speed:a.t===m.startup?13:15,hits:1,damage:500});
  if(m.base==='shinobibachi'&&m.od&&a.hitConfirmed&&!a.odBounce&&a.t>=m.startup+Math.max(5,m.active-4)){
-  a.odBounce=true;f.vy=-11.8;f.vx=-f.dir*1.8;f.y=Math.min(f.y,-1);f.airLock=false;f.maiAirFollow=G.tick+42;f.attack=null;f.state='idle';f.stateT=0;notify(f,'OD 忍蜂 · 腾空追击');
+  a.odBounce=true;SVG_FIGHTER.setState(f,'idle');f.vy=-11.8;f.vx=-f.dir*1.8;f.y=Math.min(f.y,-1);f.airLock=false;f.maiAirFollow=G.actionTick+42;notify(f,'OD 忍蜂 · 腾空追击');
  }
 }
 function follow(f,bs,G,getMove,request,relative){
- if(f.ch.id!=='mai'||!bs.some(b=>b.endsWith('P'))||!f.maiFollowUntil||G.tick>f.maiFollowUntil||![3,6,9].includes(relative(f.input.dir,f.dir)))return false;
+ if(f.ch.id!=='mai'||!bs.some(b=>b.endsWith('P'))||!f.maiFollowUntil||G.actionTick>f.maiFollowUntil||![3,6,9].includes(relative(f.input.dir,f.dir)))return false;
  const m=getMove(f,'midare');if(!m)return false;
  // This is an explicit cancel window, not a global bypass of recovery.
- f.maiFollowCancel=true;const ok=request(f,m,false);f.maiFollowCancel=false;
- if(ok)f.maiFollowUntil=0;return ok;
+ f.maiFollowCancel=true;const ok=request(f,m,true);f.maiFollowCancel=false;
+ if(ok)f.maiFollowUntil=0;return ok||!!f.input.queue.find(q=>q.m.id==='midare');
 }
 function initShot(s){
  if(s.owner.ch.id!=='mai'||s.m.base!=='kachosen')return;

@@ -1,0 +1,26 @@
+{
+  "finishedAt": "2026-10-04T21:31:18.170867+00:00",
+  "htmlSha256": "264bb97893fbfcb7290de2d2c9d8f6cab60ed593759a0d95f511dbda95053ae0",
+  "tests": [
+    {
+      "test": "smoke.py",
+      "exitCode": 0,
+      "wallSeconds": 7.777
+    },
+    {
+      "test": "transition-matrix.py",
+      "exitCode": 0,
+      "wallSeconds": 4.803
+    },
+    {
+      "test": "recovery-observation.py",
+      "exitCode": 0,
+      "wallSeconds": 5.282
+    },
+    {
+      "test": "pace-comparison.py",
+      "exitCode": 0,
+      "wallSeconds": 10.632
+    }
+  ]
+}

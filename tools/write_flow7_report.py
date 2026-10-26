@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+"""Write a report only after current-build verification, final soak and playback."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,subprocess,sys
+R=Path(__file__).resolve().parents[1];O=R/'qa/flow7'
+def read(n):return json.loads((O/(n+'.json')).read_text(encoding='utf-8'))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def main():
+ subprocess.run([sys.executable,'tools/check_flow7.py','--report-only','--require-soak','--require-playback'],cwd=R,check=True)
+ v=read('validation');soak=read('endurance');work=read('work-log');audit=read('source-audit');diff=read('source-diff');pace=read('pace-comparison');freeze=read('freeze-origin-comparison');play=read('playback');now=datetime.now(timezone.utc);started=datetime.fromisoformat(work['startedAt'].replace('Z','+00:00'));elapsed=(now-started).total_seconds();minutes=int(elapsed//60);seconds=int(elapsed%60)
+ new=read('browser-contracts');rmap={x['name'].split(' / ')[0]:x['detail'] for x in new['tests'] if x['name'].endswith('genuine new route') and ' / weighted / 1:' in x['name']}
+ # Derive route outcomes from the actual route matrix; do not invent success data.
+ if len(rmap)!=6:
+  rmap={}
+  for x in new['tests']:
+   if x['name'].endswith('genuine new route') and ' / weighted / 1:' in x['name']:rmap[x['name'].split(' / ')[0]]=x['detail']
+ if len(rmap)!=6:raise ValueError('Six final route results missing')
+ route_rows=[]
+ for r in audit['newRoutes']:
+  q=rmap[r['id']];route_rows.append(f"| {r['title']} | {' → '.join(s['move'] for s in r['steps'])} | {q['hits']} / {q['damage']} | {r['meter']['drive']} / {r['meter']['super']} |")
+ def counts(n):d=read(n);return f"{d['passed']}/{d['total']}"
+ dyn=read('render-and-practice');tr=read('transition-matrix');rec=read('recovery-observation');final=soak['final'];checks=soak['checkpoints'];heap=[c['heap']['usedSize'] for c in checks]+[soak['finalHeap']['usedSize']]
+ report=f'''# INK FLOW 07 · 节奏与连段引擎验收报告
+
+## 交付与工作记录
+
+基于用户提供的 `INK-Flow-6-Continuity-Source.zip` 完成实际修改。源码基线 SHA-256：`{audit['baselineSha256']}`。
+
+本回合记录起点 **{work['startedAt']}**；本报告生成 **{now.isoformat()}**。至此实际经过 **{minutes} 分 {seconds} 秒**，包含源码修改、调试、浏览器测试、持续运行与交付整理，不是“计划工作一小时”的口头承诺。生成后仍需执行 ZIP 指纹与新目录重建核对，结果在外置 `INK-Flow-7-Rhythm-Delivery-Check.json`。
+
+当前创作版 SHA-256：`{v['htmlSha256']}`。玩家版：`{v['playerHtmlSha256']}`。本报告的核心浏览器证据、长测和对照视频都绑定这个创作版，不用旧版本报告代替。
+
+## 对用户问题的判断
+
+**更灵活的连段不能等于无限取消。** v6 的输入缓冲会避开命中定格，但取消与部分追击窗口仍按另一种时间口径流逝；按钮说明和执行又存在分支重复。v7 将可行动作帧、确认、输入请求与原子资源检查统一。默认新连携要求命中确认并限制次数，旧必杀／超必杀关系继续保留。
+
+**节奏偏快的感受不能仅用“60 帧”否定。** 原始 v6 本身已有固定 60 Hz 逻辑，未发现随显示刷新率直接加速的推进方式。但自定义招式时长、短定格、连续必杀中间拍、辅助模式在首个合法时刻立即接招，都会影响观感。没有同作品、同版本官方录像／帧表，不能断言比官方快多少。
+
+**动作突然回抽是实际缺陷，不是错觉。** 运行原始 v6 HTML，舞的真实中拳命中后，最后一帧定格已结束、动作仍为第 8 帧时，渲染会退回 `N-1+alpha`。本轮直接对照最大倒退 **{freeze['versions'][0]['maximum']:.6f} SVG 坐标单位**；最终 v7 在相同场景为 **{freeze['versions'][1]['maximum']:.6f}**。这是角色局部坐标，不是屏幕或设备像素。完整数值见 `freeze-origin-comparison.json`；早期 `freeze-rewind-before/after.json` 只是定位记录，不充当最终版本对照。
+
+## 本轮落地
+
+### 1. 取消、输入和资源决策
+
+新增 `src/ink/combat-flow.js` 并由正式 `game.js` 调用。确认时间使用 `actionTick/confirmFrame`，冻结、超级必杀停顿和慢放跳步不吃掉动作窗口。舞的追投、空中跟进、派生和连续技准备时间随之统一。
+
+`decideMove` 供实际请求、缓冲和 UI 共用。资源、空地、倒地／抓取、CA、派生前置都检查完才扣资源。直接调用 PAR、RUSH 或普通攻击也不能越过冻结。界面解释等待确认、定格、资源不足、窗口过期、连携上限等原因，不以 UI 假动作掩盖失败。
+
+实战输入缓冲 3F／6F／9F／12F 可选，保持一个最新请求且成功只消费一次。G 教学窗口独立为 0F／3F／6F，每次显式输入仅请求下一步；长按和在文本框输入 G 不会自动代打。
+
+### 2. 声明式有限连携
+
+**{audit['changedMoveRecords']} 份动作只新增 `transitions` 元数据**。所有 {audit['totalMoves']} 份动作的既有字段、`clip`、`binding`、`boxes` 均与 v6 一致，16 份模型／骨架文件也一致。没有改伤害、硬直、判定范围、启动／持续／恢复帧来凑连段。
+
+8 位角色的部分轻攻击新增有限出口；舞另有中拳接重拳／蹲中脚、蹲中拳接中脚／重拳、中脚接重拳。默认额外连携最多 2 次。创作者可设 1–3 次、0–20 动作帧窗口，需命中或接触确认；不支持挥空、无限链、未知目标、跨角色目标、状态／超级必杀／投技起点。旧分类取消优先，新规则增加出口而不是完整白名单。
+
+旧 16 条路线逐项不变，新增 6 条舞路线，共 **22 条**。新路线都在左右朝向、两种定格预设下实际成立：
+
+| 路线 | 实际请求顺序 | HIT / 伤害 | 起手斗气 / 超级能量 |
+|---|---|---:|---:|
+{chr(10).join(route_rows)}
+
+这些内置路线以 168 距离、角落为起点，未许诺中场或任意距离一样成立。额外通用轻三连 `sLK → cLP → sLP` 在 100 距离、零起手能量下，8 角色双向 **{counts('character-chain')}**。真实控制器在首次命中后让木桩防御以暴露断连，没有脚本扣血或强行确认。
+
+### 3. 收招与冻结释放连续性
+
+普通地面动作结束时先接住最终叠加姿势、关节角度和速度，再经 5 帧有界交接进入待机；舞 OD 忍蜂反弹也走正式状态生命周期。换招仍在下一招首有效帧之前完成交接。
+
+**{tr['passed']}/{tr['total']} 次真实取消**与 **{rec['passed']}/{rec['samples']} 个自然地面收招样本**通过。相同交接时刻的最大关节位置误差分别为 `{tr['maximumJointDisplacement']}` 和 `{rec['maximumJointDisplacement']}`，处于浮点舍入范围。不要外推为任意状态、任意编辑或全局速度／加速度都连续。
+
+冻结释放还覆盖 8 角色 × 2 朝向 × 2 定格预设，在 5 个渲染插值位置检查；暂停恢复和慢放跳步有独立用例。规则姿势和最终表现仍分离，新的表现交接不反过来扩大碰撞。
+
+### 4. 强弱拍与分阶段特效
+
+停顿风格与整体速度分离。默认 **重心节奏 + 1× + 拓展连携**；全局速度可选 1／0.85／0.75／0.5，两位角色同步，动作帧不改。
+
+| 接触事件 | v6 停顿预设 | 重心预设 |
+|---|---:|---:|
+| 轻／中／重击 | 3／5／7 | 7／9／12 |
+| 防御 | 4 | 6 |
+| 超级必杀起手 | 20 | 28 |
+| 超级必杀中间击 | 6 | 4 |
+| 超级必杀末击 | 6 | 14 |
+
+单位为模拟帧；CA 起手另加 6 帧，普通多段中间击另有 4／5 帧分支。不是官方数据，也不是把每个独立投技／招架机制都改成同一张表。
+
+`impact-feedback.js` 被实际命中入口消费，区分防御、拳击、踢击、扇切、上挑、终结六类。接触核心、2F 后切痕、3F 后余烬／花瓣共享冻结时钟。中段减少烟雾，末击再收束；沿用有上限的世界池与本地池。关闭／清爽／完整 FX 在 6 新路线双向 **{counts('effect-invariance')}** 的真实伤害、命中、模拟步数和剩余资源完全一致。
+
+### 5. 可真正使用的连段工坊
+
+首页“自由连段与节奏”可编排最多 48 步，修改命中数、间隔、距离、资源、方向，保存个人路线副本。显示真实下一步和拒绝原因，成功统计在终止时固定；换草稿不再冒用上一次结果。
+
+创作版可编辑并保存真实动作连携字段；玩家版隐藏规则作者入口，仍保留路线编排和练习。当前路线、路线库、本次运行记录均可导出 JSON。独立 HTML 导出携带动作修改、路线与节奏；再次导出也保留。标题里的 `</script>` 作为文本安全保留，没有外部网络依赖。
+
+## 节奏对照：本项目 v6 与 v7，不是官方游戏
+
+冻结原版 HTML 位于 `legacy/flow6/baseline-v6.html`。相同旧路线、资源、位置和朝向，在 v6 与 v7 的旧停顿／旧规则预设下，32 个场景的命中、伤害、动作帧、模拟步与剩余资源全部相同。
+
+旧舞 14 HIT 路线：v6 **262 步 / 4.3667 秒**，v7 旧停顿 **262 步 / 4.3667 秒**，v7 重心 **270 步 / 4.5000 秒**。均从首次请求计至最后要求命中，用 60 Hz 的 1× 标尺换算，**不含末击后的定格和收招**。
+
+重心预设不是全面减速；中间击更紧、重击和末击更重。因此需要明显更慢时应使用 **0.85×**，4.50 个模拟秒在理想无卡顿播放下约为 5.29 秒。这里不是实测手机帧率或官方速度比例。
+
+交付视频 **{play['durationSeconds']:.0f} 秒 / {play['fps']} FPS / {play['frames']} 帧**，三段分别是原始 v6 对新版重心、1× 对 0.85×、新 3 HIT 对新 12 HIT。使用真实战斗和 SVG、同固定镜头、受控 60 Hz 采样；包含尾段演出，不是原生性能录像，也不以它替代插值回跳的专门数值测试。无音轨。
+
+## 验证清单
+
+下表是不同合同与采样矩阵，不相加包装成“几千个独立用户场景”。本轮结果在 `qa/flow7`；其他目录是继承的历史记录。
+
+| 检查 | 最终结果 | 证据 |
+|---|---:|---|
+| 新时钟、取消、资产合同 | {counts('contracts')} | contracts.json（源码指纹） |
+| 继承核心模块与 690 资产 schema | {counts('regression-core')} | regression-core.json |
+| 实际浏览器冻结、资源、输入、规则及 FX | {counts('browser-contracts')} | browser-contracts.json |
+| 旧 16 路线 × 方向 × 规则 × 定格 | {counts('smoke')} | smoke.json |
+| 八角色新轻三连 | {counts('character-chain')} | character-chain.json |
+| 真实取消关节交接 | {tr['passed']}/{tr['total']}，路线 {tr['routePassed']}/{tr['routeTotal']} | transition-matrix.json |
+| 自然地面收招 | {rec['passed']}/{rec['samples']} | recovery-observation.json |
+| 原战斗机制／八角色逐招回放 | 39/39；522/522 | legacy-mechanics / legacy-replays |
+| 30／60／144 Hz 合成调度和实际渲染 | {dyn['displayPassed']}/{dyn['displayTotal']} | render-and-practice.json |
+| 一次请求一步的 G 窗口矩阵 | {dyn['practicePassed']}/{dyn['practiceTotal']} | render-and-practice.json |
+| FX 模式不改变真实战斗结果 | {counts('effect-invariance')} | effect-invariance.json |
+| 桌面与 390 宽触摸实际交互 | {counts('ui')} | ui.json |
+| 独立 HTML 两代导出、玩家版、回读 | {counts('portability')} | portability.json |
+| 本机启动页布局与链接 | {counts('entrypoints')} | entrypoints.json（页面源码指纹） |
+| v6／v7 时长对照 | 三组各 32 条，全部完成 | pace-comparison.json |
+| 原始 v6 的实际回跳直接对照 | 40.709353 → 0 SVG 单位 | freeze-origin-comparison.json |
+| 既有资产逐项审计 | 690/690；原路线 16/16 | source-audit.json |
+
+继承的 39 项机制与 522 次逐招回放使用 v6 停顿／原规则预设做旧行为对照，不代表 522 招在每一种新预设下都跑过全矩阵；重心预设另由浏览器专项、路线矩阵与持续运行覆盖。原机制测试只把旧 fixture 的追击时间比较从 `G.tick` 对齐到 `G.actionTick`，未删掉原断言。逐招回放的“启动／有限坐标／合法 SVG”不是证明每招都符合官方动画美术。
+
+### 最终持续运行
+
+从 **{soak['startedAt']}** 到 **{soak['finishedAt']}**，实测单调时钟 **{soak['elapsedWallSeconds']:.3f} 秒**，完成 **{soak['completedRoutes']} 条真实连段**。持续绘制、轮换新旧角色路线、方向、定格、全局速度、FX 质量和骨架检视；包括 **{final['pausedChecks']} 次暂停核对、{final['inspections']} 次骨架检视**。
+
+最终运行没有记录到连段失败、未处理脚本错误或池越界。观测峰值：世界粒子 **{final['maxParticles']}/320**，世界拖尾 **{final['maxTrails']}/64**，角色本地粒子 **{final['maxLocal']}/144**，根轨迹 **{final['maxRoots']}/40**，挂点缓存 **{final['maxCache']}/2048**，角色池 **{final['maxActors']}/2**。生命周期 **{final['maxLifecycle']}/256**、冲击记录 **{final['maxImpacts']}/128**、单角色输入日志 **{final['maxInputs']}/64**。
+
+末次检查点的实际长测时钟记录放弃追赶的模拟步为 **{checks[-1]['clock']['discardedSteps']}**（卡顿保护计数），不冒称真实长测零丢步；合成 30／60／144 Hz 调度用例则分别按其结果核验。
+
+检查点强制 GC 后 JS 堆范围约 **{min(heap)/1048576:.2f}–{max(heap)/1048576:.2f} MiB**。这不是整个浏览器 RSS，也不是长期无泄漏证明；只说明这次有界观测的结果。环境与每分钟检查点都留在 JSON，不宣称所有电脑／手机 60 FPS。
+
+## 失败、修正与不应抹掉的记录
+
+早期候选因导出版本字段仍为 6、速度下拉框数值字符串不匹配而停止重跑，见 `portability-before-metadata-fix.json` 与 `candidate-*`。追投回放曾失败，保留 `pre-fixture-fix-*`；修复正式练习入口的冻结等待后重跑 522 项。
+
+另一次旧指纹候选长测在 **276.410 秒／80 条路线**时出现 `Target crashed`。当时并行视频双页面、UI 和长测；容器记录从无 OOM 变为一次 `oom_kill`，内存限额为 4 GiB。原始失败结果在 `candidate-oom-endurance.json`，说明在 `candidate-oom-note.json`。该次不能算完成长测，也没有改写成通过。最终采用受控并发重新开始，以上 {soak['elapsedWallSeconds']:.3f} 秒才是被验收的连续运行。
+
+`validation-during-rerun.json` 是校验器在旧指纹报告尚未被新测试替换时正确拒绝放行的记录。最终只接受 `validation.json` 中的当前指纹证据。
+
+## 边界和后续不足
+
+当前仍是 2.5D SVG。未重做全部人体／服装美术，未新增完整 3D 转身、布料碰撞或任意姿势脚锁。普通地面收招与实际取消的采样结果不能推出落地、受击、抓投、跨越对手换向也已完美连续；这些仍是下一步优先级。
+
+声明式校验能拒绝无效规则，不能保证任意合法自定义路线在所有距离、对手体型与资源下成立。新规则未经长期玩家平衡测试，也不冒充竞技版或官方连段表。
+
+本环境实测原生 `file://` 导航被 `ERR_BLOCKED_BY_ADMINISTRATOR` 拒绝；独立 HTML 用完整字节加载验证。没有把这个替代路径当作用户本机文件夹授权或持久化授权成功。390px 是视口与触摸模拟，不是真机性能。玩家版隐藏编辑 UI，不是安全隔离。
+
+旧 v6 编辑导入会整份覆盖相应动作，可能覆盖新 `transitions`。v7 默认存储独立；先备份旧项目，再选择性迁移。内存存储模式必须在关闭前导出。保留字段 `actions[].cost` 是旧接口的招后资源快照，不应当成单步消费账单。
+
+## 审阅与复现
+
+`CHANGESET-FLOW7-ENGINE.patch` 对照真实原始 v6，共 **{diff['changedFiles']} 个生产文件**，包含引擎、UI、构建入口和本次连携数据。已在临时目录对确切原始字节执行 `git apply --check` 并实际应用，应用后的生产文件与当前源码一致。测试、说明和生成 dist 不在这份审阅补丁中；完整交付以源码 ZIP 为准。
+
+```sh
+python tools/build_forge.py
+python tools/check_flow7.py
+python tests/flow7/endurance.py --seconds 1500
+python tests/flow7/capture-playback.py
+python tools/check_flow7.py --report-only --require-soak --require-playback
+python tools/package_flow7.py ..
+python tools/verify_flow7_package.py ../INK-Flow-7-Rhythm-Source.zip
+```
+
+运行环境见 `environment.json`；游戏构建只需 Python 标准库，测试另需 Node、Playwright 与 Chromium，视频另需 ffmpeg。建议顺序运行浏览器任务。`--report-only` 只核验已有证据，不会把未运行的测试变成通过。
+'''
+ (R/'TEST-REPORT-FLOW7.md').write_text(report,encoding='utf-8')
+ work.update(reportGeneratedAt=now.isoformat(),elapsedWallSecondsThroughReport=round(elapsed,3),finalCreatorSha256=v['htmlSha256'],finalPlayerSha256=v['playerHtmlSha256'],finalSoakSeconds=soak['elapsedWallSeconds'],finalSoakRoutes=soak['completedRoutes'],currentValidation='qa/flow7/validation.json')
+ (O/'work-log.json').write_text(json.dumps(work,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print('WROTE REPORT',minutes,'min',seconds,'sec',len(report.encode('utf-8')),'bytes')
+if __name__=='__main__':main()

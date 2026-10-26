@@ -1,0 +1,4498 @@
+{
+  "suite": "flow9-three-rhythms-all-routes",
+  "utc": "2026-10-05T16:08:21.576597+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "browserErrors": [],
+  "total": 264,
+  "passed": 264,
+  "rows": [
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 172,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 172,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 172,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 172,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3574,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 285,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 285,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 239,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 239,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 280,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 280,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 285,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 285,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 239,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 239,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 280,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ryu-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3485,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "ticks": 280,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 167,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 167,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 167,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 167,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3178,
+      "actionFrames": 120,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 283,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 283,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 237,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 237,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 278,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 278,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 283,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 283,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 237,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 237,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 278,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "ken-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3288,
+      "actionFrames": 175,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "ticks": 278,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3176,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 277,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 277,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 231,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 231,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 272,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 272,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 277,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 277,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 231,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 231,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 272,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "chun-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 15,
+      "damage": 3271,
+      "actionFrames": 169,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "ticks": 272,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 198,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 163,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3382,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "ticks": 197,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 268,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 268,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 254,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 254,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 268,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 268,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 254,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "cammy-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3580,
+      "actionFrames": 158,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "ticks": 254,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 171,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 171,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 205,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 205,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 206,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 171,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 171,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 205,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3733,
+      "actionFrames": 124,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "ticks": 205,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 290,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 290,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 243,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 243,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 276,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 276,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 290,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 290,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 243,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 243,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 276,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "luke-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 4036,
+      "actionFrames": 180,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "ticks": 276,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 219,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 219,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 179,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 179,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 213,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 213,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 219,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 219,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 179,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 179,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 213,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3412,
+      "actionFrames": 125,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "ticks": 213,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 260,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 260,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 217,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 217,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 259,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 259,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 260,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 260,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 217,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 217,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 259,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "juri-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3370,
+      "actionFrames": 159,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "ticks": 259,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 208,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 208,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 173,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 173,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 208,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 208,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 173,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 173,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "actionFrames": 126,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "ticks": 207,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 270,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 270,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 225,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 225,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 262,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 262,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 270,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 270,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 225,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 225,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 262,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "actionFrames": 164,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "ticks": 262,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 165,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 165,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 191,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 191,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 201,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 165,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 165,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 191,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-confirm",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 10,
+      "damage": 3648,
+      "actionFrames": 116,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "ticks": 191,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 302,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 302,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 249,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 249,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 274,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 274,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 302,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 302,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 249,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 249,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 274,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "iori-extended",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 14,
+      "damage": 3990,
+      "actionFrames": 177,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "ticks": 274,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 55,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 55,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 55,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 55,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-fan",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 3,
+      "damage": 1776,
+      "actionFrames": 34,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "ticks": 46,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 203,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 203,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 168,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 168,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 203,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 203,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 168,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 168,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-rise",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 11,
+      "damage": 3305,
+      "actionFrames": 121,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "ticks": 202,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 73,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 73,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 73,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 73,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-weave",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 2235,
+      "actionFrames": 43,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "ticks": 60,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 182,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 182,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 216,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 216,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 221,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 182,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 182,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 216,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-cascade",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 12,
+      "damage": 3640,
+      "actionFrames": 130,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "ticks": 216,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 48,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 48,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 39,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 39,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 36,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 36,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 48,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 48,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 39,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 39,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 36,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-light",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 4,
+      "damage": 1289,
+      "actionFrames": 27,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "ticks": 36,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 140,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 140,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 111,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 111,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 130,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": 1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 130,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": true,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 140,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "rhythm": "weighted",
+      "effects": false,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 140,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": true,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 111,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "rhythm": "fluid",
+      "effects": false,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 111,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": true,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 130,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    },
+    {
+      "route": "mai-flow-gale",
+      "side": -1,
+      "rhythm": "legacy",
+      "effects": false,
+      "status": "success",
+      "hits": 9,
+      "damage": 2440,
+      "actionFrames": 70,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "ticks": 130,
+      "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+      "pass": true
+    }
+  ]
+}

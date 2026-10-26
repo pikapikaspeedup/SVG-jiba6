@@ -1,0 +1,62 @@
+{
+  "suite": "flow6-literal-version-visual-comparison",
+  "capturedAt": "2026-10-04T17:33:17.316379+00:00",
+  "baselineSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "frames": 244,
+  "presentationFPS": 12,
+  "videoSeconds": 20.333333333333332,
+  "networkAssets": false,
+  "browserErrors": [],
+  "selectedFrames": [
+    {
+      "file": "compare-idle-00.png",
+      "key": "idle",
+      "frame": 0,
+      "yaw": 0.0
+    },
+    {
+      "file": "compare-idle-15.png",
+      "key": "idle",
+      "frame": 0,
+      "yaw": 90.0
+    },
+    {
+      "file": "compare-idle-30.png",
+      "key": "idle",
+      "frame": 0,
+      "yaw": 180.0
+    },
+    {
+      "file": "compare-idle-45.png",
+      "key": "idle",
+      "frame": 0,
+      "yaw": 270.0
+    },
+    {
+      "file": "compare-sHK-37.png",
+      "key": "sHK",
+      "frame": 22.2,
+      "yaw": null
+    },
+    {
+      "file": "compare-sMK-37.png",
+      "key": "sMK",
+      "frame": 16.033333333333335,
+      "yaw": null
+    },
+    {
+      "file": "compare-ryuuenbu-heavy-24.png",
+      "key": "ryuuenbu-heavy",
+      "frame": 24.4,
+      "yaw": null
+    },
+    {
+      "file": "compare-ryuuenbu-heavy-42.png",
+      "key": "ryuuenbu-heavy",
+      "frame": 42.7,
+      "yaw": null
+    }
+  ],
+  "note": "Literal frozen V5 and final V6 each execute their own production renderer and shipped assets. This compares BOTH engine and asset repairs; it is not an isolated algorithm benchmark. Secondary oscillation and FX are disabled to expose joints. Camera and source animation time are identical. Video is deterministic sampled slow motion, not a hardware FPS measurement."
+}

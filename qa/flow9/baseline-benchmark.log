@@ -1,0 +1,163 @@
+{
+  "cold": [
+    {
+      "id": "sLP",
+      "success": true,
+      "requestMs": 3.3999999999941792,
+      "firstStepMs": 2,
+      "firstRenderMs": 5.5
+    },
+    {
+      "id": "sHP",
+      "success": true,
+      "requestMs": 3.6000000000058208,
+      "firstStepMs": 1.3000000000174623,
+      "firstRenderMs": 5.7999999999883585
+    },
+    {
+      "id": "sHK",
+      "success": true,
+      "requestMs": 0.8999999999941792,
+      "firstStepMs": 1.5,
+      "firstRenderMs": 3.8999999999941792
+    },
+    {
+      "id": "ryuen_2",
+      "success": false,
+      "requestMs": 0,
+      "firstStepMs": 1.3999999999941792,
+      "firstRenderMs": 2.5
+    },
+    {
+      "id": "shinobi_3",
+      "success": false,
+      "requestMs": 0,
+      "firstStepMs": 1.3999999999941792,
+      "firstRenderMs": 2.400000000023283
+    },
+    {
+      "id": "SA1",
+      "success": true,
+      "requestMs": 7.800000000017462,
+      "firstStepMs": 1.5,
+      "firstRenderMs": 3.7999999999883585
+    },
+    {
+      "id": "SA2",
+      "success": true,
+      "requestMs": 7.5,
+      "firstStepMs": 2.599999999976717,
+      "firstRenderMs": 7.2000000000116415
+    },
+    {
+      "id": "SA3",
+      "success": true,
+      "requestMs": 8.5,
+      "firstStepMs": 1.3000000000174623,
+      "firstRenderMs": 5.7999999999883585
+    }
+  ],
+  "samples": [
+    {
+      "id": "idle",
+      "steps": 300,
+      "simulationMean": 0.16333333333401243,
+      "simulationP95": 0.29999999998835847,
+      "renderTwoMean": 4.3819999999994375,
+      "renderTwoP95": 5.600000000005821,
+      "renderTwoMax": 7.600000000005821
+    },
+    {
+      "id": "sHK",
+      "steps": 300,
+      "simulationMean": 0.17666666666598757,
+      "simulationP95": 0.5,
+      "renderTwoMean": 4.535333333334129,
+      "renderTwoP95": 8.39999999999418,
+      "renderTwoMax": 28.70000000001164
+    },
+    {
+      "id": "ryuen_2",
+      "steps": 300,
+      "simulationMean": 0.11300000000036865,
+      "simulationP95": 0.20000000001164153,
+      "renderTwoMean": 3.79566666666622,
+      "renderTwoP95": 4.7999999999883585,
+      "renderTwoMax": 10.299999999988358
+    },
+    {
+      "id": "shinobi_3",
+      "steps": 300,
+      "simulationMean": 0.12399999999984478,
+      "simulationP95": 0.20000000001164153,
+      "renderTwoMean": 3.870333333333644,
+      "renderTwoP95": 4.7000000000116415,
+      "renderTwoMax": 19.5
+    },
+    {
+      "id": "SA3",
+      "steps": 300,
+      "simulationMean": 0.727666666667016,
+      "simulationP95": 2.6000000000058208,
+      "renderTwoMean": 6.64799999999969,
+      "renderTwoP95": 13.60000000000582,
+      "renderTwoMax": 41.5
+    }
+  ],
+  "history": [
+    {
+      "move": "sMP",
+      "maxIdenticalTimePoseDelta": 14.838539381365038
+    },
+    {
+      "move": "sHK",
+      "maxIdenticalTimePoseDelta": 14.279309070251564
+    },
+    {
+      "move": "ryuen_0",
+      "maxIdenticalTimePoseDelta": 0
+    }
+  ],
+  "calls": {
+    "compose": 25922,
+    "solveAnimation": 27466,
+    "sockets": 22569
+  },
+  "label": "baseline",
+  "utc": "2026-10-05T15:29:59.595964+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "live": {
+    "cycles": 6,
+    "errors": [],
+    "rafCount": 1597,
+    "p50": 16.699999999999818,
+    "p95": 33.30000000000291,
+    "p99": 33.400000000001455,
+    "over25ms": 198,
+    "over50ms": 1,
+    "uniqueCameraTransforms": 897,
+    "clock": {
+      "ticks": 1806,
+      "callbacks": 1601,
+      "discardedSteps": 3,
+      "clampedMs": 0,
+      "pauses": 1,
+      "alpha": 0.9299999999995354,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 15.499999999992259
+    },
+    "elapsedWallSeconds": 30.003055310999997,
+    "browserMetricsDelta": {
+      "LayoutCount": 1604,
+      "RecalcStyleCount": 1604,
+      "LayoutDuration": 2.4876,
+      "RecalcStyleDuration": 2.43115,
+      "ScriptDuration": 8.636681,
+      "TaskDuration": 20.1754
+    }
+  },
+  "browserErrors": []
+}

@@ -1,0 +1,1542 @@
+[
+  {
+    "air": "musabi_0",
+    "end": null,
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 18,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 42,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_0",
+        "name": "轻·鼯鼠之舞",
+        "tick": 87,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 8,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 29,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 55,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 69,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_0",
+        "name": "轻·鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_0",
+    "end": "SA2",
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 148,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 165,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 189,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_0",
+        "name": "轻·鼯鼠之舞",
+        "tick": 234,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 155,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 176,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 202,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 216,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_0",
+        "name": "轻·鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_0",
+    "end": "SA3",
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 295,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 312,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 336,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_0",
+        "name": "轻·鼯鼠之舞",
+        "tick": 381,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 302,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 323,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 349,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 363,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_0",
+        "name": "轻·鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_1",
+    "end": null,
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 442,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 459,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 483,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_1",
+        "name": "中·鼯鼠之舞",
+        "tick": 528,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 449,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 470,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 496,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 510,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_1",
+        "name": "中·鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_1",
+    "end": "SA2",
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 589,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 606,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 630,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_1",
+        "name": "中·鼯鼠之舞",
+        "tick": 675,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 596,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 617,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 643,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 657,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_1",
+        "name": "中·鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_1",
+    "end": "SA3",
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 736,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 753,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 777,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_1",
+        "name": "中·鼯鼠之舞",
+        "tick": 822,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 743,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 764,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 790,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 804,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_1",
+        "name": "中·鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_3",
+    "end": null,
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 2,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 883,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 900,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 924,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_3",
+        "name": "OD 鼯鼠之舞",
+        "tick": 969,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 2,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 890,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 911,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 937,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 951,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_3",
+        "name": "OD 鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_3",
+    "end": "SA2",
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 2,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1030,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 1047,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 1071,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_3",
+        "name": "OD 鼯鼠之舞",
+        "tick": 1116,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 2,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 1037,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 1058,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 1084,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 1098,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_3",
+        "name": "OD 鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "musabi_3",
+    "end": "SA3",
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 4,
+    "damage": 2176,
+    "maxCombo": 4,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 2,
+      "super": 3
+    },
+    "elapsedTicks": 147,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1177,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 1194,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 1218,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "musabi_3",
+        "name": "OD 鼯鼠之舞",
+        "tick": 1263,
+        "frame": 49,
+        "hits": 0,
+        "damage": 0,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 2,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 1184,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 1205,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 1231,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 1245,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 49,
+        "move": "musabi_3",
+        "name": "OD 鼯鼠之舞"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "air": "SA2",
+    "end": null,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 88,
+    "hits": 9,
+    "damage": 3572,
+    "maxCombo": 9,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 1
+    },
+    "elapsedTicks": 170,
+    "actionFrames": 88,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1324,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 1341,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 1365,
+        "frame": 21,
+        "hits": 2,
+        "damage": 964,
+        "needed": 2,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA2",
+        "name": "超必杀忍蜂",
+        "tick": 1405,
+        "frame": 44,
+        "hits": 5,
+        "damage": 1396,
+        "needed": 5,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 1
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 1331,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 1352,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 1378,
+        "move": "shinobibachi_3",
+        "damage": 508,
+        "combo": 3
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 1392,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 44,
+        "move": "SA2",
+        "name": "超必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 52,
+        "tick": 1441,
+        "move": "SA2",
+        "damage": 376,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 61,
+        "tick": 1454,
+        "move": "SA2",
+        "damage": 328,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 70,
+        "tick": 1467,
+        "move": "SA2",
+        "damage": 279,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 79,
+        "tick": 1480,
+        "move": "SA2",
+        "damage": 231,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 88,
+        "tick": 1493,
+        "move": "SA2",
+        "damage": 182,
+        "combo": 9
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  }
+]

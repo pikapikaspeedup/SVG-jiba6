@@ -1,0 +1,201 @@
+{
+  "suite": "flow9-settings-responsive-ui",
+  "utc": "2026-10-05T16:08:33.699123+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "passed": 28,
+  "total": 28,
+  "tests": [
+    {
+      "name": "1440: current branding and isolated v9 store",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: native keyboard modal opens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: camera setting immediately applies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: explicit close-up is labelled instead of claiming fixed stage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: reselecting stable mode also clears the old close-up button",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: old rhythm remains available",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: explicit slow speed synchronizes with workshop",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: clean mode preserves bone settings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: modal has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "vw": 1440,
+        "left": 240,
+        "right": 1200,
+        "client": 958,
+        "scroll": 958
+      }
+    },
+    {
+      "name": "1440: diagnostics observe, never pause battle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: actual callbacks and CPU samples recorded",
+      "pass": true,
+      "detail": {
+        "capacity": 600,
+        "samples": 113,
+        "windowMs": 2799.9,
+        "intervalP50": 16.699999999999818,
+        "intervalP95": 50,
+        "cpuP95": 11.600000000093132,
+        "longIntervals": 25,
+        "veryLongIntervals": 3,
+        "heldSimulationSteps": 48,
+        "discardedSteps": 7,
+        "viewport": {
+          "samples": 113,
+          "stableFrames": 113,
+          "mode": "stable",
+          "x": 720,
+          "y": 455,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "1440: downloaded diagnostics contain real time samples",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: clear diagnostics resets bounded ring",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440: Escape closes modal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: current branding and isolated v9 store",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: native keyboard modal opens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: camera setting immediately applies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: explicit close-up is labelled instead of claiming fixed stage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: reselecting stable mode also clears the old close-up button",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: old rhythm remains available",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: explicit slow speed synchronizes with workshop",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: clean mode preserves bone settings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: modal has no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "vw": 390,
+        "left": 9,
+        "right": 381,
+        "client": 370,
+        "scroll": 370
+      }
+    },
+    {
+      "name": "390: diagnostics observe, never pause battle",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: actual callbacks and CPU samples recorded",
+      "pass": true,
+      "detail": {
+        "capacity": 600,
+        "samples": 132,
+        "windowMs": 2483.3,
+        "intervalP50": 16.699999999999818,
+        "intervalP95": 16.800000000000182,
+        "cpuP95": 9.900000000372529,
+        "longIntervals": 7,
+        "veryLongIntervals": 2,
+        "heldSimulationSteps": 48,
+        "discardedSteps": 3,
+        "viewport": {
+          "samples": 132,
+          "stableFrames": 132,
+          "mode": "stable",
+          "x": 720,
+          "y": 455,
+          "zoom": 1
+        }
+      }
+    },
+    {
+      "name": "390: downloaded diagnostics contain real time samples",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: clear diagnostics resets bounded ring",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390: Escape closes modal",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "browserErrors": [],
+  "scope": "Real pointer/keyboard/download; desktop and emulated touch viewport, not a physical phone."
+}

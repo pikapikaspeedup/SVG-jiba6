@@ -1,0 +1,14 @@
+"""Measure the natural grounded recovery handoff at the same actor-local time.
+This does not claim all state switches or world-facing changes are seamless.
+"""
+from pathlib import Path
+import json, hashlib, datetime, os, shutil
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2]
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ.get('INK_CHROMIUM') or shutil.which('chromium'),headless=True,args=['--no-sandbox']);p=b.new_page();p.set_content((R/'dist/INK-Street-Fighter-6.html').read_text(),wait_until='load',timeout=60000);p.wait_for_function('window.INKRhythmLab?.ready')
+ out=p.evaluate('''async()=>{await INKForge.route('battle');SVG_FIGHTER.start('mai','ryu','training','assist');document.querySelector('#dummy').value='idle';const A=SVG_FIGHTER,R=INK.Runtime,old=R.tick;let captured=null;R.tick=function(f,t){const r=old.call(this,f,t);if(f.index===0&&f.attack&&f.attack.t>=f.attack.m.total){const p=A.visualPose(f);captured={pose:p,s:INK.Rig.sockets(p,R.visualRig(f,p)),move:f.attack.m.id,t:f.attack.t};}return r;};const rows=[];
+ try{for(const id of ['ryu','ken','chun','cammy','luke','juri','mai','iori'])for(const move of A.moves[id].filter(m=>['normal','special'].includes(m.category)&&!m.air&&m.kind!=='stance'&&!m.from&&!m.rekkaFrom)){captured=null;const ok=A.practice(id,move.id);A.state.paused=true;if(!ok)continue;let n=0;while(A.fighters[0].attack&&n++<500)A.step(1);const f=A.fighters[0];if(captured&&f.state==='idle'){const p=A.visualPose(f),s=INK.Rig.sockets(p,R.visualRig(f,p));let maximum=0;for(const name of ['rearArm','frontArm','rearLeg','frontLeg'])for(let j=0;j<3;j++)maximum=Math.max(maximum,Math.hypot(captured.s[name][j][0]-s[name][j][0],captured.s[name][j][1]-s[name][j][1]));rows.push({id,key:move.id,end:captured.t,age:f.stateAge,maximum});}}}finally{R.tick=old;}return rows.sort((a,b)=>b.maximum-a.maximum);}''')
+ report={'suite':'flow7-recovery-observation','capturedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'htmlSha256':hashlib.sha256((R/'dist/INK-Street-Fighter-6.html').read_bytes()).hexdigest(),'samples':len(out),'passed':sum(r['maximum']<.002 for r in out),'maximumJointDisplacement':max((r['maximum'] for r in out),default=0),'rows':out,'note':'Actual naturally completed grounded normal/special moves into idle, sampled immediately before/after the handoff. Pass tolerance .002 SVG units; excludes airborne, stance, branches, hit reactions and opponent-relative facing changes. This checks pose continuity, not every derivative throughout blending.'};(R/'qa/flow7/recovery-observation.json').write_text(json.dumps(report,indent=2)+'\n');print('RECOVERY OBSERVATION',len(out),'MAX',report['maximumJointDisplacement']);b.close()
+
+if not out or any(r['maximum']>=.002 for r in out):raise SystemExit(1)

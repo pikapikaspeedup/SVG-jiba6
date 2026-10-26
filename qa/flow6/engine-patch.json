@@ -1,0 +1,136 @@
+{
+  "capturedAt": "2026-10-04T17:47:32.772735+00:00",
+  "sourceArchiveSha256": "3c6dccdc7f931e64ea15a7993f24b3e9d0623b65ec9bd24f8635e698455933a5",
+  "productionFiles": [
+    {
+      "path": "assets/ink/project.json",
+      "kind": "modified",
+      "oldSha256": "de328c96e84170dde996c408fd80ff77e116a61113aeaa3ce62f36385a83f651",
+      "newSha256": "f2f4cfe67550c6263c48913dde166354573c8cdae1309b4c3e691449b12a422e"
+    },
+    {
+      "path": "forge/app.js",
+      "kind": "modified",
+      "oldSha256": "a12e97ba743da3886b8e1bac0cd82c0e43bcdca347c241eff14d398d0a4a3cbd",
+      "newSha256": "7984f307d41ada8bbbf0fc80da90e1a40578cad6172f1eedd23df6aa3d0bf577"
+    },
+    {
+      "path": "forge/continuity.css",
+      "kind": "new",
+      "oldSha256": null,
+      "newSha256": "0713fc88a703a285aea7f0f26b6f0536054a2d6838aff3af5354025ba92b65cd"
+    },
+    {
+      "path": "forge/continuity.js",
+      "kind": "new",
+      "oldSha256": null,
+      "newSha256": "d96b88e4524e87a9edae2a6d7bdea005269ca0a7c745d004d90bae7036e0079c"
+    },
+    {
+      "path": "forge/engine.js",
+      "kind": "modified",
+      "oldSha256": "ff331c335e6a99f316c5de4377dd7421719210c0470ce6e99d11c8ae527c3dac",
+      "newSha256": "bf1ca28bd19b5289b78c8b3abb7d997c8a93f28b9905613057fa1368f3b22e4d"
+    },
+    {
+      "path": "forge/flow.js",
+      "kind": "modified",
+      "oldSha256": "fde1babe12dfd11138b5b36d224789e7dd8009d4cd0ce88402f0392164933415",
+      "newSha256": "3438938f1c75f3e09b49deb22b1822dc5bda0d74c050440df79d9b681bec0d59"
+    },
+    {
+      "path": "forge/mai.js",
+      "kind": "modified",
+      "oldSha256": "97d3edbdffd67af2b7c056d31754572e97d28e25f3ed739a51d3874e7312e70f",
+      "newSha256": "00c5bdb9d1790759206d0364c2e8f7b2d7549d1f9d5541345976d7f6a17c82f2"
+    },
+    {
+      "path": "game.js",
+      "kind": "modified",
+      "oldSha256": "107f7ec8455285f8fe55621c54f47fc2346df66b2e1e4b39da42819d9006a0de",
+      "newSha256": "92c5621d0cb25dd4f70de6d637c69c68640b4f1ebb7e2bf5a0b7d55734f3d24d"
+    },
+    {
+      "path": "src/atelier-motion.js",
+      "kind": "modified",
+      "oldSha256": "d82ef005d22e061c7ef527206488dd3a46e0db62ca737b6e423531d3267e2ed0",
+      "newSha256": "e7a0b02b15ac8c029ddff65f73a9e275f9e47373927f75f567022446e5ccee59"
+    },
+    {
+      "path": "src/ink/anatomy.js",
+      "kind": "new",
+      "oldSha256": null,
+      "newSha256": "94c2d61f824d13cc29e135c2f3261167d9325237dad943c0b5ef75d137c3395c"
+    },
+    {
+      "path": "src/ink/articulation.js",
+      "kind": "new",
+      "oldSha256": null,
+      "newSha256": "8810f0842f25210fba9b59e087124c7a85e49dfe49bb77aebb5bb850a312f645"
+    },
+    {
+      "path": "src/ink/core.js",
+      "kind": "modified",
+      "oldSha256": "4da18849f0afb61c5f940979d2c582e22a58ada50de6ade2763b52386d075687",
+      "newSha256": "4745fc55ce5bd70b0bf5661ffc525e6e153df00c0884c85b6f017168fb3ce10e"
+    },
+    {
+      "path": "src/ink/game-adapter.js",
+      "kind": "modified",
+      "oldSha256": "c981025ec78c6369f0129258a10b617c20cda61e31fa04f346ae1941bf6e2847",
+      "newSha256": "789ce0cd76d7e07703778cb9620559e43bc9f547412d18ab07f48123823c29fc"
+    },
+    {
+      "path": "src/ink/motion-graph.js",
+      "kind": "modified",
+      "oldSha256": "8f62ed55752b9c94ee84f4c8f5f3c9de3134197ea20efb2bcb2ee8c50d35b771",
+      "newSha256": "096e286dfc253e628a2c194d6f5947643def4e3b49017ea2ab70e86e627bc7a5"
+    },
+    {
+      "path": "src/ink/motion.js",
+      "kind": "modified",
+      "oldSha256": "8d03a05058811d34af56de94a3a265cd65f225379392c8031c23ef8f48d194cf",
+      "newSha256": "5269c2bcb3d661df34aa8719fd210255ca2b1f8fbfe08cfa3566d973adf50cd3"
+    },
+    {
+      "path": "src/ink/portable.js",
+      "kind": "modified",
+      "oldSha256": "b94b10981906c04168f5bf442239b7ca58265fb70d970b6fdb1c38af3a19cb15",
+      "newSha256": "f5aa3441b06f8ab327b11354b509c7121da929f96565f34b5eb5966689e9fe9b"
+    },
+    {
+      "path": "src/ink/project.js",
+      "kind": "modified",
+      "oldSha256": "a88a4f9825a545d90aaaafcc673decdf9222179500d6d4c6b9def4b23ec22e74",
+      "newSha256": "aa4dd03502634378897368fff4fca324105b38bd90ba6ab3d90d56619fac6faa"
+    },
+    {
+      "path": "src/ink/renderer.js",
+      "kind": "modified",
+      "oldSha256": "265963be99dbc14a5b39db20d96a8f3a26727b05acfe183478a8600b334584ff",
+      "newSha256": "33295b3d5fd256fc69875dd8c2f33061c942625daceefb4ee9e1839313fb9b84"
+    },
+    {
+      "path": "src/ink/runtime.js",
+      "kind": "modified",
+      "oldSha256": "fe50823171a087930c8532aaba27cac1d5d802e465801de604b7fde2e1864ea3",
+      "newSha256": "05766c6913bc8c2d13ecc6da6420dbfbf792c4aab75903a025f87be7f9921eb6"
+    },
+    {
+      "path": "src/ink/skin-geometry.js",
+      "kind": "new",
+      "oldSha256": null,
+      "newSha256": "15cd4c860101a85e9d4c72f70b118a133210015e76cb76720178958f754cf0d4"
+    },
+    {
+      "path": "tools/build_forge.py",
+      "kind": "modified",
+      "oldSha256": "1532394443568197f66dc2c214da80832b589aa52c7579af5819ceaf90581c6b",
+      "newSha256": "b2816824fd2732f862bb6861a2f57466f9d5ff745e0a6585ed2c743a6843a297"
+    }
+  ],
+  "files": 21,
+  "patchBytes": 118519,
+  "applyCheckPassed": true,
+  "note": "Review patch for source/UI/build/manifest only. Move asset repairs are excluded; their journals and full corrected files are included elsewhere in this complete delivery."
+}

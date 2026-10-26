@@ -1,0 +1,81 @@
+/* FLOW 06 application layer. Uses the existing game, editor and portable build. */
+'use strict';
+(() => {
+ const $=id=>document.getElementById(id),escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const F=()=>globalThis.INKForge,C=INK.Combo,A=()=>globalThis.SVG_FIGHTER;
+ let open=false,selected='ken-extended',last='',lastStatus='',ended=0,uiTime=0,notice='',savedText='';
+ globalThis.INKFlowView={stepped:false};
+ const name=(char,id)=>A().moves[char].find(m=>m.id===id)?.name||id;
+ const command=(char,id)=>{if(id==='RUSH')return 'DR · F';const m=A().moves[char].find(m=>m.id===id),s=F().store.byGame(char,id);return s?.command||m?.command||id;};
+ function keyboard(id){return {sLP:'J',sMP:'K',sHP:'L',sLK:'U',sMK:'I',sHK:'O',cLP:'↓ + J',cMP:'↓ + K',cHP:'↓ + L',RUSH:'F',SA3:'3（辅助）'}[id]||'按招式指令';}
+ function selectedRoute(){return C.routes.routes.find(r=>r.id===selected)||C.routes.routes[0];}
+ function fillRoutes(){const char=$('flow-character').value;const list=C.routes.routes.filter(r=>r.character===char);$('flow-route').innerHTML=list.map(r=>`<option value="${r.id}">${escape(r.tier)} · ${r.expectedHits} HIT</option>`).join('');if(!list.some(r=>r.id===selected))selected=list.at(-1).id;$('flow-route').value=selected;routeDetail();}
+ function routeDetail(){const r=selectedRoute();$('flow-title').textContent=r.title;$('flow-description').textContent=r.note;$('flow-expected').textContent=r.expectedHits;$('flow-sequence').innerHTML=r.steps.map((s,i)=>`<button class="flow-step" data-index="${i}" title="${escape(s.hint)}"><span class="flow-step-num">${String(i+1).padStart(2,'0')}</span><span><b>${escape(name(r.character,s.move))}</b><small>${escape(command(r.character,s.move))}${s.minHits>1?' · '+s.minHits+' HIT':''}</small></span><i>○</i></button>`).join('');last='';}
+ async function show(){open=true;document.body.classList.add('flow-combo-active');$('flow-panel').hidden=false;$('flow-instruments').hidden=false;await F().route('battle');document.querySelector('#f-battle .f-eyebrow').textContent='FLOW 06 / COMBO LAB';document.querySelector('#f-battle h2').textContent='把每一击，连成一段。';document.querySelectorAll('.f-top nav [data-route]').forEach(n=>n.classList.remove('is-active'));$('flow-open').classList.add('is-active');routeDetail();await run('demo');}
+ async function run(mode,paused=false){const r=selectedRoute();C.stop();await F().route('battle');C.start(r,mode,{paused,side:$('flow-side').value==='left'?-1:1,control:$('flow-control').value,bufferFrames:Number($('flow-buffer').value)});
+  A().experience?.stage('forge');const stage=$('stage');if(stage){stage.value='forge';stage.dispatchEvent(new Event('change'));}document.querySelectorAll('.f-top nav [data-route]').forEach(n=>n.classList.remove('is-active'));$('flow-open').classList.add('is-active');
+  $('flow-status').textContent=mode==='demo'?'演示 / DEMONSTRATION':'跟练 / YOUR TURN';notice='';lastStatus='';ended=0;draw();$('stage-wrap').focus({preventScroll:true});
+ }
+ function close(){open=false;C.stop();document.body.classList.remove('flow-combo-active');$('flow-panel').hidden=true;$('flow-instruments').hidden=true;$('flow-open').classList.remove('is-active');document.querySelector('#f-battle .f-eyebrow').textContent='LIVE RUNTIME';document.querySelector('#f-battle h2').textContent='你的动作，正在实战。';}
+ function trace(){const list=C.trace||[],colors={startup:'#e1ad70',active:'#ef8370',recovery:'#6d8485',rush:'#8cdaba',hit:'#b19bd1',tumble:'#b19bd1',captured:'#b19bd1',idle:'#34484a',block:'#77bddd'};
+  const sample=list.slice(-200),width=640/Math.max(120,sample.length),bars=[];for(let row=0;row<2;row++){let begin=0;for(let i=1;i<=sample.length;i++){if(i===sample.length||sample[i]?.[row?'d':'p']!==sample[begin]?.[row?'d':'p']){const kind=sample[begin]?.[row?'d':'p'];bars.push(`<rect x="${(begin*width).toFixed(1)}" y="${row*24+6}" width="${Math.max(.5,(i-begin)*width-.6).toFixed(1)}" height="14" rx="1" fill="${colors[kind]||'#658075'}"/>`);begin=i;}}}
+  $('flow-frame-svg').innerHTML=bars.join('');
+ }
+ function draw(){if(!open)return;const r=selectedRoute(),f=A().fighters[0],d=A().fighters[1];if(!f)return;const next=r.steps[C.cursor];
+  const rhythmMode=C.mode==='practice'&&$('flow-control').value==='rhythm';$('flow-rhythm').hidden=!rhythmMode;$('flow-mobile-act').hidden=!rhythmMode;$('flow-mobile-act').textContent=C.status==='running'&&next?'G · '+name(r.character,next.move):C.status==='success'?'连段成立':'等待';$('flow-mobile-pause').textContent=A().state.paused?'▶':'Ⅱ';$('flow-hits').textContent=C.hits.toString().padStart(2,'0');$('flow-damage').textContent=C.damage.toLocaleString();$('flow-clock').textContent=C.clock+' F';$('flow-drive').textContent=(C.final?.drive??f.drive).toFixed(2);$('flow-super').textContent=(C.final?.super??f.super).toFixed(2);
+  const pct=Math.round(C.cursor/r.steps.length*100);$('flow-progress').style.width=pct+'%';$('flow-pause').textContent=A().state.paused?'▶ 继续':'Ⅱ 暂停';
+  $('flow-live-info').textContent=`60 Hz SIM · SVG SUBFRAME · 粒子 ${INK.VFX.stats.active}/${INK.VFX.stats.capacity} · ${$('flow-quality').selectedOptions[0].textContent} · 世界拖尾 ${INK.VFX.trailStats.active}/${INK.VFX.trailStats.capacity}`;
+  const signature=[C.status,C.cursor,C.hits,C.reason,selected].join('|');if(last!==signature){last=signature;
+   [...$('flow-sequence').children].forEach((el,i)=>{const act=C.actions[i];el.classList.toggle('is-done',!!act&&(act.hits>=(r.steps[i].minHits||1)||act.move==='RUSH'));el.classList.toggle('is-current',i===C.cursor&&C.status==='running');el.classList.toggle('is-waiting',i===C.cursor-1&&act&&act.hits<(r.steps[i].minHits||1));el.querySelector('i').textContent=act?(act.move==='RUSH'?'DR':act.hits||'…'):'○';});
+   $('flow-cue').textContent=C.status==='success'?'连段成立。':C.status==='failed'?'连接中断。':next?name(r.character,next.move):'等待终结技命中…';
+   $('flow-command').textContent=C.status==='running'&&next?command(r.character,next.move)+'  /  '+($('flow-control').value==='rhythm'?'G / 发当前步':keyboard(next.move)):C.reason;
+   $('flow-panel').dataset.status=C.status;$('flow-result').textContent=C.status==='running'?(C.mode==='demo'?'正在通过真实出招接口演示':($('flow-control').value==='rhythm'?'G 发当前步；短缓冲只等待合法窗口，不修改判定':'由你操作角色；系统只验证，不代打')):C.reason;
+   $('flow-log').innerHTML=C.log.filter(v=>v.type==='action'||v.type==='block').slice(-5).map(v=>`<div><span>${v.frame}F</span><b>${escape(v.name||name(r.character,v.move))}</b><small>${v.type==='block'?'BLOCK':'INPUT'}</small></div>`).join('');
+  }
+  const w=C.window;$('flow-window').textContent=C.status==='running'&&next?(C.pending?'已缓冲 · '+Math.max(0,C.pending.expires-C.clock)+'F':w?.ready?'● 可衔接':w?.link?'目押 · 等待收势':'等待命中 / 进入取消窗口'):'首次命中后自动防御 · 不放宽判定';$('flow-window').classList.toggle('ready',!!w?.ready&&C.status==='running');
+  $('flow-hint').textContent=C.status==='running'&&next?next.hint:'← 目押保留收招；取消只在允许的窗口生效';trace();
+  if(C.status!==lastStatus){lastStatus=C.status;if(['success','failed'].includes(C.status))ended=performance.now();}
+  if($('flow-repeat').checked&&ended&&performance.now()-ended>2200){ended=0;run(C.mode);}
+ }
+ function inspectCurrent(){const r=selectedRoute(),s=r.steps[Math.min(C.cursor,r.steps.length-1)],record=F().store.byGame(r.character,s.move);if(!record)return;close();F().loadMove(r.character,record.key).then(()=>F().route('studio'));}
+ function init(){if(!F()?.ready){if(F()?.error)return;requestAnimationFrame(init);return;}
+  C.configure(JSON.parse($('ink-combo-library').textContent));
+  INK.VFX.settings.reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;const panel=document.createElement('aside');panel.id='flow-panel';panel.hidden=true;panel.innerHTML=`
+   <div class="flow-panel-top"><span class="f-eyebrow">ROUTE / 连段训练</span><span class="flow-live-dot">LIVE</span></div>
+   <div class="flow-selects"><label>格斗家<select id="flow-character"></select></label><label>练习路线<select id="flow-route"></select></label></div>
+   <h3 id="flow-title"></h3><p id="flow-description"></p>
+   <div class="flow-target"><span>目标</span><b id="flow-expected">15</b><span>HIT / 连续命中</span><i>角落起手</i></div>
+   <div id="flow-sequence"></div><div class="flow-progress"><i id="flow-progress"></i></div>
+   <div class="flow-run-buttons"><button id="flow-demo" class="f-primary">▶ 观看演示</button><button id="flow-practice">开始跟练</button></div>
+   <div class="flow-run-settings"><label>朝向<select id="flow-side"><option value="right">面向右</option><option value="left">面向左</option></select></label><label>输入<select id="flow-control"><option value="rhythm">节奏入门 · G</option><option value="assist">辅助输入</option><option value="classic">经典搓招</option></select></label></div>
+   <label class="flow-buffer-label">节奏输入缓冲<select id="flow-buffer"><option value="6">6F · 入门</option><option value="3">3F · 精准</option><option value="0">0F · 严格目押</option></select><small>命中定格不消耗缓冲；每次按键仅发动一步</small></label>
+   <div class="flow-transport"><button id="flow-reset">↺ 重置</button><button id="flow-pause">Ⅱ 暂停</button><button id="flow-step" title="暂停并推进一个真实模拟步">+1 步</button><select id="flow-speed" aria-label="连段速度"><option value="1">1×</option><option value=".5">0.5×</option><option value=".25">0.25×</option></select></div>
+   <label class="flow-repeat"><input id="flow-repeat" type="checkbox"> 循环当前演示 / 跟练</label>
+   <button id="flow-rhythm" class="flow-rhythm">发动当前一步 <kbd>G</kbd></button><div class="flow-note" id="flow-result" role="status" aria-live="polite"></div><button id="flow-edit-current" class="flow-text-button">在工坊检查当前招式 →</button>
+  `;
+  $('f-battle').insertBefore(panel,$('f-battle-mount'));
+  const hud=document.createElement('section');hud.id='flow-instruments';hud.hidden=true;hud.innerHTML=`
+   <div class="flow-score"><div><span id="flow-status">DEMONSTRATION</span><b id="flow-hits">00</b><small>HITS</small></div><div><span>ACTUAL DAMAGE</span><strong id="flow-damage">0</strong><small>真实累计伤害</small></div><div><span>RESOURCE / 资源剩余</span><p><b id="flow-drive">6.00</b> DRIVE　 /　<b id="flow-super">3.00</b> SA</p><small id="flow-clock">0 F</small></div></div>
+   <div class="flow-cue-box"><div><span class="f-eyebrow">NEXT / 下一步</span><h3 id="flow-cue">站立重拳</h3><p id="flow-command"></p></div><div><span id="flow-window"></span><p id="flow-hint"></p></div></div>
+   <div class="flow-frame-meter"><div><span>P1</span><span>木桩</span></div><svg id="flow-frame-svg" viewBox="0 0 640 51" aria-label="攻击者与木桩的真实逐帧状态"></svg></div>
+   <div class="flow-legend"><span>橙：起手</span><span>红：有效</span><span>灰：收招</span><span>紫：受击</span><small>展示最近 200 个战斗帧，不含命中定格</small></div>
+   <div class="flow-bottom"><div id="flow-log"></div><div><label>粒子精细度<select id="flow-quality"><option value=".5">低</option><option value="1" selected>标准</option><option value="1.5">高</option></select></label><label>视觉强度<select id="flow-fx-mode"><option value="full">完整演出</option><option value="clean">清爽 · 低闪动</option><option value="off">关闭粒子与轨迹</option></select></label><button id="flow-export-run">导出本次验证记录</button><p id="flow-live-info"></p></div></div>
+  `;$('f-battle').insertBefore(hud,$('f-battle').querySelector('.f-runtime-bar'));
+  const mobile=document.createElement('div');mobile.id='flow-mobile-bar';mobile.innerHTML='<button id="flow-mobile-exit">← 返回</button><button id="flow-mobile-route">路线 ↓</button><button id="flow-mobile-arena">↑ 战场</button><button id="flow-mobile-act" hidden>G · 发当前步</button><button id="flow-mobile-pause">Ⅱ</button>';document.body.append(mobile);
+  $('flow-character').innerHTML=INK.Schema.CHARACTERS.map(id=>`<option value="${id}">${escape(F().store.getModel(id).cn)} / ${id.toUpperCase()}</option>`).join('');$('flow-character').value='ken';fillRoutes();
+  $('flow-open').onclick=show;$('flow-character').onchange=()=>{C.stop();fillRoutes();run('demo');};$('flow-route').onchange=()=>{selected=$('flow-route').value;routeDetail();run('demo');};
+  const rhythm=()=>{if(C.status!=='running'||C.mode!=='practice'||$('flow-control').value!=='rhythm'||A().state.paused)return;const result=C.requestStep(Number($('flow-buffer').value));if(result.status==='early')F().toast(C.window?.link?'严格目押：尚未收招。':'严格输入：等待命中和取消窗口。');draw();};$('flow-rhythm').onclick=rhythm;$('flow-mobile-act').onclick=rhythm;$('flow-mobile-exit').onclick=()=>{close();F().route('home');};$('flow-mobile-route').onclick=()=>$('flow-panel').scrollIntoView({behavior:'smooth',block:'start'});$('flow-mobile-arena').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});$('flow-mobile-pause').onclick=()=>{A().state.paused=!A().state.paused;draw();};
+  $('flow-demo').onclick=()=>run('demo');$('flow-practice').onclick=()=>run('practice');$('flow-reset').onclick=()=>run(C.mode);$('flow-pause').onclick=()=>{A().state.paused=!A().state.paused;draw();};$('flow-step').onclick=()=>{A().state.paused=true;A().step(1);A().render();draw();};
+  $('flow-speed').onchange=()=>C.setSpeed(Number($('flow-speed').value));$('flow-side').onchange=()=>run(C.mode);$('flow-control').onchange=()=>run(C.mode);$('flow-quality').onchange=()=>INK.VFX.quality(Number($('flow-quality').value));$('flow-buffer').onchange=()=>{C.bufferFrames=Number($('flow-buffer').value);C.pending=null;};$('flow-fx-mode').onchange=()=>{const m=$('flow-fx-mode').value;INK.VFX.setEnabled(m!=='off');INK.VFX.settings.intensity=m==='clean'?.65:1;INK.VFX.settings.reducedMotion=m==='clean'||matchMedia('(prefers-reduced-motion: reduce)').matches;A().render();};$('flow-edit-current').onclick=inspectCurrent;
+  $('flow-export-run').onclick=()=>INK.Portable.download('INK-'+selected+'-run.json',JSON.stringify({version:1,kind:'ink-combo-run',route:selectedRoute(),...C.summary()},null,2),'application/json');
+  $('flow-sequence').onclick=e=>{const b=e.target.closest('[data-index]');if(!b)return;const r=selectedRoute(),rec=F().store.byGame(r.character,r.steps[Number(b.dataset.index)].move);if(!rec)return;close();F().loadMove(r.character,rec.key).then(()=>F().route('studio'));};
+  document.querySelectorAll('[data-route],#f-battle-home,#f-return-studio,#f-enter,#f-test').forEach(b=>b.addEventListener('click',close,true));
+  document.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]'))return;if(!open||e.target.closest?.('input,select,textarea'))return;if(e.code==='KeyG'&&!e.repeat&&$('flow-control').value==='rhythm'){e.preventDefault();e.stopImmediatePropagation();rhythm();return;}if(e.code==='KeyR'){e.preventDefault();e.stopImmediatePropagation();run(C.mode);}if(e.code==='Space'){e.preventDefault();e.stopImmediatePropagation();A().state.paused=!A().state.paused;}},true);
+  const extra=document.createElement('div');extra.className='flow-editor-controls';extra.innerHTML='<label><input type="checkbox" id="flow-stepped"> 4F 步进对照</label><span id="flow-subframe">连续采样 / 60 Hz</span>';$('f-work-svg').before(extra);$('flow-stepped').onchange=()=>{INKFlowView.stepped=$('flow-stepped').checked;F().paint();};const leaveStepped=()=>{if(!INKFlowView.stepped)return;INKFlowView.stepped=false;$('flow-stepped').checked=false;F().paint();};$('f-work-svg').addEventListener('pointerdown',leaveStepped,true);$('f-key-add').addEventListener('click',leaveStepped,true);
+  const quick=document.createElement('button');quick.id='flow-home-demo';quick.className='f-primary';quick.textContent='体验 15 HIT 长连段 ↗';quick.onclick=show;document.querySelector('.f-home-top').append(quick);
+  document.querySelector('.f-home-top h1').innerHTML='让每一招，<em>连贯成形。</em>';document.querySelector('.f-home-top p').textContent='连续骨架 · 共享曲面 · 同轴转身。先看动作本身，再打开特效。';document.querySelector('.f-edition').innerHTML='INK / FLOW 06<br><span>MAI · CONTINUOUS ARTICULATION</span>';
+  function tick(now){requestAnimationFrame(tick);if(document.hidden||now-uiTime<(open&&C.mode==='practice'?14:50))return;uiTime=now;draw();if(F().state.route==='studio')$('flow-subframe').textContent=(INKFlowView.stepped?'4F 无补间对照':'连续数值补间')+' · '+F().state.frame.toFixed(2)+' F · '+INK.Turn.angle(F().state.pose).toFixed(1)+'°';}
+  requestAnimationFrame(tick);globalThis.INKComboUI={show,run,close,draw,selectedRoute,select(id){const r=C.routes.routes.find(r=>r.id===id);if(!r)throw Error('Unknown route');selected=id;$('flow-character').value=r.character;fillRoutes();},get open(){return open;}};
+ }
+ init();
+})();

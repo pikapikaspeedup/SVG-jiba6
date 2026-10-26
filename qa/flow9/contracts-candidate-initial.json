@@ -1,0 +1,166 @@
+{
+  "suite": "flow9-engine-contracts",
+  "utc": "2026-10-05T15:43:29.745624+00:00",
+  "htmlSha256": "3e01a9dffe92b4aa9828a0d89a77fd7aa6fbcfc9e146d905802c7dbfae82c5d1",
+  "passed": 21,
+  "total": 24,
+  "browserErrors": [],
+  "rows": [
+    {
+      "name": "Defaults: stationary camera, fluid hitstop and unchanged 1x speed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ryu: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "ken: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "chun: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "cammy: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "luke: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "juri: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "mai: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "iori: first, repeated and revisited subframe are identical",
+      "pass": true,
+      "detail": {
+        "cases": 4
+      }
+    },
+    {
+      "name": "Simulation remains independent of render frequency",
+      "pass": false,
+      "error": "Error: Values differ {\"a\":{\"rules\":[{\"x\":463.0000000000007,\"y\":0,\"vx\":0,\"vy\":0,\"dir\":1,\"hp\":10000,\"drive\":6,\"super\":3,\"state\":\"idle\",\"land\":0,\"combo\":0,\"damage\":0},{\"x\":1140,\"y\":0,\"vx\":0,\"vy\":0,\"dir\":-1,\"hp\":10000,\"drive\":6,\"super\":3,\"state\":\"idle\",\"land\":0,\"combo\":0,\"damage\":0}],\"visual\":[{\"p\":{\"lean\":-6,\"bob\":0.4452795242895626,\"head\":3.060511004324394,\"spin\":0,\"open\":0,\"ffoot\":0,\"rfoot\":0,\"floor\":0,\"rootShift\":0,\"depth\":1,\"turn\":0,\"fan\":0.8758904297152819,\"fanAngle\":-7.538161273512079,\"reachScale\":1,\"reachFoot\":0,\"re\":[-56,-248],\"rw\":[-23,-285],\"fe\":[74,-255],\"fw\":[113,-313],\"rk\":[-66,-105],\"ra\":[-104,-16],\"fk\":[68,-106],\"fa\":[82,-16],\"chest\":0,\"pelvis\":0,\"yaw\":0,\"headYaw\":0,\"chestYaw\":0,\"pelvisYaw\":0},\"root\"\n    at assert (eval at evaluate (:290:30), <anonymous>:3:58)\n    at eq (eval at evaluate (:290:30), <anonymous>:4:38)\n    at eval (eval at evaluate (:290:30), <anonymous>:14:374)\n    at check (eval at evaluate (:290:30), <anonymous>:5:74)\n    at eval (eval at evaluate (:290:30), <anonymous>:14:8)\n    at async <anonymous>:316:30"
+    },
+    {
+      "name": "Pause boundary holds the completed pose until the next action step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Hitstop ownership does not depend on drawing any frozen frame",
+      "pass": false,
+      "error": "Error: Values differ {\"a\":[{\"p\":{\"lean\":7.130860302281396,\"bob\":4,\"head\":-11,\"spin\":0,\"open\":0,\"ffoot\":0,\"rfoot\":0,\"floor\":0,\"rootShift\":0,\"depth\":1,\"turn\":0.13,\"fan\":0.9989070563412409,\"fanAngle\":17.722505126953124,\"reachScale\":1.07,\"reachFoot\":0,\"re\":[-56,-248],\"rw\":[-89,-297],\"fe\":[74,-255],\"fw\":[142,-313],\"rk\":[-66,-105],\"ra\":[-115.60471264997561,-16.163073564520804],\"fk\":[68,-106],\"fa\":[117,-16],\"chest\":3.374860839843751,\"pelvis\":-1.5856347656249996,\"frontArmProjection\":1,\"rearArmProjection\":1,\"frontLegProjection\":1,\"rearLegProjection\":1,\"headYaw\":-1.6874304199218755,\"yaw\":0,\"chestYaw\":0,\"pelvisYaw\":0},\"root\":\"translate(600.00 665.00) scale(0.99)\",\"face\":\"scale(1 1) translate(0 0.00) rotate(0.00 0 -180)\",\"s\n    at assert (eval at evaluate (:290:30), <anonymous>:3:58)\n    at eq (eval at evaluate (:290:30), <anonymous>:4:38)\n    at eval (eval at evaluate (:290:30), <anonymous>:16:481)\n    at check (eval at evaluate (:290:30), <anonymous>:5:74)\n    at eval (eval at evaluate (:290:30), <anonymous>:16:8)\n    at async <anonymous>:316:30"
+    },
+    {
+      "name": "Bone compilation is prefix-lazy and bit-identical to a full bake",
+      "pass": true,
+      "detail": {
+        "coldRows": 2,
+        "intermediateRows": 97,
+        "fullRows": 509
+      }
+    },
+    {
+      "name": "Spring prefix, forward and reverse seeks are exactly equivalent",
+      "pass": true,
+      "detail": {
+        "coldRows": 2,
+        "fullRows": 255
+      }
+    },
+    {
+      "name": "Compiler and render passes do not mutate authored assets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Actual socket history joins the rendered fan in direction 1",
+      "pass": true,
+      "detail": {
+        "maxSocketError": 5.859285502108464e-14
+      }
+    },
+    {
+      "name": "Actual socket history joins the rendered fan in direction -1",
+      "pass": true,
+      "detail": {
+        "maxSocketError": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Live historical traces read captured geometry without re-solving poses",
+      "pass": true,
+      "detail": {
+        "cacheReads": 40
+      }
+    },
+    {
+      "name": "Disable/re-enable FX keeps bounded histories and valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Stable stage never moves for attacks, flash, shake or airborne roots",
+      "pass": true,
+      "detail": {
+        "frames": 780,
+        "uniqueTransforms": 1
+      }
+    },
+    {
+      "name": "Following camera ignores body silhouette and obeys pause",
+      "pass": false,
+      "error": "TypeError: Cannot set properties of null (setting 'rw')\n    at eval (eval at evaluate (:290:30), <anonymous>:25:223)\n    at check (eval at evaluate (:290:30), <anonymous>:5:74)\n    at eval (eval at evaluate (:290:30), <anonymous>:25:8)\n    at async <anonymous>:316:30"
+    },
+    {
+      "name": "Viewport and FX preferences reject invalid input atomically",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Diagnostics ring is bounded and does not mutate combat",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Intentional stop counts are separate from long callback intervals",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "repeatCases": 32,
+  "maxRepeatPoseError": 0,
+  "socketSamples": 74,
+  "maxSocketError": 1.1368683772161603e-13
+}

@@ -1,0 +1,94 @@
+{
+  "suite": "flow6-anatomy",
+  "total": 14,
+  "passed": 13,
+  "tests": [
+    {
+      "name": "Motion author clones own every nested vector; 10000 edits cannot contaminate templates",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected \"actual\" to be strictly unequal to:\n\nundefined\n    at /mnt/data/flow6-work/INK-Flow-6-Continuity/tests/flow6/anatomy.test.js:11:370\n    at test (/mnt/data/flow6-work/INK-Flow-6-Continuity/tests/flow6/anatomy.test.js:9:41)\n    at Object.<anonymous> (/mnt/data/flow6-work/INK-Flow-6-Continuity/tests/flow6/anatomy.test.js:11:1)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)"
+    },
+    {
+      "name": "All corrected assets have plausible wrist range; contaminated <-700 coordinates are gone",
+      "pass": true,
+      "detail": {
+        "keys": 15087
+      }
+    },
+    {
+      "name": "690 assets: quarter-frame output is finite, source bone lengths are invariant",
+      "pass": true,
+      "detail": {
+        "samples": 113674,
+        "components": 2728176,
+        "maxError": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Angular bake rate limits hold for every limb and every clip",
+      "pass": true,
+      "detail": {
+        "steps": 903872,
+        "limitedCorrections": 39362
+      }
+    },
+    {
+      "name": "Random/reverse seeks produce identical source and projected joints, without touching clip data",
+      "pass": true
+    },
+    {
+      "name": "Continuous yaw 0..360 keeps both ankle Y positions fixed and closes the loop",
+      "pass": true,
+      "detail": {
+        "samples": 5768,
+        "maximumYError": 0
+      }
+    },
+    {
+      "name": "Every hand matrix origin is the same wrist used by the surface and fan, including profile singularities",
+      "pass": true,
+      "detail": {
+        "cases": 11536,
+        "maximumError": 0
+      }
+    },
+    {
+      "name": "Explicit zero-degree foot rotation never falls back to the shin angle",
+      "pass": true
+    },
+    {
+      "name": "Editor inverse transform recovers the target at non-singular turn angles",
+      "pass": true,
+      "detail": {
+        "cases": 36
+      }
+    },
+    {
+      "name": "Near-edge-on editor inverse is finite and refuses singular horizontal amplification",
+      "pass": true
+    },
+    {
+      "name": "Continuous surfaces remain finite for collapsed, extended and folded chains",
+      "pass": true,
+      "detail": {
+        "paths": 12
+      }
+    },
+    {
+      "name": "Hand-painted 720 degree windings are not reduced to shortest turns",
+      "pass": true
+    },
+    {
+      "name": "Main game calls visualRig while collision retains separate combat solver",
+      "pass": true
+    },
+    {
+      "name": "690 timing/damage bindings and hitbox definitions remain unchanged",
+      "pass": true,
+      "detail": {
+        "records": 690
+      }
+    }
+  ],
+  "htmlSha256": "ff0476724ec836f305abe823060b8520996bf1c991827fe6877bea475bb38267"
+}

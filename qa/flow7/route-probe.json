@@ -1,0 +1,4947 @@
+[
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_0"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 3,
+    "frames": 34,
+    "hits": 3,
+    "damage": 1776,
+    "maxCombo": 3,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 55,
+    "actionFrames": 34,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 18,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞",
+        "tick": 42,
+        "frame": 21,
+        "hits": 1,
+        "damage": 564,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 8,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 29,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 55,
+        "move": "hissatsu_0",
+        "damage": 564,
+        "combo": 3
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_0"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 3,
+    "frames": 34,
+    "hits": 3,
+    "damage": 1776,
+    "maxCombo": 3,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 55,
+    "actionFrames": 34,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 56,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 73,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞",
+        "tick": 97,
+        "frame": 21,
+        "hits": 1,
+        "damage": 564,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 63,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 84,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 110,
+        "move": "hissatsu_0",
+        "damage": 564,
+        "combo": 3
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_0"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 3,
+    "frames": 34,
+    "hits": 3,
+    "damage": 1776,
+    "maxCombo": 3,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 55,
+    "actionFrames": 34,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 111,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 128,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞",
+        "tick": 152,
+        "frame": 21,
+        "hits": 1,
+        "damage": 564,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 118,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 139,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 165,
+        "move": "hissatsu_0",
+        "damage": 564,
+        "combo": 3
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_3",
+      "SA3"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 121,
+    "hits": 11,
+    "damage": 3305,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.023999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 203,
+    "actionFrames": 121,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 166,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 183,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 207,
+        "frame": 21,
+        "hits": 1,
+        "damage": 292,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 224,
+        "frame": 33,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 173,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 194,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 32,
+        "tick": 218,
+        "move": "hissatsu_3",
+        "damage": 292,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 33,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 44,
+        "tick": 263,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 55,
+        "tick": 278,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 66,
+        "tick": 293,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 77,
+        "tick": 308,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 88,
+        "tick": 323,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 99,
+        "tick": 338,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 110,
+        "tick": 353,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 121,
+        "tick": 368,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_3",
+      "SA3"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 121,
+    "hits": 11,
+    "damage": 3305,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.023999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 203,
+    "actionFrames": 121,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 369,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 386,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 410,
+        "frame": 21,
+        "hits": 1,
+        "damage": 292,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 427,
+        "frame": 33,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 376,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 397,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 32,
+        "tick": 421,
+        "move": "hissatsu_3",
+        "damage": 292,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 33,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 44,
+        "tick": 466,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 55,
+        "tick": 481,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 66,
+        "tick": 496,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 77,
+        "tick": 511,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 88,
+        "tick": 526,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 99,
+        "tick": 541,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 110,
+        "tick": 556,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 121,
+        "tick": 571,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_3",
+      "SA3"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 121,
+    "hits": 11,
+    "damage": 3305,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.023999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 203,
+    "actionFrames": 121,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 572,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 589,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 613,
+        "frame": 21,
+        "hits": 1,
+        "damage": 292,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 630,
+        "frame": 33,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 579,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 600,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 32,
+        "tick": 624,
+        "move": "hissatsu_3",
+        "damage": 292,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 33,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 44,
+        "tick": 669,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 55,
+        "tick": 684,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 66,
+        "tick": 699,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 77,
+        "tick": 714,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 88,
+        "tick": 729,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 99,
+        "tick": 744,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 110,
+        "tick": 759,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 121,
+        "tick": 774,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cMP",
+      "sMK",
+      "sHP",
+      "shinobibachi_0"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 43,
+    "hits": 4,
+    "damage": 2235,
+    "maxCombo": 4,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 73,
+    "actionFrames": 43,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cMP",
+        "name": "蹲·横扇切",
+        "tick": 775,
+        "frame": 1,
+        "hits": 1,
+        "damage": 475,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sMK",
+        "name": "侧踢",
+        "tick": 791,
+        "frame": 8,
+        "hits": 1,
+        "damage": 485,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 808,
+        "frame": 16,
+        "hits": 1,
+        "damage": 664,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_0",
+        "name": "轻·必杀忍蜂",
+        "tick": 832,
+        "frame": 28,
+        "hits": 1,
+        "damage": 611,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cMP",
+        "name": "蹲·横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 7,
+        "tick": 781,
+        "move": "cMP",
+        "damage": 475,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 8,
+        "move": "sMK",
+        "name": "侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 15,
+        "tick": 798,
+        "move": "sMK",
+        "damage": 485,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 16,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 819,
+        "move": "sHP",
+        "damage": 664,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 28,
+        "move": "shinobibachi_0",
+        "name": "轻·必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 847,
+        "move": "shinobibachi_0",
+        "damage": 611,
+        "combo": 4
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cMP",
+      "sMK",
+      "sHP",
+      "shinobibachi_0"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 43,
+    "hits": 4,
+    "damage": 2235,
+    "maxCombo": 4,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 73,
+    "actionFrames": 43,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cMP",
+        "name": "蹲·横扇切",
+        "tick": 848,
+        "frame": 1,
+        "hits": 1,
+        "damage": 475,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sMK",
+        "name": "侧踢",
+        "tick": 864,
+        "frame": 8,
+        "hits": 1,
+        "damage": 485,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 881,
+        "frame": 16,
+        "hits": 1,
+        "damage": 664,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_0",
+        "name": "轻·必杀忍蜂",
+        "tick": 905,
+        "frame": 28,
+        "hits": 1,
+        "damage": 611,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cMP",
+        "name": "蹲·横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 7,
+        "tick": 854,
+        "move": "cMP",
+        "damage": 475,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 8,
+        "move": "sMK",
+        "name": "侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 15,
+        "tick": 871,
+        "move": "sMK",
+        "damage": 485,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 16,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 892,
+        "move": "sHP",
+        "damage": 664,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 28,
+        "move": "shinobibachi_0",
+        "name": "轻·必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 920,
+        "move": "shinobibachi_0",
+        "damage": 611,
+        "combo": 4
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cMP",
+      "sMK",
+      "sHP",
+      "shinobibachi_0"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 43,
+    "hits": 4,
+    "damage": 2235,
+    "maxCombo": 4,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 73,
+    "actionFrames": 43,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cMP",
+        "name": "蹲·横扇切",
+        "tick": 921,
+        "frame": 1,
+        "hits": 1,
+        "damage": 475,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sMK",
+        "name": "侧踢",
+        "tick": 937,
+        "frame": 8,
+        "hits": 1,
+        "damage": 485,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 954,
+        "frame": 16,
+        "hits": 1,
+        "damage": 664,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_0",
+        "name": "轻·必杀忍蜂",
+        "tick": 978,
+        "frame": 28,
+        "hits": 1,
+        "damage": 611,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cMP",
+        "name": "蹲·横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 7,
+        "tick": 927,
+        "move": "cMP",
+        "damage": 475,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 8,
+        "move": "sMK",
+        "name": "侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 15,
+        "tick": 944,
+        "move": "sMK",
+        "damage": 485,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 16,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 965,
+        "move": "sHP",
+        "damage": 664,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 28,
+        "move": "shinobibachi_0",
+        "name": "轻·必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 993,
+        "move": "shinobibachi_0",
+        "damage": 611,
+        "combo": 4
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cMP",
+      "sMK",
+      "sHP",
+      "shinobibachi_3",
+      "SA3"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 5,
+    "frames": 130,
+    "hits": 12,
+    "damage": 3640,
+    "maxCombo": 12,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.027999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 221,
+    "actionFrames": 130,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cMP",
+        "name": "蹲·横扇切",
+        "tick": 994,
+        "frame": 1,
+        "hits": 1,
+        "damage": 475,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sMK",
+        "name": "侧踢",
+        "tick": 1010,
+        "frame": 8,
+        "hits": 1,
+        "damage": 485,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 1027,
+        "frame": 16,
+        "hits": 1,
+        "damage": 664,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 1051,
+        "frame": 28,
+        "hits": 1,
+        "damage": 456,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 1070,
+        "frame": 42,
+        "hits": 8,
+        "damage": 1560,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cMP",
+        "name": "蹲·横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 7,
+        "tick": 1000,
+        "move": "cMP",
+        "damage": 475,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 8,
+        "move": "sMK",
+        "name": "侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 15,
+        "tick": 1017,
+        "move": "sMK",
+        "damage": 485,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 16,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 1038,
+        "move": "sHP",
+        "damage": 664,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 28,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 41,
+        "tick": 1064,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 42,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 53,
+        "tick": 1109,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 64,
+        "tick": 1124,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 75,
+        "tick": 1139,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 86,
+        "tick": 1154,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 97,
+        "tick": 1169,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 108,
+        "tick": 1184,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 119,
+        "tick": 1199,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      },
+      {
+        "type": "hit",
+        "frame": 130,
+        "tick": 1214,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 12
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cMP",
+      "sMK",
+      "sHP",
+      "shinobibachi_3",
+      "SA3"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 5,
+    "frames": 130,
+    "hits": 12,
+    "damage": 3640,
+    "maxCombo": 12,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.027999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 221,
+    "actionFrames": 130,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cMP",
+        "name": "蹲·横扇切",
+        "tick": 1215,
+        "frame": 1,
+        "hits": 1,
+        "damage": 475,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sMK",
+        "name": "侧踢",
+        "tick": 1231,
+        "frame": 8,
+        "hits": 1,
+        "damage": 485,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 1248,
+        "frame": 16,
+        "hits": 1,
+        "damage": 664,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 1272,
+        "frame": 28,
+        "hits": 1,
+        "damage": 456,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 1291,
+        "frame": 42,
+        "hits": 8,
+        "damage": 1560,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cMP",
+        "name": "蹲·横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 7,
+        "tick": 1221,
+        "move": "cMP",
+        "damage": 475,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 8,
+        "move": "sMK",
+        "name": "侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 15,
+        "tick": 1238,
+        "move": "sMK",
+        "damage": 485,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 16,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 1259,
+        "move": "sHP",
+        "damage": 664,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 28,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 41,
+        "tick": 1285,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 42,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 53,
+        "tick": 1330,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 64,
+        "tick": 1345,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 75,
+        "tick": 1360,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 86,
+        "tick": 1375,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 97,
+        "tick": 1390,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 108,
+        "tick": 1405,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 119,
+        "tick": 1420,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      },
+      {
+        "type": "hit",
+        "frame": 130,
+        "tick": 1435,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 12
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cMP",
+      "sMK",
+      "sHP",
+      "shinobibachi_3",
+      "SA3"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 5,
+    "frames": 130,
+    "hits": 12,
+    "damage": 3640,
+    "maxCombo": 12,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.027999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 221,
+    "actionFrames": 130,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cMP",
+        "name": "蹲·横扇切",
+        "tick": 1436,
+        "frame": 1,
+        "hits": 1,
+        "damage": 475,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sMK",
+        "name": "侧踢",
+        "tick": 1452,
+        "frame": 8,
+        "hits": 1,
+        "damage": 485,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 1469,
+        "frame": 16,
+        "hits": 1,
+        "damage": 664,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂",
+        "tick": 1493,
+        "frame": 28,
+        "hits": 1,
+        "damage": 456,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 1512,
+        "frame": 42,
+        "hits": 8,
+        "damage": 1560,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cMP",
+        "name": "蹲·横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 7,
+        "tick": 1442,
+        "move": "cMP",
+        "damage": 475,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 8,
+        "move": "sMK",
+        "name": "侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 15,
+        "tick": 1459,
+        "move": "sMK",
+        "damage": 485,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 16,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 1480,
+        "move": "sHP",
+        "damage": 664,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 28,
+        "move": "shinobibachi_3",
+        "name": "OD 必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 41,
+        "tick": 1506,
+        "move": "shinobibachi_3",
+        "damage": 456,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 42,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 53,
+        "tick": 1551,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 64,
+        "tick": 1566,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 75,
+        "tick": 1581,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 86,
+        "tick": 1596,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 97,
+        "tick": 1611,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 108,
+        "tick": 1626,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 119,
+        "tick": 1641,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      },
+      {
+        "type": "hit",
+        "frame": 130,
+        "tick": 1656,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 12
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "cMK",
+      "kachosen_3"
+    ],
+    "distance": 120,
+    "status": "failed",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 3,
+    "frames": 39,
+    "hits": 2,
+    "damage": 901,
+    "maxCombo": 2,
+    "reason": "断连：木桩已经恢复行动",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 57,
+    "actionFrames": 39,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1657,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cMK",
+        "name": "蹲·侧踢",
+        "tick": 1674,
+        "frame": 9,
+        "hits": 1,
+        "damage": 421,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "kachosen_3",
+        "name": "OD 花蝶扇",
+        "tick": 1691,
+        "frame": 17,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 1664,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "cMK",
+        "name": "蹲·侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 16,
+        "tick": 1681,
+        "move": "cMK",
+        "damage": 421,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 17,
+        "move": "kachosen_3",
+        "name": "OD 花蝶扇"
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "cMK",
+      "kachosen_3"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 3,
+    "frames": 28,
+    "hits": 3,
+    "damage": 1648,
+    "maxCombo": 3,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 46,
+    "actionFrames": 28,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1714,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cMK",
+        "name": "蹲·侧踢",
+        "tick": 1731,
+        "frame": 9,
+        "hits": 1,
+        "damage": 421,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "kachosen_3",
+        "name": "OD 花蝶扇",
+        "tick": 1748,
+        "frame": 17,
+        "hits": 1,
+        "damage": 747,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 1721,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "cMK",
+        "name": "蹲·侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 16,
+        "tick": 1738,
+        "move": "cMK",
+        "damage": 421,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 17,
+        "move": "kachosen_3",
+        "name": "OD 花蝶扇"
+      },
+      {
+        "type": "hit",
+        "frame": 28,
+        "tick": 1759,
+        "move": "kachosen_3",
+        "damage": 747,
+        "combo": 3
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "cMK",
+      "kachosen_3"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 3,
+    "frames": 28,
+    "hits": 3,
+    "damage": 1648,
+    "maxCombo": 3,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 3
+    },
+    "elapsedTicks": 46,
+    "actionFrames": 28,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 1760,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cMK",
+        "name": "蹲·侧踢",
+        "tick": 1777,
+        "frame": 9,
+        "hits": 1,
+        "damage": 421,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "kachosen_3",
+        "name": "OD 花蝶扇",
+        "tick": 1794,
+        "frame": 17,
+        "hits": 1,
+        "damage": 747,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 1767,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "cMK",
+        "name": "蹲·侧踢"
+      },
+      {
+        "type": "hit",
+        "frame": 16,
+        "tick": 1784,
+        "move": "cMK",
+        "damage": 421,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 17,
+        "move": "kachosen_3",
+        "name": "OD 花蝶扇"
+      },
+      {
+        "type": "hit",
+        "frame": 28,
+        "tick": 1805,
+        "move": "kachosen_3",
+        "damage": 747,
+        "combo": 3
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sLK",
+      "cLP",
+      "sLP",
+      "hissatsu_0"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 27,
+    "hits": 4,
+    "damage": 1289,
+    "maxCombo": 4,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 48,
+    "actionFrames": 27,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sLK",
+        "name": "忍步踢",
+        "tick": 1806,
+        "frame": 1,
+        "hits": 1,
+        "damage": 320,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 1818,
+        "frame": 6,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 1829,
+        "frame": 10,
+        "hits": 1,
+        "damage": 220,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞",
+        "tick": 1840,
+        "frame": 14,
+        "hits": 1,
+        "damage": 507,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sLK",
+        "name": "忍步踢"
+      },
+      {
+        "type": "hit",
+        "frame": 5,
+        "tick": 1810,
+        "move": "sLK",
+        "damage": 320,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 6,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 9,
+        "tick": 1821,
+        "move": "cLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 10,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 13,
+        "tick": 1832,
+        "move": "sLP",
+        "damage": 220,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 14,
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 1853,
+        "move": "hissatsu_0",
+        "damage": 507,
+        "combo": 4
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sLK",
+      "cLP",
+      "sLP",
+      "hissatsu_0"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 27,
+    "hits": 4,
+    "damage": 1289,
+    "maxCombo": 4,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 48,
+    "actionFrames": 27,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sLK",
+        "name": "忍步踢",
+        "tick": 1854,
+        "frame": 1,
+        "hits": 1,
+        "damage": 320,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 1866,
+        "frame": 6,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 1877,
+        "frame": 10,
+        "hits": 1,
+        "damage": 220,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞",
+        "tick": 1888,
+        "frame": 14,
+        "hits": 1,
+        "damage": 507,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sLK",
+        "name": "忍步踢"
+      },
+      {
+        "type": "hit",
+        "frame": 5,
+        "tick": 1858,
+        "move": "sLK",
+        "damage": 320,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 6,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 9,
+        "tick": 1869,
+        "move": "cLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 10,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 13,
+        "tick": 1880,
+        "move": "sLP",
+        "damage": 220,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 14,
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 1901,
+        "move": "hissatsu_0",
+        "damage": 507,
+        "combo": 4
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sLK",
+      "cLP",
+      "sLP",
+      "hissatsu_0"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 27,
+    "hits": 4,
+    "damage": 1289,
+    "maxCombo": 4,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 3
+    },
+    "elapsedTicks": 48,
+    "actionFrames": 27,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sLK",
+        "name": "忍步踢",
+        "tick": 1902,
+        "frame": 1,
+        "hits": 1,
+        "damage": 320,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 1914,
+        "frame": 6,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 1925,
+        "frame": 10,
+        "hits": 1,
+        "damage": 220,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞",
+        "tick": 1936,
+        "frame": 14,
+        "hits": 1,
+        "damage": 507,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sLK",
+        "name": "忍步踢"
+      },
+      {
+        "type": "hit",
+        "frame": 5,
+        "tick": 1906,
+        "move": "sLK",
+        "damage": 320,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 6,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 9,
+        "tick": 1917,
+        "move": "cLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 10,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 13,
+        "tick": 1928,
+        "move": "sLP",
+        "damage": 220,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 14,
+        "move": "hissatsu_0",
+        "name": "轻·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 27,
+        "tick": 1949,
+        "move": "hissatsu_0",
+        "damage": 507,
+        "combo": 4
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sLK",
+      "cLP",
+      "sLP",
+      "hissatsu_3",
+      "SA2"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 5,
+    "frames": 70,
+    "hits": 9,
+    "damage": 2440,
+    "maxCombo": 9,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 1
+    },
+    "elapsedTicks": 140,
+    "actionFrames": 70,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sLK",
+        "name": "忍步踢",
+        "tick": 1950,
+        "frame": 1,
+        "hits": 1,
+        "damage": 320,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 1962,
+        "frame": 6,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 1973,
+        "frame": 10,
+        "hits": 1,
+        "damage": 220,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 1984,
+        "frame": 14,
+        "hits": 1,
+        "damage": 262,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA2",
+        "name": "超必杀忍蜂",
+        "tick": 2001,
+        "frame": 26,
+        "hits": 5,
+        "damage": 1396,
+        "needed": 5,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 1
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sLK",
+        "name": "忍步踢"
+      },
+      {
+        "type": "hit",
+        "frame": 5,
+        "tick": 1954,
+        "move": "sLK",
+        "damage": 320,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 6,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 9,
+        "tick": 1965,
+        "move": "cLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 10,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 13,
+        "tick": 1976,
+        "move": "sLP",
+        "damage": 220,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 14,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 25,
+        "tick": 1995,
+        "move": "hissatsu_3",
+        "damage": 262,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 26,
+        "move": "SA2",
+        "name": "超必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 2037,
+        "move": "SA2",
+        "damage": 376,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 2050,
+        "move": "SA2",
+        "damage": 328,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 52,
+        "tick": 2063,
+        "move": "SA2",
+        "damage": 279,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 61,
+        "tick": 2076,
+        "move": "SA2",
+        "damage": 231,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 70,
+        "tick": 2089,
+        "move": "SA2",
+        "damage": 182,
+        "combo": 9
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sLK",
+      "cLP",
+      "sLP",
+      "hissatsu_3",
+      "SA2"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 5,
+    "frames": 70,
+    "hits": 9,
+    "damage": 2440,
+    "maxCombo": 9,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 1
+    },
+    "elapsedTicks": 140,
+    "actionFrames": 70,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sLK",
+        "name": "忍步踢",
+        "tick": 2090,
+        "frame": 1,
+        "hits": 1,
+        "damage": 320,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 2102,
+        "frame": 6,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 2113,
+        "frame": 10,
+        "hits": 1,
+        "damage": 220,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 2124,
+        "frame": 14,
+        "hits": 1,
+        "damage": 262,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA2",
+        "name": "超必杀忍蜂",
+        "tick": 2141,
+        "frame": 26,
+        "hits": 5,
+        "damage": 1396,
+        "needed": 5,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 1
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sLK",
+        "name": "忍步踢"
+      },
+      {
+        "type": "hit",
+        "frame": 5,
+        "tick": 2094,
+        "move": "sLK",
+        "damage": 320,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 6,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 9,
+        "tick": 2105,
+        "move": "cLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 10,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 13,
+        "tick": 2116,
+        "move": "sLP",
+        "damage": 220,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 14,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 25,
+        "tick": 2135,
+        "move": "hissatsu_3",
+        "damage": 262,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 26,
+        "move": "SA2",
+        "name": "超必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 2177,
+        "move": "SA2",
+        "damage": 376,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 2190,
+        "move": "SA2",
+        "damage": 328,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 52,
+        "tick": 2203,
+        "move": "SA2",
+        "damage": 279,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 61,
+        "tick": 2216,
+        "move": "SA2",
+        "damage": 231,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 70,
+        "tick": 2229,
+        "move": "SA2",
+        "damage": 182,
+        "combo": 9
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sLK",
+      "cLP",
+      "sLP",
+      "hissatsu_3",
+      "SA2"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 5,
+    "frames": 70,
+    "hits": 9,
+    "damage": 2440,
+    "maxCombo": 9,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4,
+      "super": 1
+    },
+    "elapsedTicks": 140,
+    "actionFrames": 70,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sLK",
+        "name": "忍步踢",
+        "tick": 2230,
+        "frame": 1,
+        "hits": 1,
+        "damage": 320,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 2242,
+        "frame": 6,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 2253,
+        "frame": 10,
+        "hits": 1,
+        "damage": 220,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 2264,
+        "frame": 14,
+        "hits": 1,
+        "damage": 262,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA2",
+        "name": "超必杀忍蜂",
+        "tick": 2281,
+        "frame": 26,
+        "hits": 5,
+        "damage": 1396,
+        "needed": 5,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 1
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sLK",
+        "name": "忍步踢"
+      },
+      {
+        "type": "hit",
+        "frame": 5,
+        "tick": 2234,
+        "move": "sLK",
+        "damage": 320,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 6,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 9,
+        "tick": 2245,
+        "move": "cLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 10,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 13,
+        "tick": 2256,
+        "move": "sLP",
+        "damage": 220,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 14,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 25,
+        "tick": 2275,
+        "move": "hissatsu_3",
+        "damage": 262,
+        "combo": 4
+      },
+      {
+        "type": "action",
+        "frame": 26,
+        "move": "SA2",
+        "name": "超必杀忍蜂"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 2317,
+        "move": "SA2",
+        "damage": 376,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 2330,
+        "move": "SA2",
+        "damage": 328,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 52,
+        "tick": 2343,
+        "move": "SA2",
+        "damage": 279,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 61,
+        "tick": 2356,
+        "move": "SA2",
+        "damage": 231,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 70,
+        "tick": 2369,
+        "move": "SA2",
+        "damage": 182,
+        "combo": 9
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cLP",
+      "sLP",
+      "hissatsu_3",
+      "SA3"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 11,
+    "damage": 2600,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.023999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 184,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 2370,
+        "frame": 1,
+        "hits": 1,
+        "damage": 265,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 2381,
+        "frame": 5,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 2392,
+        "frame": 9,
+        "hits": 1,
+        "damage": 292,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 2409,
+        "frame": 21,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 4,
+        "tick": 2373,
+        "move": "cLP",
+        "damage": 265,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 5,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 2384,
+        "move": "sLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 2403,
+        "move": "hissatsu_3",
+        "damage": 292,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 32,
+        "tick": 2448,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 2463,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 54,
+        "tick": 2478,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 65,
+        "tick": 2493,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 76,
+        "tick": 2508,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 87,
+        "tick": 2523,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 98,
+        "tick": 2538,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 109,
+        "tick": 2553,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cLP",
+      "sLP",
+      "hissatsu_3",
+      "SA3"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 11,
+    "damage": 2600,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.023999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 184,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 2554,
+        "frame": 1,
+        "hits": 1,
+        "damage": 265,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 2565,
+        "frame": 5,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 2576,
+        "frame": 9,
+        "hits": 1,
+        "damage": 292,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 2593,
+        "frame": 21,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 4,
+        "tick": 2557,
+        "move": "cLP",
+        "damage": 265,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 5,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 2568,
+        "move": "sLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 2587,
+        "move": "hissatsu_3",
+        "damage": 292,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 32,
+        "tick": 2632,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 2647,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 54,
+        "tick": 2662,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 65,
+        "tick": 2677,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 76,
+        "tick": 2692,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 87,
+        "tick": 2707,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 98,
+        "tick": 2722,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 109,
+        "tick": 2737,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "cLP",
+      "sLP",
+      "hissatsu_3",
+      "SA3"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 109,
+    "hits": 11,
+    "damage": 2600,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 4.023999999999997,
+      "super": 0
+    },
+    "elapsedTicks": 184,
+    "actionFrames": 109,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "cLP",
+        "name": "蹲·扇柄突",
+        "tick": 2738,
+        "frame": 1,
+        "hits": 1,
+        "damage": 265,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sLP",
+        "name": "扇柄突",
+        "tick": 2749,
+        "frame": 5,
+        "hits": 1,
+        "damage": 242,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞",
+        "tick": 2760,
+        "frame": 9,
+        "hits": 1,
+        "damage": 292,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 2777,
+        "frame": 21,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 4,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "cLP",
+        "name": "蹲·扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 4,
+        "tick": 2741,
+        "move": "cLP",
+        "damage": 265,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 5,
+        "move": "sLP",
+        "name": "扇柄突"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 2752,
+        "move": "sLP",
+        "damage": 242,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "hissatsu_3",
+        "name": "OD 龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 2771,
+        "move": "hissatsu_3",
+        "damage": 292,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 32,
+        "tick": 2816,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 43,
+        "tick": 2831,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 54,
+        "tick": 2846,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 65,
+        "tick": 2861,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 76,
+        "tick": 2876,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 87,
+        "tick": 2891,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 98,
+        "tick": 2906,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 109,
+        "tick": 2921,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_1",
+      "SA3"
+    ],
+    "distance": 120,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 123,
+    "hits": 11,
+    "damage": 3337,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1215,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 0
+    },
+    "elapsedTicks": 205,
+    "actionFrames": 123,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 2922,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 2939,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_1",
+        "name": "中·龙炎舞",
+        "tick": 2963,
+        "frame": 21,
+        "hits": 1,
+        "damage": 324,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 2982,
+        "frame": 35,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 2929,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 2950,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_1",
+        "name": "中·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 2976,
+        "move": "hissatsu_1",
+        "damage": 324,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 35,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 46,
+        "tick": 3021,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 57,
+        "tick": 3036,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 68,
+        "tick": 3051,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 79,
+        "tick": 3066,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 90,
+        "tick": 3081,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 101,
+        "tick": 3096,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 112,
+        "tick": 3111,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 123,
+        "tick": 3126,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_1",
+      "SA3"
+    ],
+    "distance": 150,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 123,
+    "hits": 11,
+    "damage": 3337,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1185,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 0
+    },
+    "elapsedTicks": 205,
+    "actionFrames": 123,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 3127,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 3144,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_1",
+        "name": "中·龙炎舞",
+        "tick": 3168,
+        "frame": 21,
+        "hits": 1,
+        "damage": 324,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 3187,
+        "frame": 35,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 3134,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 3155,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_1",
+        "name": "中·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 3181,
+        "move": "hissatsu_1",
+        "damage": 324,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 35,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 46,
+        "tick": 3226,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 57,
+        "tick": 3241,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 68,
+        "tick": 3256,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 79,
+        "tick": 3271,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 90,
+        "tick": 3286,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 101,
+        "tick": 3301,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 112,
+        "tick": 3316,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 123,
+        "tick": 3331,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  },
+  {
+    "seq": [
+      "sMP",
+      "sHP",
+      "hissatsu_1",
+      "SA3"
+    ],
+    "distance": 168,
+    "status": "success",
+    "character": "mai",
+    "route": "probe",
+    "mode": "demo",
+    "cursor": 4,
+    "frames": 123,
+    "hits": 11,
+    "damage": 3337,
+    "maxCombo": 11,
+    "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+    "initial": {
+      "x": 1167,
+      "targetX": 1335,
+      "super": 3,
+      "drive": 6
+    },
+    "remaining": {
+      "drive": 6,
+      "super": 0
+    },
+    "elapsedTicks": 205,
+    "actionFrames": 123,
+    "tempo": {
+      "rhythm": "weighted",
+      "speed": 1,
+      "rules": "flow",
+      "buffer": 9
+    },
+    "actions": [
+      {
+        "move": "sMP",
+        "name": "横扇切",
+        "tick": 3332,
+        "frame": 1,
+        "hits": 1,
+        "damage": 480,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "sHP",
+        "name": "回身扇",
+        "tick": 3349,
+        "frame": 9,
+        "hits": 1,
+        "damage": 732,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "hissatsu_1",
+        "name": "中·龙炎舞",
+        "tick": 3373,
+        "frame": 21,
+        "hits": 1,
+        "damage": 324,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      },
+      {
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱",
+        "tick": 3392,
+        "frame": 35,
+        "hits": 8,
+        "damage": 1801,
+        "needed": 8,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "type": "action",
+        "frame": 1,
+        "move": "sMP",
+        "name": "横扇切"
+      },
+      {
+        "type": "hit",
+        "frame": 8,
+        "tick": 3339,
+        "move": "sMP",
+        "damage": 480,
+        "combo": 1
+      },
+      {
+        "type": "action",
+        "frame": 9,
+        "move": "sHP",
+        "name": "回身扇"
+      },
+      {
+        "type": "hit",
+        "frame": 20,
+        "tick": 3360,
+        "move": "sHP",
+        "damage": 732,
+        "combo": 2
+      },
+      {
+        "type": "action",
+        "frame": 21,
+        "move": "hissatsu_1",
+        "name": "中·龙炎舞"
+      },
+      {
+        "type": "hit",
+        "frame": 34,
+        "tick": 3386,
+        "move": "hissatsu_1",
+        "damage": 324,
+        "combo": 3
+      },
+      {
+        "type": "action",
+        "frame": 35,
+        "move": "SA3",
+        "name": "不知火流·炎舞仇樱"
+      },
+      {
+        "type": "hit",
+        "frame": 46,
+        "tick": 3431,
+        "move": "SA3",
+        "damage": 363,
+        "combo": 4
+      },
+      {
+        "type": "hit",
+        "frame": 57,
+        "tick": 3446,
+        "move": "SA3",
+        "damage": 322,
+        "combo": 5
+      },
+      {
+        "type": "hit",
+        "frame": 68,
+        "tick": 3461,
+        "move": "SA3",
+        "damage": 280,
+        "combo": 6
+      },
+      {
+        "type": "hit",
+        "frame": 79,
+        "tick": 3476,
+        "move": "SA3",
+        "damage": 239,
+        "combo": 7
+      },
+      {
+        "type": "hit",
+        "frame": 90,
+        "tick": 3491,
+        "move": "SA3",
+        "damage": 197,
+        "combo": 8
+      },
+      {
+        "type": "hit",
+        "frame": 101,
+        "tick": 3506,
+        "move": "SA3",
+        "damage": 156,
+        "combo": 9
+      },
+      {
+        "type": "hit",
+        "frame": 112,
+        "tick": 3521,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 10
+      },
+      {
+        "type": "hit",
+        "frame": 123,
+        "tick": 3536,
+        "move": "SA3",
+        "damage": 122,
+        "combo": 11
+      }
+    ],
+    "inputLog": [],
+    "bufferFrames": 6
+  }
+]

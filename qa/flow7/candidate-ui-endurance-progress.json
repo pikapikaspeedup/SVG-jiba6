@@ -1,0 +1,67 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 2100,
+  "startedAt": "2026-10-04T21:34:16.896226+00:00",
+  "htmlSha256": "6af7d75bb80d198466bc40daf2baf16ceb0f8309d65e6647d5b2a80a1f51802f",
+  "status": "stopped-for-control-display-correction",
+  "description": "FLOW 07: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause and skeleton inspector. No substituted time or hardware FPS guarantee.",
+  "elapsedWallSeconds": 183.354,
+  "latest": {
+    "elapsed": 183.354,
+    "cycles": 53,
+    "raf": 10591,
+    "mode": "battle",
+    "errors": [],
+    "maxParticles": 156,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 17464,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "inspections": 4,
+    "clock": {
+      "ticks": 7370,
+      "callbacks": 10595,
+      "discardedSteps": 8,
+      "clampedMs": 16.59999999999991,
+      "pauses": 17,
+      "alpha": 0.49300000000016847,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 8.216666666669475
+    },
+    "bank": {
+      "instances": 5,
+      "acceptedBirths": 46,
+      "poolDrops": 0,
+      "cancelledActions": 4,
+      "eventEdges": 6
+    },
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "pausedChecks": 12,
+    "views": 4,
+    "heap": {
+      "usedSize": 26408272,
+      "totalSize": 29925376,
+      "embedderHeapUsedSize": 24402472,
+      "backingStorageSize": 4107776
+    },
+    "dom": {
+      "documents": 1,
+      "nodes": 44349,
+      "jsEventListeners": 358
+    }
+  },
+  "completedRoutes": 53,
+  "errors": [],
+  "stoppedAt": "2026-10-04T21:37:42.258249+00:00",
+  "reason": "UI review found numeric speed option mismatch (0.85 vs .85) left selection blank. Canonical values, FX selector sync and lesson-panel separation corrected. Not counted as passed endurance."
+}

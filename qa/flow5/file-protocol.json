@@ -1,0 +1,4 @@
+{
+  "status": "environment-blocked-or-failed",
+  "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work/INK-Flow-5/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/work/INK-Flow-5/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n"
+}

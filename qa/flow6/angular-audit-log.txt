@@ -1,0 +1,322 @@
+[
+  {
+    id: 'iori',
+    key: 'aoihana_0',
+    max: 45.47099382419363,
+    frame: 12.75,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'iori',
+    key: 'aoihana_2',
+    max: 45.47099382419363,
+    frame: 16.75,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'iori',
+    key: 'aoihana_3',
+    max: 45.47099382419363,
+    frame: 12.75,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'iori',
+    key: 'aoihana_1',
+    max: 45.4709938241936,
+    frame: 14.75,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'chun',
+    key: 'branch_4',
+    max: 43.16754841417451,
+    frame: 19.5,
+    part: 'rearLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'musasabi-no-mai-heavy',
+    max: 40.3010876416102,
+    frame: 30.25,
+    part: 'frontArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'musasabi-no-mai-light',
+    max: 40.3010876416102,
+    frame: 26.25,
+    part: 'frontArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'musasabi-no-mai-medium',
+    max: 40.3010876416102,
+    frame: 28.25,
+    part: 'frontArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'musasabi-no-mai-od',
+    max: 40.3010876416102,
+    frame: 25.25,
+    part: 'frontArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'ryuuenbu-light',
+    max: 39.9103033013984,
+    frame: 36.5,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'ryuuenbu-medium',
+    max: 39.81281011602677,
+    frame: 43.5,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'ryuuenbu-heavy',
+    max: 39.7830601992148,
+    frame: 50.5,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'ryuuenbu-od',
+    max: 39.76538808619936,
+    frame: 48,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'cammy',
+    key: 'spike_3',
+    max: 39.577370299150004,
+    frame: 6,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'cammy',
+    key: 'spike_0',
+    max: 39.47562534974752,
+    frame: 5.25,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'cammy',
+    key: 'spike_1',
+    max: 39.39348995736861,
+    frame: 6.75,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'hissatsu-shinobi-bachi-heavy',
+    max: 38.98834168021788,
+    frame: 7,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'cammy',
+    key: 'spike_2',
+    max: 38.92765260550077,
+    frame: 8,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'hissatsu-shinobi-bachi-medium',
+    max: 38.75303008558511,
+    frame: 6.5,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'ken',
+    key: 'follow_2',
+    max: 38.73056452402824,
+    frame: 5,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'hissatsu-shinobi-bachi-light',
+    max: 38.700998141260825,
+    frame: 5.75,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'hissatsu-shinobi-bachi-od',
+    max: 38.671715374170944,
+    frame: 5,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'kagerou-no-mai',
+    max: 38.16804658588706,
+    frame: 5,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'cammy',
+    key: 'arrow_0',
+    max: 38.157868162554394,
+    frame: 16.75,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'cammy',
+    key: 'arrow_1',
+    max: 37.746662014735776,
+    frame: 18.75,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'juri',
+    key: 'cLP',
+    max: 37.59086743702181,
+    frame: 9,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'cammy',
+    key: 'branch_3',
+    max: 37.470215955224546,
+    frame: 10.5,
+    part: 'rearLeg',
+    j: 2
+  },
+  {
+    id: 'cammy',
+    key: 'arrow_2',
+    max: 37.4090588117022,
+    frame: 20.75,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'hishou-ryuuenjin-light',
+    max: 37.35862637238431,
+    frame: 31,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'hishou-ryuuenjin-od',
+    max: 37.2963967690742,
+    frame: 41.25,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'juri',
+    key: 'gooh_0',
+    max: 36.886397291018106,
+    frame: 11.5,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'hishou-ryuuenjin-medium',
+    max: 36.436460734757866,
+    frame: 37.25,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'mai',
+    key: 'hishou-ryuuenjin-heavy',
+    max: 36.28762501619419,
+    frame: 44.75,
+    part: 'rearArm',
+    j: 1
+  },
+  {
+    id: 'juri',
+    key: 'gooh_3',
+    max: 35.56707511636261,
+    frame: 12.25,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'chun',
+    key: 'branch_1',
+    max: 35.41500067180532,
+    frame: 15.5,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'iori',
+    key: 'kuzukaze_2',
+    max: 35.37485843055202,
+    frame: 13.75,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'iori',
+    key: 'kuzukaze_1',
+    max: 35.30937574433643,
+    frame: 11.75,
+    part: 'frontArm',
+    j: 2
+  },
+  {
+    id: 'ryu',
+    key: 'follow_9',
+    max: 35.23172824738297,
+    frame: 18.5,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'mai',
+    key: 'branch_5',
+    max: 35.051382273563505,
+    frame: 15.5,
+    part: 'frontLeg',
+    j: 2
+  },
+  {
+    id: 'ken',
+    key: 'tatsu_1',
+    max: 34.73470738802797,
+    frame: 33.75,
+    part: 'frontLeg',
+    j: 2
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "suite": "flow9-source-and-evidence-validation",
+  "utc": "2026-10-05T16:30:12.769192+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "total": 32,
+  "passed": 32,
+  "tests": [
+    {
+      "name": "707 original move/model/rig/route files preserved",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "690 moves / 22 routes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Version 9 and explicit defaults",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal production entrypoints call new systems",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build includes source modules and UI without function-body patching",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Production JavaScript syntax",
+      "pass": true,
+      "detail": {
+        "scripts": 68,
+        "errors": []
+      }
+    },
+    {
+      "name": "INK-Street-Fighter-6.html embeds current runtime",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INK-Street-Fighter-6-Player.html embeds current runtime",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current evidence: contracts",
+      "pass": true,
+      "detail": {
+        "passed": 24,
+        "total": 24
+      }
+    },
+    {
+      "name": "Current evidence: response-contracts",
+      "pass": true,
+      "detail": {
+        "passed": 44,
+        "total": 44
+      }
+    },
+    {
+      "name": "Current evidence: ui",
+      "pass": true,
+      "detail": {
+        "passed": 28,
+        "total": 28
+      }
+    },
+    {
+      "name": "Current evidence: portability",
+      "pass": true,
+      "detail": {
+        "passed": 15,
+        "total": 15
+      }
+    },
+    {
+      "name": "Current evidence: rhythm-matrix",
+      "pass": true,
+      "detail": {
+        "passed": 264,
+        "total": 264
+      }
+    },
+    {
+      "name": "Original/current world joint same-time comparison",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Response-state purity and 44 real route pairs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Nine inherited commands and exact log hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Inherited current browser-contracts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Inherited current transition-matrix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Inherited current recovery-observation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Inherited current render-and-practice",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Inherited current effect-invariance",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Inherited current character-chain",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "39 original mechanics",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "522 original single-move replays",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Independent benchmark: final-candidate-1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Independent benchmark: final-candidate-2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Independent benchmark: final-baseline-1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Independent benchmark: final-baseline-2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native-camera visual comparison bound to current HTML",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Source patch reverses and reapplies exactly",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All production/build inputs unchanged since final freeze",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Completed >=25 minute real final-build endurance",
+      "pass": true,
+      "detail": {
+        "elapsedWallSeconds": 1501.275,
+        "completedRoutes": 445
+      }
+    }
+  ],
+  "evidenceValidated": true,
+  "soakRequired": true
+}

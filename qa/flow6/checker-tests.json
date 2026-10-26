@@ -1,0 +1,64 @@
+{
+  "suite": "flow6-checker-negative-tests",
+  "capturedAt": "2026-10-04T17:43:34.008509+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "checkerSha256": "663c5e45c147eba25f474d8834bf0a5c565737183bbd612c67111de437039438",
+  "total": 6,
+  "passed": 6,
+  "tests": [
+    {
+      "name": "Accept current quick evidence without claiming a 20-minute soak",
+      "pass": true,
+      "exitCode": 0,
+      "expectedExit": 0,
+      "validationErrors": []
+    },
+    {
+      "name": "Reject stale HTML SHA-256",
+      "pass": true,
+      "exitCode": 1,
+      "expectedExit": 1,
+      "validationErrors": [
+        "compatibility: HTML SHA-256 does not match this build"
+      ]
+    },
+    {
+      "name": "Reject a failed test even with the correct HTML hash",
+      "pass": true,
+      "exitCode": 1,
+      "expectedExit": 1,
+      "validationErrors": [
+        "regression-core: incomplete result 75/76"
+      ]
+    },
+    {
+      "name": "Reject missing evidence",
+      "pass": true,
+      "exitCode": 1,
+      "expectedExit": 1,
+      "validationErrors": [
+        "anatomy: missing/invalid evidence: [Errno 2] No such file or directory: '/tmp/flow6-checker-test-alru6smk/qa/flow6/anatomy.json'",
+        "anatomy: incomplete result -1/0"
+      ]
+    },
+    {
+      "name": "Reject missing 20-minute soak when explicitly required",
+      "pass": true,
+      "exitCode": 1,
+      "expectedExit": 1,
+      "validationErrors": [
+        "A passed >=1,200 wall-second soak bound to this build is required"
+      ]
+    },
+    {
+      "name": "Reject short run despite a requested 1,200 seconds and a passed label",
+      "pass": true,
+      "exitCode": 1,
+      "expectedExit": 1,
+      "validationErrors": [
+        "A passed >=1,200 wall-second soak bound to this build is required"
+      ]
+    }
+  ],
+  "note": "All negative fixtures exist only in a deleted temporary directory. This tests refusal to accept stale/incomplete QA; it is not a browser or endurance run."
+}

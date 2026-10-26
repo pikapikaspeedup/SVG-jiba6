@@ -1,0 +1,223 @@
+{
+  "suite": "flow9-source-diff",
+  "status": "passed",
+  "capturedAt": "2026-10-05T16:04:23.060202+00:00",
+  "baselineArchiveSha256": "8c3308af282c966eba23330582290e61cc03d8608599bab39f97731bc365ede7",
+  "patchSha256": "6bd8d9624654057ce99fb3037f2136cd503ef96c3c133aeae45e3cd04b53f793",
+  "scope": "Engine, rendering, UI, build integration, entrypoints and current docs. Test/evidence/history output changes are not part of this source patch.",
+  "changedFiles": 30,
+  "reverseMatchesOriginal": true,
+  "appliedSourceMatches": true,
+  "files": [
+    {
+      "path": "OPEN-ME.html",
+      "beforeSha256": "1779f735bf4cc489231eae835e7877444294d74503607979f54649c4afea6648",
+      "afterSha256": "f3323fee1491912a5d31c9a7ff01ed188ee62680869e17a68cb2e6389b4f98b9",
+      "beforeBytes": 4433,
+      "afterBytes": 4312
+    },
+    {
+      "path": "README-FLOW.md",
+      "beforeSha256": "3a450d9940fb3633cbcb9127bff9621814fbceb23ea8640db60121b7d85bf89b",
+      "afterSha256": "4603668c4e5f9bf7bb40ef1dd729cc9e2f2398e6dce3186c6a7a92b1782a4c68",
+      "beforeBytes": 192,
+      "afterBytes": 802
+    },
+    {
+      "path": "README.md",
+      "beforeSha256": "4fe039d2b3daddfcac1ec0b1e428eb84dff0715fbabfeaf813ed95941064c6d2",
+      "afterSha256": "975e46b3ad3308e99608d370303aafc88901393989ff1266b373cca989153192",
+      "beforeBytes": 6462,
+      "afterBytes": 7072
+    },
+    {
+      "path": "VERSION.json",
+      "beforeSha256": "d1f26d7c5730f18b29e12babedec7334328ac65c00fa3071b654d54ff34c33c8",
+      "afterSha256": "af6c1955b3ab0e5dc30bb1e5d9d4d9c1be4fecbe8b964c247236d65f977f2dd6",
+      "beforeBytes": 1607,
+      "afterBytes": 1973
+    },
+    {
+      "path": "assets/ink/project.json",
+      "beforeSha256": "24d405fa705021932c3986036ce63691618b8ddfda0cd136ce07fbe45c621c32",
+      "afterSha256": "3202daebbdfe5d0c3e8236fe1b0b8df2359cc746504a7e242b42a38610669504",
+      "beforeBytes": 15403,
+      "afterBytes": 15402
+    },
+    {
+      "path": "docs/FLOW9-ENGINE.md",
+      "beforeSha256": null,
+      "afterSha256": "cb71c4be6487ffb6f7340ab3f1b9f29a1997cad8f54901fa7046c9966635e08d",
+      "beforeBytes": 0,
+      "afterBytes": 5661
+    },
+    {
+      "path": "docs/FLOW9-PLAN.md",
+      "beforeSha256": null,
+      "afterSha256": "6570802253ee7b55c70a309574f834cec0418e8addb2e5be489657d5c936f0c3",
+      "beforeBytes": 0,
+      "afterBytes": 2412
+    },
+    {
+      "path": "forge/fluid.css",
+      "beforeSha256": null,
+      "afterSha256": "9f76b16813bc9e87aa6ec596053fb1b2719a61183978803d9bde25fecb4bb443",
+      "beforeBytes": 0,
+      "afterBytes": 2940
+    },
+    {
+      "path": "forge/fluid.js",
+      "beforeSha256": null,
+      "afterSha256": "a2e440e88dee12b63271c3b4bf7863d890b1d8f8a53c03d2a8aa6fb3454f356a",
+      "beforeBytes": 0,
+      "afterBytes": 8438
+    },
+    {
+      "path": "forge/rhythm.js",
+      "beforeSha256": "ceb7c55a8e723d11ffb6cc8c16dd3efcd3626ce59791a2c17449f545056f5506",
+      "afterSha256": "fb3255ee4d797fa1da399abb505f58346e27676b4aadaefed8b138639ae14b15",
+      "beforeBytes": 22732,
+      "afterBytes": 22797
+    },
+    {
+      "path": "game.js",
+      "beforeSha256": "d4ef80a16f6d1b21dff89e82ff86b19768341471de76656e691d3c154ffb0093",
+      "afterSha256": "e5df90fecd7efca814cd243a3800b84145cf9e901718d840de58bcbb35490bcc",
+      "beforeBytes": 310552,
+      "afterBytes": 310279
+    },
+    {
+      "path": "index.html",
+      "beforeSha256": "1779f735bf4cc489231eae835e7877444294d74503607979f54649c4afea6648",
+      "afterSha256": "f3323fee1491912a5d31c9a7ff01ed188ee62680869e17a68cb2e6389b4f98b9",
+      "beforeBytes": 4433,
+      "afterBytes": 4312
+    },
+    {
+      "path": "src/ink/anatomy.js",
+      "beforeSha256": "57c0fa70dd1f0d0c21607f92b6b63de85a3d1be09f9725f22a20cd61d938bcf5",
+      "afterSha256": "3b4bc5e482f1e623d249cc22fe33d58268d67c89526852395cf06680ea6515e7",
+      "beforeBytes": 8543,
+      "afterBytes": 8664
+    },
+    {
+      "path": "src/ink/articulation.js",
+      "beforeSha256": "0439b4ce36fbec2ee4c8293db4a70fdb95de6c4ad20e893a97aced255b4db7d9",
+      "afterSha256": "fa1c2e5780158a9d8ffb5dc671d9891fff679fedeb719828eb753444f2b210d1",
+      "beforeBytes": 6187,
+      "afterBytes": 6622
+    },
+    {
+      "path": "src/ink/combat-flow.js",
+      "beforeSha256": "a8d1b43b06c714020e4d6a663a2ebcab196e762957794acc4a2539dfd9f58c49",
+      "afterSha256": "ad9cf3d934f0e2f01b772e13076355b7850e087715add2de067b925a7d668b09",
+      "beforeBytes": 7137,
+      "afterBytes": 7307
+    },
+    {
+      "path": "src/ink/core.js",
+      "beforeSha256": "a6d8f67446ab3da9f83fb9bca7e6e731c38faf8cdfd902937a90d07647d1edbc",
+      "afterSha256": "9afcb5230a24a6b87f6c1b324a66ec17dbf1575c92aa9ff7a36690cd441c5530",
+      "beforeBytes": 23533,
+      "afterBytes": 23562
+    },
+    {
+      "path": "src/ink/effects.js",
+      "beforeSha256": "36481ba71801247976e7052332a3dd5fc234578e9fc6c0d73e71b8c3d946e8d0",
+      "afterSha256": "5b8d429df42da76d0947694e140a2efa32b8a620033081e9e823f77a37d6af02",
+      "beforeBytes": 18587,
+      "afterBytes": 20415
+    },
+    {
+      "path": "src/ink/frame-probe.js",
+      "beforeSha256": null,
+      "afterSha256": "7a10349e663c838d9c7ae0106386c1f26ca60d569b5ed7b4aac99022a73b99f7",
+      "beforeBytes": 0,
+      "afterBytes": 2193
+    },
+    {
+      "path": "src/ink/game-adapter.js",
+      "beforeSha256": "309c34dfb026c7c2f34e4fd6cafb54a14ebf2a48b9b738c87ac79b8cceb6ae6d",
+      "afterSha256": "d978a87feeece0bf8a921a3efa0557b561c5470bd2ec1bc47faab1aac1d693ed",
+      "beforeBytes": 1809,
+      "afterBytes": 1949
+    },
+    {
+      "path": "src/ink/motion-graph.js",
+      "beforeSha256": "096e286dfc253e628a2c194d6f5947643def4e3b49017ea2ab70e86e627bc7a5",
+      "afterSha256": "f1658ae65c8b4e93f5a770febc495547e4f5db65bde34b0a66ae9a9666ccf0c3",
+      "beforeBytes": 6996,
+      "afterBytes": 7545
+    },
+    {
+      "path": "src/ink/portable.js",
+      "beforeSha256": "ecc79803b4400dee136a168e0f50e48c369205a495bdf141a0d8a2fcf67789b8",
+      "afterSha256": "c4adaa8ac2fa5da76e680162e278b452f8856eaf2081a4c3b8315a13a635796d",
+      "beforeBytes": 4209,
+      "afterBytes": 4314
+    },
+    {
+      "path": "src/ink/presentation-clock.js",
+      "beforeSha256": "b5795a471bf6eb80e8fe3c19760608739bb1f6e57b43c92c1b3734af13f0282f",
+      "afterSha256": "f3a670dd95828d91f8e3a67e2d0b1c74f99ea65ff847d2480103d6df7a765002",
+      "beforeBytes": 3907,
+      "afterBytes": 4355
+    },
+    {
+      "path": "src/ink/project.js",
+      "beforeSha256": "b59bd3728fca4d5d6684d8dbc9d491bcb98d74d2a2928986f2393cd63922bac8",
+      "afterSha256": "2806db2aa73484cb7e38fa5ad0f6f3b30768e9c6bc922292cbb504c432d58c41",
+      "beforeBytes": 21530,
+      "afterBytes": 21530
+    },
+    {
+      "path": "src/ink/renderer.js",
+      "beforeSha256": "33295b3d5fd256fc69875dd8c2f33061c942625daceefb4ee9e1839313fb9b84",
+      "afterSha256": "34c45ceba86d87cdeac6da34c6781a3e0e55c5c5537a682cdbec7503c6ca0b4a",
+      "beforeBytes": 24818,
+      "afterBytes": 25043
+    },
+    {
+      "path": "src/ink/runtime.js",
+      "beforeSha256": "f382e070195cbf13cd1b73027863196a377064eed55c4ae7ae76e5ee39f47ed0",
+      "afterSha256": "0f2255e8bf4862ff0a4b69656df75640e4433b8a106f86f1dc0b7417c841662e",
+      "beforeBytes": 9913,
+      "afterBytes": 10106
+    },
+    {
+      "path": "src/ink/scene-feedback.js",
+      "beforeSha256": "cc73fa6249c4f0cd745fe064166aa8e7559deba2b3d80002257ec72ea66be0f2",
+      "afterSha256": "03dc6418271daa74aaa209ff53c735a2ef0f60bd8eba503c410866c0e15e3a18",
+      "beforeBytes": 4223,
+      "afterBytes": 3784
+    },
+    {
+      "path": "src/ink/secondary-dynamics.js",
+      "beforeSha256": "6f3e2c01fcd4dd3979f285aebde3c2b9e3056a643ccb267dfbeac6d72f92d6ff",
+      "afterSha256": "97b7a5d73e314a651a45d94387397b1eb31a3f9771554b3bc5eeec5fa78fff2d",
+      "beforeBytes": 4567,
+      "afterBytes": 4960
+    },
+    {
+      "path": "src/ink/skin-geometry.js",
+      "beforeSha256": "15cd4c860101a85e9d4c72f70b118a133210015e76cb76720178958f754cf0d4",
+      "afterSha256": "ab2d30309f8c94e2e4d56ad131e4a6bd384b5d43ce080c2472d45eeb86171ba2",
+      "beforeBytes": 3998,
+      "afterBytes": 4099
+    },
+    {
+      "path": "src/ink/viewport.js",
+      "beforeSha256": null,
+      "afterSha256": "2925bbc6266c84b4b3f62cf727606c65e21bd6d757a4c8a708850f76e8f4ef73",
+      "beforeBytes": 0,
+      "afterBytes": 2206
+    },
+    {
+      "path": "tools/build_forge.py",
+      "beforeSha256": "ea2f58a4fab20992b26dea30a70538ccb0a24d831084b300bccc50fe5296b4f9",
+      "afterSha256": "21faa25d5fdb1bde5887350b3249c3bf792d1abee8626317923ea9ee40e0edb6",
+      "beforeBytes": 5450,
+      "afterBytes": 5560
+    }
+  ]
+}

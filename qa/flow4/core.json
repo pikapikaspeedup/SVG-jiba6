@@ -1,0 +1,234 @@
+{
+  "suite": "flow4-core",
+  "total": 55,
+  "passed": 55,
+  "tests": [
+    {
+      "name": "Quintic residual preserves incoming position",
+      "pass": true
+    },
+    {
+      "name": "Quintic residual preserves incoming first derivative",
+      "pass": true
+    },
+    {
+      "name": "Deadline position exactly returns to target",
+      "pass": true
+    },
+    {
+      "name": "Deadline first and second derivatives converge to zero",
+      "pass": true
+    },
+    {
+      "name": "Zero-duration transition is well-defined",
+      "pass": true
+    },
+    {
+      "name": "Transition short-arc handoff does not unwind a 359-degree turn",
+      "pass": true
+    },
+    {
+      "name": "Authored turn within clip retains all 720 degrees",
+      "pass": true
+    },
+    {
+      "name": "Vector position and target velocity are independently bridged",
+      "pass": true
+    },
+    {
+      "name": "Physical domains remain bounded during crossover",
+      "pass": true
+    },
+    {
+      "name": "Root X/Y are not blended into combat-owned world motion",
+      "pass": true
+    },
+    {
+      "name": "Bridge sampling never mutates the input pose",
+      "pass": true
+    },
+    {
+      "name": "At active deadline, original target object is returned unchanged",
+      "pass": true
+    },
+    {
+      "name": "Non-finite transition duration rejected",
+      "pass": true
+    },
+    {
+      "name": "Finite difference vector velocities correct",
+      "pass": true
+    },
+    {
+      "name": "Secondary motion rewinds exactly",
+      "pass": true
+    },
+    {
+      "name": "Secondary motion never changes clip or adds collision channels",
+      "pass": true
+    },
+    {
+      "name": "Explicit zero secondary impulse does not fall back to the default force",
+      "pass": true
+    },
+    {
+      "name": "Secondary response is causal, not anticipatory",
+      "pass": true
+    },
+    {
+      "name": "Hair, ribbon and twist remain within deformation bounds",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion secondary function is truly zero",
+      "pass": true
+    },
+    {
+      "name": "Secondary bridge has exact first and last values",
+      "pass": true
+    },
+    {
+      "name": "Arc-length resampling creates uniform distance on a line",
+      "pass": true
+    },
+    {
+      "name": "Duplicate points are safely removed by arc-length sampling",
+      "pass": true
+    },
+    {
+      "name": "Zero-length trail returns independent copies",
+      "pass": true
+    },
+    {
+      "name": "Empty trails produce no geometry",
+      "pass": true
+    },
+    {
+      "name": "Out-of-range sample count is rejected",
+      "pass": true
+    },
+    {
+      "name": "Fan grip/tip follow the real forearm orientation",
+      "pass": true
+    },
+    {
+      "name": "Petal integration is analytic and reverse-seek stable",
+      "pass": true
+    },
+    {
+      "name": "Particle transverse gravity rotates with the coordinate basis",
+      "pass": true
+    },
+    {
+      "name": "Particle curl follows a rotated local coordinate basis",
+      "pass": true
+    },
+    {
+      "name": "Critical contact flash evicts ambient particles without allocating nodes",
+      "pass": true
+    },
+    {
+      "name": "Ambient particles cannot evict critical contact particles",
+      "pass": true
+    },
+    {
+      "name": "Particle pool clear can be reused for 10,000 bursts without node growth",
+      "pass": true
+    },
+    {
+      "name": "Persistent world trails are fixed capacity and expire",
+      "pass": true
+    },
+    {
+      "name": "Input buffer survives 30 hitstop ticks without losing actionable frames",
+      "pass": true
+    },
+    {
+      "name": "Buffer expires on the tenth actionable frame, not wall time",
+      "pass": true
+    },
+    {
+      "name": "Successful buffered RUSH/PAR consumption removes the original queue item",
+      "pass": true
+    },
+    {
+      "name": "Queue contains only latest deliberate input, not a scripted chain",
+      "pass": true
+    },
+    {
+      "name": "Captured or KO fighters cannot accept buffered commands",
+      "pass": true
+    },
+    {
+      "name": "Slow-motion skipped steps also preserve buffer lifetime",
+      "pass": true
+    },
+    {
+      "name": "New Mai event fields pass the strict move schema",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field width",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field trailFrames",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field layer",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field curl",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field drag",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field gravity",
+      "pass": true
+    },
+    {
+      "name": "Reject invalid visual field species",
+      "pass": true
+    },
+    {
+      "name": "Excessive secondary impulse amplitude rejected",
+      "pass": true
+    },
+    {
+      "name": "Secondary impulse beyond clip duration rejected",
+      "pass": true
+    },
+    {
+      "name": "Retime includes cosmetic beat times and preserves their amplitudes",
+      "pass": true
+    },
+    {
+      "name": "All 44 revised Mai assets validate and remain finite at subframes",
+      "pass": true,
+      "detail": {
+        "assets": 44,
+        "samples": 5642
+      }
+    },
+    {
+      "name": "Original 690 move/state/throw bindings and hitbox definitions remain unchanged",
+      "pass": true,
+      "detail": {
+        "contracts": 690
+      }
+    },
+    {
+      "name": "Combat baseline is byte-for-byte the supplied game.js",
+      "pass": true
+    },
+    {
+      "name": "All 16 combo route definitions are unchanged from the supplied archive",
+      "pass": true
+    }
+  ]
+}

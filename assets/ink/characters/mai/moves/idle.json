@@ -127,21 +127,55 @@
       "fan": [
         [
           0,
-          0.92
+          0.91,
+          "spline"
+        ],
+        [
+          30,
+          0.84,
+          "spline"
+        ],
+        [
+          60,
+          0.94,
+          "spline"
+        ],
+        [
+          90,
+          0.87,
+          "spline"
         ],
         [
           120,
-          0.92
+          0.91,
+          "spline"
         ]
       ],
       "fanAngle": [
         [
           0,
-          -9
+          -9,
+          "spline"
+        ],
+        [
+          30,
+          -6,
+          "spline"
+        ],
+        [
+          60,
+          -10,
+          "spline"
+        ],
+        [
+          90,
+          -12,
+          "spline"
         ],
         [
           120,
-          -9
+          -9,
+          "spline"
         ]
       ],
       "bob": [
@@ -171,7 +205,23 @@
     "meta": {
       "source": "authored-idle",
       "rootPolicy": "combat",
-      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned."
+      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned.",
+      "flowEdition": 4,
+      "visualRevision": "mai-flower-flame-1",
+      "secondaryBeats": [],
+      "visualNote": "FLOW 04：折扇开合、饰物惯性、分层轨迹。装饰节拍不生成命中；世界位移与伤害仍由战斗引擎决定。",
+      "motion5": {
+        "version": 1,
+        "weightScale": 1,
+        "layers": [],
+        "contacts": [],
+        "springs": {
+          "frequency": 0.31,
+          "damping": 0.4,
+          "hairStrength": 1.15,
+          "clothStrength": 1.1
+        }
+      }
     }
   },
   "boxes": {

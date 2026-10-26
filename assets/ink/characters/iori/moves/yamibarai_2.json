@@ -41,17 +41,17 @@
         [
           0.0,
           12,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           15,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           26,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -61,34 +61,34 @@
         [
           30.0,
           23,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           13,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           12,
-          "smooth"
+          "spline"
         ]
       ],
       "bob": [
         [
           0.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           24,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           38,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -98,34 +98,34 @@
         [
           30.0,
           26,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           0,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "head": [
         [
           0.0,
           -8,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           -8,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           -8,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -135,34 +135,34 @@
         [
           30.0,
           -8,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           -8,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           -8,
-          "smooth"
+          "spline"
         ]
       ],
       "chest": [
         [
           0.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           -12,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -172,34 +172,34 @@
         [
           30.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           0,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "pelvis": [
         [
           0.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -209,17 +209,17 @@
         [
           30.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           0,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "spin": [
@@ -263,17 +263,17 @@
         [
           0.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -283,17 +283,17 @@
         [
           30.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           0,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "depth": [
@@ -337,17 +337,17 @@
         [
           0.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -357,34 +357,34 @@
         [
           30.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           0,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "rootShift": [
         [
           0.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           10.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           18.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -394,17 +394,17 @@
         [
           30.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
           39.706,
           0,
-          "smooth"
+          "spline"
         ],
         [
           52.0,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "open": [
@@ -821,7 +821,7 @@
             -65,
             -204
           ],
-          "smooth"
+          "spline"
         ],
         [
           10.0,
@@ -829,7 +829,7 @@
             -108,
             -290
           ],
-          "smooth"
+          "spline"
         ],
         [
           18.0,
@@ -837,7 +837,7 @@
             -119,
             -313
           ],
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -853,7 +853,7 @@
             -86,
             -292
           ],
-          "smooth"
+          "spline"
         ],
         [
           39.706,
@@ -861,7 +861,7 @@
             -69,
             -216
           ],
-          "smooth"
+          "spline"
         ],
         [
           52.0,
@@ -869,7 +869,7 @@
             -65,
             -204
           ],
-          "smooth"
+          "spline"
         ]
       ],
       "fw": [
@@ -879,7 +879,7 @@
             116,
             -290
           ],
-          "smooth"
+          "spline"
         ],
         [
           10.0,
@@ -887,7 +887,7 @@
             -13,
             -244
           ],
-          "smooth"
+          "spline"
         ],
         [
           18.0,
@@ -895,7 +895,7 @@
             46,
             -214
           ],
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -911,7 +911,7 @@
             137,
             -224
           ],
-          "smooth"
+          "spline"
         ],
         [
           39.706,
@@ -919,7 +919,7 @@
             100,
             -271
           ],
-          "smooth"
+          "spline"
         ],
         [
           52.0,
@@ -927,7 +927,7 @@
             116,
             -290
           ],
-          "smooth"
+          "spline"
         ]
       ],
       "ra": [
@@ -937,7 +937,7 @@
             -122,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           10.0,
@@ -945,7 +945,7 @@
             -122,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           18.0,
@@ -953,7 +953,7 @@
             -122,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -969,7 +969,7 @@
             -122,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           39.706,
@@ -977,7 +977,7 @@
             -122,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           52.0,
@@ -985,7 +985,7 @@
             -122,
             -16
           ],
-          "smooth"
+          "spline"
         ]
       ],
       "fa": [
@@ -995,7 +995,7 @@
             107,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           10.0,
@@ -1003,7 +1003,7 @@
             107,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           18.0,
@@ -1011,7 +1011,7 @@
             107,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           23.0,
@@ -1027,7 +1027,7 @@
             107,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           39.706,
@@ -1035,7 +1035,7 @@
             107,
             -16
           ],
-          "smooth"
+          "spline"
         ],
         [
           52.0,
@@ -1043,7 +1043,7 @@
             107,
             -16
           ],
-          "smooth"
+          "spline"
         ]
       ]
     },
@@ -1056,7 +1056,8 @@
       "note": "同人客串：后拉火焰 → 低身甩地 → 手爪回收",
       "socket": "frontArm",
       "gameId": "yamibarai_2",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3
     }
   },
   "boxes": {
@@ -1073,7 +1074,15 @@
       "scale": 1,
       "color": "#a987df",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 5.6,
+        "size": 2.4,
+        "spread": 65,
+        "species": "shard"
+      }
     }
   ],
   "source": "authored-phase-mapped"

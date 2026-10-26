@@ -1,0 +1,5 @@
+CAPTURE idle 61 frames
+CAPTURE sHK 61 frames
+CAPTURE sMK 61 frames
+CAPTURE ryuuenbu-heavy 61 frames
+COMPARISON 244 frames []

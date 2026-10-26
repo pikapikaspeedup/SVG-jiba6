@@ -1,0 +1,24 @@
+PASS Home entry opens the real combo studio and pause control stops combat 
+PASS Lesson controller is not displayed alongside combo controller 
+PASS Visible tempo controls update the real engine settings 
+PASS Selecting a route yields an idle draft, not an old result relabeled as new 
+PASS Add step changes the real draft 
+PASS Reorder changes sequence rather than only DOM 
+PASS Delete restores three steps 
+PASS Invalid step field restores previous value and explains rejection 
+PASS Save creates a user route copy rather than overwriting builtin 
+PASS Visible route export downloads valid JSON with the current draft 
+PASS Legacy-rule toggle actually refuses the new hit-confirm chain 
+PASS Same draft succeeds through the new finite cancel graph 
+PASS Holding G does not advance subsequent moves automatically 
+PASS Typing G in the title is not interpreted as gameplay 
+PASS Single-step advances exactly one simulation tick even when paused 
+PASS Unsupported super sources cannot be selected as custom-cancel origins 
+PASS Visible edge editor commits actual JSON rules 
+PASS Edge deletion updates the saved asset 
+PASS Desktop studio has no horizontal overflow or non-finite SVG 
+PASS Return home closes composer and pauses its fight 
+PASS Touch action button requests the first real practice step 
+PASS 390px touch layout has no horizontal overflow 
+PASS Touch pause prevents ongoing simulation 
+PASS No unhandled scripts in desktop and touch interaction 

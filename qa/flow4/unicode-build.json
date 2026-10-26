@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T10:22:52.668414+00:00",
+  "test": "Build from a directory containing spaces and Chinese characters",
+  "artifacts": {
+    "INK-Street-Fighter-6.html": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86",
+    "INK-Street-Fighter-6-Player.html": "ea8360ec6b80a694199091866867c35977f88f197d5ad1ad9f86c3a4ddd2563b"
+  },
+  "note": "Executed on Linux, not a Windows filesystem compatibility guarantee. The standalone game remains unchanged."
+}

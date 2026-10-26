@@ -1,0 +1,269 @@
+{
+  "total": 22,
+  "passed": 22,
+  "tests": [
+    {
+      "name": "Home launch opens the real combo arena and route panel",
+      "pass": true,
+      "detail": "16 routes / live battle mounted"
+    },
+    {
+      "name": "Practice never auto-attacks or changes damage while waiting",
+      "pass": true,
+      "detail": {
+        "hits": 0,
+        "cursor": 0,
+        "hp": 10000,
+        "attack": false
+      }
+    },
+    {
+      "name": "Physical Playwright G keyboard event starts requested first move",
+      "pass": true,
+      "detail": {
+        "move": "sHP",
+        "name": "站立重拳",
+        "tick": 246,
+        "frame": 240,
+        "hits": 0,
+        "damage": 0,
+        "needed": 1,
+        "command": "",
+        "cost": {
+          "drive": 6,
+          "super": 3
+        }
+      }
+    },
+    {
+      "name": "Seven timed DOM G events complete 15 hits without forced cancels",
+      "pass": true,
+      "detail": {
+        "status": "success",
+        "hits": 15,
+        "damage": 3288,
+        "inputs": 7
+      }
+    },
+    {
+      "name": "Deliberately late input fails instead of faking a long combo",
+      "pass": true,
+      "detail": {
+        "hits": 1,
+        "reason": "断连：木桩已经恢复行动"
+      }
+    },
+    {
+      "name": "Insufficient resources cannot trigger Drive cancel or free supers",
+      "pass": true,
+      "detail": {
+        "hits": 1,
+        "remaining": {
+          "drive": 0.15200000000000014,
+          "super": 0.11357142857142857
+        },
+        "reason": "断连：木桩已经恢复行动"
+      }
+    },
+    {
+      "name": "Wrong real input is reported, not replaced with the expected move",
+      "pass": true,
+      "detail": "错误招式：站立轻拳；当前需要 sHP"
+    },
+    {
+      "name": "240 render-only calls do not advance combat or apply damage",
+      "pass": true,
+      "detail": {
+        "before": {
+          "hp": 8857,
+          "tick": 1429,
+          "damage": 1143
+        },
+        "after": {
+          "hp": 8857,
+          "tick": 1429,
+          "damage": 1143
+        }
+      }
+    },
+    {
+      "name": "Live battle draws fractional turns but freezes exactly on integer contact pose",
+      "pass": true,
+      "detail": {
+        "first": {
+          "yaw": 98.76853619633219,
+          "head": null,
+          "frame": 13
+        },
+        "second": {
+          "yaw": 111.70658357067929,
+          "frame": 13
+        },
+        "hitA": 119.21331955767297,
+        "hitB": 119.21331955767297,
+        "exact": 119.21331955767297,
+        "hpUnchanged": true,
+        "tickUnchanged": true
+      }
+    },
+    {
+      "name": "Moving attacks record bounded world-space trajectory instead of foot-local trails",
+      "pass": true,
+      "detail": {
+        "maximum": 40,
+        "travel": 68.94963154792936,
+        "currentRoots": true,
+        "cap": 40,
+        "finite": true
+      }
+    },
+    {
+      "name": "Completion freezes proof metrics instead of post-route regen changing totals",
+      "pass": true,
+      "detail": {
+        "remain": {
+          "drive": 1.2900000000000003,
+          "super": 0
+        },
+        "trace": 175,
+        "clock": 175
+      }
+    },
+    {
+      "name": "Leaving combo lab restores previous training settings and speed",
+      "pass": true,
+      "detail": {
+        "infinite": true,
+        "autohp": true,
+        "dummy": "crouch",
+        "speed": 1,
+        "status": "idle"
+      }
+    },
+    {
+      "name": "Malformed combo library is rejected without replacing working routes",
+      "pass": true,
+      "detail": {
+        "rejected": true,
+        "unchanged": true
+      }
+    },
+    {
+      "name": "Editor and renderer really sample different fractional-turn poses",
+      "pass": true,
+      "detail": {
+        "12.25F": {
+          "yaw": 98.76853619633219,
+          "projection": {
+            "angle": 98.7685361963322,
+            "front": 0,
+            "side": 0.996012710307675,
+            "back": 0.003987289692324938,
+            "far": true,
+            "sign": 1,
+            "width": 0.658390892011021,
+            "shear": 0.024707806103610064,
+            "offset": 5.929873464866415,
+            "shoulder": -0.1524431306233735,
+            "depth": 0.9883122441444026
+          }
+        },
+        "12.75F": {
+          "yaw": 111.70658357067929,
+          "projection": {
+            "angle": 111.7065835706793,
+            "front": 0,
+            "side": 0.8867976393728588,
+            "back": 0.1132023606271412,
+            "far": true,
+            "sign": 1,
+            "width": 0.7066393293996784,
+            "shear": 0.023227251991371264,
+            "offset": 5.574540477929103,
+            "shoulder": -0.36985351679677675,
+            "depth": 0.9290900796548505
+          }
+        }
+      }
+    },
+    {
+      "name": "Reverse seek reconstructs identical particle and ribbon SVG",
+      "pass": true,
+      "detail": "fc22e5a2f6b98ad618060c268f3f2e7cdcc445eeb0c810f10b0914ddd6807096"
+    },
+    {
+      "name": "Particle over-capacity stays within fixed SVG pool after 1000 updates",
+      "pass": true,
+      "detail": {
+        "n": 32,
+        "peak": 32,
+        "final": {
+          "nodes": 32,
+          "peak": 32,
+          "dropped": 1676,
+          "active": 32
+        },
+        "cleared": 0
+      }
+    },
+    {
+      "name": "4-frame comparison is view-only; authoring returns to continuous sampling",
+      "pass": true,
+      "detail": 92.58806457421247
+    },
+    {
+      "name": "Particle inspector edits write into the persistent move asset",
+      "pass": true,
+      "detail": {
+        "count": 57,
+        "life": 37,
+        "speed": 6.3,
+        "size": 4.2,
+        "spread": 100,
+        "species": "ember",
+        "gravity": -0.07,
+        "drag": 0.03,
+        "curl": 0
+      }
+    },
+    {
+      "name": "Invalid particle import is rejected atomically",
+      "pass": true,
+      "detail": {
+        "rejected": true,
+        "unchanged": true
+      }
+    },
+    {
+      "name": "Exported standalone HTML reopens with particles, authored yaw and combo lab",
+      "pass": true,
+      "detail": {
+        "particle": {
+          "count": 57,
+          "life": 37,
+          "speed": 6.3,
+          "size": 4.2,
+          "spread": 100,
+          "species": "ember",
+          "gravity": -0.07,
+          "drag": 0.03,
+          "curl": 0
+        },
+        "routes": 16,
+        "yaw": true,
+        "paths": true
+      }
+    },
+    {
+      "name": "Player-only edition includes the playable combo lab",
+      "pass": true,
+      "detail": "ken-extended"
+    },
+    {
+      "name": "No unhandled page errors",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "browserErrors": []
+}

@@ -1,0 +1,841 @@
+{
+  "suite": "flow7-built-browser-contracts",
+  "capturedAt": "2026-10-05T07:18:38.780387+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "total": 81,
+  "passed": 81,
+  "tests": [
+    {
+      "name": "ryu 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ryu 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ryu -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ryu -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ken 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ken 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ken -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "ken -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "chun 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "chun 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "chun -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "chun -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "cammy 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "cammy 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "cammy -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "cammy -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "luke 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "luke 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "luke -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "luke -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "juri 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "juri 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "juri -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "juri -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "mai 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "mai 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "mai -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "mai -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "iori 1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "iori 1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "iori -1 legacy: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 5,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "iori -1 weighted: final freeze frame never rewinds at any render alpha",
+      "pass": true,
+      "detail": {
+        "freeze": 9,
+        "maximumRenderRewind": 0,
+        "nextStepAlphaZero": 0
+      }
+    },
+    {
+      "name": "Pause/resume preserves a presented fractional pose until an action advances",
+      "pass": true,
+      "detail": {
+        "jointGap": 0
+      }
+    },
+    {
+      "name": "Slow-motion skipped step does not age action/cancel/input clocks or rewind limbs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A held hitstop cancel enters the real queue and consumes once after thaw",
+      "pass": true,
+      "detail": {
+        "frozenTicks": 9,
+        "consumptions": 1
+      }
+    },
+    {
+      "name": "A far-too-early input expires instead of firing much later",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Changing rules clears physical and G-practice pending requests",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A failed request cannot deduct drive before discovering insufficient super",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A failed request cannot deduct super before discovering insufficient drive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Repeated preview decisions have no gameplay or resource side effects",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PAR: direct invocation cannot bypass frozen gameplay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "RUSH: direct invocation cannot bypass frozen gameplay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "sLP: direct invocation cannot bypass frozen gameplay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "hissatsu_3: direct invocation cannot bypass frozen gameplay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "SA3: direct invocation cannot bypass frozen gameplay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Weighted SA1 grants flame stock at startup, not during its 28-frame announcement",
+      "pass": true,
+      "detail": {
+        "superFreeze": 28,
+        "actionStartup": 8
+      }
+    },
+    {
+      "name": "Actual charged fan follow input is not overwritten by a normal during hitstop",
+      "pass": true,
+      "detail": {
+        "started": "midare"
+      }
+    },
+    {
+      "name": "Hit-only custom edge is closed on actual blocked contact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Extra chain depth is bounded after two real hit-confirmed cancels",
+      "pass": true,
+      "detail": {
+        "boundedExtraEdges": 2
+      }
+    },
+    {
+      "name": "No resource custom draft fails immediately with a specific explanation",
+      "pass": true,
+      "detail": "无法发动 SA3：超级能量不足"
+    },
+    {
+      "name": "End-of-run timing is immutable after 100 further combat ticks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Delayed impact births and old particle debris share the frozen action clock",
+      "pass": true,
+      "detail": {
+        "delayActionFrames": 3,
+        "heldTicks": 10
+      }
+    },
+    {
+      "name": "Six contact families create distinct bounded retained-SVG impact shapes",
+      "pass": true,
+      "detail": [
+        {
+          "kind": "guard",
+          "species": [
+            "shield"
+          ],
+          "visibleAtContact": 1,
+          "active": 1
+        },
+        {
+          "kind": "finisher",
+          "species": [
+            "cross",
+            "ring",
+            "ember",
+            "ember",
+            "ember"
+          ],
+          "visibleAtContact": 1,
+          "active": 5
+        },
+        {
+          "kind": "launch",
+          "species": [
+            "thrust",
+            "cross",
+            "ember",
+            "ember",
+            "ember"
+          ],
+          "visibleAtContact": 2,
+          "active": 5
+        },
+        {
+          "kind": "fan",
+          "species": [
+            "slash",
+            "slash",
+            "ember",
+            "ember",
+            "ember"
+          ],
+          "visibleAtContact": 1,
+          "active": 5
+        },
+        {
+          "kind": "kick",
+          "species": [
+            "thrust",
+            "ember",
+            "ember",
+            "ember"
+          ],
+          "visibleAtContact": 1,
+          "active": 4
+        },
+        {
+          "kind": "strike",
+          "species": [
+            "cross",
+            "ember",
+            "ember",
+            "ember"
+          ],
+          "visibleAtContact": 1,
+          "active": 4
+        }
+      ]
+    },
+    {
+      "name": "Core contact shapes take priority over decorative debris at capacity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid unknown target cannot partially mutate saved motion state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid multi-record import rolls back all changes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Bad route library never replaces the known-good library",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mai-flow-fan / legacy / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 3,
+        "damage": 1776,
+        "ticks": 46,
+        "actionFrames": 34,
+        "remaining": {
+          "drive": 0.22800000000000004,
+          "super": 0.20542857142857146
+        }
+      }
+    },
+    {
+      "name": "mai-flow-rise / legacy / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 11,
+        "damage": 3305,
+        "ticks": 202,
+        "actionFrames": 121,
+        "remaining": {
+          "drive": 0.22399999999999576,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-weave / legacy / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 2235,
+        "ticks": 60,
+        "actionFrames": 43,
+        "remaining": {
+          "drive": 0.32600000000000007,
+          "super": 0.28966666666666663
+        }
+      }
+    },
+    {
+      "name": "mai-flow-cascade / legacy / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 12,
+        "damage": 3640,
+        "ticks": 216,
+        "actionFrames": 130,
+        "remaining": {
+          "drive": 0.3219999999999943,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-light / legacy / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 1289,
+        "ticks": 36,
+        "actionFrames": 27,
+        "remaining": {
+          "drive": 0.29400000000000004,
+          "super": 0.20947619047619048
+        }
+      }
+    },
+    {
+      "name": "mai-flow-gale / legacy / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 9,
+        "damage": 2440,
+        "ticks": 130,
+        "actionFrames": 70,
+        "remaining": {
+          "drive": 0.26599999999999735,
+          "super": 0.27942857142857136
+        }
+      }
+    },
+    {
+      "name": "mai-flow-fan / legacy / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 3,
+        "damage": 1776,
+        "ticks": 46,
+        "actionFrames": 34,
+        "remaining": {
+          "drive": 0.22800000000000004,
+          "super": 0.20542857142857146
+        }
+      }
+    },
+    {
+      "name": "mai-flow-rise / legacy / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 11,
+        "damage": 3305,
+        "ticks": 202,
+        "actionFrames": 121,
+        "remaining": {
+          "drive": 0.22399999999999576,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-weave / legacy / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 2235,
+        "ticks": 60,
+        "actionFrames": 43,
+        "remaining": {
+          "drive": 0.32600000000000007,
+          "super": 0.28966666666666663
+        }
+      }
+    },
+    {
+      "name": "mai-flow-cascade / legacy / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 12,
+        "damage": 3640,
+        "ticks": 216,
+        "actionFrames": 130,
+        "remaining": {
+          "drive": 0.3219999999999943,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-light / legacy / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 1289,
+        "ticks": 36,
+        "actionFrames": 27,
+        "remaining": {
+          "drive": 0.29400000000000004,
+          "super": 0.20947619047619048
+        }
+      }
+    },
+    {
+      "name": "mai-flow-gale / legacy / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 9,
+        "damage": 2440,
+        "ticks": 130,
+        "actionFrames": 70,
+        "remaining": {
+          "drive": 0.26599999999999735,
+          "super": 0.27942857142857136
+        }
+      }
+    },
+    {
+      "name": "mai-flow-fan / weighted / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 3,
+        "damage": 1776,
+        "ticks": 55,
+        "actionFrames": 34,
+        "remaining": {
+          "drive": 0.22800000000000004,
+          "super": 0.20542857142857146
+        }
+      }
+    },
+    {
+      "name": "mai-flow-rise / weighted / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 11,
+        "damage": 3305,
+        "ticks": 203,
+        "actionFrames": 121,
+        "remaining": {
+          "drive": 0.22399999999999576,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-weave / weighted / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 2235,
+        "ticks": 73,
+        "actionFrames": 43,
+        "remaining": {
+          "drive": 0.32600000000000007,
+          "super": 0.28966666666666663
+        }
+      }
+    },
+    {
+      "name": "mai-flow-cascade / weighted / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 12,
+        "damage": 3640,
+        "ticks": 221,
+        "actionFrames": 130,
+        "remaining": {
+          "drive": 0.3219999999999943,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-light / weighted / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 1289,
+        "ticks": 48,
+        "actionFrames": 27,
+        "remaining": {
+          "drive": 0.29400000000000004,
+          "super": 0.20947619047619048
+        }
+      }
+    },
+    {
+      "name": "mai-flow-gale / weighted / 1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 9,
+        "damage": 2440,
+        "ticks": 140,
+        "actionFrames": 70,
+        "remaining": {
+          "drive": 0.26599999999999735,
+          "super": 0.27942857142857136
+        }
+      }
+    },
+    {
+      "name": "mai-flow-fan / weighted / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 3,
+        "damage": 1776,
+        "ticks": 55,
+        "actionFrames": 34,
+        "remaining": {
+          "drive": 0.22800000000000004,
+          "super": 0.20542857142857146
+        }
+      }
+    },
+    {
+      "name": "mai-flow-rise / weighted / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 11,
+        "damage": 3305,
+        "ticks": 203,
+        "actionFrames": 121,
+        "remaining": {
+          "drive": 0.22399999999999576,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-weave / weighted / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 2235,
+        "ticks": 73,
+        "actionFrames": 43,
+        "remaining": {
+          "drive": 0.32600000000000007,
+          "super": 0.28966666666666663
+        }
+      }
+    },
+    {
+      "name": "mai-flow-cascade / weighted / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 12,
+        "damage": 3640,
+        "ticks": 221,
+        "actionFrames": 130,
+        "remaining": {
+          "drive": 0.3219999999999943,
+          "super": 0
+        }
+      }
+    },
+    {
+      "name": "mai-flow-light / weighted / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 4,
+        "damage": 1289,
+        "ticks": 48,
+        "actionFrames": 27,
+        "remaining": {
+          "drive": 0.29400000000000004,
+          "super": 0.20947619047619048
+        }
+      }
+    },
+    {
+      "name": "mai-flow-gale / weighted / -1: genuine new route",
+      "pass": true,
+      "detail": {
+        "hits": 9,
+        "damage": 2440,
+        "ticks": 140,
+        "actionFrames": 70,
+        "remaining": {
+          "drive": 0.26599999999999735,
+          "super": 0.27942857142857136
+        }
+      }
+    }
+  ],
+  "browserErrors": []
+}

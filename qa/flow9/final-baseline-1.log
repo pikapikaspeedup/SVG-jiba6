@@ -1,0 +1,163 @@
+{
+  "cold": [
+    {
+      "id": "sLP",
+      "success": true,
+      "requestMs": 3.6000000000931323,
+      "firstStepMs": 1.2999999998137355,
+      "firstRenderMs": 4.7999999998137355
+    },
+    {
+      "id": "sHP",
+      "success": true,
+      "requestMs": 3.6000000000931323,
+      "firstStepMs": 2.099999999627471,
+      "firstRenderMs": 5.900000000372529
+    },
+    {
+      "id": "sHK",
+      "success": true,
+      "requestMs": 1,
+      "firstStepMs": 1.900000000372529,
+      "firstRenderMs": 3.7999999998137355
+    },
+    {
+      "id": "hissatsu_2",
+      "success": true,
+      "requestMs": 4.699999999720603,
+      "firstStepMs": 2,
+      "firstRenderMs": 6.7000000001862645
+    },
+    {
+      "id": "shinobibachi_3",
+      "success": true,
+      "requestMs": 4.7999999998137355,
+      "firstStepMs": 1.6000000000931323,
+      "firstRenderMs": 9.200000000186265
+    },
+    {
+      "id": "SA1",
+      "success": true,
+      "requestMs": 6.900000000372529,
+      "firstStepMs": 1.5,
+      "firstRenderMs": 3.8999999999068677
+    },
+    {
+      "id": "SA2",
+      "success": true,
+      "requestMs": 7.5,
+      "firstStepMs": 1.5,
+      "firstRenderMs": 4.2999999998137355
+    },
+    {
+      "id": "SA3",
+      "success": true,
+      "requestMs": 10,
+      "firstStepMs": 2.7999999998137355,
+      "firstRenderMs": 7.300000000279397
+    }
+  ],
+  "samples": [
+    {
+      "id": "idle",
+      "steps": 300,
+      "simulationMean": 0.15566666665952653,
+      "simulationP95": 0.2999999998137355,
+      "renderTwoMean": 4.551333333339231,
+      "renderTwoP95": 6.2000000001862645,
+      "renderTwoMax": 14.899999999906868
+    },
+    {
+      "id": "sHK",
+      "steps": 300,
+      "simulationMean": 0.17899999998199442,
+      "simulationP95": 0.5,
+      "renderTwoMean": 4.424333333351339,
+      "renderTwoP95": 7.899999999906868,
+      "renderTwoMax": 13.299999999813735
+    },
+    {
+      "id": "hissatsu_2",
+      "steps": 300,
+      "simulationMean": 0.2553333333336438,
+      "simulationP95": 0.6999999997206032,
+      "renderTwoMean": 6.642666666667598,
+      "renderTwoP95": 13.700000000186265,
+      "renderTwoMax": 19.100000000093132
+    },
+    {
+      "id": "shinobibachi_3",
+      "steps": 300,
+      "simulationMean": 0.4276666666660458,
+      "simulationP95": 1.1000000000931323,
+      "renderTwoMean": 4.882666666667598,
+      "renderTwoP95": 8.5,
+      "renderTwoMax": 17.899999999906868
+    },
+    {
+      "id": "SA3",
+      "steps": 300,
+      "simulationMean": 0.6149999999968956,
+      "simulationP95": 2.2000000001862645,
+      "renderTwoMean": 5.799333333338922,
+      "renderTwoP95": 12.5,
+      "renderTwoMax": 18.40000000037253
+    }
+  ],
+  "history": [
+    {
+      "move": "sMP",
+      "maxIdenticalTimePoseDelta": 14.838539381365038
+    },
+    {
+      "move": "sHK",
+      "maxIdenticalTimePoseDelta": 14.279309070251564
+    },
+    {
+      "move": "hissatsu_0",
+      "maxIdenticalTimePoseDelta": 8.316594968409603
+    }
+  ],
+  "calls": {
+    "compose": 40202,
+    "solveAnimation": 50883,
+    "sockets": 32553
+  },
+  "label": "final-baseline-1",
+  "utc": "2026-10-05T16:03:11.570406+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "live": {
+    "cycles": 5,
+    "errors": [],
+    "rafCount": 1322,
+    "p50": 16.699999999999818,
+    "p95": 33.30000000000291,
+    "p99": 33.400000000001455,
+    "over25ms": 172,
+    "over50ms": 0,
+    "uniqueCameraTransforms": 756,
+    "clock": {
+      "ticks": 1506,
+      "callbacks": 1327,
+      "discardedSteps": 3,
+      "clampedMs": 0,
+      "pauses": 1,
+      "alpha": 0.9359999999996544,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 15.599999999994242
+    },
+    "elapsedWallSeconds": 25.00093438299973,
+    "browserMetricsDelta": {
+      "LayoutCount": 1328,
+      "RecalcStyleCount": 1328,
+      "LayoutDuration": 2.132572,
+      "RecalcStyleDuration": 2.1691219999999998,
+      "ScriptDuration": 7.554914,
+      "TaskDuration": 17.611021
+    }
+  },
+  "browserErrors": []
+}

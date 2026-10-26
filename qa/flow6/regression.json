@@ -1,0 +1,8070 @@
+{
+  "suite": "flow6-inherited-regression",
+  "capturedAt": "2026-10-04T17:47:58.085473+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "tests/ink/core.test.js"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "tests/forge/core.test.js"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "tests/flow/core.test.js"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tests/forge/regress.py"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "passed": true,
+  "results": {
+    "ink": {
+      "passed": 44,
+      "total": 44,
+      "results": [
+        {
+          "name": "Matrix inverse composes to identity",
+          "pass": true
+        },
+        {
+          "name": "Singular matrix rejected",
+          "pass": true
+        },
+        {
+          "name": "Generic skeleton composes parent/child transforms",
+          "pass": true
+        },
+        {
+          "name": "Skeleton rejects missing parent and duplicate names",
+          "pass": true
+        },
+        {
+          "name": "Skeleton rejects nonfinite/singular animated scale",
+          "pass": true
+        },
+        {
+          "name": "Two-bone IK conserves lengths on both bend sides",
+          "pass": true
+        },
+        {
+          "name": "IK unreachable and coincident target remain finite",
+          "pass": true
+        },
+        {
+          "name": "IK explicit pole produces mirrored elbow solution",
+          "pass": true
+        },
+        {
+          "name": "Negative bone length rejected",
+          "pass": true
+        },
+        {
+          "name": "Path compiler normalizes relative and shorthand commands",
+          "pass": true
+        },
+        {
+          "name": "SVG arc and incomplete path rejected explicitly",
+          "pass": true
+        },
+        {
+          "name": "Path exponent numbers are parsed as numbers",
+          "pass": true
+        },
+        {
+          "name": "Weighted skin preserves rest shape exactly",
+          "pass": true
+        },
+        {
+          "name": "Weighted skin follows translated bones",
+          "pass": true
+        },
+        {
+          "name": "Invalid weights rejected instead of corrupting paths",
+          "pass": true
+        },
+        {
+          "name": "Corrective morph interpolates compatible path shapes",
+          "pass": true
+        },
+        {
+          "name": "Corrective morph rejects topology and invalid weight",
+          "pass": true
+        },
+        {
+          "name": "Clip samples exact keys and endpoint clamps",
+          "pass": true
+        },
+        {
+          "name": "Clip sampling is referentially repeatable",
+          "pass": true
+        },
+        {
+          "name": "Clip data constructor does not retain user object references",
+          "pass": true
+        },
+        {
+          "name": "Clip validation rejects malformed timing and NaN",
+          "pass": true
+        },
+        {
+          "name": "Clip import rejects prototype pollution keys",
+          "pass": true
+        },
+        {
+          "name": "Hold/strike easing preserve animation accents",
+          "pass": true
+        },
+        {
+          "name": "Events dispatch exactly once and include first/last frame",
+          "pass": true
+        },
+        {
+          "name": "Seek neither dispatches nor retroactively replays events",
+          "pass": true
+        },
+        {
+          "name": "Hitstop freezes pose, frame and event dispatch",
+          "pass": true
+        },
+        {
+          "name": "Loop dispatches one event set per cycle",
+          "pass": true
+        },
+        {
+          "name": "Snapshot restore reproduces future poses and events",
+          "pass": true
+        },
+        {
+          "name": "State blending starts from previous pose and reaches destination",
+          "pass": true
+        },
+        {
+          "name": "Fixed-clock sim count matches at 30/60/120/144 Hz",
+          "pass": true
+        },
+        {
+          "name": "Fixed-clock caps catchup and clears background gap on reset",
+          "pass": true
+        },
+        {
+          "name": "Analytic follow-through is deterministic under reverse seek",
+          "pass": true
+        },
+        {
+          "name": "All 27 clips evaluate to finite poses at every quarter-frame",
+          "pass": true
+        },
+        {
+          "name": "Every character has at least three distinct non-identical clips",
+          "pass": true
+        },
+        {
+          "name": "Contact event and the frozen pose have the same authored frame",
+          "pass": true
+        },
+        {
+          "name": "Every authored contact dispatches on its matching pose frame",
+          "pass": true
+        },
+        {
+          "name": "Air-only dive begins airborne and finishes on the floor",
+          "pass": true
+        },
+        {
+          "name": "IK input rejects malformed coordinates and impossible margin",
+          "pass": true
+        },
+        {
+          "name": "Fixed clock rejects zero frequency, invalid step cap and NaN speed",
+          "pass": true
+        },
+        {
+          "name": "Path compiler rejects unparsed characters and missing moveto",
+          "pass": true
+        },
+        {
+          "name": "Clip rejects inherited property tracks and non-array events",
+          "pass": true
+        },
+        {
+          "name": "Mai has canonical IDs with explicit, non-ambiguous legacy mappings",
+          "pass": true
+        },
+        {
+          "name": "Authored foreshortening affects projection without changing bind lengths",
+          "pass": true
+        },
+        {
+          "name": "Clip import rejects nonfinite impulse and unsafe attachment sockets",
+          "pass": true
+        }
+      ]
+    },
+    "forge": {
+      "suite": "forge-core",
+      "total": 720,
+      "passed": 720,
+      "failures": [],
+      "tests": [
+        {
+          "name": "ryu model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "ryu/CA.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/DENJIN.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/DI.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/REV.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/blade_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/blade_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/blade_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/blade_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_10.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_11.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_8.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/follow_9.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hadoken_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hadoken_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hadoken_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hadoken_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hasho_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hasho_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hasho_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/hasho_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/idle.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/shoryu_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/shoryu_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/shoryu_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/shoryu_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/stance.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/tatsu_0.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/tatsu_1.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/tatsu_2.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/tatsu_3.json",
+          "pass": true
+        },
+        {
+          "name": "ryu/throw.json",
+          "pass": true
+        },
+        {
+          "name": "ken model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "ken/CA.json",
+          "pass": true
+        },
+        {
+          "name": "ken/DI.json",
+          "pass": true
+        },
+        {
+          "name": "ken/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "ken/REV.json",
+          "pass": true
+        },
+        {
+          "name": "ken/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "ken/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "ken/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "ken/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "ken/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/dragonlash_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/dragonlash_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/dragonlash_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/dragonlash_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_10.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_11.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_8.json",
+          "pass": true
+        },
+        {
+          "name": "ken/follow_9.json",
+          "pass": true
+        },
+        {
+          "name": "ken/hadoken_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/hadoken_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/hadoken_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/hadoken_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/idle.json",
+          "pass": true
+        },
+        {
+          "name": "ken/jinrai_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/jinrai_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/jinrai_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/jinrai_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "ken/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "ken/shoryu_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/shoryu_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/shoryu_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/shoryu_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/stance.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "ken/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "ken/tatsu_0.json",
+          "pass": true
+        },
+        {
+          "name": "ken/tatsu_1.json",
+          "pass": true
+        },
+        {
+          "name": "ken/tatsu_2.json",
+          "pass": true
+        },
+        {
+          "name": "ken/tatsu_3.json",
+          "pass": true
+        },
+        {
+          "name": "ken/throw.json",
+          "pass": true
+        },
+        {
+          "name": "chun model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "chun/CA.json",
+          "pass": true
+        },
+        {
+          "name": "chun/DI.json",
+          "pass": true
+        },
+        {
+          "name": "chun/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "chun/REV.json",
+          "pass": true
+        },
+        {
+          "name": "chun/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "chun/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "chun/bird_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/bird_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/bird_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/bird_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "chun/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "chun/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_10.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_11.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_8.json",
+          "pass": true
+        },
+        {
+          "name": "chun/follow_9.json",
+          "pass": true
+        },
+        {
+          "name": "chun/hazan_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/hazan_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/hazan_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/hazan_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/idle.json",
+          "pass": true
+        },
+        {
+          "name": "chun/kikoken_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/kikoken_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/kikoken_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/kikoken_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/legs_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/legs_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/legs_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/legs_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "chun/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "chun/stance.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "chun/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "chun/tensho_0.json",
+          "pass": true
+        },
+        {
+          "name": "chun/tensho_1.json",
+          "pass": true
+        },
+        {
+          "name": "chun/tensho_2.json",
+          "pass": true
+        },
+        {
+          "name": "chun/tensho_3.json",
+          "pass": true
+        },
+        {
+          "name": "chun/throw.json",
+          "pass": true
+        },
+        {
+          "name": "cammy model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "cammy/CA.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/DI.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/REV.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/arrow_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/arrow_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/arrow_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/arrow_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_10.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_11.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_8.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/follow_9.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/hooligan_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/hooligan_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/hooligan_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/hooligan_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/idle.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/knuckle_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/knuckle_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/knuckle_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/knuckle_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/spike_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/spike_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/spike_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/spike_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/stance.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/strike_0.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/strike_1.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/strike_2.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/strike_3.json",
+          "pass": true
+        },
+        {
+          "name": "cammy/throw.json",
+          "pass": true
+        },
+        {
+          "name": "luke model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "luke/CA.json",
+          "pass": true
+        },
+        {
+          "name": "luke/DI.json",
+          "pass": true
+        },
+        {
+          "name": "luke/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "luke/REV.json",
+          "pass": true
+        },
+        {
+          "name": "luke/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "luke/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/airflash_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/airflash_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/airflash_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/airflash_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/avenger_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/avenger_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/avenger_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/avenger_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "luke/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "luke/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "luke/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/flash_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/flash_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/flash_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/flash_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_10.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_11.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_8.json",
+          "pass": true
+        },
+        {
+          "name": "luke/follow_9.json",
+          "pass": true
+        },
+        {
+          "name": "luke/idle.json",
+          "pass": true
+        },
+        {
+          "name": "luke/rising_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/rising_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/rising_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/rising_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sand_0.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sand_1.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sand_2.json",
+          "pass": true
+        },
+        {
+          "name": "luke/sand_3.json",
+          "pass": true
+        },
+        {
+          "name": "luke/stance.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "luke/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "luke/throw.json",
+          "pass": true
+        },
+        {
+          "name": "juri model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "juri/CA.json",
+          "pass": true
+        },
+        {
+          "name": "juri/DI.json",
+          "pass": true
+        },
+        {
+          "name": "juri/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "juri/REV.json",
+          "pass": true
+        },
+        {
+          "name": "juri/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "juri/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/anken_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/anken_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/anken_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/anken_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "juri/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "juri/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "juri/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_10.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_11.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_8.json",
+          "pass": true
+        },
+        {
+          "name": "juri/follow_9.json",
+          "pass": true
+        },
+        {
+          "name": "juri/fuha_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/fuha_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/fuha_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/fuha_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/gooh_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/gooh_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/gooh_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/gooh_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/idle.json",
+          "pass": true
+        },
+        {
+          "name": "juri/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "juri/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "juri/saiha_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/saiha_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/saiha_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/saiha_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/stance.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "juri/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "juri/tensen_0.json",
+          "pass": true
+        },
+        {
+          "name": "juri/tensen_1.json",
+          "pass": true
+        },
+        {
+          "name": "juri/tensen_2.json",
+          "pass": true
+        },
+        {
+          "name": "juri/tensen_3.json",
+          "pass": true
+        },
+        {
+          "name": "juri/throw.json",
+          "pass": true
+        },
+        {
+          "name": "mai model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "mai/DI.json",
+          "pass": true
+        },
+        {
+          "name": "mai/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "mai/REV.json",
+          "pass": true
+        },
+        {
+          "name": "mai/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "mai/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "mai/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "mai/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "mai/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "mai/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "mai/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "mai/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "mai/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/chou-hissatsu-shinobi-bachi.json",
+          "pass": true
+        },
+        {
+          "name": "mai/enbu-ada-zakura-ca.json",
+          "pass": true
+        },
+        {
+          "name": "mai/enbu-ada-zakura.json",
+          "pass": true
+        },
+        {
+          "name": "mai/follow_0.json",
+          "pass": true
+        },
+        {
+          "name": "mai/follow_1.json",
+          "pass": true
+        },
+        {
+          "name": "mai/follow_4.json",
+          "pass": true
+        },
+        {
+          "name": "mai/follow_5.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hishou-ryuuenjin-heavy.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hishou-ryuuenjin-light.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hishou-ryuuenjin-medium.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hishou-ryuuenjin-od.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hissatsu-shinobi-bachi-heavy.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hissatsu-shinobi-bachi-light.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hissatsu-shinobi-bachi-medium.json",
+          "pass": true
+        },
+        {
+          "name": "mai/hissatsu-shinobi-bachi-od.json",
+          "pass": true
+        },
+        {
+          "name": "mai/idle.json",
+          "pass": true
+        },
+        {
+          "name": "mai/kachousen-heavy.json",
+          "pass": true
+        },
+        {
+          "name": "mai/kachousen-light.json",
+          "pass": true
+        },
+        {
+          "name": "mai/kachousen-medium.json",
+          "pass": true
+        },
+        {
+          "name": "mai/kachousen-od.json",
+          "pass": true
+        },
+        {
+          "name": "mai/kagerou-no-mai.json",
+          "pass": true
+        },
+        {
+          "name": "mai/midare.json",
+          "pass": true
+        },
+        {
+          "name": "mai/musasabi-no-mai-heavy.json",
+          "pass": true
+        },
+        {
+          "name": "mai/musasabi-no-mai-light.json",
+          "pass": true
+        },
+        {
+          "name": "mai/musasabi-no-mai-medium.json",
+          "pass": true
+        },
+        {
+          "name": "mai/musasabi-no-mai-od.json",
+          "pass": true
+        },
+        {
+          "name": "mai/ryuuenbu-heavy.json",
+          "pass": true
+        },
+        {
+          "name": "mai/ryuuenbu-light.json",
+          "pass": true
+        },
+        {
+          "name": "mai/ryuuenbu-medium.json",
+          "pass": true
+        },
+        {
+          "name": "mai/ryuuenbu-od.json",
+          "pass": true
+        },
+        {
+          "name": "mai/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "mai/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "mai/stance.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "mai/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "mai/throw.json",
+          "pass": true
+        },
+        {
+          "name": "iori model/rig schema",
+          "pass": true
+        },
+        {
+          "name": "iori/CA.json",
+          "pass": true
+        },
+        {
+          "name": "iori/DI.json",
+          "pass": true
+        },
+        {
+          "name": "iori/PAR.json",
+          "pass": true
+        },
+        {
+          "name": "iori/REV.json",
+          "pass": true
+        },
+        {
+          "name": "iori/RUSH.json",
+          "pass": true
+        },
+        {
+          "name": "iori/SA1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/SA2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/SA3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aHK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aHP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aLK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aLP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aMK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aMP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aoihana_0.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aoihana_1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aoihana_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/aoihana_3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/backthrow.json",
+          "pass": true
+        },
+        {
+          "name": "iori/branch_0.json",
+          "pass": true
+        },
+        {
+          "name": "iori/branch_1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/branch_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/branch_3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/branch_4.json",
+          "pass": true
+        },
+        {
+          "name": "iori/branch_5.json",
+          "pass": true
+        },
+        {
+          "name": "iori/cHK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/cHP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/cLK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/cLP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/cMK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/cMP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/follow_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/follow_3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/follow_6.json",
+          "pass": true
+        },
+        {
+          "name": "iori/follow_7.json",
+          "pass": true
+        },
+        {
+          "name": "iori/idle.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kototsuki_0.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kototsuki_1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kototsuki_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kototsuki_3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kuzukaze_0.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kuzukaze_1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kuzukaze_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/kuzukaze_3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/oniYaki_0.json",
+          "pass": true
+        },
+        {
+          "name": "iori/oniYaki_1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/oniYaki_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/oniYaki_3.json",
+          "pass": true
+        },
+        {
+          "name": "iori/sHK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/sHP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/sLK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/sLP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/sMK.json",
+          "pass": true
+        },
+        {
+          "name": "iori/sMP.json",
+          "pass": true
+        },
+        {
+          "name": "iori/stance.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-block-high.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-block-low.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-crouch.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-dash.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-down.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-drive-rush.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-hit-high.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-hit-low.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-jump.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-ko.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-land.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-parry.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-rise.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-stance.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-throw-back-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-throw-forward-sequence.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-tumble.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-walk-back.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-walk-forward.json",
+          "pass": true
+        },
+        {
+          "name": "iori/state-win.json",
+          "pass": true
+        },
+        {
+          "name": "iori/throw.json",
+          "pass": true
+        },
+        {
+          "name": "iori/yamibarai_0.json",
+          "pass": true
+        },
+        {
+          "name": "iori/yamibarai_1.json",
+          "pass": true
+        },
+        {
+          "name": "iori/yamibarai_2.json",
+          "pass": true
+        },
+        {
+          "name": "iori/yamibarai_3.json",
+          "pass": true
+        },
+        {
+          "name": "Complete bundle and manifest agree before the game boots",
+          "pass": true
+        },
+        {
+          "name": "Missing source action fails early instead of crashing during gameplay",
+          "pass": true
+        },
+        {
+          "name": "690 independent assets, 522 combat entries + 168 state/sequence assets",
+          "pass": true
+        },
+        {
+          "name": "Mai canonical names do not alias DP and ground spin",
+          "pass": true
+        },
+        {
+          "name": "retime changes all phases and does not mutate original",
+          "pass": true
+        },
+        {
+          "name": "out-of-range times rejected",
+          "pass": true
+        },
+        {
+          "name": "unsafe JSON key rejected",
+          "pass": true
+        },
+        {
+          "name": "malformed track rejects atomically",
+          "pass": true
+        },
+        {
+          "name": "mismatched action ID rejected",
+          "pass": true
+        },
+        {
+          "name": "JSON property order does not change phase validation",
+          "pass": true
+        },
+        {
+          "name": "mismatched binding phases rejected",
+          "pass": true
+        },
+        {
+          "name": "FX pool overflow is rejected instead of silently truncating effects",
+          "pass": true
+        },
+        {
+          "name": "negative FX duration rejected",
+          "pass": true
+        },
+        {
+          "name": "unknown socket rejected",
+          "pass": true
+        },
+        {
+          "name": "hit outside active frames rejected",
+          "pass": true
+        },
+        {
+          "name": "legal box stays inside active range on retime",
+          "pass": true
+        },
+        {
+          "name": "hip and head rig metadata reach runtime sockets",
+          "pass": true
+        },
+        {
+          "name": "phase map aligns contact, not total-duration proportion",
+          "pass": true
+        },
+        {
+          "name": "save affects only target move",
+          "pass": true
+        },
+        {
+          "name": "invalid project import preserves previous state",
+          "pass": true
+        },
+        {
+          "name": "failed durable save preserves previous revision",
+          "pass": true
+        },
+        {
+          "name": "all asset paths are separate JSON files",
+          "pass": true
+        }
+      ]
+    },
+    "flow": {
+      "total": 24,
+      "passed": 24,
+      "tests": [
+        {
+          "name": "Spline keyframes hit exact authored values",
+          "pass": true
+        },
+        {
+          "name": "Monotone segment never overshoots",
+          "pass": true
+        },
+        {
+          "name": "Reversing spline has bounded extremum",
+          "pass": true
+        },
+        {
+          "name": "Vector track has independent bounded coordinates",
+          "pass": true
+        },
+        {
+          "name": "Fractional frames really differ",
+          "pass": true
+        },
+        {
+          "name": "Authored full revolution is not shortest-arc collapsed",
+          "pass": true
+        },
+        {
+          "name": "Before/after track clamp at endpoint",
+          "pass": true
+        },
+        {
+          "name": "Hold retains exact earlier key until endpoint",
+          "pass": true
+        },
+        {
+          "name": "Pure sampling does not mutate keyframe input",
+          "pass": true
+        },
+        {
+          "name": "Fractional turn weights continuously sum to one",
+          "pass": true
+        },
+        {
+          "name": "Ribcage never collapses to zero-width card",
+          "pass": true
+        },
+        {
+          "name": "Head offset lags body by independently authored yaw",
+          "pass": true
+        },
+        {
+          "name": "Front/profile/back endpoints are unambiguous",
+          "pass": true
+        },
+        {
+          "name": "Opaque clipping bands exactly cover width without overlap",
+          "pass": true
+        },
+        {
+          "name": "Equivalent revolutions have same silhouette projection",
+          "pass": true
+        },
+        {
+          "name": "Shoulder projection crosses depth only at edge-on",
+          "pass": true
+        },
+        {
+          "name": "IK chains remain finite and preserve lengths at every view",
+          "pass": true
+        },
+        {
+          "name": "Seeded randomness reproducible without global RNG",
+          "pass": true
+        },
+        {
+          "name": "Different particle births have different deterministic samples",
+          "pass": true
+        },
+        {
+          "name": "Particle absent before birth and at expiry",
+          "pass": true
+        },
+        {
+          "name": "Particle analytic rewind returns exact same output",
+          "pass": true
+        },
+        {
+          "name": "Particle age uses fractional frame, not render-call count",
+          "pass": true
+        },
+        {
+          "name": "Drag reduces travel compared with zero drag",
+          "pass": true
+        },
+        {
+          "name": "Particle sample cannot alter emitter definition",
+          "pass": true
+        }
+      ]
+    },
+    "mechanics": [
+      {
+        "name": "Mai right 236+LP → kachosen_0",
+        "pass": true
+      },
+      {
+        "name": "Mai right 214+MP → hissatsu_1",
+        "pass": true
+      },
+      {
+        "name": "Mai right 623+MK → ryuenbu_1",
+        "pass": true
+      },
+      {
+        "name": "Mai right 236+HK → shinobibachi_2",
+        "pass": true
+      },
+      {
+        "name": "Mai right 236236+LP → SA1",
+        "pass": true
+      },
+      {
+        "name": "Mai right 236236+LK → SA2",
+        "pass": true
+      },
+      {
+        "name": "Mai right 214214+LP → SA3",
+        "pass": true
+      },
+      {
+        "name": "Mai left 236+LP → kachosen_0",
+        "pass": true
+      },
+      {
+        "name": "Mai left 214+MP → hissatsu_1",
+        "pass": true
+      },
+      {
+        "name": "Mai left 623+MK → ryuenbu_1",
+        "pass": true
+      },
+      {
+        "name": "Mai left 236+HK → shinobibachi_2",
+        "pass": true
+      },
+      {
+        "name": "Mai left 236236+LP → SA1",
+        "pass": true
+      },
+      {
+        "name": "Mai left 236236+LK → SA2",
+        "pass": true
+      },
+      {
+        "name": "Mai left 214214+LP → SA3",
+        "pass": true
+      },
+      {
+        "name": "Mai air 214P / 1",
+        "pass": true
+      },
+      {
+        "name": "Mai air 214P / -1",
+        "pass": true
+      },
+      {
+        "name": "Mai air SA2 / 1",
+        "pass": true
+      },
+      {
+        "name": "Mai air SA2 / -1",
+        "pass": true
+      },
+      {
+        "name": "Mai ground-only SA1 / SA3 cannot start in air",
+        "pass": true
+      },
+      {
+        "name": "SA1 creates exactly five flame stocks at activation",
+        "pass": true
+      },
+      {
+        "name": "Accepted special spends one stock, rejected input does not",
+        "pass": true
+      },
+      {
+        "name": "SA3 does not consume flame stock",
+        "pass": true
+      },
+      {
+        "name": "Round reset clears flame stock and follow window",
+        "pass": true
+      },
+      {
+        "name": "Uncharged fan has one hit, is strike-vulnerable",
+        "pass": true
+      },
+      {
+        "name": "Hold P creates a protected fan with physical bounce",
+        "pass": true,
+        "damage": 689
+      },
+      {
+        "name": "Normal fan loses to an opposing Hadoken without deleting it",
+        "pass": true
+      },
+      {
+        "name": "OD charged fan allows forward+P follow-up and two separate fans",
+        "pass": true
+      },
+      {
+        "name": "Standalone midare cannot bypass prerequisites",
+        "pass": true
+      },
+      {
+        "name": "OD Shinobi Bachi hit rebounds into an actionable airborne state",
+        "pass": true
+      },
+      {
+        "name": "Mai SA2 ignores projectile contact during its active travel",
+        "pass": true
+      },
+      {
+        "name": "Mai pillar has a bilateral, vertical hitbox; DP uses a foot",
+        "pass": true
+      },
+      {
+        "name": "ryu drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "ken drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "chun drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "cammy drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "luke drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "juri drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "mai drive meter / burnout / super cost",
+        "pass": true
+      },
+      {
+        "name": "iori drive meter / burnout / super cost",
+        "pass": true
+      }
+    ],
+    "replays": [
+      {
+        "ch": "ryu",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 500,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "ryu",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 520,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "hadoken_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 620,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "hadoken_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 720,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "hadoken_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "hadoken_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 942,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "shoryu_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 780,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "shoryu_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 880,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "shoryu_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 980,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "shoryu_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1126,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "ryu",
+        "id": "tatsu_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 689,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ryu",
+        "id": "tatsu_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 750,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "ryu",
+        "id": "tatsu_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 802,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "ryu",
+        "id": "tatsu_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 964,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "ryu",
+        "id": "blade_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "blade_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 920,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "blade_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1020,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "blade_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1172,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "ryu",
+        "id": "hasho_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 750,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "hasho_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 850,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "hasho_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "hasho_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1092,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "ryu",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1020,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 620,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 860,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ryu",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 969,
+        "activeFramesWithGeometry": 12
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_8",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1112,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_9",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1118,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_10",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1185,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "follow_11",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1295,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ryu",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2324,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "ryu",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "ryu",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "ryu",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "ryu",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ryu",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ryu",
+        "id": "DENJIN",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 440,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 720,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "ken",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 480,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "hadoken_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 560,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "hadoken_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 660,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "hadoken_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 760,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "hadoken_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 873,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "shoryu_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 810,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "shoryu_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 910,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "shoryu_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1010,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "shoryu_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1160,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "ken",
+        "id": "tatsu_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 689,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ken",
+        "id": "tatsu_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 750,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "ken",
+        "id": "tatsu_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 802,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "ken",
+        "id": "tatsu_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 964,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "ken",
+        "id": "jinrai_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 709,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ken",
+        "id": "jinrai_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 768,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "ken",
+        "id": "jinrai_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "ken",
+        "id": "jinrai_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 984,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "ken",
+        "id": "dragonlash_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "dragonlash_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1000,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "dragonlash_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1100,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "dragonlash_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1264,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "ken",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 620,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1030,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 670,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "ken",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 709,
+        "activeFramesWithGeometry": 10
+      },
+      {
+        "ch": "ken",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "ken",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ken",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "ken",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "ken",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "follow_8",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1112,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "follow_9",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1118,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "ken",
+        "id": "follow_10",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1185,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "follow_11",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1295,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "ken",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "ken",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2324,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "ken",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "ken",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "ken",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "ken",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "ken",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "ken",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 450,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 730,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "chun",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 520,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "chun",
+        "id": "kikoken_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 660,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "kikoken_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 760,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "kikoken_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 860,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "kikoken_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 988,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "legs_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 622,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "chun",
+        "id": "legs_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 687,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "chun",
+        "id": "legs_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 741,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "chun",
+        "id": "legs_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 890,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "chun",
+        "id": "bird_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 814,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "chun",
+        "id": "bird_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 870,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "chun",
+        "id": "bird_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 917,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "chun",
+        "id": "bird_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1099,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "chun",
+        "id": "tensho_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 790,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "tensho_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 890,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "tensho_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 990,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "tensho_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1138,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "chun",
+        "id": "hazan_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 870,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "hazan_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 970,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "hazan_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1070,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "hazan_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 642,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "chun",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 500,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 550,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 780,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 980,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "chun",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "chun",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "chun",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "chun",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "chun",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "chun",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "chun",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "chun",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "chun",
+        "id": "follow_8",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1112,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "follow_9",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1118,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "chun",
+        "id": "follow_10",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1185,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "chun",
+        "id": "follow_11",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1295,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "chun",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2324,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "chun",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "chun",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "chun",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "chun",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "chun",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "chun",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 440,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "cammy",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 660,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 460,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "cammy",
+        "id": "arrow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 720,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "arrow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "arrow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 920,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "arrow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1057,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "cammy",
+        "id": "spike_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 790,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "spike_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 890,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "spike_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 990,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "spike_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 594,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "cammy",
+        "id": "knuckle_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 850,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "knuckle_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "knuckle_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1050,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "knuckle_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1206,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "cammy",
+        "id": "hooligan_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 620,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "hooligan_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 720,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "hooligan_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "hooligan_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 942,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "cammy",
+        "id": "strike_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 800,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "strike_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "strike_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1000,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "strike_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 600,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 720,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 970,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 680,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 970,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1100,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 817,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_8",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1112,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_9",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1118,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_10",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1185,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "follow_11",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1295,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "cammy",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "cammy",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2324,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "cammy",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "cammy",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "cammy",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "cammy",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "cammy",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "cammy",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 540,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 910,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 540,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "sand_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 600,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "sand_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "sand_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 800,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "sand_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 919,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "rising_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "rising_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 920,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "rising_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1020,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "rising_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1172,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "luke",
+        "id": "flash_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 810,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "flash_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 910,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "flash_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1010,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "flash_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1160,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "luke",
+        "id": "avenger_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "avenger_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 800,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "avenger_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "avenger_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1034,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "luke",
+        "id": "airflash_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "luke",
+        "id": "airflash_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 840,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "airflash_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "airflash_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 564,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 660,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 940,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1240,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 620,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "luke",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 300,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "luke",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1120,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "luke",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "luke",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 817,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "luke",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "luke",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "follow_8",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1112,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "follow_9",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1118,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "luke",
+        "id": "follow_10",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1185,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "follow_11",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1295,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "luke",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2324,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "luke",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "luke",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "luke",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "luke",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "luke",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "luke",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 460,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 720,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 520,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "fuha_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 580,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "fuha_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 680,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "fuha_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 780,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "fuha_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 468,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "juri",
+        "id": "saiha_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "saiha_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 630,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "saiha_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 730,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "saiha_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 839,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "anken_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 790,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "anken_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 890,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "anken_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 990,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "anken_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1138,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "juri",
+        "id": "gooh_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 814,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "juri",
+        "id": "gooh_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 870,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "juri",
+        "id": "gooh_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 917,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "juri",
+        "id": "gooh_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1099,
+        "activeFramesWithGeometry": 14
+      },
+      {
+        "ch": "juri",
+        "id": "tensen_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 770,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "tensen_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 870,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "tensen_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 970,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "tensen_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1115,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "juri",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 640,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "juri",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 970,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 610,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 843,
+        "activeFramesWithGeometry": 10
+      },
+      {
+        "ch": "juri",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1140,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "juri",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "juri",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "juri",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 298,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "juri",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "juri",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "follow_8",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1112,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "follow_9",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1118,
+        "activeFramesWithGeometry": 11
+      },
+      {
+        "ch": "juri",
+        "id": "follow_10",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1185,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "follow_11",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1295,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "juri",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "juri",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 33
+      },
+      {
+        "ch": "juri",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "juri",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "juri",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "juri",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 265,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 480,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 800,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 265,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 475,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 680,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 460,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 265,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 475,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 685,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "kachosen_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 580,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "kachosen_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 640,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "kachosen_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 710,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "kachosen_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "ryuenbu_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 728,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "mai",
+        "id": "ryuenbu_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 823,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "mai",
+        "id": "ryuenbu_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 919,
+        "activeFramesWithGeometry": 10
+      },
+      {
+        "ch": "mai",
+        "id": "ryuenbu_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 735,
+        "activeFramesWithGeometry": 9
+      },
+      {
+        "ch": "mai",
+        "id": "hissatsu_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 680,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "mai",
+        "id": "hissatsu_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 747,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "mai",
+        "id": "hissatsu_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 843,
+        "activeFramesWithGeometry": 10
+      },
+      {
+        "ch": "mai",
+        "id": "hissatsu_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 12
+      },
+      {
+        "ch": "mai",
+        "id": "shinobibachi_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "mai",
+        "id": "shinobibachi_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 920,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "mai",
+        "id": "shinobibachi_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1020,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "mai",
+        "id": "shinobibachi_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1172,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "mai",
+        "id": "musabi_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 800,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "mai",
+        "id": "musabi_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 900,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "musabi_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "musabi_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 600,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 590,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "mai",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 253,
+        "activeFramesWithGeometry": 8
+      },
+      {
+        "ch": "mai",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 730,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 750,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 870,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "mai",
+        "id": "follow_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 785,
+        "activeFramesWithGeometry": 6
+      },
+      {
+        "ch": "mai",
+        "id": "follow_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 930,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "mai",
+        "id": "follow_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 966,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "mai",
+        "id": "follow_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1076,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "mai",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1577,
+        "activeFramesWithGeometry": 18
+      },
+      {
+        "ch": "mai",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2366,
+        "activeFramesWithGeometry": 19
+      },
+      {
+        "ch": "mai",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2740,
+        "activeFramesWithGeometry": 34
+      },
+      {
+        "ch": "mai",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3231,
+        "activeFramesWithGeometry": 34
+      },
+      {
+        "ch": "mai",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "mai",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "mai",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "mai",
+        "id": "midare",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1847,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "sLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "sMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 500,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "sHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 850,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "sLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "sMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "sHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "cLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "cMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "cHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 770,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "cLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "cMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 520,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "cHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "aLP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 280,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "aMP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 490,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "aHP",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "aLK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 320,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "aMK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "aHK",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 740,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "yamibarai_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 560,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "yamibarai_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 660,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "yamibarai_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 760,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "yamibarai_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 873,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "oniYaki_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 820,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "oniYaki_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 920,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "oniYaki_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1020,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "oniYaki_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1172,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "iori",
+        "id": "aoihana_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 420,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "iori",
+        "id": "aoihana_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 470,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "aoihana_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 520,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "aoihana_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 570,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "kototsuki_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 870,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "kototsuki_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 970,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "kototsuki_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1070,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "kototsuki_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1229,
+        "activeFramesWithGeometry": 7
+      },
+      {
+        "ch": "iori",
+        "id": "kuzukaze_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1380,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "kuzukaze_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1490,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "kuzukaze_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1600,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "kuzukaze_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1780,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "stance",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "branch_0",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 530,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "branch_1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 450,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "branch_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 840,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "branch_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 760,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "branch_4",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 610,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "branch_5",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "follow_2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 700,
+        "activeFramesWithGeometry": 3
+      },
+      {
+        "ch": "iori",
+        "id": "follow_3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1003,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "iori",
+        "id": "follow_6",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1039,
+        "activeFramesWithGeometry": 5
+      },
+      {
+        "ch": "iori",
+        "id": "follow_7",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1149,
+        "activeFramesWithGeometry": 4
+      },
+      {
+        "ch": "iori",
+        "id": "SA1",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1615,
+        "activeFramesWithGeometry": 18
+      },
+      {
+        "ch": "iori",
+        "id": "SA2",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2324,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "SA3",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 2794,
+        "activeFramesWithGeometry": 32
+      },
+      {
+        "ch": "iori",
+        "id": "CA",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 3317,
+        "activeFramesWithGeometry": 31
+      },
+      {
+        "ch": "iori",
+        "id": "throw",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1200,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "backthrow",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 1150,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "DI",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 950,
+        "activeFramesWithGeometry": 1
+      },
+      {
+        "ch": "iori",
+        "id": "REV",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 650,
+        "activeFramesWithGeometry": 2
+      },
+      {
+        "ch": "iori",
+        "id": "PAR",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      },
+      {
+        "ch": "iori",
+        "id": "RUSH",
+        "started": true,
+        "finite": true,
+        "validSVG": true,
+        "damage": 0,
+        "activeFramesWithGeometry": 0
+      }
+    ],
+    "browserErrors": []
+  }
+}

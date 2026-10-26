@@ -792,7 +792,7 @@
         [
           4,
           [
-            -783.619,
+            25.096,
             -259.281
           ],
           "linear"
@@ -800,7 +800,7 @@
         [
           6,
           [
-            -805,
+            23,
             -258
           ],
           "linear"
@@ -856,16 +856,16 @@
         [
           18,
           [
-            68.0,
-            -330.0
+            68,
+            -330
           ],
           "linear"
         ],
         [
           24,
           [
-            68.0,
-            -330.0
+            68,
+            -330
           ],
           "linear"
         ],
@@ -1107,7 +1107,13 @@
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "follow_4",
       "rootPolicy": "combat",
-      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned."
+      "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned.",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -1124,7 +1130,15 @@
       "scale": 1,
       "color": "#ef995a",
       "rotation": -75,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 4.6,
+        "size": 4.2,
+        "spread": 100,
+        "species": "ember"
+      }
     }
   ],
   "source": "migrated-atelier"

@@ -1,0 +1,42 @@
+{
+  "name": "INK FLOW · Rhythm & Finite Cancel Graph",
+  "version": "7.0.0",
+  "date": "2026-10-04",
+  "entry": "dist/INK-Street-Fighter-6.html",
+  "playerEntry": "dist/INK-Street-Fighter-6-Player.html",
+  "build": "python tools/build_forge.py",
+  "validate": "python tools/check_flow7.py",
+  "sourceBaseline": {
+    "repository": "pikapikaspeedup/SVG-jiba6",
+    "commit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+    "gameSha256": "92882d3e0a00549a8cf60e553ed1ecf25b8b51b4584eb1b0a0ffef3f400ce31c",
+    "archivedAt": "legacy/game-flow3.js"
+  },
+  "inputArchive": {
+    "name": "INK-Flow-6-Continuity-Source.zip",
+    "sha256": "8e0e8b3d81613300603a3bc38fc7f5b0efbb012095401607be1a1ea90b65fa23"
+  },
+  "githubWritten": false,
+  "scope": "Non-official 2.5D SVG fan game. No official frame-data equivalence or real-device FPS promise.",
+  "engineIteration": {
+    "productionGameSource": "game.js",
+    "runtimeSourcePatching": false,
+    "rulesVisualSeparation": true,
+    "inheritsGeometryFrom": "FLOW 06",
+    "combat": "src/ink/combat-flow.js",
+    "input": "src/ink/input.js",
+    "articulationHandoff": "src/ink/runtime.js",
+    "impacts": "src/ink/impact-feedback.js",
+    "comboStudio": "forge/rhythm.js",
+    "loopHz": 60,
+    "defaultRhythm": "weighted",
+    "defaultSpeed": 1,
+    "extraRules": "confirmed and bounded",
+    "newComboRoutes": 6,
+    "existingMoves": 690,
+    "transitionOnlyAssetUpdates": 35
+  },
+  "archiveQA": "qa/flow7/validation.json",
+  "guide": "docs/FLOW7-ENGINE.md",
+  "report": "TEST-REPORT-FLOW7.md"
+}

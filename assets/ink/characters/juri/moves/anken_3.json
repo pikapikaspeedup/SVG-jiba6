@@ -731,7 +731,7 @@
         [
           29,
           [
-            -63.773,
+            37.24,
             -276.487
           ],
           "linear"
@@ -739,7 +739,7 @@
         [
           31,
           [
-            -332.336,
+            49.007,
             -291.715
           ],
           "linear"
@@ -747,7 +747,7 @@
         [
           33,
           [
-            -613.138,
+            61.31,
             -307.637
           ],
           "linear"
@@ -755,7 +755,7 @@
         [
           34,
           [
-            -707.135,
+            65.429,
             -312.966
           ],
           "linear"
@@ -763,23 +763,23 @@
         [
           35,
           [
-            -743.0,
-            -315.0
+            67,
+            -315
           ],
           "linear"
         ],
         [
           41,
           [
-            -743.0,
-            -315.0
+            67,
+            -315
           ],
           "linear"
         ],
         [
           48,
           [
-            -258.103,
+            72.329,
             -265.859
           ],
           "linear"
@@ -1045,7 +1045,13 @@
       "kind": "overhead",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "anken_3",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -1062,7 +1068,15 @@
       "scale": 1,
       "color": "#c68ee0",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 5.6,
+        "size": 2.4,
+        "spread": 65,
+        "species": "shard"
+      }
     }
   ],
   "source": "migrated-atelier"

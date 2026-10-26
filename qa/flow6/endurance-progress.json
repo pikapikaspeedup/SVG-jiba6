@@ -1,0 +1,47 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 2926\noom 2\noom_kill 2\noom_group_kill 0\n",
+    "memoryEventsAfter": "low 0\nhigh 0\nmax 2926\noom 2\noom_kill 2\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 1200,
+  "startedAt": "2026-10-04T17:30:04.787164+00:00",
+  "htmlSha256": "6111dc8cf2ce08933018ebb79d3ca72e02a1e5a5c1f219f498ed7a28303e582f",
+  "status": "passed",
+  "description": "FLOW 06: one continuously rendered real Chromium tab; primarily Mai, mirrored routes, continuous skeleton inspector and legacy engine inspector, FX presets, scrubbing and pause checks. FPS is not a hardware guarantee.",
+  "finishedAt": "2026-10-04T17:50:08.112538+00:00",
+  "elapsedWallSeconds": 1200.573,
+  "completedRoutes": 246,
+  "final": {
+    "cycles": 246,
+    "raf": 62343,
+    "errors": [],
+    "maxParticles": 318,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 16730,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "inspections": 59,
+    "pausedChecks": 39,
+    "views": 84,
+    "next": 0,
+    "lastStatus": "running",
+    "mode": "battle",
+    "lastClock": 60542
+  },
+  "finalHeap": {
+    "usedSize": 26197568,
+    "totalSize": 30187520,
+    "embedderHeapUsedSize": 25113736,
+    "backingStorageSize": 4054373
+  },
+  "finalDOM": {
+    "documents": 1,
+    "nodes": 44873,
+    "jsEventListeners": 312
+  },
+  "browserErrors": []
+}

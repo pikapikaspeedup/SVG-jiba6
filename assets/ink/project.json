@@ -1,9 +1,9 @@
 {
   "schema": "ink-project",
   "version": 2,
-  "name": "INK / Street Fighter 6",
-  "build": "2.0.0",
-  "baseCommit": "fcf9890c6f3810c919890ae6ec42fbfdae4a5c1b",
+  "name": "INK FLOW 09 / Fluid Motion & Stable Camera",
+  "build": "9.0.0",
+  "baseCommit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
   "rootPolicy": "combat",
   "characters": [
     {

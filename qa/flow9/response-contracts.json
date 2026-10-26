@@ -1,0 +1,260 @@
+{
+  "suite": "flow8-engine-browser-contracts",
+  "capturedAt": "2026-10-05T16:12:32.123265+00:00",
+  "htmlSha256": "bf92d74c4871b42e2c7eb96b050ea7248346a804873ac5b6f0504c3571728f69",
+  "passed": 44,
+  "total": 44,
+  "browserErrors": [],
+  "rows": [
+    {
+      "name": "Walk pose has five independent subframe samples without touching physics",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Jump apex interpolates velocity-driven pose",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Intentionally held jump-rise remains held (not artificially oscillated)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Landing time and its response interpolate together",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Landing secondary chains share the same subframe view as the body",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid setting is rejected atomically",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Negative/NaN interpolation requests never mutate a fighter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Projectile translation AND fan rotation interpolate and remain rule-pure",
+      "pass": true,
+      "detail": {
+        "positionSamples": 5,
+        "rotationSamples": 5
+      }
+    },
+    {
+      "name": "Frozen projectile is identical across rendering fractions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "State transition captures evaluated pose, not corrupted last render cache",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Landing signal is simulation-owned and preserves landing lock",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Spring secondary response is deterministically seekable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Ground impact with FX disabled creates neither legacy nor pooled particles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Afterimage uses real evaluated socket geometry, not stale legacy parts",
+      "pass": true,
+      "detail": {
+        "comparedCoordinates": 24
+      }
+    },
+    {
+      "name": "Afterimage renderer pool is strictly bounded and overload is reported",
+      "pass": true,
+      "detail": {
+        "captures": 6,
+        "peak": 6,
+        "dropped": 30,
+        "groundContacts": 0,
+        "capacity": 6,
+        "retained": 6,
+        "active": 6
+      }
+    },
+    {
+      "name": "Already alive afterimages hide immediately when FX is disabled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reduced-motion mode suppresses all afterimages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Camera displacement holds exactly through pause and disappears with FX off",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Scene reset releases retained silhouettes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Real jump record round-trips solved joints exactly",
+      "pass": true,
+      "detail": {
+        "frames": 111,
+        "events": 4
+      }
+    },
+    {
+      "name": "Real walk record round-trips solved joints exactly",
+      "pass": true,
+      "detail": {
+        "frames": 111,
+        "events": 4
+      }
+    },
+    {
+      "name": "Real knockdown record round-trips solved joints exactly",
+      "pass": true,
+      "detail": {
+        "frames": 176,
+        "events": 8
+      }
+    },
+    {
+      "name": "Real combo record round-trips solved joints exactly",
+      "pass": true,
+      "detail": {
+        "frames": 252,
+        "events": 23
+      }
+    },
+    {
+      "name": "Production renderer and recorded integer pose agree after a real hit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reviewing any frame never advances combat or mutates meters/HP",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Random seek reproduces same SVG surface geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: missing torso channel",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: mid-record actor swap",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: schema version",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: unknown top-level field",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: non-finite pose",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: missing joint angles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: singular depth",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: non-integer direction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: unbound character",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: reversed frames",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: oversized frame array",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: untrusted expression",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Atomic replay rejection: extra actor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Safe inert text survives JSON import without inserting markup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Prototype-pollution keys are rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "8 MB input limit is enforced before JSON parsing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "600-frame ring buffer evicts old frames and old bookmarks",
+      "pass": true,
+      "detail": {
+        "frames": 600,
+        "totalCaptured": 636
+      }
+    },
+    {
+      "name": "Explicit reset stops recording without discarding the last useful record",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "roundtripCoordinates": 3472,
+  "maxAngleError": 1.1368683772161603e-13
+}

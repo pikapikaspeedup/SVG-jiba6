@@ -1,0 +1,1963 @@
+{
+  "capturedAt": "2026-10-04T10:27:41.132681+00:00",
+  "total": 26,
+  "passed": 26,
+  "tests": [
+    {
+      "rid": "mai-confirm",
+      "side": 1,
+      "buffer": 0,
+      "lead": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        25,
+        37
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 17,
+          "expires": 17,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 25,
+          "expires": 25,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 37,
+          "expires": 37,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": 1,
+      "buffer": 0,
+      "lead": 2,
+      "status": "failed",
+      "hits": 5,
+      "damage": 2047,
+      "cursor": 4,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        23,
+        35
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 10,
+          "status": "early"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 23,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 35,
+          "expires": 35,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.122,
+        "super": 3
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": 1,
+      "buffer": 3,
+      "lead": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        25,
+        37
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 17,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 25,
+          "expires": 28,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 37,
+          "expires": 40,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": 1,
+      "buffer": 3,
+      "lead": 2,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        23,
+        35
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 26,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 26,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 38,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 38,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": 1,
+      "buffer": 6,
+      "lead": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        25,
+        37
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 17,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 25,
+          "expires": 31,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 37,
+          "expires": 43,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": 1,
+      "buffer": 6,
+      "lead": 2,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        23,
+        35
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 29,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 29,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 41,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 41,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": -1,
+      "buffer": 0,
+      "lead": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        25,
+        37
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 17,
+          "expires": 17,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 25,
+          "expires": 25,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 37,
+          "expires": 37,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": -1,
+      "buffer": 0,
+      "lead": 2,
+      "status": "failed",
+      "hits": 5,
+      "damage": 2047,
+      "cursor": 4,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        23,
+        35
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 10,
+          "status": "early"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 23,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 35,
+          "expires": 35,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.122,
+        "super": 3
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": -1,
+      "buffer": 3,
+      "lead": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        25,
+        37
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 17,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 25,
+          "expires": 28,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 37,
+          "expires": 40,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": -1,
+      "buffer": 3,
+      "lead": 2,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        23,
+        35
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 26,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 26,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 38,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 38,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": -1,
+      "buffer": 6,
+      "lead": 0,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        25,
+        37
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 17,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 25,
+          "expires": 31,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 37,
+          "expires": 43,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-confirm",
+      "side": -1,
+      "buffer": 6,
+      "lead": 2,
+      "status": "success",
+      "hits": 11,
+      "damage": 3354,
+      "cursor": 5,
+      "expectedHits": 11,
+      "expectedDamage": 3354,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        23,
+        35
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "sMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 29,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "hissatsu_3",
+          "frame": 23,
+          "expires": 29,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 41,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "SA3",
+          "frame": 35,
+          "expires": 41,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": 1,
+      "buffer": 0,
+      "lead": 0,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        42,
+        46,
+        77
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 17,
+          "expires": 17,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 42,
+          "expires": 42,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 46,
+          "expires": 46,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 77,
+          "expires": 77,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": 1,
+      "buffer": 0,
+      "lead": 2,
+      "status": "failed",
+      "hits": 1,
+      "damage": 800,
+      "cursor": 3,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        40,
+        44,
+        75
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 10,
+          "status": "early"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 40,
+          "expires": 40,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 3,
+        "super": 3
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": 1,
+      "buffer": 3,
+      "lead": 0,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        42,
+        46,
+        77
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 17,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 42,
+          "expires": 45,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 46,
+          "expires": 49,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 77,
+          "expires": 80,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": 1,
+      "buffer": 3,
+      "lead": 2,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        40,
+        44,
+        75
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 43,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 43,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 47,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 47,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 78,
+          "status": "buffered"
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 78,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": 1,
+      "buffer": 6,
+      "lead": 0,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        42,
+        46,
+        77
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 17,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 42,
+          "expires": 48,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 46,
+          "expires": 52,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 77,
+          "expires": 83,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": 1,
+      "buffer": 6,
+      "lead": 2,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        40,
+        44,
+        75
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 46,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 46,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 50,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 50,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 81,
+          "status": "buffered"
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 81,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": -1,
+      "buffer": 0,
+      "lead": 0,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        42,
+        46,
+        77
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 12,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 17,
+          "expires": 17,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 42,
+          "expires": 42,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 46,
+          "expires": 46,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 77,
+          "expires": 77,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": -1,
+      "buffer": 0,
+      "lead": 2,
+      "status": "failed",
+      "hits": 1,
+      "damage": 800,
+      "cursor": 3,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        40,
+        44,
+        75
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 0,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 10,
+          "status": "early"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 15,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 40,
+          "expires": 40,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 3,
+        "super": 3
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": -1,
+      "buffer": 3,
+      "lead": 0,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        42,
+        46,
+        77
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 15,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 17,
+          "expires": 20,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 42,
+          "expires": 45,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 46,
+          "expires": 49,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 77,
+          "expires": 80,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": -1,
+      "buffer": 3,
+      "lead": 2,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        40,
+        44,
+        75
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 3,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 13,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 43,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 43,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 47,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 47,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 78,
+          "status": "buffered"
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 78,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": -1,
+      "buffer": 6,
+      "lead": 0,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "first legal window",
+      "schedule": [
+        0,
+        12,
+        17,
+        42,
+        46,
+        77
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 12,
+          "expires": 18,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 17,
+          "expires": 23,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 42,
+          "expires": 48,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 46,
+          "expires": 52,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 77,
+          "expires": 83,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "rid": "mai-extended",
+      "side": -1,
+      "buffer": 6,
+      "lead": 2,
+      "status": "success",
+      "hits": 14,
+      "damage": 3375,
+      "cursor": 6,
+      "expectedHits": 14,
+      "expectedDamage": 3375,
+      "timing": "two frames before reference step",
+      "schedule": [
+        0,
+        10,
+        15,
+        40,
+        44,
+        75
+      ],
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "buffered"
+        },
+        {
+          "cursor": 1,
+          "move": "RUSH",
+          "frame": 10,
+          "expires": 16,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "buffered"
+        },
+        {
+          "cursor": 2,
+          "move": "cMP",
+          "frame": 15,
+          "expires": 21,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 46,
+          "status": "buffered"
+        },
+        {
+          "cursor": 3,
+          "move": "sLP",
+          "frame": 40,
+          "expires": 46,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 50,
+          "status": "buffered"
+        },
+        {
+          "cursor": 4,
+          "move": "hissatsu_3",
+          "frame": 44,
+          "expires": 50,
+          "status": "accepted",
+          "delay": 3
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 81,
+          "status": "buffered"
+        },
+        {
+          "cursor": 5,
+          "move": "SA3",
+          "frame": 75,
+          "expires": 81,
+          "status": "accepted",
+          "delay": 3
+        }
+      ],
+      "remaining": {
+        "drive": 1.2220000000000002,
+        "super": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "Held G repeats do not auto-request a second step",
+      "cursor": 1,
+      "inputs": [
+        {
+          "cursor": 0,
+          "move": "sHP",
+          "frame": 0,
+          "expires": 6,
+          "status": "accepted",
+          "delay": 0
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "G while editing a focused setting does not start a move",
+      "cursor": 0,
+      "inputs": [],
+      "pass": true
+    }
+  ],
+  "htmlSha256": "25a726b1fbe3e9f9c13810f09bfdee365004609fc9f7330ec42942311c77ca86",
+  "browserErrors": [],
+  "note": "Complete Mai routes through DOM G keyboard events. Early strict-mode cases intentionally fail to complete; a pass means the game rejected rather than auto-playing. Timings are simulation-controlled test schedules, not human reaction-time measurements."
+}

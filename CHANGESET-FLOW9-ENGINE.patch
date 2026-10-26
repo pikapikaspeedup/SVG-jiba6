@@ -1,0 +1,866 @@
+--- a/OPEN-ME.html
++++ b/OPEN-ME.html
+@@ -1,3 +1,3 @@
+-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 08 · 打开游戏</title><style>
++<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 09 · 打开游戏</title><style>
+ :root{color-scheme:dark;--bg:#141d20;--panel:#20332e;--ink:#e9e6d8;--muted:#a2b2a5;--edge:#40594c;--accent:#f2b882}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.8}main{max-width:1120px;margin:auto;padding:54px 28px 70px}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--edge)}.brand{font-size:26px;font-weight:800}.tag{font-size:12px;letter-spacing:.18em;color:var(--accent)}h1{font-size:clamp(32px,6vw,64px);line-height:1.25;margin:46px 0 20px}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 18px;color:var(--muted)}.lead{max-width:750px;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 40px}a{color:var(--accent);text-decoration:none}.btn{display:inline-block;padding:13px 23px;border:1px solid var(--edge);border-radius:4px;font-weight:600}.primary{background:var(--accent);color:#1c2524}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:24px;background:var(--panel);border:1px solid var(--edge);border-radius:5px}.number{font-size:12px;color:var(--accent);letter-spacing:.2em}.card p{font-size:14px;margin:0}.note{padding:24px;border-left:3px solid var(--accent);margin:32px 0;background:#1d2a29}.note strong{color:var(--ink)}code{color:var(--ink);overflow-wrap:anywhere;font-size:.94em}.foot{border-top:1px solid var(--edge);padding-top:26px;margin-top:34px;font-size:13px;color:var(--muted)}@media(max-width:740px){main{padding:25px 18px}.grid{grid-template-columns:1fr}header{align-items:flex-start;gap:12px}.tag{max-width:190px;text-align:right}.actions{margin-bottom:25px}.card{padding:20px}}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+-</style></head><body><main><header><div class="brand">INK / FLOW <sup>08</sup></div><div class="tag">RESPONSE &amp; SOLVED POSE REPLAY</div></header><div class="tag" style="margin-top:38px">动作接续，细节可复现。</div><h1>每次落地，都有回应。</h1><p class="lead">统一运动采样，接续落地、受击和起身。录下真正的实战姿态，逐帧查看、导出和分享；保留既有自由连段与节奏工坊。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow8/flow8-comparison.mp4">观看原始 v7 / v8 对照</a></div><div class="grid"><section class="card"><div class="number">01 / COMPOSE</div><h2>先看实战动作回放</h2><p>首页进入「打开实战动作回放」，生成跳跃或真实扫腿场景。观察落地、倒地和起身，拖动到小数帧；不是预制姿势轮播。</p></section><section class="card"><div class="number">02 / FEEL</div><h2>调强弱拍，也能整体慢放</h2><p>默认「重心节奏 · 1.00×」。需要更从容时选择 0.85×，两位角色一起降速。停顿风格不是速度倍率，也不标榜官方游戏的帧数据。</p></section><section class="card"><div class="number">03 / PRACTICE</div><h2>记录自己的连段</h2><p>在对战中点击「录制实战姿态」，完成操作后再次点击查看。保存最近 600 模拟步，逐帧、倒拖、事件定位和独立 JSON 导入导出。</p></section></div><section class="note"><strong>先保留旧工程，再体验新版资产。</strong><p>v8 使用独立存储，不自动覆盖 v7。旧工程导入会替换同名资产，请先备份；浏览器提示不能存储时，关闭前导出工程或游戏 HTML。玩家版隐藏编辑入口，不是权限隔离。</p><p style="margin:0">文件名仍保留原来的 <code>INK-Street-Fighter-6.html</code> 构建路径，页面与内嵌引擎已经是 FLOW 08。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow8.py</code><br>完整使用说明：README.md · 引擎合同：docs/FLOW8-ENGINE.md · 本轮验收：TEST-REPORT-FLOW8.md<br>非官方 SVG 同人格斗娱乐作品。2.5D 表现、手机视口模拟；不承诺官方节奏等价或任意设备帧率。</div></main></body></html>
+\ No newline at end of file
++</style></head><body><main><header><div class="brand">INK / FLOW <sup>09</sup></div><div class="tag">FLUID MOTION &amp; STABLE STAGE</div></header><div class="tag" style="margin-top:38px">同一时刻，同一姿态。</div><h1>动作向前，背景安定。</h1><p class="lead">消除首绘回跳，按需编译骨架，共享真实挂点。默认固定舞台、不震屏；将有意停顿和真实掉帧分开检查。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow9/flow9-comparison.mp4">查看 v8 / v9 同场景对照</a></div><div class="grid"><section class="card"><div class="number">01 / STABLE</div><h2>先看背景是否安定</h2><p>默认「稳定舞台」，不随出招轮廓缩放，也不响应命中震屏。需要跟随时主动选择「柔和跟随」。原特写按钮属于主动镜头设置。</p></section><section class="card"><div class="number">02 / FLUID</div><h2>停顿和速度分别调整</h2><p>默认连贯节奏、1×、完整特效。旧重心停顿可选；需要更舒缓时单独选择 0.85×。没有为了提高性能默认减少粒子或跳过骨架帧。</p></section><section class="card"><div class="number">03 / MEASURE</div><h2>用真实连段检查</h2><p>首页打开「稳镜与流畅诊断」并运行舞的实战连段。面板不暂停战斗，可查看真实回调、引擎 CPU 和命中定格，并导出诊断 JSON。</p></section></div><section class="note"><strong>旧个人工程先备份。</strong><p>v9 使用独立存储，不自动覆盖 v8。离线浏览器不能持久化时，请导出独立 HTML 保存设置。原有动作工坊、连段编排和实战姿态回放继续保留。</p><p style="margin:0">构建产物沿用原路径 <code>INK-Street-Fighter-6.html</code>，页面与内嵌引擎为 FLOW 09。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow9.py</code><br>说明：docs/FLOW9-ENGINE.md · 计划：docs/FLOW9-PLAN.md · 本轮验收：TEST-REPORT-FLOW9.md<br>非官方 SVG 同人格斗娱乐作品，仍是 2.5D；无官方节奏等价或任意设备帧率保证。</div></main></body></html>
+--- a/README-FLOW.md
++++ b/README-FLOW.md
+@@ -1,3 +1,12 @@
++<!-- FLOW9-CURRENT -->
++# INK FLOW 09 · 稳镜与流畅动作
++
++当前入口：`dist/INK-Street-Fighter-6.html`；玩家版：`dist/INK-Street-Fighter-6-Player.html`。构建：`python tools/build_forge.py`。验证：`python tools/check_flow9.py --evidence --require-soak`。
++
++本轮说明：[使用与引擎合同](docs/FLOW9-ENGINE.md) · [计划](docs/FLOW9-PLAN.md) · [验收](TEST-REPORT-FLOW9.md)。默认稳定镜头、连贯停顿、1×、完整特效；旧重心停顿可选。新版存储独立，旧个人编辑请先备份。`qa/flow9` 是本轮记录，以下历史说明仅保留追溯。
++
++---
++
+ # FLOW 08
+ 
+ 当前版本说明请先阅读 `README.md`、`docs/FLOW8-ENGINE.md` 和 `TEST-REPORT-FLOW8.md`。旧版本说明保留在 legacy 与相应版本文档中，不代表本轮验收。
+--- a/README.md
++++ b/README.md
+@@ -1,3 +1,12 @@
++<!-- FLOW9-CURRENT -->
++# INK FLOW 09 · 稳镜与流畅动作
++
++当前入口：`dist/INK-Street-Fighter-6.html`；玩家版：`dist/INK-Street-Fighter-6-Player.html`。构建：`python tools/build_forge.py`。验证：`python tools/check_flow9.py --evidence --require-soak`。
++
++本轮说明：[使用与引擎合同](docs/FLOW9-ENGINE.md) · [计划](docs/FLOW9-PLAN.md) · [验收](TEST-REPORT-FLOW9.md)。默认稳定镜头、连贯停顿、1×、完整特效；旧重心停顿可选。新版存储独立，旧个人编辑请先备份。`qa/flow9` 是本轮记录，以下历史说明仅保留追溯。
++
++---
++
+ # INK FLOW 08 · 动作响应与实战姿态回放
+ 
+ 基于用户提供的 FLOW 07，继续修复实际运行中的动作与特效问题。本版没有新增伤害、判定、硬直或免费资源，也没有再新增一批预制连段：707 份既有动作／模型／骨架／连段 JSON 与 v7 逐字节一致，其中包含 690 份动作和 22 条路线。新代码处理的是同一招式在显示帧之间如何运动、状态变化时怎样接续，以及场景特效如何共享暂停和冻结。
+--- a/VERSION.json
++++ b/VERSION.json
+@@ -1,11 +1,11 @@
+ {
+-  "name": "INK FLOW · Response & Solved Pose Replay",
+-  "version": "8.0.0",
++  "name": "INK FLOW · Fluid Motion & Stable Stage",
++  "version": "9.0.0",
+   "date": "2026-10-05",
+   "entry": "dist/INK-Street-Fighter-6.html",
+   "playerEntry": "dist/INK-Street-Fighter-6-Player.html",
+   "build": "python tools/build_forge.py",
+-  "validate": "python tools/check_flow8.py",
++  "validate": "python tools/check_flow9.py",
+   "sourceBaseline": {
+     "repository": "pikapikaspeedup/SVG-jiba6",
+     "commit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+@@ -13,8 +13,8 @@
+     "archivedAt": "legacy/game-flow3.js"
+   },
+   "inputArchive": {
+-    "name": "INK-Flow-7-Rhythm-Source.zip",
+-    "sha256": "098cc759ac84aec70cc9e442823b9b6b937158472947500c672d7b8631161d77"
++    "name": "INK-Flow-8-Response-Source.zip",
++    "sha256": "8c3308af282c966eba23330582290e61cc03d8608599bab39f97731bc365ede7"
+   },
+   "githubWritten": false,
+   "scope": "Non-official 2.5D SVG fan game. No official frame-data equivalence or real-device FPS promise.",
+@@ -34,9 +34,18 @@
+     "replayMeaning": "Solved visual poses, not input resimulation",
+     "afterimageCapacity": 6,
+     "moveAssetChanges": 0,
+-    "comboRouteChanges": 0
++    "comboRouteChanges": 0,
++    "viewport": "src/ink/viewport.js",
++    "diagnostics": "src/ink/frame-probe.js",
++    "inspector": "forge/fluid.js",
++    "jointCompilation": "deterministic prefix-lazy 240Hz",
++    "springCompilation": "deterministic prefix-lazy 120Hz",
++    "socketHistoryCapacityPerSocket": 96,
++    "defaultRhythm": "fluid",
++    "defaultViewport": "stable",
++    "defaultSpeed": 1
+   },
+-  "archiveQA": "qa/flow8/validation.json",
+-  "guide": "docs/FLOW8-ENGINE.md",
+-  "report": "TEST-REPORT-FLOW8.md"
++  "archiveQA": "qa/flow9/validation.json",
++  "guide": "docs/FLOW9-ENGINE.md",
++  "report": "TEST-REPORT-FLOW9.md"
+ }
+--- a/assets/ink/project.json
++++ b/assets/ink/project.json
+@@ -1,8 +1,8 @@
+ {
+   "schema": "ink-project",
+   "version": 2,
+-  "name": "INK FLOW 08 / Response & Solved Pose Replay",
+-  "build": "8.0.0",
++  "name": "INK FLOW 09 / Fluid Motion & Stable Camera",
++  "build": "9.0.0",
+   "baseCommit": "87a945f48e8b789ed4ad07c7ba53c254120fb2d1",
+   "rootPolicy": "combat",
+   "characters": [
+--- /dev/null
++++ b/docs/FLOW9-ENGINE.md
+@@ -0,0 +1,60 @@
++# FLOW 09：稳镜与流畅动作
++
++## 打开与设置
++
++直接打开 `dist/INK-Street-Fighter-6.html`（创作版）或 `dist/INK-Street-Fighter-6-Player.html`（玩家版）。两者均为自包含文件，不依赖在线脚本。首页与实战顶部都有「稳镜与流畅」入口。个人设置优先保存在本浏览器；浏览器限制本地存储时，导出独立 HTML 才能携带设置。
++
++默认：稳定舞台 / 连贯节奏 / 1× / 完整特效。默认不是降低画质。稳定舞台的相机矩阵恒等，出招、命中、超级必杀均不会挪动或缩放背景。柔和跟随明确允许相机随角色根位置缓慢移动，但不响应肢体伸展和命中震屏。原「特写」按钮是独立的主动选择，会覆盖普通镜头模式；重新选择稳定舞台即可退出特写。
++
++连贯节奏减少反复命中定格，会改变一条连段消耗的现实时间，但不修改招式的动作帧数或取消规则。重心节奏保留 v8 的停顿；v6 原始停顿也可选择。感觉节奏太密集时可以单独选择 0.85×，不会暗中自动调速。
++
++诊断面板不暂停实战：显示最近最多 600 个实际回调、回调间隔 P95、引擎 CPU P95、超过 25 ms 的回调次数及有意命中定格步数。P95 为该窗口 95% 样本不超过的数值。浏览器与系统调度、页面布局绘制也会影响回调间隔；CPU 项仅测游戏主循环中的同步工作，不是整台机器的 CPU 使用率。打开面板本身也有界面开销。导出 JSON 包含样本与设置，不包含输入录像或硬件认证。
++
++## 引擎改造
++
++### 1. 模拟端拥有时间与冻结
++
++`presentation-clock.js` 保存前后模拟状态，`game.js` 根据相同 alpha 求值，不再以「这一招是否第一次画」决定能否插值。`bindControl()` 将对 `G.paused` 的直接写入统一成暂停边界，进入暂停时记录冻结令牌；真实主循环的 `boundary()` 处理恢复、场景与可见性边界。冻结结束时不会因为此前少画了一帧而反向跳姿。
++
++基础待机、动作层、非攻击附件读取同一角色时间。菜单预览则明确使用预览时钟。确定性合同指相同模拟状态及给定时间的姿态输出，不代表 SVG 渲染不会更新缓存、节点或展示用字段。
++
++### 2. 按需编译与共享几何
++
++`articulation.js` 仍按 0.25 个动作帧（240 Hz）求解角度，`secondary-dynamics.js` 仍按 0.5 帧（120 Hz）积分弹簧。缓存按请求帧向前扩展，不在第一次出招时阻塞计算整段 SA3。顺序与原完整烘焙一致，反向查看已构建部分不重新积分；编辑修订会使旧缓存失效。
++
++连续皮肤的中心线一次采样，共享给主轮廓、光与阴影。没有可见带的躯干侧面不重复变形；隐藏着色层不生成无用路径。坐标串行化减少临时数组。HUD 仅在值真正变化时写文本和属性。
++
++骨架仍完整采样，没有增大关节步长、跳过人物帧或以隐藏部件提升数字。旧版热路径调查中未发现同步 `getBBox/getCTM/getBoundingClientRect` 读取，因此不能把这些改善包装成「修复强制回流」；实际优化是求值、字符串构造和冗余节点写入。
++
++### 3. 世界挂点与镜头解耦
++
++`effects.js` 在模拟时记录动作实际求出的世界挂点，每条挂点历史最多 96 个半帧样本。渲染拖尾通过二分查找读取、插值，再转回当前渲染局部空间，不用当前身体重算整段过去。原有世界粒子与带状轨迹生命周期保留。
++
++编辑器没有实战历史，仍用可重建的采样路径；旧历史超出窗口也有受限回退。特效长时间关闭后开启，只补有限窗口，不重放整场。采样共享机制和默认完整粒子密度参与性能基准。
++
++`viewport.js` 的稳定模式输出精确恒等矩阵。跟随模式只读取插值根位置，并有死区、最大 dt 与指数平滑，冻结时保持相机；不再使用头、腕、踝的瞬时包围盒控制镜头。
++
++## 兼容与测试
++
++正式入口仍为 `SVG_FIGHTER`、`INKForge`；690 份动作、16 份模型/骨架与路线库共 707 个原始资产文件逐字节保留。共享命中停顿配置增添 `fluid`，原 `weighted` 和 `legacy` 未删改。个人旧工程请备份后选择性导入；新版本使用 `ink-flow-sf6-v9` 独立空间。
++
++```sh
++python tools/build_forge.py
++python tools/check_flow9.py
++# 浏览器测试需要 Python Playwright 与可执行 Chromium；构建本身只需 Python 标准库。
++python tests/flow9/contracts.py
++python tests/flow9/rhythm-matrix.py
++python tests/flow9/final-regressions.py
++python tests/flow9/ui.py
++python tests/flow9/portability.py
++python tests/flow9/benchmark.py --baseline --seconds 25 --label local-old
++python tests/flow9/benchmark.py --seconds 25 --label local-new
++python tests/flow9/endurance.py --seconds 1500
++python tools/check_flow9.py --evidence --require-soak
++```
++
++性能基准必须独立顺序运行，不能与压力测试并行。继承的旧 QA 保留用于追溯，只有 `qa/flow9` 中明确绑定当前 HTML SHA-256 的记录才是这轮执行证据。具体结果、初期失败与验证限制见 `TEST-REPORT-FLOW9.md`。
++
++## 已知限制
++
++仍然是 2.5D SVG，换边镜像、双人投技等未在本轮重写。减少渲染 CPU 不保证所有电脑、手机或内嵌浏览器都流畅。手机测试为模拟视口和触摸，不是真机认证。首跳到动作末尾仍需构建前缀；这是编辑器随机跳帧的工作，不应当与首次正常出招开销混为一谈。稳定镜头不等于关闭人物受击位移、火焰、地面冲击或有意命中定格。
+--- /dev/null
++++ b/docs/FLOW9-PLAN.md
+@@ -0,0 +1,21 @@
++# FLOW 09 迭代计划与验收边界
++
++起点：用户提供的 FLOW 08 原始源码与 HTML。目标不是提高版本号或堆叠装饰效果，而是回答「为什么卡」「为什么背景晃」「怎么证明确实改善」。
++
++## 三个关键问题
++
++1. 时间所有权混乱：首绘与复绘选择了不同的插值路径；命中定格是否绘制过会影响后续输出；待机和动作图各用不同时间。目标是相同模拟状态、相同小数时间得到相同姿态，冻结、暂停、恢复不依赖绘制历史。
++2. 关键路径重复工作：第一帧整段烘焙，多个轮廓重复采样，隐藏侧面仍变形，特效反复重建历史骨架。目标是按需确定性前缀计算，共享曲面与真实挂点，不降低骨架采样率、不跳人物帧，不默认减少粒子来伪装性能提升。
++3. 反馈与视图耦合：镜头跟随瞬时手脚边界伸缩、位移，加上命中震屏；有意停顿和浏览器错过刷新混在一起。目标是默认舞台完全固定，柔和跟随仅为明确选项，停顿、整体速度与效果独立控制，并记录真实回调诊断。
++
++## 落地范围
++
++正式 game.js、运行时、骨架前缀编译、曲面生成、特效历史、镜头和工坊设置均直接修改并进入正式构建。不通过构建时字符串注入覆盖战斗函数。保留 690 份动作及 22 条路线，原判定、资源和取消条件不变；默认命中停顿改为明确标注的 fluid 档，旧 weighted/legacy 保留，整体速度默认仍为 1×。
++
++## 验收
++
++复现原版缺陷；全角色双向同帧重画；暂停及跳过冻结帧；顺播/倒拖前缀与完整烘焙等值；真实扇尖历史；关闭/重新打开特效的容量边界；固定镜头整段不变；全路线三种节奏与开关特效对照；旧战斗回归；桌面与移动视口、独立 HTML 导出；相同旧节奏和完整粒子密度的独立性能对照；最终构建真实持续运行；最终 ZIP 逐文件及解压重建验证。
++
++## 不宣称的内容
++
++不宣称变成 3D 引擎、所有动作都完美、不宣称官方节奏等价，也不保证用户设备达到某一帧率。浏览器回调间隔不是显示器实测呈现延迟；首招计时受到当前运行环境和缓存影响。对照视频是固定时钟采样的视觉证据，不作为 FPS 测试。真实帧间隔来自单独无并行浏览器负载的 rAF 基准。
+--- /dev/null
++++ b/forge/fluid.css
+@@ -0,0 +1,3 @@
++.f9-launch{display:flex;gap:32px;align-items:center;justify-content:space-between;padding:28px 32px;border:1px solid #607568;background:linear-gradient(110deg,#293e35,#1e302d);margin:24px 0}.f9-launch span,.f9-kicker{color:#e9b389;font:11px ui-monospace,monospace;letter-spacing:2px}.f9-launch h3{font-size:26px;margin:12px 0;color:#f1eee2}.f9-launch p{color:#b4c3b5;line-height:1.8;margin:0;font-size:13px}.f9-launch button{white-space:nowrap}
++#f9-dialog{width:min(1080px,calc(100vw - 32px));max-height:calc(100dvh - 36px);padding:0;border:1px solid #627b69;border-radius:8px;background:#172624;color:#e9ebdc;overflow:auto;box-sizing:border-box}#f9-dialog::backdrop{background:#080e13b8}#f9-dialog header{display:flex;justify-content:space-between;align-items:center;padding:25px 30px;border-bottom:1px solid #405349}#f9-dialog h2{font-size:27px;margin:10px 0 0}#f9-dialog h3{font-size:17px;margin:0 0 16px}#f9-dialog button,#f9-dialog select{font:inherit;cursor:pointer;background:#2a3d34;color:#f1eadc;border:1px solid #607367;border-radius:3px;padding:10px 13px}#f9-dialog button:hover{background:#3b5142}#f9-dialog button:focus-visible,#f9-dialog select:focus-visible{outline:2px solid #d7ee96;outline-offset:3px}#f9-close{font-size:26px!important;padding:2px 10px!important}.f9-layout{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;padding:28px 30px}.f9-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.f9-stats div{background:#203630;border:1px solid #40574b;padding:17px}.f9-stats strong{display:block;color:#dbeaac;font:28px ui-monospace,monospace;line-height:1.4}.f9-stats span{font-size:12px;color:#bac6b4}.f9-layout p{font-size:12px;color:#b3c0b5;line-height:1.9}#f9-chart{display:block;width:100%;height:110px;background:#11211f;border:1px solid #40574b;box-sizing:border-box}.f9-layout aside{border-left:1px solid #40574b;padding-left:27px}.f9-layout label{display:block;font-size:12px;color:#c7d0bf;margin:0 0 18px}.f9-layout select{display:block;width:100%;box-sizing:border-box;margin-top:8px}.f9-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.f9-primary{background:#cee79d!important;color:#182922!important;border-color:#cee79d!important}.f9-pill{display:inline-block;border:1px solid #6b855f;color:#c8dda6;border-radius:20px;padding:4px 10px;font:11px ui-monospace,monospace;margin:9px 0}#f9-status{margin:0;padding:0 30px 24px;color:#d9c6a7;font-size:12px;line-height:1.8}
++@media(max-width:700px){.f9-launch{display:block;padding:22px}.f9-launch button{margin-top:16px;width:100%}.f9-launch h3{font-size:22px}.f9-layout{grid-template-columns:1fr;padding:22px 18px;gap:23px}.f9-layout aside{border-left:0;border-top:1px solid #40574b;padding:23px 0 0}#f9-dialog header{padding:20px 18px}#f9-dialog h2{font-size:22px}#f9-status{padding:0 18px 20px}.f9-stats div{padding:12px}.f9-stats strong{font-size:23px}#f9-dialog{width:calc(100vw - 18px);max-height:calc(100dvh - 18px)}}
+--- /dev/null
++++ b/forge/fluid.js
+@@ -0,0 +1,26 @@
++/* FLOW 09 — inspect the actual game, not a canned performance animation. */
++'use strict';
++(()=>{
++ const $=id=>document.getElementById(id);let ready=false,dialog,focus;
++ const set=(id,t)=>{const e=$(id);if(e&&e.textContent!==t)e.textContent=t;};
++ function sync(){if(!ready)return;$('f9-camera').value=INK.Viewport.settings.mode;$('f9-rhythm').value=INK.CombatFlow.settings.rhythm;$('f9-speed').value=String(INK.CombatFlow.settings.speed);$('f9-effects').value=!INK.VFX.settings.enabled?'off':INK.VFX.settings.reducedMotion?'clean':'full';}
++ function settings(){return{version:1,viewport:{...INK.Viewport.settings},effects:{...INK.VFX.settings}};}
++ function load(data){if(!data||data.version!==1)throw TypeError('无效的流畅设置版本');const v=data.viewport,e=data.effects;if(v&&(!['stable','follow'].includes(v.mode)||Object.keys(v).some(k=>k!=='mode')))throw TypeError('无效镜头模式');if(e){for(const [k,x]of Object.entries(e)){if(!['enabled','reducedMotion','quality','intensity'].includes(k)||(['enabled','reducedMotion'].includes(k)?typeof x!=='boolean':!Number.isFinite(x)||x<(k==='quality'?.25:0)||x>1.5))throw TypeError('无效特效设置');}}
++  if(v)INK.Viewport.set(v);if(e)Object.assign(INK.VFX.settings,e);sync();return settings();}
++ function save(){try{localStorage.setItem(INKForge.store.id+'/fluid9',JSON.stringify(settings()));set('f9-status','设置已保存在本浏览器。导出独立 HTML 可一同带走。');}catch{set('f9-status','设置已生效。此环境仅暂存；请导出独立 HTML 备份。');}}
++ function paint(){if(!dialog?.open)return;const p=INK.FrameProbe.inspect();set('f9-p95',p.samples?p.intervalP95.toFixed(1)+' ms':'—');set('f9-cpu',p.samples?p.cpuP95.toFixed(1)+' ms':'—');set('f9-long',String(p.longIntervals));set('f9-stop',String(p.heldSimulationSteps));set('f9-window',`${p.samples} / 600 个回调 · ${(p.windowMs/1000).toFixed(1)} 秒窗口 · 丢弃 ${p.discardedSteps} 模拟步`);set('f9-fixed',SVG_FIGHTER.state.artCloseup?'CLOSE-UP / 主动特写':INK.Viewport.settings.mode==='stable'?'STABLE / 背景固定':'FOLLOW / 仅跟随位移');
++  const a=INK.FrameProbe.frames().filter(r=>r.interval>0).slice(-140),d=a.map((r,i)=>`${i?'L':'M'}${(i/Math.max(1,a.length-1)*500).toFixed(2)},${(100-Math.min(r.interval,70)/70*92).toFixed(2)}`).join('');$('f9-trace').setAttribute('d',d);sync();}
++ async function demo(){dialog?.close();await INKRhythmLab.show();const route=INK.Combo.routes.routes.find(r=>r.id==='mai-flow-cascade')||INK.Combo.routes.routes.find(r=>r.character==='mai');INKRhythmLab.setDraft(route);INK.FrameProbe.reset();await INKRhythmLab.run('demo');}
++ function open(){focus=document.activeElement;sync();dialog.showModal();paint();$('f9-close').focus();}function close(){dialog.close();focus?.focus();}
++ function init(){if(!globalThis.INKResponseLab?.ready){requestAnimationFrame(init);return;}if(ready)return;ready=true;
++  const launch=document.createElement('section');launch.className='f9-launch';launch.innerHTML='<div><span>FLOW 09 / STABLE STAGE · FLUID MOTION</span><h3>动作向前，背景安定。</h3><p>消除重复绘制回跳，按需编译骨架，共享真实挂点。打击有反馈，镜头不抢戏。</p></div><button id="f9-open" class="f-primary">稳镜与流畅诊断 ↗</button>';document.querySelector('.r8-launch').before(launch);
++  const button=document.createElement('button');button.id='f9-battle';button.textContent='稳镜与流畅';button.onclick=open;document.querySelector('.f-battle-head').append(button);
++  dialog=document.createElement('dialog');dialog.id='f9-dialog';dialog.setAttribute('aria-labelledby','f9-title');dialog.innerHTML=`<header><div><span class="f9-kicker">FLOW 09 / ACTUAL FRAME DIAGNOSTICS</span><h2 id="f9-title">流畅，要能看见，也能验证。</h2></div><button id="f9-close" aria-label="关闭流畅设置">×</button></header><div class="f9-layout"><section><span class="f9-pill" id="f9-fixed">STABLE / 背景固定</span><div class="f9-stats"><div><strong id="f9-p95">—</strong><span>回调间隔 · P95</span></div><div><strong id="f9-cpu">—</strong><span>模拟与绘制 CPU · P95</span></div><div><strong id="f9-long">0</strong><span>超过 25 ms 的回调</span></div><div><strong id="f9-stop">0</strong><span>有意命中定格 · 模拟步</span></div></div><svg id="f9-chart" viewBox="0 0 500 110" preserveAspectRatio="none" aria-label="真实浏览器回调间隔"><path d="M0 78H500M0 56H500" stroke="#3e564a" stroke-dasharray="4 4"/><path id="f9-trace" d="" fill="none" stroke="#d4e9a4" stroke-width="1.5"/></svg><p id="f9-window">尚未记录对战。</p><p>回调间隔和命中定格不是一回事。P95 是窗口内 95% 的样本不超过的值；这里记录真实对战循环，不是显卡帧率保证。打开此面板不会暂停当前训练演示。</p><div class="f9-actions"><button id="f9-demo" class="f9-primary">运行舞的实战连段</button><button id="f9-reset">清空测量</button><button id="f9-export">导出诊断 JSON</button></div></section><aside><h3>将干扰交还给你控制。</h3><label>背景与镜头<select id="f9-camera"><option value="stable">稳定舞台 · 完全固定（默认）</option><option value="follow">柔和跟随 · 只看角色根位置</option></select></label><label>停顿风格<select id="f9-rhythm"><option value="fluid">连贯节奏 · 减少反复定格（默认）</option><option value="weighted">重心节奏 · 保留 v8 停顿</option><option value="legacy">v6 原始停顿</option></select></label><label>整体速度<select id="f9-speed"><option value="1">1.00× · 不偷偷变速（默认）</option><option value="0.85">0.85× · 舒缓</option><option value="0.75">0.75× · 练习</option><option value="0.5">0.50× · 慢看</option></select></label><label>装饰特效<select id="f9-effects"><option value="full">完整演出 · 原有粒子密度</option><option value="clean">清爽优先 · 低闪动、少粒子</option><option value="off">关闭装饰 · 保留攻击物本体</option></select></label><p>所有模式都保留相同的骨架采样与战斗规则。不会为提高数字跳过人物帧，也不会在暗处扩大连段窗口。镜头模式均不响应命中震屏。</p></aside></div><p id="f9-status" role="status">先运行一次真实连段，再打开本面板查看。原有工坊、回放和逐帧检查仍可使用。</p>`;document.body.append(dialog);
++  $('f9-open').onclick=open;$('f9-close').onclick=close;dialog.addEventListener('cancel',e=>{e.preventDefault();close();});$('f9-demo').onclick=()=>demo().catch(e=>{INKForge.toast(e.message);console.error(e);});$('f9-reset').onclick=()=>{INK.FrameProbe.reset();paint();};$('f9-export').onclick=()=>INK.Portable.download('INK-Flow-9-Diagnostics.json',JSON.stringify(INK.FrameProbe.export(),null,2),'application/json');
++  $('f9-camera').onchange=e=>{INK.Viewport.set({mode:e.target.value});SVG_FIGHTER.state.artCloseup=false;const button=$('lab-close');if(button){button.textContent='特写 关';button.setAttribute('aria-pressed','false');}save();paint();};$('f9-rhythm').onchange=e=>{INKRhythmLab.setSettings({rhythm:e.target.value});save();};$('f9-speed').onchange=e=>{INKRhythmLab.setSettings({speed:Number(e.target.value)});save();};$('f9-effects').onchange=e=>{const v=e.target.value;INK.VFX.setEnabled(v!=='off');INK.VFX.settings.reducedMotion=v==='clean';INK.VFX.quality(v==='clean'?.55:1);save();};
++  try{const seed=INKForge.store.embedded;if(seed?.viewportSettings||seed?.effectsSettings)load({version:1,viewport:seed.viewportSettings,effects:seed.effectsSettings});const stored=JSON.parse(localStorage.getItem(INKForge.store.id+'/fluid9')||'null');if(stored)load(stored);}catch(e){if(e.name!=='SecurityError')set('f9-status','设置未载入：'+e.message);}
++  document.querySelector('.f-home-top h1').innerHTML='动作向前，<em>背景安定。</em>';document.querySelector('.f-home-top p').textContent='同一时刻，同一姿态。按需骨架编译、模拟侧挂点历史和稳定镜头，减少跳帧，也减少干扰。';document.querySelector('.f-edition').innerHTML='INK / FLOW 09<br><span>FLUID MOTION · STABLE STAGE</span>';const brand=document.querySelector('.f-brand i');if(brand)brand.textContent='09';document.title='INK FLOW 09 · 稳镜与流畅动作';
++  globalThis.INKFluidLab={ready:true,open,close,demo,paint,load,settings};sync();setInterval(paint,500);
++ }
++ init();
++})();
+--- a/forge/rhythm.js
++++ b/forge/rhythm.js
+@@ -47,7 +47,7 @@
+  async function writeEdges(data){const rec=edgeSource();if(!rec)throw Error('请选择源招式');const next=copy(rec);next.transitions=copy(data);INK.Schema.move(next);F.store.validateTargets(next);await F.loadMove(rec.character,rec.key);F.editTransitions(data);await F.save();renderEdges();message('连携规则已保存到动作资产 r'+F.store.revision+'。下一次出招使用新规则。');return copy(data);}
+  async function addEdge(){const rec=edgeSource(),data=copy(rec.transitions||{version:1,edges:[]});data.edges.push({id:'user-'+Date.now().toString(36),label:'自定义命中连携',targets:[$('r7-edge-target').value],on:$('r7-edge-on').value,start:Number($('r7-edge-start').value),end:Number($('r7-edge-end').value),minHits:Number($('r7-edge-hits').value),maxChain:Number($('r7-edge-chain').value)});return writeEdges(data);}
+  function init(){if(!globalThis.INKForge?.ready||!globalThis.INKComboUI||!globalThis.INKContinuityLab){requestAnimationFrame(init);return;}F=INKForge;A=SVG_FIGHTER;C=INK.Combo;T=INK.CombatFlow;storeKey=F.store.id+':rhythm-7';
+-  const settings=document.createElement('section');settings.id='r7-settings';settings.hidden=true;settings.innerHTML=`<div><span class="f-eyebrow">FLOW 07 / PLAY AT YOUR PACE</span><h2>连得自由，打得有分量。</h2></div><div class="r7-setting-grid"><label>停顿风格<select id="r7-rhythm"><option value="weighted">重心节奏 · 强弱分拍</option><option value="legacy">v6 节奏 · 原停顿值</option></select></label><label>整体速度<select id="r7-speed"><option value="1">1.00× · 60 步 / 秒</option><option value="0.85">0.85× · 舒缓</option><option value="0.75">0.75× · 练习</option><option value="0.5">0.50× · 慢看</option></select></label><label>连携规则<select id="r7-rules"><option value="flow">拓展连携 · 有限命中取消</option><option value="legacy">原有取消 · 不启用新边</option></select></label><label>实战输入缓存<select id="r7-buffer"><option value="3">3F</option><option value="6">6F</option><option value="9">9F</option><option value="12">12F</option></select></label></div><p>停顿不是整体降速；两位角色共用速度。取消与缓存按可行动帧计时。非官方帧表／非官方平衡。</p>`;
++  const settings=document.createElement('section');settings.id='r7-settings';settings.hidden=true;settings.innerHTML=`<div><span class="f-eyebrow">FLOW 07 / PLAY AT YOUR PACE</span><h2>连得自由，打得有分量。</h2></div><div class="r7-setting-grid"><label>停顿风格<select id="r7-rhythm"><option value="fluid">连贯节奏 · 减少反复定格</option><option value="weighted">重心节奏 · 强弱分拍</option><option value="legacy">v6 节奏 · 原停顿值</option></select></label><label>整体速度<select id="r7-speed"><option value="1">1.00× · 60 步 / 秒</option><option value="0.85">0.85× · 舒缓</option><option value="0.75">0.75× · 练习</option><option value="0.5">0.50× · 慢看</option></select></label><label>连携规则<select id="r7-rules"><option value="flow">拓展连携 · 有限命中取消</option><option value="legacy">原有取消 · 不启用新边</option></select></label><label>实战输入缓存<select id="r7-buffer"><option value="3">3F</option><option value="6">6F</option><option value="9">9F</option><option value="12">12F</option></select></label></div><p>停顿不是整体降速；两位角色共用速度。取消与缓存按可行动帧计时。非官方帧表／非官方平衡。</p>`;
+   const panel=document.createElement('aside');panel.id='r7-panel';panel.hidden=true;panel.innerHTML=`<div class="r7-panel-heading"><span class="f-eyebrow">COMPOSE / 自由编排</span><span id="r7-count"></span></div><label>路线库<select id="r7-library"></select></label><div class="r7-two"><label>角色<select id="r7-character"></select></label><label>朝向<select id="r7-side"><option value="1">向右</option><option value="-1">向左</option></select></label></div><label>路线名称<input id="r7-title" maxlength="100"></label><div id="r7-steps"></div><button id="r7-add">＋ 添加一步</button><details><summary>起手资源与距离</summary><div class="r7-three"><label>斗气<input id="r7-drive" type="number" min="0" max="6" step=".5"></label><label>超级<input id="r7-super" type="number" min="0" max="3" step="1"></label><label>距离<input id="r7-distance" type="number" min="60" max="700"></label></div><label class="r7-check"><input id="r7-corner" type="checkbox" checked> 角落起手</label><p>“命中”指这一步至少命中几次才接下一步；“间隔”指距上一步起手至少多少可行动帧。RUSH 使用原有最短冲刺帧。</p></details><div class="r7-actions"><button id="r7-run" class="f-primary">验证连段</button><button id="r7-practice">G 键跟练</button></div><div class="r7-two"><label>G 提前窗口<select id="r7-practice-buffer"><option value="6">6F · 入门</option><option value="3">3F · 精准</option><option value="0">0F · 严格</option></select></label><label>画面反馈<select id="r7-fx"><option value="full">完整演出</option><option value="clean">低闪动</option><option value="off">关闭特效</option></select></label></div><button id="r7-step-button">发动当前一步　G</button><div class="r7-actions"><button id="r7-pause">暂停</button><button id="r7-frame">＋1 模拟步</button><button id="r7-reset">重新开始</button></div><p id="r7-note" role="status"></p><div class="r7-actions"><button id="r7-save-route">保存路线副本</button><button id="r7-export-route">导出此路线</button></div><details><summary>路线库与本次记录</summary><div class="r7-actions"><button id="r7-export-library">导出路线库</button><button id="r7-import">导入 JSON</button><input id="r7-file" type="file" accept=".json,application/json" hidden></div><button id="r7-report">导出本次实战记录</button><p>库文件替换当前路线库；单条路线只新增／合并同 ID。不执行脚本。</p></details><small id="r7-storage"></small>`;
+   const monitor=document.createElement('section');monitor.id='r7-monitor';monitor.hidden=true;monitor.innerHTML=`<div class="r7-readout"><div><span id="r7-status">等待运行</span><b id="r7-hits">00</b><small>HIT</small></div><div><span>真实伤害</span><strong id="r7-damage">0</strong><small id="r7-meter"></small></div><div><span>模拟时长</span><strong id="r7-time">0 s</strong><small>1× 时间标尺；不含终结余韵</small></div></div><div class="r7-cue"><div><small>NEXT / 下一步</small><h3 id="r7-cue"></h3><p id="r7-reason"></p></div><div><b id="r7-action">0 F</b><span>动作帧</span><b id="r7-nonaction">0 F</b><span>定格＋慢镜等待</span></div></div><div class="r7-live-line"><span id="r7-window"></span><span id="r7-input"></span></div><h4>当前招式的额外出口</h4><div id="r7-live-edges"></div><details id="r7-editor"><summary>创作者 · 编辑有限连携规则</summary><p>规则保存进独立动作 JSON，不改伤害、判定框或基础关键帧。只补充接触确认后的有限衔接，不收紧或覆盖原有取消。超级必杀／投技不能作为起点；“原有取消”模式忽略这些边。</p><div class="r7-three"><label>角色<select id="r7-edge-char"></select></label><label>源招式<select id="r7-edge-source"></select></label><label>目标招式<select id="r7-edge-target"></select></label></div><div class="r7-edge-fields"><label>确认<select id="r7-edge-on"><option value="hit">仅命中</option><option value="contact">命中或防御</option></select></label><label>起点 F<input id="r7-edge-start" type="number" value="0" min="0" max="20"></label><label>终点 F<input id="r7-edge-end" type="number" value="10" min="0" max="20"></label><label>至少命中<input id="r7-edge-hits" type="number" value="1" min="1" max="20"></label><label>整串上限<input id="r7-edge-chain" type="number" value="2" min="1" max="3"></label></div><button id="r7-edge-add">校验并保存规则</button><div id="r7-edge-list"></div></details>`;
+   const battle=$('f-battle');battle.insertBefore(settings,$('f-battle-mount'));battle.insertBefore(panel,$('f-battle-mount'));battle.insertBefore(monitor,battle.querySelector('.f-runtime-bar'));
+--- a/game.js
++++ b/game.js
+@@ -168,6 +168,9 @@
+ 
+ let gameTime=0,selected=['ryu','ken'],selectSide=0,portraits=[],fighters=[];
+ const G={actionTick:0,screen:'select',mode:'cpu',control:'classic',difficulty:'normal',paused:false,phase:'intro',phaseT:90,tick:0,clock:99*60,round:1,wins:[0,0],hitstop:0,slow:0,shake:0,flash:0,superFx:0,superOwner:null,result:false,fx:[],shots:[],ghosts:[],fps:0,stats:{damage:0,maxCombo:0,tests:0}};
++// Pause is a control transaction, including editor/direct state writes.
++// The renderer never learns freeze ownership from which frames were drawn.
++INK.Presentation.bindControl(G,()=>fighters);
+ let audioCtx=null,soundOn=false,noise=null;
+ const AUDIO_MASTER_LEVEL=.72,AUDIO_MAX_VOICES=6;
+ let audioGraph=null,audioToggleRevision=0,audioVoiceSequence=0;
+@@ -972,14 +975,14 @@
+  renderMoveFX(f);f.root.style.opacity=f.hp<=0?.91:1;
+ }
+ function renderFighter(f,dt=1/60,alpha=1){
+- if(G.paused||G.hitstop>0||G._inkStepFrozen)f._inkHoldAction=G.actionTick;
++ // Freeze-release ownership is written by simulate(), never by this draw.
+  const renderHold=G.paused||G.hitstop>0||!!G._inkStepFrozen||(G.phase==='fight'&&f._inkHoldAction===G.actionTick);
+  if(!INK.Game.enabled){INK.Game.show(f,false);return renderFighterLegacy(f,dt,alpha);}
+  const signature=INK.Runtime.revision+'|'+f.state+'|'+(f.attack?.m.id||'')+'|'+(f.captureKind||''),simFrame=signature+'|'+(f.stateAge||0)+'|'+(f.attack?.t||0)+'|'+(f.throwAction?.t||0)+'|'+f.y+'|'+f.vy+'|'+(f.landT||0)+'|'+(f.jumpPre||0)+'|'+!!f.crouch,changed=f._renderSignature!==signature;
+  let view=f;
+  // Interpolate along the authored simulation timeline, never toward an old pose.
+  // A contact frame is shown once immediately and remains exact during hitstop.
+- if(!changed&&G.screen==='battle'&&!renderHold&&alpha<1)view=INK.Presentation.view(f,alpha,false);
++ if(G.screen==='battle'&&!renderHold&&alpha<1)view=INK.Presentation.view(f,alpha,false);
+  const reusePose=!f._inkFractionalView&&renderHold&&f._poseSimulationFrame===simFrame&&f.pose;let d=reusePose?f.pose:desiredPose(view);
+  f._inkFractionalView=view!==f;f.pose=d;f._renderSignature=signature;f._poseSimulationFrame=simFrame;
+  const s=f.renderScale||f.ch.scale||SCALE,frozen=renderHold,rx=mix(f.px??f.x,f.x,frozen?1:alpha),ry=mix(f.py??f.y,f.y,frozen?1:alpha);
+@@ -991,11 +994,11 @@
+  for(const name of ['rearArm','frontArm','rearLeg','frontLeg'])f[name].points=limbs[name];
+  const inkHurt=['hit','stun','tumble','captured','down','ko'].includes(f.state);
+  const inkPower=!inkHurt&&(f.portraitPower||f.attack&&f.attack.t>=f.attack.m.startup&&f.attack.t<f.attack.m.startup+f.attack.m.active);
+- INK.Game.update(f,p,limbs,f.attack?view.attack.t:gameTime*60,inkHurt?'hurt':inkPower?'power':'rest',frozen,{x:rx,y:ry,scale:s,dir:f.dir},view);
++ INK.Game.update(f,p,limbs,f.attack?view.attack.t:INK.Runtime.clock(view,gameTime*60),inkHurt?'hurt':inkPower?'power':'rest',frozen,{x:rx,y:ry,scale:s,dir:f.dir},view);
+  if(f.shadow){const lying=['down','ko'].includes(f.state),spread=lying?1.3:clamp(1+ry/720,.4,1);sa(f.shadow,'transform',`translate(${rx} ${FLOOR}) scale(${spread} 1)`);sa(f.shadow,'opacity',clamp(1+ry/600,.24,1));}
+  let aura=f.state==='rush'||f.rushBuff>0?'#7dffac':f.state==='parry'?'#93bbff':f.attack?.m.od?'#ffe5a8':f.install>0?f.ch.color:f.attack?.m.kind==='impact'?'#ff9966':null;
+  sa(f.aura,'opacity',0);if(aura)sa(f.aura.children[0],'fill',aura);
+- const charge=INK.VFX.settings.enabled&&f.attack&&(f.attack.m.kind.includes('projectile')||f.attack.m.kind==='charge')&&f.attack.t<f.attack.m.startup;sa(f.charge,'opacity',charge?1:0);if(charge){const cp=bodyPoint(f,['luke','mai','iori'].includes(f.ch.id)?af[2]:lerp2(af[2],ar[2],.5)),q=f.attack.t/f.attack.m.startup;sa(f.charge,'transform',`translate(${cp[0]+10} ${cp[1]}) scale(${.15+q*q*.45})`);sa(f.chargeRing,'transform',`rotate(${gameTime*350})`)}
++ const charge=INK.VFX.settings.enabled&&f.attack&&(f.attack.m.kind.includes('projectile')||f.attack.m.kind==='charge')&&f.attack.t<f.attack.m.startup;sa(f.charge,'opacity',charge?1:0);if(charge){const cp=['luke','mai','iori'].includes(f.ch.id)?INK.Runtime.socket(p,limbs,'frontHand'):lerp2(INK.Runtime.socket(p,limbs,'frontHand'),INK.Runtime.socket(p,limbs,'rearHand'),.5),q=view.attack.t/f.attack.m.startup;sa(f.charge,'transform',`translate(${cp[0]+10} ${cp[1]}) scale(${.15+q*q*.45})`);sa(f.chargeRing,'transform',`rotate(${INK.Runtime.clock(view,gameTime*60)*350/60})`)}
+  const hurt=['hit','stun','tumble','captured','down','ko'].includes(f.state),power=!hurt&&(f.portraitPower||f.attack&&(f.attack.m.super||f.attack.m.od||f.attack.m.level>=3)&&f.attack.t>f.attack.m.startup*.6);sa(f.faceHurt,'opacity',hurt?1:0);sa(f.facePower,'opacity',power?1:0);
+  renderMoveFX(f);f.root.style.opacity=f.hp<=0?.91:1;
+ }
+@@ -1408,7 +1411,7 @@
+ function tickRoundEnd(){for(const f of fighters){f.stateAge++;if(f.y<0||f.vy!==0){f.y+=f.vy;f.vy+=.7;f.x=clamp(f.x+f.vx+f.push,105,1335);f.push*=.82;if(f.y>=0){f.y=0;f.vy=f.vx=f.push=0;dust(f.x);setState(f,f.roundResult||'ko');if(f.state==='ko'){f.stateAge=20;sound('land');G.shake=Math.max(G.shake,6)}}}else if(f.state!==f.roundResult){setState(f,f.roundResult||'ko')}}}
+ function nextRound(){clearBattleFX();fighters.forEach((f,i)=>{const sup=f.super;initFighter(f,i);f.super=sup});G.round++;G.clock=99*60;G.phase='intro';G.phaseT=90;announce('ROUND '+G.round,'BEST OF THREE');updateHUD()}
+ function resetMatch(){clearBattleFX();G.wins=[0,0];G.round=1;G.clock=99*60;G.phase=G.mode==='training'?'fight':'intro';G.phaseT=90;G.result=false;G.paused=false;G.lastCombatEvent=null;G.combatEvents=[];G.stats.damage=0;G.stats.maxCombo=0;fighters.forEach((f,i)=>initFighter(f,i));$('pause-overlay').hidden=true;$('game-frame').classList.remove('is-paused');announce(G.mode==='training'?'':'ROUND 1',G.mode==='training'?'':'FIRST TO 2 WINS',G.mode==='training'?0:1);$('pause-btn').textContent='暂停';updateHUD()}
+-function simulate(force=false){const before=G.tick;simulateCore(force);if(G.tick!==before)INK.Replay.capture(G,fighters);}
++function simulate(force=false){const before=G.tick;simulateCore(force);if(G.tick!==before){if(G.hitstop>0||G._inkStepFrozen)for(const f of fighters)f._inkHoldAction=G.actionTick;INK.Replay.capture(G,fighters);}}
+ function simulateCore(force=false){if(G.screen!=='battle'||G.paused&&!force)return;G.tick++;G._inkStepFrozen=false;INK.Input.begin(G);INK.VFX.step(G,fighters);INK.Presentation.beginProjectiles(G);for(const f of fighters){f.px=f.x;f.py=f.y}updateFX();for(let f of fighters)tickInput(f);
+ if(G.hitstop>0){G._inkStepFrozen=true;INK.CombatFlow.record(G,'freeze');G.hitstop--;updateHUD();return}
+ if(G.phase==='intro'){gameTime+=1/60;INK.CombatFlow.record(G,'other');G.phaseT--;if(G.phaseT===30)announce('FIGHT','');if(G.phaseT<=0){G.phase='fight';announce('','',0)}updateHUD();return}
+@@ -1431,11 +1434,12 @@
+ }
+ s+='<path d="M686 28H754L783 80 754 127H686L657 80Z" fill="#171925" stroke="#a3a0b3"/><path d="M691 35H749L774 80 749 118H691L666 80Z" fill="none" stroke="#525069"/><text x="720" y="52" text-anchor="middle" class="mono" font-size="8" letter-spacing="3" fill="#b3a9bd">TIME</text><text id="timer" x="720" y="99" text-anchor="middle" font-size="51" class="condensed" fill="#fff8e8">99</text><text id="round-number" x="720" y="748" text-anchor="middle" class="mono" font-size="10" letter-spacing="3" fill="#b9a9c3">ROUND 01</text><text id="center-note" x="720" y="772" text-anchor="middle" class="svg-text" font-size="12" fill="#d1c5db"></text>';
+ $('hud').innerHTML=s;for(let f of fighters){f.hpEl=$('hp-'+f.id);f.trailEl=$('trail-'+f.id);f.driveEls=Array.from({length:6},(_,i)=>$('d-'+f.id+'-'+i));f.callEl=$('call-'+f.id)}updateHUD()}
+-function updateHUD(){if(!fighters.length||!$('timer'))return;for(const f of fighters){let r=f.index===1,barX=r?807:177;f.displayHp=mix(f.displayHp,f.hp,.33);f.trailHp=mix(f.trailHp,f.hp,.07);const hpw=+(454*f.displayHp/10000).toFixed(2),trw=+(454*f.trailHp/10000).toFixed(2);sa(f.hpEl,'width',hpw);sa(f.trailEl,'width',trw);if(r){sa(f.hpEl,'x',1261-hpw);sa(f.trailEl,'x',1261-trw)}for(let i=0;i<6;i++){sa(f.driveEls[i],'fill',f.burnout?'#a5a1ab':f.state==='rush'?'#8fff71':'#d6ed95');sa(f.driveEls[i],'opacity',i<f.drive?clamp(f.drive-i,.2,1):.15)}let trait=f.ch.id==='mai'?'FLAME '+Array.from({length:5},(_,i)=>i<(f.flameStock||0)?'◆':'◇').join('')+(f.maiFollowUntil>G.actionTick?' · →+P 追投':''):f.ch.id==='ryu'?'DENJIN '+(f.denjin?'READY':'—'):f.ch.id==='juri'?'FUHA '+f.stock+'/3'+(f.install>0?' · ENGINE '+Math.ceil(f.install/60)+'s':''):f.branchT>0?'FOLLOW-UP READY':'DRIVE '+f.drive.toFixed(1)+'/6';$('resource-'+f.id).textContent=f.burnout?'BURNOUT · '+Math.ceil((6-f.drive)/6*14)+'s':trait;sa(f.callEl,'opacity',clamp((160-G.tick+f.lastMessage)/35,0,1));$('sa-'+f.id).setAttribute('width',clamp(f.super,0,3)/3*346);$('sa-num-'+f.id).textContent=Math.floor(f.super+1e-6);$('combo-'+f.id).setAttribute('opacity',f.combo>1?1:0);$('combo-num-'+f.id).textContent=f.combo;$('damage-'+f.id).textContent=f.comboDamage+' DAMAGE';if(f.hudWins!==G.wins[f.index]){f.hudWins=G.wins[f.index];$('round-'+f.id).innerHTML=Array.from({length:2},(_,i)=>`<path d="M${r?823+i*23:617-i*23} 117l6 6-6 6-6-6Z" fill="${G.wins[f.index]>i?'#d8f477':'#4e475d'}"/>`).join('')}}
+-$('timer').textContent=G.mode==='training'?'∞':Math.max(0,Math.ceil(G.clock/60));$('round-number').textContent=G.mode==='training'?'TRAINING LAB':'ROUND '+String(G.round).padStart(2,'0');$('center-note').textContent=G.mode==='training'?'R 重置 · H 招式表 · N 暂停逐帧':'FIRST TO TWO · '+G.wins[0]+' — '+G.wins[1];$('training-stat').textContent='伤害 '+G.stats.damage+' · 最大连段 '+G.stats.maxCombo+' · '+(fighters[0].attack?fighters[0].attack.m.name+' '+fighters[0].attack.t+'F':'NEUTRAL');if($('showboxes').checked&&G.mode==='training')renderBoxes();else if($('hitboxes').childElementCount)$('hitboxes').replaceChildren()}
++function setText(node,value){value=String(value);if(node.textContent!==value)node.textContent=value;}
++function updateHUD(){if(!fighters.length||!$('timer'))return;for(const f of fighters){let r=f.index===1,barX=r?807:177;f.displayHp=mix(f.displayHp,f.hp,.33);f.trailHp=mix(f.trailHp,f.hp,.07);const hpw=+(454*f.displayHp/10000).toFixed(2),trw=+(454*f.trailHp/10000).toFixed(2);sa(f.hpEl,'width',hpw);sa(f.trailEl,'width',trw);if(r){sa(f.hpEl,'x',1261-hpw);sa(f.trailEl,'x',1261-trw)}for(let i=0;i<6;i++){sa(f.driveEls[i],'fill',f.burnout?'#a5a1ab':f.state==='rush'?'#8fff71':'#d6ed95');sa(f.driveEls[i],'opacity',i<f.drive?clamp(f.drive-i,.2,1):.15)}let trait=f.ch.id==='mai'?'FLAME '+Array.from({length:5},(_,i)=>i<(f.flameStock||0)?'◆':'◇').join('')+(f.maiFollowUntil>G.actionTick?' · →+P 追投':''):f.ch.id==='ryu'?'DENJIN '+(f.denjin?'READY':'—'):f.ch.id==='juri'?'FUHA '+f.stock+'/3'+(f.install>0?' · ENGINE '+Math.ceil(f.install/60)+'s':''):f.branchT>0?'FOLLOW-UP READY':'DRIVE '+f.drive.toFixed(1)+'/6';setText($('resource-'+f.id),f.burnout?'BURNOUT · '+Math.ceil((6-f.drive)/6*14)+'s':trait);sa(f.callEl,'opacity',clamp((160-G.tick+f.lastMessage)/35,0,1));sa($('sa-'+f.id),'width',clamp(f.super,0,3)/3*346);setText($('sa-num-'+f.id),Math.floor(f.super+1e-6));sa($('combo-'+f.id),'opacity',f.combo>1?1:0);setText($('combo-num-'+f.id),f.combo);setText($('damage-'+f.id),f.comboDamage+' DAMAGE');if(f.hudWins!==G.wins[f.index]){f.hudWins=G.wins[f.index];$('round-'+f.id).innerHTML=Array.from({length:2},(_,i)=>`<path d="M${r?823+i*23:617-i*23} 117l6 6-6 6-6-6Z" fill="${G.wins[f.index]>i?'#d8f477':'#4e475d'}"/>`).join('')}}
++setText($('timer'),G.mode==='training'?'∞':Math.max(0,Math.ceil(G.clock/60)));setText($('round-number'),G.mode==='training'?'TRAINING LAB':'ROUND '+String(G.round).padStart(2,'0'));setText($('center-note'),G.mode==='training'?'R 重置 · H 招式表 · N 暂停逐帧':'FIRST TO TWO · '+G.wins[0]+' — '+G.wins[1]);setText($('training-stat'),'伤害 '+G.stats.damage+' · 最大连段 '+G.stats.maxCombo+' · '+(fighters[0].attack?fighters[0].attack.m.name+' '+fighters[0].attack.t+'F':'NEUTRAL'));if($('showboxes').checked&&G.mode==='training')renderBoxes();else if($('hitboxes').childElementCount)$('hitboxes').replaceChildren()}
+ function renderBoxes(){let markup='';for(const f of fighters){if(typeof getCombatGeometry!=='function')continue;const g=getCombatGeometry(f);for(const [kind,color] of [['hurt','#66e9ed'],['hit','#ff5779'],['throw','#ffe289']])for(const b of g[kind]||[])markup+=`<rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" fill="${color}" fill-opacity=".18" stroke="${color}" stroke-width="2"/>`;} $('hitboxes').innerHTML=markup;}
+ function showPause(result=false){$('pause-overlay').hidden=false;$('pause-title').textContent=result?(G.lastWinner>=0?fighters[G.lastWinner].ch.name+' WINS':'DRAW'):'PAUSED';$('pause-text').textContent=result?'最终比分 '+G.wins[0]+' : '+G.wins[1]+' · 再来一局，或更换角色。':'回到战场，继续你的连段。';$('resume-btn').hidden=result;$('game-frame').classList.add('is-paused');$('pause-btn').textContent='继续'}
+-function pause(v){if(G.screen!=='battle'||G.result)return;G.paused=v;clearHeld();if(v)showPause();else{$('pause-overlay').hidden=true;$('game-frame').classList.remove('is-paused');$('pause-btn').textContent='暂停'}}
++function pause(v){if(G.screen!=='battle'||G.result)return;if(v)for(const f of fighters)f._inkHoldAction=G.actionTick;G.paused=v;clearHeld();if(v)showPause();else{$('pause-overlay').hidden=true;$('game-frame').classList.remove('is-paused');$('pause-btn').textContent='暂停'}}
+ function clearHeld(){if(typeof resetInputDevices==='function')resetInputDevices();for(let f of fighters){f.input.held.clear();f.input.touchX=0;f.input.touchY=0;f.input.batch=null;f.input.queue=[];f.input.dir=5;f.aiParry=false}document.querySelectorAll('.pressed').forEach(n=>n.classList.remove('pressed'));$('stick-knob').style.transform=''}
+ function setSide(i){selectSide=i;for(let n=0;n<2;n++){$('side-'+n).classList.toggle('active',n===i);$('side-'+n).setAttribute('aria-pressed',n===i)}}
+ function updateSelection(){document.querySelectorAll('.fighter-card').forEach(n=>{let id=n.dataset.char;n.classList.toggle('p1',selected[0]===id);n.classList.toggle('p2',selected[1]===id);n.querySelector('.pick-badges').innerHTML=(selected[0]===id?'<span>1P</span>':'')+(selected[1]===id?'<span class="pink">2P</span>':'');n.setAttribute('aria-label',CHARACTERS.find(c=>c.id===id).cn+(selected[0]===id?'，玩家一已选':'')+(selected[1]===id?'，玩家二已选':''))});
+@@ -1496,14 +1500,15 @@
+ let last=0,accumulator=0,frameN=0,fpsStamp=0;
+ const engineClock=INK.EngineClock;
+ document.addEventListener('visibilitychange',()=>{engineClock.reset();last=0;});
+-function frame(now){if(!last)last=now;let dt=Math.min(80,now-last);last=now;frameN++;if(now-fpsStamp>750){G.fps=Math.round(frameN*1000/(now-fpsStamp));$('fps').textContent=G.fps;fpsStamp=now;frameN=0}
++function frame(now){const measuredStart=performance.now();INK.FrameProbe?.begin(now,G);if(!last)last=now;let dt=Math.min(80,now-last);last=now;frameN++;if(now-fpsStamp>750){G.fps=Math.round(frameN*1000/(now-fpsStamp));$('fps').textContent=G.fps;fpsStamp=now;frameN=0}
+ if(G.screen==='battle'&&typeof pollGamepads==='function')pollGamepads();
++INK.Presentation.boundary(G,fighters,!document.hidden);
+ const renderAlpha=engineClock.advance(now,{active:G.screen==='battle'&&!document.hidden,paused:G.paused,speed:INK.CombatFlow.settings.speed*((G.mode==='training'||G.mode==='demo')?(G.artSpeed||1):1)},()=>simulate());
+ accumulator=engineClock.accumulator;
+-if(G.screen==='battle'){const alpha=G.paused?1:renderAlpha;for(let f of fighters)renderFighter(f,G.paused||G.hitstop>0?0:Math.min(dt/1000,.04),alpha);sa($('camera'),'transform',artCamera(now,alpha));sa($('hit-flash'),'opacity',(!INK.VFX.settings.enabled||INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)?0:G.flash*INK.VFX.settings.intensity);sa($('super-overlay'),'opacity',G.superFx>0?clamp(Math.min((75-G.superFx)/8,G.superFx/15),0,.98):0)}else{gameTime+=dt/1000;for(let i=0;i<portraits.length;i++){const f=portraits[i];renderFighter(f,dt/1000,1);sa(f.root,'transform',`translate(166 438) scale(1.02)`);sa(f.facing,'transform',`scale(${i?-1:1} 1)`)} }
+-INK.Presentation.projectiles(G,G.paused?1:renderAlpha);INK.VFX.render(G,G.paused?1:clamp(accumulator/STEP,0,1));SF6Studio.update();requestAnimationFrame(frame)}
++if(G.screen==='battle'){const alpha=G.paused?1:renderAlpha;for(let f of fighters)renderFighter(f,G.paused||G.hitstop>0?0:Math.min(dt/1000,.04),alpha);sa($('camera'),'transform',artCamera(now,alpha));sa($('hit-flash'),'opacity',(!INK.VFX.settings.enabled||INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)?0:G.flash*INK.VFX.settings.intensity);sa($('super-overlay'),'opacity',G.superFx>0?clamp(Math.min((75-G.superFx)/8,G.superFx/15),0,.98):0)}else{gameTime+=dt/1000;for(let i=0;i<portraits.length;i++){const f=portraits[i];f._inkPreviewClock=gameTime*60;renderFighter(f,dt/1000,1);sa(f.root,'transform',`translate(166 438) scale(1.02)`);sa(f.facing,'transform',`scale(${i?-1:1} 1)`)} }
++INK.Presentation.projectiles(G,G.paused?1:renderAlpha);INK.VFX.render(G,G.paused?1:clamp(accumulator/STEP,0,1));SF6Studio.update();INK.FrameProbe?.end(performance.now()-measuredStart,G,engineClock);requestAnimationFrame(frame)}
+ // Inspectable, dependency-free development hooks. All gameplay still uses the same engine paths.
+-window.SVG_FIGHTER={version:'8.0.0-ink-response',characters:CHARACTERS,moves:MOVES,state:G,get fighters(){return fighters},start:(p1='ryu',p2='ken',mode='training',control='classic')=>{selected=[p1,p2];$('mode').value=mode;$('control').value=control;startBattle()},step:(n=1)=>{for(let i=0;i<n;i++)simulate(true)},press:(i,b)=>inputPress(fighters[i],b),release:(i,b)=>inputRelease(fighters[i],b),move:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id)),motion:(i,p)=>motion(fighters[i],p),reset:resetMatch,setState,contact,practice:practiceMove,getMove,clearFX:clearBattleFX,pause,render:(dt=1/60)=>fighters.forEach(f=>renderFighter(f,dt,1)),pose:desiredPose,visualPose:(f)=>INK.Runtime.visual(f,desiredPose(f),{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1,dir:f.dir}),clock:engineClock,clip:clipFor,geometry:getCombatGeometry,rig:poseRig,canRush:canRushCancel,canCancel:canCancel,canRekka:canRekkaContinue,decide:(i,id)=>decideMove(fighters[i],getMove(fighters[i],id)),tempo:INK.CombatFlow,tryMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),false),inputMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),true),describe:(f,m)=>SF6Motion.describe(f,m),audit:()=>CHARACTERS.map(c=>({character:c.name,specials:MOVES[c.id].filter(m=>m.category==='special').length,branches:MOVES[c.id].filter(m=>m.category==='branch').length,supers:MOVES[c.id].filter(m=>m.category==='super').length,normals:MOVES[c.id].filter(m=>m.category==='normal').length,total:MOVES[c.id].length}))};
++window.SVG_FIGHTER={version:'9.0.0-ink-fluid',characters:CHARACTERS,moves:MOVES,state:G,get fighters(){return fighters},start:(p1='ryu',p2='ken',mode='training',control='classic')=>{selected=[p1,p2];$('mode').value=mode;$('control').value=control;startBattle()},step:(n=1)=>{for(let i=0;i<n;i++)simulate(true)},press:(i,b)=>inputPress(fighters[i],b),release:(i,b)=>inputRelease(fighters[i],b),move:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id)),motion:(i,p)=>motion(fighters[i],p),reset:resetMatch,setState,contact,practice:practiceMove,getMove,clearFX:clearBattleFX,pause,render:(dt=1/60)=>fighters.forEach(f=>renderFighter(f,dt,1)),pose:desiredPose,visualPose:(f)=>INK.Runtime.visual(f,desiredPose(f),{x:f.x,y:f.y,scale:f.renderScale||f.ch.scale||1,dir:f.dir}),clock:engineClock,clip:clipFor,geometry:getCombatGeometry,rig:poseRig,canRush:canRushCancel,canCancel:canCancel,canRekka:canRekkaContinue,decide:(i,id)=>decideMove(fighters[i],getMove(fighters[i],id)),tempo:INK.CombatFlow,tryMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),false),inputMove:(i,id)=>requestMove(fighters[i],getMove(fighters[i],id),true),describe:(f,m)=>SF6Motion.describe(f,m),audit:()=>CHARACTERS.map(c=>({character:c.name,specials:MOVES[c.id].filter(m=>m.category==='special').length,branches:MOVES[c.id].filter(m=>m.category==='branch').length,supers:MOVES[c.id].filter(m=>m.category==='super').length,normals:MOVES[c.id].filter(m=>m.category==='normal').length,total:MOVES[c.id].length}))};
+ // Inspection controls operate on the same combat engine and the same live SVG rigs.
+ const lab=document.createElement('div');lab.className='motion-lab';lab.id='motion-lab';lab.hidden=true;lab.innerHTML=`<b>动作鉴赏 / MOTION LAB</b><select id="lab-char" aria-label="鉴赏角色">${CHARACTERS.map(c=>`<option value="${c.id}">${c.cn} / ${c.name}</option>`).join('')}</select><select id="lab-move" aria-label="鉴赏动作"></select><button class="lab-play" id="lab-play">▶ 播放招式</button><select id="lab-speed" aria-label="演示速度"><option value="1">正常速度</option><option value="0.5">慢放 × 0.5</option><option value="0.25">慢放 × 0.25</option></select><button class="lab-small" id="lab-close" aria-pressed="false">特写 关</button><button class="lab-small" id="lab-freeze">定格</button><button class="lab-small" id="lab-step">逐帧 +1</button><small>LIVE SVG · 非视频 · 逐帧可检查</small>`;
+ $('training-bar').after(lab);
+@@ -1531,12 +1536,11 @@
+  const points=[bodyPoint(f,[0,-401]),bodyPoint(f,[-45,-300]),bodyPoint(f,[45,-300]),bodyPoint(f,[0,-165]),...f.rearArm.points.map(p=>bodyPoint(f,p)),...f.frontArm.points.map(p=>bodyPoint(f,p)),...f.rearLeg.points,...f.frontLeg.points];
+  const ys=points.map(q=>FLOOR+f.y+(q[0]*si+(q[1]+180)*co-180+shift)*f.ch.scale);return[Math.min(...ys)-21,Math.max(...ys)+25];
+ }
+-function artCamera(now,alpha=1){if(!fighters.length)return'';let target=G.artCloseup?1.28:1.045;const a=fighters[0],b=fighters[1],dist=Math.abs(a.x-b.x),superActor=fighters.find(f=>f.attack?.m.super&&f.attack.confirmed);if(superActor)target=G.artCloseup?1.33:1.15;else if(dist<320)target=Math.max(target,1.065);
+- const bounds=fighters.map(actorYBounds),lo=Math.min(...bounds.map(b=>b[0])),hi=Math.max(...bounds.map(b=>b[1]));target=Math.min(target,545/Math.max(440,hi-lo+14));
+- const dt=camStamp?clamp((now-camStamp)/1000,0,.1):1/60;camStamp=now;const k=G.paused||G.hitstop||G._inkStepFrozen?0:1-Math.exp(-dt*(target<camZoom?15:7));camZoom=mix(camZoom,clamp(target,.79,1.3),k);
+- const tracking=INK.Cinema.enabled&&INK.Combo.status!=='idle';INK.Cinema.sync(tracking);const cx=tracking?(a.x+b.x)/2:camZoom<=1?720:clamp((a.x+b.x)/2,720/camZoom,1440-720/camZoom);camX=mix(camX,cx,k);camY=mix(camY,(lo+hi)/2,k);
+- const reduced=INK.VFX.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches,offset=INK.SceneFeedback.camera(G,alpha);return`translate(${720+offset[0]} ${439+offset[1]}) scale(${(reduced?Math.min(1,camZoom):camZoom).toFixed(4)}) translate(${-camX} ${-camY})`;}
+-const originalStartBattle=startBattle;startBattle=function(){G.artSpeed=1;G.artCloseup=false;labEnabled=false;labFrozen=false;lab.hidden=true;show.classList.remove('active');$('lab-close').textContent='特写 关';$('lab-close').setAttribute('aria-pressed','false');$('lab-speed').value='1';camZoom=1.045;camX=720;camY=480;camStamp=0;originalStartBattle();};
++function artCamera(now,alpha=1){
++ INK.Cinema.sync(INK.Cinema.enabled&&INK.Combo.status!=='idle');
++ return INK.Viewport.sample(G,fighters,now,alpha);
++}
++const originalStartBattle=startBattle;startBattle=function(){G.artSpeed=1;G.artCloseup=false;labEnabled=false;labFrozen=false;lab.hidden=true;show.classList.remove('active');$('lab-close').textContent='特写 关';$('lab-close').setAttribute('aria-pressed','false');$('lab-speed').value='1';camZoom=1.045;camX=720;camY=480;camStamp=0;INK.Viewport.reset();originalStartBattle();};
+ // Rebind handlers captured before the wrapper; the development API also reaches this function.
+ $('start-btn').onclick=startBattle;
+ const oldReset=resetMatch;resetMatch=function(){G.artSpeed=labEnabled?Number($('lab-speed').value):1;labFrozen=false;oldReset()};$('reset-btn').onclick=resetMatch;$('rematch-btn').onclick=resetMatch;
+@@ -1920,6 +1924,6 @@
+ const externalStage=el('image',{x:0,y:0,width:1440,height:810,preserveAspectRatio:'xMidYMid slice'},null);$('camera').insertBefore(externalStage,$('ground-fx'));externalStage.setAttribute('visibility','hidden');
+ function applyStage(value=$('stage-choice').value){const names={forge:'FORGE / 日落训练场',neon:'雨夜街角 / NEON DISTRICT',courtyard:'朱桥庭院 / VERMILION GATE',rooftop:'午夜天台 / MOONLIT ROOFTOP'};$('background').setAttribute('visibility',value==='neon'?'visible':'hidden');externalStage.setAttribute('visibility',value==='neon'?'hidden':'visible');if(value!=='neon')externalStage.setAttribute('href',({"rooftop":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMCIgdmlld0JveD0iMCAwIDE0NDAgODEwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzExMTgyYiIvPjxzdG9wIG9mZnNldD0iLjY1IiBzdG9wLWNvbG9yPSIjMzgzNTUwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzM0OTU3Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImZsb29yIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiMzYzNjNGMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNTI3MzMiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0ibW9vbiI+PHN0b3Agc3RvcC1jb2xvcj0iI2I5YzlkZiIgc3RvcC1vcGFjaXR5PSIuMTciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiOWM5ZGYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9IndpbmRvd3MiIHdpZHRoPSIyNSIgaGVpZ2h0PSIzNCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHJlY3QgeD0iOCIgeT0iOCIgd2lkdGg9IjUiIGhlaWdodD0iMTAiIGZpbGw9IiNjZWEyODUiIG9wYWNpdHk9Ii4zNiIvPjxyZWN0IHg9IjE4IiB5PSIyMyIgd2lkdGg9IjQiIGhlaWdodD0iNyIgZmlsbD0iIzlhYWVjMyIgb3BhY2l0eT0iLjI3Ii8+PC9wYXR0ZXJuPjxwYXR0ZXJuIGlkPSJmZW5jZSIgd2lkdGg9IjM1IiBoZWlnaHQ9IjM1IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNMCAwTDM1IDM1TTM1IDBMMCAzNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNzY4MjkyIiBzdHJva2Utb3BhY2l0eT0iLjIyIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPgo8cmVjdCB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI4MTAiIGZpbGw9InVybCgjc2t5KSIvPjxlbGxpcHNlIGN4PSI0MzUiIGN5PSIyMzIiIHJ4PSIyNDUiIHJ5PSIxOTMiIGZpbGw9InVybCgjbW9vbikiLz48Y2lyY2xlIGN4PSI0MzUiIGN5PSIyMzIiIHI9IjUyIiBmaWxsPSIjYzZjOWQyIi8+PGNpcmNsZSBjeD0iNDU1IiBjeT0iMjE3IiByPSI0NSIgZmlsbD0iIzI1MjkzYyIvPjxwYXRoIGQ9Ik0zMSAyMTRRMjA4IDE4MSAzNDEgMjExVDY3MCAyMTNNNzUwIDMzMFE5ODMgMjk0IDExNTMgMzIxVDE1MTMgMzI3IiBzdHJva2U9IiM5YjkxYTEiIHN0cm9rZS1vcGFjaXR5PSIuMDgiIHN0cm9rZS13aWR0aD0iMjMiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgNDY3SDcwVjM5MkgxMzlWNDI0SDE4MVYzNTNIMjUzVjQ2NkgzMTFWMzkySDM5OFY0NDVINDY3VjM0OUg1MzNWNDI3SDU3N1YyODZINjM3VjQwNUg2OTdWNDQySDc2OFYzNzFIODI1VjQ0OUg4OTBWMzI2SDk3N1YzOTFIMTAzMFY0NjlIMTEwMVY0MDZIMTE3OVYzNDhIMTI1N1Y0MjdIMTMzN1YzNjRIMTQ0MFY2NTZIMFoiIGZpbGw9IiMxZDI1MzYiLz48cGF0aCBkPSJNMCA0NjdINzBWMzkySDEzOVY0MjRIMTgxVjM1M0gyNTNWNDY2SDMxMVYzOTJIMzk4VjQ0NUg0NjdWMzQ5SDUzM1Y0MjdINTc3VjI4Nkg2MzdWNDA1SDY5N1Y0NDJINzY4VjM3MUg4MjVWNDQ5SDg5MFYzMjZIOTc3VjM5MUgxMDMwVjQ2OUgxMTAxVjQwNkgxMTc5VjM0OEgxMjU3VjQyN0gxMzM3VjM2NEgxNDQwVjY1NkgwWiIgZmlsbD0idXJsKCN3aW5kb3dzKSIvPgo8cGF0aCBkPSJNNTg1IDI4OFYyNTVNNjE0IDI4OFYyMTNNOTQyIDMyNlYyNTFNMTM0MiAzNjVWMjkxIiBzdHJva2U9IiMyNDI2MzgiIHN0cm9rZS13aWR0aD0iNCIvPjxjaXJjbGUgY3g9IjYxNCIgY3k9IjIxMCIgcj0iMyIgZmlsbD0iI2RlODE4MiIvPjxjaXJjbGUgY3g9Ijk0MiIgY3k9IjI0OSIgcj0iMyIgZmlsbD0iI2RlODE4MiIvPgo8cGF0aCBkPSJNMCA1MDlIMTQ0MFY2MTZIMFoiIGZpbGw9IiMyMDI3MzUiLz48cGF0aCBkPSJNMCA1MTRIMTQ0MCIgc3Ryb2tlPSIjN2E3ODg2IiBzdHJva2Utd2lkdGg9IjUiLz48cmVjdCB5PSIzNzYiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjE3MCIgZmlsbD0idXJsKCNmZW5jZSkiLz48cGF0aCBkPSJNMCAzNzlIMTQ0ME0wIDU0NkgxNDQwTTEwNyAzNzZWNjE2TTM0MyAzNzZWNjE2TTU4MSAzNzZWNjE2TTgyMCAzNzZWNjE2TTEwNTggMzc2VjYxNk0xMjk2IDM3NlY2MTYiIHN0cm9rZT0iIzQ5NTU2NSIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTAgMzc5SDE0NDAiIHN0cm9rZT0iIzlhOTVhMyIgc3Ryb2tlLW9wYWNpdHk9Ii4zNSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkxIDM1MikiPjxwYXRoIGQ9Ik0wIDBIOTlWMjI2SDBaIiBmaWxsPSIjMzMzODQ5IiBzdHJva2U9IiM3ODgwOGMiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0xMyAxNEg4NlYxNjNIMTNaIiBmaWxsPSIjMWIyNjM2Ii8+PHBhdGggZD0iTTIzIDMwSDc2TTIzIDQ0SDc2TTIzIDU4SDc2TTIzIDcySDc2TTIzIDg2SDc2TTIzIDEwMEg3Nk0yMyAxMTRINzZNMjMgMTI4SDc2IiBzdHJva2U9IiM0YjU4NmQiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik0wIDE3M0g5OSIgc3Ryb2tlPSIjODE4MThjIiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSI0OSIgY3k9IjE5OCIgcj0iNyIgZmlsbD0iIzg3OTQ3YyIvPjwvZz4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE4MSA0MDMpIj48cmVjdCB3aWR0aD0iMTk1IiBoZWlnaHQ9IjE3MiIgcng9IjQiIGZpbGw9IiMzZDQwNTAiIHN0cm9rZT0iIzg0ODI4ZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iMTY2IiBoZWlnaHQ9Ijg2IiByeD0iNCIgZmlsbD0iIzIxMmMzYyIvPjxjaXJjbGUgY3g9IjU2IiBjeT0iNTgiIHI9IjMzIiBmaWxsPSIjMTYxZTJjIiBzdHJva2U9IiM1ODY1NzYiIHN0cm9rZS13aWR0aD0iMyIvPjxjaXJjbGUgY3g9IjEzOCIgY3k9IjU4IiByPSIzMyIgZmlsbD0iIzE2MWUyYyIgc3Ryb2tlPSIjNTg2NTc2IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNNTYgMzBWODZNMjkgNThIODNNMTM4IDMwVjg2TTExMSA1OEgxNjUiIHN0cm9rZT0iIzRkNTk2OCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTE3IDExN0gxNzhNMTcgMTMwSDE3OE0xNyAxNDNIMTc4IiBzdHJva2U9IiM2OTczN2YiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjIzIiB5PSIxNzIiIHdpZHRoPSIxNyIgaGVpZ2h0PSIyOSIgZmlsbD0iIzIzMmQzOSIvPjxyZWN0IHg9IjE1NSIgeT0iMTcyIiB3aWR0aD0iMTciIGhlaWdodD0iMjkiIGZpbGw9IiMyMzJkMzkiLz48L2c+CjxyZWN0IHk9IjYxNCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iMTk2IiBmaWxsPSJ1cmwoI2Zsb29yKSIvPjxwYXRoIGQ9Ik0wIDYxOEgxNDQwTTAgNjg2SDE0NDBNMCA3ODFIMTQ0ME0yOTUgNjE0TDE3MSA4MTBNNTgxIDYxNEw1NDEgODEwTTg2MyA2MTRMOTAzIDgxME0xMTQ5IDYxNEwxMjczIDgxMCIgc3Ryb2tlPSIjODg4NTkxIiBzdHJva2Utb3BhY2l0eT0iLjE4IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMCA2MzRIMTQ0MCIgc3Ryb2tlPSIjMTUxZTJjIiBzdHJva2Utd2lkdGg9IjgiLz48cGF0aCBkPSJNMzI0IDc1NEw0MTUgNjk2SDEwMjVMMTExNiA3NTRaIiBmaWxsPSJub25lIiBzdHJva2U9IiNjNGI2OWEiIHN0cm9rZS1vcGFjaXR5PSIuMiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTQ5NCA3OThMNTczIDc0NE05NTQgNzk4TDg3NSA3NDQiIHN0cm9rZT0iI2FjYWE5ZCIgc3Ryb2tlLW9wYWNpdHk9Ii4xOCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTIzMCA2NTlMMzE0IDY0NSAzMjUgNjUwIDI0OCA2NjVNMTA3OSA2NzdMMTE3OCA2NzkgMTE5NyA2ODUgMTA4OCA2ODUiIGZpbGw9IiNjM2IzYmIiIG9wYWNpdHk9Ii4wOSIvPgo8L3N2Zz4K","courtyard":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMCIgdmlld0JveD0iMCAwIDE0NDAgODEwIj4KPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzEwMjIzYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzQxNjE3NCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJncm91bmQiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzNlNDY1NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI0MmIzYiIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJoYWxvIj48c3RvcCBzdG9wLWNvbG9yPSIjZWRjNThiIiBzdG9wLW9wYWNpdHk9Ii4zOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VkYzU4YiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Indvb2QiIHgyPSIxIiB5Mj0iMCI+PHN0b3Agc3RvcC1jb2xvcj0iIzYzMzgzYiIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiM5ODQ3NDciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0ODJmMzYiLz48L2xpbmVhckdyYWRpZW50PjxwYXR0ZXJuIGlkPSJ0aWxlcyIgd2lkdGg9IjExMiIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgNTlIMTEyTTU2IDBWNjAiIHN0cm9rZT0iIzlhYTVhZSIgc3Ryb2tlLW9wYWNpdHk9Ii4wOCIgZmlsbD0ibm9uZSIvPjwvcGF0dGVybj48L2RlZnM+CjxyZWN0IHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMCIgZmlsbD0idXJsKCNza3kpIi8+PGNpcmNsZSBjeD0iMTA2MCIgY3k9IjI0MCIgcj0iMTgwIiBmaWxsPSJ1cmwoI2hhbG8pIi8+PGNpcmNsZSBjeD0iMTA2MCIgY3k9IjI0MCIgcj0iNTgiIGZpbGw9IiNkOWQ5YzkiLz48Y2lyY2xlIGN4PSIxMDg0IiBjeT0iMjI1IiByPSI1MSIgZmlsbD0iIzI2Mzk0ZSIgb3BhY2l0eT0iLjIiLz4KPHBhdGggZD0iTTAgNDcwTDgzIDM5OSAxNDEgNDI5IDIzOSAzNTAgMzMxIDQwNSA0MTQgMzY5IDQ5NSA0MzcgNjE0IDM5MSA3MjMgNDU3IDgyMyAzOTUgOTA3IDQyMyAxMDIxIDM2NyAxMTE5IDQyNCAxMjM1IDM4OSAxNDQwIDQ1OVY2NDlIMFoiIGZpbGw9IiMyMzNiNGMiLz48cGF0aCBkPSJNMCA0OTlMMTQ0IDQ3NyAyODMgNTA1IDQwMSA0NjggNTU4IDUwNSA3NDEgNDg5IDkxOSA1MTUgMTA5NSA0NzUgMTI4NyA1MDggMTQ0MCA0NzFWNjY1SDBaIiBmaWxsPSIjMTcyYjNiIi8+CjxwYXRoIGQ9Ik0wIDUwM0gxNDQwVjYwOUgwWiIgZmlsbD0iIzI4Mzc0NCIvPjxwYXRoIGQ9Ik0wIDUwMkgxNDQwTTAgNTMySDE0NDBNMCA2MDNIMTQ0MCIgc3Ryb2tlPSIjNjA3MDc4IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMCA1MzVIMTQ0MCIgc3Ryb2tlPSIjMTMxZjJhIiBzdHJva2Utd2lkdGg9IjgiLz4KPGcgZmlsbD0iIzIwMmYzYyIgc3Ryb2tlPSIjNWI2ODcwIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yOSA1NDFIMTM2VjU5MkgyOVpNMTYzIDU0MUgyNzBWNTkySDE2M1pNMjk5IDU0MUg0MDZWNTkySDI5OVpNNDM1IDU0MUg1NDJWNTkySDQzNVpNNTcxIDU0MUg2NzhWNTkySDU3MVpNNzA3IDU0MUg4MTRWNTkySDcwN1pNODQzIDU0MUg5NTBWNTkySDg0M1pNOTc5IDU0MUgxMDg2VjU5Mkg5NzlaTTExMTUgNTQxSDEyMjJWNTkySDExMTVaTTEyNTEgNTQxSDEzNThWNTkySDEyNTFaIi8+PC9nPgo8ZyBmaWxsPSJ1cmwoI3dvb2QpIiBzdHJva2U9IiMzNzI4MmYiIHN0cm9rZS13aWR0aD0iNCI+PHBhdGggZD0iTTE4NiAyMjFIMjI4TDIxNSA2MTRIMTc4Wk0xMjEyIDIyMUgxMjU0TDEyNjIgNjE0SDEyMjVaIi8+PHBhdGggZD0iTTE2NCAyOTJIMTI3NVYzMjJIMTY0WiIvPjxwYXRoIGQ9Ik0xMTggMjEzUTcxMSAyNjQgMTMyMSAyMTNMMTM0MSAxOTFRNzM1IDIyMyA5OCAxOTBaIi8+PHBhdGggZD0iTTE0MyAyNTNRNzIwIDI4NSAxMjk2IDI1MUwxMjgzIDI3NlE3MjAgMzA4IDE1NyAyNzhaIi8+PC9nPjxwYXRoIGQ9Ik0xMDMgMTg5UTcwNiAyMjIgMTMzOCAxOTAiIHN0cm9rZT0iI2JmOGQ3MCIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE5NyAzMjlWNjA5TTEyNDAgMzI5VjYwOSIgc3Ryb2tlPSIjYzA2YzU5IiBzdHJva2Utd2lkdGg9IjMiIG9wYWNpdHk9Ii42Ii8+PHJlY3QgeD0iNjcxIiB5PSIyNjkiIHdpZHRoPSI5OCIgaGVpZ2h0PSI3MSIgcng9IjMiIGZpbGw9IiMyNzMyM2QiIHN0cm9rZT0iI2FhN2U1OCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHRleHQgeD0iNzIwIiB5PSIzMTMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNjY2JjOTEiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyNSIgbGV0dGVyLXNwYWNpbmc9IjMiPuatpumBkzwvdGV4dD4KPGc+PHBhdGggZD0iTTI3NSAzMDZWMzUwTTExNjUgMzA2VjM1MCIgc3Ryb2tlPSIjMzAyYjMxIiBzdHJva2Utd2lkdGg9IjQiLz48ZWxsaXBzZSBjeD0iMjc1IiBjeT0iMzk5IiByeD0iOTQiIHJ5PSIxMDYiIGZpbGw9InVybCgjaGFsbykiLz48ZWxsaXBzZSBjeD0iMTE2NSIgY3k9IjM5OSIgcng9Ijk0IiByeT0iMTA2IiBmaWxsPSJ1cmwoI2hhbG8pIi8+PHBhdGggZD0iTTI1MSAzNTZRMjc1IDM0NSAyOTkgMzU2TDMwNCA0MjVRMjc2IDQ0MiAyNDYgNDI1WiIgZmlsbD0iI2NhNzY1YiIvPjxwYXRoIGQ9Ik0xMTQxIDM1NlExMTY1IDM0NSAxMTg5IDM1NkwxMTk0IDQyNVExMTY2IDQ0MiAxMTM2IDQyNVoiIGZpbGw9IiNjYTc2NWIiLz48cGF0aCBkPSJNMjUwIDM2OEgzMDBNMjQ4IDQxMUgzMDNNMTE0MCAzNjhIMTE5ME0xMTM4IDQxMUgxMTkzIiBzdHJva2U9IiM3NDQ4NDUiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0yNjggMzU0VjQzMk0yODIgMzU0VjQzMk0xMTU4IDM1NFY0MzJNMTE3MiAzNTRWNDMyIiBzdHJva2U9IiNlOGFjNzgiIHN0cm9rZS1vcGFjaXR5PSIuNDUiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz4KPGcgZmlsbD0iIzE0MmMzNSI+PHBhdGggZD0iTTAgMTYxUTYwIDE4OCAxMDEgMjU1TDExNSA1MTUgODUgNTcxSDM5TDY3IDUwNSA1NyAzMzRRMjQgMjk3IDAgMzA0VjI3MUw0NiAyODdRMzYgMjQzIDAgMjMxWk0xNDQwIDI3NFExMzU3IDI5NyAxMzUxIDM5OUwxMzMxIDU1MkgxMzY4TDEzNzYgNDA1UTE0MDQgMzM2IDE0NDAgMzM5WiIvPjwvZz48ZyBmaWxsPSIjMjU0NzQ2Ij48ZWxsaXBzZSBjeD0iNDIiIGN5PSIyMDQiIHJ4PSIxMTEiIHJ5PSI1NSIvPjxlbGxpcHNlIGN4PSIxMDciIGN5PSIyNjYiIHJ4PSI4NyIgcnk9IjQ3Ii8+PGVsbGlwc2UgY3g9IjEyIiBjeT0iMzIyIiByeD0iMTAxIiByeT0iNDMiLz48ZWxsaXBzZSBjeD0iMTQwMiIgY3k9IjI4OCIgcng9IjEwNCIgcnk9IjUxIi8+PGVsbGlwc2UgY3g9IjEzNjIiIGN5PSIzNDYiIHJ4PSI4MSIgcnk9IjM5Ii8+PC9nPgo8cGF0aCBkPSJNMCA2MTNIMTQ0MFY4MTBIMFoiIGZpbGw9InVybCgjZ3JvdW5kKSIvPjxyZWN0IHk9IjYxNSIgd2lkdGg9IjE0NDAiIGhlaWdodD0iMTk1IiBmaWxsPSJ1cmwoI3RpbGVzKSIvPjxwYXRoIGQ9Ik0wIDYxN0gxNDQwTTAgNjY4SDE0NDBNMCA3MzlIMTQ0ME0xNzAgNjE1TDEzIDgxME00MjAgNjE1TDM0MSA4MTBNMTAyMCA2MTVMMTA5OSA4MTBNMTI3MCA2MTVMMTQyNyA4MTAiIHN0cm9rZT0iIzgwOTA5YSIgc3Ryb2tlLW9wYWNpdHk9Ii4xNyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTTAgNjM1SDE0NDAiIHN0cm9rZT0iIzExMWUyYiIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTE0OSA2NjVRMjYyIDY1NCAzNTEgNjY4TTEwOTAgNjcxUTExOTMgNjU0IDEyODQgNjYzIiBmaWxsPSJub25lIiBzdHJva2U9IiNjMDkwNzYiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iLjE1Ii8+CjxwYXRoIGQ9Ik0wIDgwOEgxNDQwIiBzdHJva2U9IiMxMTE5MjUiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2Zz4K","forge":"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDQwIDgxMCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzE3MjUyZSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZlNjk2MCIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJmbG9vciIgeDI9IjAiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNTk1YjU4Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTcyNjJiIi8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9InN1biI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmYzE4YyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VkOGM2MSIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdHRlcm4gaWQ9Im1lc2giIHdpZHRoPSIxOCIgaGVpZ2h0PSIyNCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMTJMOSAwIDE4IDEyIDkgMjRaIiBmaWxsPSJub25lIiBzdHJva2U9IiM4NzkyOGIiIHN0cm9rZS1vcGFjaXR5PSIuMjIiIHN0cm9rZS13aWR0aD0iLjYiLz48L3BhdHRlcm4+PC9kZWZzPjxwYXRoIGZpbGw9InVybCgjc2t5KSIgZD0iTTAgMEgxNDQwVjgxMEgwWiIvPjxjaXJjbGUgY3g9IjExMDAiIGN5PSIyODMiIHI9IjEzMiIgZmlsbD0idXJsKCNzdW4pIi8+PHBhdGggZD0iTTAgNDYwVjI4NUg4NlYzOTRIMTI4VjIyMEgxNzdWMzc4SDIwMFYxNTJIMjExVjM3NUgyODVWMjg2SDM1OFYzODJINDAyVjE4NUg0NTZWMzI5SDUwNFYyNTdINTkwVjM3NUg2MzNWMzEzSDY3MVYzNjRINzEwVjE5M0g3NDVWMzUwSDc5N1YyNTRIODQzVjM4OUg4OThWMzQ0SDk0MVYyMThIOTY3VjM4N0gxMDMwVjMzNEgxMDkyVjQwMEgxMTQyVjE5MkgxMTg3VjM1NUgxMjEyVjI4NUgxMzEwVjQwNUgxMzU0VjI0MkgxNDQwVjYzMkgwWiIgZmlsbD0iIzIwMzEzYSIgb3BhY2l0eT0iLjU4Ii8+PHBhdGggZD0iTTAgMzg2SDE0NDBWNDA0SDBaTTAgNTQxSDE0NDBWNTUwSDBaIiBmaWxsPSIjMWUyZjM1Ii8+PHBhdGggZD0iTTAgMzk1SDE0NDBWNTYySDBaIiBmaWxsPSJ1cmwoI21lc2gpIi8+PHBhdGggZD0iTTUwIDU1MFYyNzBNNDA1IDU1MFYyOTdNNzY1IDU1MFYzMDBNMTEzMCA1NTBWMzAwTTE0MDEgNTUwVjI3MCIgc3Ryb2tlPSIjMjYzYTQwIiBzdHJva2Utd2lkdGg9IjEwIi8+PHBhdGggZD0iTTAgNTY1SDE0NDBWODEwSDBaIiBmaWxsPSJ1cmwoI2Zsb29yKSIvPjxwYXRoIGQ9Ik0wIDU2NkgxNDQwTTAgNTk0SDE0NDBNMCA2NTJIMTQ0ME0wIDc0NEgxNDQwTS0yMDAgODEwTDQxMiA1NjVNMjU1IDgxMEw1NjAgNTY1TTcyMCA4MTBWNTY1TTExODUgODEwTDg4MCA1NjVNMTY0MCA4MTBMMTAyOCA1NjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2FlYjVhMyIgc3Ryb2tlLW9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xMDQgNzAwSDEzMzZNMzAwIDU5OUgxMTQwTDEzNTAgNzU2SDkwWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTljMWEyIiBzdHJva2Utb3BhY2l0eT0iLjI3IiBzdHJva2Utd2lkdGg9IjMiLz48ZyBmaWxsPSIjY2ZhYjg4IiBvcGFjaXR5PSIuMzUiPjxwYXRoIGQ9Ik01ODIgNjc2TDYwNiA2MzVINjIwTDU5NiA2NzZaTTYyNCA2NzZMNjQ4IDYzNUg2NjJMNjM4IDY3NlpNNjY2IDY3Nkw2OTAgNjM1SDcwNEw2ODAgNjc2Wk03MDggNjc2TDczMiA2MzVINzQ2TDcyMiA2NzZaTTc1MCA2NzZMNzc0IDYzNUg3ODhMNzY0IDY3NloiLz48L2c+PHBhdGggZD0iTTAgMEgxNDQwVjg1SDBaIiBmaWxsPSIjMTAxYzIzIi8+PHBhdGggZD0iTTAgOTNIMTQ0MCIgc3Ryb2tlPSIjZmZjNzljIiBzdHJva2Utb3BhY2l0eT0iLjYiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0wIDBMMTY3IDEyNU0xNDQwIDBMMTI3MyAxMjUiIHN0cm9rZT0iIzEwMWIyMSIgc3Ryb2tlLXdpZHRoPSIzMiIvPjxnIGZpbGw9IiNlYWM2OTciPjxwYXRoIGQ9Ik02MyA1MDVIMTY2VjU0Nkg2M1oiLz48cGF0aCBkPSJNMTI2NiA1MDVIMTM3MVY1NDZIMTI2NloiLz48L2c+PHRleHQgeD0iNzIwIiB5PSI1MzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNkN2M3YjEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBsZXR0ZXItc3BhY2luZz0iMTIiIG9wYWNpdHk9Ii42NSI+SU5LICAvICBGSUdIVElORyBBVEVMSUVSPC90ZXh0Pjwvc3ZnPgo="})[value]);$('stage-name').textContent=names[value]||names.neon;G.stage=value;}
+ SVG_FIGHTER.experience.stage=applyStage;
+-SVG_FIGHTER.focusCamera=()=>{camX=(fighters[0].x+fighters[1].x)/2;const bs=fighters.map(actorYBounds);camY=(Math.min(...bs.map(b=>b[0]))+Math.max(...bs.map(b=>b[1])))/2;camZoom=1.065;camStamp=0;};SVG_FIGHTER.renderFraction=alpha=>{if(!Number.isFinite(alpha))throw TypeError('Finite interpolation fraction required');for(const f of fighters)renderFighter(f,0,clamp(alpha,0,1));INK.Presentation.projectiles(G,clamp(alpha,0,1));INK.VFX.render(G,clamp(alpha,0,1));};SF6Studio.install(SVG_FIGHTER);
++SVG_FIGHTER.focusCamera=()=>INK.Viewport.reset();SVG_FIGHTER.renderCamera=(now=performance.now(),alpha=1)=>{const value=artCamera(now,alpha);sa($('camera'),'transform',value);return value;};SVG_FIGHTER.renderFraction=alpha=>{if(!Number.isFinite(alpha))throw TypeError('Finite interpolation fraction required');for(const f of fighters)renderFighter(f,0,clamp(alpha,0,1));INK.Presentation.projectiles(G,clamp(alpha,0,1));INK.VFX.render(G,clamp(alpha,0,1));};SF6Studio.install(SVG_FIGHTER);
+ 
+ })();
+--- a/index.html
++++ b/index.html
+@@ -1,3 +1,3 @@
+-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 08 · 打开游戏</title><style>
++<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INK FLOW 09 · 打开游戏</title><style>
+ :root{color-scheme:dark;--bg:#141d20;--panel:#20332e;--ink:#e9e6d8;--muted:#a2b2a5;--edge:#40594c;--accent:#f2b882}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.8}main{max-width:1120px;margin:auto;padding:54px 28px 70px}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--edge)}.brand{font-size:26px;font-weight:800}.tag{font-size:12px;letter-spacing:.18em;color:var(--accent)}h1{font-size:clamp(32px,6vw,64px);line-height:1.25;margin:46px 0 20px}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 18px;color:var(--muted)}.lead{max-width:750px;font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 40px}a{color:var(--accent);text-decoration:none}.btn{display:inline-block;padding:13px 23px;border:1px solid var(--edge);border-radius:4px;font-weight:600}.primary{background:var(--accent);color:#1c2524}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:24px;background:var(--panel);border:1px solid var(--edge);border-radius:5px}.number{font-size:12px;color:var(--accent);letter-spacing:.2em}.card p{font-size:14px;margin:0}.note{padding:24px;border-left:3px solid var(--accent);margin:32px 0;background:#1d2a29}.note strong{color:var(--ink)}code{color:var(--ink);overflow-wrap:anywhere;font-size:.94em}.foot{border-top:1px solid var(--edge);padding-top:26px;margin-top:34px;font-size:13px;color:var(--muted)}@media(max-width:740px){main{padding:25px 18px}.grid{grid-template-columns:1fr}header{align-items:flex-start;gap:12px}.tag{max-width:190px;text-align:right}.actions{margin-bottom:25px}.card{padding:20px}}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+-</style></head><body><main><header><div class="brand">INK / FLOW <sup>08</sup></div><div class="tag">RESPONSE &amp; SOLVED POSE REPLAY</div></header><div class="tag" style="margin-top:38px">动作接续，细节可复现。</div><h1>每次落地，都有回应。</h1><p class="lead">统一运动采样，接续落地、受击和起身。录下真正的实战姿态，逐帧查看、导出和分享；保留既有自由连段与节奏工坊。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow8/flow8-comparison.mp4">观看原始 v7 / v8 对照</a></div><div class="grid"><section class="card"><div class="number">01 / COMPOSE</div><h2>先看实战动作回放</h2><p>首页进入「打开实战动作回放」，生成跳跃或真实扫腿场景。观察落地、倒地和起身，拖动到小数帧；不是预制姿势轮播。</p></section><section class="card"><div class="number">02 / FEEL</div><h2>调强弱拍，也能整体慢放</h2><p>默认「重心节奏 · 1.00×」。需要更从容时选择 0.85×，两位角色一起降速。停顿风格不是速度倍率，也不标榜官方游戏的帧数据。</p></section><section class="card"><div class="number">03 / PRACTICE</div><h2>记录自己的连段</h2><p>在对战中点击「录制实战姿态」，完成操作后再次点击查看。保存最近 600 模拟步，逐帧、倒拖、事件定位和独立 JSON 导入导出。</p></section></div><section class="note"><strong>先保留旧工程，再体验新版资产。</strong><p>v8 使用独立存储，不自动覆盖 v7。旧工程导入会替换同名资产，请先备份；浏览器提示不能存储时，关闭前导出工程或游戏 HTML。玩家版隐藏编辑入口，不是权限隔离。</p><p style="margin:0">文件名仍保留原来的 <code>INK-Street-Fighter-6.html</code> 构建路径，页面与内嵌引擎已经是 FLOW 08。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow8.py</code><br>完整使用说明：README.md · 引擎合同：docs/FLOW8-ENGINE.md · 本轮验收：TEST-REPORT-FLOW8.md<br>非官方 SVG 同人格斗娱乐作品。2.5D 表现、手机视口模拟；不承诺官方节奏等价或任意设备帧率。</div></main></body></html>
+\ No newline at end of file
++</style></head><body><main><header><div class="brand">INK / FLOW <sup>09</sup></div><div class="tag">FLUID MOTION &amp; STABLE STAGE</div></header><div class="tag" style="margin-top:38px">同一时刻，同一姿态。</div><h1>动作向前，背景安定。</h1><p class="lead">消除首绘回跳，按需编译骨架，共享真实挂点。默认固定舞台、不震屏；将有意停顿和真实掉帧分开检查。</p><div class="actions"><a class="btn primary" href="dist/INK-Street-Fighter-6.html">打开独立创作版 →</a><a class="btn" href="dist/INK-Street-Fighter-6-Player.html">打开玩家版</a><a class="btn" href="qa/flow9/flow9-comparison.mp4">查看 v8 / v9 同场景对照</a></div><div class="grid"><section class="card"><div class="number">01 / STABLE</div><h2>先看背景是否安定</h2><p>默认「稳定舞台」，不随出招轮廓缩放，也不响应命中震屏。需要跟随时主动选择「柔和跟随」。原特写按钮属于主动镜头设置。</p></section><section class="card"><div class="number">02 / FLUID</div><h2>停顿和速度分别调整</h2><p>默认连贯节奏、1×、完整特效。旧重心停顿可选；需要更舒缓时单独选择 0.85×。没有为了提高性能默认减少粒子或跳过骨架帧。</p></section><section class="card"><div class="number">03 / MEASURE</div><h2>用真实连段检查</h2><p>首页打开「稳镜与流畅诊断」并运行舞的实战连段。面板不暂停战斗，可查看真实回调、引擎 CPU 和命中定格，并导出诊断 JSON。</p></section></div><section class="note"><strong>旧个人工程先备份。</strong><p>v9 使用独立存储，不自动覆盖 v8。离线浏览器不能持久化时，请导出独立 HTML 保存设置。原有动作工坊、连段编排和实战姿态回放继续保留。</p><p style="margin:0">构建产物沿用原路径 <code>INK-Street-Fighter-6.html</code>，页面与内嵌引擎为 FLOW 09。</p></section><div class="foot">构建：<code>python tools/build_forge.py</code>　验证：<code>python tools/check_flow9.py</code><br>说明：docs/FLOW9-ENGINE.md · 计划：docs/FLOW9-PLAN.md · 本轮验收：TEST-REPORT-FLOW9.md<br>非官方 SVG 同人格斗娱乐作品，仍是 2.5D；无官方节奏等价或任意设备帧率保证。</div></main></body></html>
+--- a/src/ink/anatomy.js
++++ b/src/ink/anatomy.js
+@@ -16,10 +16,11 @@
+  const weights=q=>{const y=q[1];if(y>=-246){const t=INK.easing(clamp((-191-y)/55));return [1-t,t,0];}const t=INK.easing(clamp((-246-y)/49));return [0,1-t,t];};
+  const yaw=(p,part)=>INK.Turn.angle(p,part==='leg'?'pelvis':part==='head'?'head':'body');
+  function lengths(c){return c.rigLengths||[c.id==='iori'?67:c.female?64:68,c.id==='iori'?76:c.female?67:71,c.id==='chun'?100:96,98];}
+- const frameCache=new WeakMap();
++ const frameCache=new WeakMap(),frameKeys=['lean','bob','chest','pelvis','yaw','turn','chestYaw','pelvisYaw','headYaw'];
+  function frameInfo(p){
+-  const signature=[p.lean,p.bob,p.chest,p.pelvis,p.yaw,p.turn,p.chestYaw,p.pelvisYaw,p.headYaw].join('|');
+-  const old=frameCache.get(p);if(old?.signature===signature)return old;
++  const old=frameCache.get(p);let equal=!!old;
++  if(old)for(let i=0;i<frameKeys.length;i++)if(old.signature[i]!==p[frameKeys[i]]){equal=false;break;}
++  if(equal)return old;const signature=frameKeys.map(k=>p[k]);
+   const source=Rig.torsoMatrices(p),body=INK.bodyMatrix(p),invBody=mat.inverse(body);
+   const frame={source,body,invBody,inverse:source.map(mat.inverse),signature};frameCache.set(p,frame);return frame;
+  }
+--- a/src/ink/articulation.js
++++ b/src/ink/articulation.js
+@@ -16,14 +16,20 @@
+  function signature(c){return JSON.stringify([c.id,c.female,c.rigLengths,c.rigHipWidth,c.rigRearShoulder,c.rigFrontShoulder,settings.armSpeed,settings.legSpeed,settings.bendSpeed]);}
+  function angles(chain){const a=vec.sub(chain[1],chain[0]),b=vec.sub(chain[2],chain[1]),u=Math.atan2(a[1],a[0])*180/Math.PI,v=Math.atan2(b[1],b[0])*180/Math.PI;return[u,shortest(v-u)];}
+  function reference(c,p){return INK.Anatomy.sourceRig(c,p,true);}
+- function bake(data,c){
+-  let profiles=cache.get(data);if(!profiles){profiles=new Map();cache.set(data,profiles);}const key=signature(c);if(profiles.has(key))return profiles.get(key);
+-  const clip=new INK.CompiledClip(data),count=Math.ceil(data.duration/step)+1,tracks=Object.fromEntries(parts.map(k=>[k,new Float64Array(count*2)]));
+-  const body=Object.fromEntries(Object.keys(bodyLimits).map(k=>[k,new Float64Array(count)]));
+-  let limited=0;
+-  for(let i=0;i<count;i++){
++ // Build only the prefix needed by this request. A public bake without a
++ // target still warms the whole clip; random/reverse seeks share the same rows.
++ function bake(data,c,through=data.duration){
++  let profiles=cache.get(data);if(!profiles){profiles=new Map();cache.set(data,profiles);}const key=signature(c);
++  let value=profiles.get(key);
++  if(!value){
++   const clip=new INK.CompiledClip(data),count=Math.ceil(data.duration/step)+1;
++   value={clip,tracks:Object.fromEntries(parts.map(k=>[k,new Float64Array(count*2)])),body:Object.fromEntries(Object.keys(bodyLimits).map(k=>[k,new Float64Array(count)])),count,limited:0,built:0};
++   if(profiles.size>=4)profiles.delete(profiles.keys().next().value);profiles.set(key,value);stats.bakes++;
++  }
++  const {clip,count,tracks,body}=value,end=Math.min(count-1,Math.ceil(clamp(through,0,data.duration)/step));let limited=0;
++  for(let i=value.built;i<=end;i++){
+    const p=clip.sample(Math.min(data.duration,i*step));
+-   for(const [name,speed]of Object.entries(bodyLimits)){const raw=p[name]??0,prev=i?body[name][i-1]:raw,delta=raw-prev,limit=speed*step;if(Math.abs(delta)>limit+.0001)limited++;body[name][i]=prev+clamp(delta,-limit,limit);p[name]=body[name][i];}
++   for(const name in bodyLimits){const raw=p[name]??0,prev=i?body[name][i-1]:raw,delta=raw-prev,limit=bodyLimits[name]*step;if(Math.abs(delta)>limit+.0001)limited++;body[name][i]=prev+clamp(delta,-limit,limit);p[name]=body[name][i];}
+    const r=reference(c,p);
+    for(const name of parts){const raw=angles(r[name]),a=tracks[name],speed=name.includes('Leg')?settings.legSpeed:settings.armSpeed;
+     for(let j=0;j<2;j++){if(!i){a[j]=raw[j];continue;}const prev=a[(i-1)*2+j],delta=shortest(raw[j]-prev),limit=(j?settings.bendSpeed:speed)*step;
+@@ -31,15 +37,15 @@
+     }
+    }
+   }
+-  const value={clip,tracks,body,count,limited};if(profiles.size>=4)profiles.delete(profiles.keys().next().value);profiles.set(key,value);stats.bakes++;stats.limited+=limited;return value;
++  stats.bakedFrames=(stats.bakedFrames||0)+Math.max(0,end+1-value.built);value.built=Math.max(value.built,end+1);value.limited+=limited;stats.limited+=limited;return value;
+  }
+  function sampleBody(b,frame,p,base=null){const index=Math.min(b.count-1,frame/step),i=Math.floor(index),j=Math.min(b.count-1,i+1),u=index-i;for(const [name,a]of Object.entries(b.body)){const correction=base?(p[name]??0)-(base[name]??0):0;p[name]=a[i]+(a[j]-a[i])*u+correction;}return p;}
+- function prepare(p,data,frame,c){if(c&&data&&Number.isFinite(frame)){frame=clamp(frame,0,data.duration);contexts.set(p,{data,frame,c});if(settings.enabled){const b=bake(data,c);sampleBody(b,frame,p,b.clip.sample(frame));}}return p;}
++ function prepare(p,data,frame,c){if(c&&data&&Number.isFinite(frame)){frame=clamp(frame,0,data.duration);contexts.set(p,{data,frame,c});if(settings.enabled){const b=bake(data,c,frame+step);sampleBody(b,frame,p,b.clip.sample(frame));}}return p;}
+  function inherit(from,to){const ctx=contexts.get(from);if(ctx)contexts.set(to,ctx);return to;}
+  function stabilize(c,p,raw){
+   const snapshot=snapshots.get(p);if(snapshot){const out={};for(const name of parts){const a=snapshot[name],root=raw[name][0],l0=vec.length(vec.sub(raw[name][1],root)),l1=vec.length(vec.sub(raw[name][2],raw[name][1])),first=[root[0]+Math.cos(rad(a[0]))*l0,root[1]+Math.sin(rad(a[0]))*l0];out[name]=[root,first,[first[0]+Math.cos(rad(a[0]+a[1]))*l1,first[1]+Math.sin(rad(a[0]+a[1]))*l1]];}return out;}
+   const ctx=contexts.get(p);if(!settings.enabled||!ctx)return raw;
+-  const b=bake(ctx.data,c),index=Math.min(b.count-1,ctx.frame/step),i=Math.floor(index),j=Math.min(b.count-1,i+1),u=index-i;
++  const b=bake(ctx.data,c,ctx.frame+step),index=Math.min(b.count-1,ctx.frame/step),i=Math.floor(index),j=Math.min(b.count-1,i+1),u=index-i;
+   const base=sampleBody(b,ctx.frame,b.clip.sample(ctx.frame)),ref=reference(c,base),out={};
+   for(const name of parts){
+    const tr=b.tracks[name],a0=angles(raw[name]),a1=angles(ref[name]);
+@@ -62,5 +68,5 @@
+    offsets[name]=a.map((v,k)=>shortest(v-c[k]));velocities[name]=a.map((v,k)=>clamp((shortest(v-b[k])-shortest(d[k]-c[k]))/Math.max(.001,dt),-64,64));}
+   return{offsets,velocities,duration};
+  }
+- INK.Articulation={version:'8.0.0',attachSnapshot(p,angles){for(const k of parts){if(!Array.isArray(angles?.[k])||angles[k].length!==2||!angles[k].every(Number.isFinite))throw TypeError('Invalid solved pose angles');}snapshots.set(p,Object.fromEntries(parts.map(k=>[k,angles[k].slice()])));return p;},settings,stats,prepare,inherit,stabilize,bake,angles,bodyLimits,attachTransition,bridge,clear(){cache=new WeakMap();contexts=new WeakMap();}};
++ INK.Articulation={version:'9.0.0',attachSnapshot(p,angles){for(const k of parts){if(!Array.isArray(angles?.[k])||angles[k].length!==2||!angles[k].every(Number.isFinite))throw TypeError('Invalid solved pose angles');}snapshots.set(p,Object.fromEntries(parts.map(k=>[k,angles[k].slice()])));return p;},settings,stats,prepare,inherit,stabilize,bake,angles,bodyLimits,attachTransition,bridge,clear(){cache=new WeakMap();contexts=new WeakMap();}};
+ })();
+--- a/src/ink/combat-flow.js
++++ b/src/ink/combat-flow.js
+@@ -5,8 +5,9 @@
+  */
+ 'use strict';
+ (() => {
+-  const settings = {rhythm:'weighted', speed:1, rules:'flow', buffer:9};
++  const settings = {rhythm:'fluid', speed:1, rules:'flow', buffer:9};
+   const profiles = {
++    fluid:{label:'连贯节奏',light:4,medium:5,heavy:7,block:3,superStart:18,superMid:2,superEnd:9},
+     legacy:{label:'v6 节奏', light:3,medium:5,heavy:7,block:4,superStart:20,superMid:6,superEnd:6},
+     weighted:{label:'重心节奏', light:7,medium:9,heavy:12,block:6,superStart:28,superMid:4,superEnd:14}
+   };
+@@ -77,7 +78,7 @@
+     record(G,type){this.stats.ticks++;this.stats[type]=(this.stats[type]||0)+1;},
+     contact(G,m,result,last){
+       const p=profiles[settings.rhythm];
+-      const n=result==='block'?p.block:m.super?(last?p.superEnd:p.superMid):m.hits>1&&!last&&settings.rhythm==='weighted'?Math.min(5,m.level>=2?5:4):m.level>=3?p.heavy:m.level===2?p.medium:p.light;
++      const n=result==='block'?p.block:m.super?(last?p.superEnd:p.superMid):m.hits>1&&!last&&settings.rhythm==='fluid'?Math.min(3,m.level>=2?3:2):m.hits>1&&!last&&settings.rhythm==='weighted'?Math.min(5,m.level>=2?5:4):m.level>=3?p.heavy:m.level===2?p.medium:p.light;
+       this.events.push({tick:G.tick,actionFrame:G.actionTick||0,move:m.id,result,last:!!last,freeze:n,profile:settings.rhythm});if(this.events.length>120)this.events.shift();return n;
+     },
+     superStart(m){return profiles[settings.rhythm].superStart+(m.ca?6:0);},
+--- a/src/ink/core.js
++++ b/src/ink/core.js
+@@ -4,7 +4,7 @@
+  */
+ 'use strict';
+ globalThis.INK = (() => {
+-  const VERSION = '8.0.0-response';
++  const VERSION = '9.0.0-fluid';
+   const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+   const lerp = (a, b, t) => a + (b - a) * t;
+   const rad = a => a * Math.PI / 180;
+@@ -23,7 +23,7 @@
+     svg: m => 'matrix('+m.map(n=>Math.round(n*10000)/10000).join(' ')+')'
+   };
+   const finite = (v,label='value') => {if(typeof v!=='number'||!Number.isFinite(v))throw TypeError(label+' must be finite');return v;};
+-  const copy = o => Object.fromEntries(Object.entries(o).map(([k,v])=>[k,Array.isArray(v)?v.slice():v]));
++  const copy = o => {const out={};for(const k in o)if(Object.hasOwn(o,k)){const v=o[k];out[k]=Array.isArray(v)?v.slice():v;}return out;};
+   const blend = (a,b,t) => {const p=copy(a);for(const k in b){const bv=b[k],av=a[k]??(Array.isArray(bv)?bv.map(()=>0):0);p[k]=Array.isArray(bv)?bv.map((v,i)=>lerp(av[i],v,t)):lerp(av,bv,t);}return p;};
+ 
+   /** Two-bone IK with an explicit pole sign. No history-dependent bend flips.
+--- a/src/ink/effects.js
++++ b/src/ink/effects.js
+@@ -15,7 +15,7 @@
+       this.ribbons=Array.from({length:12},()=>{const g=node('g',{},this.root);return{g,paths:Array.from({length:4},()=>node('path',{'fill':'none','stroke-linecap':'round','stroke-linejoin':'round'},g)),tongues:Array.from({length:4},()=>node('path',{display:'none',stroke:'none'},g))};});
+       // Keep the previous inspector handle as a read-only compatibility alias.
+       this.nodes=this.ribbons;
+-      this.particles=new ParticleSystem(this.root,{capacity:144});this.stats={active:0};
++      this.particles=new ParticleSystem(this.root,{capacity:144});this.stats={active:0,historyHits:0};
+     }
+     births(record,event,profile){
+       this.catalogue??=new Map();if(this.catalogue.has(event.id))return this.catalogue.get(event.id);
+@@ -30,8 +30,17 @@
+       this.catalogue.set(event.id,{seed,births:out});return this.catalogue.get(event.id);
+     }
+     point(record,t,socket,profile,currentInverse){
+-      t=clamp(t,0,record.clip.duration);const lo=Math.floor(t*4)/4,hi=Math.min(record.clip.duration,lo+.25),u=(t-lo)/.25;
+-      const at=time=>{const key=time+'|'+socket;let q=this.context?.history?null:this.cache.get(key);if(!q){const context=this.context?.history?{...INK.MotionGraph.rootAt(this.context,time),history:this.context.history,origin:this.context.origin}:null,p=INK.MotionGraph.compose(record,time,this.clip.sample(time),profile,context,this.graphOptions||INK.MotionGraph.settings),r=INK.Rig.solveAnimation(profile,p);q=mat.point(rootMat(p),INK.Runtime.socket(p,r,socket));if(!this.context?.history)this.cache.set(key,q);if(this.cache.size>2048)this.cache.delete(this.cache.keys().next().value);}return q;};
++      t=clamp(t,0,record.clip.duration);
++      // Live world-space sockets are owned by simulation. Do not reconstruct
++      // previous poses using today's blend/landing state or current renderer.
++      const points=this.context?.socketHistory?.get(socket);
++      if(points?.length&&t>=points[0].t-1e-7&&t<=points.at(-1).t+1e-7){
++        let low=0,high=points.length-1;while(high-low>1){const m=(low+high)>>1;if(points[m].t<=t)low=m;else high=m;}
++        const a=points[low],b=points[high],u=b.t===a.t?0:clamp((t-a.t)/(b.t-a.t)),x=a.x+(b.x-a.x)*u,y=a.y+(b.y-a.y)*u,c=this.context;
++        this.stats.historyHits++;return mat.point(currentInverse,[(x-c.x)/(c.scale*c.dir),(y-665-c.y)/c.scale]);
++      }
++      const lo=Math.floor(t*4)/4,hi=Math.min(record.clip.duration,lo+.25),u=(t-lo)/.25;
++      const at=time=>{const key=time+'|'+socket;let q=this.context?.history?null:this.cache.get(key);if(!q){let evaluated=this.frameSamples?.get(time);if(!evaluated){const context=this.context?.history?{...INK.MotionGraph.rootAt(this.context,time),history:this.context.history,origin:this.context.origin}:null,p=INK.MotionGraph.compose(record,time,this.clip.sample(time),profile,context,this.graphOptions||INK.MotionGraph.settings);evaluated={p,r:INK.Rig.solveAnimation(profile,p),matrix:rootMat(p)};this.frameSamples?.set(time,evaluated);}q=mat.point(evaluated.matrix,INK.Runtime.socket(evaluated.p,evaluated.r,socket));if(!this.context?.history)this.cache.set(key,q);if(this.cache.size>2048)this.cache.delete(this.cache.keys().next().value);}return q;};
+       const a=at(lo),b=at(hi),q=[a[0]+(b[0]-a[0])*u,a[1]+(b[1]-a[1])*u];let result=q;
+       const context=this.context,rows=context?.history;
+       if(rows?.length){let l=rows[0],h=l;for(let i=1;i<rows.length;i++){h=rows[i];if(h.t>=t)break;l=h;}
+@@ -39,7 +48,7 @@
+         result=[(q[0]*scale*dir+x-context.x)/(context.scale*context.dir),(q[1]*scale+y-context.y)/context.scale];
+       }return mat.point(currentInverse,result);
+     }
+-    render(record,frame,pose,rig,context=null){this.context=context;if(!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
++    render(record,frame,pose,rig,context=null){this.context=context;this.frameSamples=new Map();if(!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
+       const profile=rig.profile||INK.Runtime.profile(record.character);
+       if(this.record!==record||this.profileKey!==JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth])||this.quality!==setting.quality||this.graphKey!==JSON.stringify(this.graphOptions||INK.MotionGraph.settings)){this.record=record;this.profile=profile;this.profileKey=JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth]);this.quality=setting.quality;this.graphKey=JSON.stringify(this.graphOptions||INK.MotionGraph.settings);this.cache.clear();this.catalogue=null;this.clip=new (INK.CompiledClip||INK.Clip)(record.clip);}
+       const inverse=mat.inverse(rootMat(pose)),base=materials[record.character]||materials.ryu;let used=0,slot=0;
+@@ -124,7 +133,7 @@
+         const a=f.attack;
+         if(!a){this.bank?.cancel(f.index,this.time);f._inkTrail=null;f._inkFxPrevious=null;continue;}
+         const rec=INK.Runtime.record(f,a.m);if(!rec)continue;
+-        if(f._inkTrail?.attack!==a){f._inkTrail={attack:a,rows:[{...(f._inkActionOrigin||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04}),t:0}]};f._inkFxPrevious=new Map();}
++        if(f._inkTrail?.attack!==a){f._inkTrail={attack:a,socketHistory:new Map(),socketNames:[...new Set(rec.fx.map(e=>e.socket))],socketUntil:0,rows:[{...(f._inkActionOrigin||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04}),t:0}]};f._inkFxPrevious=new Map();}
+         const rows=f._inkTrail.rows,t=INK.Runtime.clipFrame(rec,a.m,a.t),root={t,x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04};
+         if(rows.at(-1)?.t===t)rows[rows.length-1]=root;else rows.push(root);if(rows.length>40)rows.shift();
+         const poseCache=new Map(),pointAt=(at,name)=>{
+@@ -133,6 +142,16 @@
+           const r=sample.root,q=INK.Runtime.socket(sample.pose,sample.rig,name);
+           return INK.Rig.world(sample.pose,q,{x:r.x,y:665+r.y,scale:r.scale,facing:r.dir});
+         };
++        if(setting.enabled&&f._inkTrail.socketNames.length){
++          const h=f._inkTrail,previous=h.socketHistory.size?Math.max(h.socketUntil,t-24):Math.max(0,t-18);
++          const times=[];if(!h.socketHistory.size)times.push(previous);
++          for(let at=Math.floor(previous*2+1e-7)/2+.5;at<=t+1e-7;at+=.5)times.push(Math.min(at,t));
++          if(!times.length||Math.abs(times.at(-1)-t)>1e-7)times.push(t);
++          for(const at of times)for(const name of h.socketNames){const q=pointAt(at,name);let list=h.socketHistory.get(name);if(!list){list=[];h.socketHistory.set(name,list);}
++            const entry={t:at,x:q[0],y:q[1]};if(list.at(-1)?.t===at)list[list.length-1]=entry;else list.push(entry);if(list.length>96)list.shift();
++          }
++          h.socketUntil=t;
++        }else if(!setting.enabled){f._inkTrail.socketHistory.clear();f._inkTrail.socketUntil=t;}
+         this.bank?.update(f,rec,t,this.time,pointAt,setting);
+       }
+       if(!setting.enabled||!this.pool)return;
+--- /dev/null
++++ b/src/ink/frame-probe.js
+@@ -0,0 +1,18 @@
++/* FLOW 09 — bounded, opt-in-to-view diagnostics. Observes the real rAF loop.
++ * Callback intervals are scheduling evidence, not a hardware FPS certificate.
++ * Hitstop counts remain separate from missed display deadlines. Never adapts
++ * combat speed, drops bone samples or changes gameplay because a device is slow.
++ */
++'use strict';
++(()=>{
++ const capacity=600,rows=new Array(capacity);let cursor=0,count=0,last=null,pending=null;
++ const q=(a,u)=>a.length?a[Math.floor((a.length-1)*u)]:0;
++ INK.FrameProbe={version:'9.0.0',capacity,
++  begin(now,G){if(G.screen!=='battle'||G.paused||document.hidden){last=null;pending=null;return;}pending={time:now,interval:last===null?0:Math.max(0,now-last),before:INK.CombatFlow.stats.freeze};last=now;},
++  end(cpu,G,clock){if(!pending)return;const row={time:pending.time,interval:pending.interval,cpu:Math.max(0,cpu),tick:G.tick,action:G.actionTick,held:INK.CombatFlow.stats.freeze-pending.before,discarded:clock.stats.discardedSteps};pending=null;rows[cursor]=row;cursor=(cursor+1)%capacity;count=Math.min(capacity,count+1);},
++  frames(){return Array.from({length:count},(_,i)=>({...rows[(cursor-count+i+capacity)%capacity]}));},
++  inspect(){const a=this.frames(),valid=a.filter(r=>r.interval>0),intervals=valid.map(r=>r.interval).sort((a,b)=>a-b),cpu=a.map(r=>r.cpu).sort((a,b)=>a-b);return{capacity,samples:a.length,windowMs:a.length?a.at(-1).time-a[0].time:0,intervalP50:q(intervals,.5),intervalP95:q(intervals,.95),cpuP95:q(cpu,.95),longIntervals:intervals.filter(v=>v>25).length,veryLongIntervals:intervals.filter(v=>v>50).length,heldSimulationSteps:a.reduce((s,r)=>s+r.held,0),discardedSteps:a.length?a.at(-1).discarded-a[0].discarded:0,viewport:INK.Viewport.inspect()};},
++  reset(){rows.fill(undefined);cursor=0;count=0;last=null;pending=null;},
++  export(){return{version:1,kind:'ink-flow9-frame-diagnostic',capturedAt:new Date().toISOString(),engine:globalThis.SVG_FIGHTER?.version,settings:{rhythm:{...INK.CombatFlow.settings},viewport:{...INK.Viewport.settings},effects:{...INK.VFX.settings}},summary:this.inspect(),frames:this.frames(),note:'Real browser callback/CPU samples, not video, input recording or certified device FPS.'};}
++ };
++})();
+--- a/src/ink/game-adapter.js
++++ b/src/ink/game-adapter.js
+@@ -1,10 +1,10 @@
+ /* One production renderer, reversible only for regression inspection. */
+ 'use strict';
+-(()=>{INK.Game={enabled:true,mode:'skin',version:'8.0.0',
++(()=>{INK.Game={enabled:true,mode:'skin',version:'9.0.0',
+  legacyNodes:f=>[f.core,f.rearLeg.g,f.frontLeg.g,f.trailing,f.beltLink].filter(Boolean),
+- show(f,on){for(const n of this.legacyNodes(f))n.style.display=on?'none':'';if(f.inkRenderer)f.inkRenderer.group.style.display=on?'':'none';if(f.inkFX){f.inkFX.group.style.display=on?'':'none';f.inkFX.backRoot.style.display=on?'':'none';}},
+- mount(f){if(f.inkRenderer)return f.inkRenderer;const profile=INK.Runtime.store?INK.Runtime.profile(f.ch.id):INK.assets.byID[f.ch.id];const r=f.inkRenderer=new INK.Renderer(f.facing,profile);r.setStyle(profile.previewStyle||{});r.setMode(this.mode);f.facing.insertBefore(r.group,f.charge);f.inkFX=new INK.Effects(f.facing);f.facing.insertBefore(f.inkFX.backRoot,r.group);f.facing.insertBefore(f.inkFX.group,f.charge);return r;},
+- update(f,pose,rig,frame,expression,freeze,world=null,view=f){const r=this.mount(f);this.show(f,true);const ctx=INK.State.contextForFX(view);const localFrame=ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):frame;r.render(pose,{rig,frame:localFrame,expression,secondary:!INK.VFX.settings.reducedMotion,motion:INK.Runtime.presentation(view,ctx?.record,localFrame,frame)});f.inkFX.render(ctx?.record,ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):0,pose,rig,world?{...world,history:f._inkTrail?.attack===f.attack?f._inkTrail.rows:null}:null);},
++ show(f,on){if(f._inkShown===on)return;f._inkShown=on;for(const n of this.legacyNodes(f))n.style.display=on?'none':'';if(f.inkRenderer)f.inkRenderer.group.style.display=on?'':'none';if(f.inkFX){f.inkFX.group.style.display=on?'':'none';f.inkFX.backRoot.style.display=on?'':'none';}},
++ mount(f){if(f.inkRenderer)return f.inkRenderer;const profile=INK.Runtime.store?INK.Runtime.profile(f.ch.id):INK.assets.byID[f.ch.id];const r=f.inkRenderer=new INK.Renderer(f.facing,profile);r.setStyle(profile.previewStyle||{});r.setMode(this.mode);f.facing.insertBefore(r.group,f.charge);f._inkShown=undefined;f.inkFX=new INK.Effects(f.facing);f.facing.insertBefore(f.inkFX.backRoot,r.group);f.facing.insertBefore(f.inkFX.group,f.charge);return r;},
++ update(f,pose,rig,frame,expression,freeze,world=null,view=f){const r=this.mount(f);this.show(f,true);const ctx=INK.State.contextForFX(view);const localFrame=ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):frame;r.render(pose,{rig,frame:localFrame,expression,secondary:!INK.VFX.settings.reducedMotion,motion:INK.Runtime.presentation(view,ctx?.record,localFrame,frame)});f.inkFX.render(ctx?.record,ctx?(f.attack?INK.Runtime.clipFrame(ctx.record,f.attack.m,frame):ctx.frame):0,pose,rig,world?{...world,history:f._inkTrail?.attack===f.attack?f._inkTrail.rows:null,socketHistory:f._inkTrail?.attack===f.attack?f._inkTrail.socketHistory:null}:null);},
+  setEnabled(value){this.enabled=!!value;INK.Runtime.setEnabled(value);for(const f of globalThis.SVG_FIGHTER?.fighters||[])this.show(f,this.enabled);globalThis.SVG_FIGHTER?.render();},
+  setMode(mode){this.mode=mode;for(const f of globalThis.SVG_FIGHTER?.fighters||[])f.inkRenderer?.setMode(mode);}
+ };})();
+--- a/src/ink/motion-graph.js
++++ b/src/ink/motion-graph.js
+@@ -91,7 +91,11 @@
+       const ease=INK.Motion.smoother,fadeIn=c.fadeIn??2,fadeOut=c.fadeOut??3;
+       const weight=(c.strength??1)*(fadeIn?ease((frame-c.start)/fadeIn):1)*(fadeOut?ease((c.end-frame)/fadeOut):1);
+       if(weight<=0)continue;
+-      const ref=layers(data,c.start,compiled(data).clip.sample(c.start),options),rig=INK.Rig.solveAnimation(profile,ref);
++      const compiledData=compiled(data);compiledData.contactRefs??=new Map();
++      const referenceKey=c.id+'|'+JSON.stringify([profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth,options.enabled,options.layers,INK.Anatomy?.settings,INK.Articulation?.settings]);
++      let reference=compiledData.contactRefs.get(referenceKey);
++      if(!reference){const ref=layers(data,c.start,compiledData.clip.sample(c.start),options);reference={ref,rig:INK.Rig.solveAnimation(profile,ref)};if(compiledData.contactRefs.size>=32)compiledData.contactRefs.clear();compiledData.contactRefs.set(referenceKey,reference);}
++      const {ref,rig}=reference;
+       const part=c.socket==='frontFoot'?'frontLeg':'rearLeg',key=c.socket==='frontFoot'?'fa':'ra';
+       const world=mat.point(rootMatrix(ref,rootAt(context,c.start)),rig[part][2]);
+       const projected=mat.point(mat.inverse(rootMatrix(p,context||{})),world);
+--- a/src/ink/portable.js
++++ b/src/ink/portable.js
+@@ -10,8 +10,8 @@
+  function zip(files){const chunks=[],central=[];let offset=0;const now=new Date(),time=((now.getHours()&31)<<11)|((now.getMinutes()&63)<<5)|(now.getSeconds()>>1),date=((now.getFullYear()-1980)<<9)|((now.getMonth()+1)<<5)|now.getDate();for(const [name,content]of Object.entries(files)){const n=enc.encode(name),data=typeof content==='string'?enc.encode(content):content,c=crc32(data),h=[];u32(h,0x04034b50);u16(h,20);u16(h,0x800);u16(h,0);u16(h,time);u16(h,date);u32(h,c);u32(h,data.length);u32(h,data.length);u16(h,n.length);u16(h,0);chunks.push(new Uint8Array(h),n,data);const d=[];u32(d,0x02014b50);u16(d,20);u16(d,20);u16(d,0x800);u16(d,0);u16(d,time);u16(d,date);u32(d,c);u32(d,data.length);u32(d,data.length);u16(d,n.length);u16(d,0);u16(d,0);u16(d,0);u16(d,0);u32(d,0);u32(d,offset);central.push(new Uint8Array(d),n);offset+=h.length+n.length+data.length;}
+  const centralSize=central.reduce((a,b)=>a+b.length,0),end=[],count=Object.keys(files).length;u32(end,0x06054b50);u16(end,0);u16(end,0);u16(end,count);u16(end,count);u32(end,centralSize);u32(end,offset);u16(end,0);return new Blob([...chunks,...central,new Uint8Array(end)],{type:'application/zip'});}
+  function safeJSON(o){return JSON.stringify(o).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');}
+- function html(store,{playerOnly=false}={}){const el=document.getElementById('ink-export-template');if(!el)throw Error('此源码页面没有离线模板，请先运行构建器');let t=JSON.parse(el.textContent);const snapshot=store.snapshot();snapshot.rhythmSettings={...INK.CombatFlow.settings};snapshot.presentationSettings={...INK.Presentation.settings};snapshot.projectId='ink-portable-'+Date.now().toString(36)+(playerOnly?'-play':'');snapshot.presentation=playerOnly?'player':'studio';const slot=(doc,id,value)=>{const start='<script id="'+id+'" type="application/json">',a=doc.indexOf(start);if(a<0)throw Error('导出模板缺少 '+id);const b=doc.indexOf('</script>',a);return doc.slice(0,a+start.length)+safeJSON(value)+doc.slice(b);};if(INK.Combo?.routes){INK.Combo.configure(INK.Combo.routes);t=slot(t,'ink-combo-library',INK.Combo.routes);}return slot(slot(t,'ink-export-template',t),'ink-user-project',snapshot);}
++ function html(store,{playerOnly=false}={}){const el=document.getElementById('ink-export-template');if(!el)throw Error('此源码页面没有离线模板，请先运行构建器');let t=JSON.parse(el.textContent);const snapshot=store.snapshot();snapshot.rhythmSettings={...INK.CombatFlow.settings};snapshot.presentationSettings={...INK.Presentation.settings};snapshot.viewportSettings={...INK.Viewport.settings};snapshot.effectsSettings={...INK.VFX.settings};snapshot.projectId='ink-portable-'+Date.now().toString(36)+(playerOnly?'-play':'');snapshot.presentation=playerOnly?'player':'studio';const slot=(doc,id,value)=>{const start='<script id="'+id+'" type="application/json">',a=doc.indexOf(start);if(a<0)throw Error('导出模板缺少 '+id);const b=doc.indexOf('</script>',a);return doc.slice(0,a+start.length)+safeJSON(value)+doc.slice(b);};if(INK.Combo?.routes){INK.Combo.configure(INK.Combo.routes);t=slot(t,'ink-combo-library',INK.Combo.routes);}return slot(slot(t,'ink-export-template',t),'ink-user-project',snapshot);}
+  function download(name,content,type='application/octet-stream'){const blob=content instanceof Blob?content:new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);return blob;}
+- function packageFiles(store,playable=true){const files={};const routes=document.getElementById('ink-combo-library');if(routes)files['assets/ink/combos.json']=safeJSON(INK.Combo?.routes||JSON.parse(routes.textContent));for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK FLOW 8 / Response & Pose Replay\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
++ function packageFiles(store,playable=true){const files={};const routes=document.getElementById('ink-combo-library');if(routes)files['assets/ink/combos.json']=safeJSON(INK.Combo?.routes||JSON.parse(routes.textContent));for(const[p,v]of Object.entries(store.files()))files['assets/ink/'+p]=v;if(playable)files['INK-Street-Fighter-6.html']=html(store);files['使用说明.txt']='INK FLOW 9 / Fluid Motion & Stable Stage\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n';return files;}
+  INK.Portable={zip,crc32,html,download,packageFiles,safeJSON};
+ })();
+--- a/src/ink/presentation-clock.js
++++ b/src/ink/presentation-clock.js
+@@ -14,7 +14,10 @@
+   s._inkHistory=null;s._inkPrevView=null;
+   return s;
+  }
+- const Clock={version:'8.0.0',settings,stats:{steps:0,views:0,projectileViews:0},key,snapshot,
++ const Clock={version:'9.0.0',settings,
++  bindControl(G,actors){let paused=!!G.paused;Object.defineProperty(G,'paused',{enumerable:true,configurable:false,get(){return paused;},set(value){const next=!!value;if(next&&!paused)for(const f of actors())f._inkHoldAction=G.actionTick;paused=next;}});},
++  boundary(G,fighters,active=true){const key=G.screen+'|'+!!G.paused+'|'+!!active;if(this.boundaryKey!==key){this.boundaryKey=key;for(const f of fighters)f._inkHoldAction=G.actionTick;}},
++  stats:{steps:0,views:0,projectileViews:0},key,snapshot,
+   begin(G,fighters){
+    this.stats.steps++;
+    for(const f of fighters){f._inkPrevView=snapshot(f);f._inkHistory={key:key(f),dir:f.dir,attack:f.attack};f._inkVisualClock=(f._inkVisualClock||0)+1;}
+--- a/src/ink/project.js
++++ b/src/ink/project.js
+@@ -51,7 +51,7 @@
+   async set(value){if(this.mode==='indexedDB')return new Promise((resolve,reject)=>{const tx=this.db.transaction('projects','readwrite');tx.objectStore('projects').put(value,this.name);tx.oncomplete=()=>resolve(true);tx.onerror=tx.onabort=()=>reject(tx.error||Error('无法保存数据库'));});if(this.mode==='localStorage'){localStorage.setItem(this.name,JSON.stringify(value));return true;}return false;}
+  }
+  class AssetStore {
+-  constructor(bundle,embedded=null){this.bundle=bundle;this.manifest=bundle.manifest;this.overrides={models:{},rigs:{},moves:{}};this.revision=0;this.listeners=new Set();this.cache=new Map();this.queue=Promise.resolve();this.id=embedded?.projectId||'ink-flow-sf6-v8';this.persistence=new Persistence(this.id);this.embedded=embedded;this.pathHandle=null;this.directoryQueue=Promise.resolve();this.lastSaved=0;this.mode='loading';this.gameMap={};for(const id of CHARACTERS){for(const rec of Object.values(bundle.characters[id].moves))this.gameMap[id+':'+rec.gameId]=id+':'+rec.key;}}
++  constructor(bundle,embedded=null){this.bundle=bundle;this.manifest=bundle.manifest;this.overrides={models:{},rigs:{},moves:{}};this.revision=0;this.listeners=new Set();this.cache=new Map();this.queue=Promise.resolve();this.id=embedded?.projectId||'ink-flow-sf6-v9';this.persistence=new Persistence(this.id);this.embedded=embedded;this.pathHandle=null;this.directoryQueue=Promise.resolve();this.lastSaved=0;this.mode='loading';this.gameMap={};for(const id of CHARACTERS){for(const rec of Object.values(bundle.characters[id].moves))this.gameMap[id+':'+rec.gameId]=id+':'+rec.key;}}
+   async init(){
+    validateBundle(this.bundle);
+    await this.persistence.init();this.mode=this.persistence.mode;
+--- a/src/ink/renderer.js
++++ b/src/ink/renderer.js
+@@ -121,9 +121,10 @@
+    const name=(this.rear?'rear':'front')+(this.leg?'Leg':'Arm'),source=rig.anatomy?.source[name];
+    const invariant=INK.Anatomy.lengths(this.c),index=this.leg?2:0,sourceLengths=[invariant[index],invariant[index+1]];
+    this.decals(sourceLengths);
+-   const contour=INK.SkinGeometry.sweep(chain,baseWidths,outer);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
+-   assign(this.skinShade,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer):'',stats);
+-   assign(this.skinLight,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,.38,.61):'',stats);
++   const centerline=INK.SkinGeometry.sampled(chain,baseWidths);
++   const contour=INK.SkinGeometry.sweep(chain,baseWidths,outer,centerline);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
++   assign(this.skinShade,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,-.92,-.48,centerline):'',stats);
++   assign(this.skinLight,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,.38,.61,centerline):'',stats);
+    for(let i=0;i<2;i++){
+     const part=this.pieces[i],L=lengths[i],top=i?e*(this.leg?1.05:1.14):w,bottom=i?z:e;
+     const bulge=i?(this.leg?1.19:this.c.id==='luke'?1.47:1.24):(this.material.skin?1+flex*.1:1.015);
+@@ -131,7 +132,7 @@
+     assign(part.cloth,'transform',`scale(1 ${L/Math.max(.0001,this.decalLengths[i])})`,stats);
+     assign(part.outline,'d',this.material.skin?'':segmentShape(L,top,bottom,bulge,!!i),stats);
+     assign(part.shade,'display',this.material.skin?'none':'inline',stats);assign(part.light,'display',this.material.skin?'none':'inline',stats);
+-    assign(part.shade,'d',segmentShadow(L,top,bottom,!!i),stats);assign(part.light,'d',segmentLight(L,top,bottom),stats);
++    if(!this.material.skin){assign(part.shade,'d',segmentShadow(L,top,bottom,!!i),stats);assign(part.light,'d',segmentLight(L,top,bottom),stats);}
+     assign(part.line,'d',this.material.skin?`M${top*.35} ${L*.36}Q${top*.47} ${L*.56} ${bottom*.23} ${L*.76}`:'',stats);
+    }
+    const joint=mat.point(outer,b),ang=Math.atan2(bc[1],bc[0])*180/Math.PI;
+@@ -195,8 +196,10 @@
+    const inputRig=rig?.anatomy?rig:Rig.solveAnimation(this.c,p),r=inputRig,s=this.stats,turn=INK.Turn.view(INK.Turn.angle(p)),back=turn.far;
+    this.inputRig=inputRig;
+    for(const name of ['rearLeg','frontLeg','rearArm','frontArm'])this[name].render(r[name],p,s,this.style,r);
+-   this.torso.render(p,s);this.torsoBack.render(p,s);this.torsoSide.render(p,s);
+    const bodyBands=INK.Turn.bands(INK.Turn.angle(p),64),faceBands=INK.Turn.bands(INK.Turn.angle(p,'head'),48);
++   if(bodyBands.front[1]>=.001)this.torso.render(p,s);
++   if(bodyBands.back[1]>=.001)this.torsoBack.render(p,s);
++   if(bodyBands.profile[1]>=.001)this.torsoSide.render(p,s);
+    for(const name of ['front','profile','back']){
+     const skin={front:this.torso,profile:this.torsoSide,back:this.torsoBack}[name],band=bodyBands[name],rect=this.turnMasks['body'+name];
+     assign(skin.group,'display',band[1]<.001?'none':'inline',s);
+--- a/src/ink/runtime.js
++++ b/src/ink/runtime.js
+@@ -46,7 +46,8 @@
+    const tr=f._inkTransition;if(tr?.id===m.id)p=INK.Motion.apply(p,tr.bridge,t);return p;
+   },
+   presentation(f,record,frame,simulationFrame=f.attack?.t||0){const v=INK.Motion.secondary(record?.clip,frame);const tr=f._inkTransition;const out=f.attack&&tr?.id===f.attack.m.id?INK.Motion.blendSecondary(tr.secondary,v,simulationFrame,8):v;return INK.StateTransitions?INK.StateTransitions.secondary(f,out):out;},
+-  neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((time*60+(f.index||0)*13)%rec.clip.duration,base);},
++  clock(f,fallback=0){return Number.isFinite(f._inkVisualClock)?f._inkVisualClock:Number.isFinite(f._inkPreviewClock)?f._inkPreviewClock:fallback;},
++  neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((this.clock(f,time*60)+(f.index||0)*13)%rec.clip.duration,base);},
+   rig(f,p){if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
+   visualRig(f,p){return Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
+   prepare(f,m){if(!this.enabled||!this.store||!m)return m;const record=this.record(f,m);if(!record?.binding.retimed)return m;const b=record.binding;return{...m,startup:b.startup,active:b.active,recovery:b.recovery,total:record.clip.duration};},
+@@ -78,7 +79,7 @@
+   },
+   visual(f,base,world=null){
+    if(!this.enabled||!this.store)return base;
+-   const ctx=INK.State.contextForFX(f)||(()=>{const r=this.store.byGame(f.ch.id,'@idle');return r?{record:r,frame:(f.stateAge||0)%r.clip.duration}:null;})();
++   const ctx=INK.State.contextForFX(f)||(()=>{const r=this.store.byGame(f.ch.id,'@idle');return r?{record:r,frame:(this.clock(f,f.stateAge||0)+(f.index||0)*13)%r.clip.duration}:null;})();
+    let p=base;
+    if(!ctx)return p;
+    const context=world?{...world,history:f._inkTrail?.rows,origin:f._inkActionOrigin,airborne:f.y<-2}:null;
+--- a/src/ink/scene-feedback.js
++++ b/src/ink/scene-feedback.js
+@@ -36,12 +36,8 @@
+   render(G,alpha=1){const W=INK.VFX,visible=W.settings.enabled&&!W.settings.reducedMotion,t=G.paused||G.hitstop||W.frozen?W.time:W.time-1+clamp(alpha);
+    for(const s of this.slots){const age=t-s.start,life=s.end-s.start,on=visible&&age>=0&&age<life;assign(s.root,'display',on?'inline':'none');if(on)assign(s.root,'opacity',.22*Math.pow(1-age/life,1.35)*W.settings.intensity);}
+   },
+-  camera(G,alpha=1){const W=INK.VFX;if(!W.settings.enabled||W.settings.reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)return[0,0];
+-   const frozen=G.paused||G.hitstop||G._inkStepFrozen||W.frozen,t=frozen?W.time:W.time-1+clamp(alpha),amplitude=clamp(G.shake||0,0,11);
+-   // A deterministic, band-limited displacement. It is sampled, not integrated
+-   // by display frames; pause/hitstop cannot keep oscillating the camera.
+-   return[Math.sin(t*.63)*amplitude,Math.sin(t*.43+.6)*amplitude*.26];
+-  },
++  camera(){return[0,0];}, // FLOW 09: hit feedback never translates the scenery.
++
+   clear(){for(const s of this.slots){s.renderer?.destroy();s.root.remove();}this.slots=[];},
+   inspect(){return{...this.stats,capacity:this.capacity,retained:this.slots.length,active:this.slots.filter(s=>s.end>INK.VFX.time).length};}
+  };
+--- a/src/ink/secondary-dynamics.js
++++ b/src/ink/secondary-dynamics.js
+@@ -27,13 +27,19 @@
+     return {position:y+target,velocity:v};
+   }
+   let cache=new WeakMap();const stats={bakes:0,samples:0,bakedFrames:0};
+-  function bake(data) {
+-    const duration=Math.max(1,data.duration||120),clip=new (INK.CompiledClip||INK.Clip)({...data,version:data.version||1,id:data.id||'secondary',duration,tracks:data.tracks||{}});
+-    const cfg=data.meta?.motion5?.springs||{},rows=[],step=.5;
+-    let hair=Array.from({length:3},()=>({position:0,velocity:0})),cloth=Array.from({length:3},()=>({position:0,velocity:0}));
+-    let last=clip.sample(0),prevVelocity={yaw:0,spin:0,lean:0};
+-    const channel=(p,key)=>typeof p[key]==='number'?p[key]:0;
+-    for(let i=0;i<=Math.ceil(duration/step);i++) {
++  // Prefix compilation avoids a whole-special spring bake on its first frame.
++  // Integration order and step remain identical to an eager full bake.
++  function bake(data,through=Infinity) {
++    let result=cache.get(data);
++    if(!result){
++      const duration=Math.max(1,data.duration||120),clip=new (INK.CompiledClip||INK.Clip)({...data,version:data.version||1,id:data.id||'secondary',duration,tracks:data.tracks||{}});
++      result={rows:[],step:.5,duration,clip,hair:Array.from({length:3},()=>({position:0,velocity:0})),cloth:Array.from({length:3},()=>({position:0,velocity:0})),last:clip.sample(0),prevVelocity:{yaw:0,spin:0,lean:0}};
++      cache.set(data,result);stats.bakes++;
++    }
++    const {clip,duration,rows,step}=result,cfg=data.meta?.motion5?.springs||{},channel=(p,key)=>typeof p[key]==='number'?p[key]:0;
++    let {hair,cloth,last,prevVelocity}=result;
++    const end=Math.min(Math.ceil(duration/step),Math.ceil(Math.max(0,through)/step));
++    for(let i=rows.length;i<=end;i++) {
+       const frame=Math.min(duration,i*step),p=clip.sample(frame);
+       const vel={};for(const key of ['yaw','spin','lean'])vel[key]=i?(channel(p,key)-channel(last,key))/step:0;
+       const accel={};for(const key of ['yaw','spin','lean'])accel[key]=(vel[key]-prevVelocity[key])/step;
+@@ -49,19 +55,19 @@
+         hair:clamp(hair[2].position,-38,38),cloth:clamp(cloth[2].position,-40,40),twist:clamp(hair[0].position-hair[2].position,-18,18),
+         flutter:clamp(cloth[2].velocity*.28,-3,3),breath:Math.sin(frame*Math.PI/60)*.6,
+         velocity:{hair:hair[2].velocity,cloth:cloth[2].velocity}});
+-      last=p;prevVelocity=vel;
++      last=p;prevVelocity=vel;stats.bakedFrames++;
+     }
+-    const result={rows,step,duration};stats.bakes++;stats.bakedFrames+=rows.length;cache.set(data,result);return result;
++    Object.assign(result,{hair,cloth,last,prevVelocity});return result;
+   }
+   function sample(data,frame,enabled=true) {
+     if(!enabled)return ZERO();data=data?.data||data;
+     if(!data||typeof data!=='object')return ZERO();
+-    finite(frame,'Finite secondary frame required');const b=cache.get(data)||bake(data),t=clamp(frame,0,b.duration)/b.step;
++    finite(frame,'Finite secondary frame required');const b=bake(data,frame+.5),t=clamp(frame,0,b.duration)/b.step;
+     const a=b.rows[Math.floor(t)],c=b.rows[Math.min(b.rows.length-1,Math.floor(t)+1)],u=t-Math.floor(t),out={};
+     for(const k of ['hair','cloth','twist','flutter','breath'])out[k]=a[k]+(c[k]-a[k])*u;
+     for(const k of ['hairChain','clothChain'])out[k]=a[k].map((x,i)=>x+(c[k][i]-x)*u);
+     out.velocity={hair:a.velocity.hair+(c.velocity.hair-a.velocity.hair)*u,cloth:a.velocity.cloth+(c.velocity.cloth-a.velocity.cloth)*u};
+     stats.samples++;return out;
+   }
+-  INK.SecondaryDynamics={stepSpring,sample,stats,clear(){cache=new WeakMap();},version:'5.0.0'};
++  INK.SecondaryDynamics={stepSpring,sample,bake,stats,clear(){cache=new WeakMap();},version:'9.0.0'};
+ })();
+--- a/src/ink/skin-geometry.js
++++ b/src/ink/skin-geometry.js
+@@ -6,13 +6,14 @@
+ (() => {
+  const {vec,mat,clamp,lerp}=INK;
+  const length=(a,b)=>Math.hypot(b[0]-a[0],b[1]-a[1]);
+- const fmt=q=>q.map(x=>Math.round(x*1000)/1000).join(' ');
++ const fmt=q=>(Math.round(q[0]*1000)/1000)+' '+(Math.round(q[1]*1000)/1000);
++ const xy=(x,y)=>(Math.round(x*1000)/1000)+' '+(Math.round(y*1000)/1000);
+  function closed(points,tension=.13){
+   if(!points.length)return '';
+   let d='M'+fmt(points[0]);const n=points.length;
+   for(let i=0;i<n;i++){
+    const a=points[(i-1+n)%n],b=points[i],c=points[(i+1)%n],e=points[(i+2)%n];
+-   d+='C'+fmt(vec.add(b,vec.mul(vec.sub(c,a),tension)))+' '+fmt(vec.sub(c,vec.mul(vec.sub(e,b),tension)))+' '+fmt(c);
++   d+='C'+xy(b[0]+(c[0]-a[0])*tension,b[1]+(c[1]-a[1])*tension)+' '+xy(c[0]-(e[0]-b[0])*tension,c[1]-(e[1]-b[1])*tension)+' '+fmt(c);
+   }
+   return d+'Z';
+  }
+@@ -28,16 +29,15 @@
+   const normals=centers.map((q,i)=>{const a=centers[Math.max(0,i-1)],b=centers[Math.min(centers.length-1,i+1)];let v=vec.sub(b,a);if(vec.length(v)<1e-6)v=i<centers.length/2?u0:u1;const u=vec.normal(v);return[-u[1],u[0]];});
+   return {centers,radii,normals,a,c,u0,u1,w,z};
+  }
+- function sweep(chain,widths,outer=mat.identity()){
+-  const g=sampled(chain,widths);
++ function sweep(chain,widths,outer=mat.identity(),g=sampled(chain,widths)){
+   if(!g){const at=mat.point(outer,chain[0]),r=Math.max(...widths);return `M${at[0]-r} ${at[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
+   const {centers,radii,normals,a,c,u0,u1,w,z}=g;
+   const left=centers.map((q,i)=>vec.add(q,vec.mul(normals[i],radii[i]))),right=centers.map((q,i)=>vec.sub(q,vec.mul(normals[i],radii[i])));
+   const head=vec.sub(a,vec.mul(u0,w*.75)),tip=vec.add(c,vec.mul(u1,z*.8));
+   return closed([...left,tip,...right.reverse(),head].map(q=>mat.point(outer,q)),.105);
+  }
+- function band(chain,widths,outer,from=-.92,to=-.48){
+-  const g=sampled(chain,widths);if(!g)return '';
++ function band(chain,widths,outer,from=-.92,to=-.48,g=sampled(chain,widths)){
++  if(!g)return '';
+   const edge=f=>g.centers.map((q,i)=>mat.point(outer,vec.add(q,vec.mul(g.normals[i],g.radii[i]*f))));
+   return closed([...edge(from),...edge(to).reverse()],.09);
+  }
+@@ -63,5 +63,5 @@
+   const sole=`M${fmt([heel[0]-7*c,heel[1]+8])}Q${fmt([toe[0]*.5,16+Math.abs(s)])} ${fmt([toe[0]+4*c,toe[1]+5])}`;
+   return {outline,sole,toe,angle};
+  }
+- INK.SkinGeometry={sweep,band,frontClip,closed,torsoClip,foot,version:'6.0.0'};
++ INK.SkinGeometry={sampled,sweep,band,frontClip,closed,torsoClip,foot,version:'6.0.0'};
+ })();
+--- /dev/null
++++ b/src/ink/viewport.js
+@@ -0,0 +1,33 @@
++/* FLOW 09 — camera comfort is independent of hit feedback and articulated bounds.
++ * Stable mode is exactly stationary. Follow mode tracks physics roots through a
++ * dead zone, never head/hand/foot extension, confirmed hits or particle amplitude.
++ * The legacy "close-up" button is an explicit opt-in; changing it resets tracking.
++ */
++'use strict';
++(() => {
++ const {clamp}=INK,settings={mode:'stable'};
++ let x=720,y=455,zoom=1,last=null,lastMode='';
++ const Viewport={version:'9.0.0',settings,stats:{samples:0,stableFrames:0},
++  reset(){x=720;y=455;zoom=1;last=null;lastMode='';},
++  set(patch){if(!patch||Object.keys(patch).some(k=>k!=='mode')||!['stable','follow'].includes(patch.mode))throw TypeError('镜头模式必须为 stable 或 follow');Object.assign(settings,patch);this.reset();return{...settings};},
++  sample(G,fighters,now,alpha=1){
++   if(!Number.isFinite(now)||!Number.isFinite(alpha))throw TypeError('Finite camera time required');
++   this.stats.samples++;
++   const explicit=!!G.artCloseup,mode=explicit?'closeup':settings.mode;
++   if(mode==='stable'||!fighters.length){last=now;lastMode=mode;this.stats.stableFrames++;return 'matrix(1 0 0 1 0 0)';}
++   if(lastMode!==mode){x=720;y=455;zoom=1;last=now;lastMode=mode;}
++   const frozen=G.paused||G.hitstop>0||G._inkStepFrozen||INK.VFX?.frozen;
++   const dt=last===null?0:clamp((now-last)/1000,0,.05);last=now;
++   const a=clamp(alpha),xs=fighters.map(f=>(f.px??f.x)+(f.x-(f.px??f.x))*a),ys=fighters.map(f=>(f.py??f.y)+(f.y-(f.py??f.y))*a);
++   const middle=(Math.min(...xs)+Math.max(...xs))/2,minY=Math.min(0,...ys),distance=Math.max(...xs)-Math.min(...xs);
++   // Keep ordinary punches, kicks and root pushes inside a generous dead zone.
++   const wantX=middle<x-95?middle+95:middle>x+95?middle-95:x;
++   const wantY=minY<-120?455+(minY+120)*.3:455;
++   const wantZoom=explicit?clamp(1150/Math.max(930,distance+480),.85,1.2):1;
++   if(!frozen){const u=1-Math.exp(-dt*3.5);x+=(clamp(wantX,500,940)-x)*u;y+=(wantY-y)*u;zoom+=(wantZoom-zoom)*u;}
++   return `translate(720 455) scale(${zoom.toFixed(5)}) translate(${-x.toFixed(4)} ${-y.toFixed(4)})`;
++  },
++  inspect(){return{...this.stats,mode:settings.mode,x,y,zoom};}
++ };
++ INK.Viewport=Viewport;
++})();
+--- a/tools/build_forge.py
++++ b/tools/build_forge.py
+@@ -35,17 +35,17 @@
+     base_hash=hashlib.sha256((ROOT/'game.js').read_bytes()).hexdigest()
+     source=game();(ROOT/'dist/game-forge.js').write_text(source,encoding='utf-8',newline='\n')
+     html=read('street-fighter-6.html')
+-    html=re.sub(r'<title>.*?</title>','<title>INK FLOW 08 · 落地响应与实战回放</title>',html,count=1)
+-    html=html.replace('</head>','<style>\n'+read('forge/style.css')+'\n'+read('forge/flow.css')+'\n'+read('forge/mai.css')+'\n'+read('forge/engine.css')+'\n'+read('forge/continuity.css')+'\n'+read('forge/rhythm.css')+'\n'+read('forge/response.css')+'\n</style></head>')
+-    includes=['src/ink/core.js','src/ink/compiled-motion.js','src/ink/engine-clock.js','src/ink/inbetween.js','src/ink/anatomy.js','src/ink/articulation.js','src/ink/motion.js','src/ink/secondary-dynamics.js','src/ink/motion-graph.js','src/ink/combat-flow.js','src/ink/input.js','src/ink/assets.js',*['src/ink/art/'+id+'.js' for id in ['ryu','ken','chun','cammy','luke','juri','mai','iori']],'src/ink/design.js','src/ink/skin-geometry.js','src/ink/renderer.js','src/ink/mai-renderer.js','src/ink/project.js','src/ink/runtime.js','src/ink/states.js','src/ink/presentation-clock.js','src/ink/state-transitions.js','src/ink/particles.js','src/ink/impact-feedback.js','src/ink/trails.js','src/ink/fx-timeline.js','src/ink/ribbon-geometry.js','src/ink/fx-emitter.js','src/ink/effects.js','src/ink/scene-feedback.js','src/ink/pose-replay.js','src/ink/combo.js','src/ink/cinema.js','src/ink/portable.js','src/ink/game-adapter.js','dist/game-forge.js']
++    html=re.sub(r'<title>.*?</title>','<title>INK FLOW 09 · 稳镜与流畅动作</title>',html,count=1)
++    html=html.replace('</head>','<style>\n'+read('forge/style.css')+'\n'+read('forge/flow.css')+'\n'+read('forge/mai.css')+'\n'+read('forge/engine.css')+'\n'+read('forge/continuity.css')+'\n'+read('forge/rhythm.css')+'\n'+read('forge/response.css')+'\n'+read('forge/fluid.css')+'\n</style></head>')
++    includes=['src/ink/core.js','src/ink/compiled-motion.js','src/ink/engine-clock.js','src/ink/inbetween.js','src/ink/anatomy.js','src/ink/articulation.js','src/ink/motion.js','src/ink/secondary-dynamics.js','src/ink/motion-graph.js','src/ink/combat-flow.js','src/ink/input.js','src/ink/assets.js',*['src/ink/art/'+id+'.js' for id in ['ryu','ken','chun','cammy','luke','juri','mai','iori']],'src/ink/design.js','src/ink/skin-geometry.js','src/ink/renderer.js','src/ink/mai-renderer.js','src/ink/project.js','src/ink/runtime.js','src/ink/states.js','src/ink/presentation-clock.js','src/ink/state-transitions.js','src/ink/particles.js','src/ink/impact-feedback.js','src/ink/trails.js','src/ink/fx-timeline.js','src/ink/ribbon-geometry.js','src/ink/fx-emitter.js','src/ink/effects.js','src/ink/scene-feedback.js','src/ink/viewport.js','src/ink/frame-probe.js','src/ink/pose-replay.js','src/ink/combo.js','src/ink/cinema.js','src/ink/portable.js','src/ink/game-adapter.js','dist/game-forge.js']
+     html=patch(html,'<script src="game.js"></script>','\n'.join('<script src="'+x+'"></script>' for x in includes))
+     html=html.replace('<script src="src/atelier-studio.js"></script>','<script src="src/atelier-studio.js"></script>')
+-    html=html.replace('</body>',read('forge/shell.html')+'\n<script id="ink-asset-bundle" type="application/json">'+jsdata(assets())+'</script>\n<script id="ink-export-template" type="application/json">__INK_TEMPLATE_DATA__</script>\n<script id="ink-user-project" type="application/json">__INK_PROJECT_DATA__</script>\n<script id="ink-combo-library" type="application/json">'+jsdata(json.loads(read('assets/ink/combos.json'))) +' </script>\n<script src="forge/app.js"></script>\n<script src="forge/flow.js"></script>\n<script src="forge/mai.js"></script>\n<script src="forge/engine.js"></script>\n<script src="forge/continuity.js"></script>\n<script src="forge/rhythm.js"></script>\n<script src="forge/response.js"></script>\n</body>')
++    html=html.replace('</body>',read('forge/shell.html')+'\n<script id="ink-asset-bundle" type="application/json">'+jsdata(assets())+'</script>\n<script id="ink-export-template" type="application/json">__INK_TEMPLATE_DATA__</script>\n<script id="ink-user-project" type="application/json">__INK_PROJECT_DATA__</script>\n<script id="ink-combo-library" type="application/json">'+jsdata(json.loads(read('assets/ink/combos.json'))) +' </script>\n<script src="forge/app.js"></script>\n<script src="forge/flow.js"></script>\n<script src="forge/mai.js"></script>\n<script src="forge/engine.js"></script>\n<script src="forge/continuity.js"></script>\n<script src="forge/rhythm.js"></script>\n<script src="forge/response.js"></script>\n<script src="forge/fluid.js"></script>\n</body>')
+     html=re.sub(r'<script src="([^\"]+)"></script>',lambda m:script(read(m[1])),html)
+     template=html
+     html=html.replace('>__INK_TEMPLATE_DATA__</script>','>'+jsdata(template)+'</script>',1).replace('>__INK_PROJECT_DATA__</script>','>{}</script>',1)
+     path=ROOT/'dist/INK-Street-Fighter-6.html';path.write_text(html,encoding='utf-8',newline='\n')
+-    player_seed={'version':2,'kind':'ink-project-overrides','projectId':'ink-flow-player-8','revision':0,'createdAt':0,'models':{},'rigs':{},'moves':{},'presentation':'player'}
++    player_seed={'version':2,'kind':'ink-project-overrides','projectId':'ink-flow-player-9','revision':0,'createdAt':0,'models':{},'rigs':{},'moves':{},'presentation':'player'}
+     player_html=html.replace('<script id="ink-user-project" type="application/json">{}</script>','<script id="ink-user-project" type="application/json">'+jsdata(player_seed)+'</script>',1)
+     (ROOT/'dist/INK-Street-Fighter-6-Player.html').write_text(player_html,encoding='utf-8',newline='\n')
+     (ROOT/'dist/forge-template.html').write_text(template,encoding='utf-8',newline='\n')

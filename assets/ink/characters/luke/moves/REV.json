@@ -543,7 +543,7 @@
         [
           7,
           [
-            -706.139,
+            32.106,
             -264.829
           ],
           "linear"
@@ -551,7 +551,7 @@
         [
           14,
           [
-            -92.287,
+            40.629,
             -325.158
           ],
           "linear"
@@ -785,7 +785,13 @@
       "kind": "reversal",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "REV",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -802,7 +808,15 @@
       "scale": 1,
       "color": "#e8b573",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.9,
+      "particles": {
+        "count": 64,
+        "life": 27,
+        "speed": 7,
+        "size": 2.4,
+        "spread": 30,
+        "species": "spark"
+      }
     }
   ],
   "source": "migrated-atelier"

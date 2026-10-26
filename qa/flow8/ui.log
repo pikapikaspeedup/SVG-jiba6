@@ -1,0 +1,21 @@
+PASS 1440: click next frame 
+PASS 1440: keyboard ten-frame step 
+PASS 1440: seek actual state bookmark 
+PASS 1440: dialog fits viewport without horizontal scroll 
+PASS 1440: real sweep records down and rise 
+PASS 1440: actual download contains solved angles 
+PASS 1440: actual file upload reopens frame zero 
+PASS 1440: review closes and fresh scenario remains paused 
+PASS 1440: opening real recording pauses the combat clock 
+PASS 1440: Escape restores prior running state 
+PASS 390: click next frame 
+PASS 390: keyboard ten-frame step 
+PASS 390: seek actual state bookmark 
+PASS 390: dialog fits viewport without horizontal scroll 
+PASS 390: real sweep records down and rise 
+PASS 390: actual download contains solved angles 
+PASS 390: actual file upload reopens frame zero 
+PASS 390: review closes and fresh scenario remains paused 
+PASS 390: opening real recording pauses the combat clock 
+PASS 390: Escape restores prior running state 
+20 20 []

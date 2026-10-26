@@ -1,0 +1,456 @@
+{
+  "suite": "flow7-literal-source-diff",
+  "capturedAt": "2026-10-04T21:55:03.300933+00:00",
+  "baselineArchive": "INK-Flow-6-Continuity-Source.zip",
+  "baselineSha256": "8e0e8b3d81613300603a3bc38fc7f5b0efbb012095401607be1a1ea90b65fa23",
+  "htmlSha256": "aa69f238885b8a4fecad6524bb582adf6677642af490b21036555c7afec7dd45",
+  "status": "passed",
+  "scope": "Production game, src/, forge/, assets/ink/ and build_forge.py only; excludes docs, tests and generated dist. Includes transition metadata assets, unlike earlier engine-only patches. Applied to exact baseline bytes; changed and unchanged production files compared with current source.",
+  "changedFiles": 55,
+  "addedLines": 1296,
+  "removedLines": 129,
+  "gitApplyCheck": true,
+  "appliedSourceMatches": true,
+  "files": [
+    {
+      "path": "assets/ink/characters/cammy/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "c31410c0443436bf6a7278f564a0c62aee4829ad5ee43352eff44d15e7b8c147",
+      "afterSha256": "718fea58d0c5889ad502f0ed5fc973a117213eb012609179e0f6f5b4a3c882b7",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "5e237e45b8c670f9ddd42c06ecb8064eb3714636adc03392a5d67dcc806b2cc0",
+      "afterSha256": "33777f141463cfbe328b2360a498938af7a86bb5d0e723c4c3182ac033980957",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "2bed2b61ac334d98378cb170fd33c846513befee73d996c48246b77d59b75537",
+      "afterSha256": "ff3d358ebd5e04ab2ec72b593e524186430d784a8ec16f09017c9cad554e5c56",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/cammy/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "ba915b0388dfeec6aea102b3bd0e1c7664f198635620f066d95fcc9bfe0e16bd",
+      "afterSha256": "b84e56c1496e2d2bd9e48002ea86c3844a7b6542ef1a872ed219bad898dbfb95",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "6c9015c1c87bc9687ab28f4c2f59c6e0fddc55050c4900676ebccc8d842816a3",
+      "afterSha256": "3296a5babad70e13acb4cb549a622e7e0f7702d04d562f56d4138998e34ad4e5",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "63edcb0406b7d07b976e6f7a7e6a87058b48cb6481fd3d99686fb2756e686c73",
+      "afterSha256": "007934c0cfb387a0d291f742aec0d5e21e7b13ad1dcd09b0cd7268694bb685d7",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "b4a5bc91ae00e8bb9fdae4f8ae91b7efeec8b0235ea2af7313a18103e246d0a7",
+      "afterSha256": "1ac68483ec44ec8289594f8a4802aa5668cb0274278bc623606fd779fc14690e",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/chun/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "2522c7a6d90c196d20adb0f3c372f2c68b951713442daee9edf122cb91cbe0b4",
+      "afterSha256": "ca7478ee5f9d494cacb87105f3c9c166cec51440b1b8529e067c1a5bc581dd6c",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "186d6b31090f8be26fe6a65f25d854b72ae348d8b5f8e8a404294b1afd1dea4d",
+      "afterSha256": "39ca7b9541c3743bff56204b9eb5c6e0015b187519966be68f7a9b0cef89a5b5",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "5dc87dd0f1e1d0e9a81e1f4ac2c218d32b44627decf2bf4f69172854a473f48f",
+      "afterSha256": "8cd8a24b896dc89ae3b3caf01038e9553cd025d2ed603909a38b41e6225e2013",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "6ea2edc5fa0b0251aaa5903a03b27acfc6d1910f584d962234f6c1e1bbfc9fd7",
+      "afterSha256": "d9081e5dced378d49a919069da03f846f28222eaa788fab9b6440680ab349d4f",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/iori/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "47504c6f9487f19f5776974fc80e00a84bcb337ced13d412fb5bb0fd6c79a185",
+      "afterSha256": "954ecc976290953afe2b02543046b756384c657892d623cfa5378e23b298660f",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "b8365e327b11924705f7097200a45b8485ffd25e90d6a1e90da8da2950843443",
+      "afterSha256": "be1f5cf535df7cf715c618b24365ce46e1957e5186f1b12d86c806a5ba73e544",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "77dbcac1bdfc0df2fd95352667154589efb234118d31560c9d178944ca8a01e1",
+      "afterSha256": "2fbd30a8e4da229ddb77ab828a6038907c87d4a32b9b9f6ae7599d9692595ea9",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "dfac4efc4e69d69b6344ede90d278c51ab416364bcb5ecd2a4910e9ac78b4ade",
+      "afterSha256": "e16d40e35411b2421b70fc9b48a00209659d1c1683679c7d5afb107637cfb3e8",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/juri/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "24da6f153249aeb88f16dc78e379230dfe2cbdc732afc9aa46cf249b0bb962ad",
+      "afterSha256": "d0d3f7a7ed354473d9654ddde93c1f395c1f7504f9f1143a423ad82d41348090",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "e8215d33e19cb2dee745b4d31c055165a6455dd9382ec6f0aac878970a555359",
+      "afterSha256": "e8c7cfef76eb3372a1424d0973b7c64b9b16637d178882542b70e5267de1208a",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "62eab8cb6714b59ca56d6c6a3073c67e9cac1112c9e70335d23945f69d298b84",
+      "afterSha256": "d074bf6d6dc554d591a1770113d15760a6f6119161d9152ff51587f193f0082f",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "aba7e0522bcf2ea92b27f3452c02d314a25f0190755c4f76c02385f5d59925f5",
+      "afterSha256": "855a26035436f98b16b0ff78886cf226348589c735a38703999aa07b023971ab",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ken/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "9066c1395fdb60e1ea67c2c72f2d87cc7d18ffa79de6aa1abb53a6a4002782b4",
+      "afterSha256": "ba6ed6a1e5f3802f632d501bf0e40594b195895bad8fa72f6b40d4590959b5ca",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "aa3773a8c412ca566c342a9bdc4e8fc5563e959ce23ece0674da2f6a1681b85b",
+      "afterSha256": "eee4614d455e7957282cb35850da13030638667878f00f9f52202133df488b75",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "4923b581d3fd04e3cde4aaad85ead1388fdfd9324e0db136a79963d2387164e9",
+      "afterSha256": "e3d05f10eadb048c33670abb375b431f65d4b4442a8e757276f0a775e3b4a61a",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "d75c12ca02cb9662f797ff37e3a1d6d28e039e56452466861befdda219e80d06",
+      "afterSha256": "3de8506db9b833103565bcedc47e97a42a7bf5055f36498ef1ba94f040ee9776",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/luke/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "85e6455f9c5679b4556f8ac50ddca27720304f2f39ba0effea6dcf64725b2522",
+      "afterSha256": "68906ba2554e88b715707e1d5bb4dfea064e5598f96d3880e682ba4cbe031988",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "ed79327c968ad377885a7b7068b480200895bec3ab4ae9e251bb6893d7848440",
+      "afterSha256": "af7776763dfba47c5cf63edee1f4ce7ec8c0eca52095b67651089a8db7f48d79",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "e786a0830f65ef569cf0438f00360112e576b0a55332c7454860c4c912a795ef",
+      "afterSha256": "535f033b4f7f4edb00e1fde35392d29c3cca4d46b7daa0385ab9fcad03ab7395",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/cMP.json",
+      "kind": "modified",
+      "beforeSha256": "3093e0f262a5ab20a32e87638c5851526e147b6d6aa791c1e2f0114711bcedf9",
+      "afterSha256": "9f0d4e6976558d7cec0f2fa6674111e56e63c55f6cd622146e2796ca1169f165",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "3fd6ccd48d55a681be8db3494dd5a8347d0c2dff67446f9423c426463caf54bc",
+      "afterSha256": "4f909bb19300a90bbe8fb2d4ec365a4b75c9fa89ab7f58d92ce1083e7713f31f",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "413d850835add9d339a7c93b2863aa5a9805714e0783adee224e09ffc0c8a287",
+      "afterSha256": "14ee13b95bcc2395f3b38885e4537155228f24eead09fc12ebaa312f93de1533",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMK.json",
+      "kind": "modified",
+      "beforeSha256": "41324072a129930188f2fad17d04ff74e9be27d2eb3c31cc9bebb09fb67cd23a",
+      "afterSha256": "812ee8ab3aad4d4c0b29f94536f6b6d0203953f89b7cf980a9bf1c1859a3b9c9",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/mai/moves/sMP.json",
+      "kind": "modified",
+      "beforeSha256": "467053151403186fd4be431010227026c7b6e3d6bc5bff0e198460a9383c7845",
+      "afterSha256": "1b087cdb01888bb293eddd926cd4533ee19d3b68613cd9bffb6eb341bbed7135",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cLK.json",
+      "kind": "modified",
+      "beforeSha256": "80611036943e8bbbe1b1e0712dd026aea84de8bf44e4459251f259eb64788115",
+      "afterSha256": "8bf16de3f24ed4eacb52d604e2ecdbd5ff45b8e8fc294b8bb40ebb4f8166a2ac",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/cLP.json",
+      "kind": "modified",
+      "beforeSha256": "d3b101fc1b8193b2de107a9f3522f5e29ea452438ec1f9089c87a343acacb828",
+      "afterSha256": "91c95e4586d89922258ad4f18f23b037262905ac226c47563ba5ced28974d6f2",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sLK.json",
+      "kind": "modified",
+      "beforeSha256": "a2a1097565b72aea2155f1c4ed0bba4a7da18c9e8cdf76ecef0021501e5cd171",
+      "afterSha256": "7a16d324874880e757d309a01b47008a92817ec3a08a710761e9748055bd456c",
+      "addedLines": 19,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/characters/ryu/moves/sLP.json",
+      "kind": "modified",
+      "beforeSha256": "345ae57358c35c9f9fd394efa692703cfb5606ca1beea46b6357dd1f13de9c44",
+      "afterSha256": "2cfcbd9509dc53b7ae420f0bc336b07730e20861cc071f7a05117766f1db2e65",
+      "addedLines": 18,
+      "removedLines": 1
+    },
+    {
+      "path": "assets/ink/combos.json",
+      "kind": "modified",
+      "beforeSha256": "d0eff5067b45199c13a7369a2b17e2894292f179346b478c443f794496a9e99a",
+      "afterSha256": "09a6c1a1b567b354d4553f54bf1ba0fa0bc0efb3b8a94f556659311a61124bb7",
+      "addedLines": 208,
+      "removedLines": 0
+    },
+    {
+      "path": "assets/ink/project.json",
+      "kind": "modified",
+      "beforeSha256": "f2f4cfe67550c6263c48913dde166354573c8cdae1309b4c3e691449b12a422e",
+      "afterSha256": "ae3e0409a681d63d80becf88cde67ec81ded0c4c77781d3d2f368d5d8a799b96",
+      "addedLines": 2,
+      "removedLines": 2
+    },
+    {
+      "path": "forge/app.js",
+      "kind": "modified",
+      "beforeSha256": "7984f307d41ada8bbbf0fc80da90e1a40578cad6172f1eedd23df6aa3d0bf577",
+      "afterSha256": "3bbfd37ec888be356dae17d5d73e4399598b047ec6dd051d06cf311b5edc7f46",
+      "addedLines": 1,
+      "removedLines": 1
+    },
+    {
+      "path": "forge/mai.js",
+      "kind": "modified",
+      "beforeSha256": "00c5bdb9d1790759206d0364c2e8f7b2d7549d1f9d5541345976d7f6a17c82f2",
+      "afterSha256": "17b974deb5d795d7a9596554daed1d7911054615e8818f264d78e30dcc15c025",
+      "addedLines": 1,
+      "removedLines": 1
+    },
+    {
+      "path": "forge/rhythm.css",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "7f58fd8ca9dc0137aaeec19710c813f767530dc5497d189f1c8753883d68030b",
+      "addedLines": 17,
+      "removedLines": 0
+    },
+    {
+      "path": "forge/rhythm.js",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "ceb7c55a8e723d11ffb6cc8c16dd3efcd3626ce59791a2c17449f545056f5506",
+      "addedLines": 74,
+      "removedLines": 0
+    },
+    {
+      "path": "forge/shell.html",
+      "kind": "modified",
+      "beforeSha256": "d06696c871ad728f7d3a4e9a87b00561373c3f50806508c06f017fb448a8f020",
+      "afterSha256": "e33aba88e863e56a82e5486201874ac1a29fecddadb3ca746f6331c832699ae0",
+      "addedLines": 2,
+      "removedLines": 2
+    },
+    {
+      "path": "game.js",
+      "kind": "modified",
+      "beforeSha256": "92c5621d0cb25dd4f70de6d637c69c68640b4f1ebb7e2bf5a0b7d55734f3d24d",
+      "afterSha256": "4c407cb7e550b706c1ab4137b0607942bcf112a5dd87c8c5e4ed73956a87fd04",
+      "addedLines": 113,
+      "removedLines": 44
+    },
+    {
+      "path": "src/ink/combat-flow.js",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "a8d1b43b06c714020e4d6a663a2ebcab196e762957794acc4a2539dfd9f58c49",
+      "addedLines": 98,
+      "removedLines": 0
+    },
+    {
+      "path": "src/ink/combo.js",
+      "kind": "modified",
+      "beforeSha256": "8da0b95a59168f1368e0337c966802c2c63a0a45265ec6ef0ab44f8875fb40d6",
+      "afterSha256": "f107da27ecbeced8f929f3baeb66f31c2161ea4524f961bf635a843a01b8cb6b",
+      "addedLines": 10,
+      "removedLines": 8
+    },
+    {
+      "path": "src/ink/core.js",
+      "kind": "modified",
+      "beforeSha256": "4745fc55ce5bd70b0bf5661ffc525e6e153df00c0884c85b6f017168fb3ce10e",
+      "afterSha256": "8cc7b6920f9dede1c220c1fd0c7f4d603e84d02f0c422cc41734d26db76a753a",
+      "addedLines": 1,
+      "removedLines": 1
+    },
+    {
+      "path": "src/ink/effects.js",
+      "kind": "modified",
+      "beforeSha256": "582f9a126724359b0190237d98855d2c4a81a3396df04add304ccbd597e74d5b",
+      "afterSha256": "dc5cf827de91b9570a7c8f09ff6982441165a39f635234bab90f217d69c3bf07",
+      "addedLines": 8,
+      "removedLines": 7
+    },
+    {
+      "path": "src/ink/game-adapter.js",
+      "kind": "modified",
+      "beforeSha256": "789ce0cd76d7e07703778cb9620559e43bc9f547412d18ab07f48123823c29fc",
+      "afterSha256": "6411073f1beba1cc187d65151f60bade70557e4d2f639cc795f7cea448fa91b4",
+      "addedLines": 1,
+      "removedLines": 1
+    },
+    {
+      "path": "src/ink/impact-feedback.js",
+      "kind": "added",
+      "beforeSha256": null,
+      "afterSha256": "6a1c3e37aa30b0959fd50db30ae100b522487051547b5bec1c83ff20b8d9903c",
+      "addedLines": 60,
+      "removedLines": 0
+    },
+    {
+      "path": "src/ink/input.js",
+      "kind": "modified",
+      "beforeSha256": "de36758ebae651353a74e26aa82f0b3262cae2254e7e2f05caf98a76a997e4da",
+      "afterSha256": "385420bbffb95492448a1032047daa70f8bf95e5449269e675bd460fb1f0cda7",
+      "addedLines": 5,
+      "removedLines": 4
+    },
+    {
+      "path": "src/ink/portable.js",
+      "kind": "modified",
+      "beforeSha256": "f5aa3441b06f8ab327b11354b509c7121da929f96565f34b5eb5966689e9fe9b",
+      "afterSha256": "1cf4c3f8b0d1e90721fc7e3c5d4b481f269fda5f829bf37f5d1d7d3367cfaa68",
+      "addedLines": 2,
+      "removedLines": 2
+    },
+    {
+      "path": "src/ink/project.js",
+      "kind": "modified",
+      "beforeSha256": "aa4dd03502634378897368fff4fca324105b38bd90ba6ab3d90d56619fac6faa",
+      "afterSha256": "7aa060374bedaa67b66ab869ffa46a569ca7f34258d703bd3f26bf9602009263",
+      "addedLines": 6,
+      "removedLines": 3
+    },
+    {
+      "path": "src/ink/runtime.js",
+      "kind": "modified",
+      "beforeSha256": "05766c6913bc8c2d13ecc6da6420dbfbf792c4aab75903a025f87be7f9921eb6",
+      "afterSha256": "3cb7b243e22a225127e311f95555a85fe06a0bd79957a15af00642b892410fc6",
+      "addedLines": 28,
+      "removedLines": 7
+    },
+    {
+      "path": "src/mai-sf6.js",
+      "kind": "modified",
+      "beforeSha256": "f759b40efb8d7a8eca1b536cd96e3c2d8bcd82ae8aecf3dc0d6d81b89e98eede",
+      "afterSha256": "6aa0381684455ad27aa293f79889f6a72be733d93bc14160ab604cfca72a4979",
+      "addedLines": 6,
+      "removedLines": 6
+    },
+    {
+      "path": "tools/build_forge.py",
+      "kind": "modified",
+      "beforeSha256": "b2816824fd2732f862bb6861a2f57466f9d5ff745e0a6585ed2c743a6843a297",
+      "afterSha256": "169b8c79a9548a76323f52979397ab26d1b9f6e18926984beecdb4dc9adb40d5",
+      "addedLines": 5,
+      "removedLines": 5
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 2400,
+  "startedAt": "2026-10-04T21:28:30.890134+00:00",
+  "htmlSha256": "264bb97893fbfcb7290de2d2c9d8f6cab60ed593759a0d95f511dbda95053ae0",
+  "status": "stopped-for-metadata-correction",
+  "description": "FLOW 07: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause and skeleton inspector. No substituted time or hardware FPS guarantee.",
+  "elapsedWallSeconds": 304.372,
+  "latest": {
+    "elapsed": 304.372,
+    "cycles": 89,
+    "raf": 17580,
+    "mode": "battle",
+    "errors": [],
+    "maxParticles": 166,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 17519,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "inspections": 8,
+    "clock": {
+      "ticks": 12213,
+      "callbacks": 17584,
+      "discardedSteps": 7,
+      "clampedMs": 16.700000000000045,
+      "pauses": 29,
+      "alpha": 0.4999999999999999,
+      "lastSteps": 1,
+      "hz": 60,
+      "active": true,
+      "paused": false,
+      "pendingMs": 8.333333333333332
+    },
+    "bank": {
+      "instances": 1,
+      "acceptedBirths": 0,
+      "poolDrops": 0,
+      "cancelledActions": 0,
+      "eventEdges": 0
+    },
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "pausedChecks": 20,
+    "views": 8,
+    "heap": {
+      "usedSize": 26394028,
+      "totalSize": 29663232,
+      "embedderHeapUsedSize": 25237592,
+      "backingStorageSize": 4516203
+    },
+    "dom": {
+      "documents": 1,
+      "nodes": 44326,
+      "jsEventListeners": 358
+    }
+  },
+  "completedRoutes": 89,
+  "errors": [],
+  "stoppedAt": "2026-10-04T21:34:16.420126+00:00",
+  "reason": "Project manifest still advertised v6. Fixed package identity/core version/UI heading; game.js unchanged. Final HTML restarts a separately measured soak. Not counted as a passed endurance run."
+}

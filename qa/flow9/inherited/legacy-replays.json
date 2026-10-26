@@ -1,0 +1,4700 @@
+[
+  {
+    "ch": "ryu",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 500,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "ryu",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 520,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "hadoken_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 620,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "hadoken_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 720,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "hadoken_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "hadoken_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 942,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "shoryu_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 780,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "shoryu_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 880,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "shoryu_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 980,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "shoryu_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1126,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "ryu",
+    "id": "tatsu_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 689,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ryu",
+    "id": "tatsu_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 750,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "ryu",
+    "id": "tatsu_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 802,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "ryu",
+    "id": "tatsu_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 964,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "ryu",
+    "id": "blade_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "blade_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 920,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "blade_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1020,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "blade_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1172,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "ryu",
+    "id": "hasho_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 750,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "hasho_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 850,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "hasho_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "hasho_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1092,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "ryu",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1020,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 620,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 860,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ryu",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 969,
+    "activeFramesWithGeometry": 12
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_8",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1112,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_9",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1118,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_10",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1185,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "follow_11",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1295,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ryu",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2324,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "ryu",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "ryu",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "ryu",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "ryu",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ryu",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ryu",
+    "id": "DENJIN",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 440,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 720,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "ken",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 480,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "hadoken_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 560,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "hadoken_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 660,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "hadoken_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 760,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "hadoken_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 873,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "shoryu_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 810,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "shoryu_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 910,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "shoryu_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1010,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "shoryu_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1160,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "ken",
+    "id": "tatsu_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 689,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ken",
+    "id": "tatsu_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 750,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "ken",
+    "id": "tatsu_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 802,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "ken",
+    "id": "tatsu_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 964,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "ken",
+    "id": "jinrai_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 709,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ken",
+    "id": "jinrai_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 768,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "ken",
+    "id": "jinrai_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "ken",
+    "id": "jinrai_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 984,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "ken",
+    "id": "dragonlash_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "dragonlash_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1000,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "dragonlash_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1100,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "dragonlash_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1264,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "ken",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 620,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1030,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 670,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "ken",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 709,
+    "activeFramesWithGeometry": 10
+  },
+  {
+    "ch": "ken",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "ken",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ken",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "ken",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "ken",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "follow_8",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1112,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "follow_9",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1118,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "ken",
+    "id": "follow_10",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1185,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "follow_11",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1295,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "ken",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "ken",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2324,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "ken",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "ken",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "ken",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "ken",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "ken",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "ken",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 450,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 730,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "chun",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 520,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "chun",
+    "id": "kikoken_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 660,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "kikoken_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 760,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "kikoken_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 860,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "kikoken_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 988,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "legs_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 622,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "chun",
+    "id": "legs_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 687,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "chun",
+    "id": "legs_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 741,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "chun",
+    "id": "legs_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 890,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "chun",
+    "id": "bird_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 814,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "chun",
+    "id": "bird_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 870,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "chun",
+    "id": "bird_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 917,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "chun",
+    "id": "bird_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1099,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "chun",
+    "id": "tensho_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 790,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "tensho_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 890,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "tensho_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 990,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "tensho_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1138,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "chun",
+    "id": "hazan_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 870,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "hazan_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 970,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "hazan_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1070,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "hazan_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 642,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "chun",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 500,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 550,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 780,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 980,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "chun",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "chun",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "chun",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "chun",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "chun",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "chun",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "chun",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "chun",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "chun",
+    "id": "follow_8",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1112,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "follow_9",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1118,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "chun",
+    "id": "follow_10",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1185,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "chun",
+    "id": "follow_11",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1295,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "chun",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2324,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "chun",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "chun",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "chun",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "chun",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "chun",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "chun",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 440,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "cammy",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 660,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 460,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "cammy",
+    "id": "arrow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 720,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "arrow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "arrow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 920,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "arrow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1057,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "cammy",
+    "id": "spike_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 790,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "spike_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 890,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "spike_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 990,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "spike_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 594,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "cammy",
+    "id": "knuckle_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 850,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "knuckle_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "knuckle_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1050,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "knuckle_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1206,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "cammy",
+    "id": "hooligan_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 620,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "hooligan_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 720,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "hooligan_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "hooligan_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 942,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "cammy",
+    "id": "strike_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 800,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "strike_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "strike_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1000,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "strike_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 600,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 720,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 970,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 680,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 970,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1100,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 817,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_8",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1112,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_9",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1118,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_10",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1185,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "follow_11",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1295,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "cammy",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "cammy",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2324,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "cammy",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "cammy",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "cammy",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "cammy",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "cammy",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "cammy",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 540,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 910,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 540,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "sand_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 600,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "sand_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "sand_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 800,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "sand_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 919,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "rising_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "rising_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 920,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "rising_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1020,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "rising_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1172,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "luke",
+    "id": "flash_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 810,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "flash_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 910,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "flash_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1010,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "flash_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1160,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "luke",
+    "id": "avenger_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "avenger_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 800,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "avenger_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "avenger_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1034,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "luke",
+    "id": "airflash_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "luke",
+    "id": "airflash_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 840,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "airflash_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "airflash_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 564,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "luke",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 660,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 940,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1240,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 620,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "luke",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 300,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "luke",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1120,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "luke",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "luke",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 817,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "luke",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "luke",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "follow_8",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1112,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "follow_9",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1118,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "luke",
+    "id": "follow_10",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1185,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "follow_11",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1295,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "luke",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2324,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "luke",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "luke",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "luke",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "luke",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "luke",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "luke",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 460,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 720,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 520,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "fuha_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 580,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "fuha_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 680,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "fuha_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 780,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "fuha_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 468,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "juri",
+    "id": "saiha_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "saiha_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 630,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "saiha_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 730,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "saiha_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 839,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "anken_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 790,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "anken_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 890,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "anken_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 990,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "anken_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1138,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "juri",
+    "id": "gooh_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 814,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "juri",
+    "id": "gooh_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 870,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "juri",
+    "id": "gooh_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 917,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "juri",
+    "id": "gooh_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1099,
+    "activeFramesWithGeometry": 14
+  },
+  {
+    "ch": "juri",
+    "id": "tensen_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 770,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "tensen_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 870,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "tensen_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 970,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "tensen_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1115,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "juri",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 640,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "juri",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 970,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 610,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 843,
+    "activeFramesWithGeometry": 10
+  },
+  {
+    "ch": "juri",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1140,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "juri",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "juri",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "juri",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 298,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "juri",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "juri",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "follow_8",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1112,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "follow_9",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1118,
+    "activeFramesWithGeometry": 11
+  },
+  {
+    "ch": "juri",
+    "id": "follow_10",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1185,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "follow_11",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1295,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "juri",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "juri",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 33
+  },
+  {
+    "ch": "juri",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "juri",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "juri",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "juri",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 265,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 480,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 800,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 265,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 475,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 680,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 460,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 265,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 475,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 685,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "kachosen_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 580,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "kachosen_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 640,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "kachosen_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 710,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "kachosen_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "ryuenbu_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 728,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "mai",
+    "id": "ryuenbu_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 823,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "mai",
+    "id": "ryuenbu_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 919,
+    "activeFramesWithGeometry": 10
+  },
+  {
+    "ch": "mai",
+    "id": "ryuenbu_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 735,
+    "activeFramesWithGeometry": 9
+  },
+  {
+    "ch": "mai",
+    "id": "hissatsu_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 680,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "mai",
+    "id": "hissatsu_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 747,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "mai",
+    "id": "hissatsu_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 843,
+    "activeFramesWithGeometry": 10
+  },
+  {
+    "ch": "mai",
+    "id": "hissatsu_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 12
+  },
+  {
+    "ch": "mai",
+    "id": "shinobibachi_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "mai",
+    "id": "shinobibachi_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 920,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "mai",
+    "id": "shinobibachi_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1020,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "mai",
+    "id": "shinobibachi_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1172,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "mai",
+    "id": "musabi_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 800,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "mai",
+    "id": "musabi_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 900,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "musabi_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "musabi_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 600,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 590,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "mai",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 253,
+    "activeFramesWithGeometry": 8
+  },
+  {
+    "ch": "mai",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 730,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 750,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 870,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "mai",
+    "id": "follow_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 785,
+    "activeFramesWithGeometry": 6
+  },
+  {
+    "ch": "mai",
+    "id": "follow_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 930,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "mai",
+    "id": "follow_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 966,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "mai",
+    "id": "follow_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1076,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "mai",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1577,
+    "activeFramesWithGeometry": 18
+  },
+  {
+    "ch": "mai",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2366,
+    "activeFramesWithGeometry": 19
+  },
+  {
+    "ch": "mai",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2740,
+    "activeFramesWithGeometry": 34
+  },
+  {
+    "ch": "mai",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3231,
+    "activeFramesWithGeometry": 34
+  },
+  {
+    "ch": "mai",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "mai",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "mai",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "mai",
+    "id": "midare",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1847,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "sLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "sMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 500,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "sHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 850,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "sLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "sMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "sHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "cLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "cMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "cHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 770,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "cLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "cMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 520,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "cHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "aLP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 280,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "aMP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 490,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "aHP",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "aLK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 320,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "aMK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "aHK",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 740,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "yamibarai_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 560,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "yamibarai_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 660,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "yamibarai_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 760,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "yamibarai_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 873,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "oniYaki_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 820,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "oniYaki_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 920,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "oniYaki_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1020,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "oniYaki_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1172,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "iori",
+    "id": "aoihana_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 420,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "iori",
+    "id": "aoihana_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 470,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "aoihana_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 520,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "aoihana_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 570,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "kototsuki_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 870,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "kototsuki_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 970,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "kototsuki_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1070,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "kototsuki_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1229,
+    "activeFramesWithGeometry": 7
+  },
+  {
+    "ch": "iori",
+    "id": "kuzukaze_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1380,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "kuzukaze_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1490,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "kuzukaze_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1600,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "kuzukaze_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1780,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "stance",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "branch_0",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 530,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "branch_1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 450,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "branch_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 840,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "branch_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 760,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "branch_4",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 610,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "branch_5",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "follow_2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 700,
+    "activeFramesWithGeometry": 3
+  },
+  {
+    "ch": "iori",
+    "id": "follow_3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1003,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "iori",
+    "id": "follow_6",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1039,
+    "activeFramesWithGeometry": 5
+  },
+  {
+    "ch": "iori",
+    "id": "follow_7",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1149,
+    "activeFramesWithGeometry": 4
+  },
+  {
+    "ch": "iori",
+    "id": "SA1",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1615,
+    "activeFramesWithGeometry": 18
+  },
+  {
+    "ch": "iori",
+    "id": "SA2",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2324,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "SA3",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 2794,
+    "activeFramesWithGeometry": 32
+  },
+  {
+    "ch": "iori",
+    "id": "CA",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 3317,
+    "activeFramesWithGeometry": 31
+  },
+  {
+    "ch": "iori",
+    "id": "throw",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1200,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "backthrow",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 1150,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "DI",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 950,
+    "activeFramesWithGeometry": 1
+  },
+  {
+    "ch": "iori",
+    "id": "REV",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 650,
+    "activeFramesWithGeometry": 2
+  },
+  {
+    "ch": "iori",
+    "id": "PAR",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  },
+  {
+    "ch": "iori",
+    "id": "RUSH",
+    "started": true,
+    "finite": true,
+    "validSVG": true,
+    "damage": 0,
+    "activeFramesWithGeometry": 0
+  }
+]

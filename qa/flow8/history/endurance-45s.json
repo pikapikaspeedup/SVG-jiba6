@@ -1,0 +1,349 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "memoryEventsAfter": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 45,
+  "startedAt": "2026-10-05T07:04:22.380300+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "status": "passed",
+  "description": "FLOW 08: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause, real solved-pose recording/review and skeleton inspector. No substituted time or hardware FPS guarantee.",
+  "finishedAt": "2026-10-05T07:05:10.460670+00:00",
+  "elapsedWallSeconds": 45.473,
+  "completedRoutes": 13,
+  "final": {
+    "cycles": 13,
+    "raf": 2550,
+    "errors": [],
+    "maxParticles": 152,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 19601,
+    "maxActors": 1,
+    "maxLifecycle": 156,
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "maxGhostSlots": 5,
+    "maxReplay": 218,
+    "maxStateEvents": 20,
+    "recordings": 5,
+    "reviews": 1,
+    "inspections": 1,
+    "pausedChecks": 3,
+    "views": 1,
+    "next": 0,
+    "lastStatus": "running",
+    "mode": "battle",
+    "lastClock": 1628,
+    "busy": false
+  },
+  "finalHeap": {
+    "usedSize": 24694224,
+    "totalSize": 26517504,
+    "embedderHeapUsedSize": 25544056,
+    "backingStorageSize": 2578917
+  },
+  "finalDOM": {
+    "documents": 1,
+    "nodes": 47297,
+    "jsEventListeners": 386
+  },
+  "checkpoints": [
+    {
+      "elapsed": 1.511,
+      "cycles": 1,
+      "raf": 85,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 57,
+      "maxTrails": 1,
+      "maxLocal": 0,
+      "maxRoots": 16,
+      "maxCache": 0,
+      "maxDom": 17287,
+      "maxActors": 1,
+      "maxLifecycle": 8,
+      "inspections": 0,
+      "clock": {
+        "ticks": 89,
+        "callbacks": 89,
+        "discardedSteps": 6,
+        "clampedMs": 0,
+        "pauses": 1,
+        "alpha": 0.09149999999999885,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 1.5249999999999808
+      },
+      "bank": {
+        "instances": 2,
+        "acceptedBirths": 1,
+        "poolDrops": 0,
+        "cancelledActions": 1,
+        "eventEdges": 2
+      },
+      "maxImpacts": 2,
+      "maxInputs": 0,
+      "maxGhostSlots": 0,
+      "maxReplay": 51,
+      "maxStateEvents": 4,
+      "recordings": 1,
+      "reviews": 0,
+      "pausedChecks": 0,
+      "views": 0,
+      "heap": {
+        "usedSize": 19961140,
+        "totalSize": 22323200,
+        "embedderHeapUsedSize": 23474400,
+        "backingStorageSize": 1369647
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 42753,
+        "jsEventListeners": 379
+      }
+    }
+  ],
+  "routeResults": [
+    {
+      "cycle": 1,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 2,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 3,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 4,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 5,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 6,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 7,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 8,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 285,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 9,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 10,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 11,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 12,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 202,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 13,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    }
+  ],
+  "browserErrors": []
+}

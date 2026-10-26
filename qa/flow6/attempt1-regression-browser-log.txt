@@ -1,0 +1,115 @@
+PASS Production modules, build and isolated v6 persistence agree 
+PASS Real requestAnimationFrame loop advances the production fixed clock 
+PASS Same-frame inspector changes final pose without modifying raw assets or global graph state 
+PASS Inspector reverse seeking reproduces geometry, spring state and particles 
+PASS Live visual graph is separate from collision and is not a new hitbox multiplier 
+FAIL Cancelled layer handoff preserves its visual pose at the next move start Error: handoff error 12
+    at assert (eval at evaluate (:290:30), <anonymous>:3:56)
+    at eval (eval at evaluate (:290:30), <anonymous>:13:655)
+    at async run (eval at evaluate (:290:30), <anonymous>:4:46)
+    at async eval (eval at evaluate (:290:30), <anonymous>:13:2)
+    at async <anonymous>:316:30
+PASS Visual handoff fully ends before the first active frame 
+PASS Real SVG fan socket follows the final layered pose, not the raw combat pose 
+PASS 360 render-only calls do not advance simulation, emitter births, events or damage 
+PASS Runtime timeline feeds live emitter bank and dispatches each serial exactly once 
+PASS Hitstop freezes particle time, ribbon geometry, emission ordinal and event edges 
+PASS Cancellation immediately closes emitters but retains already born particles and ribbons 
+PASS World particle and ribbon node pools do not grow after repeated cancels 
+PASS Low-quality preview is a stable subset of high-quality particle geometry 
+PASS Editing graph spring settings updates live preview before saving 
+PASS Editor saves distance rate, burst, inherited velocity and spring metadata to reusable JSON 
+PASS Undo and redo restore newly added emitter parameters without changing combat bindings 
+PASS FX disabled suppresses local layers and world retained pools 
+PASS Inspector opened over rhythm practice cannot run G, R or Space behind the modal 
+PASS Reset discards action transitions, event instances and histories 
+Traceback (most recent call last):
+  File "/mnt/data/flow6-work/INK-Flow-6-Continuity/tests/flow6/regression-browser.py", line 13, in <module>
+    p.evaluate('INKEngineLab.open(); INKEngineLab.seek(24.25)');p.screenshot(path=str(O/'inspector-desktop.png'),full_page=True)
+                                                                ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 9815, in screenshot
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.screenshot(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        )
+        ^
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 814, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "screenshot", self._timeout_settings.timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.screenshot: Target crashed 
+Browser logs:
+
+<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-i07Vgy --remote-debugging-pipe --no-startup-window
+<launched> pid=4104
+[pid=4104][err] [4104:4159:1004/172129.357802:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=4104][err] [4104:4159:1004/172129.368533:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=4104][err] [4104:4159:1004/172129.368575:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=4104][err] [4104:4159:1004/172129.368585:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=4104][err] [4174:4174:1004/172129.375924:ERROR:ui/gl/angle_platform_impl.cc:42] DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] ERR: DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] [4174:4174:1004/172129.376125:ERROR:ui/gl/angle_platform_impl.cc:42] Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] [4174:4174:1004/172129.376197:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=4104][err] [4174:4174:1004/172129.376247:ERROR:ui/gl/gl_display.cc:639] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=4104][err] [4174:4174:1004/172129.376303:ERROR:ui/gl/gl_display.cc:674] Initialization of all EGL display types failed.
+[pid=4104][err] [4174:4174:1004/172129.376351:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=4104][err] [4174:4174:1004/172129.378814:ERROR:ui/gl/angle_platform_impl.cc:42] DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] ERR: DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] [4174:4174:1004/172129.379940:ERROR:ui/gl/angle_platform_impl.cc:42] Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] [4174:4174:1004/172129.380019:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=4104][err] [4174:4174:1004/172129.380132:ERROR:ui/gl/gl_display.cc:639] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=4104][err] [4174:4174:1004/172129.380199:ERROR:ui/gl/gl_display.cc:674] Initialization of all EGL display types failed.
+[pid=4104][err] [4174:4174:1004/172129.380247:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=4104][err] [4174:4174:1004/172129.381398:ERROR:components/viz/service/main/viz_main_impl.cc:189] Exiting GPU process due to errors during initialization
+[pid=4104][err] [4104:4159:1004/172129.393731:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=4104][err] [4104:4104:1004/172129.408763:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=4104][err] [4104:4159:1004/172129.409114:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=4104][err] [4104:4104:1004/172129.424361:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=4104][err] [4104:4104:1004/172129.428567:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=4104][err] [4104:4159:1004/172129.432561:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=4104][err] [4104:4159:1004/172129.433602:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=4104][err] [4222:4222:1004/172129.434387:ERROR:ui/gl/angle_platform_impl.cc:42] DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] ERR: DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] [4222:4222:1004/172129.434463:ERROR:ui/gl/angle_platform_impl.cc:42] Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] [4222:4222:1004/172129.434497:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=4104][err] [4222:4222:1004/172129.434512:ERROR:ui/gl/gl_display.cc:639] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=4104][err] [4222:4222:1004/172129.434531:ERROR:ui/gl/gl_display.cc:674] Initialization of all EGL display types failed.
+[pid=4104][err] [4222:4222:1004/172129.434547:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=4104][err] [4222:4222:1004/172129.435295:ERROR:ui/gl/angle_platform_impl.cc:42] DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] ERR: DisplayVkXcb.cpp:62 (initialize): xcb_connect() failed, error 1
+[pid=4104][err] [4104:4104:1004/172129.436084:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: 
+[pid=4104][err] [4222:4222:1004/172129.436089:ERROR:ui/gl/angle_platform_impl.cc:42] Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] ERR: Display.cpp:1097 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=4104][err] [4222:4222:1004/172129.436119:ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=4104][err] [4222:4222:1004/172129.436133:ERROR:ui/gl/gl_display.cc:639] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=4104][err] [4222:4222:1004/172129.436145:ERROR:ui/gl/gl_display.cc:674] Initialization of all EGL display types failed.
+[pid=4104][err] [4222:4222:1004/172129.436156:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=4104][err] [4222:4222:1004/172129.440520:ERROR:components/viz/service/main/viz_main_impl.cc:189] Exiting GPU process due to errors during initialization
+[pid=4104][err] [1004/172138.010755:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)
+[pid=4104][err] [1004/172138.011195:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+

@@ -1,0 +1,183 @@
+{
+  "suite": "flow8-source-and-evidence-validation",
+  "capturedAt": "2026-10-05T07:34:38.077479+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "total": 29,
+  "passed": 29,
+  "tests": [
+    {
+      "name": "All inherited moves/models/rigs/routes unchanged",
+      "pass": true,
+      "detail": {
+        "files": 707,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "690 move records and 22 routes retained",
+      "pass": true,
+      "detail": {
+        "moves": 690,
+        "routes": 22
+      }
+    },
+    {
+      "name": "Release metadata is v8 response",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal game source calls all four new systems",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal build includes new modules and UI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime source-string patching reintroduced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All production JavaScript parses",
+      "pass": true,
+      "detail": {
+        "scripts": 42,
+        "errors": []
+      }
+    },
+    {
+      "name": "INK-Street-Fighter-6.html contains production response runtime",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INK-Street-Fighter-6-Player.html contains production response runtime",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current-build evidence: browser-contracts",
+      "pass": true,
+      "detail": {
+        "sha256": "d1820ea78ef07a13ada916d3bf34e92521d7939286b106aff85aaf6201307727"
+      }
+    },
+    {
+      "name": "Current-build evidence: ui",
+      "pass": true,
+      "detail": {
+        "sha256": "a431895c7d1bb07a078ff9c72872d580b3fbf5e56338dc035cd260db46c10d2b"
+      }
+    },
+    {
+      "name": "Current-build evidence: portability",
+      "pass": true,
+      "detail": {
+        "sha256": "864582169d5710d5c1ba485acb0a83544c7d1a3a4bf5a1941eeb01b4cf7ecebe"
+      }
+    },
+    {
+      "name": "Current-build evidence: state-matrix",
+      "pass": true,
+      "detail": {
+        "sha256": "b1995f6a1880b855848fd6064873087b9351c14bbc6eb44265c16769bbdf9798"
+      }
+    },
+    {
+      "name": "Current-build evidence: comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "47db14af81e02668a0d0f6397bc63344b8c14c92cd19cc44db1a6feae6087fae"
+      }
+    },
+    {
+      "name": "Current-build evidence: candidate-observations",
+      "pass": true,
+      "detail": {
+        "sha256": "f4c975eb4c4e27bbd892e5e4fb3d65a0d904642a5032232bf3b54d129616774b"
+      }
+    },
+    {
+      "name": "Final inherited regression executions bound to current HTML and logs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current inherited evidence: browser-contracts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current inherited evidence: transition-matrix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current inherited evidence: recovery-observation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current inherited evidence: render-and-practice",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current inherited evidence: effect-invariance",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current inherited evidence: character-chain",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All 39 saved original mechanic assertions passed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All 522 saved single-move replays started with finite valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Saved G-practice and actual route coverage complete",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Source patch reverses to v7 and reapplies to current source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Production unchanged since final-build freeze",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Completed >=3 min real replay-import/seek lifecycle stress on this HTML",
+      "pass": true,
+      "detail": {
+        "elapsedWallSeconds": 180.208,
+        "cycles": 720
+      }
+    },
+    {
+      "name": "Completed >=25 min actual wall-clock endurance on this HTML",
+      "pass": true,
+      "detail": {
+        "elapsedWallSeconds": 1500.36,
+        "completedRoutes": 419
+      }
+    }
+  ],
+  "commands": [],
+  "evidenceValidated": true
+}

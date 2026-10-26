@@ -1,0 +1,16 @@
+128 / 128 errors []
+SEQUENTIAL {'test': 'smoke.py', 'exitCode': 0, 'wallSeconds': 7.777}
+REAL CANCELS 106 / 106 MAX 2.8421709430404007e-13 ROUTES 44 / 44 ERRORS []
+SEQUENTIAL {'test': 'transition-matrix.py', 'exitCode': 0, 'wallSeconds': 4.803}
+RECOVERY OBSERVATION 195 MAX 2.6963201038669064e-13
+SEQUENTIAL {'test': 'recovery-observation.py', 'exitCode': 0, 'wallSeconds': 5.282}
+v6 routes 32 success 32
+{'route': 'mai-confirm', 'side': 1, 'status': 'success', 'hits': 11, 'damage': 3354, 'totalTicks': 207, 'actionFrames': 126, 'nominalSeconds': 3.45, 'remaining': {'drive': 1.104, 'super': 0}, 'reason': '连续命中成立 · 无无限资源、无脚本伤害'}
+{'route': 'mai-extended', 'side': 1, 'status': 'success', 'hits': 14, 'damage': 3375, 'totalTicks': 262, 'actionFrames': 164, 'nominalSeconds': 4.366666666666666, 'remaining': {'drive': 1.2180000000000002, 'super': 0}, 'reason': '连续命中成立 · 无无限资源、无脚本伤害'}
+v7-legacy routes 32 success 32
+{'route': 'mai-confirm', 'side': 1, 'status': 'success', 'hits': 11, 'damage': 3354, 'totalTicks': 207, 'actionFrames': 126, 'nominalSeconds': 3.45, 'remaining': {'drive': 1.104, 'super': 0}, 'reason': '连续命中成立 · 无无限资源、无脚本伤害'}
+{'route': 'mai-extended', 'side': 1, 'status': 'success', 'hits': 14, 'damage': 3375, 'totalTicks': 262, 'actionFrames': 164, 'nominalSeconds': 4.366666666666666, 'remaining': {'drive': 1.2180000000000002, 'super': 0}, 'reason': '连续命中成立 · 无无限资源、无脚本伤害'}
+v7-weighted routes 32 success 32
+{'route': 'mai-confirm', 'side': 1, 'status': 'success', 'hits': 11, 'damage': 3354, 'totalTicks': 208, 'actionFrames': 126, 'nominalSeconds': 3.466666666666667, 'remaining': {'drive': 1.104, 'super': 0}, 'reason': '连续命中成立 · 无无限资源、无脚本伤害'}
+{'route': 'mai-extended', 'side': 1, 'status': 'success', 'hits': 14, 'damage': 3375, 'totalTicks': 270, 'actionFrames': 164, 'nominalSeconds': 4.5, 'remaining': {'drive': 1.2180000000000002, 'super': 0}, 'reason': '连续命中成立 · 无无限资源、无脚本伤害'}
+SEQUENTIAL {'test': 'pace-comparison.py', 'exitCode': 0, 'wallSeconds': 10.632}

@@ -1,0 +1,406 @@
+{
+  "suite": "flow5-core",
+  "htmlSha256": "2d24c59c2cf2936b5ea171c9127b94915a8c0f8d85c7dc9f2194a54d881573ba",
+  "total": 76,
+  "passed": 76,
+  "tests": [
+    {
+      "name": "All 690 assets validate with strict FLOW 05 schema",
+      "pass": true,
+      "detail": {
+        "assets": 690
+      }
+    },
+    {
+      "name": "Compiled sampler preserves legacy values across every asset and subframe",
+      "pass": true,
+      "detail": {
+        "assets": 690,
+        "samples": 68236,
+        "components": 2251788,
+        "maxError": 4.689582056016661e-13
+      }
+    },
+    {
+      "name": "Compiled easing parity: \"smooth\"",
+      "pass": true
+    },
+    {
+      "name": "Compiled easing parity: \"linear\"",
+      "pass": true
+    },
+    {
+      "name": "Compiled easing parity: \"strike\"",
+      "pass": true
+    },
+    {
+      "name": "Compiled easing parity: \"load\"",
+      "pass": true
+    },
+    {
+      "name": "Compiled easing parity: \"hold\"",
+      "pass": true
+    },
+    {
+      "name": "Compiled easing parity: \"spline\"",
+      "pass": true
+    },
+    {
+      "name": "Compiled easing parity: [0.2,0.4,0.7,0.9]",
+      "pass": true
+    },
+    {
+      "name": "Compiled clips retain authored 720-degree winding",
+      "pass": true
+    },
+    {
+      "name": "Compiled sampling returns independent objects and validates frames",
+      "pass": true
+    },
+    {
+      "name": "Production game source is compiled directly, without build-time runtime replacements",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock: 30 Hz display yields 600 simulation steps in 10s",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock: 60 Hz display yields 600 simulation steps in 10s",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock: 120 Hz display yields 600 simulation steps in 10s",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock: 144 Hz display yields 600 simulation steps in 10s",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock: 240 Hz display yields 600 simulation steps in 10s",
+      "pass": true
+    },
+    {
+      "name": "Pause/resume discards pending wall time and does not catch up",
+      "pass": true
+    },
+    {
+      "name": "Inactive scene transition consumes no stale simulation time",
+      "pass": true
+    },
+    {
+      "name": "Overload is bounded and reports discarded steps explicitly",
+      "pass": true
+    },
+    {
+      "name": "Fixed clock respects half speed and validates inputs",
+      "pass": true
+    },
+    {
+      "name": "Spring exact integration semigroup, damping 0",
+      "pass": true
+    },
+    {
+      "name": "Spring exact integration semigroup, damping 0.42",
+      "pass": true
+    },
+    {
+      "name": "Spring exact integration semigroup, damping 1",
+      "pass": true
+    },
+    {
+      "name": "Spring exact integration semigroup, damping 1.7",
+      "pass": true
+    },
+    {
+      "name": "Damped spring converges to the target rather than oscillating forever",
+      "pass": true
+    },
+    {
+      "name": "Spring random seek is deterministic and includes actual angular velocity",
+      "pass": true
+    },
+    {
+      "name": "Secondary bake never mutates assets and remains finite at all Mai subframes",
+      "pass": true,
+      "detail": {
+        "samples": 5535
+      }
+    },
+    {
+      "name": "Spring disable returns zero arrays and zero velocity",
+      "pass": true
+    },
+    {
+      "name": "Graph is a copy-only presentation path; off returns raw values",
+      "pass": true
+    },
+    {
+      "name": "Additive and override layers are weighted and masked",
+      "pass": true
+    },
+    {
+      "name": "Graph zero weight exactly preserves clip values",
+      "pass": true
+    },
+    {
+      "name": "Foot contact reduces world-space drift under translated roots",
+      "pass": true,
+      "detail": {
+        "rawDrift": 26.408797445604613,
+        "constrainedDrift": 18.759469796680328
+      }
+    },
+    {
+      "name": "Airborne state bypasses planted-foot constraints",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects combat-owned root channel",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects weight above one",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects duplicate layer id",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects overlapping foot contacts",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects contact out of range",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects negative spring damping",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects unbounded spring stiffness",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects bad emitter spacing",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects bad inherited velocity",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects unbounded initial burst",
+      "pass": true
+    },
+    {
+      "name": "Strict asset schema rejects nonmonotone opacity curve",
+      "pass": true
+    },
+    {
+      "name": "Retime remaps layers, weights, contacts and event windows",
+      "pass": true,
+      "detail": [
+        {
+          "id": "rear-support",
+          "socket": "rearFoot",
+          "start": 0,
+          "end": 33.57142857142857,
+          "fadeIn": 1.2,
+          "fadeOut": 2.5714285714285694,
+          "strength": 0.92,
+          "maxCorrection": 32
+        }
+      ]
+    },
+    {
+      "name": "Timeline dispatches zero-frame events once and never on repeat render frame",
+      "pass": true
+    },
+    {
+      "name": "Timeline processes all crossed edges in end-before-start order",
+      "pass": true
+    },
+    {
+      "name": "Timeline cancellation closes each active event only once",
+      "pass": true
+    },
+    {
+      "name": "Silent seek reconstructs active events without emitting historical starts",
+      "pass": true
+    },
+    {
+      "name": "Timeline rejects duplicate identities and invalid time windows",
+      "pass": true
+    },
+    {
+      "name": "Distance emissions maintain spatial spacing independent of sample partitions",
+      "pass": true,
+      "detail": {
+        "births": 14
+      }
+    },
+    {
+      "name": "Low-quality births preserve ordinal seeds and are a subset, not rerandomized",
+      "pass": true,
+      "detail": {
+        "high": 14,
+        "low": 4
+      }
+    },
+    {
+      "name": "Teleport resets distance debt and does not generate a connecting beam",
+      "pass": true
+    },
+    {
+      "name": "Emitter closes on cancellation and rejects reverse time before closure",
+      "pass": true
+    },
+    {
+      "name": "Emission cap advances ordinals even when dropping overloaded births",
+      "pass": true
+    },
+    {
+      "name": "Disabled emitters produce no particles while preserving deterministic sequence",
+      "pass": true
+    },
+    {
+      "name": "Ribbon geometry stays finite with line",
+      "pass": true,
+      "detail": {
+        "points": 24,
+        "length": 60
+      }
+    },
+    {
+      "name": "Ribbon geometry stays finite with duplicates",
+      "pass": true,
+      "detail": {
+        "points": 24,
+        "length": 20
+      }
+    },
+    {
+      "name": "Ribbon geometry stays finite with reverse",
+      "pass": true,
+      "detail": {
+        "points": 24,
+        "length": 69.1337660085159
+      }
+    },
+    {
+      "name": "Ribbon geometry stays finite with tiny",
+      "pass": true,
+      "detail": {
+        "points": 1,
+        "length": 0
+      }
+    },
+    {
+      "name": "Ribbon fixed-width normal offsets cannot explode at a reversal",
+      "pass": true
+    },
+    {
+      "name": "Ribbon pool retains allocated SVG nodes through expiry and reuse",
+      "pass": true
+    },
+    {
+      "name": "Ribbon sample history stays bounded at 64 vertices per emitter",
+      "pass": true
+    },
+    {
+      "name": "Particle damping integrates acceleration consistently, not ballistic gravity with damped velocity",
+      "pass": true
+    },
+    {
+      "name": "Zero-drag particle limit recovers ballistic motion",
+      "pass": true
+    },
+    {
+      "name": "Particle lifetime curves and heat color are seek-stable",
+      "pass": true
+    },
+    {
+      "name": "Huge elapsed emitter time is bounded in allocation while preserving ordinals",
+      "pass": true
+    },
+    {
+      "name": "Zero quality cannot emit even a zero-threshold random sample",
+      "pass": true
+    },
+    {
+      "name": "Preview emitter baking cannot increment world emission telemetry",
+      "pass": true
+    },
+    {
+      "name": "Zero-size ring lifetime curve never writes Infinity into SVG stroke width",
+      "pass": true
+    },
+    {
+      "name": "Two simultaneous actors own independent emitter instances and cancellation",
+      "pass": true,
+      "detail": {
+        "instances": 2,
+        "births": 15
+      }
+    },
+    {
+      "name": "All 43 graph-authored Mai records retime safely across short, long and mixed phases",
+      "pass": true,
+      "detail": {
+        "retimedClips": 258,
+        "samples": 3354,
+        "schedules": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            10,
+            22
+          ],
+          [
+            30,
+            1,
+            8
+          ],
+          [
+            2,
+            70,
+            7
+          ],
+          [
+            180,
+            200,
+            200
+          ],
+          [
+            8,
+            33,
+            90
+          ]
+        ]
+      }
+    },
+    {
+      "name": "All 690 combat bindings and hitbox contracts remain unchanged",
+      "pass": true,
+      "detail": {
+        "contracts": 690
+      }
+    },
+    {
+      "name": "All sixteen combo route definitions are unchanged",
+      "pass": true
+    },
+    {
+      "name": "Historical source is archived intact; live source is genuinely different",
+      "pass": true
+    }
+  ]
+}

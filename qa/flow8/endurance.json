@@ -1,0 +1,9001 @@
+{
+  "environment": {
+    "memoryLimitBytes": "4294967296",
+    "memoryEventsBefore": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "memoryEventsAfter": "low 0\nhigh 0\nmax 126\noom 0\noom_kill 0\noom_group_kill 0\n"
+  },
+  "requestedWallSeconds": 1500,
+  "startedAt": "2026-10-05T07:06:27.719884+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "status": "passed",
+  "description": "FLOW 08: continuously rendered real Chromium; six new Mai routes and all previous characters, opposite directions, rhythm/rules/speed/FX presets, live combo composer, pause, real solved-pose recording/review and skeleton inspector. No substituted time or hardware FPS guarantee.",
+  "finishedAt": "2026-10-05T07:31:30.594992+00:00",
+  "elapsedWallSeconds": 1500.36,
+  "completedRoutes": 419,
+  "final": {
+    "cycles": 419,
+    "raf": 82284,
+    "errors": [],
+    "maxParticles": 170,
+    "maxTrails": 4,
+    "maxLocal": 0,
+    "maxRoots": 40,
+    "maxCache": 0,
+    "maxDom": 19763,
+    "maxActors": 1,
+    "maxLifecycle": 256,
+    "maxImpacts": 15,
+    "maxInputs": 0,
+    "maxGhostSlots": 5,
+    "maxReplay": 285,
+    "maxStateEvents": 23,
+    "recordings": 140,
+    "reviews": 59,
+    "inspections": 33,
+    "pausedChecks": 82,
+    "views": 33,
+    "next": 0,
+    "lastStatus": "running",
+    "mode": "battle",
+    "lastClock": 57446,
+    "busy": false
+  },
+  "finalHeap": {
+    "usedSize": 28112100,
+    "totalSize": 30187520,
+    "embedderHeapUsedSize": 25603496,
+    "backingStorageSize": 4566808
+  },
+  "finalDOM": {
+    "documents": 1,
+    "nodes": 47295,
+    "jsEventListeners": 397
+  },
+  "checkpoints": [
+    {
+      "elapsed": 1.512,
+      "cycles": 1,
+      "raf": 80,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 57,
+      "maxTrails": 1,
+      "maxLocal": 0,
+      "maxRoots": 16,
+      "maxCache": 0,
+      "maxDom": 17287,
+      "maxActors": 1,
+      "maxLifecycle": 8,
+      "inspections": 0,
+      "clock": {
+        "ticks": 88,
+        "callbacks": 84,
+        "discardedSteps": 5,
+        "clampedMs": 0,
+        "pauses": 1,
+        "alpha": 0.24999999999999878,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 4.1666666666666465
+      },
+      "bank": {
+        "instances": 2,
+        "acceptedBirths": 1,
+        "poolDrops": 0,
+        "cancelledActions": 1,
+        "eventEdges": 2
+      },
+      "maxImpacts": 2,
+      "maxInputs": 0,
+      "maxGhostSlots": 0,
+      "maxReplay": 51,
+      "maxStateEvents": 4,
+      "recordings": 1,
+      "reviews": 0,
+      "pausedChecks": 0,
+      "views": 0,
+      "heap": {
+        "usedSize": 20019720,
+        "totalSize": 22847488,
+        "embedderHeapUsedSize": 23665368,
+        "backingStorageSize": 1369697
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 42765,
+        "jsEventListeners": 379
+      }
+    },
+    {
+      "elapsed": 62.113,
+      "cycles": 18,
+      "raf": 3397,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 156,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19406,
+      "maxActors": 1,
+      "maxLifecycle": 204,
+      "inspections": 1,
+      "clock": {
+        "ticks": 2464,
+        "callbacks": 3401,
+        "discardedSteps": 5,
+        "clampedMs": 0,
+        "pauses": 8,
+        "alpha": 0.005999999999912262,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 0.0999999999985377
+      },
+      "bank": {
+        "instances": 2,
+        "acceptedBirths": 0,
+        "poolDrops": 0,
+        "cancelledActions": 1,
+        "eventEdges": 1
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 282,
+      "maxStateEvents": 20,
+      "recordings": 7,
+      "reviews": 2,
+      "pausedChecks": 4,
+      "views": 1,
+      "heap": {
+        "usedSize": 23700908,
+        "totalSize": 25731072,
+        "embedderHeapUsedSize": 24922624,
+        "backingStorageSize": 2588368
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47125,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 123.367,
+      "cycles": 35,
+      "raf": 6614,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 156,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19492,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 3,
+      "clock": {
+        "ticks": 4780,
+        "callbacks": 6618,
+        "discardedSteps": 13,
+        "clampedMs": 183.40000000000873,
+        "pauses": 16,
+        "alpha": 0.9990000000000873,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.650000000001455
+      },
+      "bank": {
+        "instances": 3,
+        "acceptedBirths": 5,
+        "poolDrops": 0,
+        "cancelledActions": 2,
+        "eventEdges": 3
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 282,
+      "maxStateEvents": 22,
+      "recordings": 12,
+      "reviews": 5,
+      "pausedChecks": 7,
+      "views": 3,
+      "heap": {
+        "usedSize": 25373972,
+        "totalSize": 28090368,
+        "embedderHeapUsedSize": 26057832,
+        "backingStorageSize": 3578270
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 49015,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 184.129,
+      "cycles": 51,
+      "raf": 9917,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 156,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19699,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 4,
+      "clock": {
+        "ticks": 7164,
+        "callbacks": 9921,
+        "discardedSteps": 14,
+        "clampedMs": 183.40000000000873,
+        "pauses": 22,
+        "alpha": 0.23649999999919868,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 3.941666666653312
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 52,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 24
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 22,
+      "recordings": 18,
+      "reviews": 7,
+      "pausedChecks": 10,
+      "views": 4,
+      "heap": {
+        "usedSize": 33665240,
+        "totalSize": 37130240,
+        "embedderHeapUsedSize": 33024584,
+        "backingStorageSize": 4927049
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 61485,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 244.802,
+      "cycles": 69,
+      "raf": 13243,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19699,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 6,
+      "clock": {
+        "ticks": 9505,
+        "callbacks": 13247,
+        "discardedSteps": 14,
+        "clampedMs": 183.40000000000873,
+        "pauses": 30,
+        "alpha": 0.7395000000002534,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 12.325000000004223
+      },
+      "bank": {
+        "instances": 5,
+        "acceptedBirths": 11,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 9
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 24,
+      "reviews": 9,
+      "pausedChecks": 14,
+      "views": 6,
+      "heap": {
+        "usedSize": 28016704,
+        "totalSize": 32022528,
+        "embedderHeapUsedSize": 25764344,
+        "backingStorageSize": 4573290
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47832,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 305.627,
+      "cycles": 86,
+      "raf": 16509,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19699,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 6,
+      "clock": {
+        "ticks": 11891,
+        "callbacks": 16513,
+        "discardedSteps": 14,
+        "clampedMs": 183.40000000000873,
+        "pauses": 36,
+        "alpha": 0.995999999998598,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.599999999976635
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 36,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 4
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 29,
+      "reviews": 12,
+      "pausedChecks": 17,
+      "views": 6,
+      "heap": {
+        "usedSize": 25835960,
+        "totalSize": 27828224,
+        "embedderHeapUsedSize": 26995640,
+        "backingStorageSize": 4550971
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 49436,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 366.389,
+      "cycles": 103,
+      "raf": 19811,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19699,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 8,
+      "clock": {
+        "ticks": 14201,
+        "callbacks": 19815,
+        "discardedSteps": 16,
+        "clampedMs": 183.40000000000873,
+        "pauses": 43,
+        "alpha": 0.7914999999999816,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 13.191666666666361
+      },
+      "bank": {
+        "instances": 6,
+        "acceptedBirths": 53,
+        "poolDrops": 0,
+        "cancelledActions": 5,
+        "eventEdges": 7
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 35,
+      "reviews": 14,
+      "pausedChecks": 20,
+      "views": 8,
+      "heap": {
+        "usedSize": 27787584,
+        "totalSize": 30449664,
+        "embedderHeapUsedSize": 27993128,
+        "backingStorageSize": 4573974
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 49902,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 427.061,
+      "cycles": 119,
+      "raf": 23016,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19699,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 9,
+      "clock": {
+        "ticks": 16509,
+        "callbacks": 23020,
+        "discardedSteps": 16,
+        "clampedMs": 183.40000000000873,
+        "pauses": 50,
+        "alpha": 0.9899999999999891,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.49999999999982
+      },
+      "bank": {
+        "instances": 5,
+        "acceptedBirths": 164,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 17
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 40,
+      "reviews": 17,
+      "pausedChecks": 23,
+      "views": 9,
+      "heap": {
+        "usedSize": 30170156,
+        "totalSize": 33857536,
+        "embedderHeapUsedSize": 29749472,
+        "backingStorageSize": 4590753
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 53493,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 487.675,
+      "cycles": 137,
+      "raf": 26311,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19699,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 11,
+      "clock": {
+        "ticks": 18885,
+        "callbacks": 26315,
+        "discardedSteps": 16,
+        "clampedMs": 183.40000000000873,
+        "pauses": 58,
+        "alpha": 0.9969999999989521,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.616666666649202
+      },
+      "bank": {
+        "instances": 1,
+        "acceptedBirths": 1,
+        "poolDrops": 0,
+        "cancelledActions": 0,
+        "eventEdges": 1
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 46,
+      "reviews": 19,
+      "pausedChecks": 27,
+      "views": 11,
+      "heap": {
+        "usedSize": 28363124,
+        "totalSize": 30711808,
+        "embedderHeapUsedSize": 26509240,
+        "backingStorageSize": 4563301
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47828,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 548.412,
+      "cycles": 154,
+      "raf": 29532,
+      "mode": "response",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19728,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 12,
+      "clock": {
+        "ticks": 21271,
+        "callbacks": 29536,
+        "discardedSteps": 17,
+        "clampedMs": 183.40000000000873,
+        "pauses": 65,
+        "alpha": 1,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": true,
+        "pendingMs": 0
+      },
+      "bank": {
+        "instances": 5,
+        "acceptedBirths": 29,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 27
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 52,
+      "reviews": 22,
+      "pausedChecks": 30,
+      "views": 12,
+      "heap": {
+        "usedSize": 28452600,
+        "totalSize": 32284672,
+        "embedderHeapUsedSize": 26419960,
+        "backingStorageSize": 4574089
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47768,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 609.309,
+      "cycles": 171,
+      "raf": 32664,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19728,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 13,
+      "clock": {
+        "ticks": 23596,
+        "callbacks": 32668,
+        "discardedSteps": 20,
+        "clampedMs": 183.40000000000873,
+        "pauses": 71,
+        "alpha": 0.001500000003142361,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 0.025000000052372684
+      },
+      "bank": {
+        "instances": 3,
+        "acceptedBirths": 0,
+        "poolDrops": 0,
+        "cancelledActions": 2,
+        "eventEdges": 2
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 58,
+      "reviews": 24,
+      "pausedChecks": 33,
+      "views": 13,
+      "heap": {
+        "usedSize": 27378728,
+        "totalSize": 30449664,
+        "embedderHeapUsedSize": 26768904,
+        "backingStorageSize": 4569494
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 49173,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 670.049,
+      "cycles": 188,
+      "raf": 35923,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19728,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 15,
+      "clock": {
+        "ticks": 25933,
+        "callbacks": 35927,
+        "discardedSteps": 20,
+        "clampedMs": 183.40000000000873,
+        "pauses": 79,
+        "alpha": 0.9959999999985938,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.599999999976564
+      },
+      "bank": {
+        "instances": 3,
+        "acceptedBirths": 2,
+        "poolDrops": 0,
+        "cancelledActions": 2,
+        "eventEdges": 3
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 63,
+      "reviews": 26,
+      "pausedChecks": 37,
+      "views": 15,
+      "heap": {
+        "usedSize": 28057588,
+        "totalSize": 30973952,
+        "embedderHeapUsedSize": 26616728,
+        "backingStorageSize": 4563757
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47455,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 730.658,
+      "cycles": 204,
+      "raf": 39162,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19751,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 16,
+      "clock": {
+        "ticks": 28206,
+        "callbacks": 39166,
+        "discardedSteps": 21,
+        "clampedMs": 183.40000000000873,
+        "pauses": 86,
+        "alpha": 0,
+        "lastSteps": 2,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 0
+      },
+      "bank": {
+        "instances": 3,
+        "acceptedBirths": 0,
+        "poolDrops": 0,
+        "cancelledActions": 2,
+        "eventEdges": 2
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 283,
+      "maxStateEvents": 23,
+      "recordings": 69,
+      "reviews": 29,
+      "pausedChecks": 40,
+      "views": 16,
+      "heap": {
+        "usedSize": 27961604,
+        "totalSize": 30449664,
+        "embedderHeapUsedSize": 26729640,
+        "backingStorageSize": 4566218
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 46973,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 791.212,
+      "cycles": 221,
+      "raf": 42534,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 18,
+      "clock": {
+        "ticks": 30547,
+        "callbacks": 42538,
+        "discardedSteps": 24,
+        "clampedMs": 183.40000000000873,
+        "pauses": 93,
+        "alpha": 0.49799999999929784,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 8.299999999988298
+      },
+      "bank": {
+        "instances": 5,
+        "acceptedBirths": 30,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 6
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 284,
+      "maxStateEvents": 23,
+      "recordings": 74,
+      "reviews": 31,
+      "pausedChecks": 43,
+      "views": 18,
+      "heap": {
+        "usedSize": 30110296,
+        "totalSize": 33857536,
+        "embedderHeapUsedSize": 28755168,
+        "backingStorageSize": 4582843
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 51319,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 851.759,
+      "cycles": 239,
+      "raf": 45902,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 18,
+      "clock": {
+        "ticks": 32979,
+        "callbacks": 45906,
+        "discardedSteps": 24,
+        "clampedMs": 183.40000000000873,
+        "pauses": 99,
+        "alpha": 0.9970000000006963,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.616666666678274
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 14,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 4
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 80,
+      "reviews": 34,
+      "pausedChecks": 46,
+      "views": 18,
+      "heap": {
+        "usedSize": 28501432,
+        "totalSize": 31236096,
+        "embedderHeapUsedSize": 28000672,
+        "backingStorageSize": 4575695
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 50994,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 912.47,
+      "cycles": 255,
+      "raf": 49296,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 20,
+      "clock": {
+        "ticks": 35321,
+        "callbacks": 49300,
+        "discardedSteps": 24,
+        "clampedMs": 183.40000000000873,
+        "pauses": 106,
+        "alpha": 0.9939999999979007,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.56666666663168
+      },
+      "bank": {
+        "instances": 8,
+        "acceptedBirths": 12,
+        "poolDrops": 0,
+        "cancelledActions": 7,
+        "eventEdges": 9
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 86,
+      "reviews": 36,
+      "pausedChecks": 49,
+      "views": 20,
+      "heap": {
+        "usedSize": 28298260,
+        "totalSize": 30711808,
+        "embedderHeapUsedSize": 28869144,
+        "backingStorageSize": 4586973
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 54680,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 973.217,
+      "cycles": 273,
+      "raf": 52691,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 21,
+      "clock": {
+        "ticks": 37623,
+        "callbacks": 52695,
+        "discardedSteps": 24,
+        "clampedMs": 183.40000000000873,
+        "pauses": 114,
+        "alpha": 1,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 0
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 22,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 6
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 92,
+      "reviews": 39,
+      "pausedChecks": 53,
+      "views": 21,
+      "heap": {
+        "usedSize": 28469820,
+        "totalSize": 31760384,
+        "embedderHeapUsedSize": 26064712,
+        "backingStorageSize": 4556903
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 48677,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 1033.739,
+      "cycles": 289,
+      "raf": 56082,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 23,
+      "clock": {
+        "ticks": 39897,
+        "callbacks": 56086,
+        "discardedSteps": 24,
+        "clampedMs": 183.40000000000873,
+        "pauses": 121,
+        "alpha": 0.25170000000356,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 4.195000000059334
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 3,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 3
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 97,
+      "reviews": 41,
+      "pausedChecks": 56,
+      "views": 23,
+      "heap": {
+        "usedSize": 27320752,
+        "totalSize": 28352512,
+        "embedderHeapUsedSize": 26405216,
+        "backingStorageSize": 4578279
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 49230,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 1094.272,
+      "cycles": 307,
+      "raf": 59494,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 24,
+      "clock": {
+        "ticks": 42271,
+        "callbacks": 59498,
+        "discardedSteps": 24,
+        "clampedMs": 183.40000000000873,
+        "pauses": 128,
+        "alpha": 0,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 0
+      },
+      "bank": {
+        "instances": 3,
+        "acceptedBirths": 9,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 4
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 103,
+      "reviews": 43,
+      "pausedChecks": 60,
+      "views": 24,
+      "heap": {
+        "usedSize": 27601716,
+        "totalSize": 30711808,
+        "embedderHeapUsedSize": 25856616,
+        "backingStorageSize": 4556740
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 48027,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 1154.904,
+      "cycles": 323,
+      "raf": 62874,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 25,
+      "clock": {
+        "ticks": 44626,
+        "callbacks": 62878,
+        "discardedSteps": 26,
+        "clampedMs": 183.40000000000873,
+        "pauses": 135,
+        "alpha": 0.49400000000139305,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 8.233333333356551
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 5,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 3
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 108,
+      "reviews": 46,
+      "pausedChecks": 63,
+      "views": 25,
+      "heap": {
+        "usedSize": 28274876,
+        "totalSize": 31236096,
+        "embedderHeapUsedSize": 26507144,
+        "backingStorageSize": 4579932
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 50634,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 1215.486,
+      "cycles": 340,
+      "raf": 66297,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 26,
+      "clock": {
+        "ticks": 46990,
+        "callbacks": 66301,
+        "discardedSteps": 26,
+        "clampedMs": 183.40000000000873,
+        "pauses": 142,
+        "alpha": 0.9980000000027921,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.63333333337987
+      },
+      "bank": {
+        "instances": 2,
+        "acceptedBirths": 1,
+        "poolDrops": 0,
+        "cancelledActions": 1,
+        "eventEdges": 2
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 114,
+      "reviews": 48,
+      "pausedChecks": 67,
+      "views": 26,
+      "heap": {
+        "usedSize": 27610664,
+        "totalSize": 30187520,
+        "embedderHeapUsedSize": 25417552,
+        "backingStorageSize": 4561948
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47525,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 1276.061,
+      "cycles": 357,
+      "raf": 69706,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 28,
+      "clock": {
+        "ticks": 49310,
+        "callbacks": 69710,
+        "discardedSteps": 26,
+        "clampedMs": 183.40000000000873,
+        "pauses": 150,
+        "alpha": 0.9924999999999923,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.54166666666654
+      },
+      "bank": {
+        "instances": 5,
+        "acceptedBirths": 25,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 12
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 120,
+      "reviews": 51,
+      "pausedChecks": 70,
+      "views": 28,
+      "heap": {
+        "usedSize": 30749132,
+        "totalSize": 33857536,
+        "embedderHeapUsedSize": 29431512,
+        "backingStorageSize": 4596791
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 54934,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 1336.782,
+      "cycles": 374,
+      "raf": 73109,
+      "mode": "continuity",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 30,
+      "clock": {
+        "ticks": 51613,
+        "callbacks": 73113,
+        "discardedSteps": 26,
+        "clampedMs": 183.40000000000873,
+        "pauses": 157,
+        "alpha": 1,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": false,
+        "paused": true,
+        "pendingMs": 0
+      },
+      "bank": {
+        "instances": 4,
+        "acceptedBirths": 0,
+        "poolDrops": 0,
+        "cancelledActions": 3,
+        "eventEdges": 24
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 125,
+      "reviews": 53,
+      "pausedChecks": 73,
+      "views": 30,
+      "heap": {
+        "usedSize": 27077000,
+        "totalSize": 30187520,
+        "embedderHeapUsedSize": 24479272,
+        "backingStorageSize": 4551200
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 47385,
+        "jsEventListeners": 398
+      }
+    },
+    {
+      "elapsed": 1397.291,
+      "cycles": 391,
+      "raf": 76492,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 30,
+      "clock": {
+        "ticks": 53973,
+        "callbacks": 76496,
+        "discardedSteps": 26,
+        "clampedMs": 183.40000000000873,
+        "pauses": 163,
+        "alpha": 0.6016999999976245,
+        "lastSteps": 1,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 10.028333333293741
+      },
+      "bank": {
+        "instances": 5,
+        "acceptedBirths": 12,
+        "poolDrops": 0,
+        "cancelledActions": 4,
+        "eventEdges": 7
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 131,
+      "reviews": 55,
+      "pausedChecks": 77,
+      "views": 30,
+      "heap": {
+        "usedSize": 27322236,
+        "totalSize": 30187520,
+        "embedderHeapUsedSize": 25555736,
+        "backingStorageSize": 4568099
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 48705,
+        "jsEventListeners": 386
+      }
+    },
+    {
+      "elapsed": 1457.908,
+      "cycles": 407,
+      "raf": 79887,
+      "mode": "battle",
+      "errors": [],
+      "maxParticles": 170,
+      "maxTrails": 4,
+      "maxLocal": 0,
+      "maxRoots": 40,
+      "maxCache": 0,
+      "maxDom": 19763,
+      "maxActors": 1,
+      "maxLifecycle": 256,
+      "inspections": 32,
+      "clock": {
+        "ticks": 56295,
+        "callbacks": 79891,
+        "discardedSteps": 26,
+        "clampedMs": 183.40000000000873,
+        "pauses": 170,
+        "alpha": 0.9919999999971969,
+        "lastSteps": 0,
+        "hz": 60,
+        "active": true,
+        "paused": false,
+        "pendingMs": 16.533333333286617
+      },
+      "bank": {
+        "instances": 6,
+        "acceptedBirths": 0,
+        "poolDrops": 0,
+        "cancelledActions": 5,
+        "eventEdges": 7
+      },
+      "maxImpacts": 15,
+      "maxInputs": 0,
+      "maxGhostSlots": 5,
+      "maxReplay": 285,
+      "maxStateEvents": 23,
+      "recordings": 136,
+      "reviews": 58,
+      "pausedChecks": 79,
+      "views": 32,
+      "heap": {
+        "usedSize": 27233756,
+        "totalSize": 29138944,
+        "embedderHeapUsedSize": 25776440,
+        "backingStorageSize": 4551244
+      },
+      "dom": {
+        "documents": 1,
+        "nodes": 48694,
+        "jsEventListeners": 398
+      }
+    }
+  ],
+  "routeResults": [
+    {
+      "cycle": 1,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 2,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 3,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 4,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 5,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 6,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 7,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 8,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 285,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 9,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 10,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 11,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 12,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 202,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 13,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 14,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 15,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 16,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 278,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 17,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 18,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 19,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 20,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 21,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 22,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 23,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 24,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 277,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 25,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 26,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 27,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 28,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 197,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 29,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 30,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 31,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 32,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 268,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 33,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 34,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 35,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 36,
+      "route": "luke-confirm",
+      "hits": 11,
+      "damage": 3733,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 124
+    },
+    {
+      "cycle": 37,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 38,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 39,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 40,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 276,
+      "actionFrames": 180
+    },
+    {
+      "cycle": 41,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 42,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 43,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 44,
+      "route": "juri-confirm",
+      "hits": 12,
+      "damage": 3412,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 219,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 45,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 46,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 47,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 48,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 260,
+      "actionFrames": 159
+    },
+    {
+      "cycle": 49,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 50,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 51,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 52,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 207,
+      "actionFrames": 126
+    },
+    {
+      "cycle": 53,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 54,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 55,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 56,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 270,
+      "actionFrames": 164
+    },
+    {
+      "cycle": 57,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 58,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 59,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 60,
+      "route": "iori-confirm",
+      "hits": 10,
+      "damage": 3648,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 201,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 61,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 62,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 63,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 64,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 274,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 65,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 66,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 67,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 68,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 207,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 69,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 70,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 71,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 72,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 285,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 73,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 74,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 75,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 76,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 201,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 77,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 78,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 79,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 80,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 283,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 81,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 82,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 83,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 84,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 85,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 86,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 87,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 88,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 272,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 89,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 90,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 91,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 92,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 93,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 94,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 95,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 96,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 268,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 97,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 98,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 99,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 100,
+      "route": "luke-confirm",
+      "hits": 11,
+      "damage": 3733,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 205,
+      "actionFrames": 124
+    },
+    {
+      "cycle": 101,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 102,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 103,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 104,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 290,
+      "actionFrames": 180
+    },
+    {
+      "cycle": 105,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 106,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 107,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 108,
+      "route": "juri-confirm",
+      "hits": 12,
+      "damage": 3412,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 219,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 109,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 110,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 111,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 112,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 259,
+      "actionFrames": 159
+    },
+    {
+      "cycle": 113,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 114,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 115,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 116,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 208,
+      "actionFrames": 126
+    },
+    {
+      "cycle": 117,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 118,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 119,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 120,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 270,
+      "actionFrames": 164
+    },
+    {
+      "cycle": 121,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 122,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 123,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 124,
+      "route": "iori-confirm",
+      "hits": 10,
+      "damage": 3648,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 191,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 125,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 126,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 127,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 128,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 302,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 129,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 130,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 131,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 132,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 207,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 133,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 134,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 135,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 136,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 280,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 137,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 138,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 139,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 140,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 202,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 141,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 142,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 143,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 144,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 283,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 145,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 146,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 147,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 148,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 197,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 149,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 150,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 151,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 152,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 277,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 153,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 154,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 155,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 156,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 157,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 158,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 159,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 160,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 254,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 161,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 162,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 163,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 164,
+      "route": "luke-confirm",
+      "hits": 11,
+      "damage": 3733,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 124
+    },
+    {
+      "cycle": 165,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 166,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 167,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 168,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 290,
+      "actionFrames": 180
+    },
+    {
+      "cycle": 169,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 170,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 171,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 172,
+      "route": "juri-confirm",
+      "hits": 12,
+      "damage": 3412,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 213,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 173,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 174,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 175,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 176,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 260,
+      "actionFrames": 159
+    },
+    {
+      "cycle": 177,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 178,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 179,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 180,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 208,
+      "actionFrames": 126
+    },
+    {
+      "cycle": 181,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 182,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 183,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 184,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 262,
+      "actionFrames": 164
+    },
+    {
+      "cycle": 185,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 186,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 187,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 188,
+      "route": "iori-confirm",
+      "hits": 10,
+      "damage": 3648,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 201,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 189,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 190,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 191,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 192,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 302,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 193,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 194,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 195,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 196,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 197,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 198,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 199,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 200,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 285,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 201,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 202,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 203,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 204,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 202,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 205,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 206,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 207,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 208,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 278,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 209,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 210,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 211,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 212,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 213,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 214,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 215,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 216,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 277,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 217,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 218,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 219,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 220,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 197,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 221,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 222,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 223,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 224,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 268,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 225,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 226,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 227,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 228,
+      "route": "luke-confirm",
+      "hits": 11,
+      "damage": 3733,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 124
+    },
+    {
+      "cycle": 229,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 230,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 231,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 232,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 276,
+      "actionFrames": 180
+    },
+    {
+      "cycle": 233,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 234,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 235,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 236,
+      "route": "juri-confirm",
+      "hits": 12,
+      "damage": 3412,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 219,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 237,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 238,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 239,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 240,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 260,
+      "actionFrames": 159
+    },
+    {
+      "cycle": 241,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 242,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 243,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 244,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 207,
+      "actionFrames": 126
+    },
+    {
+      "cycle": 245,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 246,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 247,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 248,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 270,
+      "actionFrames": 164
+    },
+    {
+      "cycle": 249,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 250,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 251,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 252,
+      "route": "iori-confirm",
+      "hits": 10,
+      "damage": 3648,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 201,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 253,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 254,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 255,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 256,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 274,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 257,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 258,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 259,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 260,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 207,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 261,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 262,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 263,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 264,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 285,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 265,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 266,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 267,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 268,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 201,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 269,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 270,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 271,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 272,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 283,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 273,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 274,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 275,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 276,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 277,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 278,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 279,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 280,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 272,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 281,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 282,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 283,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 284,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 285,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 286,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 287,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 288,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 268,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 289,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 290,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 291,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 292,
+      "route": "luke-confirm",
+      "hits": 11,
+      "damage": 3733,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 205,
+      "actionFrames": 124
+    },
+    {
+      "cycle": 293,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 294,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 295,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 296,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 290,
+      "actionFrames": 180
+    },
+    {
+      "cycle": 297,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 298,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 299,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 300,
+      "route": "juri-confirm",
+      "hits": 12,
+      "damage": 3412,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 219,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 301,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 302,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 303,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 304,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 259,
+      "actionFrames": 159
+    },
+    {
+      "cycle": 305,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 306,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 307,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 308,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 208,
+      "actionFrames": 126
+    },
+    {
+      "cycle": 309,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 310,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 311,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 312,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 270,
+      "actionFrames": 164
+    },
+    {
+      "cycle": 313,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 314,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 315,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 316,
+      "route": "iori-confirm",
+      "hits": 10,
+      "damage": 3648,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 191,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 317,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 318,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 319,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 320,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 302,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 321,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 322,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 323,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 324,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 207,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 325,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 326,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 327,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 328,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 280,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 329,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 330,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 331,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 332,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 202,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 333,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 334,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 335,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 336,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 283,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 337,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 338,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 339,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 340,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 197,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 341,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 342,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 343,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 344,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 277,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 345,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 346,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 347,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 348,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 349,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 350,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 351,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 352,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 254,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 353,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 354,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 355,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 356,
+      "route": "luke-confirm",
+      "hits": 11,
+      "damage": 3733,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 124
+    },
+    {
+      "cycle": 357,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 358,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 359,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 360,
+      "route": "luke-extended",
+      "hits": 14,
+      "damage": 4036,
+      "remaining": {
+        "drive": 1.2760000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 290,
+      "actionFrames": 180
+    },
+    {
+      "cycle": 361,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 362,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 363,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 364,
+      "route": "juri-confirm",
+      "hits": 12,
+      "damage": 3412,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0.07604761904761904
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 213,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 365,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 366,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 367,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 368,
+      "route": "juri-extended",
+      "hits": 14,
+      "damage": 3370,
+      "remaining": {
+        "drive": 1.2140000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 260,
+      "actionFrames": 159
+    },
+    {
+      "cycle": 369,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 370,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 371,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 372,
+      "route": "mai-confirm",
+      "hits": 11,
+      "damage": 3354,
+      "remaining": {
+        "drive": 1.104,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 208,
+      "actionFrames": 126
+    },
+    {
+      "cycle": 373,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 374,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 375,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 376,
+      "route": "mai-extended",
+      "hits": 14,
+      "damage": 3375,
+      "remaining": {
+        "drive": 1.2180000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 262,
+      "actionFrames": 164
+    },
+    {
+      "cycle": 377,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 378,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 379,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 380,
+      "route": "iori-confirm",
+      "hits": 10,
+      "damage": 3648,
+      "remaining": {
+        "drive": 1.09,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 201,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 381,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 382,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 383,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 384,
+      "route": "iori-extended",
+      "hits": 14,
+      "damage": 3990,
+      "remaining": {
+        "drive": 1.2920000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 302,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 385,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 386,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 387,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 388,
+      "route": "ryu-confirm",
+      "hits": 11,
+      "damage": 3574,
+      "remaining": {
+        "drive": 1.11,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 206,
+      "actionFrames": 125
+    },
+    {
+      "cycle": 389,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 390,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 391,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 392,
+      "route": "ryu-extended",
+      "hits": 15,
+      "damage": 3485,
+      "remaining": {
+        "drive": 1.2860000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 285,
+      "actionFrames": 177
+    },
+    {
+      "cycle": 393,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 394,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 395,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 396,
+      "route": "ken-confirm",
+      "hits": 11,
+      "damage": 3178,
+      "remaining": {
+        "drive": 1.102,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 202,
+      "actionFrames": 120
+    },
+    {
+      "cycle": 397,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 398,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 399,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 400,
+      "route": "ken-extended",
+      "hits": 15,
+      "damage": 3288,
+      "remaining": {
+        "drive": 1.2900000000000003,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 278,
+      "actionFrames": 175
+    },
+    {
+      "cycle": 401,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 402,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 403,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 404,
+      "route": "chun-confirm",
+      "hits": 11,
+      "damage": 3176,
+      "remaining": {
+        "drive": 1.092,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 198,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 405,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 406,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 407,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 408,
+      "route": "chun-extended",
+      "hits": 15,
+      "damage": 3271,
+      "remaining": {
+        "drive": 1.2800000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 277,
+      "actionFrames": 169
+    },
+    {
+      "cycle": 409,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 410,
+      "route": "mai-flow-rise",
+      "hits": 11,
+      "damage": 3305,
+      "remaining": {
+        "drive": 0.22399999999999576,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 203,
+      "actionFrames": 121
+    },
+    {
+      "cycle": 411,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 412,
+      "route": "cammy-confirm",
+      "hits": 11,
+      "damage": 3382,
+      "remaining": {
+        "drive": 1.096,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 197,
+      "actionFrames": 116
+    },
+    {
+      "cycle": 413,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    },
+    {
+      "cycle": 414,
+      "route": "mai-flow-gale",
+      "hits": 9,
+      "damage": 2440,
+      "remaining": {
+        "drive": 0.26599999999999735,
+        "super": 0.27942857142857136
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.5,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 140,
+      "actionFrames": 70
+    },
+    {
+      "cycle": 415,
+      "route": "mai-flow-fan",
+      "hits": 3,
+      "damage": 1776,
+      "remaining": {
+        "drive": 0.22800000000000004,
+        "super": 0.20542857142857146
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 46,
+      "actionFrames": 34
+    },
+    {
+      "cycle": 416,
+      "route": "cammy-extended",
+      "hits": 14,
+      "damage": 3580,
+      "remaining": {
+        "drive": 1.2700000000000002,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 0.85,
+        "rules": "legacy",
+        "buffer": 12
+      },
+      "ticks": 268,
+      "actionFrames": 158
+    },
+    {
+      "cycle": 417,
+      "route": "mai-flow-weave",
+      "hits": 4,
+      "damage": 2235,
+      "remaining": {
+        "drive": 0.32600000000000007,
+        "super": 0.28966666666666663
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 3
+      },
+      "ticks": 73,
+      "actionFrames": 43
+    },
+    {
+      "cycle": 418,
+      "route": "mai-flow-cascade",
+      "hits": 12,
+      "damage": 3640,
+      "remaining": {
+        "drive": 0.3219999999999943,
+        "super": 0
+      },
+      "tempo": {
+        "rhythm": "legacy",
+        "speed": 0.75,
+        "rules": "flow",
+        "buffer": 6
+      },
+      "ticks": 216,
+      "actionFrames": 130
+    },
+    {
+      "cycle": 419,
+      "route": "mai-flow-light",
+      "hits": 4,
+      "damage": 1289,
+      "remaining": {
+        "drive": 0.29400000000000004,
+        "super": 0.20947619047619048
+      },
+      "tempo": {
+        "rhythm": "weighted",
+        "speed": 1,
+        "rules": "flow",
+        "buffer": 9
+      },
+      "ticks": 48,
+      "actionFrames": 27
+    }
+  ],
+  "browserErrors": []
+}

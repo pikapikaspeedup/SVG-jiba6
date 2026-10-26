@@ -4,15 +4,15 @@
       "name": "ryu: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 328,
-        "after": 328
+        "before": 552,
+        "after": 552
       }
     },
     {
       "name": "ryu: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -29,15 +29,15 @@
       "name": "ken: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 317,
-        "after": 317
+        "before": 541,
+        "after": 541
       }
     },
     {
       "name": "ken: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -54,15 +54,15 @@
       "name": "chun: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 336,
-        "after": 336
+        "before": 560,
+        "after": 560
       }
     },
     {
       "name": "chun: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -79,15 +79,15 @@
       "name": "cammy: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 328,
-        "after": 328
+        "before": 552,
+        "after": 552
       }
     },
     {
       "name": "cammy: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -104,15 +104,15 @@
       "name": "luke: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 320,
-        "after": 320
+        "before": 544,
+        "after": 544
       }
     },
     {
       "name": "luke: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -129,15 +129,15 @@
       "name": "juri: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 326,
-        "after": 326
+        "before": 550,
+        "after": 550
       }
     },
     {
       "name": "juri: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -154,15 +154,15 @@
       "name": "mai: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 358,
-        "after": 358
+        "before": 603,
+        "after": 603
       }
     },
     {
       "name": "mai: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -179,15 +179,15 @@
       "name": "iori: retained node count stable over 240 varied samples",
       "pass": true,
       "detail": {
-        "before": 321,
-        "after": 321
+        "before": 545,
+        "after": 545
       }
     },
     {
       "name": "iori: SVG paint references are local and globally unique",
       "pass": true,
       "detail": {
-        "paintIds": 10
+        "paintIds": 16
       }
     },
     {
@@ -216,67 +216,67 @@
   "benchmark": [
     {
       "character": "ryu",
-      "nodes": 328,
+      "nodes": 552,
       "samples": 240,
-      "medianMs": 0.39999999944120646,
-      "p95Ms": 0.7999999998137355,
-      "maxMs": 1.900000000372529
+      "medianMs": 1,
+      "p95Ms": 3.3999999999068677,
+      "maxMs": 13.100000000093132
     },
     {
       "character": "ken",
-      "nodes": 317,
+      "nodes": 541,
       "samples": 240,
-      "medianMs": 0.2999999998137355,
-      "p95Ms": 0.7999999998137355,
-      "maxMs": 6.7999999998137355
+      "medianMs": 0.8999999999068677,
+      "p95Ms": 2.8999999999068677,
+      "maxMs": 4
     },
     {
       "character": "chun",
-      "nodes": 336,
+      "nodes": 560,
       "samples": 240,
-      "medianMs": 0.2999999998137355,
-      "p95Ms": 0.6000000005587935,
-      "maxMs": 1.5
+      "medianMs": 0.7999999998137355,
+      "p95Ms": 2.7999999998137355,
+      "maxMs": 4.800000000279397
     },
     {
       "character": "cammy",
-      "nodes": 328,
+      "nodes": 552,
       "samples": 240,
-      "medianMs": 0.39999999944120646,
-      "p95Ms": 0.8999999994412065,
-      "maxMs": 2
+      "medianMs": 0.8000000002793968,
+      "p95Ms": 1.8999999999068677,
+      "maxMs": 2.400000000372529
     },
     {
       "character": "luke",
-      "nodes": 320,
+      "nodes": 544,
       "samples": 240,
-      "medianMs": 0.2999999998137355,
-      "p95Ms": 0.5,
-      "maxMs": 1.5
+      "medianMs": 0.8000000002793968,
+      "p95Ms": 2.1000000000931323,
+      "maxMs": 2.8999999999068677
     },
     {
       "character": "juri",
-      "nodes": 326,
+      "nodes": 550,
       "samples": 240,
-      "medianMs": 0.2999999998137355,
-      "p95Ms": 0.5,
-      "maxMs": 1.2999999998137355
+      "medianMs": 0.8000000002793968,
+      "p95Ms": 2,
+      "maxMs": 2.7000000001862645
     },
     {
       "character": "mai",
-      "nodes": 358,
+      "nodes": 603,
       "samples": 240,
-      "medianMs": 0.30000000074505806,
-      "p95Ms": 0.7000000001862645,
-      "maxMs": 2.8999999994412065
+      "medianMs": 1.400000000372529,
+      "p95Ms": 5.2999999998137355,
+      "maxMs": 9.5
     },
     {
       "character": "iori",
-      "nodes": 321,
+      "nodes": 545,
       "samples": 240,
-      "medianMs": 0.2999999998137355,
-      "p95Ms": 0.7000000001862645,
-      "maxMs": 2
+      "medianMs": 0.7000000001862645,
+      "p95Ms": 2,
+      "maxMs": 4.199999999720603
     }
   ],
   "note": "Synchronous JavaScript render+FX time only in headless Chromium; not GPU/paint time or a device FPS guarantee.",

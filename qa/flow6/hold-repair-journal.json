@@ -1,0 +1,641 @@
+{
+  "records": 13,
+  "keys": 69,
+  "changes": [
+    {
+      "asset": "assets/ink/characters/mai/moves/midare.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 4.8,
+          "from": -16,
+          "to": -8
+        },
+        {
+          "channel": "bob",
+          "frame": 4.8,
+          "from": 7,
+          "to": 0
+        },
+        {
+          "channel": "chest",
+          "frame": 4.8,
+          "from": -8,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 4.8,
+          "from": [
+            -68,
+            -284
+          ],
+          "to": [
+            -62,
+            -279
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 4.8,
+          "from": [
+            13,
+            -278
+          ],
+          "to": [
+            44,
+            -321
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/mai/moves/kachousen-heavy.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 12.8,
+          "from": -16,
+          "to": -8
+        },
+        {
+          "channel": "bob",
+          "frame": 12.8,
+          "from": 7,
+          "to": 0
+        },
+        {
+          "channel": "chest",
+          "frame": 12.8,
+          "from": -8,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 12.8,
+          "from": [
+            -68,
+            -284
+          ],
+          "to": [
+            -62,
+            -279
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 12.8,
+          "from": [
+            13,
+            -278
+          ],
+          "to": [
+            44,
+            -321
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/mai/moves/kachousen-light.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 11.2,
+          "from": -16,
+          "to": -8
+        },
+        {
+          "channel": "bob",
+          "frame": 11.2,
+          "from": 7,
+          "to": 0
+        },
+        {
+          "channel": "chest",
+          "frame": 11.2,
+          "from": -8,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 11.2,
+          "from": [
+            -68,
+            -284
+          ],
+          "to": [
+            -62,
+            -279
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 11.2,
+          "from": [
+            13,
+            -278
+          ],
+          "to": [
+            44,
+            -321
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/mai/moves/kachousen-medium.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 12.0,
+          "from": -16,
+          "to": -8
+        },
+        {
+          "channel": "bob",
+          "frame": 12.0,
+          "from": 7,
+          "to": 0
+        },
+        {
+          "channel": "chest",
+          "frame": 12.0,
+          "from": -8,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 12.0,
+          "from": [
+            -68,
+            -284
+          ],
+          "to": [
+            -62,
+            -279
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 12.0,
+          "from": [
+            13,
+            -278
+          ],
+          "to": [
+            44,
+            -321
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/mai/moves/kachousen-od.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 9.6,
+          "from": -16,
+          "to": -8
+        },
+        {
+          "channel": "bob",
+          "frame": 9.6,
+          "from": 7,
+          "to": 0
+        },
+        {
+          "channel": "chest",
+          "frame": 9.6,
+          "from": -8,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 9.6,
+          "from": [
+            -68,
+            -284
+          ],
+          "to": [
+            -62,
+            -279
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 9.6,
+          "from": [
+            13,
+            -278
+          ],
+          "to": [
+            44,
+            -321
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/ryu/moves/hadoken_0.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 15.438,
+          "from": -15,
+          "to": -9
+        },
+        {
+          "channel": "bob",
+          "frame": 15.438,
+          "from": 12,
+          "to": 9
+        },
+        {
+          "channel": "head",
+          "frame": 15.438,
+          "from": 7,
+          "to": 1
+        },
+        {
+          "channel": "chest",
+          "frame": 15.438,
+          "from": -10,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 15.438,
+          "from": [
+            -9,
+            -258
+          ],
+          "to": [
+            12,
+            -254
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 15.438,
+          "from": [
+            -2,
+            -247
+          ],
+          "to": [
+            36,
+            -249
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/ryu/moves/hadoken_2.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 18.688,
+          "from": -15,
+          "to": -9
+        },
+        {
+          "channel": "bob",
+          "frame": 18.688,
+          "from": 12,
+          "to": 9
+        },
+        {
+          "channel": "head",
+          "frame": 18.688,
+          "from": 7,
+          "to": 1
+        },
+        {
+          "channel": "chest",
+          "frame": 18.688,
+          "from": -10,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 18.688,
+          "from": [
+            -9,
+            -258
+          ],
+          "to": [
+            12,
+            -254
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 18.688,
+          "from": [
+            -2,
+            -247
+          ],
+          "to": [
+            36,
+            -249
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/ryu/moves/hadoken_1.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 17.062,
+          "from": -15,
+          "to": -9
+        },
+        {
+          "channel": "bob",
+          "frame": 17.062,
+          "from": 12,
+          "to": 9
+        },
+        {
+          "channel": "head",
+          "frame": 17.062,
+          "from": 7,
+          "to": 1
+        },
+        {
+          "channel": "chest",
+          "frame": 17.062,
+          "from": -10,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 17.062,
+          "from": [
+            -9,
+            -258
+          ],
+          "to": [
+            12,
+            -254
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 17.062,
+          "from": [
+            -2,
+            -247
+          ],
+          "to": [
+            36,
+            -249
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/ryu/moves/hadoken_3.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 16.25,
+          "from": -15,
+          "to": -9
+        },
+        {
+          "channel": "bob",
+          "frame": 16.25,
+          "from": 12,
+          "to": 9
+        },
+        {
+          "channel": "head",
+          "frame": 16.25,
+          "from": 7,
+          "to": 1
+        },
+        {
+          "channel": "chest",
+          "frame": 16.25,
+          "from": -10,
+          "to": 0
+        },
+        {
+          "channel": "rw",
+          "frame": 16.25,
+          "from": [
+            -9,
+            -258
+          ],
+          "to": [
+            12,
+            -254
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 16.25,
+          "from": [
+            -2,
+            -247
+          ],
+          "to": [
+            36,
+            -249
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/luke/moves/flash_2.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 14.069,
+          "from": -12,
+          "to": -14
+        },
+        {
+          "channel": "bob",
+          "frame": 14.069,
+          "from": 10,
+          "to": 13
+        },
+        {
+          "channel": "chest",
+          "frame": 14.069,
+          "from": -14,
+          "to": -16
+        },
+        {
+          "channel": "rw",
+          "frame": 14.069,
+          "from": [
+            5,
+            -319
+          ],
+          "to": [
+            4,
+            -322
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 14.069,
+          "from": [
+            -11,
+            -282
+          ],
+          "to": [
+            -16,
+            -287
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/luke/moves/flash_3.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 11.586,
+          "from": -12,
+          "to": -14
+        },
+        {
+          "channel": "bob",
+          "frame": 11.586,
+          "from": 10,
+          "to": 13
+        },
+        {
+          "channel": "chest",
+          "frame": 11.586,
+          "from": -14,
+          "to": -16
+        },
+        {
+          "channel": "rw",
+          "frame": 11.586,
+          "from": [
+            5,
+            -319
+          ],
+          "to": [
+            4,
+            -322
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 11.586,
+          "from": [
+            -11,
+            -282
+          ],
+          "to": [
+            -16,
+            -287
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/luke/moves/flash_1.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 12.414,
+          "from": -12,
+          "to": -14
+        },
+        {
+          "channel": "bob",
+          "frame": 12.414,
+          "from": 10,
+          "to": 13
+        },
+        {
+          "channel": "chest",
+          "frame": 12.414,
+          "from": -14,
+          "to": -16
+        },
+        {
+          "channel": "rw",
+          "frame": 12.414,
+          "from": [
+            5,
+            -319
+          ],
+          "to": [
+            4,
+            -322
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 12.414,
+          "from": [
+            -11,
+            -282
+          ],
+          "to": [
+            -16,
+            -287
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "assets/ink/characters/luke/moves/flash_0.json",
+      "keys": [
+        {
+          "channel": "lean",
+          "frame": 10.759,
+          "from": -12,
+          "to": -14
+        },
+        {
+          "channel": "bob",
+          "frame": 10.759,
+          "from": 10,
+          "to": 13
+        },
+        {
+          "channel": "chest",
+          "frame": 10.759,
+          "from": -14,
+          "to": -16
+        },
+        {
+          "channel": "rw",
+          "frame": 10.759,
+          "from": [
+            5,
+            -319
+          ],
+          "to": [
+            4,
+            -322
+          ]
+        },
+        {
+          "channel": "fw",
+          "frame": 10.759,
+          "from": [
+            -11,
+            -282
+          ],
+          "to": [
+            -16,
+            -287
+          ]
+        }
+      ]
+    }
+  ]
+}

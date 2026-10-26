@@ -495,32 +495,32 @@
         [
           4,
           [
-            191,
-            -227
+            175,
+            -299
           ],
           "linear"
         ],
         [
           6,
           [
-            199,
-            -227
+            175,
+            -299
           ],
           "linear"
         ],
         [
           7,
           [
-            207,
-            -227
+            175,
+            -299
           ],
           "linear"
         ],
         [
           9,
           [
-            88.336,
-            -315.751
+            82.802,
+            -325.712
           ],
           "linear"
         ],
@@ -681,7 +681,13 @@
       "kind": "punch",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "sLP",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -698,8 +704,33 @@
       "scale": 0.72,
       "color": "#e8b573",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.38,
+      "particles": {
+        "count": 6,
+        "life": 16,
+        "speed": 5,
+        "size": 1.2,
+        "spread": 65,
+        "species": "spark"
+      }
     }
   ],
-  "source": "migrated-atelier"
+  "source": "migrated-atelier",
+  "transitions": {
+    "version": 1,
+    "edges": [
+      {
+        "id": "light-confirm",
+        "label": "轻攻击命中连携",
+        "targets": [
+          "cLP"
+        ],
+        "on": "hit",
+        "start": 0,
+        "end": 10,
+        "minHits": 1,
+        "maxChain": 2
+      }
+    ]
+  }
 }

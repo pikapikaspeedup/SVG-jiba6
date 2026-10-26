@@ -1,0 +1,8 @@
+{
+  "status": "environment-blocked",
+  "attemptedAt": "2026-10-04T10:17:01+00:00",
+  "source": "Temporary local HTTP server bound to 127.0.0.1 on a random port",
+  "actualResult": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR",
+  "persistentOriginVerified": false,
+  "note": "This limitation is distinct from the completed set_content standalone-byte tests. No browser administration setting was modified."
+}

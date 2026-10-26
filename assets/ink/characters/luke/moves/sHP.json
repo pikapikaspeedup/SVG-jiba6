@@ -543,7 +543,7 @@
         [
           5,
           [
-            -44.131,
+            33.594,
             -275.661
           ],
           "linear"
@@ -551,48 +551,48 @@
         [
           10,
           [
-            -14.833,
-            -245.782
+            51.343,
+            -283.699
           ],
           "linear"
         ],
         [
           12,
           [
-            139,
-            -229
+            115,
+            -319
           ],
           "linear"
         ],
         [
           14,
           [
-            147,
-            -229
+            115,
+            -319
           ],
           "linear"
         ],
         [
           16,
           [
-            155,
-            -229
+            115,
+            -319
           ],
           "linear"
         ],
         [
           17,
           [
-            163,
-            -229
+            115,
+            -319
           ],
           "linear"
         ],
         [
           23,
           [
-            76.13,
-            -322.028
+            71.71,
+            -329.132
           ],
           "linear"
         ],
@@ -785,7 +785,13 @@
       "kind": "punch",
       "note": "已迁入独立动作资产，可逐帧修订。时序与招式规则沿用原对战。",
       "gameId": "sHP",
-      "rootPolicy": "combat"
+      "rootPolicy": "combat",
+      "flowEdition": 3,
+      "anatomy6": {
+        "revision": "recipe-vector-ownership",
+        "space": "unturned-author",
+        "notes": "恢复受共享模板污染的向量关键帧；未修改战斗时序、判定框、伤害或取消规则。"
+      }
     }
   },
   "boxes": {
@@ -802,7 +808,15 @@
       "scale": 0.72,
       "color": "#e8b573",
       "rotation": 0,
-      "opacity": 0.72
+      "opacity": 0.38,
+      "particles": {
+        "count": 6,
+        "life": 16,
+        "speed": 5,
+        "size": 1.2,
+        "spread": 65,
+        "species": "spark"
+      }
     }
   ],
   "source": "migrated-atelier"

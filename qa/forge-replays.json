@@ -2471,8 +2471,8 @@
     "started": true,
     "finite": true,
     "validSVG": true,
-    "damage": 0,
-    "activeFramesWithGeometry": 1
+    "damage": 740,
+    "activeFramesWithGeometry": 3
   },
   {
     "ch": "luke",
@@ -3002,8 +3002,8 @@
     "started": true,
     "finite": true,
     "validSVG": true,
-    "damage": 0,
-    "activeFramesWithGeometry": 1
+    "damage": 650,
+    "activeFramesWithGeometry": 2
   },
   {
     "ch": "luke",
@@ -3677,8 +3677,8 @@
     "started": true,
     "finite": true,
     "validSVG": true,
-    "damage": 0,
-    "activeFramesWithGeometry": 1
+    "damage": 740,
+    "activeFramesWithGeometry": 3
   },
   {
     "ch": "mai",
@@ -3893,8 +3893,8 @@
     "started": true,
     "finite": true,
     "validSVG": true,
-    "damage": 674,
-    "activeFramesWithGeometry": 10
+    "damage": 966,
+    "activeFramesWithGeometry": 12
   },
   {
     "ch": "mai",
@@ -4001,8 +4001,8 @@
     "started": true,
     "finite": true,
     "validSVG": true,
-    "damage": 485,
-    "activeFramesWithGeometry": 9
+    "damage": 253,
+    "activeFramesWithGeometry": 8
   },
   {
     "ch": "mai",

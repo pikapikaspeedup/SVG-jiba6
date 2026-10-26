@@ -1,0 +1,451 @@
+{
+  "suite": "flow6-browser",
+  "capturedAt": "2026-10-04T17:22:34.848149+00:00",
+  "htmlSha256": "72dcc5f4fd58cb4dda37e572de4c724bcec33ca25a568c4cd3170ac0f193b403",
+  "total": 22,
+  "passed": 20,
+  "tests": [
+    {
+      "name": "New anatomy lab opens with FX off and uses the real production Renderer",
+      "pass": true,
+      "detail": {
+        "game": "6.0.0-ink-continuity",
+        "anatomy": "6.0.0",
+        "articulation": "6.0.0"
+      }
+    },
+    {
+      "name": "1441 quarter-degree turn seeks keep output finite and source bones fixed",
+      "pass": true,
+      "detail": {
+        "frames": 1441,
+        "maxBoneError": 4.263256414560601e-14
+      }
+    },
+    {
+      "name": "Every visible source limb has a single shared contour for fill and detail clip",
+      "pass": true,
+      "detail": {
+        "limbs": 4
+      }
+    },
+    {
+      "name": "Rig overlay is actually displayed rather than hidden by display=none",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Random seeks leave retained DOM count and source assets unchanged",
+      "pass": true,
+      "detail": {
+        "seeks": 120,
+        "nodes": 334
+      }
+    },
+    {
+      "name": "Wrist/shin decals are independent of first mounted frame and remain endpoint-bound",
+      "pass": false,
+      "error": "Error: assertion failed\n    at assert (eval at evaluate (:290:30), <anonymous>:2:132)\n    at eval (eval at evaluate (:290:30), <anonymous>:10:656)\n    at run (eval at evaluate (:290:30), <anonymous>:3:72)\n    at eval (eval at evaluate (:290:30), <anonymous>:10:8)\n    at async <anonymous>:316:30"
+    },
+    {
+      "name": "Every actual SVG hand and foot origin matches the displayed joint across 8 characters and 12 angles",
+      "pass": true,
+      "detail": {
+        "count": 384,
+        "maxError": 7.369085116246775e-05
+      }
+    },
+    {
+      "name": "Production battle rendering passes new anatomy metadata, not the compatibility battle IK",
+      "pass": true,
+      "detail": {
+        "move": "ryuenbu_2",
+        "frame": 17
+      }
+    },
+    {
+      "name": "Natural special-to-super cancellation preserves actual joint positions, not just pose numbers",
+      "pass": false,
+      "error": "Error: actual skeletal handoff error 3.2642978664854576\n    at assert (eval at evaluate (:290:30), <anonymous>:2:132)\n    at eval (eval at evaluate (:290:30), <anonymous>:13:718)\n    at async run (eval at evaluate (:290:30), <anonymous>:3:66)\n    at async eval (eval at evaluate (:290:30), <anonymous>:13:2)\n    at async <anonymous>:316:30"
+    },
+    {
+      "name": "Joint bridge expires exactly at its deadline and never changes collision result",
+      "pass": true,
+      "detail": {
+        "frame": 5,
+        "deadline": 5
+      }
+    },
+    {
+      "name": "Reset clears joint-transition ownership",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Natural rendered Mai 14-hit route uses the new surface during real combat",
+      "pass": true,
+      "detail": {
+        "status": "success",
+        "character": "mai",
+        "route": "mai-extended",
+        "mode": "demo",
+        "cursor": 6,
+        "frames": 164,
+        "hits": 14,
+        "damage": 3375,
+        "maxCombo": 14,
+        "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+        "initial": {
+          "x": 1169,
+          "targetX": 1335,
+          "super": 3,
+          "drive": 6
+        },
+        "remaining": {
+          "drive": 1.2180000000000002,
+          "super": 0
+        },
+        "actions": [
+          {
+            "move": "sHP",
+            "name": "回身扇",
+            "tick": 72,
+            "frame": 1,
+            "hits": 1,
+            "damage": 800,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 6,
+              "super": 3
+            }
+          },
+          {
+            "move": "RUSH",
+            "name": "斗气取消迸发",
+            "tick": 91,
+            "frame": 13,
+            "hits": 0,
+            "damage": 0,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 3,
+              "super": 3
+            }
+          },
+          {
+            "move": "cMP",
+            "name": "蹲·横扇切",
+            "tick": 96,
+            "frame": 18,
+            "hits": 1,
+            "damage": 457,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 3,
+              "super": 3
+            }
+          },
+          {
+            "move": "sLP",
+            "name": "扇柄突",
+            "tick": 126,
+            "frame": 43,
+            "hits": 1,
+            "damage": 220,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 3.08,
+              "super": 3
+            }
+          },
+          {
+            "move": "hissatsu_3",
+            "name": "OD 龙炎舞",
+            "tick": 133,
+            "frame": 47,
+            "hits": 3,
+            "damage": 696,
+            "needed": 3,
+            "command": "",
+            "cost": {
+              "drive": 1.1600000000000001,
+              "super": 3
+            }
+          },
+          {
+            "move": "SA3",
+            "name": "不知火流·炎舞仇樱",
+            "tick": 183,
+            "frame": 76,
+            "hits": 8,
+            "damage": 1202,
+            "needed": 8,
+            "command": "",
+            "cost": {
+              "drive": 1.1600000000000001,
+              "super": 0
+            }
+          }
+        ],
+        "log": [
+          {
+            "type": "action",
+            "frame": 1,
+            "move": "sHP",
+            "name": "回身扇"
+          },
+          {
+            "type": "hit",
+            "frame": 12,
+            "tick": 83,
+            "move": "sHP",
+            "damage": 800,
+            "combo": 1
+          },
+          {
+            "type": "action",
+            "frame": 13,
+            "move": "RUSH",
+            "name": "斗气取消迸发"
+          },
+          {
+            "type": "action",
+            "frame": 18,
+            "move": "cMP",
+            "name": "蹲·横扇切"
+          },
+          {
+            "type": "hit",
+            "frame": 24,
+            "tick": 102,
+            "move": "cMP",
+            "damage": 457,
+            "combo": 2
+          },
+          {
+            "type": "action",
+            "frame": 43,
+            "move": "sLP",
+            "name": "扇柄突"
+          },
+          {
+            "type": "hit",
+            "frame": 46,
+            "tick": 129,
+            "move": "sLP",
+            "damage": 220,
+            "combo": 3
+          },
+          {
+            "type": "action",
+            "frame": 47,
+            "move": "hissatsu_3",
+            "name": "OD 龙炎舞"
+          },
+          {
+            "type": "hit",
+            "frame": 58,
+            "tick": 144,
+            "move": "hissatsu_3",
+            "damage": 262,
+            "combo": 4
+          },
+          {
+            "type": "hit",
+            "frame": 67,
+            "tick": 160,
+            "move": "hissatsu_3",
+            "damage": 232,
+            "combo": 5
+          },
+          {
+            "type": "hit",
+            "frame": 75,
+            "tick": 175,
+            "move": "hissatsu_3",
+            "damage": 202,
+            "combo": 6
+          },
+          {
+            "type": "action",
+            "frame": 76,
+            "move": "SA3",
+            "name": "不知火流·炎舞仇樱"
+          },
+          {
+            "type": "hit",
+            "frame": 87,
+            "tick": 214,
+            "move": "SA3",
+            "damage": 239,
+            "combo": 7
+          },
+          {
+            "type": "hit",
+            "frame": 98,
+            "tick": 231,
+            "move": "SA3",
+            "damage": 197,
+            "combo": 8
+          },
+          {
+            "type": "hit",
+            "frame": 109,
+            "tick": 248,
+            "move": "SA3",
+            "damage": 156,
+            "combo": 9
+          },
+          {
+            "type": "hit",
+            "frame": 120,
+            "tick": 265,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 10
+          },
+          {
+            "type": "hit",
+            "frame": 131,
+            "tick": 282,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 11
+          },
+          {
+            "type": "hit",
+            "frame": 142,
+            "tick": 299,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 12
+          },
+          {
+            "type": "hit",
+            "frame": 153,
+            "tick": 316,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 13
+          },
+          {
+            "type": "hit",
+            "frame": 164,
+            "tick": 333,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 14
+          }
+        ],
+        "inputLog": [],
+        "bufferFrames": 6,
+        "rendered": 88,
+        "anatomyFrames": 176
+      }
+    },
+    {
+      "name": "Primary lab Escape/close restores paused battle state and native focus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Continuity lab responsive 1440x1000",
+      "pass": true,
+      "detail": {
+        "doc": 1440,
+        "viewport": 1440,
+        "dialog": 958,
+        "content": 958,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Continuity lab responsive 1280x800",
+      "pass": true,
+      "detail": {
+        "doc": 1280,
+        "viewport": 1280,
+        "dialog": 958,
+        "content": 958,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Continuity lab responsive 1024x768",
+      "pass": true,
+      "detail": {
+        "doc": 1024,
+        "viewport": 1024,
+        "dialog": 958,
+        "content": 958,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Continuity lab responsive 844x390",
+      "pass": true,
+      "detail": {
+        "doc": 844,
+        "viewport": 844,
+        "dialog": 802,
+        "content": 802,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Continuity lab responsive 390x844",
+      "pass": true,
+      "detail": {
+        "doc": 390,
+        "viewport": 390,
+        "dialog": 372,
+        "content": 372,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Continuity lab responsive 360x740",
+      "pass": true,
+      "detail": {
+        "doc": 360,
+        "viewport": 360,
+        "dialog": 342,
+        "content": 342,
+        "finite": true,
+        "open": true
+      }
+    },
+    {
+      "name": "Escape closes continuity dialog",
+      "pass": true
+    },
+    {
+      "name": "Touch controls update actual mirrored rig overlay",
+      "pass": true,
+      "detail": {
+        "direction": -1,
+        "mode": "overlay",
+        "display": "inline"
+      }
+    },
+    {
+      "name": "Player build retains continuity inspector in isolated v6 storage",
+      "pass": true,
+      "detail": {
+        "player": true,
+        "open": true,
+        "id": "ink-flow-player-6"
+      }
+    }
+  ],
+  "browserErrors": []
+}

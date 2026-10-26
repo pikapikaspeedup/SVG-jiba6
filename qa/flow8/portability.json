@@ -1,0 +1,473 @@
+{
+  "suite": "flow8-portability",
+  "capturedAt": "2026-10-05T07:07:58.265685+00:00",
+  "htmlSha256": "6a5cfae8aa120e78a8a355840defe533342ae0ca36020e275d0249a25111e2a3",
+  "total": 13,
+  "passed": 13,
+  "tests": [
+    {
+      "name": "Save edited transition, current route library and settings before export",
+      "pass": true,
+      "detail": {
+        "saved": {
+          "durable": false,
+          "mode": "memory",
+          "revision": 1
+        },
+        "id": "ink-flow-sf6-v8",
+        "end": 11,
+        "settings": {
+          "rhythm": "weighted",
+          "speed": 0.85,
+          "rules": "flow",
+          "buffer": 12
+        },
+        "routes": 23,
+        "packageRoutes": 23,
+        "assetCount": 690,
+        "readme": "INK FLOW 8 / Response & Pose Replay\n\n双击 INK-Street-Fighter-6.html 即可离线运行。模型与招式已经内嵌，无需安装。\n\nassets/ink/characters/<角色>/model.json 是外形。\nrig.json 是骨架。moves/<招式>.json 是动作、有效阶段、判定和特效。\nassets/ink/project-overrides.json 可以通过应用中的「导入工程」恢复。\n\n保存到浏览器不是上传 GitHub。请导出本包作为长期备份。\n源码项目请用这些 assets/ink 文件覆盖同名资产后运行 python tools/build_forge.py。\n\n这是非官方 SVG 同人格斗游戏，不是官方模型或官方帧数据。\n",
+        "build": "8.0.0"
+      }
+    },
+    {
+      "name": "Export preserves all response settings",
+      "pass": true,
+      "detail": {
+        "interpolate": false,
+        "stateBlends": true,
+        "landingResponse": false
+      }
+    },
+    {
+      "name": "Independent creator export reopens with new engine, custom edge/route/settings",
+      "pass": true,
+      "detail": {
+        "version": "8.0.0-ink-response",
+        "id": "ink-portable-muuwqxsd",
+        "edge": 11,
+        "label": "二代导出测试",
+        "presentation": {
+          "interpolate": false,
+          "stateBlends": true,
+          "landingResponse": false
+        },
+        "settings": {
+          "rhythm": "weighted",
+          "speed": 0.85,
+          "rules": "flow",
+          "buffer": 12
+        },
+        "route": {
+          "id": "user-roundtrip",
+          "title": "我的扇舞 </script><script>window.roundTripProbe=1</script>",
+          "character": "mai",
+          "distance": 168,
+          "corner": true,
+          "rulesPreset": "flow",
+          "tier": "FLOW 07 · 有限连携",
+          "meter": {
+            "drive": 2,
+            "super": 3
+          },
+          "expectedHits": 12,
+          "minTotal": 12,
+          "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+          "steps": [
+            {
+              "move": "cMP",
+              "minHits": 1
+            },
+            {
+              "move": "sMK",
+              "minHits": 1
+            },
+            {
+              "move": "sHP",
+              "minHits": 1
+            },
+            {
+              "move": "shinobibachi_3",
+              "minHits": 1
+            },
+            {
+              "move": "SA3",
+              "minHits": 8
+            }
+          ]
+        },
+        "routes": 23,
+        "probe": null,
+        "external": false,
+        "player": false
+      }
+    },
+    {
+      "name": "Exported route title is inert text, not executable script",
+      "pass": true,
+      "detail": "我的扇舞 </script><script>window.roundTripProbe=1</script>"
+    },
+    {
+      "name": "Export has no external runtime script/style/image dependency",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Exported edited route executes 12 real hits with configured starting resources",
+      "pass": true,
+      "detail": {
+        "status": "success",
+        "character": "mai",
+        "route": "user-roundtrip",
+        "mode": "demo",
+        "cursor": 5,
+        "frames": 130,
+        "hits": 12,
+        "damage": 3640,
+        "maxCombo": 12,
+        "reason": "连续命中成立 · 无无限资源、无脚本伤害",
+        "initial": {
+          "x": 1167,
+          "targetX": 1335,
+          "super": 3,
+          "drive": 2
+        },
+        "remaining": {
+          "drive": 0.3219999999999943,
+          "super": 0
+        },
+        "elapsedTicks": 221,
+        "actionFrames": 130,
+        "tempo": {
+          "rhythm": "weighted",
+          "speed": 0.85,
+          "rules": "flow",
+          "buffer": 12
+        },
+        "actions": [
+          {
+            "move": "cMP",
+            "name": "蹲·横扇切",
+            "tick": 1,
+            "frame": 1,
+            "hits": 1,
+            "damage": 475,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 2,
+              "super": 3
+            }
+          },
+          {
+            "move": "sMK",
+            "name": "侧踢",
+            "tick": 17,
+            "frame": 8,
+            "hits": 1,
+            "damage": 485,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 2.0939999999999985,
+              "super": 3
+            }
+          },
+          {
+            "move": "sHP",
+            "name": "回身扇",
+            "tick": 34,
+            "frame": 16,
+            "hits": 1,
+            "damage": 664,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 2.189999999999997,
+              "super": 3
+            }
+          },
+          {
+            "move": "shinobibachi_3",
+            "name": "OD 必杀忍蜂",
+            "tick": 58,
+            "frame": 28,
+            "hits": 1,
+            "damage": 456,
+            "needed": 1,
+            "command": "",
+            "cost": {
+              "drive": 0.29399999999999427,
+              "super": 3
+            }
+          },
+          {
+            "move": "SA3",
+            "name": "不知火流·炎舞仇樱",
+            "tick": 77,
+            "frame": 42,
+            "hits": 8,
+            "damage": 1560,
+            "needed": 8,
+            "command": "",
+            "cost": {
+              "drive": 0.29399999999999427,
+              "super": 0
+            }
+          }
+        ],
+        "log": [
+          {
+            "type": "action",
+            "frame": 1,
+            "move": "cMP",
+            "name": "蹲·横扇切"
+          },
+          {
+            "type": "hit",
+            "frame": 7,
+            "tick": 7,
+            "move": "cMP",
+            "damage": 475,
+            "combo": 1
+          },
+          {
+            "type": "action",
+            "frame": 8,
+            "move": "sMK",
+            "name": "侧踢"
+          },
+          {
+            "type": "hit",
+            "frame": 15,
+            "tick": 24,
+            "move": "sMK",
+            "damage": 485,
+            "combo": 2
+          },
+          {
+            "type": "action",
+            "frame": 16,
+            "move": "sHP",
+            "name": "回身扇"
+          },
+          {
+            "type": "hit",
+            "frame": 27,
+            "tick": 45,
+            "move": "sHP",
+            "damage": 664,
+            "combo": 3
+          },
+          {
+            "type": "action",
+            "frame": 28,
+            "move": "shinobibachi_3",
+            "name": "OD 必杀忍蜂"
+          },
+          {
+            "type": "hit",
+            "frame": 41,
+            "tick": 71,
+            "move": "shinobibachi_3",
+            "damage": 456,
+            "combo": 4
+          },
+          {
+            "type": "action",
+            "frame": 42,
+            "move": "SA3",
+            "name": "不知火流·炎舞仇樱"
+          },
+          {
+            "type": "hit",
+            "frame": 53,
+            "tick": 116,
+            "move": "SA3",
+            "damage": 322,
+            "combo": 5
+          },
+          {
+            "type": "hit",
+            "frame": 64,
+            "tick": 131,
+            "move": "SA3",
+            "damage": 280,
+            "combo": 6
+          },
+          {
+            "type": "hit",
+            "frame": 75,
+            "tick": 146,
+            "move": "SA3",
+            "damage": 239,
+            "combo": 7
+          },
+          {
+            "type": "hit",
+            "frame": 86,
+            "tick": 161,
+            "move": "SA3",
+            "damage": 197,
+            "combo": 8
+          },
+          {
+            "type": "hit",
+            "frame": 97,
+            "tick": 176,
+            "move": "SA3",
+            "damage": 156,
+            "combo": 9
+          },
+          {
+            "type": "hit",
+            "frame": 108,
+            "tick": 191,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 10
+          },
+          {
+            "type": "hit",
+            "frame": 119,
+            "tick": 206,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 11
+          },
+          {
+            "type": "hit",
+            "frame": 130,
+            "tick": 221,
+            "move": "SA3",
+            "damage": 122,
+            "combo": 12
+          }
+        ],
+        "inputLog": [],
+        "bufferFrames": 6
+      }
+    },
+    {
+      "name": "Second-generation export retains response settings",
+      "pass": true,
+      "detail": {
+        "interpolate": false,
+        "stateBlends": true,
+        "landingResponse": false
+      }
+    },
+    {
+      "name": "Second-generation export retains route, edge, tempo and safe text",
+      "pass": true,
+      "detail": {
+        "version": "8.0.0-ink-response",
+        "id": "ink-portable-muuwr05c",
+        "edge": 11,
+        "label": "二代导出测试",
+        "presentation": {
+          "interpolate": false,
+          "stateBlends": true,
+          "landingResponse": false
+        },
+        "settings": {
+          "rhythm": "weighted",
+          "speed": 0.85,
+          "rules": "flow",
+          "buffer": 12
+        },
+        "route": {
+          "id": "user-roundtrip",
+          "title": "我的扇舞 </script><script>window.roundTripProbe=1</script>",
+          "character": "mai",
+          "distance": 168,
+          "corner": true,
+          "rulesPreset": "flow",
+          "tier": "FLOW 07 · 有限连携",
+          "meter": {
+            "drive": 2,
+            "super": 3
+          },
+          "expectedHits": 12,
+          "minTotal": 12,
+          "note": "需要「拓展连携」。新增普通技衔接只在命中后开放，每串最多两次。资源按实际消耗；木桩首次命中后自动防御。非官方连段表。",
+          "steps": [
+            {
+              "move": "cMP",
+              "minHits": 1
+            },
+            {
+              "move": "sMK",
+              "minHits": 1
+            },
+            {
+              "move": "sHP",
+              "minHits": 1
+            },
+            {
+              "move": "shinobibachi_3",
+              "minHits": 1
+            },
+            {
+              "move": "SA3",
+              "minHits": 8
+            }
+          ]
+        },
+        "routes": 23,
+        "probe": null,
+        "external": false,
+        "player": false
+      }
+    },
+    {
+      "name": "Player export hides edge authoring but retains custom route composer and settings",
+      "pass": true,
+      "detail": {
+        "player": true,
+        "authorHidden": true,
+        "composer": true,
+        "settings": {
+          "rhythm": "weighted",
+          "speed": 0.85,
+          "rules": "flow",
+          "buffer": 12
+        },
+        "route": "user-roundtrip"
+      }
+    },
+    {
+      "name": "Independent original v8 remains unmodified by portable exports",
+      "pass": true,
+      "detail": {
+        "id": "ink-flow-sf6-v8",
+        "edge": 12,
+        "routes": 22
+      }
+    },
+    {
+      "name": "Older v6-shaped motion import remains accepted without silent edge injection",
+      "pass": true,
+      "detail": {
+        "absent": true,
+        "tracksPreserved": true
+      }
+    },
+    {
+      "name": "No unhandled browser script errors across reopens",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No network request needed for tested local or embedded HTML",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "browserErrors": [],
+  "nativeLocalFile": {
+    "opened": false,
+    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/flow8work/INK-Flow-8-Response/dist/INK-Street-Fighter-6.html\nCall log:\n  - navigating to \"file:///mnt/data/flow8work/INK-Flow-8-Response/dist/INK-Street-Fighter-6.html\", waiting until \"load\"\n"
+  },
+  "networkRequests": [],
+  "scope": "Native file open/reload is separately reported. Independent complete-HTML generations also tested. No OS directory-picker grant or true phone performance asserted."
+}

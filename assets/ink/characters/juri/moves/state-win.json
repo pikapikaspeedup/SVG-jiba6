@@ -1252,7 +1252,8 @@
       "source": "migrated-state",
       "state": "win",
       "rootPolicy": "combat",
-      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。"
+      "note": "状态动作按真实模拟进度采样；不是额外必杀。投技抓取挂点和判伤时刻由双人约束负责。",
+      "flowEdition": 3
     }
   },
   "boxes": {
