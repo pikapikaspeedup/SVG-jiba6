@@ -1,0 +1,510 @@
+{
+  "htmlSha256": "7f2110ab09618d6398a868d72b15c15d2901ec8b65e0709a9d363559affccde1",
+  "rows": [
+    {
+      "name": "ryu actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "rooted",
+            "kind": "hit",
+            "progress": 0.3181818181818182,
+            "weight": 0.6962932296954384,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.99590392306477,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 820,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "rooted",
+            "kind": "block",
+            "progress": 0.3181818181818182,
+            "weight": 0.6510909059808676,
+            "counter": 0.5819939511446258,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.392876866637745,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "rooted",
+            "kind": "whiff",
+            "progress": 0.3181818181818182,
+            "weight": 0.707707506500943,
+            "counter": 0.7931818181818182,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.922588235559402,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "ryu repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "pursuit",
+            "kind": "hit",
+            "progress": 0.2857142857142857,
+            "weight": 0.646967702600252,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.660967397752206,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 720,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "pursuit",
+            "kind": "block",
+            "progress": 0.2857142857142857,
+            "weight": 0.5623596296199046,
+            "counter": 0.6579387259397126,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.9949754061326574,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "pursuit",
+            "kind": "whiff",
+            "progress": 0.2857142857142857,
+            "weight": 0.6112604669781572,
+            "counter": 0.8142857142857143,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.4751473256472085,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "ken repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "alternating",
+            "kind": "hit",
+            "progress": 0.30434782608695654,
+            "weight": 0.678372673019966,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.409422374629779,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 730,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "alternating",
+            "kind": "block",
+            "progress": 0.30434782608695654,
+            "weight": 0.6140446215986536,
+            "counter": 0.6150633249841695,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 3.4247755504175776,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "alternating",
+            "kind": "whiff",
+            "progress": 0.30434782608695654,
+            "weight": 0.667439806085493,
+            "counter": 0.8021739130434782,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.338358739555705,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "chun repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "spiral",
+            "kind": "hit",
+            "progress": 0.3157894736842105,
+            "weight": 0.6935378641973285,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 9.050669127775137,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 700,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "spiral",
+            "kind": "block",
+            "progress": 0.3157894736842105,
+            "weight": 0.644779895340366,
+            "counter": 0.5877852522924732,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.116393531652645,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "spiral",
+            "kind": "whiff",
+            "progress": 0.3157894736842105,
+            "weight": 0.7008477123264847,
+            "counter": 0.7947368421052632,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 8.020648766751096,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "cammy repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "boxing",
+            "kind": "hit",
+            "progress": 0.32,
+            "weight": 0.698289343482927,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.678538601335611,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 910,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "boxing",
+            "kind": "block",
+            "progress": 0.32,
+            "weight": 0.6558584741199335,
+            "counter": 0.5775727034222676,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 3.0163437320592075,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "boxing",
+            "kind": "whiff",
+            "progress": 0.32,
+            "weight": 0.7128896457825363,
+            "counter": 0.792,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 4.587587448539779,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "luke repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "single-leg",
+            "kind": "hit",
+            "progress": 0.2857142857142857,
+            "weight": 0.646967702600252,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.822709323402268,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 720,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "single-leg",
+            "kind": "block",
+            "progress": 0.2857142857142857,
+            "weight": 0.5623596296199046,
+            "counter": 0.6579387259397126,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.231511031151502,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "single-leg",
+            "kind": "whiff",
+            "progress": 0.2857142857142857,
+            "weight": 0.6112604669781572,
+            "counter": 0.8142857142857143,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.274304600782957,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "juri repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "fan-dance",
+            "kind": "hit",
+            "progress": 0.3076923076923077,
+            "weight": 0.6831409419500449,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 7.992749020815525,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 800,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "fan-dance",
+            "kind": "block",
+            "progress": 0.3076923076923077,
+            "weight": 0.6231182480395665,
+            "counter": 0.6071625078187112,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 5.48584355313592,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "fan-dance",
+            "kind": "whiff",
+            "progress": 0.3076923076923077,
+            "weight": 0.6773024435212679,
+            "counter": 0.8,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 6.827208630694382,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "mai repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori actual hit block and whiff have distinct recovery",
+      "passed": true,
+      "details": [
+        {
+          "inspect": {
+            "style": "low-claw",
+            "kind": "hit",
+            "progress": 0.30434782608695654,
+            "weight": 0.678372673019966,
+            "counter": 1,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 8.411821145447577,
+          "contacts": 1,
+          "actualResult": "hit",
+          "damage": 850,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "low-claw",
+            "kind": "block",
+            "progress": 0.30434782608695654,
+            "weight": 0.6140446215986536,
+            "counter": 0.6150633249841695,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 6.940764274559001,
+          "contacts": 1,
+          "actualResult": "block",
+          "damage": 0,
+          "pure": true
+        },
+        {
+          "inspect": {
+            "style": "low-claw",
+            "kind": "whiff",
+            "progress": 0.30434782608695654,
+            "weight": 0.667439806085493,
+            "counter": 0.8021739130434782,
+            "power": 1,
+            "kick": false
+          },
+          "changed": 7.998830789104579,
+          "contacts": 0,
+          "actualResult": null,
+          "damage": 0,
+          "pure": true
+        }
+      ]
+    },
+    {
+      "name": "iori repeated recovery rendering preserves simulation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "actual multiple contacts recover using latest hit result",
+      "passed": true,
+      "details": {
+        "inspect": {
+          "style": "alternating",
+          "kind": "hit",
+          "progress": 0.3125,
+          "weight": 0.6895121324830009,
+          "counter": 1,
+          "power": 0.35,
+          "kick": true
+        },
+        "changed": 2.292627840505978,
+        "contacts": 2,
+        "actualResult": "hit",
+        "damage": 622,
+        "pure": true
+      }
+    },
+    {
+      "name": "real uppercut recovery remains on authored special trajectory",
+      "passed": true,
+      "details": {
+        "inspect": null,
+        "changed": 0,
+        "contacts": 0,
+        "actualResult": null,
+        "damage": 0,
+        "pure": true
+      }
+    }
+  ],
+  "errors": []
+}

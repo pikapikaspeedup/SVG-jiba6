@@ -46,19 +46,7 @@
   const p=INK.copy(source),m=f.attack?.m,t=f.attack?.t||0,motion=settings.motion;
   const add=(k,v)=>{p[k]=(p[k]||0)+v*motion;};
   const shift=(k,x,y)=>{if(Array.isArray(p[k]))p[k]=[p[k][0]+x*motion,p[k][1]+y*motion];};
-  // Authored clips retain contact timing. Loading peaks before startup ends;
-  // the extension phase opens shoulders, then weight settles into recovery.
-  if(m&&!m.throw&&!['captured','throwing'].includes(f.state)){
-   const s=Math.max(1,m.startup),end=s+m.active,recovery=Math.max(1,m.recovery),power=strength(m);
-   const load=t<s?Math.sin(Math.PI*clamp(t/s))**2:0;
-   const release=t>=s?envelope(t-s,Math.min(m.active+8,18)):0;
-   const settle=t>end?Math.sin(Math.PI*clamp((t-end)/recovery))*Math.exp(-2*(t-end)/recovery):0;
-   const kick=m.contactPart==='foot'||m.pose==='kick',air=f.y<-2;
-   add('lean',power*(-5.5*load+3.5*release-2*settle));add('chestYaw',power*(-9*load+12*release));add('pelvisYaw',power*(5*load-6*release));
-   add('bob',air?0:power*(3.5*load+2*settle));add('head',power*(2*load-2*release));
-   shift('rw',-8*load*power,4*load*power);if(!kick)shift('fw',-18*load*power,6*load*power);
-   else {add('chest',-4*release*power);shift('rw',-12*release*power,-5*release*power);}
-  }
+  // StrikeMotion owns authored startup/active body loading; RecoveryMotion owns settling.
   const now=f._inkVisualClock||0,r=f._inkReaction,recoil=f._inkRecoil,weight=f._inkWeight;
   if(r&&!['down','ko','captured','throwing'].includes(f.state)&&!INK.StrikeFeel?.response(f,p,r,now,motion)){
    const age=now-r.actorBirth,w=envelope(age,r.duration)*r.energy*settings.impact,sign=r.worldDir*f.dir;

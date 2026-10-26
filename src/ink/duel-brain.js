@@ -6,6 +6,30 @@
  function update(f,b,obs,G,api){
   if(!active())return false;const hard=G.difficulty==='hard',easy=G.difficulty==='easy',dist=Math.abs(obs.x-f.x),corner=f.x<205||f.x>1235;
   const q=f._inkDuel||(f._inkDuel={recoveryTried:false,flight:null,waveAttempt:-999,followed:null,recoveries:0,fastDrops:0,counterWaves:0,followUps:0});
+  // Pursuit owns its whole paid sequence. Never fall through to the old
+  // aerial planner / combo specials while its landing debt is outstanding.
+  const pursuit=f._inkPursuit;
+  if(pursuit){
+   if(pursuit.phase==='flight'&&pursuit.age>=2&&!pursuit.attackUsed&&!f.attack&&f.y<-8){
+    const dy=obs.y-f.y,front=(obs.x-f.x)*f.dir>=0;
+    if(front&&dist<=260&&Number.isFinite(dy)&&Math.abs(dy)<=150){
+     const move=dist<=175&&Math.abs(dy)<=85?'aMP':'aHK';
+     if(api.request(f,move)){q.pursuitAttacks=(q.pursuitAttacks||0)+1;b.goal='追空普通技 · 承担落地恢复';}
+    }
+   }
+   return true;
+  }
+  const launch=f._inkLaunch,delay=hard?3:easy?10:6;
+  if(INK.AirPursuit?.active()&&launch&&!launch.used&&launch.source!==q.pursuitSource&&Number.isFinite(launch.at)&&G.actionTick-launch.at>=delay){
+   const gate=INK.AirPursuit.decision(f,'AIR_CHASE',G);
+   if(!gate?.wait){
+    // One roll per real launch source, including declined / expired permits.
+    q.pursuitSource=launch.source;
+    if(!easy&&gate?.ok&&INK.Random.combat.next()<(hard?.65:.4)&&api.request(f,'AIR_CHASE')){
+     q.pursuits=(q.pursuits||0)+1;b.goal='挑空确认 · 付费追空';return true;
+    }
+   }
+  }
   const wake=f._inkWake;
   if(INK.WakeFlow?.active()&&f.state==='down'&&f.stateAge>=6&&q.wakeCycle!==wake?.cycle){
    q.wakeCycle=wake?.cycle;q.wakeStrikeTried=false;const roll=INK.Random.combat.next();

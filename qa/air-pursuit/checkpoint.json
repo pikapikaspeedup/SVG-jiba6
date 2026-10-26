@@ -1,0 +1,48 @@
+{
+  "htmlSha256": "7f2110ab09618d6398a868d72b15c15d2901ec8b65e0709a9d363559affccde1",
+  "stage": "Continuous round 2: strike cadence, result recovery, paid air pursuit",
+  "goal": "active; this checkpoint does not complete continuous engine work",
+  "reports": [
+    {
+      "report": "qa/air-pursuit/playable.json",
+      "checks": 46,
+      "passed": true
+    },
+    {
+      "report": "qa/air-pursuit/controls.json",
+      "checks": 7,
+      "passed": true
+    },
+    {
+      "report": "qa/air-pursuit/cpu.json",
+      "checks": 11,
+      "passed": true
+    },
+    {
+      "report": "qa/move-cadence/playable.json",
+      "checks": 18,
+      "passed": true
+    },
+    {
+      "report": "qa/aerial/playable.json",
+      "checks": 17,
+      "passed": true
+    },
+    {
+      "report": "qa/air-pursuit/source/validation.json",
+      "checks": 6,
+      "passed": true
+    },
+    {
+      "report": "qa/air-pursuit/frame-cost.json",
+      "checks": 8,
+      "passed": true
+    }
+  ],
+  "unitChecks": [
+    "tests/strike-motion/unit.cjs",
+    "tests/move-cadence/recovery.test.js (5)",
+    "tests/air-pursuit/unit.cjs"
+  ],
+  "limitations": "Local contact probes for interruption/juggle are explicitly marked. CPU launch tests use real warmed observations then real cHP setup. No endurance, hardware FPS, subjective audio or competitive balance claim."
+}

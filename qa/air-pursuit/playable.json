@@ -1,0 +1,681 @@
+{
+  "htmlSha256": "7f2110ab09618d6398a868d72b15c15d2901ec8b65e0709a9d363559affccde1",
+  "rows": [
+    {
+      "name": "ryu real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "ryu one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u8df3\u8dc3\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 202,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "ryu pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -50.39999999999999,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "ryu real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "ken real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "ken one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u8df3\u8dc3\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 202,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "ken pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -37.399999999999984,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "ken real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "chun real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "chun one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u8df3\u8dc3\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 202,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "chun pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -37.399999999999984,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "chun real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "cammy real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "cammy one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u8df3\u8dc3\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 202,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "cammy pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -50.39999999999999,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "cammy real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "luke real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "luke one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u8df3\u8dc3\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 202,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "luke pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -63.4,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "luke real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "juri real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "juri one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u8df3\u8dc3\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 202,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "juri pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -37.399999999999984,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "juri real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "mai real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "mai one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u7a7a\u00b7\u6a2a\u6247\u5207",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 475,
+            "range": 216,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25,
+            "animation": "maiFanStrike",
+            "contactPart": "fan",
+            "weaponReach": 38
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "mai pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -37.399999999999984,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "mai real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "iori real launch accepts paid pursuit once",
+      "passed": true,
+      "details": {
+        "permit": true,
+        "ok": true,
+        "paid": 1.5
+      }
+    },
+    {
+      "name": "iori one existing air normal is accepted",
+      "passed": true,
+      "details": {
+        "gate": {
+          "ok": true,
+          "code": "ready",
+          "wait": false,
+          "kind": "pursuit-air",
+          "cost": 0,
+          "reason": "\u4e00\u6b21\u7a7a\u4e2d\u8ffd\u51fb",
+          "move": {
+            "id": "aMP",
+            "name": "\u7a7a\u00b7\u9006\u638c",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 7,
+            "active": 4,
+            "recovery": 14,
+            "damage": 490,
+            "range": 209,
+            "height": "overhead",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "\u8df3\u8dc3\u4e2d + MP / K",
+            "normalState": "a",
+            "knockdown": false,
+            "air": true,
+            "note": "\u7a7a\u4e2d\u653b\u51fb\uff1b\u9700\u7ad9\u7acb\u9632\u5fa1",
+            "total": 25,
+            "animation": "ioriClawStrike",
+            "contactPart": "hand"
+          }
+        },
+        "phase": "flight",
+        "y": -26.5
+      }
+    },
+    {
+      "name": "iori pursuit air normal hits actual airborne target",
+      "passed": true,
+      "details": {
+        "contact": "hit",
+        "impact": {
+          "y": -50.39999999999999,
+          "juggle": 2
+        }
+      }
+    },
+    {
+      "name": "iori real contact hitstop freezes pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori finite advance and landing recovery",
+      "passed": true,
+      "details": {
+        "maxTravel": 48,
+        "land": {
+          "stateT": 12,
+          "landT": 12
+        }
+      }
+    },
+    {
+      "name": "Blocked launcher never grants pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Whiff cannot buy pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Insufficient drive leaves launcher unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local contact probe interrupts pursuit without continuing FX phase",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Interrupted airborne hit reaches ordinary knockdown",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Local juggle cap probe refuses fourth pursuit hit",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": []
+}

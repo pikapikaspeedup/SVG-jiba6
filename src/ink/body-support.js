@@ -66,39 +66,17 @@
   const localDrive=q.drive*f.dir,localBrake=q.brake*f.dir;
   add('lean',localDrive*4.5*profile.drive-localBrake*4);add('pelvis',-localDrive*2.5+localBrake*3);add('chestYaw',q.turn*f.dir*profile.turn);add('pelvisYaw',-q.turn*f.dir*profile.turn*.55);
   add('bob',Math.abs(q.brake)*3.5*profile.load);shift('rw',-localDrive*4,-Math.abs(q.brake)*3);
-  let loading=0,releasing=0,weight=0,kicking=false;
-  if(m&&m.category==='normal'){
-   const startup=Math.max(1,m.startup),u=clamp(t/startup),load=t<startup?Math.sin(Math.PI*u):0,release=t>=startup?Math.exp(-(t-startup)/Math.max(3,m.active+3)):0;
-   const heavy=clamp((m.level||1)/3,.33,1),kick=m.contactPart==='foot'||m.pose==='kick';loading=load;releasing=release;weight=heavy;kicking=kick;
-   add('pelvis',(-4*load+3*release)*profile.load*heavy);add('chestYaw',(-5*load+8*release)*profile.drive*heavy);add('pelvisYaw',(3*load-5*release)*profile.load*heavy);add('bob',3*load*profile.load*heavy);
-   shift('rw',-5*load*heavy,-3*release*heavy);if(!kick)add('lean',(-2*load+3*release)*profile.drive*heavy);
-  }
-  // Different movement vocabularies; the attacking hand/foot targets remain
-  // authored. These bounded torso/offhand cues follow distance and move phase.
-  const traveling=q.mode==='step'||q.mode==='defend',guarding=['block','parry'].includes(f.state),quiet=!m&&!['hit','stun'].includes(f.state),load=loading*weight,release=releasing*weight;
+  // Attack loading belongs exclusively to StrikeMotion. Support owns locomotion.
+  const traveling=q.mode==='step'||q.mode==='defend',guarding=['block','parry'].includes(f.state),quiet=!m&&!['hit','stun'].includes(f.state);
   if(q.mode==='defend'){const u=q.defenseProgress||0;add('bob',Math.sin(Math.PI*u)*3*profile.load);add('lean',-2*profile.load);shift('rw',4,-5);}
   switch(profile.style){
-   case 'pursuit':
-    add('lean',Math.max(0,localDrive)*2+release*3);add('chestYaw',-5*load+10*release);add('pelvisYaw',4*load-3*release);
-    shift('rw',-8*load+4*release,-5*release);if(guarding){add('lean',2);shift('rw',3,-5);}break;
-   case 'alternating':
-    add('pelvisYaw',traveling?(q.contacts.front.weight-q.contacts.rear.weight)*4:0);add('chestYaw',kicking?-8*release:5*release);add('head',kicking?3*release:0);
-    shift('rw',kicking?-11*release:3*load,kicking?-5*release:-6*load);if(quiet){add('chest',-2);add('open',.08);}break;
-   case 'spiral':
-    add('chestYaw',q.turn*f.dir*3+release*4);add('pelvisYaw',-q.turn*f.dir*4);if(traveling)add('head',-Math.abs(localDrive)*2);break;
-   case 'boxing':
-    if(quiet||guarding){shift('rw',12,-13);add('head',-3);add('chest',-2);}
-    if(!kicking){add('chestYaw',-7*load+11*release);add('pelvisYaw',5*load-4*release);shift('rw',8*release,-9*release);}
-    add('headYaw',-q.turn*f.dir*7);if(traveling)add('bob',2*(1-Math.abs(q.contacts.front.weight-q.contacts.rear.weight)));break;
-   case 'single-leg':
-    if(quiet&&!f.crouch){add('pelvisYaw',5);add('chestYaw',-4);shift('rw',-5,3);}
-    if(kicking){add('pelvisYaw',-7*load+12*release);add('chestYaw',5*load-10*release);shift('rw',-13*release,-6*release);add('head',3*release);}break;
-   case 'fan-dance':
-    add('chestYaw',-5*load+9*release+q.turn*f.dir*3);add('pelvisYaw',3*load-5*release);shift('rw',-10*load+5*release,-7*release);
-    if(quiet){add('turn',.025);add('fanAngle',q.turn*f.dir*9);shift('rw',-3,-3);}break;
-   case 'low-claw':
-    if(quiet&&!f.crouch){add('bob',5);add('lean',3);add('pelvis',-2);shift('rw',-4,7);}
-    add('chestYaw',8*load-12*release);add('pelvisYaw',-4*load+5*release);shift('rw',-8*load,5*release);add('head',-3*release);break;
+   case 'pursuit':add('lean',Math.max(0,localDrive)*2);if(guarding){add('lean',2);shift('rw',3,-5);}break;
+   case 'alternating':add('pelvisYaw',traveling?(q.contacts.front.weight-q.contacts.rear.weight)*4:0);if(quiet){add('chest',-2);add('open',.08);}break;
+   case 'spiral':add('chestYaw',q.turn*f.dir*3);add('pelvisYaw',-q.turn*f.dir*4);if(traveling)add('head',-Math.abs(localDrive)*2);break;
+   case 'boxing':if(quiet||guarding){shift('rw',12,-13);add('head',-3);add('chest',-2);}add('headYaw',-q.turn*f.dir*7);if(traveling)add('bob',2*(1-Math.abs(q.contacts.front.weight-q.contacts.rear.weight)));break;
+   case 'single-leg':if(quiet&&!f.crouch){add('pelvisYaw',5);add('chestYaw',-4);shift('rw',-5,3);}break;
+   case 'fan-dance':add('chestYaw',q.turn*f.dir*3);if(quiet){add('turn',.025);add('fanAngle',q.turn*f.dir*9);shift('rw',-3,-3);}break;
+   case 'low-claw':if(quiet&&!f.crouch){add('bob',5);add('lean',3);add('pelvis',-2);shift('rw',-4,7);}break;
   }
   return INK.Articulation.inherit(source,p);
  }

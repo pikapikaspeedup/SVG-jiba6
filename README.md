@@ -1,12 +1,12 @@
 # INK FIGHT · 计算等于游戏性
 
-持续强化进行中：本轮加入倒地延迟、付费起身迎击、CPU 压起身/诱招选择，更新八角色肢体体积和衣料轮廓，并按真实落地惯性表现三种地面反馈。[持续工作](docs/CONTINUOUS-ENGINE.md) · [起身攻防](docs/WAKE-FLOW.md) · [角色体积](docs/MODEL-VOLUME.md)。阶段发布不代表持续目标结束。
+持续强化进行中：八角色逐击身体发力、命中/被防/挥空收势已统一；蹲重拳真实击飞后可付费追空，选择一次空中普通技并承担落地恢复。此前加入倒地延迟、起身迎击、CPU 压起身/诱招、角色体积和地面反馈。[身体节拍](docs/MOVE-CADENCE.md) · [付费追空](docs/AIR-PURSUIT.md) · [持续工作](docs/CONTINUOUS-ENGINE.md) · [起身攻防](docs/WAKE-FLOW.md) · [角色体积](docs/MODEL-VOLUME.md)。阶段发布不代表持续目标结束。
 
 十轮引擎升级已经整合：重心动作与命中反馈、八角色确认连携、短跳/快落/方向受身、角色材质特效、连续对波与能量衰减、场景照明、分部位打击与音效、实际接触驱动的超级技演出，以及 CPU 实战策略和落地输入缓冲。
 
 「身体参与对抗」三阶段现已整合：八角色的承重、刹步和发力风格；第二击后的免费收尾、付费追距与防后再压；防守退让、脱压与同规则 CPU。真实接触统一驱动身体、局部特效、音色和照明，多段保留可辨认的前景接触。打开自由练习下方设置即可切换八角色并试用攻防分支。
 
-[三阶段交付与边界](docs/NEXT-ENGINE.md) · [攻防选择与代价](docs/PRESSURE-FLOW.md) · [八角色身体语言](docs/EIGHT-FIGHTERS.md)。当前 206 项浏览器短测和 18 项模块单测通过，汇总 `qa/eight-fighters/completion.json`；未将长期竞技平衡与真机耐久算作完成。
+[三阶段交付与边界](docs/NEXT-ENGINE.md) · [攻防选择与代价](docs/PRESSURE-FLOW.md) · [八角色身体语言](docs/EIGHT-FIGHTERS.md)。该阶段 206 项浏览器短测和 18 项模块单测通过，汇总 `qa/eight-fighters/completion.json`；未将长期竞技平衡与真机耐久算作完成。
 
 打开 `dist/INK-Street-Fighter-6.html`，点击 **开始格斗**。支持电脑对战、本地双人、自由练习；各项引擎练习控制收在战斗画面下方。辅助操作可用 Z/X/C/B 必杀、1/2/3 超级技，经典搓招仍可用。
 

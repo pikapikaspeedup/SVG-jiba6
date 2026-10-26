@@ -1,0 +1,15 @@
+"""Finite production checks of result-aware recovery; no replay machinery."""
+from pathlib import Path
+import os,json,hashlib
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];O=R/'qa/move-cadence';O.mkdir(parents=True,exist_ok=True);html=(R/'dist/INK-Street-Fighter-6.html').read_bytes()
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(html.decode());p.wait_for_function('window.INKDuel?.ready&&INK.RecoveryMotion')
+ rows=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state,R=INK.RecoveryMotion,out=[],check=(name,passed,details)=>out.push({name,passed,details});
+ function sample(id,result,move='sHP'){A.start(id,'ryu','training','classic',7);G.paused=true;document.getElementById('dummy').value=result==='block'?'guard':'idle';document.getElementById('autohp').checked=false;A.teleport(0,400);A.teleport(1,result==='whiff'?1150:580);A.step();A.inputMove(0,move);const f=A.fighters[0],m=f.attack?.m;if(!m)return {error:'move did not start'};const target=m.startup+m.active+Math.max(1,Math.floor(m.recovery*.32));for(let i=0;i<250&&f.attack&&f.attack.t<target;i++)A.step();const inspect=R.inspect(f),p=A.visualPose(f);R.settings.enabled=false;const base=A.visualPose(f);R.settings.enabled=true;const changed=['lean','bob','chestYaw','pelvisYaw','head'].reduce((sum,k)=>sum+Math.abs((p[k]||0)-(base[k]||0)),0);const state=JSON.stringify(A.fighters.map(f=>[f.x,f.y,f.hp,f.push,f.state,f.attack?.t,f.attack?.contactResult,A.geometry(f)]));for(let i=0;i<8;i++)A.renderFraction(i%3/2);return {inspect,changed,contacts:f.attack?.contactCount,actualResult:f.attack?.contactResult,damage:10000-A.fighters[1].hp,pure:state===JSON.stringify(A.fighters.map(f=>[f.x,f.y,f.hp,f.push,f.state,f.attack?.t,f.attack?.contactResult,A.geometry(f)]))};}
+ for(const id of INK.Schema.CHARACTERS){const samples=['hit','block','whiff'].map(result=>sample(id,result));check(id+' actual hit block and whiff have distinct recovery',samples.every((s,i)=>s.inspect?.kind===['hit','block','whiff'][i]&&s.changed>.01)&&samples[0].damage>0&&samples[1].damage===0&&samples[2].damage===0,samples);check(id+' repeated recovery rendering preserves simulation',samples.every(s=>s.pure));}
+ const multi=A.moves.chun.find(m=>m.category==='special'&&m.kind==='barrage'&&!m.od&&m.hits>1),q=sample('chun','hit',multi.id);check('actual multiple contacts recover using latest hit result',q.contacts>1&&q.inspect?.kind==='hit'&&q.pure,q);
+ const upper=A.moves.ryu.find(m=>m.category==='special'&&m.kind==='upper'&&!m.od),excluded=sample('ryu','whiff',upper.id);check('real uppercut recovery remains on authored special trajectory',excluded.inspect===null&&excluded.changed===0&&excluded.pure,excluded);
+ return out;}''');b.close()
+for r in rows:print('PASS' if r['passed'] else 'FAIL',r['name'])
+(O/'playable.json').write_text(json.dumps({'htmlSha256':hashlib.sha256(html).hexdigest(),'rows':rows,'errors':errors},indent=2)+'\n');print(errors);assert all(r['passed'] for r in rows) and not errors
