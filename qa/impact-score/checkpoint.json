@@ -1,0 +1,30 @@
+{
+  "phase": 14,
+  "status": "checkpoint",
+  "sha256": "46a67eae2bf4f9a1c32e6f10b3be34249606c959f277b92e0f0cc56f1d160c99",
+  "bytes": 9410640,
+  "scope": [
+    "final-frame world sections and read-only draw caps",
+    "per-beat contact-aware eight-material strokes",
+    "shared immutable impact score, body/audio/shape/light",
+    "source-preserving trade and projectile contacts"
+  ],
+  "evidence": {
+    "playable": "qa/impact-score/playable.json",
+    "audio": "qa/impact-score/audio.json",
+    "source": "qa/impact-score/source",
+    "visual": "qa/impact-score/strike-shapes.png"
+  },
+  "unitCommands": [
+    "node tests/impact-score/unit.cjs",
+    "node tests/strike-trace/unit.cjs"
+  ],
+  "originalAssets": 707,
+  "limitations": [
+    "60 Hz sampled sweep, not exact continuous surface collision",
+    "body sections remain marked rigProxy; fan rim shares renderer geometry",
+    "no new endurance or performance claim",
+    "audio voice dispatch verified, subjective listening not assessed"
+  ],
+  "continuousGoal": "active; checkpoint is not completion"
+}

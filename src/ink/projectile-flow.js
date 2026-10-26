@@ -38,7 +38,7 @@
     s._flowClashes++;o._flowClashes++;impact(G,s,o,(p[0]*o.r+q[0]*s.r)/(s.r+o.r),(p[1]*o.r+q[1]*s.r)/(s.r+o.r));api.sound('block');
     const survivor=s.life>0?s:o.life>0?o:null;if(survivor)api.notify(survivor.owner,'穿波 · 剩余能量 '+survivor._flowEnergy+'/'+survivor._flowInitial);
    }else{
-    const p=point(e.a,e.t),result=api.contact(s.owner,e.d,s.m,s.m.hits-s.hits,s,{point:p});
+    const p=point(e.a,e.t),relativeVelocity=[e.a.to[0]-e.a.from[0]-(e.d.x-(e.d.px??e.d.x)),e.a.to[1]-e.a.from[1]-(e.d.y-(e.d.py??e.d.y))],speed=Math.hypot(...relativeVelocity),motion=!s.lockedTarget&&speed>1e-6?{incoming:relativeVelocity.map(v=>v/speed),relativeVelocity,evidence:'projectile',surface:'none',continuous:true,channel:'projectile',epoch:0}:null,result=api.contact(s.owner,e.d,s.m,s.m.hits-s.hits,s,{point:p,motion});
     if(result&&!['immune','miss'].includes(result)){e.a.stopAt=e.t;s.hits--;s.cool=s.m.super?7:8;if(s.hits<=0){s.life=0;s.lockedTarget=null;}else{s.lockedTarget=e.d;s.lockY=s.y-e.d.y;s.x=e.d.x-s.dir*32;}SF6Mai.bounce(s,e.d);}
    }
   }

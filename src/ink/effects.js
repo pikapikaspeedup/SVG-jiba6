@@ -15,7 +15,7 @@
       this.ribbons=Array.from({length:12},()=>{const g=node('g',{},this.root);return{g,paths:Array.from({length:4},()=>node('path',{'fill':'none','stroke-linecap':'round','stroke-linejoin':'round'},g)),tongues:Array.from({length:4},()=>node('path',{display:'none',stroke:'none'},g))};});
       // Keep the previous inspector handle as a read-only compatibility alias.
       this.nodes=this.ribbons;
-      this.particles=new ParticleSystem(this.root,{capacity:144});this.stats={active:0,historyHits:0};
+      this.particles=null;this.stats={active:0,historyHits:0};
     }
     births(record,event,profile){
       this.catalogue??=new Map();if(this.catalogue.has(event.id))return this.catalogue.get(event.id);
@@ -48,7 +48,8 @@
         result=[(q[0]*scale*dir+x-context.x)/(context.scale*context.dir),(q[1]*scale+y-context.y)/context.scale];
       }return mat.point(currentInverse,result);
     }
-    render(record,frame,pose,rig,context=null){this.context=context;this.frameSamples=new Map();if(!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
+    render(record,frame,pose,rig,context=null){this.context=context;this.frameSamples=new Map();if(context?.live||!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
+      this.particles??=new ParticleSystem(this.root,{capacity:144});
       const profile=rig.profile||INK.Runtime.profile(record.character);
       if(this.record!==record||this.profileKey!==JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth])||this.quality!==setting.quality||this.graphKey!==JSON.stringify(this.graphOptions||INK.MotionGraph.settings)){this.record=record;this.profile=profile;this.profileKey=JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth]);this.quality=setting.quality;this.graphKey=JSON.stringify(this.graphOptions||INK.MotionGraph.settings);this.cache.clear();this.catalogue=null;this.clip=new (INK.CompiledClip||INK.Clip)(record.clip);}
       const inverse=mat.inverse(rootMat(pose)),contactTime=context?.fxTime??INK.VFX.time,worldContact=context?.sourceAttack&&INK.ContactFlux?.read(context.sourceAttack,contactTime),localContact=worldContact?INK.ContactFlux.local(worldContact,q=>mat.point(inverse,[(q[0]-context.x)/(context.scale*context.dir),(q[1]-665-context.y)/context.scale])):null,base=materials[record.character]||materials.ryu;let used=0,slot=0;
@@ -111,7 +112,7 @@
     }
     destroy(){this.root.remove();this.backRoot.remove();this.cache.clear();}
   }
-  const World={pool:null,trails:null,bank:null,time:0,lastTick:-1,frozen:false,settings:setting,
+  const World={drawCaps:new Map(),pool:null,trails:null,bank:null,time:0,lastTick:-1,frozen:false,settings:setting,
     mount(){
       const el=document.getElementById('impact-fx');if(!el)return null;
       if(!this.pool||!this.pool.root.isConnected){this.pool?.destroy();this.trails?.destroy();this.trails=new INK.RibbonPool(el,{capacity:64});this.pool=new ParticleSystem(el,{capacity:320});this.bank=new INK.FXEmitter.EmitterBank(this.pool,this.trails);}
@@ -121,65 +122,76 @@
       const F=INK.ContactFlux;if(!setting.enabled||!F?.active()||!['hit','block','parry','armor'].includes(result)||!context?.point||m.throw)return null;
       const pool=this.mount();if(!pool)return null;
       const dir=context.direction??owner.dir,source=context.projectile?null:context.sourceAttack||owner.attack;
-      const incoming=context.incoming||[dir,0];
-      const snapshot=F.commit(source,{id:[G.tick,owner.index,target.index,context.projectileID||source?.combatID||m.id,context.hitIndex??0,result].join(':'),point:context.point,incoming,responseDir:context.response?.responseDir||[dir,0],result,born:this.time,character:owner.ch.id,category:m.category,strength:m.super?3:(m.level||1)+(m.od?.35:0),multi:(m.hits||1)>1&&!context.last,last:!!context.last,part:context.response?.part||m.contactPart||(m.pose==='kick'?'foot':'fist')});
-      if(snapshot){this.trails.contact(source,snapshot,this.time);this.trails.stamp(snapshot,this.time,{...INK.MaterialFlow.style(owner.ch.id),category:m.category,reduced:setting.reducedMotion});}
+      const score=context.impactScore,incoming=score?.incomingWorld||context.incoming||[dir,0];
+      const snapshot=F.commit(source,{id:score?.contactID||[G.tick,owner.index,target.index,context.projectileID||source?.combatID||m.id,context.hitIndex??0,result].join(':'),point:context.point,incoming,responseDir:score?.normalWorld||context.response?.responseDir||[dir,0],impactScore:score,result,born:this.time,character:owner.ch.id,category:m.category,strength:score?1+score.energy:m.super?3:(m.level||1)+(m.od?.35:0),multi:(m.hits||1)>1&&!context.last,last:!!context.last,part:context.response?.part||m.contactPart||(m.pose==='kick'?'foot':'fist')});
+      if(snapshot)this.trails.contact(source,snapshot,this.time);
       return snapshot;
     },
     burst(x,y,color,count=16,kind='hit',context=null,G){
       const pool=this.mount();if(!pool)return false;if(!setting.enabled)return true;
-      const owner=context?.owner,m=context?.move,phased=INK.CombatFlow?.settings.rhythm!=='legacy'&&!!m,multi=phased&&(m?.hits||1)>1&&!context?.last,guard=['block','parry'].includes(kind),big=!!m?.super,last=!!context?.last;
+      const score=context?.impactScore,owner=context?.owner,m=context?.move,phased=INK.CombatFlow?.settings.rhythm!=='legacy'&&!!m,multi=phased&&(m?.hits||1)>1&&!context?.last,guard=['block','parry'].includes(kind),big=!!m?.super,last=!!context?.last;
       const base=guard?materials.guard:materials[owner?.ch?.id]||materials.ryu,dir=context?.direction||owner?.dir||1,seed=hash([G.tick,owner?.index,kind,m?.id,x,y].join(':')),frame=this.time;
       pool.quality=setting.quality*(setting.reducedMotion?.55:1);
+      const axis=guard?score?.normalWorld:score?.forceWorld||score?.incomingWorld,heading=axis?Math.atan2(axis[1],axis[0])*180/Math.PI:dir<0?180:0,gain=score?clamp(score.energy,.3,1.5):1;
       if(kind==='throw-tech'){
         // Two separating strokes read as broken grip, without a damage flash.
         for(const sign of [-1,1])pool.add({x:x+sign*9,y,birth:frame,life:11,vx:sign*2.4,vy:-.3,gravity:0,size:21,angle:sign<0?180:0,color:'#d9f4ff',species:'shield',stretch:.7,opacity:.75,priority:4,opacityCurve:[[0,1],[.3,.8],[1,0]]});
         pool.emit({x,y,frame,seed,count:6,material:materials.guard,direction:dir,angle:0,spread:180,speed:2.8,life:12,size:1.2,species:'spark',priority:2});return true;
       }
+      if(score){
+        // A resolved contact has one principal owner and only its material flecks.
+        const impactMaterial=kind==='armor'?{...materials.guard,color:'#d79c59',core:'#ffe0a8'}:base;
+        INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,impactScore:score,incoming:context?.incoming,response:context?.response,material:impactMaterial,reduced:setting.reducedMotion});
+        INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,impactScore:score,response:context?.response,reduced:setting.reducedMotion,G});
+        return true;
+      }
       if(kind==='armor'){
         const brace={...materials.guard,color:'#d79c59',core:'#ffe0a8'};
-        pool.emit({x,y,frame,seed,count:8,material:brace,direction:dir,angle:0,spread:180,speed:3.2,life:13,size:1.4,species:'spark',priority:2});
-        INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,incoming:context?.incoming,response:context?.response,material:brace,reduced:setting.reducedMotion});return true;
+        pool.emit({x,y,frame,seed,count:8,material:brace,direction:1,angle:heading+180,spread:110,speed:3.2*gain,life:13,size:1.4,species:'spark',priority:2});
+        INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,impactScore:context?.impactScore,incoming:context?.incoming,response:context?.response,material:brace,reduced:setting.reducedMotion});return true;
       }
-      pool.emit({x,y,frame,seed,count:guard?8:multi?7:big?20:14,material:base,direction:dir,angle:-12,spread:guard?220:155,speed:guard?4.5:big?10:7.5,life:guard?17:27,size:guard?1.2:2,species:'spark',priority:2});
+      pool.emit({x,y,frame,seed,count:guard?8:multi?7:big?20:14,material:base,direction:1,angle:heading,spread:guard?180:105,speed:(guard?4.5:big?10:7.5)*gain,life:guard?17:27,size:guard?1.2:2,species:'spark',priority:2});
       if(!guard){
-        if(!INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,response:context?.response,reduced:setting.reducedMotion,G}))pool.emit({x,y,frame,seed:seed+1,count:multi?2:big?9:5,material:base,direction:dir,angle:-35,spread:230,speed:2.8,life:33,size:2.2,priority:1});
+        if(!INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,impactScore:score,response:context?.response,reduced:setting.reducedMotion,G}))pool.emit({x,y,frame,seed:seed+1,count:multi?2:big?9:5,material:base,direction:dir,angle:-35,spread:230,speed:2.8,life:33,size:2.2,priority:1});
         if(!setting.reducedMotion&&!multi)pool.emit({x,y,frame:frame+(phased?3:0),seed:seed+2,count:3,material:{...base,color:'#c9b7a4',core:'#ede2cf'},direction:dir,angle:0,spread:170,speed:1.3,life:23,size:7,species:'smoke',opacity:.14});
         if(!phased&&owner?.ch.id==='mai'&&(m?.contactPart==='fan'||big))pool.emit({x,y,frame,seed:seed+3,count:big&&last?10:4,material:{...base,color:'#ed8d91',core:'#ffe4c8'},direction:dir,angle:-45,spread:220,speed:2.6,life:38,size:3.1,species:'petal',gravity:.035,curl:3,priority:1});
-        pool.add({x,y,birth:frame,life:5,vx:0,vy:0,gravity:0,size:big?28:18,angle:seed%45,color:base.core,species:'impact',stretch:1.25,opacity:INK.ContactFlux?.active()&&m&&!m.throw?.28:.88,priority:4});
+        if(!context?.impactScore)pool.add({x,y,birth:frame,life:5,vx:0,vy:0,gravity:0,size:big?28:18,angle:seed%45,color:base.core,species:'impact',stretch:1.25,opacity:INK.ContactFlux?.active()&&m&&!m.throw?.28:.88,priority:4});
       }
-      if(guard)INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,response:context?.response,reduced:setting.reducedMotion,G});
-      if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,incoming:context?.incoming,response:context?.response,material:base,reduced:setting.reducedMotion});
+      if(guard)INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,impactScore:score,response:context?.response,reduced:setting.reducedMotion,G});
+      if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,impactScore:context?.impactScore,incoming:context?.incoming,response:context?.response,material:base,reduced:setting.reducedMotion});
       else pool.add({x,y,birth:frame,life:guard?12:9,vx:0,vy:0,gravity:0,size:guard?19:big?34:20,angle:15,color:base.core,species:'ring',stretch:.65,opacity:.55,priority:3});return true;
     },
     dust(x,G){const p=this.mount();if(!p)return false;if(!setting.enabled||setting.reducedMotion)return true;p.emit({x,y:670,frame:this.time,seed:hash('dust'+x+G.tick),count:7,material:{...materials.luke,color:'#adbcad',core:'#d1c7ae'},angle:-90,spread:150,speed:1.3,life:26,size:9,species:'smoke',gravity:-.02,opacity:.16});return true;},
+    drawStrike(f,view,record,pose,world){
+      if(!setting.enabled||!f.attack||!view.attack||!record){this.drawCaps.delete(f.index);return;}
+      this.drawCaps.set(f.index,{source:f.attack,time:world.fxTime,rows:INK.StrikeTrace.sample(view,record,world.fxTime,{pose,world,epoch:f._inkTrail?.traceEpoch||0})});
+    },
+    flushStrike(f){
+      const staged=f._inkTraceStaged;f._inkTraceStaged=null;
+      if(!setting.enabled||staged?.time!==this.time||!staged.record)return;
+      const view=Object.create(f);Object.assign(view,{attack:staged.attack,x:staged.x,y:staged.y,dir:staged.dir,renderScale:staged.scale});
+      const h=f._inkTrail?.attack===staged.attack?f._inkTrail:{attack:staged.attack,socketNames:[...new Set(staged.record.fx.map(e=>e.socket))],socketHistory:new Map()};
+      const traces=INK.StrikeTrace.capture(view,staged.record,this.time,h,staged);
+      this.bank?.updateTrace(view,staged.record,INK.Runtime.clipFrame(staged.record,staged.attack.m,staged.age),this.time,traces,setting);
+    },
     // This hook runs AFTER movement and contact. All trail history is physics
     // history, not a snapshot of whichever display frame happened to be drawn.
     captureRoots(fighters,G=globalThis.SVG_FIGHTER?.state){
       for(const f of fighters){
+        // A trade can erase the attack before this post-contact hook. Preserve
+        // its already captured contact-time endpoint, never a hit-body pose.
+        if(f._inkTraceStaged?.attack!==f.attack)this.flushStrike(f);else f._inkTraceStaged=null;
         const a=f.attack;
         if(!a){this.bank?.cancel(f.index,this.time);f._inkTrail=null;f._inkFxPrevious=null;continue;}
         const rec=INK.Runtime.record(f,a.m);if(!rec)continue;
         if(f._inkTrail?.attack!==a){f._inkTrail={attack:a,socketHistory:new Map(),socketNames:[...new Set(rec.fx.map(e=>e.socket))],socketUntil:0,rows:[{...(f._inkActionOrigin||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04}),t:0}]};f._inkFxPrevious=new Map();}
         const rows=f._inkTrail.rows,t=INK.Runtime.clipFrame(rec,a.m,a.t),root={t,x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04};
         if(rows.at(-1)?.t===t)rows[rows.length-1]=root;else rows.push(root);if(rows.length>40)rows.shift();
-        const poseCache=new Map(),pointAt=(at,name)=>{
-          let sample=poseCache.get(at);
-          if(!sample){const r=INK.MotionGraph.rootAt({history:rows,origin:f._inkActionOrigin},at);sample=INK.Runtime.visualSample(f,rec,at,r);sample.root=r;poseCache.set(at,sample);}
-          const r=sample.root,q=INK.Runtime.socket(sample.pose,sample.rig,name);
-          return INK.Rig.world(sample.pose,q,{x:r.x,y:665+r.y,scale:r.scale,facing:r.dir});
-        };
-        if(setting.enabled&&f._inkTrail.socketNames.length){
-          const h=f._inkTrail,previous=h.socketHistory.size?Math.max(h.socketUntil,t-24):Math.max(0,t-18);
-          const times=[];if(!h.socketHistory.size)times.push(previous);
-          for(let at=Math.floor(previous*2+1e-7)/2+.5;at<=t+1e-7;at+=.5)times.push(Math.min(at,t));
-          if(!times.length||Math.abs(times.at(-1)-t)>1e-7)times.push(t);
-          for(const at of times)for(const name of h.socketNames){const q=pointAt(at,name);let list=h.socketHistory.get(name);if(!list){list=[];h.socketHistory.set(name,list);}
-            const entry={t:at,x:q[0],y:q[1]};if(list.at(-1)?.t===at)list[list.length-1]=entry;else list.push(entry);if(list.length>96)list.shift();
-          }
-          h.socketUntil=t;
-        }else if(!setting.enabled){f._inkTrail.socketHistory.clear();f._inkTrail.socketUntil=t;}
-        this.bank?.update(f,rec,t,this.time,pointAt,setting);
+        if(setting.enabled){
+          const traces=INK.StrikeTrace.capture(f,rec,this.time,f._inkTrail);
+          this.bank?.updateTrace(f,rec,t,this.time,traces,setting);
+        }else{this.bank?.cancel(f.index,this.time);f._inkTrail.socketHistory.clear();}
+
       }
       INK.Kinetic?.advance(fighters);
       if(!setting.enabled||!this.pool)return;
@@ -196,9 +208,14 @@
       const visible=setting.enabled?'inline':'none';assign(this.pool.root,'display',visible);assign(this.trails.root,'display',visible);if(!setting.enabled)return;
       assign(this.pool.root,'opacity',setting.intensity);assign(this.trails.root,'opacity',setting.intensity);
       const t=G.paused||G.hitstop||this.frozen?this.time:this.time-1+clamp(alpha);
-      this.pool.render(t);this.trails.render(t);
+      const caps=new Map([...this.drawCaps.values()].filter(c=>Math.abs(c.time-t)<1e-6).map(c=>[c.source,c.rows]));
+      this.pool.render(t);this.trails.render(t,caps);
     },
-    clear(){INK.ContactFlux?.clear();INK.SuperDirector?.clear();INK.StrikeFeel?.clear();INK.StageLight?.clear();INK.ProjectileFlow?.clear();INK.Kinetic?.clear();INK.SceneFeedback?.clear();INK.StateTransitions?.clear();INK.ImpactFeedback?.clear();this.bank?.clear();this.pool?.clear();this.trails?.clear();this.time=0;this.frozen=false;for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkTrail=null;f._inkFxPrevious=null;}},
+    invalidateStrike(f){
+      this.bank?.cancel(f.index,this.time,'teleport');this.drawCaps.delete(f.index);f._inkTraceStaged=null;
+      const h=f._inkTrail;if(h){h.traceEpoch=(h.traceEpoch||0)+1;h.traceTime=undefined;h.traceRoot=null;h.traceCurrent=new Map();h.socketHistory.clear();h.rows=[];}
+    },
+    clear(){this.drawCaps.clear();INK.ContactFlux?.clear();INK.SuperDirector?.clear();INK.StrikeFeel?.clear();INK.StageLight?.clear();INK.ProjectileFlow?.clear();INK.Kinetic?.clear();INK.SceneFeedback?.clear();INK.StateTransitions?.clear();INK.ImpactFeedback?.clear();this.bank?.clear();this.pool?.clear();this.trails?.clear();this.time=0;this.frozen=false;for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkTrail=null;f._inkTraceStaged=null;f._inkFxPrevious=null;}},
     quality(value){if(!Number.isFinite(value))throw TypeError('Finite FX quality required');setting.quality=clamp(value,.25,1.5);},
     setEnabled(value){setting.enabled=!!value;},
     get stats(){return this.pool?.stats||{active:0,peak:0,dropped:0,capacity:320};},

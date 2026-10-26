@@ -94,7 +94,7 @@
   stateChange(f,next,presentationFrom=undefined){
    if(!this.enabled||!this.store)return;
    const old=f.attack;INK.StateTransitions.change(f,next,presentationFrom);
-   if(old)INK.VFX?.bank?.cancel(f.index,INK.VFX.time,'state:'+next);
+   if(old){INK.VFX?.flushStrike?.(f);INK.VFX?.bank?.cancel(f.index,INK.VFX.time,'state:'+next);}
    if(old?._inkTimeline)for(const e of old._inkTimeline.cancel('state:'+next))this.lifecycleLog.push({character:f.ch.id,move:old.m.id,event:e.event.id,frame:e.frame,kind:e.kind,instance:e.instance,serial:e.serial});
    if(this.lifecycleLog.length>256)this.lifecycleLog.splice(0,this.lifecycleLog.length-256);
   },

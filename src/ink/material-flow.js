@@ -19,6 +19,17 @@
  function style(character,event={}){const mode=character==='mai'&&['flame','pillar'].includes(event.type)?'fire':profiles[character]?.mode||'wave';return {character,type:event.type||'wave',mode};}
  function geometry(rows,time,style={}){
   const profile=profiles[style.character]||profiles.ryu,mode=style.mode||profile.mode;
+  if(style.sections){
+   let valid=rows.filter(r=>r.time<=time+1e-6&&time-r.time<(style.memory||8)+4);
+   const c=style.contact;
+   if(c&&c.result!=='block'&&INK.ContactFlux){valid=valid.map(r=>{
+    const p=r.tip||r.point,half=r.edgeA&&r.edgeB?Math.hypot(r.edgeA[0]-r.edgeB[0],r.edgeA[1]-r.edgeB[1])*.5:2;
+    if(!INK.RibbonGeometry.contactMatches(r,c)||r.time<c.born-1||Math.hypot(p[0]-c.point[0],p[1]-c.point[1])>Math.max(12,1.5*half))return r;
+    const q=INK.ContactFlux.deform([p],c,style.contactTime??time)[0],shift=v=>v?[v[0]+q[0]-p[0],v[1]+q[1]-p[1]]:v;
+    return {...r,point:q,tip:q,edgeA:shift(r.edgeA),edgeB:shift(r.edgeB),rim:r.rim?.map(shift)};
+   });}
+   return INK.RibbonGeometry.sweepSections(valid,{...style,mode}).layers;
+  }
   const memory=style.memory||12,width=clamp(style.width||16,1,85),base=INK.Particles.materials[style.character]||INK.Particles.materials.ryu;
   const color=style.color||base.color,core=style.core||base.core;
   const valid=rows.filter(r=>r.time<=time+1e-6&&time-r.time<memory+8);
@@ -70,14 +81,14 @@
  }
  // Contact changes the material's release direction. Guard reflects a compact
  // spray; a hit transports it through the target. Never spawned on whiff.
- function contact(pool,{x,y,frame,owner,m,result,dir,last,reduced,G,response,contact:stamp}){
+ function contact(pool,{x,y,frame,owner,m,result,dir,last,reduced,G,response,contact:stamp,impactScore}){
   if(!active()||!owner||!m||m.throw)return false;
   const base=INK.Particles.materials[owner.ch.id]||INK.Particles.materials.ryu,normal=m.category==='normal',guard=result==='block',parry=result==='parry',armor=result==='armor',multi=(m.hits||1)>1&&!last;
-  const vector=stamp?.responseDir||response?.responseDir||[dir,0],heading=Math.atan2(vector[1],vector[0]);
-  const count=reduced?1:normal?2:armor?2:multi?2:guard||parry?3:5,seed=INK.Particles.hash([G.tick,owner.index,m.id,result,'material'].join(':'));
+  const score=impactScore,vector=score?.incomingWorld||stamp?.incoming||stamp?.responseDir||response?.responseDir||[dir,0],normalVector=score?.normalWorld||vector,heading=Math.atan2(vector[1],vector[0]),normalHeading=Math.atan2(normalVector[1],normalVector[0]),energy=clamp(score?.energy??1,.2,1.6),intermediate=score?.rhythm?.intermediate??multi;
+  const count=reduced?1:normal?2:armor?2:intermediate?2:guard||parry?3:5,seed=INK.Particles.hash([G.tick,owner.index,m.id,result,'material'].join(':'));
   for(let i=0;i<count;i++){
-   const spread=guard?.3:parry?.45:armor?.65:.8,axis=guard?heading+(i%2?1:-1)*Math.PI/2:parry?heading-(dir||1)*Math.PI/3:armor?heading+Math.PI:heading,angle=axis+(i/(count-1||1)-.5)*spread,speed=armor?1.2:guard?2.2:parry?4:4.5;
-   const p={x,y,birth:frame,life:normal||armor?7:guard?10:16,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,gravity:0,drag:.1,size:normal?1:armor?1.5:2.3,angle:angle*180/Math.PI,color:normal?'#e5e2d6':i%2?base.color:base.core,species:normal?'thrust':base.species,stretch:normal?2:1,opacity:normal?.3:armor?.4:.52,priority:2,phase:i};
+   const spread=guard?.3:parry?.45:armor?.65:.8,axis=guard?normalHeading+(i%2?1:-1)*Math.PI/2:parry?normalHeading-(dir||1)*Math.PI/3:armor?heading+Math.PI:heading,angle=axis+(i/(count-1||1)-.5)*spread,speed=armor?1.2:guard?2.2:parry?4:4.5;
+   const p={x,y,birth:frame,life:normal||armor?7:guard?10:16,vx:Math.cos(angle)*speed*Math.sqrt(energy),vy:Math.sin(angle)*speed*Math.sqrt(energy),gravity:0,drag:.1,size:normal?1:armor?1.5:2.3,angle:angle*180/Math.PI,color:normal?'#e5e2d6':i%2?base.color:base.core,species:normal?'fleck':base.species,stretch:1,opacity:normal?.22:armor?.4:.52,priority:normal?0:2,phase:i};
    // Preserve the response direction; material transport must not add an old
    // attack-facing velocity after a parry or compressed guard contact.
    if(!normal){particle(p,{seed:seed+i,velocity:[0,0]}, {},{character:owner.ch.id,category:m.category});}

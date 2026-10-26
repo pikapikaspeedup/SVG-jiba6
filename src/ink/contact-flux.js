@@ -15,7 +15,7 @@
   const incoming=unit(config.incoming??config.responseDir),responseDir=unit(config.responseDir,incoming);
   const key=config.id??[born,config.result,...config.point,config.character||'ryu',config.category||'normal',config.strength||1,config.part||'',config.multi||0,config.last??''].join(':');
   const duplicate=prior.find(c=>c.id===key);if(duplicate)return duplicate;
-  const c=Object.freeze({id:key,serial:++serial,point:frozen(config.point),incoming:frozen(incoming),responseDir:frozen(responseDir),result:config.result,born,life:12,duration:12,character:config.character||'ryu',category:config.category||'normal',strength:clamp(Number.isFinite(config.strength)?config.strength:1,1,3),multi:config.multi??false,last:config.last??true,part:config.part||null,scale:1});
+  const c=Object.freeze({impactScore:config.impactScore||null,id:key,serial:++serial,point:frozen(config.point),incoming:frozen(incoming),responseDir:frozen(responseDir),result:config.result,born,life:12,duration:12,character:config.character||'ryu',category:config.category||'normal',strength:clamp(Number.isFinite(config.strength)?config.strength:1,1,3),multi:config.multi??false,last:config.last??true,part:config.part||null,scale:1});
   if(object)history.set(source,[...prior,c].slice(-8));else independent=[...prior,c].slice(-8);return c;
  }
  function read(source,time){if(!active()||!source||!['object','function'].includes(typeof source)||!Number.isFinite(time))return null;const rows=history.get(source)||[];for(let i=rows.length-1;i>=0;i--){const c=rows[i];if(time>=c.born&&time-c.born<c.life)return c;}return null;}

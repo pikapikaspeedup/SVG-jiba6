@@ -25,14 +25,14 @@
  }
  function contact(G,a,d,m,type,damage,context=null){
   if(!settings.enabled||!['hit','block','parry','throw','armor'].includes(type))return;
-  const point=context?.point,dir=context?.direction??a.dir,guard=type==='block'||type==='parry',armor=type==='armor',multi=(m.hits||1)>1&&!context?.last,energy=strength(m)*(guard?.48:armor?.58:1)*(multi?.6:1)*(context?.punish?1.25:context?.counter?1.12:1),birth=INK.VFX.time;
-  const zone=guard?'guard':context?.response?.zone||(INK.StrikeFeel?.active()?INK.StrikeFeel.zone(d,m,type,point):(point?.[1]??665+d.y-250)<665+d.y-295?'head':m.height==='low'||(point?.[1]??0)>665+d.y-165?'leg':'body');
-  const incoming=context?.incoming,valid=Array.isArray(incoming)&&incoming.slice(0,2).every(Number.isFinite)&&Math.hypot(...incoming)>1e-6,n=valid?Math.hypot(...incoming):1;
-  const e={contact:context?.response||null,incoming:Object.freeze(valid?incoming.slice(0,2).map(v=>v/n):[dir,0]),zone,id:++serial,birth,life:guard?13:armor?11:m.super?27:21,type,energy,attacker:a.index,defender:d.index,dir,x:point?.[0]??d.x-a.dir*27,y:point?.[1]??665+d.y-(m.height==='low'?95:d.crouch?190:270),color:armor?'#e8b06b':type==='parry'?'#d4b9ff':guard?'#9edfff':a.ch.color,move:m.id,super:!!m.super,damage,finish:!!context?.last,counter:!!context?.counter,punish:!!context?.punish};
+  const score=context?.impactScore,point=score?.pointWorld||context?.point,dir=context?.direction??a.dir,guard=type==='block'||type==='parry',armor=type==='armor',multi=(m.hits||1)>1&&!context?.last,energy=score?.energy??strength(m)*(guard?.48:armor?.58:1)*(multi?.6:1)*(context?.punish?1.25:context?.counter?1.12:1),birth=INK.VFX.time;
+  const zone=guard?'guard':score?.zone||context?.response?.zone||(INK.StrikeFeel?.active()?INK.StrikeFeel.zone(d,m,type,point):(point?.[1]??665+d.y-250)<665+d.y-295?'head':m.height==='low'||(point?.[1]??0)>665+d.y-165?'leg':'body');
+  const incoming=score?.forceWorld||score?.incomingWorld||context?.incoming,valid=Array.isArray(incoming)&&incoming.slice(0,2).every(Number.isFinite)&&Math.hypot(...incoming)>1e-6,n=valid?Math.hypot(...incoming):1;
+  const e={impactScore:score||null,contact:context?.response||null,incoming:Object.freeze(valid?incoming.slice(0,2).map(v=>v/n):[dir,0]),zone,id:++serial,birth,life:guard?13:armor?11:m.super?27:21,type,energy,attacker:a.index,defender:d.index,dir,x:point?.[0]??d.x-a.dir*27,y:point?.[1]??665+d.y-(m.height==='low'?95:d.crouch?190:270),color:armor?'#e8b06b':type==='parry'?'#d4b9ff':guard?'#9edfff':a.ch.color,move:m.id,super:!!m.super,damage,finish:!!context?.last,counter:!!context?.counter,punish:!!context?.punish};
   events.push(e);if(events.length>32)events.shift();
   // Recoil is local to the evaluated body. Root motion remains combat-owned.
   const previous=d._inkReaction,residual=previous&&!(type==='hit'&&INK.HitBody?.active())?envelope((d._inkVisualClock||0)-previous.actorBirth,previous.duration)*previous.energy*.3:0;
-  d._inkReaction=Object.freeze({birth,actorBirth:d._inkVisualClock||0,energy:Math.min(1.8,energy+residual),worldDir:dir,contact:context?.response||null,zone,height:m.height,crouch:!!d.crouch,guard,parry:type==='parry',armor,outcome:type,point:Object.freeze([e.x,e.y]),duration:guard?13:armor?10:23});
+  d._inkReaction=Object.freeze({impactScore:score||null,birth,actorBirth:d._inkVisualClock||0,energy:Math.min(1.8,energy+residual),worldDir:dir,contact:context?.response||null,zone,height:m.height,crouch:!!d.crouch,guard,parry:type==='parry',armor,outcome:type,point:Object.freeze([e.x,e.y]),duration:guard?13:armor?10:23});
   if(type==='hit'&&!INK.HitEpisode?.enqueue(d,d._inkReaction))INK.HitBody?.commit(d,d._inkReaction);
   a._inkRecoil={birth,actorBirth:a._inkVisualClock||0,energy:energy*(guard?.8:armor?.65:.35),duration:12};
  }
@@ -72,6 +72,7 @@
   const now=INK.VFX.time;
   for(const f of fighters){
    const a=f.attack,m=a?.m;let h=trails.get(f.index);
+   if(f._inkTrail?.traceOwned){trails.delete(f.index);continue;}
    if(!a||m.throw||m.kind.includes('projectile')){if(h&&now-h.last>8)trails.delete(f.index);continue;}
    if(!h||h.attack!==a){h={attack:a,rows:[],last:now,color:f.ch.color,foot:m.contactPart==='foot'||m.pose==='kick'};trails.set(f.index,h);}
    if(a.t<Math.max(0,m.startup-3)||a.t>m.startup+m.active+4)continue;
@@ -103,7 +104,7 @@
    assign(n.core,'d','M'+points.map(p=>p.x+','+p.y).join('L'));assign(n.core,'stroke','#fff0cf');assign(n.core,'opacity',.5*clamp(1-(time-h.last)/8)*intensity);
   });
   for(let i=0;i<slots.length;i++){
-   const s=slots[i],e=active[i];assign(s.root,'display',e?'inline':'none');if(!e)continue;
+   const s=slots[i],e=active[i];assign(s.root,'display',e&&!e.impactScore?'inline':'none');if(!e||e.impactScore)continue;
    const age=time-e.birth,u=clamp(age/e.life),fade=(1-u)**2,ground=e.type==='landing',guard=e.type==='block'||e.type==='parry',armor=e.type==='armor',radius=(armor?23:guard?32:45)+e.energy*(guard?14:35)+age*(guard?1:2.8);
    const contact=INK.ContactResponse?.active()?e.contact:null,turn=contact?clamp(contact.turn*20,-20,20):0,quality=contact?.quality??1,causal=!ground&&e.type!=='throw'&&INK.ContactFlux?.active();
    const newer=active.some(q=>q.defender===e.defender&&q.id>e.id&&q.type!=='landing'),focus=newer?.28:contact?.multi?.68:1;

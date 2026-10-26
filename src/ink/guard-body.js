@@ -34,7 +34,7 @@
   if(!r.armor&&!['block','parry','idle'].includes(f.state))return true;
   const age=now-r.actorBirth,duration=Math.max(1,r.duration||13);if(age<0||age>=duration)return true;
   const profile=profiles[f.ch.id]||profiles.ryu,life=1-clamp(age/duration),gain=clamp(r.energy||.5,0,1.6)*(INK.Kinetic.settings.impact??1)*motion;
-  const force=Math.exp(-age*.2)*life*life*gain,lag=(1-Math.exp(-age*.5))*Math.exp(-age*.13)*life*gain,sign=(r.worldDir||f.dir)*f.dir;
+  const force=Math.exp(-age*.2)*life*life*gain,lag=(1-Math.exp(-age*.5))*Math.exp(-age*.13)*life*gain,sign=(r.impactScore?.normalWorld[0]??r.worldDir??f.dir)*f.dir;
   if(r.armor)p.expression='brace';else hands(p,profile);
   if(r.armor){
    // Keep the attacking wrists, elbows, ankles and knees exactly authored.

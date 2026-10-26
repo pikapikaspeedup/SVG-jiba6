@@ -114,6 +114,36 @@
       }
       actor.frame=frame;actor.worldTime=time;
     }
+    updateTrace(f,record,frame,time,traces,settings) {
+      const index=f.index??f.id;if(!f.attack||!record){this.cancel(index,time,'state');return;}
+      let actor=this.actors.get(index);
+      if(!actor||actor.attack!==f.attack||actor.record!==record){this.cancel(index,time,'new-action');actor={attack:f.attack,record,frame:-1,worldTime:-Infinity,instance:++this.nextInstance,emitters:new Map(),lastEdge:0};this.actors.set(index,actor);this.stats.instances++;}
+      if(time<=actor.worldTime)return;actor.worldTime=time;actor.frame=frame;
+      const normal=record.category==='normal',m=f.attack.m,lookup=name=>traces instanceof Map?traces.get(name):traces?.[name],kick=m.contactPart==='foot'||m.pose==='kick'||m.id==='cMK';
+      const socket=kick?'frontFoot':m.contactPart==='fan'&&lookup('fanTip')?'fanTip':'frontHand';
+      const events=normal?[{...(record.fx?.[0]||{}),id:'normal',socket,particles:{count:0}}]:(record.fx||[]).slice(0,12);
+      const alive=new Set();
+      for(const event of events){
+        const raw=lookup(event.socket);if(!raw)continue;const contactNow=INK.ContactFlux?.read(f.attack,time),hitIndex=raw.hitIndex??contactNow?.impactScore?.rhythm?.hitIndex??contactNow?.hitIndex??0,channel=raw.channel||event.socket,row={...raw,hitIndex,channel},physicalID=`${row.epoch}:${hitIndex}:${channel}`;
+        const phase=row.phase,eligible=phase==='active'||phase==='startup'&&row.actionAge>=Math.max(0,m.startup-(normal&&m.level<3&&!kick?2:3)),within=normal||frame>=event.frame&&frame<=event.frame+event.duration;
+        if(!eligible||!within||!settings.enabled)continue;
+        actor.traceAges??=new Map();const ageKey=physicalID,previousAge=actor.traceAges.get(ageKey);if(previousAge!==undefined&&row.actionAge<=previousAge){const heldID=physicalID;if(actor.emitters.has(heldID))alive.add(heldID);continue;}actor.traceAges.set(ageKey,row.actionAge);
+        const id=physicalID,contact=INK.RibbonGeometry.contactMatches(row,contactNow)?contactNow:null;alive.add(id);let state=actor.emitters.get(id);
+        const newContactSegment=raw.hitIndex==null&&!normal&&state&&contact&&state.contactSerial!=null&&contact.serial!==state.contactSerial;
+        if(newContactSegment){state.emitter.close();this.ribbons.close(state.key,time);actor.emitters.delete(id);state=null;}
+        if(state&&state.epoch!==row.epoch){state.emitter.close();this.ribbons.close(state.key,time);actor.emitters.delete(id);state=null;}
+        if(!state){const key=`trace:${index}:${actor.instance}:${id}:${actor.traceSerial=(actor.traceSerial||0)+1}`;state={key,event,epoch:row.epoch,contactSerial:contact?.serial??null,emitter:new DistanceEmitter({...config(event,record),seed:INK.Particles.hash(key),burst:0})};actor.emitters.set(id,state);}
+        if(contact&&state.contactSerial==null)state.contactSerial=contact.serial;
+        const point=row.tip||row.point,base=INK.Particles.materials[record.character]||INK.Particles.materials.ryu;
+        const accepted=this.ribbons.pushSection(state.key,row,{...INK.MaterialFlow.style(record.character,event),...(record.character==='mai'&&event.socket!=='fanTip'&&m.contactPart!=='fan'?{mode:'fire'}:{}),source:f.attack,socket:event.socket,channel,hitIndex,epoch:row.epoch,category:record.category,contact,...(INK.RibbonGeometry.traceProfiles[INK.MaterialFlow.style(record.character,event).mode]||{}),opacity:normal?.65:(event.opacity??.65),color:normal?'#c9c6bd':event.color||base.color,core:base.core,sections:true,reduced:!!settings.reducedMotion});
+        if(!accepted)continue;
+        // Emission uses only successive committed samples. There is no backfill
+        // callback, no virtual earlier pose, and no recovery-time births.
+        const births=state.emitter.advance(point,time,{quality:settings.quality??1.5,enabled:!normal&&!settings.reducedMotion&&event.particles?.count!==0});
+        for(const birth of births){if(this.pool.add(makeParticle(birth,event,record,{direction:f.dir,scale:f.renderScale||f.ch.scale||1})))this.stats.acceptedBirths++;else this.stats.poolDrops++;}
+      }
+      for(const [id,state] of actor.emitters)if(!alive.has(id)){state.emitter.close();this.ribbons.close(state.key,time);actor.emitters.delete(id);}
+    }
     clear() {for(const key of this.actors.keys())this.cancel(key,0,'reset');this.actors.clear();this.nextInstance=0;}
   }
   INK.FXEmitter={DistanceEmitter,EmitterBank,config,makeParticle,stats,version:'5.0.0'};

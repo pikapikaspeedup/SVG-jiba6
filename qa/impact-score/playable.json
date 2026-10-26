@@ -1,0 +1,287 @@
+{
+  "sha256": "46a67eae2bf4f9a1c32e6f10b3be34249606c959f277b92e0f0cc56f1d160c99",
+  "rows": [
+    {
+      "name": "six actual strike families including left fan and kick follow final displayed socket",
+      "passed": true,
+      "details": [
+        {
+          "id": "ryu",
+          "key": "sMP",
+          "side": 0,
+          "accepted": true,
+          "maxError": 0,
+          "maxRows": 22,
+          "maxRibbons": 1,
+          "recoveryBirths": 0
+        },
+        {
+          "id": "ken",
+          "key": "sHP",
+          "side": 0,
+          "accepted": true,
+          "maxError": 0,
+          "maxRows": 35,
+          "maxRibbons": 1,
+          "recoveryBirths": 0
+        },
+        {
+          "id": "chun",
+          "key": "cMK",
+          "side": 0,
+          "accepted": true,
+          "maxError": 0,
+          "maxRows": 30,
+          "maxRibbons": 1,
+          "recoveryBirths": 0
+        },
+        {
+          "id": "mai",
+          "key": "sMP",
+          "side": 1,
+          "accepted": true,
+          "maxError": 0,
+          "maxRows": 29,
+          "maxRibbons": 1,
+          "recoveryBirths": 0
+        },
+        {
+          "id": "iori",
+          "key": "sHP",
+          "side": 0,
+          "accepted": true,
+          "maxError": 0,
+          "maxRows": 37,
+          "maxRibbons": 1,
+          "recoveryBirths": 0
+        },
+        {
+          "id": "juri",
+          "key": "cMK",
+          "side": 1,
+          "accepted": true,
+          "maxError": 0,
+          "maxRows": 28,
+          "maxRibbons": 1,
+          "recoveryBirths": 0
+        }
+      ]
+    },
+    {
+      "name": "hit block parry armor share one score and one normal principal, hold stable, then stop trail",
+      "passed": true,
+      "details": [
+        {
+          "expected": "hit",
+          "actual": "hit",
+          "energy": 0.9491505556112414,
+          "confidence": 1,
+          "same": true,
+          "principal": 1,
+          "held": true,
+          "ended": true
+        },
+        {
+          "expected": "block",
+          "actual": "block",
+          "energy": 0.6833884000400938,
+          "confidence": 1,
+          "same": true,
+          "principal": 1,
+          "held": true,
+          "ended": true
+        },
+        {
+          "expected": "parry",
+          "actual": "parry",
+          "energy": 0.5884733444789697,
+          "confidence": 1,
+          "same": true,
+          "principal": 1,
+          "held": true,
+          "ended": true
+        },
+        {
+          "expected": "armor",
+          "actual": "armor",
+          "energy": 0.8231980870448244,
+          "confidence": 1,
+          "same": true,
+          "principal": 1,
+          "held": true,
+          "ended": true
+        }
+      ]
+    },
+    {
+      "name": "real trade retains both contact-time source trails",
+      "passed": true,
+      "details": {
+        "events": [
+          {
+            "id": "attack:1::229:0:1:0:hit",
+            "energy": 0.9505134320971236
+          },
+          {
+            "id": "attack:2::229:1:0:0:hit",
+            "energy": 0.9505134320971236
+          }
+        ],
+        "trails": [
+          {
+            "points": 3,
+            "closed": true,
+            "source": "attack:1"
+          },
+          {
+            "points": 3,
+            "closed": true,
+            "source": "attack:2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "actual throw landing also has shared impact score",
+      "passed": true,
+      "details": {
+        "source": "throw:2",
+        "damage": 1200
+      }
+    },
+    {
+      "name": "held heavy does not create a swing or trail",
+      "passed": true,
+      "details": {
+        "age": 7,
+        "now": 7
+      }
+    },
+    {
+      "name": "real multihit keeps accepted beat identities and shared score",
+      "passed": true,
+      "details": [
+        {
+          "beat": 0,
+          "id": "attack:1::312:0:1:0:block",
+          "type": "block"
+        },
+        {
+          "beat": 1,
+          "id": "attack:1::319:0:1:1:block",
+          "type": "block"
+        },
+        {
+          "beat": 2,
+          "id": "attack:1::326:0:1:2:block",
+          "type": "block"
+        },
+        {
+          "beat": 3,
+          "id": "attack:1::333:0:1:3:block",
+          "type": "block"
+        }
+      ]
+    },
+    {
+      "name": "actual projectile keeps its source and observed motion",
+      "passed": true,
+      "details": {
+        "version": 1,
+        "contactID": "attack:1:projectile:2:389:0:1:0:hit",
+        "sourceID": "attack:1",
+        "projectileID": "projectile:2",
+        "channel": "projectile",
+        "epoch": 0,
+        "result": "hit",
+        "pointWorld": [
+          653.4539120652054,
+          425.76218853038966
+        ],
+        "incomingWorld": [
+          1,
+          0
+        ],
+        "normalWorld": [
+          1,
+          0
+        ],
+        "forceWorld": [
+          1,
+          0
+        ],
+        "tangentWorld": [
+          -0.0,
+          1
+        ],
+        "surfaceTangentWorld": [
+          -0.0,
+          1
+        ],
+        "geometryEvidence": {
+          "point": "witness",
+          "normal": "attack-side-fallback",
+          "incoming": "projectile",
+          "motion": "projectile",
+          "surface": "none",
+          "continuous": true,
+          "normalFlipped": false
+        },
+        "category": "special",
+        "zone": "body",
+        "material": "ki",
+        "style": "rooted",
+        "part": "projectile",
+        "geometryConfidence": 0.65,
+        "energy": 0.6822,
+        "force": {
+          "normal": 0.6822,
+          "tangent": 0,
+          "torque": -0.0466817406264309
+        },
+        "rhythm": {
+          "hitIndex": 0,
+          "intermediate": false,
+          "finish": true
+        },
+        "envelope": {
+          "attack": 1,
+          "compression": 2,
+          "rebound": 5,
+          "tail": 8
+        },
+        "audio": {
+          "body": 0.6822,
+          "brightness": 1,
+          "tail": 1
+        },
+        "presentationClosing": 0,
+        "mode": "solid",
+        "birth": {
+          "action": 389,
+          "actor": 27,
+          "vfx": 27
+        }
+      }
+    },
+    {
+      "name": "explicit small teleport seals old geometry and starts a new epoch",
+      "passed": true,
+      "details": [
+        {
+          "key": "trace:0:1:0:0:frontHand:1",
+          "closed": true,
+          "points": 2,
+          "epoch": 0
+        },
+        {
+          "key": "trace:0:2:1:0:frontHand:1",
+          "closed": false,
+          "points": 1,
+          "epoch": 1
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

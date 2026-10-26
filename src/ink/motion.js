@@ -86,7 +86,7 @@
   function fanSocket(p,rig,name='fanTip') {
     if(INK.Anatomy&&rig.anatomy){
       const m=INK.VisualFrame?.get(p)?.fanFrames?.frontArm||INK.Anatomy.handMatrix(p,rig,rig.profile||{id:'mai',female:true});
-      const fan=INK.mat.multiply(m,INK.mat.compose(16,0,-18+(p.fanAngle??0)));
+      const fan=INK.mat.multiply(m,INK.FanGeometry?.transform(p)||INK.mat.compose(16,0,-18+(p.fanAngle??0)));
       return INK.mat.point(fan,name==='fanGrip'?[0,0]:[79,0]);
     }
     const r=INK.Rig.sockets(p,rig),hand=r.frontArm[2],elbow=r.frontArm[1];

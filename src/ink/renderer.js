@@ -149,7 +149,7 @@
    if(this.leg){const shoe=INK.SkinGeometry.foot(visual?.materialAngles.pelvis??INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
 
    if(!this.leg){const requested=this.rear?p.handRear:p.handFront,kind=this.fan&&p.fan!==0?'grip':['fist','guard','claw','grip'].includes(requested)?requested:p.open>.45?'palm':'fist';for(const [name,group] of Object.entries(this.hands))assign(group,'visibility',name===kind?'visible':'hidden',stats);
-    if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1),fanFrame=visual?.fanFrames?.[name],local=mat.compose(16,0,-18+(p.fanAngle||0));assign(this.fan,'transform',fanFrame?mat.svg(mat.multiply(mat.multiply(mat.inverse(endMatrix),fanFrame),local)):`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
+    if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1),fanFrame=visual?.fanFrames?.[name],local=INK.FanGeometry.transform(p);assign(this.fan,'transform',fanFrame?mat.svg(mat.multiply(mat.multiply(mat.inverse(endMatrix),fanFrame),local)):`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
    }
   }
  }

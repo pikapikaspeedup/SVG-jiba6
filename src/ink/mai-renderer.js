@@ -6,6 +6,10 @@
 (() => {
   const {node,assign}=INK.SVG,{clamp,rad}=INK;
   const point=(r,a)=>[Math.cos(a)*r,Math.sin(a)*r];
+  // Shared local paper boundary and grip transform for rendering and strike traces.
+  const fanGeometry=openness=>{const open=clamp(openness,.015,1),span=rad(7+135*open),start=-span/2;return{open,span,start,tip:[79,0],grip:[0,0],rim:Array.from({length:8},(_,i)=>point(79,start+span*i/7))};};
+  const fanTransform=p=>INK.mat.compose(16,0,-18+(p.fanAngle||0));
+  INK.FanGeometry=Object.freeze({sample:fanGeometry,transform:fanTransform});
   class MaiFan {
     constructor(root) {
       this.root=root;assign(root,'data-ink-part','articulated-fan');
@@ -19,7 +23,7 @@
       node('circle',{cx:1,cy:.5,r:2.1,fill:'#7c5640'},root);
     }
     render(openness,stats) {
-      const open=clamp(openness,.015,1),span=rad(7+135*open),start=-span/2;
+      const {open,span,start}=fanGeometry(openness);
       if(open===this.last)return;this.last=open;
       for(let i=0;i<10;i++) {
         const a=start+span*i/10,b=start+span*(i+1)/10,A=point(79,a),B=point(79,b),C=point(9,b),D=point(9,a);

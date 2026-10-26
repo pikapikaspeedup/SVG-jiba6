@@ -1,0 +1,32 @@
+{
+  "voices": {
+    "enabled": true,
+    "state": "running",
+    "voices": [
+      {
+        "type": "whiff",
+        "start": 0.032,
+        "end": 0.113
+      },
+      {
+        "type": "hit",
+        "start": 0.037333333333333336,
+        "end": 0.16433333333333333
+      },
+      {
+        "type": "hit",
+        "start": 0.037333333333333336,
+        "end": 0.16433333333333333
+      }
+    ],
+    "capacity": 6
+  },
+  "contactIDs": [
+    "attack:1::6:0:1:0:hit",
+    "attack:2::6:1:0:0:hit"
+  ],
+  "held": true,
+  "resetVoices": 0,
+  "sha256": "46a67eae2bf4f9a1c32e6f10b3be34249606c959f277b92e0f0cc56f1d160c99",
+  "errors": []
+}
