@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256-source-manifest-v1",
-  "id": "9d93ce88676c5b562c5db002c33318dcb3870048fcc668768e482079cec934f0",
+  "id": "d4c5c1aa6415e8891dfe690adea2b7f64724b8b0c0ef1bc72a4c4eed213de700",
   "files": {
     "assets/ink/characters/cammy/model.json": "7e751719b23e3f12a393b3f94561c44f26063e6b37f826dc4e545172c6e34e11",
     "assets/ink/characters/cammy/moves/CA.json": "24953b636023bcdd53801a6e2d307e7a86d5e1e081b256ccbd21eef1b911aa0b",
@@ -780,10 +780,13 @@
     "src/ink/cinema.js": "c0d9ca913cbe23d23347d6f980b810d4693ddfc8d2d24480722a1c8e8d2d5cc8",
     "src/ink/clinch.js": "be4ca30c64e61e6a1dad48db513d53a32f8cd556a05712d067eccdc23e874a73",
     "src/ink/combat-entities.js": "1cd20a3aa0dcf26a119d0afd2301c8ec1c3c1092243cbbe37fc74a81e661951a",
+    "src/ink/combat-expression.js": "8b8bc89bfff504bd893c82a3b1d5ed3c537c86461b765b9b748b6eef982374b5",
     "src/ink/combat-flow.js": "2d840fd4fc726fda0ed3b9105dfc1eb30071acb21855fb883af4d0117404bea7",
+    "src/ink/combat-head.js": "0570e9de4e2b00f02831e581b3cb012961e01072d3b871e37770f6d2512d427a",
     "src/ink/combat-identity.js": "16fefd75c49bd3b6a58cb6ba013590d97610238d04c88c04bcf0aac3e5991842",
     "src/ink/combat-state.js": "87f16369bc6d8205d72d56c0442343bbea400d8dc1b0f7e0ee4471c97a16cd87",
     "src/ink/combat-trace.js": "913206bf20a435c58d6d81df544497231219de401dd0760d79ab6440e8960d43",
+    "src/ink/combat-view.js": "4b2ee3aff328d44b51f3e19877102aff1c1fb4d24989160dd482a2e23ee21736",
     "src/ink/combo.js": "f107da27ecbeced8f929f3baeb66f31c2161ea4524f961bf635a843a01b8cb6b",
     "src/ink/command-stream.js": "db294c65b6ec99c401506d6e1a6bc4946524675080936b02e9e851743795477b",
     "src/ink/compiled-motion.js": "84b6064f5ea97d288c1ecb3e8ccf8e42a678b67642ec08c5d6624f9048485738",
@@ -830,9 +833,9 @@
     "src/ink/projectile-flow.js": "822f0089a13ec948ba320e12a3b495819187bd8f81786a7c47becdc8695824dc",
     "src/ink/random.js": "35374948768c5affbdad5b1390ac2e6d67d644ef6413f1232026793e2bd03ff1",
     "src/ink/recovery-motion.js": "2712892076759561a116eaecdc99062565b5139a987299c26d80d2166a8508d0",
-    "src/ink/renderer.js": "4b4c5eec7e1b3205cb5e31c328924e4449afc9e9541fe7aef961850e8a1e1fa1",
+    "src/ink/renderer.js": "491bbd26d0075f1f3bb52c7b40267ded36762402a03688c7bceca46989418c7e",
     "src/ink/ribbon-geometry.js": "c84dbedd42895158e495d0776e615a2ce1747c9d62bd0912345553c10950ee61",
-    "src/ink/runtime.js": "331e345d95edb63af7cf213a3950d7a7d317cc7bb08e35c34752245a0e0e82b7",
+    "src/ink/runtime.js": "2bf67423d16345b36d3138e333e421be2698955fb2b1971b7540f38f96b9aed0",
     "src/ink/scene-feedback.js": "66f3aa5cda9916f18b9f683b445464d702d8df5ef51582f5f6bb267a5dce80f5",
     "src/ink/secondary-dynamics.js": "97b7a5d73e314a651a45d94387397b1eb31a3f9771554b3bc5eeec5fa78fff2d",
     "src/ink/session-config.js": "abde290ca7083ff9f2d9a55f2a2cf7d71eb7413541199b1fed0cff6716f569a5",
@@ -855,6 +858,6 @@
     "src/models/head.js": "37bcc482716537fbd4dec6b7e780462e34a911637d860a4c4f9b75c099920902",
     "src/models/torso.js": "6f92d56259a58cd11147f3d5fecb38f8e718a549100581367c054cfa4a89df74",
     "street-fighter-6.html": "6c11e99deefc6a3eeab2c15c97d13c9bdfba53d0b71a137a322560832832b1a9",
-    "tools/build_forge.py": "57cca6118809a27d082d2d40ecf46834853eee650fb612102a876c160d416e36"
+    "tools/build_forge.py": "096d1d9505f113095c37c615db33eb171b79021e50cdef53fa89759b67f5237c"
   }
 }

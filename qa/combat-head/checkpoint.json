@@ -1,0 +1,34 @@
+{
+  "stage": "Readable combat heads and expressions",
+  "htmlSha256": "87177afebc27e2f38050193f72274c2b97503f2784f1b81ea425887b97159096",
+  "htmlBytes": 9175632,
+  "reports": {
+    "qa/combat-head/playable.json": {
+      "reportSha256": "12129195cd6030985214ce8213ac5414b0bf646f25302637b84ba434993796dd",
+      "buildSha256": "8196dbfa20dfc56651c0861d690e72d275617f12dfbc027f68cc5eae78979c18"
+    },
+    "qa/combat-head/roster-update.json": {
+      "reportSha256": "ee8111bcb2f7b6ff7c2340f51b6b7fcdd582a3764f878c37dd93ed4763453aa7",
+      "buildSha256": "7866ad41638a77711c2849d22f4dfa1ad5137d77ec9c66445f3483fd65311e14"
+    },
+    "qa/combat-head/final-expression.json": {
+      "reportSha256": "c4eadfa244f594f4ec1bed5c20e81f8d5a9223ffe09d0774123062bf14eca7b4",
+      "buildSha256": "87177afebc27e2f38050193f72274c2b97503f2784f1b81ea425887b97159096"
+    },
+    "qa/combat-head/source/validation.json": {
+      "reportSha256": "437b856b45b2083147147d62999a1037622997ecbc10396790aa4b4d1371274a",
+      "buildSha256": "87177afebc27e2f38050193f72274c2b97503f2784f1b81ea425887b97159096"
+    }
+  },
+  "unitChecksExecuted": [
+    "tests/combat-head/unit.cjs",
+    "tests/combat-view/unit.cjs"
+  ],
+  "limits": [
+    "Earlier roster and jumping checks retain their own build hashes",
+    "No all-move occlusion audit or new performance claim",
+    "Two-dimensional stylized faces, legacy complex-rotation/throw path retained",
+    "Continuous engine work remains active"
+  ],
+  "next": "Coherent bait, interception, retreat and whiff-punish exchanges"
+}

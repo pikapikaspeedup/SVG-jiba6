@@ -1,0 +1,210 @@
+{
+  "sha256": "8196dbfa20dfc56651c0861d690e72d275617f12dfbc027f68cc5eae78979c18",
+  "roster": [
+    {
+      "id": "ryu",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.9085562696516131
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.908556269651613
+        }
+      ]
+    },
+    {
+      "id": "ken",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8924736571078873
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.892473657107888
+        }
+      ]
+    },
+    {
+      "id": "chun",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.922804587742397
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.9228045877423973
+        }
+      ]
+    },
+    {
+      "id": "cammy",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8801140707061039
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.8801140707061036
+        }
+      ]
+    },
+    {
+      "id": "luke",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.9388021084780458
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.9388021084780455
+        }
+      ]
+    },
+    {
+      "id": "juri",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8664849688217545
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.866484968821755
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.9155328029006855
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.915532802900685
+        }
+      ]
+    },
+    {
+      "id": "iori",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8706440636902534
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.8706440636902539
+        }
+      ]
+    }
+  ],
+  "body": {
+    "zone": "body",
+    "0": {
+      "active": true,
+      "heading": 3.141592653589793,
+      "headViewAngle": -44,
+      "bodyViewAngle": -48,
+      "headMatrix": [
+        0.8682946327037113,
+        -0.14375398524143895,
+        0.16333562889877107,
+        0.9865705612535998,
+        -22.649581662341888,
+        -338.63406550659477
+      ],
+      "faceSide": -1,
+      "profileWeight": 0.6946583704589973,
+      "frontWeight": 0.7193398003386512,
+      "thickness": 0.73,
+      "physicalHeading": 3.141592653589793,
+      "mood": {
+        "head": 0,
+        "body": 0.625,
+        "leg": 0,
+        "guard": 0,
+        "brace": 0,
+        "power": 0,
+        "blink": 0
+      }
+    },
+    "6": {
+      "active": true,
+      "heading": 3.141592653589793,
+      "headViewAngle": -44,
+      "bodyViewAngle": -48,
+      "headMatrix": [
+        0.8772409251448384,
+        -0.0710572776420336,
+        0.08073644088546984,
+        0.9967354850275709,
+        -7.373106598628129,
+        -337.6363900969061
+      ],
+      "faceSide": -1,
+      "profileWeight": 0.6946583704589973,
+      "frontWeight": 0.7193398003386512,
+      "thickness": 0.73,
+      "physicalHeading": 3.141592653589793,
+      "mood": {
+        "head": 0,
+        "body": 0.47711218396053323,
+        "leg": 0,
+        "guard": 0,
+        "brace": 0,
+        "power": 0,
+        "blink": 0
+      }
+    }
+  },
+  "jump": [
+    {
+      "i": 8,
+      "x": 577.6000000000001,
+      "y": -80.50000000000001,
+      "dir": 1,
+      "active": true,
+      "look": 1
+    },
+    {
+      "i": 20,
+      "x": 640.3000000000006,
+      "y": -163.90000000000006,
+      "dir": 1,
+      "active": true,
+      "look": 1
+    },
+    {
+      "i": 30,
+      "x": 697.3000000000011,
+      "y": -156.40000000000012,
+      "dir": 1,
+      "active": true,
+      "look": 1
+    }
+  ]
+}

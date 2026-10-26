@@ -106,7 +106,7 @@
   },
   visual(f,base,world=null,skipThrowConstraint=false){
    if(!this.enabled||!this.store)return base;
-   if(INK.HitEpisode?.owns(f))return INK.HitEpisode.sample(f,world||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},this.clock(f));
+   if(INK.HitEpisode?.owns(f)){const p=INK.HitEpisode.sample(f,world||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},this.clock(f));return INK.VisualFrame.attach(p,this.combatView(f,INK.VisualFrame.get(p)));}
    const movingFrame=INK.VisualFrame&&!f._inkRawVisual&&!f.attack&&!f.crouch&&!f.jumpPre&&f.y===0&&['idle','dash','rush'].includes(f.state);
    let display=f;
    if(movingFrame){
@@ -128,10 +128,11 @@
     // Each evaluation owns its frame; never attach to a cached authored pose.
     const final=INK.copy(p);INK.Articulation.inherit(p,final);
     const built=INK.VisualFrame.build(f,p,{world,time:this.clock(f),facing:INK.FacingMotion?.sample(f,this.clock(f),world)}),frame=INK.FrameBridge?.apply(f,built,{world,time:this.clock(f)})||built;
-    p=INK.VisualFrame.attach(final,frame);
+    p=INK.VisualFrame.attach(final,this.combatView(f,frame));
    }
    return p;
   },
+  combatView(f,frame){const result=INK.CombatView?.apply(f,frame)||frame;if(!result.combatView?.active)return result;return {...result,combatView:{...result.combatView,mood:INK.CombatExpression?.sample(f,this.clock(f))||{}}};},
   throwGrip(f,p,world=null){
    const action=f.throwAction,phase=INK.ThrowBody?.phase(action);
    if(!INK.ThrowBody?.active()||!phase||action.owner!==f||phase.released||phase.grip<=0)return p;

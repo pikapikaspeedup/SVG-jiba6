@@ -1,0 +1,125 @@
+{
+  "sha256": "7866ad41638a77711c2849d22f4dfa1ad5137d77ec9c66445f3483fd65311e14",
+  "roster": [
+    {
+      "id": "ryu",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.9085562696516131
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.908556269651613
+        }
+      ]
+    },
+    {
+      "id": "ken",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8924736571078873
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.892473657107888
+        }
+      ]
+    },
+    {
+      "id": "chun",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.922804587742397
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.9228045877423973
+        }
+      ]
+    },
+    {
+      "id": "cammy",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8801140707061039
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.8801140707061036
+        }
+      ]
+    },
+    {
+      "id": "luke",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.9388021084780458
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.9388021084780455
+        }
+      ]
+    },
+    {
+      "id": "juri",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8664849688217545
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.866484968821755
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.9155328029006855
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.915532802900685
+        }
+      ]
+    },
+    {
+      "id": "iori",
+      "heads": [
+        {
+          "look": 1,
+          "active": true,
+          "headDet": 0.8706440636902534
+        },
+        {
+          "look": -1,
+          "active": true,
+          "headDet": 0.8706440636902539
+        }
+      ]
+    }
+  ]
+}
