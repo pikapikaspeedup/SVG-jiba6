@@ -48,6 +48,7 @@
   return mat.point(f.source[bone],projectLocal(local,yaw(p,bone===0?'leg':'arm'),z));
  }
  function skinMatrices(p){
+  const visual=INK.VisualFrame?.get(p);if(visual)return visual.skinMatrices;
   const f=frameInfo(p);
   if(f.skin)return f.skin;
   return f.skin=f.source.map((m,i)=>{
@@ -58,6 +59,8 @@
   });
  }
  function skinPoint(p,q){
+  const visual=INK.VisualFrame?.get(p);
+  if(visual){const w=weights(q),out=[0,0];for(let i=0;i<3;i++){const v=mat.point(mat.multiply(visual.skinMatrices[i],inverseBind[i]),q);out[0]+=w[i]*v[0];out[1]+=w[i]*v[1];}return out;}
   const f=frameInfo(p),matrices=f.deforms||(f.deforms=skinMatrices(p).map((m,i)=>mat.multiply(m,inverseBind[i]))),w=weights(q),out=[0,0];
   for(let i=0;i<3;i++){const v=mat.point(matrices[i],q);out[0]+=w[i]*v[0];out[1]+=w[i]*v[1];}
   return out;
@@ -128,6 +131,7 @@
  }
  function sockets(p,r){return r.anatomy?r.anatomy.sockets:legacySockets(p,r);}
  function handMatrix(p,r,c,rear=false){
+  const visual=INK.VisualFrame?.get(p);if(visual)return visual.endFrames[rear?'rearArm':'frontArm'];
   const name=rear?'rearArm':'frontArm',pts=sockets(p,r)[name],at=pts[2],scale=c.female?.7:c.id==='luke'?.88:.82;
   if(r.anatomy){
    const src=r.anatomy.source[name].map(q=>mat.point(INK.bodyMatrix(p),q)),d=vec.sub(src[2],src[1]);
@@ -139,6 +143,7 @@
   const d=vec.sub(at,pts[1]);return mat.compose(at[0],at[1],Math.atan2(d[1],d[0])*180/Math.PI,scale,scale);
  }
  function footMatrix(p,r,c,rear=false){
+  const visual=INK.VisualFrame?.get(p);if(visual)return visual.endFrames[rear?'rearLeg':'frontLeg'];
   const pts=sockets(p,r)[rear?'rearLeg':'frontLeg'],at=pts[2];
   // 0 degrees is authored flat. It is not an absent value.
   const authored=rear?p.rfoot:p.ffoot,rot=Number.isFinite(authored)?authored:0;

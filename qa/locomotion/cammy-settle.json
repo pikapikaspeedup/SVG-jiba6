@@ -1,0 +1,151 @@
+{
+  "htmlSha256": "db3692853a6dc33f0dc1126f95ff5edf5fb29505ef00469863dd470a9a8abfdc",
+  "run": {
+    "id": "cammy",
+    "scenario": "walk",
+    "samples": 356,
+    "residualScope": "fullBlend uses gait target; unload uses frozen handoff/gait blend",
+    "unloadResidual": 2.7941631153245137,
+    "fullBlendResidual": 7.766472799366828,
+    "handoffJump": 11.308259617854906,
+    "supportResidual": 0,
+    "swingResidual": 7.766472799366828,
+    "maxJump": 68.5397106143463,
+    "gaitJump": 12.878816651200669,
+    "attackJump": 68.5397106143463,
+    "worstResidual": [
+      {
+        "frame": 20,
+        "label": "walk",
+        "foot": "rear",
+        "state": "idle",
+        "x": 542.8,
+        "actual": [
+          413.52331221764655,
+          639.4735659352062
+        ],
+        "target": [
+          409.08194230197813,
+          645.8447772027362
+        ],
+        "blend": 1,
+        "kind": "swing",
+        "residual": 7.766472799366828,
+        "jump": 12.340614839470254
+      },
+      {
+        "frame": 53,
+        "label": "reverse",
+        "foot": "front",
+        "state": "idle",
+        "x": 496.01599999999974,
+        "actual": [
+          631.0178652521073,
+          641.7401363367326
+        ],
+        "target": [
+          635.0471798407378,
+          647.2817279866395
+        ],
+        "blend": 1,
+        "kind": "swing",
+        "residual": 6.851613975441738,
+        "jump": 9.958268314391114
+      },
+      {
+        "frame": 6,
+        "label": "walk",
+        "foot": "rear",
+        "state": "idle",
+        "x": 447.6000000000001,
+        "actual": [
+          328.0832200657598,
+          645.0524741794835
+        ],
+        "target": [
+          326.4663040000002,
+          647.7148913032996
+        ],
+        "blend": 1,
+        "kind": "swing",
+        "residual": 3.114945024378561,
+        "jump": 6.036310863291024
+      }
+    ],
+    "worstJump": [
+      {
+        "frame": 4,
+        "label": "walk",
+        "foot": "front",
+        "state": "idle",
+        "x": 434.00000000000006,
+        "actual": [
+          530.5782905514692,
+          642.3715563754386
+        ],
+        "target": [
+          530.5782905514692,
+          642.3715563754386
+        ],
+        "blend": 1,
+        "kind": "swing",
+        "residual": 0,
+        "jump": 12.878816651200669
+      },
+      {
+        "frame": 11,
+        "label": "walk",
+        "foot": "rear",
+        "state": "idle",
+        "x": 481.60000000000014,
+        "actual": [
+          377.5344640000002,
+          631.4051086967006
+        ],
+        "target": [
+          377.5344640000002,
+          631.4051086967006
+        ],
+        "blend": 1,
+        "kind": "swing",
+        "residual": 0,
+        "jump": 12.34153377945417
+      },
+      {
+        "frame": 10,
+        "label": "walk",
+        "foot": "rear",
+        "state": "idle",
+        "x": 474.8000000000001,
+        "actual": [
+          365.34400000000016,
+          629.4800000000001
+        ],
+        "target": [
+          365.34400000000016,
+          629.4800000000001
+        ],
+        "blend": 1,
+        "kind": "swing",
+        "residual": 0,
+        "jump": 12.341533779454112
+      }
+    ],
+    "checks": [
+      {
+        "name": "paused render preserves state and foot targets",
+        "passed": true
+      },
+      {
+        "name": "sMP immediately releases gait",
+        "passed": true
+      },
+      {
+        "name": "sHK immediately releases gait",
+        "passed": true
+      }
+    ],
+    "finite": true
+  },
+  "errors": []
+}

@@ -85,7 +85,7 @@
   // not a replacement for the original fan's fixed weaponReach combat rule.
   function fanSocket(p,rig,name='fanTip') {
     if(INK.Anatomy&&rig.anatomy){
-      const m=INK.Anatomy.handMatrix(p,rig,rig.profile||{id:'mai',female:true});
+      const m=INK.VisualFrame?.get(p)?.fanFrames?.frontArm||INK.Anatomy.handMatrix(p,rig,rig.profile||{id:'mai',female:true});
       const fan=INK.mat.multiply(m,INK.mat.compose(16,0,-18+(p.fanAngle??0)));
       return INK.mat.point(fan,name==='fanGrip'?[0,0]:[79,0]);
     }

@@ -1,0 +1,47 @@
+{
+  "phase": "persistent-locomotion-and-cross-side-combat",
+  "htmlSha256": "5704c02d98289c74142f3fb301965e261012847c74c925b298c4544c73c1de58",
+  "bytes": 9058206,
+  "reports": [
+    {
+      "path": "qa/facing-motion/playable.json",
+      "htmlSha256": "23f1392d2e1ec993e8bfd77b5bde7acc7d57e92f412f9ddd83bfe614e9db16b8",
+      "sameAsCheckpoint": false
+    },
+    {
+      "path": "qa/locomotion/playable.json",
+      "htmlSha256": "cd22749e860d4d24f62a69b5ba26a1d9c0d05c47ee40bee7345e9301653a161d",
+      "sameAsCheckpoint": false
+    },
+    {
+      "path": "qa/locomotion/cammy-settle.json",
+      "htmlSha256": "db3692853a6dc33f0dc1126f95ff5edf5fb29505ef00469863dd470a9a8abfdc",
+      "sameAsCheckpoint": false
+    },
+    {
+      "path": "qa/visual-frame/bridge.json",
+      "htmlSha256": "cd22749e860d4d24f62a69b5ba26a1d9c0d05c47ee40bee7345e9301653a161d",
+      "sameAsCheckpoint": false
+    },
+    {
+      "path": "qa/visual-frame/cancel.json",
+      "htmlSha256": "5704c02d98289c74142f3fb301965e261012847c74c925b298c4544c73c1de58",
+      "sameAsCheckpoint": true
+    }
+  ],
+  "evidenceScope": "Reports retain their actual tested build. The final outgoing-facing capture change was checked with two legal hit-confirmed cancellations (same side and an explicitly teleported cross-side fixture). The preceding Cammy lifecycle fix has its isolated report; broad earlier reports were not relabelled. Final source/assets checks are in qa/facing-motion/source.",
+  "changes": [
+    "Independent logical input direction and committed action facing",
+    "Persistent fixed-length 3D locomotion frame with world foot constraints",
+    "Sequential physical-foot turn plans, movement handoff and canonical stance",
+    "Contact-chain deadline prediction with independent support-step continuation",
+    "Thick hand/foot projection, continuous surface direction and common sockets",
+    "Ordinary jumps can cross opponents; grounded push remains intact"
+  ],
+  "remaining": [
+    "Ryu rapid dash can leave rear-foot target unreachable: measured support 24.429 and swing 41.766 world units on preceding build. No bone stretch or battle-speed change used to hide this.",
+    "Legacy attacks, aerial poses and throws are adapted rather than all rebuilt as physical 3D rigs.",
+    "No full endurance run or comparable frame-performance benchmark in this phase."
+  ],
+  "continuedGoal": "active; this checkpoint does not complete the continuous task"
+}

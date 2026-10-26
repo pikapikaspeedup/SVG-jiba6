@@ -14,11 +14,13 @@
   const A=SVG_FIGHTER,R=INK.Runtime,ctx=INK.State.contextForFX(f),p=R.visual(f,A.pose(f),world(f));
   const dt=.25,previous=INK.Presentation.previous(f,dt);
   const q=R.visual(previous,A.pose(previous),world(previous));
-  return{pose:p,previous:q,secondary:R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0),state:f.state,key:INK.Presentation.key(f),dir:f.dir,dt};
+  return{pose:p,previous:q,frame:INK.FrameBridge?.capture(f,p),secondary:R.presentation(f,ctx?.record,ctx?.frame||0,f.attack?.t||0),state:f.state,key:INK.Presentation.key(f),dir:f.dir,dt};
  }
- function cleanView(f){const v=Object.create(f);v._inkStateVisualBlend=null;v._inkStateBlend=null;v._inkVisualTransition=null;v._inkJointTransition=null;v._inkTransition=null;return v;}
+ function cleanView(f){const v=Object.create(f);v._inkStateVisualBlend=null;v._inkStateBlend=null;v._inkVisualTransition=null;v._inkJointTransition=null;v._inkTransition=null;v._inkFrameTransition=null;return v;}
  function bind(f,from,{next=f.state,kind=next,age=0,override=null}={}){
-  if(!from||!INK.Presentation.settings.stateBlends||!INK.Runtime.enabled||excluded(f)||from.dir!==f.dir)return null;
+  if(!from||!INK.Presentation.settings.stateBlends||!INK.Runtime.enabled||excluded(f))return null;
+  INK.FrameBridge?.begin(f,from.frame,{state:next,duration:duration[kind]??5,impact:['hit','block','stun'].includes(kind),guard:kind==='block'});
+  if(from.dir!==f.dir)return null;
   const A=SVG_FIGHTER,R=INK.Runtime,view=cleanView(f);if(override)Object.assign(view,override);
   const dt=from.dt||.25,n=duration[kind]??5,profile=R.profile(f.ch.id);
   const target=R.visual(view,A.pose(view),world(view));view.stateAge=(view.stateAge||0)+dt;view._inkVisualClock=(view._inkVisualClock||0)+dt;

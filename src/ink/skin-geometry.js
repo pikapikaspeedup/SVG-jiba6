@@ -98,7 +98,11 @@
  function foot(angle){
   const c=Math.cos(INK.rad(angle)),s=Math.sin(INK.rad(angle));
   const heel=[-2*c,5],toe=[30*c,9+Math.abs(s)*2];
-  const outline=sweep([[0,-13],heel,toe],[9.8,11,8]);
+  const profile=Math.abs(s),halfWidth=8+profile*6;
+  // A shoe seen end-on has a broad forefoot and a flat sole, rather than a
+  // vertical centerline terminating in a pointed toe below the ankle.
+  const left=lerp(Math.min(heel[0]-10,toe[0]-8),-halfWidth,profile),right=lerp(Math.max(heel[0]+10,toe[0]+8),halfWidth,profile),bottom=lerp(toe[1]+7,14,profile);
+  const outline=closed([[-8,-13],[8,-13],[right,5],[right-1,bottom],[left+1,bottom],[left,5]],.12);
   const sole=`M${fmt([heel[0]-7*c,heel[1]+8])}Q${fmt([toe[0]*.5,16+Math.abs(s)])} ${fmt([toe[0]+4*c,toe[1]+5])}`;
   return {outline,sole,toe,angle};
  }

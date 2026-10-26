@@ -1,0 +1,2575 @@
+{
+  "htmlSha256": "cd22749e860d4d24f62a69b5ba26a1d9c0d05c47ee40bee7345e9301653a161d",
+  "runs": [
+    {
+      "id": "ryu",
+      "delay": 0,
+      "action": "sLP",
+      "phase": 0.125,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.809051270971914,
+      "bridgeMinDet": 0.4223977649808775,
+      "endJumpXY": {
+        "rearArm": 19.436709478375718,
+        "frontArm": 77.75438622317274,
+        "rearLeg": 18.819908698278574,
+        "frontLeg": 18.809051270971914
+      },
+      "maxJump": 78.33716298963603,
+      "minEndDet": 0.4223977649808775,
+      "maxLengthChange": 0.6385077190102493,
+      "worst": [
+        {
+          "i": 8,
+          "state": "attack",
+          "t": 9,
+          "bridge": 9,
+          "jump": 78.33716298963603,
+          "change": 0.5333702248545222,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -143.8103297301482,
+              -295.0509476836517,
+              -27.90444242414673
+            ],
+            "to": [
+              -74.53482960728417,
+              -330.358873984546,
+              -18.366804963932303
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 8,
+            "toBridge": 9,
+            "screenDistance": 77.75438622317274
+          }
+        },
+        {
+          "i": 2,
+          "state": "attack",
+          "t": 3,
+          "bridge": 3,
+          "jump": 72.2647213346842,
+          "change": 0.2191088469765674,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -48.19244097249253,
+              -306.74659639079067,
+              -17.932390179040787
+            ],
+            "to": [
+              -120.21123651220347,
+              -308.54913303465327,
+              -23.609880842741312
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 72.04134958024562
+          }
+        },
+        {
+          "i": 0,
+          "state": "attack",
+          "t": 1,
+          "bridge": 1,
+          "jump": 72.26472133468417,
+          "change": 0.11464687440637533,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              95.84515010692928,
+              -303.1415231030654,
+              -6.577408851639735
+            ],
+            "to": [
+              23.826354567218374,
+              -304.944059746928,
+              -12.25489951534026
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 1,
+            "screenDistance": 72.0413495802456
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 0,
+      "action": "sHK",
+      "phase": 0.125,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.64312094172268,
+      "bridgeMinDet": 0.5203676274068669,
+      "endJumpXY": {
+        "rearArm": 24.153202201216715,
+        "frontArm": 45.743246243866835,
+        "rearLeg": 18.64312094172268,
+        "frontLeg": 70.75540891742666
+      },
+      "maxJump": 70.82172959257825,
+      "minEndDet": 0.5203676274068669,
+      "maxLengthChange": 0.7115783918637533,
+      "worst": [
+        {
+          "i": 19,
+          "state": "attack",
+          "t": 20,
+          "bridge": 20,
+          "jump": 70.82172959257825,
+          "change": 0.36712908977342806,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -138.1936537250177,
+              -286.18926486037157,
+              -18.71600147521751
+            ],
+            "to": [
+              -115.78221000742911,
+              -219.0770075479728,
+              -15.651773772840741
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 19,
+            "toBridge": 20,
+            "screenDistance": 70.75540891742666
+          }
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "t": 11,
+          "bridge": 11,
+          "jump": 63.641262360957626,
+          "change": 0.39525212219284356,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -107.71405151537266,
+              -213.157,
+              -15.314776288144017
+            ],
+            "to": [
+              -138.63101703081549,
+              -267.23823724621747,
+              -28.33673067800052
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 10,
+            "toBridge": 11,
+            "screenDistance": 62.29477489135616
+          }
+        },
+        {
+          "i": 2,
+          "state": "attack",
+          "t": 3,
+          "bridge": 3,
+          "jump": 56.92642114844841,
+          "change": 0.2153862077062172,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              42.1856543702085,
+              -45.06724784225699,
+              1.9076006514917643
+            ],
+            "to": [
+              -10.282939172223493,
+              -66.96473956863343,
+              -0.9496659693983416
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 56.85466957275947
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 0,
+      "action": "block",
+      "phase": 0.125,
+      "accepted": true,
+      "event": "block",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 28.48069829355966,
+      "bridgeMinDet": 0.46464000000000016,
+      "endJumpXY": {
+        "rearArm": 24.89402373451921,
+        "frontArm": 80.63257294357034,
+        "rearLeg": 24.202804250756166,
+        "frontLeg": 28.48069829355966
+      },
+      "maxJump": 83.86211641736232,
+      "minEndDet": 0.46464000000000016,
+      "maxLengthChange": 1.2232533663405576,
+      "worst": [
+        {
+          "i": 5,
+          "state": "block",
+          "t": null,
+          "bridge": 0,
+          "jump": 83.86211641736232,
+          "change": 1.2232533663405576,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -84.91048839161284,
+              -269.5536572266436,
+              -37.85035130909915
+            ],
+            "to": [
+              -30.610181586459703,
+              -329.1614461502938,
+              -14.801647430159678
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 0,
+            "screenDistance": 80.63257294357034
+          }
+        },
+        {
+          "i": 3,
+          "state": "idle",
+          "t": null,
+          "bridge": 3,
+          "jump": 78.04701372721306,
+          "change": 5.684341886080802e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              38.79589517989882,
+              -295.8614026474314,
+              -51.21678645294108
+            ],
+            "to": [
+              -36.58827174549289,
+              -280.01460026315647,
+              -63.76439909018006
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 77.03177116516005
+          }
+        },
+        {
+          "i": 4,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 55.821195107305456,
+          "change": 5.684341886080802e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -36.58827174549289,
+              -280.01460026315647,
+              -63.76439909018006
+            ],
+            "to": [
+              -84.91048839161284,
+              -269.5536572266436,
+              -37.85035130909915
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 3,
+            "toBridge": null,
+            "screenDistance": 49.44156096653623
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 0,
+      "action": "hit",
+      "phase": 0.125,
+      "accepted": true,
+      "event": "hit",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 26.28601841813309,
+      "bridgeMinDet": 0.6550869999424356,
+      "endJumpXY": {
+        "rearArm": 61.66322533809221,
+        "frontArm": 57.33449063609017,
+        "rearLeg": 18.586324396553927,
+        "frontLeg": 26.28601841813309
+      },
+      "maxJump": 64.02481319461293,
+      "minEndDet": 0.3792454165128216,
+      "maxLengthChange": 0.43251736933912355,
+      "worst": [
+        {
+          "i": 15,
+          "state": "hit",
+          "t": null,
+          "bridge": 4,
+          "jump": 64.02481319461293,
+          "change": 0.2639238722465791,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              54.72660290689448,
+              -187.04791047574042,
+              18.301676578678858
+            ],
+            "to": [
+              115.29888302469728,
+              -175.50008641980816,
+              1.0731146680390946
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 61.66322533809221
+          }
+        },
+        {
+          "i": 2,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 59.045552191803694,
+          "change": 1.2789769243681803e-13,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              50.471369354766644,
+              -303.0816268067692,
+              -81.74470002193507
+            ],
+            "to": [
+              -6.414898208669989,
+              -295.92646229426435,
+              -95.85616405424243
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 57.33449063609017
+          }
+        },
+        {
+          "i": 3,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 57.43315740347838,
+          "change": 7.105427357601002e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -6.414898208669989,
+              -295.92646229426435,
+              -95.85616405424243
+            ],
+            "to": [
+              -59.31931279942348,
+              -286.5377225806804,
+              -75.56966478174684
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 53.73104797600507
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 3,
+      "action": "sLP",
+      "phase": 0.5,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.80905127097192,
+      "bridgeMinDet": 0.46274770752846284,
+      "endJumpXY": {
+        "rearArm": 19.436709478375718,
+        "frontArm": 77.75438622317274,
+        "rearLeg": 15.719544718133257,
+        "frontLeg": 18.80905127097192
+      },
+      "maxJump": 78.33716298963603,
+      "minEndDet": 0.46274770752846284,
+      "maxLengthChange": 0.6385077190102066,
+      "worst": [
+        {
+          "i": 8,
+          "state": "attack",
+          "t": 9,
+          "bridge": 9,
+          "jump": 78.33716298963603,
+          "change": 0.5333702248545222,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -143.8103297301482,
+              -295.0509476836517,
+              -27.90444242414673
+            ],
+            "to": [
+              -74.53482960728417,
+              -330.358873984546,
+              -18.366804963932303
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 8,
+            "toBridge": 9,
+            "screenDistance": 77.75438622317274
+          }
+        },
+        {
+          "i": 3,
+          "state": "attack",
+          "t": 4,
+          "bridge": 4,
+          "jump": 52.670612468207814,
+          "change": 0.4126768095169524,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -120.21123651220347,
+              -308.54913303465327,
+              -23.609880842741312
+            ],
+            "to": [
+              -170.84229150314258,
+              -294.06644233869883,
+              -22.639644538564212
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 52.66167543185637
+          }
+        },
+        {
+          "i": 7,
+          "state": "attack",
+          "t": 8,
+          "bridge": 8,
+          "jump": 48.875602495228705,
+          "change": 0.5078803911226686,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -184.69381443460676,
+              -268.7564522391091,
+              -33
+            ],
+            "to": [
+              -143.8103297301482,
+              -295.0509476836517,
+              -27.90444242414673
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 7,
+            "toBridge": 8,
+            "screenDistance": 48.609256446306304
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 3,
+      "action": "sHK",
+      "phase": 0.5,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.64312094172267,
+      "bridgeMinDet": 0.39615704950376124,
+      "endJumpXY": {
+        "rearArm": 24.153202201216715,
+        "frontArm": 19.297107321329193,
+        "rearLeg": 18.64312094172267,
+        "frontLeg": 70.75540891742666
+      },
+      "maxJump": 70.82172959257825,
+      "minEndDet": 0.39615704950376124,
+      "maxLengthChange": 0.7115783918637533,
+      "worst": [
+        {
+          "i": 19,
+          "state": "attack",
+          "t": 20,
+          "bridge": 20,
+          "jump": 70.82172959257825,
+          "change": 0.36712908977342806,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -138.1936537250177,
+              -286.18926486037157,
+              -18.71600147521751
+            ],
+            "to": [
+              -115.78221000742911,
+              -219.0770075479728,
+              -15.651773772840741
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 19,
+            "toBridge": 20,
+            "screenDistance": 70.75540891742666
+          }
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "t": 11,
+          "bridge": 11,
+          "jump": 63.641262360957626,
+          "change": 0.39525212219284356,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -107.71405151537266,
+              -213.157,
+              -15.314776288144017
+            ],
+            "to": [
+              -138.63101703081549,
+              -267.23823724621747,
+              -28.33673067800052
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 10,
+            "toBridge": 11,
+            "screenDistance": 62.29477489135616
+          }
+        },
+        {
+          "i": 20,
+          "state": "attack",
+          "t": 21,
+          "bridge": 21,
+          "jump": 54.78293347766218,
+          "change": 0.7087125801142662,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -115.78221000742911,
+              -219.0770075479728,
+              -15.651773772840741
+            ],
+            "to": [
+              -85.46277036260798,
+              -173.61242511714784,
+              -11.795204775308132
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 20,
+            "toBridge": 21,
+            "screenDistance": 54.64701891215321
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 3,
+      "action": "block",
+      "phase": 0.5,
+      "accepted": true,
+      "event": "block",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 24.20826199153855,
+      "bridgeMinDet": 0.3792454165128216,
+      "endJumpXY": {
+        "rearArm": 25.041007513879556,
+        "frontArm": 71.87130177964262,
+        "rearLeg": 24.20826199153855,
+        "frontLeg": 22.996085809859867
+      },
+      "maxJump": 72.19276950290485,
+      "minEndDet": 0.3792454165128216,
+      "maxLengthChange": 1.223072413433968,
+      "worst": [
+        {
+          "i": 5,
+          "state": "block",
+          "t": null,
+          "bridge": 0,
+          "jump": 72.19276950290485,
+          "change": 1.223072413433968,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -92.19800349625748,
+              -292.0378585284326,
+              -8.00000000000001
+            ],
+            "to": [
+              -30.651834287532797,
+              -329.15326065789213,
+              -14.805288311239016
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 0,
+            "screenDistance": 71.87130177964262
+          }
+        },
+        {
+          "i": 2,
+          "state": "idle",
+          "t": null,
+          "bridge": 2,
+          "jump": 44.59443274579351,
+          "change": 9.947598300641403e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -25.61858220148768,
+              -292.53522269784884,
+              -86.88952119403265
+            ],
+            "to": [
+              -55.60763382009049,
+              -294.2857816319993,
+              -53.931126840637
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 1,
+            "toBridge": 2,
+            "screenDistance": 30.040101091127475
+          }
+        },
+        {
+          "i": 3,
+          "state": "idle",
+          "t": null,
+          "bridge": 3,
+          "jump": 41.44815105304465,
+          "change": 1.1368683772161603e-13,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -55.60763382009049,
+              -294.2857816319993,
+              -53.931126840637
+            ],
+            "to": [
+              -81.66886618840427,
+              -292.98598839811183,
+              -21.727525633475395
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 26.09362556269453
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 3,
+      "action": "hit",
+      "phase": 0.5,
+      "accepted": true,
+      "event": "hit",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 22.178885612424995,
+      "bridgeMinDet": 0.6567207527582618,
+      "endJumpXY": {
+        "rearArm": 61.55077120578363,
+        "frontArm": 53.73104797600507,
+        "rearLeg": 18.540115916062224,
+        "frontLeg": 22.178885612424995
+      },
+      "maxJump": 63.849363386033865,
+      "minEndDet": 0.5319172978962378,
+      "maxLengthChange": 0.4325173693390667,
+      "worst": [
+        {
+          "i": 15,
+          "state": "hit",
+          "t": null,
+          "bridge": 4,
+          "jump": 63.849363386033865,
+          "change": 0.2639238722465507,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              54.855328241223994,
+              -186.87012630621405,
+              17.945676020790657
+            ],
+            "to": [
+              115.33691550984008,
+              -175.4475592788117,
+              0.967932685026673
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 61.55077120578363
+          }
+        },
+        {
+          "i": 0,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 57.43315740347838,
+          "change": 7.105427357601002e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -6.414898208669989,
+              -295.92646229426435,
+              -95.85616405424243
+            ],
+            "to": [
+              -59.31931279942348,
+              -286.5377225806804,
+              -75.56966478174684
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 53.73104797600507
+          }
+        },
+        {
+          "i": 14,
+          "state": "hit",
+          "t": null,
+          "bridge": 3,
+          "jump": 54.3175444348286,
+          "change": 0.3905186706938366,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              26.997324242740945,
+              -233.42926103323092,
+              15.38165181622976
+            ],
+            "to": [
+              54.855328241223994,
+              -186.87012630621405,
+              17.945676020790657
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 54.25699414184319
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 6,
+      "action": "sLP",
+      "phase": 0.875,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.80905127097192,
+      "bridgeMinDet": 0.6585785099821067,
+      "endJumpXY": {
+        "rearArm": 22.386100062277237,
+        "frontArm": 77.75438622317274,
+        "rearLeg": 17.500607808018394,
+        "frontLeg": 18.80905127097192
+      },
+      "maxJump": 78.33716298963603,
+      "minEndDet": 0.6585785099821067,
+      "maxLengthChange": 0.6385077190102066,
+      "worst": [
+        {
+          "i": 8,
+          "state": "attack",
+          "t": 9,
+          "bridge": 9,
+          "jump": 78.33716298963603,
+          "change": 0.5333702248545222,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -143.8103297301482,
+              -295.0509476836517,
+              -27.90444242414673
+            ],
+            "to": [
+              -74.53482960728417,
+              -330.358873984546,
+              -18.366804963932303
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 8,
+            "toBridge": 9,
+            "screenDistance": 77.75438622317274
+          }
+        },
+        {
+          "i": 3,
+          "state": "attack",
+          "t": 4,
+          "bridge": 4,
+          "jump": 52.670612468207814,
+          "change": 0.4126768095169524,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -120.21123651220347,
+              -308.54913303465327,
+              -23.609880842741312
+            ],
+            "to": [
+              -170.84229150314258,
+              -294.06644233869883,
+              -22.639644538564212
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 52.66167543185637
+          }
+        },
+        {
+          "i": 7,
+          "state": "attack",
+          "t": 8,
+          "bridge": 8,
+          "jump": 48.875602495228705,
+          "change": 0.5078803911226686,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -184.69381443460676,
+              -268.7564522391091,
+              -33
+            ],
+            "to": [
+              -143.8103297301482,
+              -295.0509476836517,
+              -27.90444242414673
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 7,
+            "toBridge": 8,
+            "screenDistance": 48.609256446306304
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 6,
+      "action": "sHK",
+      "phase": 0.875,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.64312094172268,
+      "bridgeMinDet": 0.6462494475400037,
+      "endJumpXY": {
+        "rearArm": 24.153202201216715,
+        "frontArm": 21.329535598526686,
+        "rearLeg": 18.64312094172268,
+        "frontLeg": 70.75540891742666
+      },
+      "maxJump": 70.82172959257825,
+      "minEndDet": 0.6462494475400037,
+      "maxLengthChange": 0.7115783918637533,
+      "worst": [
+        {
+          "i": 19,
+          "state": "attack",
+          "t": 20,
+          "bridge": 20,
+          "jump": 70.82172959257825,
+          "change": 0.36712908977342806,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -138.1936537250177,
+              -286.18926486037157,
+              -18.71600147521751
+            ],
+            "to": [
+              -115.78221000742911,
+              -219.0770075479728,
+              -15.651773772840741
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 19,
+            "toBridge": 20,
+            "screenDistance": 70.75540891742666
+          }
+        },
+        {
+          "i": 10,
+          "state": "attack",
+          "t": 11,
+          "bridge": 11,
+          "jump": 63.641262360957626,
+          "change": 0.39525212219284356,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -107.71405151537266,
+              -213.157,
+              -15.314776288144017
+            ],
+            "to": [
+              -138.63101703081549,
+              -267.23823724621747,
+              -28.33673067800052
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 10,
+            "toBridge": 11,
+            "screenDistance": 62.29477489135616
+          }
+        },
+        {
+          "i": 20,
+          "state": "attack",
+          "t": 21,
+          "bridge": 21,
+          "jump": 54.78293347766218,
+          "change": 0.7087125801142662,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -115.78221000742911,
+              -219.0770075479728,
+              -15.651773772840741
+            ],
+            "to": [
+              -85.46277036260798,
+              -173.61242511714784,
+              -11.795204775308132
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 20,
+            "toBridge": 21,
+            "screenDistance": 54.64701891215321
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 6,
+      "action": "block",
+      "phase": 0.875,
+      "accepted": true,
+      "event": "block",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 24.20826199153855,
+      "bridgeMinDet": 0.6593208680652412,
+      "endJumpXY": {
+        "rearArm": 25.082241624813886,
+        "frontArm": 71.96905160268241,
+        "rearLeg": 24.20826199153855,
+        "frontLeg": 22.500852544020614
+      },
+      "maxJump": 72.29008464228446,
+      "minEndDet": 0.6593208680652412,
+      "maxLengthChange": 1.2230724134339113,
+      "worst": [
+        {
+          "i": 5,
+          "state": "block",
+          "t": null,
+          "bridge": 0,
+          "jump": 72.29008464228446,
+          "change": 1.2230724134339113,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -92.19800349625753,
+              -291.84892519509924,
+              -8.00000000000001
+            ],
+            "to": [
+              -30.651834287532797,
+              -329.15326065789213,
+              -14.805288311239016
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 0,
+            "screenDistance": 71.96905160268241
+          }
+        },
+        {
+          "i": 13,
+          "state": "block",
+          "t": null,
+          "bridge": 4,
+          "jump": 25.5562491451262,
+          "change": 0.4796475685620436,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              0.760863444896394,
+              -294.0852779984833,
+              15.803679764191127
+            ],
+            "to": [
+              -11.850079575269007,
+              -315.76667465708647,
+              20.702968022930072
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 25.082241624813886
+          }
+        },
+        {
+          "i": 18,
+          "state": "block",
+          "t": null,
+          "bridge": 9,
+          "jump": 24.20900195770942,
+          "change": 0.004105124353685596,
+          "worstEnd": {
+            "name": "rearLeg",
+            "joint": 2,
+            "from": [
+              12.942071306515698,
+              -16.07680270373882,
+              -4.462019387353113
+            ],
+            "to": [
+              37.15033141403027,
+              -16.086353509398606,
+              -4.2727388088227904
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 8,
+            "toBridge": 9,
+            "screenDistance": 24.20826199153855
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryu",
+      "delay": 6,
+      "action": "hit",
+      "phase": 0.875,
+      "accepted": true,
+      "event": "hit",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 18.45630902711048,
+      "bridgeMinDet": 0.6567207527582617,
+      "endJumpXY": {
+        "rearArm": 61.55077120578361,
+        "frontArm": 34.72574351594618,
+        "rearLeg": 18.45630902711048,
+        "frontLeg": 18.80905127097192
+      },
+      "maxJump": 63.84936338603384,
+      "minEndDet": 0.6567207527582617,
+      "maxLengthChange": 0.4325173693390951,
+      "worst": [
+        {
+          "i": 15,
+          "state": "hit",
+          "t": null,
+          "bridge": 4,
+          "jump": 63.84936338603384,
+          "change": 0.26392387224652225,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              54.85532824122399,
+              -186.87012630621393,
+              17.945676020790657
+            ],
+            "to": [
+              115.33691550984008,
+              -175.4475592788117,
+              0.967932685026673
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 61.55077120578361
+          }
+        },
+        {
+          "i": 14,
+          "state": "hit",
+          "t": null,
+          "bridge": 3,
+          "jump": 54.31754443482859,
+          "change": 0.39051867069376556,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              26.99732424274093,
+              -233.42926103323077,
+              15.38165181622976
+            ],
+            "to": [
+              54.85532824122399,
+              -186.87012630621393,
+              17.945676020790657
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 54.256994141843165
+          }
+        },
+        {
+          "i": 13,
+          "state": "hit",
+          "t": null,
+          "bridge": 2,
+          "jump": 36.3735630950324,
+          "change": 0.4325173693390951,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -63.591820164878015,
+              -288.8854445782993,
+              -12.314779881519538
+            ],
+            "to": [
+              -28.895398049247554,
+              -287.4587157640996,
+              -23.138773113826403
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 1,
+            "toBridge": 2,
+            "screenDistance": 34.72574351594618
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 0,
+      "action": "sLP",
+      "phase": 0.125,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 15.308601346460115,
+      "bridgeMinDet": 0.32129045536512857,
+      "endJumpXY": {
+        "rearArm": 44.84429397633796,
+        "frontArm": 63.98236180873596,
+        "rearLeg": 15.401184976164457,
+        "frontLeg": 15.308601346460115
+      },
+      "maxJump": 64.03209402733106,
+      "minEndDet": 0.32129045536512857,
+      "maxLengthChange": 0.862964356242685,
+      "worst": [
+        {
+          "i": 0,
+          "state": "attack",
+          "t": 1,
+          "bridge": 1,
+          "jump": 64.03209402733106,
+          "change": 0.11765676190086083,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              98.55855147099707,
+              -324.0522065378569,
+              -8.298349895804359
+            ],
+            "to": [
+              36.70374939363174,
+              -307.68986921723075,
+              -5.775168788358513
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 1,
+            "screenDistance": 63.98236180873596
+          }
+        },
+        {
+          "i": 1,
+          "state": "attack",
+          "t": 2,
+          "bridge": 2,
+          "jump": 64.03209402733106,
+          "change": 0.3641500313139687,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              36.70374939363174,
+              -307.68986921723075,
+              -5.775168788358513
+            ],
+            "to": [
+              -25.151052683733596,
+              -291.3275318966046,
+              -3.25198768091267
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 1,
+            "toBridge": 2,
+            "screenDistance": 63.98236180873596
+          }
+        },
+        {
+          "i": 2,
+          "state": "attack",
+          "t": 3,
+          "bridge": 3,
+          "jump": 64.03209402733106,
+          "change": 0.6098884345934295,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -25.151052683733596,
+              -291.3275318966046,
+              -3.25198768091267
+            ],
+            "to": [
+              -87.00585476109893,
+              -274.9651945759785,
+              -0.728806573466825
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 63.98236180873596
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 0,
+      "action": "sHK",
+      "phase": 0.125,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 16.39350510346005,
+      "bridgeMinDet": 0.3026648400588866,
+      "endJumpXY": {
+        "rearArm": 31.283280127151514,
+        "frontArm": 45.356146760387496,
+        "rearLeg": 16.39350510346005,
+        "frontLeg": 89.27373108070235
+      },
+      "maxJump": 91.40625046551737,
+      "minEndDet": 0.3026648400588866,
+      "maxLengthChange": 0.764369598012081,
+      "worst": [
+        {
+          "i": 20,
+          "state": "attack",
+          "t": 21,
+          "bridge": 21,
+          "jump": 91.40625046551737,
+          "change": 0.5708454706619079,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -131.23026133034693,
+              -250.29807499782976,
+              16.581146876199632
+            ],
+            "to": [
+              -84.13270771784467,
+              -174.45864261079885,
+              -3.048003973883967
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 20,
+            "toBridge": 21,
+            "screenDistance": 89.27373108070235
+          }
+        },
+        {
+          "i": 19,
+          "state": "attack",
+          "t": 20,
+          "bridge": 20,
+          "jump": 71.02519887875782,
+          "change": 0.42479753811376497,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -130.60396738051594,
+              -316.58767742041806,
+              42.073797627164765
+            ],
+            "to": [
+              -131.23026133034693,
+              -250.29807499782976,
+              16.581146876199632
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 19,
+            "toBridge": 20,
+            "screenDistance": 66.2925609209391
+          }
+        },
+        {
+          "i": 11,
+          "state": "attack",
+          "t": 12,
+          "bridge": 12,
+          "jump": 65.58437354820701,
+          "change": 0.38377892499990196,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -134.45729507136585,
+              -260.19706383765305,
+              45.11421372264678
+            ],
+            "to": [
+              -146.96407595937288,
+              -259.54491735216885,
+              109.4917345703123
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 11,
+            "toBridge": 12,
+            "screenDistance": 12.523771924589942
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 0,
+      "action": "block",
+      "phase": 0.125,
+      "accepted": true,
+      "event": "block",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 25.212231385056214,
+      "bridgeMinDet": 0.3489793858963922,
+      "endJumpXY": {
+        "rearArm": 27.335099481387637,
+        "frontArm": 78.4536924382072,
+        "rearLeg": 25.212231385056214,
+        "frontLeg": 19.28866110660413
+      },
+      "maxJump": 78.67961064764594,
+      "minEndDet": 0.3489793858963922,
+      "maxLengthChange": 1.081615478541842,
+      "worst": [
+        {
+          "i": 3,
+          "state": "idle",
+          "t": null,
+          "bridge": 3,
+          "jump": 78.67961064764594,
+          "change": 7.105427357601002e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              33.125666785016925,
+              -320.1261012040861,
+              -52.80604254473805
+            ],
+            "to": [
+              -45.31005275195352,
+              -318.44688772554304,
+              -58.76416930374131
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 78.4536924382072
+          }
+        },
+        {
+          "i": 5,
+          "state": "block",
+          "t": null,
+          "bridge": 0,
+          "jump": 58.92821743959287,
+          "change": 1.081615478541842,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -89.63677533692834,
+              -318.3130768660836,
+              -29.465920700846226
+            ],
+            "to": [
+              -38.86438442570035,
+              -335.27507691631996,
+              -4.828760027157146
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 0,
+            "screenDistance": 53.53078669837353
+          }
+        },
+        {
+          "i": 2,
+          "state": "idle",
+          "t": null,
+          "bridge": 2,
+          "jump": 58.40169496872244,
+          "change": 5.684341886080802e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              81.99735763491054,
+              -322.7360888065482,
+              -20.939072600811496
+            ],
+            "to": [
+              33.125666785016925,
+              -320.1261012040861,
+              -52.80604254473805
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 1,
+            "toBridge": 2,
+            "screenDistance": 48.941334287211475
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 0,
+      "action": "hit",
+      "phase": 0.125,
+      "accepted": true,
+      "event": "hit",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 21.664800468875125,
+      "bridgeMinDet": 0.4769620861631807,
+      "endJumpXY": {
+        "rearArm": 53.97955209475799,
+        "frontArm": 63.00917110281885,
+        "rearLeg": 16.32948807844661,
+        "frontLeg": 21.664800468875125
+      },
+      "maxJump": 63.66759124144913,
+      "minEndDet": 0.2894106970396596,
+      "maxLengthChange": 0.36794159058945297,
+      "worst": [
+        {
+          "i": 2,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 63.66759124144913,
+          "change": 7.105427357601002e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              44.79686173825876,
+              -323.99231024156063,
+              -88.18101755739553
+            ],
+            "to": [
+              -17.682975476720745,
+              -315.84212100118333,
+              -97.31373519367173
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 63.00917110281885
+          }
+        },
+        {
+          "i": 3,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 60.19442103314779,
+          "change": 9.947598300641403e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -17.682975476720745,
+              -315.84212100118333,
+              -97.31373519367173
+            ],
+            "to": [
+              -70.1987713134238,
+              -305.76093751512275,
+              -69.67627419100424
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 53.47465823024864
+          }
+        },
+        {
+          "i": 1,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 57.43529335278096,
+          "change": 9.947598300641403e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              86.244499316694,
+              -324.02543616748653,
+              -48.42041941853803
+            ],
+            "to": [
+              44.79686173825876,
+              -323.99231024156063,
+              -88.18101755739553
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 41.44765081594234
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 3,
+      "action": "sLP",
+      "phase": 0.5,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 15.308601346460108,
+      "bridgeMinDet": 0.34377550801974865,
+      "endJumpXY": {
+        "rearArm": 44.84429397633796,
+        "frontArm": 55.885839463990806,
+        "rearLeg": 14.474931165393793,
+        "frontLeg": 15.308601346460108
+      },
+      "maxJump": 61.467452332298635,
+      "minEndDet": 0.34377550801974865,
+      "maxLengthChange": 0.862964356242685,
+      "worst": [
+        {
+          "i": 3,
+          "state": "attack",
+          "t": 4,
+          "bridge": 4,
+          "jump": 61.467452332298635,
+          "change": 0.5565636929154607,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -87.00585476109893,
+              -274.9651945759785,
+              -0.728806573466825
+            ],
+            "to": [
+              -134.2970859386434,
+              -267.4362825435379,
+              37.808222807937526
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 47.886794241003244
+          }
+        },
+        {
+          "i": 8,
+          "state": "attack",
+          "t": 9,
+          "bridge": 9,
+          "jump": 59.08675135719719,
+          "change": 0.862964356242685,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -132.8162505367311,
+              -274.31604680199746,
+              2.2416357964802005
+            ],
+            "to": [
+              -84.51891771077203,
+              -302.4335625972004,
+              -16.942136860437195
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 8,
+            "toBridge": 9,
+            "screenDistance": 55.885839463990806
+          }
+        },
+        {
+          "i": 7,
+          "state": "attack",
+          "t": 8,
+          "bridge": 8,
+          "jump": 45.49126048343299,
+          "change": 0.38028206382423946,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -162.73181203188767,
+              -251.37950914997262,
+              27.705908834175673
+            ],
+            "to": [
+              -132.8162505367311,
+              -274.31604680199746,
+              2.2416357964802005
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 7,
+            "toBridge": 8,
+            "screenDistance": 37.69649292750252
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 3,
+      "action": "sHK",
+      "phase": 0.5,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 16.393505103460058,
+      "bridgeMinDet": 0.3026648400588866,
+      "endJumpXY": {
+        "rearArm": 28.375925823141188,
+        "frontArm": 28.06233810559185,
+        "rearLeg": 16.393505103460058,
+        "frontLeg": 89.27373108070235
+      },
+      "maxJump": 91.40625046551737,
+      "minEndDet": 0.3026648400588866,
+      "maxLengthChange": 0.7643695980121379,
+      "worst": [
+        {
+          "i": 20,
+          "state": "attack",
+          "t": 21,
+          "bridge": 21,
+          "jump": 91.40625046551737,
+          "change": 0.5708454706619079,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -131.23026133034693,
+              -250.29807499782976,
+              16.581146876199632
+            ],
+            "to": [
+              -84.13270771784467,
+              -174.45864261079885,
+              -3.048003973883967
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 20,
+            "toBridge": 21,
+            "screenDistance": 89.27373108070235
+          }
+        },
+        {
+          "i": 19,
+          "state": "attack",
+          "t": 20,
+          "bridge": 20,
+          "jump": 71.02519887875782,
+          "change": 0.42479753811376497,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -130.60396738051594,
+              -316.58767742041806,
+              42.073797627164765
+            ],
+            "to": [
+              -131.23026133034693,
+              -250.29807499782976,
+              16.581146876199632
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 19,
+            "toBridge": 20,
+            "screenDistance": 66.2925609209391
+          }
+        },
+        {
+          "i": 11,
+          "state": "attack",
+          "t": 12,
+          "bridge": 12,
+          "jump": 65.58437354820701,
+          "change": 0.38377892499990196,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -134.45729507136585,
+              -260.19706383765305,
+              45.11421372264678
+            ],
+            "to": [
+              -146.96407595937288,
+              -259.54491735216885,
+              109.4917345703123
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 11,
+            "toBridge": 12,
+            "screenDistance": 12.523771924589942
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 3,
+      "action": "block",
+      "phase": 0.5,
+      "accepted": true,
+      "event": "block",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 25.212238150781772,
+      "bridgeMinDet": 0.2894106970396596,
+      "endJumpXY": {
+        "rearArm": 27.370134220688307,
+        "frontArm": 57.00698479703824,
+        "rearLeg": 25.212238150781772,
+        "frontLeg": 17.590229881195388
+      },
+      "maxJump": 57.09508001517814,
+      "minEndDet": 0.2894106970396596,
+      "maxLengthChange": 1.0815263912012227,
+      "worst": [
+        {
+          "i": 5,
+          "state": "block",
+          "t": null,
+          "bridge": 0,
+          "jump": 57.09508001517814,
+          "change": 1.0815263912012227,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -93.39718793618427,
+              -318.5411667038006,
+              -8.000000000000012
+            ],
+            "to": [
+              -38.899055619179485,
+              -335.2668920874122,
+              -4.82953531957148
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 0,
+            "screenDistance": 57.00698479703824
+          }
+        },
+        {
+          "i": 2,
+          "state": "idle",
+          "t": null,
+          "bridge": 2,
+          "jump": 42.9952841587167,
+          "change": 5.684341886080802e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -37.57390229130367,
+              -312.3479687134214,
+              -86.8125322023005
+            ],
+            "to": [
+              -63.69784497992467,
+              -317.10171812744574,
+              -52.996323887365136
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 1,
+            "toBridge": 2,
+            "screenDistance": 26.552937974726856
+          }
+        },
+        {
+          "i": 3,
+          "state": "idle",
+          "t": null,
+          "bridge": 3,
+          "jump": 37.78270896177248,
+          "change": 1.1368683772161603e-13,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -63.69784497992467,
+              -317.10171812744574,
+              -52.996323887365136
+            ],
+            "to": [
+              -85.21212614484807,
+              -318.1608903463521,
+              -21.95527112401122
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 21.540337505078256
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 3,
+      "action": "hit",
+      "phase": 0.5,
+      "accepted": true,
+      "event": "hit",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 17.302120502588743,
+      "bridgeMinDet": 0.47711950386215246,
+      "endJumpXY": {
+        "rearArm": 53.96024805898222,
+        "frontArm": 53.47465823024864,
+        "rearLeg": 16.27739929932656,
+        "frontLeg": 17.302120502588743
+      },
+      "maxJump": 60.19442103314779,
+      "minEndDet": 0.41289628672108925,
+      "maxLengthChange": 0.36794159058942455,
+      "worst": [
+        {
+          "i": 0,
+          "state": "idle",
+          "t": null,
+          "bridge": null,
+          "jump": 60.19442103314779,
+          "change": 9.947598300641403e-14,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -17.682975476720745,
+              -315.84212100118333,
+              -97.31373519367173
+            ],
+            "to": [
+              -70.1987713134238,
+              -305.76093751512275,
+              -69.67627419100424
+            ],
+            "fromMode": "locomotion",
+            "toMode": "locomotion",
+            "fromBridge": null,
+            "toBridge": null,
+            "screenDistance": 53.47465823024864
+          }
+        },
+        {
+          "i": 15,
+          "state": "hit",
+          "t": null,
+          "bridge": 4,
+          "jump": 56.748370032516426,
+          "change": 0.304927495946302,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              62.307045949561605,
+              -184.1349137897225,
+              19.60123386480111
+            ],
+            "to": [
+              115.90990368798052,
+              -177.93475146428952,
+              2.032251800933169
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 53.96024805898222
+          }
+        },
+        {
+          "i": 14,
+          "state": "hit",
+          "t": null,
+          "bridge": 3,
+          "jump": 49.38256989093019,
+          "change": 0.31549764325079366,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              32.81523976864429,
+              -223.63010632831921,
+              16.601009946659786
+            ],
+            "to": [
+              62.307045949561605,
+              -184.1349137897225,
+              19.60123386480111
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 49.29134676059905
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 6,
+      "action": "sLP",
+      "phase": 0.875,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 15.320570595689588,
+      "bridgeMinDet": 0.41221853016696874,
+      "endJumpXY": {
+        "rearArm": 44.84429397633796,
+        "frontArm": 55.885839463990806,
+        "rearLeg": 15.320570595689588,
+        "frontLeg": 15.308601346460112
+      },
+      "maxJump": 61.467452332298635,
+      "minEndDet": 0.41221853016696874,
+      "maxLengthChange": 0.862964356242685,
+      "worst": [
+        {
+          "i": 3,
+          "state": "attack",
+          "t": 4,
+          "bridge": 4,
+          "jump": 61.467452332298635,
+          "change": 0.5565636929154607,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -87.00585476109893,
+              -274.9651945759785,
+              -0.728806573466825
+            ],
+            "to": [
+              -134.2970859386434,
+              -267.4362825435379,
+              37.808222807937526
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 47.886794241003244
+          }
+        },
+        {
+          "i": 8,
+          "state": "attack",
+          "t": 9,
+          "bridge": 9,
+          "jump": 59.08675135719719,
+          "change": 0.862964356242685,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -132.8162505367311,
+              -274.31604680199746,
+              2.2416357964802005
+            ],
+            "to": [
+              -84.51891771077203,
+              -302.4335625972004,
+              -16.942136860437195
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 8,
+            "toBridge": 9,
+            "screenDistance": 55.885839463990806
+          }
+        },
+        {
+          "i": 7,
+          "state": "attack",
+          "t": 8,
+          "bridge": 8,
+          "jump": 45.49126048343299,
+          "change": 0.38028206382423946,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -162.73181203188767,
+              -251.37950914997262,
+              27.705908834175673
+            ],
+            "to": [
+              -132.8162505367311,
+              -274.31604680199746,
+              2.2416357964802005
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 7,
+            "toBridge": 8,
+            "screenDistance": 37.69649292750252
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 6,
+      "action": "sHK",
+      "phase": 0.875,
+      "accepted": true,
+      "event": null,
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 16.393505103460058,
+      "bridgeMinDet": 0.3026648400588866,
+      "endJumpXY": {
+        "rearArm": 28.375925823141188,
+        "frontArm": 28.06233810559185,
+        "rearLeg": 16.393505103460058,
+        "frontLeg": 89.27373108070235
+      },
+      "maxJump": 91.40625046551737,
+      "minEndDet": 0.3026648400588866,
+      "maxLengthChange": 0.7643695980121521,
+      "worst": [
+        {
+          "i": 20,
+          "state": "attack",
+          "t": 21,
+          "bridge": 21,
+          "jump": 91.40625046551737,
+          "change": 0.5708454706619079,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -131.23026133034693,
+              -250.29807499782976,
+              16.581146876199632
+            ],
+            "to": [
+              -84.13270771784467,
+              -174.45864261079885,
+              -3.048003973883967
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 20,
+            "toBridge": 21,
+            "screenDistance": 89.27373108070235
+          }
+        },
+        {
+          "i": 19,
+          "state": "attack",
+          "t": 20,
+          "bridge": 20,
+          "jump": 71.02519887875782,
+          "change": 0.42479753811376497,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -130.60396738051594,
+              -316.58767742041806,
+              42.073797627164765
+            ],
+            "to": [
+              -131.23026133034693,
+              -250.29807499782976,
+              16.581146876199632
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 19,
+            "toBridge": 20,
+            "screenDistance": 66.2925609209391
+          }
+        },
+        {
+          "i": 11,
+          "state": "attack",
+          "t": 12,
+          "bridge": 12,
+          "jump": 65.58437354820701,
+          "change": 0.38377892499990196,
+          "worstEnd": {
+            "name": "frontLeg",
+            "joint": 2,
+            "from": [
+              -134.45729507136585,
+              -260.19706383765305,
+              45.11421372264678
+            ],
+            "to": [
+              -146.96407595937288,
+              -259.54491735216885,
+              109.4917345703123
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 11,
+            "toBridge": 12,
+            "screenDistance": 12.523771924589942
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 6,
+      "action": "block",
+      "phase": 0.875,
+      "accepted": true,
+      "event": "block",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 25.09798533227773,
+      "bridgeMinDet": 0.46986416493341815,
+      "endJumpXY": {
+        "rearArm": 27.416869564415755,
+        "frontArm": 57.06270327939677,
+        "rearLeg": 25.09798533227773,
+        "frontLeg": 20.180044640699673
+      },
+      "maxJump": 57.15071261010071,
+      "minEndDet": 0.46986416493341815,
+      "maxLengthChange": 1.0815263912012298,
+      "worst": [
+        {
+          "i": 5,
+          "state": "block",
+          "t": null,
+          "bridge": 0,
+          "jump": 57.15071261010071,
+          "change": 1.0815263912012298,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -93.39718793618424,
+              -318.3522333704673,
+              -8.000000000000012
+            ],
+            "to": [
+              -38.899055619179485,
+              -335.2668920874122,
+              -4.82953531957148
+            ],
+            "fromMode": "locomotion",
+            "toMode": "legacy",
+            "fromBridge": null,
+            "toBridge": 0,
+            "screenDistance": 57.06270327939677
+          }
+        },
+        {
+          "i": 13,
+          "state": "block",
+          "t": null,
+          "bridge": 4,
+          "jump": 27.816220285602355,
+          "change": 0.5812051769489841,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              14.23296702388403,
+              -288.77802910654276,
+              15.02759413954682
+            ],
+            "to": [
+              8.70997951426645,
+              -315.6328488914677,
+              19.72412203416949
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 27.416869564415755
+          }
+        },
+        {
+          "i": 19,
+          "state": "block",
+          "t": null,
+          "bridge": 10,
+          "jump": 25.192975358228825,
+          "change": 0.0017671373974081916,
+          "worstEnd": {
+            "name": "rearLeg",
+            "joint": 2,
+            "from": [
+              18.04824363665813,
+              -15.999999999999972,
+              -12.247996673379625
+            ],
+            "to": [
+              43.14622896893586,
+              -15.999999999999915,
+              -14.433663542117056
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 9,
+            "toBridge": 10,
+            "screenDistance": 25.09798533227773
+          }
+        }
+      ]
+    },
+    {
+      "id": "mai",
+      "delay": 6,
+      "action": "hit",
+      "phase": 0.875,
+      "accepted": true,
+      "event": "hit",
+      "finite": true,
+      "pure": true,
+      "activeExact": true,
+      "activeErrorXYZ": 0,
+      "activeErrorXY": 0,
+      "supportJumpXY": 16.18292740556428,
+      "bridgeMinDet": 0.47711239169246344,
+      "endJumpXY": {
+        "rearArm": 53.95478628774674,
+        "frontArm": 31.927038009220922,
+        "rearLeg": 16.18292740556428,
+        "frontLeg": 15.308601346460119
+      },
+      "maxJump": 56.74317663047194,
+      "minEndDet": 0.47711239169246344,
+      "maxLengthChange": 0.3679415905894814,
+      "worst": [
+        {
+          "i": 15,
+          "state": "hit",
+          "t": null,
+          "bridge": 4,
+          "jump": 56.74317663047194,
+          "change": 0.3049274959463588,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              62.307045949561605,
+              -184.06718898972244,
+              19.60123386480111
+            ],
+            "to": [
+              115.90990368798052,
+              -177.9147418642895,
+              2.032251800933169
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 3,
+            "toBridge": 4,
+            "screenDistance": 53.95478628774674
+          }
+        },
+        {
+          "i": 14,
+          "state": "hit",
+          "t": null,
+          "bridge": 3,
+          "jump": 49.33703394362457,
+          "change": 0.31549764325076524,
+          "worstEnd": {
+            "name": "rearArm",
+            "joint": 2,
+            "from": [
+              32.81523976864429,
+              -223.50543112831912,
+              16.601009946659786
+            ],
+            "to": [
+              62.307045949561605,
+              -184.06718898972244,
+              19.60123386480111
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 2,
+            "toBridge": 3,
+            "screenDistance": 49.24572646225635
+          }
+        },
+        {
+          "i": 13,
+          "state": "hit",
+          "t": null,
+          "bridge": 2,
+          "jump": 34.3685904764158,
+          "change": 0.3679415905894814,
+          "worstEnd": {
+            "name": "frontArm",
+            "joint": 2,
+            "from": [
+              -66.77382104056535,
+              -305.44127116326723,
+              -13.723936851472619
+            ],
+            "to": [
+              -35.282283031663155,
+              -300.1859129570071,
+              -26.44652523958535
+            ],
+            "fromMode": "legacy",
+            "toMode": "legacy",
+            "fromBridge": 1,
+            "toBridge": 2,
+            "screenDistance": 31.927038009220922
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "note": "No broad visual-quality acceptance threshold; jumps/determinants/length changes are explicit measurements."
+}

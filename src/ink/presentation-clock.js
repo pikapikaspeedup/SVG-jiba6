@@ -22,8 +22,8 @@
    this.stats.steps++;
    for(const f of fighters){f._inkPrevView=snapshot(f);f._inkHistory={key:key(f),dir:f.dir,attack:f.attack};f._inkVisualClock=(f._inkVisualClock||0)+1;}
   },
-  finish(fighters){for(const f of fighters){const previous=f._inkPrevView;if(!previous)continue;f._inkPoseVelocity=Object.fromEntries(scalar.filter(k=>Number.isFinite(f[k])&&Number.isFinite(previous[k])).map(k=>[k,f[k]-previous[k]]));}},
-  previous(f,dt=.25){const v=Object.create(f),velocity=f._inkPoseVelocity||{};for(const k of ['y','vy','walkT','landT'])if(Number.isFinite(f[k]))v[k]=f[k]-(velocity[k]||0)*dt;v.landT=Math.max(0,v.landT||0);v.stateAge=Math.max(0,(f.stateAge||0)-dt);v._inkVisualClock=Math.max(0,(f._inkVisualClock||0)-dt);if(f.attack)v.attack={...f.attack,t:Math.max(0,f.attack.t-dt)};if(f._inkState)v._inkState={...f._inkState,age:Math.max(0,f._inkState.age-dt)};return v;},
+  finish(fighters){for(const f of fighters){const previous=f._inkPrevView;if(!previous)continue;f._inkPoseVelocity=Object.fromEntries(['x',...scalar].filter(k=>Number.isFinite(f[k])&&Number.isFinite(previous[k])).map(k=>[k,f[k]-previous[k]]));}},
+  previous(f,dt=.25){const v=Object.create(f),velocity=f._inkPoseVelocity||{};for(const k of ['x','y','vy','walkT','landT'])if(Number.isFinite(f[k]))v[k]=f[k]-(velocity[k]||0)*dt;v.landT=Math.max(0,v.landT||0);v.stateAge=Math.max(0,(f.stateAge||0)-dt);v._inkVisualClock=Math.max(0,(f._inkVisualClock||0)-dt);if(f.attack)v.attack={...f.attack,t:Math.max(0,f.attack.t-dt)};if(f._inkState)v._inkState={...f._inkState,age:Math.max(0,f._inkState.age-dt)};return v;},
   beginProjectiles(G){for(const s of G.shots||[])s._inkPrevious={x:s.x,y:s.y,age:s.age||0,dir:s.dir};},
   view(f,alpha,hold=false){
    if(!Number.isFinite(alpha))throw TypeError('Finite presentation fraction required');
@@ -50,7 +50,7 @@
    }
   },
   set(values){if(!values||typeof values!=='object'||Array.isArray(values))throw TypeError('Presentation settings object required');for(const [k,v]of Object.entries(values)){if(!(k in settings)||typeof v!=='boolean')throw TypeError('Invalid presentation setting: '+k);}Object.assign(settings,values);return{...settings};},
-  reset(f){f._inkVisualClock=0;f._inkPoseVelocity=null;f._inkHistory=null;f._inkPrevView=null;f._inkLanding=null;f._inkStateVisualBlend=null;}
+  reset(f){INK.FacingMotion?.reset(f);f._inkFrameTransition=null;f.intentDir=f.dir;f._inkVisualClock=0;f._inkPoseVelocity=null;f._inkHistory=null;f._inkPrevView=null;f._inkLanding=null;f._inkStateVisualBlend=null;}
  };
  INK.Presentation=Clock;
 })();

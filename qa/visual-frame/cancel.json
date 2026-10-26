@@ -1,0 +1,29 @@
+{
+  "htmlSha256": "5704c02d98289c74142f3fb301965e261012847c74c925b298c4544c73c1de58",
+  "cases": [
+    {
+      "cross": false,
+      "fixture": "same side",
+      "confirmed": true,
+      "move": "hadoken_0",
+      "accepted": true,
+      "oldDir": 1,
+      "newDir": 1,
+      "age0Error": 0,
+      "activeError": 0,
+      "activeSamples": 10
+    },
+    {
+      "cross": true,
+      "fixture": "opponent teleported across after real hit",
+      "confirmed": true,
+      "move": "hadoken_0",
+      "accepted": true,
+      "oldDir": 1,
+      "newDir": -1,
+      "age0Error": 0,
+      "activeError": 0,
+      "activeSamples": 10
+    }
+  ]
+}

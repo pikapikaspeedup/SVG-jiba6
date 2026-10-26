@@ -106,6 +106,7 @@ globalThis.INK = (() => {
       const matrices=Rig.torsoMatrices(p),chest=matrices[2];o.pelvis=mat.point(matrices[0],[0,0]);o.chest=mat.point(chest,[0,3]);o.neck=mat.point(chest,[5,-29]);o.head=mat.point(chest,rig.profile?.rigHeadOffset||[6,-46]);return o;
     }
     static world(p,q,{x=0,y=0,scale=1,facing=1}={}) {
+      if(globalThis.INK?.VisualFrame?.get(p))return [x+q[0]*scale,y+q[1]*scale];
       const m=mat.multiply(mat.compose(x,y,0,scale*facing*(p.depth||1),scale),mat.multiply(mat.compose(p.rootShift||0,(p.floor||0)-180,p.spin||0),mat.compose(0,180)));
       return mat.point(m,q);
     }

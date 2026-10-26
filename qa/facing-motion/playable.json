@@ -1,0 +1,44 @@
+{
+  "htmlSha256": "23f1392d2e1ec993e8bfd77b5bde7acc7d57e92f412f9ddd83bfe614e9db16b8",
+  "rows": [
+    {
+      "id": "ryu",
+      "minY": -169.3000000000001,
+      "maxX": 874.8500000000012,
+      "finalX": 874.8500000000012,
+      "opponentX": 710.2500000000008,
+      "air": true,
+      "crossed": true,
+      "dir": -1,
+      "owned": true,
+      "adopted": true,
+      "maxAngularStep": 0.5767767762450011,
+      "finite": true,
+      "pure": true,
+      "inputAccepted": true,
+      "attack": "sLP",
+      "groundBlocked": true,
+      "groundMinGap": 119
+    },
+    {
+      "id": "mai",
+      "minY": -169.3000000000001,
+      "maxX": 874.8500000000012,
+      "finalX": 874.8500000000012,
+      "opponentX": 710.2500000000008,
+      "air": true,
+      "crossed": true,
+      "dir": -1,
+      "owned": true,
+      "adopted": true,
+      "maxAngularStep": 0.5767767762450011,
+      "finite": true,
+      "pure": true,
+      "inputAccepted": true,
+      "attack": "sLP",
+      "groundBlocked": true,
+      "groundMinGap": 119
+    }
+  ],
+  "errors": []
+}

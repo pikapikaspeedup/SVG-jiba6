@@ -114,7 +114,7 @@
    this.pieces[0].cloth.innerHTML=upper;this.pieces[1].cloth.innerHTML=lower;
   }
   render(chain,p,stats,style={},rig=null) {
-   const[a,b,c]=chain,outer=this.leg?mat.identity():INK.bodyMatrix(p),ab=vec.sub(b,a),bc=vec.sub(c,b),lengths=[vec.length(ab),vec.length(bc)];
+   const visual=INK.VisualFrame?.get(p),[a,b,c]=chain,outer=this.leg||visual?mat.identity():INK.bodyMatrix(p),ab=vec.sub(b,a),bc=vec.sub(c,b),lengths=[vec.length(ab),vec.length(bc)];
    const dot=clamp((ab[0]*bc[0]+ab[1]*bc[1])/Math.max(1e-8,lengths[0]*lengths[1]),-1,1),flex=(1-dot)*.5;
    const volume=style.volume??1,baseWidths=this.widths.map(w=>w*volume*(this.rear?.94:1));
    const[w,e,z]=baseWidths;
@@ -146,10 +146,10 @@
    assign(this.foldShade,'d',folds.shade,stats);assign(this.foldShade,'opacity',folds.opacity*.7,stats);
    const endMatrix=this.leg?INK.Anatomy.footMatrix(p,rig,this.c,this.rear):INK.Anatomy.handMatrix(p,rig,this.c,this.rear);
    setTransform(this.end,endMatrix,stats);
-   if(this.leg){const shoe=INK.SkinGeometry.foot(INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
+   if(this.leg){const shoe=INK.SkinGeometry.foot(visual?.materialAngles.pelvis??INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
 
    if(!this.leg){const requested=this.rear?p.handRear:p.handFront,kind=this.fan&&p.fan!==0?'grip':['fist','guard','claw','grip'].includes(requested)?requested:p.open>.45?'palm':'fist';for(const [name,group] of Object.entries(this.hands))assign(group,'visibility',name===kind?'visible':'hidden',stats);
-    if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1);assign(this.fan,'transform',`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
+    if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1),fanFrame=visual?.fanFrames?.[name],local=mat.compose(16,0,-18+(p.fanAngle||0));assign(this.fan,'transform',fanFrame?mat.svg(mat.multiply(mat.multiply(mat.inverse(endMatrix),fanFrame),local)):`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
    }
   }
  }
@@ -210,11 +210,11 @@
   setStyle(style){if(style.volume!==undefined)this.style.volume=clamp(style.volume,.75,1.3);if(style.head!==undefined)this.style.head=clamp(style.head,.8,1.25);}
   render(p,{rig=null,frame=0,expression='rest',impulses=[],secondary=true,motion=null}={}) {
    if(this.destroyed)throw Error('Renderer already destroyed');const start=performance.now();this.stats.writes=0;this.stats.frames++;
-   const signature=JSON.stringify([p,rig,secondary?frame:0,expression,impulses,motion,this.style,this.mode]);if(signature===this.signature){this.stats.cpuMs=performance.now()-start;return this.stats;}this.signature=signature;
-   const inputRig=rig?.anatomy?rig:Rig.solveAnimation(this.c,p),r=inputRig,s=this.stats,turn=INK.Turn.view(INK.Turn.angle(p)),back=turn.far;
+   const visual=INK.VisualFrame?.get(p),signature=JSON.stringify([p,rig,visual?[visual.materialAngles,visual.skinMatrices,visual.headMatrix,visual.endFrames,visual.fanFrames,visual.rig.anatomy.depth]:null,secondary?frame:0,expression,impulses,motion,this.style,this.mode]);if(signature===this.signature){this.stats.cpuMs=performance.now()-start;return this.stats;}this.signature=signature;
+   const inputRig=rig?.anatomy?rig:visual?.rig||Rig.solveAnimation(this.c,p),r=inputRig,s=this.stats,bodyAngle=visual?.materialAngles.body??INK.Turn.angle(p),headAngle=visual?.materialAngles.head??INK.Turn.angle(p,'head'),turn=INK.Turn.view(bodyAngle),back=turn.far;
    this.inputRig=inputRig;
    for(const name of ['rearLeg','frontLeg','rearArm','frontArm'])this[name].render(r[name],p,s,this.style,r);
-   const bodyBands=INK.Turn.bands(INK.Turn.angle(p),64),faceBands=INK.Turn.bands(INK.Turn.angle(p,'head'),48);
+   const bodyBands=INK.Turn.bands(bodyAngle,64),faceBands=INK.Turn.bands(headAngle,48);
    if(bodyBands.front[1]>=.001)this.torso.render(p,s);
    if(bodyBands.back[1]>=.001)this.torsoBack.render(p,s);
    if(bodyBands.profile[1]>=.001)this.torsoSide.render(p,s);
@@ -237,7 +237,7 @@
     const leg=name.endsWith('Leg'),limb=this[name],chain=sockets[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
     if(name==='rearArm'){
      const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
-     const facing=Math.max(0,Math.cos(INK.rad(INK.Turn.angle(p))));depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;
+     const facing=Math.max(0,Math.cos(INK.rad(bodyAngle)));if(visual?.mode!=='locomotion'){depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;}
     }
     const exposure=leg?INK.Turn.smooth(-10,28,Math.max(chain[0][1]-chain[1][1],chain[0][1]-chain[2][1])):1;
     assign(layers[name].group,'opacity',exposure,s);
@@ -262,12 +262,13 @@
    }
    if(this.c.id==='iori'){const a=vec.mix(r.rearLeg[0],r.rearLeg[1],.69),b=vec.mix(r.frontLeg[0],r.frontLeg[1],.69);assign(this.strap,'d',`M${a}Q${(a[0]+b[0])/2} ${Math.max(a[1],b[1])+55} ${b}`,s);}
    const body=INK.bodyMatrix(p),h=Rig.sockets(p,r).head,headScale=this.c.headScale*this.style.head;
-   const hv=INK.Turn.view(INK.Turn.angle(p,'head'));setTransform(this.head,mat.compose(h[0]+hv.offset*.5,h[1],(p.lean||0)+(p.head||0)+(p.chest||0),headScale*(.8+.2*hv.width),headScale),s);
+   const hv=INK.Turn.view(headAngle);setTransform(this.head,visual?mat.multiply(visual.headMatrix,mat.compose(0,0,0,headScale,headScale)):mat.compose(h[0]+hv.offset*.5,h[1],(p.lean||0)+(p.head||0)+(p.chest||0),headScale*(.8+.2*hv.width),headScale),s);
    // Face attachments have continuous disjoint surface masks above.
    const face=expression==='hurt'?'hurt':['guard','brace'].includes(p.expression)?p.expression:expression;
    for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===face?'visible':'hidden',s);
    const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
-   setTransform(this.hair,mat.multiply(mat.compose(h[0]-6,h[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365)),s);
+   const oldHair=()=>{const at=visual?Rig.sockets(visual.legacyPose,visual.legacyRig).head:h;return mat.multiply(mat.compose(at[0]-6,at[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365));};
+   setTransform(this.hair,visual?.mode==='locomotion'?mat.multiply(visual.headMatrix,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
    const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);
    setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
    setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);

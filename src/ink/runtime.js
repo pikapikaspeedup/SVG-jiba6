@@ -16,24 +16,25 @@
   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
   record(f,m){return this.store?.byGame(f.ch.id,m?.wakeStrike?'sMP':m?.id||'@idle')||null;},
   clipFrame(record,m,t){const b=record.binding;return phaseMap(t,[0,m.startup,m.startup+m.active,m.total],[0,b.startup,b.startup+b.active,record.clip.duration]);},
-  capture(f,m){
-   if(!this.store)return;const A=globalThis.SVG_FIGHTER,from=A?.pose(f),rec=this.record(f,m);if(!from||!rec)return;
-   const profile=this.profile(f.ch.id),world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},visualFrom=this.visual(f,from,world);
+  capture(f,m,outgoing=null){
+   const source=outgoing||f;
+   if(!this.store)return;const A=globalThis.SVG_FIGHTER,from=A?.pose(source),rec=this.record(f,m);if(!from||!rec)return;
+   const profile=this.profile(f.ch.id),world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},oldWorld={x:source.x,y:source.y,dir:source.dir,scale:source.renderScale||source.ch.scale||1},visualFrom=this.visual(source,from,oldWorld);
    let previous=from,visualPrevious=visualFrom,dt=.25;
-   if(f.attack&&f.attack.t>0){dt=Math.min(.25,f.attack.t);const view=Object.create(f);view.attack={...f.attack,t:f.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,world);}else if(INK.Presentation){const view=INK.Presentation.previous(f,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,world);}
+   if(source.attack&&source.attack.t>0){dt=Math.min(.25,source.attack.t);const view=Object.create(source);view.attack={...source.attack,t:source.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,oldWorld);}else if(INK.Presentation){const view=INK.Presentation.previous(source,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,oldWorld);}
    // Sample the real incoming game pose with clean transition ownership.
    // Falling back to the outgoing pose for absent channels fabricated a yaw
    // target which the incoming Runtime.sample would never actually produce.
-   const incomingView=Object.create(f);Object.assign(incomingView,{state:'attack',stateAge:0,crouch:m.normalState==='c',move:0,jumpPre:0,attack:{m,t:0},_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkStateBlend:null});
+   const incomingView=Object.create(f);Object.assign(incomingView,{state:'attack',stateAge:0,crouch:m.normalState==='c',move:0,jumpPre:0,attack:{m,t:0},_inkTransition:null,_inkVisualTransition:null,_inkJointTransition:null,_inkStateBlend:null,_inkFrameTransition:null});
    const target=A.pose(incomingView);incomingView.attack={m,t:.25};const next=A.pose(incomingView);
-   const oldCtx=INK.State.contextForFX(f);
-   const oldSecondary=this.presentation(f,oldCtx?.record,oldCtx?.frame||0,f.attack?.t||0);
+   const oldCtx=INK.State.contextForFX(source);
+   const oldSecondary=this.presentation(source,oldCtx?.record,oldCtx?.frame||0,source.attack?.t||0);
    f._inkActionOrigin={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1,t:0};
    const deadline=Math.min(5,Math.max(0,m.startup-1));
    f._inkTransition={id:m.id,bridge:INK.Motion.bridge(from,INK.Motion.velocity(previous,from,dt),target,INK.Motion.velocity(target,next),deadline),secondary:oldSecondary};
    // A separate visual bridge preserves a cancelled layer's displacement and
    // derivative. It does not replace the battle-owned incoming base bridge.
-   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};const composed=INK.MotionGraph.compose(rec,this.clipFrame(rec,m,t),INK.Motion.apply(p,f._inkTransition.bridge,t),profile,{...world,origin:world,airborne:f.y<-2});const kinetic=INK.Kinetic?.pose(view,composed)||composed;const guard=INK.GuardBody?.pose(view,kinetic)||kinetic;const strike=INK.StrikeMotion?.pose(view,guard)||guard;const tempo=INK.StrikeTempoFX?.pose(view,strike)||strike;const recovery=INK.RecoveryMotion?.pose(view,tempo)||tempo;const aerial=INK.Aerial?.pose(view,recovery)||recovery;const pursuit=INK.AirPursuitFX?.pose(view,aerial)||aerial;const wake=INK.WakeFlow?.pose(view,pursuit)||pursuit;const supported=INK.BodySupport?.pose(view,wake,world)||wake;return INK.ThrowBody?.pose(view,supported)||supported;};
+   const graphAt=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};return this.composeLayers(view,INK.Motion.apply(p,f._inkTransition.bridge,t),world,{record:rec,frame:this.clipFrame(rec,m,t)});};
    const visualTarget=graphAt(target,0),visualNext=graphAt(next,.25);
    f._inkVisualTransition={id:m.id,bridge:INK.Motion.bridge(visualFrom,INK.Motion.velocity(visualPrevious,visualFrom,dt),visualTarget,INK.Motion.velocity(visualTarget,visualNext),deadline)};
    // A pose-value bridge alone cannot preserve a compiled skeleton: the next
@@ -42,6 +43,11 @@
    let incoming=INK.Motion.apply(visualTarget,f._inkVisualTransition.bridge,0),incomingNext=INK.Motion.apply(visualNext,f._inkVisualTransition.bridge,.25);
    const constrained=(p,t)=>{const view=Object.create(incomingView);view.attack={m,t};return INK.BodySupport?.constrainFeet(view,p,world)||p;};incoming=constrained(incoming,0);incomingNext=constrained(incomingNext,.25);
    f._inkJointTransition={id:m.id,...INK.Articulation.bridge(Rig.solveAnimation(profile,visualFrom),Rig.solveAnimation(profile,visualPrevious),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),deadline,dt)};
+   // Aim the short contact-limb handoff at its actual deadline pose. Chasing
+   // each moving startup pose left most of a cross-side punch for the last frame.
+   incomingView.attack={m,t:deadline};incomingView._inkVisualClock=(f._inkVisualClock||0)+deadline;
+   const deadlinePose=this.visual(incomingView,A.pose(incomingView),world);
+   INK.FrameBridge?.begin(f,INK.FrameBridge.capture(source,visualFrom),{state:'attack',attack:m.id,duration:deadline,deadlineFrame:INK.VisualFrame?.get(deadlinePose)});
   },
   sample(f,m,t,base){
    if(!this.enabled||!this.store)return null;const record=this.record(f,m);if(!record)return null;
@@ -52,7 +58,7 @@
   clock(f,fallback=0){return Number.isFinite(f._inkVisualClock)?f._inkVisualClock:Number.isFinite(f._inkPreviewClock)?f._inkPreviewClock:fallback;},
   neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((this.clock(f,time*60)+(f.index||0)*13)%rec.clip.duration,base);},
   rig(f,p){if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
-  visualRig(f,p){return Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
+  visualRig(f,p){return INK.VisualFrame?.get(p)?.rig||Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
   prepare(f,m){if(!this.enabled||!this.store||!m)return m;const record=this.record(f,m);if(!record?.binding.retimed)return m;const b=record.binding;return{...m,startup:b.startup,active:b.active,recovery:b.recovery,total:record.clip.duration};},
   geometry(f,original,p,rig,world,closing=false){if(!this.enabled||!f.attack)return original;const a=f.attack,rec=this.record(f,a.m);if(!rec||rec.boxes.mode!=='custom')return original;const t=this.clipFrame(rec,a.m,a.t),out={...original};const hit=[],hurt=[];
    for(const b of rec.boxes.items){if(closing?t<=b.start||t>b.end:t<b.start||t>=b.end)continue;const q=socket(p,rig,b.socket),pts=[[b.x,b.y],[b.x+b.w,b.y],[b.x+b.w,b.y+b.h],[b.x,b.y+b.h]].map(x=>world([q[0]+x[0],q[1]+x[1]],false)),xs=pts.map(x=>x[0]),ys=pts.map(x=>x[1]),x=Math.min(...xs),y=Math.min(...ys);const box={x,y,w:Math.max(...xs)-x,h:Math.max(...ys)-y,part:'ink-'+b.kind+':'+b.id};(b.kind==='hit'?hit:hurt).push(box);}
@@ -80,9 +86,8 @@
    if(old?._inkTimeline)for(const e of old._inkTimeline.cancel('state:'+next))this.lifecycleLog.push({character:f.ch.id,move:old.m.id,event:e.event.id,frame:e.frame,kind:e.kind,instance:e.instance,serial:e.serial});
    if(this.lifecycleLog.length>256)this.lifecycleLog.splice(0,this.lifecycleLog.length-256);
   },
-  visual(f,base,world=null,skipThrowConstraint=false){
-   if(!this.enabled||!this.store)return base;
-   const ctx=INK.State.contextForFX(f)||(()=>{const r=this.store.byGame(f.ch.id,'@idle');return r?{record:r,frame:(this.clock(f,f.stateAge||0)+(f.index||0)*13)%r.clip.duration}:null;})();
+  composeLayers(f,base,world=null,override=null){
+   const ctx=override||INK.State.contextForFX(f)||(()=>{const r=this.store.byGame(f.ch.id,'@idle');return r?{record:r,frame:(this.clock(f,f.stateAge||0)+(f.index||0)*13)%r.clip.duration}:null;})();
    let p=base;
    if(!ctx)return p;
    const context=world?{...world,history:f._inkTrail?.rows,origin:f._inkActionOrigin,airborne:f.y<-2}:null;
@@ -97,13 +102,33 @@
    p=INK.WakeFlow?.pose(f,p)||p;
    p=INK.BodySupport?.pose(f,p,world)||p;
    p=INK.ThrowBody?.pose(f,p)||p;
+   return p;
+  },
+  visual(f,base,world=null,skipThrowConstraint=false){
+   if(!this.enabled||!this.store)return base;
+   const movingFrame=INK.VisualFrame&&!f._inkRawVisual&&!f.attack&&!f.crouch&&!f.jumpPre&&f.y===0&&['idle','dash','rush'].includes(f.state);
+   let display=f;
+   if(movingFrame){
+    // A persistent stance model supplies body proportions and guard targets.
+    // World-foot plans own gait, instead of switching two authored walk clips
+    // at the instant that controls acquire a different logical facing.
+    display=Object.create(f);Object.assign(display,{state:'idle',move:0,_inkState:null,_inkStateVisualBlend:null,_inkStateBlend:null});
+    base=globalThis.SVG_FIGHTER.pose(display);
+   }
+   let p=this.composeLayers(display,base,world);
    const visualTransition=f._inkVisualTransition;
    if(INK.MotionGraph.settings.enabled&&f.attack&&visualTransition?.id===f.attack.m.id)p=INK.Motion.apply(p,visualTransition.bridge,f.attack.t);
    if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
-   p=INK.StateTransitions.compression(f,p);
-   p=INK.StateTransitions.apply(f,p);
-   p=INK.BodySupport?.constrainFeet(f,p,world)||p;
+   p=INK.StateTransitions.compression(display,p);
+   p=INK.StateTransitions.apply(display,p);
+   if(!movingFrame)p=INK.BodySupport?.constrainFeet(f,p,world)||p;
    if(!skipThrowConstraint)p=this.throwGrip(f,p,world);
+   if(INK.VisualFrame&&!f._inkRawVisual){
+    // Each evaluation owns its frame; never attach to a cached authored pose.
+    const final=INK.copy(p);INK.Articulation.inherit(p,final);
+    const built=INK.VisualFrame.build(f,p,{world,time:this.clock(f),facing:INK.FacingMotion?.sample(f,this.clock(f),world)}),frame=INK.FrameBridge?.apply(f,built,{world,time:this.clock(f)})||built;
+    p=INK.VisualFrame.attach(final,frame);
+   }
    return p;
   },
   throwGrip(f,p,world=null){

@@ -37,7 +37,7 @@
   }
   const assign=INK.SVG.assign,on=active()&&r.mode==='skin';assign(row.overlay,'display',on?'inline':'none');for(const n of row.feet)assign(n,'display',on?'inline':'none');if(!on){if(f.shadow){const n=f.shadow.children;assign(n[0],'cx',0);assign(n[0],'cy',8);assign(n[0],'rx',107);assign(n[0],'ry',17);assign(n[0],'opacity',.7);assign(n[1],'opacity',.55);}return;}
   const env=environment(G),lights=sources(G,alpha),s=world.scale||1;
-  const facing=INK.mat.multiply(INK.mat.compose(0,0,0,f.dir*(p.depth||1),1),INK.mat.multiply(INK.mat.compose(p.rootShift||0,p.floor||0),INK.mat.multiply(INK.mat.compose(0,-180,p.spin||0),INK.mat.compose(0,180))));
+  const facing=INK.VisualFrame?.get(p)?INK.mat.identity():INK.mat.multiply(INK.mat.compose(0,0,0,f.dir*(p.depth||1),1),INK.mat.multiply(INK.mat.compose(p.rootShift||0,p.floor||0),INK.mat.multiply(INK.mat.compose(0,-180,p.spin||0),INK.mat.compose(0,180))));
   const inverse=INK.mat.inverse(facing),local=(x,y)=>INK.mat.point(inverse,[(x-world.x)/s,(y-665-world.y)/s]);
   const key=local(env.x,env.y);assign(row.key,'stop-color',env.key);assign(row.fill,'stop-color',env.fill);assign(row.key,'stop-opacity',.16);assign(row.grad,'x1',key[0]<0?0:1);assign(row.grad,'y1',0);assign(row.grad,'x2',key[0]<0?1:0);assign(row.grad,'y2',1);
   const ranked=lights.map(l=>({...l,score:l.power*Math.max(0,1-Math.hypot(l.x-world.x,l.y-(665+world.y-220))/l.radius)})).sort((a,b)=>b.score-a.score);
