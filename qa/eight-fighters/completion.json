@@ -1,0 +1,87 @@
+{
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
+  "scope": "All three body/contact, attack-defense branches, eight-character presentation stages. Targeted current-build checks; not endurance, real devices or competitive balance certification.",
+  "suites": [
+    {
+      "report": "qa/body-support/playable.json",
+      "passed": 25,
+      "total": 25
+    },
+    {
+      "report": "qa/contact-response/playable.json",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "report": "qa/body-contact/playable.json",
+      "passed": 10,
+      "total": 10
+    },
+    {
+      "report": "qa/flow-chain/playable.json",
+      "passed": 15,
+      "total": 15
+    },
+    {
+      "report": "qa/aerial/playable.json",
+      "passed": 17,
+      "total": 17
+    },
+    {
+      "report": "qa/strike-feel/playable.json",
+      "passed": 17,
+      "total": 17
+    },
+    {
+      "report": "qa/pressure-flow/branches.json",
+      "passed": 38,
+      "total": 38
+    },
+    {
+      "report": "qa/pressure-flow/defense.json",
+      "passed": 19,
+      "total": 19
+    },
+    {
+      "report": "qa/pressure-flow/cpu.json",
+      "passed": 2,
+      "total": 2
+    },
+    {
+      "report": "qa/eight-fighters/playable.json",
+      "passed": 41,
+      "total": 41
+    },
+    {
+      "report": "qa/eight-fighters/presentation.json",
+      "passed": 15,
+      "total": 15
+    }
+  ],
+  "browserChecks": 206,
+  "unitChecks": 18,
+  "unitLog": "qa/eight-fighters/unit-tests.log",
+  "sourceReport": "qa/eight-fighters/source/validation.json",
+  "cpuTimingReport": "qa/eight-fighters/frame-cost.json",
+  "visualSamples": [
+    "qa/eight-fighters/playable-ui.png",
+    "qa/eight-fighters/multi-contact.png",
+    "qa/eight-fighters/super-contact.png"
+  ],
+  "stageRequirements": {
+    "bodyAndContact": [
+      "body-support/playable",
+      "contact-response/playable",
+      "body-contact/playable"
+    ],
+    "attackAndDefense": [
+      "pressure-flow/branches",
+      "pressure-flow/defense",
+      "pressure-flow/cpu"
+    ],
+    "eightStylesAndUnifiedPresentation": [
+      "eight-fighters/playable",
+      "eight-fighters/presentation"
+    ]
+  }
+}

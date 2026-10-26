@@ -1,5 +1,5 @@
 {
-  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
   "rows": [
     {
       "name": "Sample practice selects Cammy against Ryu through the actual UI",
@@ -51,7 +51,7 @@
         ],
         "events": [
           {
-            "tick": 65,
+            "tick": 66,
             "type": "hit",
             "attacker": 0,
             "defender": 1,
@@ -59,7 +59,7 @@
             "damage": 820
           },
           {
-            "tick": 65,
+            "tick": 66,
             "type": "hit",
             "attacker": 1,
             "defender": 0,
@@ -96,16 +96,16 @@
           "id": "ryu",
           "finite": true,
           "hp": [
-            6855,
-            4329
+            2029,
+            8156
           ]
         },
         {
           "id": "cammy",
           "finite": true,
           "hp": [
-            3456,
-            7868
+            3911,
+            4791
           ]
         }
       ]

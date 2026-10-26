@@ -128,7 +128,7 @@
         pool.add({x,y,birth:frame,life:5,vx:0,vy:0,gravity:0,size:big?28:18,angle:seed%45,color:base.core,species:'impact',stretch:1.25,opacity:.88,priority:4});
       }
       if(guard)INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,reduced:setting.reducedMotion,G});
-      if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,material:base,reduced:setting.reducedMotion});
+      if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,response:context?.response,material:base,reduced:setting.reducedMotion});
       else pool.add({x,y,birth:frame,life:guard?12:9,vx:0,vy:0,gravity:0,size:guard?19:big?34:20,angle:15,color:base.core,species:'ring',stretch:.65,opacity:.55,priority:3});return true;
     },
     dust(x,G){const p=this.mount();if(!p)return false;if(!setting.enabled||setting.reducedMotion)return true;p.emit({x,y:670,frame:this.time,seed:hash('dust'+x+G.tick),count:7,material:{...materials.luke,color:'#adbcad',core:'#d1c7ae'},angle:-90,spread:150,speed:1.3,life:26,size:9,species:'smoke',gravity:-.02,opacity:.16});return true;},

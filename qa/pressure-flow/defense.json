@@ -1,0 +1,113 @@
+{
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
+  "rows": [
+    {
+      "name": "YIELD begins from a real guarded hit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "YIELD cannot charge during hitstop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "YIELD commits once through the normal buffer and pays exact cost",
+      "passed": true,
+      "details": {
+        "drive": 5.38,
+        "meter": 5.88
+      }
+    },
+    {
+      "name": "YIELD repeated request cannot pay twice",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "YIELD rendering cannot advance defense",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "YIELD moves continuously within its budget and returns control",
+      "passed": true,
+      "details": {
+        "distance": 42,
+        "state": "idle"
+      }
+    },
+    {
+      "name": "ESCAPE begins from a real guarded hit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ESCAPE cannot charge during hitstop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ESCAPE commits once through the normal buffer and pays exact cost",
+      "passed": true,
+      "details": {
+        "drive": 4.38,
+        "meter": 5.88
+      }
+    },
+    {
+      "name": "ESCAPE repeated request cannot pay twice",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ESCAPE rendering cannot advance defense",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Escape rejects attacks during recovery and does not protect against throws",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Escape strike shield expires before recovery",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ESCAPE moves continuously within its budget and returns control",
+      "passed": true,
+      "details": {
+        "distance": 76,
+        "state": "idle"
+      }
+    },
+    {
+      "name": "Insufficient meter refuses defense without movement",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Defense switch disables both new options",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Back plus parry uses the same escape route",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Delayed strike can punish escape and stops its motion",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Neither defense can be started freely in neutral",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": []
+}

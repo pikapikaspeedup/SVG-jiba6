@@ -1,0 +1,26 @@
+✔ contact quality differentiates tip and committed center, with no hitbox query (1.711916ms)
+✔ opposing root motion changes bounded push, discontinuities are excluded (0.62375ms)
+✔ description ignores post-contact push, state, input and attack mutations (0.625125ms)
+✔ mirrored fighters produce mirrored normals but equal gameplay scales (0.456458ms)
+✔ normal modifier deliberately excludes throws, shots, air, launches, knockdowns and multiple hits (1.119875ms)
+✔ apply changes only existing push and does not invent parry or armor movement (0.855917ms)
+✔ master and module disable switches restore original push (0.4705ms)
+✔ character response profiles distinguish stable compression from mobile recovery (0.443125ms)
+✔ directional response samples are deterministic, finite, bounded and expire (0.810583ms)
+✔ distance bands use root distance and ignore the AI range estimate (0.524916ms)
+✔ captured and air-locked bodies cannot acquire a ground response (0.444333ms)
+✔ geometric normal, authored response direction and contact identity remain distinct (0.416583ms)
+✔ eight distinct styles have complete calibrated ground normal bands (3.016584ms)
+✔ special air throw multi capture discontinuity retain presentation without push changes (0.941416ms)
+✔ actual part zone and finishing identity survive immutable descriptor (1.0065ms)
+✔ AI range does not affect response and missing authorization never changes push (0.428208ms)
+✔ all defender body reactions are deterministic finite and expire (1.197583ms)
+✔ immediate, CPU and buffered exits all protect exactly four contact frames (1.922375ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 51.000958

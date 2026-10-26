@@ -1,0 +1,101 @@
+{
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
+  "rows": [
+    {
+      "name": "All eight live CPU pairings exchange damage with finite state",
+      "passed": true
+    },
+    {
+      "name": "CPU actually chooses paid pursuit, pressure and defense",
+      "passed": true,
+      "details": {
+        "pursuit": 1,
+        "pressure": 1,
+        "defenses": 32
+      }
+    }
+  ],
+  "samples": [
+    {
+      "id": "ryu",
+      "counts": {
+        "pursuit": 1,
+        "pressure": 0,
+        "defenses": 4
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "ken",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 1,
+        "defenses": 5
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "chun",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 0,
+        "defenses": 6
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "cammy",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 0,
+        "defenses": 5
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "luke",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 0,
+        "defenses": 4
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "juri",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 0,
+        "defenses": 3
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "mai",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 0,
+        "defenses": 4
+      },
+      "damage": true,
+      "finite": true
+    },
+    {
+      "id": "iori",
+      "counts": {
+        "pursuit": 0,
+        "pressure": 0,
+        "defenses": 1
+      },
+      "damage": true,
+      "finite": true
+    }
+  ],
+  "errors": []
+}

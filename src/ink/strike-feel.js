@@ -35,7 +35,15 @@
    const turn=contact.turn*sign*contact.twist,solid=contact.quality*contact.compression;
    add('chestYaw',turn*15*fast);add('pelvisYaw',-turn*7*lag);add('headYaw',turn*5*lag);
    add('lean',sign*(solid-1)*8*fast);add('chest',-(solid-1)*7*fast);
-   if(!r.parry){
+   switch(contact.defenderStyle){
+    case 'pursuit':add('lean',-sign*2*lag);shift('rw',-sign*4*lag,-3*lag);break;
+    case 'alternating':add('pelvisYaw',-sign*4*lag);add('head',-2*lag);break;
+    case 'boxing':add('chest',-3*fast);add('head',-3*fast);shift('rw',6*lag,-8*lag);break;
+    case 'single-leg':add('pelvisYaw',sign*6*fast);add('chestYaw',-sign*4*lag);break;
+    case 'fan-dance':add('chestYaw',sign*5*lag);shift('rw',-sign*9*lag,-4*lag);break;
+    case 'low-claw':add('bob',4*Math.abs(fast));add('lean',-sign*3*lag);shift('rw',-3*lag,5*lag);break;
+   }
+   if(!r.parry&&!contact.airborne&&!contact.throwing){
     const retreat=Math.sin(Math.PI*clamp(age/r.duration))*end*power*contact.step*(r.guard?.55:1);
     const stepping=sign<0?'ra':'fa',bracing=sign<0?'fa':'ra';
     shift(stepping,sign*20*retreat,-7*retreat);shift(bracing,-sign*3*retreat,0);
@@ -51,10 +59,20 @@
   let plan=parry?[['tone',context.perfect?1050:800,1500,.13,'sine',.045],['tone',1750,1200,.16,'sine',.022,.012]]:guard?[['noise',.045,1900,.042],['tone',430,210,.065,'triangle',.052]]:throwing?[['tone',80,28,.23,'sine',.13],['noise',.13,1050,.07]]:[['tone',heavy?f*.7:f,heavy?35:55,heavy?.18:.095,zone==='head'?'triangle':'sine',heavy?.12:.085],['noise',heavy?.095:.055,zone==='head'?4200:zone==='leg'?1500:2300,heavy?.08:.055]];
   if(!guard&&!parry&&!throwing&&heavy)plan.push(['tone',f*1.8,f*.8,.07,'triangle',.025,.008]);
   if(!guard&&!parry&&m.category!=='normal'&&!multi)plan.push(['noise',.08,3200,.018,.012]);
-  return {type:tier,strength:level*(context.punish?1.15:context.counter?1.07:1),pan:clamp((x-720)/900,-.65,.65),plan,zone,multi};
+  const contact=context.response,style=contact?.style||'neutral',part=contact?.part||m.contactPart||'',foot=/foot|leg|shin|kick/.test(part);
+  // Character timbres share the same contact trigger and bounded voice pool.
+  // Defensive sounds retain their recognisable common cue across the roster.
+  if(!guard&&!parry&&!throwing){
+   const tint={rooted:[.88,1700],pursuit:[1.06,3100],alternating:[foot?.9:1.1,2800],spiral:[1.14,3600],boxing:[.78,1900],'single-leg':[1.2,4100],'fan-dance':[1.3,4700],'low-claw':[.76,1200]}[style];
+   if(tint){for(const layer of plan){if(layer[0]==='tone'){layer[1]*=tint[0];layer[2]*=tint[0];}else if(layer[0]==='noise')layer[2]=tint[1];}
+    if(heavy&&!multi&&style==='boxing')plan.push(['tone',75,32,.09,'triangle',.024,.014]);
+    if(!multi&&style==='fan-dance')plan.push(['noise',.035,5600,.014,.009]);
+   }
+  }
+  return {type:tier,strength:level*(context.punish?1.15:context.counter?1.07:1),pan:clamp((x-720)/900,-.65,.65),plan,zone,multi,style,part};
  }
  function commit(G,a,d,m,type,damage,context,play){if(!active())return;context=context||{};const z=d._inkReaction?.zone||zone(d,m,type,context.point),x=context.point?.[0]??d.x,q=audio(m,type,z,context,x);play(q.type,q.strength,q);
-  events.push({tick:G.tick,actorTick:d._inkVisualClock||0,zone:z,type,tier:q.type,pan:q.pan,multi:q.multi,damage,move:m.id});if(events.length>32)events.shift();
+  events.push({tick:G.tick,actorTick:d._inkVisualClock||0,zone:z,type,tier:q.type,pan:q.pan,multi:q.multi,style:q.style,part:q.part,damage,move:m.id});if(events.length>32)events.shift();
  }
  INK.StrikeFeel={settings,active,zone,response,audio,commit,clear:()=>{events=[];},inspect:()=>events.map(e=>({...e}))};
 })();

@@ -1,17 +1,19 @@
 {
-  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
   "rows": [
     {
       "name": "sLP commits a real contact and matching sound tier",
       "passed": true,
       "details": {
-        "tick": 9,
+        "tick": 8,
         "actorTick": 4,
         "zone": "body",
         "type": "hit",
         "tier": "hit",
         "pan": 0.031977104283415526,
         "multi": false,
+        "style": "rooted",
+        "part": "fist",
         "damage": 280,
         "move": "sLP"
       }
@@ -20,13 +22,15 @@
       "name": "sHP commits a real contact and matching sound tier",
       "passed": true,
       "details": {
-        "tick": 19,
+        "tick": 18,
         "actorTick": 10,
         "zone": "body",
         "type": "hit",
         "tier": "heavy",
         "pan": 0.007456502277843305,
         "multi": false,
+        "style": "rooted",
+        "part": "fist",
         "damage": 820,
         "move": "sHP"
       }
@@ -35,13 +39,15 @@
       "name": "cMK commits a real contact and matching sound tier",
       "passed": true,
       "details": {
-        "tick": 27,
+        "tick": 26,
         "actorTick": 8,
         "zone": "leg",
         "type": "hit",
         "tier": "hit",
         "pan": 0.04158379632041387,
         "multi": false,
+        "style": "rooted",
+        "part": "foot",
         "damage": 520,
         "move": "cMK"
       }

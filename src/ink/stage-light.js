@@ -11,7 +11,8 @@
  function sources(G,alpha=1){
   const t=time(G,alpha),out=[];
   for(const s of G.shots||[]){if(s.life<=0)continue;const p=s._inkPrevious,u=G.paused||G.hitstop||INK.VFX.frozen?1:clamp(alpha);out.push({x:p?p.x+(s.x-p.x)*u:s.x,y:p?p.y+(s.y-p.y)*u:s.y,color:s.owner.ch.color,power:(s.m.super?1.3:.6)*INK.ProjectileFlow.damageScale(s),radius:s.m.super?310:210});}
-  for(const e of INK.Kinetic.inspect().events){const age=t-e.birth;if(age<0||age>e.life||e.type==='landing')continue;out.push({x:e.x,y:e.y,color:e.color,power:e.energy*(1-age/e.life)**2,radius:240});}
+  const contacts=INK.Kinetic.visibleContacts(G,alpha);
+  for(const e of contacts){const age=t-e.birth;if(age<0||age>e.life||e.type==='landing')continue;const echo=contacts.some(q=>q.defender===e.defender&&q.id>e.id)? .28:1;out.push({x:e.x,y:e.y,color:e.color,power:e.energy*(1-age/e.life)**2*echo,radius:e.contact?.finish?260:220});}
   for(const e of INK.ProjectileFlow.inspect()){const age=t-e.time;if(age<0||age>20)continue;out.push({x:e.x,y:e.y,color:e.color,power:.8*(1-age/20)**2,radius:250});}
   for(const f of globalThis.SVG_FIGHTER?.fighters||[]){const a=f.attack;if(a&&a.t<a.m.startup&&(a.m.kind.includes('projectile')||a.m.super))out.push({x:f.x+f.dir*75,y:665+f.y-250,color:f.ch.color,power:.4*a.t/a.m.startup,radius:170});}
   return out.sort((a,b)=>b.power-a.power).slice(0,6);

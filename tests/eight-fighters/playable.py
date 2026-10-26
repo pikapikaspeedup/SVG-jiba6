@@ -1,0 +1,18 @@
+"""Short production combat and final-pose checks for eight character styles."""
+from pathlib import Path
+import os,json,hashlib
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[2];O=R/'qa/eight-fighters';O.mkdir(parents=True,exist_ok=True);html=(R/'dist/INK-Street-Fighter-6.html').read_bytes()
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path=os.environ['INK_CHROMIUM'],headless=True);p=b.new_page(viewport={'width':1440,'height':1000});errors=[];p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(html.decode());p.wait_for_function('window.INKDuel?.ready');p.locator('.kinetic-launch button').click();p.evaluate('SVG_FIGHTER.state.paused=true')
+ rows=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state,B=INK.BodySupport,C=INK.ContactResponse,out=[],check=(name,passed,details)=>out.push({name,passed,details});
+ function setup(id,distance=180){A.start(id,'ryu','training','classic',1);G.paused=true;document.getElementById('dummy').value='idle';document.getElementById('autohp').checked=false;A.teleport(0,400);A.teleport(1,400+distance);A.step();return A.fighters[0];}
+ function strike(id,enabled=true,move='sHP'){setup(id);C.settings.enabled=enabled;A.inputMove(0,move);for(let i=0;i<110;i++){A.step();if(G.lastCombatEvent?.attacker===0)break;}const d=A.fighters[1];return {hp:d.hp,push:d.push,stun:d.stateT,contact:C.inspect(d),type:G.lastCombatEvent?.type};}
+ for(const id of INK.Schema.CHARACTERS){const old=strike(id,false),now=strike(id,true);check(id+' actual normal keeps damage and stun with bounded contact push',now.hp<10000&&old.hp===now.hp&&old.stun===now.stun&&now.contact?.affectsPush===true&&now.contact.style===C.profiles[id].style&&Math.abs(now.push-old.push*now.contact.hitScale)<1e-7,{old,now});let f=setup(id,800);A.press(0,'right');A.step(16);A.release(0,'right');A.step();const q=B.inspect(f);check(id+' owns style and bounded braking anchors',q?.enabled&&q.style===C.profiles[id].style&&q.brake>0&&Object.values(q.contacts).every(c=>c.anchor.every(Number.isFinite)),q);const snapshot=JSON.stringify([f.x,f.y,f.hp,q]);for(let i=0;i<10;i++)A.renderFraction(i%3/2);check(id+' rendering does not mutate body support or combat',snapshot===JSON.stringify([f.x,f.y,f.hp,B.inspect(f)]));setup(id,800);A.inputMove(0,'sHP');A.step(5);f=A.fighters[0];const on=A.visualPose(f);B.settings.enabled=false;const off=A.visualPose(f);B.settings.enabled=true;check(id+' strike uses character torso language',Math.abs((on.chestYaw||0)-(off.chestYaw||0))+Math.abs((on.pelvis||0)-(off.pelvis||0))+Math.abs((on.lean||0)-(off.lean||0))>.1);const sweep=strike(id,true,'cHK');check(id+' knockdown is presentation only',sweep.hp<10000&&sweep.contact?.affectsPush===false,sweep);}
+ const j=setup('juri',800);A.step(20);const support=B.inspect(j);check('Juri lifted guard leg remains unloaded',support.contacts.front.weight<.01&&support.contacts.rear.weight>.99,support);C.settings.enabled=true;return out;}''')
+ for char in ['ken','chun','luke','juri','mai','iori']:
+  p.evaluate("""id=>{const A=SVG_FIGHTER;A.start(id,'ryu','training','classic',1);A.state.paused=true;document.getElementById('dummy').value='idle';A.teleport(0,500);A.teleport(1,1050);A.step();A.inputMove(0,'sHP');A.step(7);A.renderFraction(1);}""",char)
+  p.locator('#game').screenshot(path=str(O/(char+'.png')))
+ b.close()
+for r in rows:print('PASS' if r['passed'] else 'FAIL',r['name'])
+(O/'playable.json').write_text(json.dumps({'htmlSha256':hashlib.sha256(html).hexdigest(),'rows':rows,'errors':errors},indent=2)+'\n');print(errors);assert all(r['passed'] for r in rows) and not errors

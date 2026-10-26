@@ -1,0 +1,1404 @@
+{
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
+  "rows": [
+    {
+      "name": "ryu actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9180,
+          "push": 2.75,
+          "stun": 29,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9180,
+          "push": 2.8431279359999992,
+          "stun": 29,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "ryu",
+            "style": "rooted",
+            "material": "ki",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "ryu",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              566.710852050059,
+              427.9805673099986
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 150,
+            "dFar": 250,
+            "extension": 0.3,
+            "quality": 0.91792,
+            "closing": 0,
+            "turn": -0.02859768873704272,
+            "hitScale": 1.0338647039999997,
+            "blockScale": 1.00338048,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "ryu owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "rooted",
+        "mode": "brake",
+        "phase": 0.3935483870967684,
+        "velocity": 0,
+        "drive": 0.59983073340555,
+        "brake": 0.9999999999999957,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              381.78057635887757,
+              648.2046811438322
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              598.8269242643765,
+              648.2046811438322
+            ],
+            "weight": 0.35
+          }
+        }
+      }
+    },
+    {
+      "name": "ryu rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "ryu",
+          "style": "rooted",
+          "material": "ki",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "ryu",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            607.2772727902295,
+            618.0202017489199
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7456378589770812,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "ken actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9280,
+          "push": 2.75,
+          "stun": 27,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9280,
+          "push": 2.7855643127572014,
+          "stun": 27,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "ken",
+            "style": "pursuit",
+            "material": "heat",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "ken",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              556.9405576232439,
+              387.45679490789735
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 140,
+            "dFar": 230,
+            "extension": 0.4444444444444444,
+            "quality": 0.8415363511659808,
+            "closing": 0,
+            "turn": -0.19369453926412195,
+            "hitScale": 1.0129324773662551,
+            "blockScale": 0.9899812345679011,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "ken owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "pursuit",
+        "mode": "brake",
+        "phase": 0.33333333333333326,
+        "velocity": 0,
+        "drive": 0.5998307334055526,
+        "brake": 1,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              372.3404774710751,
+              648.0753897585851
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              591.1271036534794,
+              648.0753897585851
+            ],
+            "weight": 0.35
+          }
+        }
+      }
+    },
+    {
+      "name": "ken rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "ken",
+          "style": "pursuit",
+          "material": "heat",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "ken",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            603.5743353328351,
+            615.623331848109
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7358728334552591,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "chun actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9270,
+          "push": 2.75,
+          "stun": 28,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9270,
+          "push": 2.688048,
+          "stun": 28,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "chun",
+            "style": "alternating",
+            "material": "silk",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "chun",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              552.9586030917008,
+              397.0822387183134
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 135,
+            "dFar": 225,
+            "extension": 0.5,
+            "quality": 0.81,
+            "closing": 0,
+            "turn": -0.15447976818464904,
+            "hitScale": 0.977472,
+            "blockScale": 0.97104,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "chun owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "alternating",
+        "mode": "brake",
+        "phase": 0.6827586206896614,
+        "velocity": 0,
+        "drive": 0.5998307334055548,
+        "brake": 1.0000000000000038,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              403.7170005325509,
+              649
+            ],
+            "weight": 0.35
+          },
+          "front": {
+            "anchor": [
+              579.100799353716,
+              649
+            ],
+            "weight": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "chun rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "chun",
+          "style": "alternating",
+          "material": "silk",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "chun",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            604.1267526353108,
+            621.0110386184822
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7578227499271497,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "cammy actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9300,
+          "push": 2.75,
+          "stun": 27,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9300,
+          "push": 2.7324000000000006,
+          "stun": 27,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "cammy",
+            "style": "spiral",
+            "material": "air",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "cammy",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              555.4003640931614,
+              428.6943154476055
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 180,
+            "dFar": 305,
+            "extension": 0,
+            "quality": 1,
+            "closing": 0,
+            "turn": -0.0256898259541998,
+            "hitScale": 0.9936000000000001,
+            "blockScale": 0.9864,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "cammy owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "spiral",
+        "mode": "brake",
+        "phase": 0.39487179487179724,
+        "velocity": 0,
+        "drive": 0.5998307334055537,
+        "brake": 1.0000000000000018,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              427.70898642676065,
+              649.6400000000001
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              625.2290160054556,
+              649.6400000000001
+            ],
+            "weight": 0.35
+          }
+        }
+      }
+    },
+    {
+      "name": "cammy rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "cammy",
+          "style": "spiral",
+          "material": "air",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "cammy",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            599.0630055195429,
+            622.0827760953549
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7621890877958905,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "luke actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9090,
+          "push": 2.75,
+          "stun": 31,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9090,
+          "push": 2.904,
+          "stun": 31,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "luke",
+            "style": "boxing",
+            "material": "shock",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "luke",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              584.3046687074504,
+              407.27672654594477
+            ],
+            "normal": [
+              -1,
+              0
+            ],
+            "normalGeom": [
+              -1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 195,
+            "dFar": 325,
+            "extension": 0,
+            "quality": 1,
+            "closing": 0,
+            "turn": -0.11294666962763243,
+            "hitScale": 1.056,
+            "blockScale": 1.0176,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "luke owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "boxing",
+        "mode": "brake",
+        "phase": 0.7185185185185219,
+        "velocity": 0,
+        "drive": 0.5998307334055538,
+        "brake": 1.000000000000002,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              384.56445098355493,
+              647.3499428862478
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              614.3190672305465,
+              647.3499428862478
+            ],
+            "weight": 0.7
+          }
+        }
+      }
+    },
+    {
+      "name": "luke rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "luke",
+          "style": "boxing",
+          "material": "shock",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "luke",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            608.9275060851855,
+            618.3191915725741
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.746855965666043,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "juri actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9280,
+          "push": 2.75,
+          "stun": 28,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9280,
+          "push": 2.7984,
+          "stun": 28,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "juri",
+            "style": "single-leg",
+            "material": "violet",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "juri",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              552.451069856397,
+              437.3115018694765
+            ],
+            "normal": [
+              1,
+              0
+            ],
+            "normalGeom": [
+              1,
+              0
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 180,
+            "dFar": 300,
+            "extension": 0,
+            "quality": 1,
+            "closing": 0,
+            "turn": 0.009417229838607969,
+            "hitScale": 1.0176,
+            "blockScale": 0.9984,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "solid"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "juri owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "single-leg",
+        "mode": "brake",
+        "phase": 0.3894736842105311,
+        "velocity": 0,
+        "drive": 0.5998307334055548,
+        "brake": 1.0000000000000036,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              425.60489314380675,
+              649.16
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              604.6752779780976,
+              649.16
+            ],
+            "weight": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "juri rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "juri",
+          "style": "single-leg",
+          "material": "violet",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "juri",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            598.5642775861896,
+            616.9952151990248
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7414619878478786,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "mai actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9200,
+          "push": 2.75,
+          "stun": 30,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9200,
+          "push": 2.677488,
+          "stun": 30,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "mai",
+            "style": "fan-dance",
+            "material": "ember",
+            "defenderStyle": "rooted",
+            "part": "fan",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "mai",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              591.4677987412599,
+              455.06025293609287
+            ],
+            "normal": [
+              0,
+              -1
+            ],
+            "normalGeom": [
+              0,
+              -1
+            ],
+            "hitPart": "fan",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 215,
+            "dFar": 360,
+            "extension": 0,
+            "quality": 0.86,
+            "closing": 0,
+            "turn": -0.3682730435936957,
+            "hitScale": 0.9736319999999999,
+            "blockScale": 0.97104,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "oblique"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "mai owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "fan-dance",
+        "mode": "brake",
+        "phase": 0.4941176470588289,
+        "velocity": 0,
+        "drive": 0.5998307334055548,
+        "brake": 1.0000000000000036,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              393.8826969931052,
+              649.16
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              582.8264412297904,
+              649.16
+            ],
+            "weight": 0.35
+          }
+        }
+      }
+    },
+    {
+      "name": "mai rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "mai",
+          "style": "fan-dance",
+          "material": "ember",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "mai",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            600.6406032014572,
+            619.1319913720604
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7501673722565424,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "iori actual normal keeps damage and stun with bounded contact push",
+      "passed": true,
+      "details": {
+        "old": {
+          "hp": 9150,
+          "push": 2.75,
+          "stun": 30,
+          "contact": null,
+          "type": "hit"
+        },
+        "now": {
+          "hp": 9150,
+          "push": 2.7830879999999993,
+          "stun": 30,
+          "contact": {
+            "version": 3,
+            "affectsPush": true,
+            "character": "iori",
+            "style": "low-claw",
+            "material": "dark-flame",
+            "defenderStyle": "rooted",
+            "part": "fist",
+            "tier": "heavy",
+            "multi": false,
+            "finish": true,
+            "hitIndex": 0,
+            "projectile": false,
+            "throwing": false,
+            "airborne": false,
+            "attacker": "iori",
+            "defender": "ryu",
+            "direction": 1,
+            "responseDir": [
+              1,
+              0
+            ],
+            "point": [
+              573.2992220274546,
+              479.9280869596132
+            ],
+            "normal": [
+              0,
+              -1
+            ],
+            "normalGeom": [
+              0,
+              -1
+            ],
+            "hitPart": "fist",
+            "hurtPart": "torso",
+            "zone": "body",
+            "distance": 180,
+            "dNear": 195,
+            "dFar": 325,
+            "extension": 0,
+            "quality": 0.86,
+            "closing": 0,
+            "turn": -0.26695964572009434,
+            "hitScale": 1.0120319999999998,
+            "blockScale": 0.99024,
+            "compression": 1.12,
+            "twist": 0.82,
+            "step": 0.85,
+            "kind": "oblique"
+          },
+          "type": "hit"
+        }
+      }
+    },
+    {
+      "name": "iori owns style and bounded braking anchors",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "low-claw",
+        "mode": "brake",
+        "phase": 0.3371428571428623,
+        "velocity": 0,
+        "drive": 0.599830733405555,
+        "brake": 1.000000000000004,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              359.2089027184767,
+              647.5590432539537
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              611.1451285054912,
+              647.5590432539537
+            ],
+            "weight": 0.35
+          }
+        }
+      }
+    },
+    {
+      "name": "iori rendering does not mutate body support or combat",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori strike uses character torso language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori knockdown is presentation only",
+      "passed": true,
+      "details": {
+        "hp": 9260,
+        "push": 2.75,
+        "stun": 0,
+        "contact": {
+          "version": 3,
+          "affectsPush": false,
+          "character": "iori",
+          "style": "low-claw",
+          "material": "dark-flame",
+          "defenderStyle": "rooted",
+          "part": "foot",
+          "tier": "heavy",
+          "multi": false,
+          "finish": true,
+          "hitIndex": 0,
+          "projectile": false,
+          "throwing": false,
+          "airborne": false,
+          "attacker": "iori",
+          "defender": "ryu",
+          "direction": 1,
+          "responseDir": [
+            1,
+            0
+          ],
+          "point": [
+            613.6401434471255,
+            617.0773593319426
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "normalGeom": [
+            1,
+            0
+          ],
+          "hitPart": "foot",
+          "hurtPart": "rear-leg",
+          "zone": "leg",
+          "distance": 180,
+          "dNear": null,
+          "dFar": null,
+          "extension": 0,
+          "quality": 0.9,
+          "closing": 0,
+          "turn": 0.7417966491301367,
+          "hitScale": 1,
+          "blockScale": 1,
+          "compression": 1.12,
+          "twist": 0.82,
+          "step": 0.85,
+          "kind": "presentation"
+        },
+        "type": "hit"
+      }
+    },
+    {
+      "name": "Juri lifted guard leg remains unloaded",
+      "passed": true,
+      "details": {
+        "enabled": true,
+        "style": "single-leg",
+        "mode": "stand",
+        "phase": 0,
+        "velocity": 0,
+        "drive": 0,
+        "brake": 0,
+        "turn": 0,
+        "contacts": {
+          "rear": {
+            "anchor": [
+              323.77000000000004,
+              649.16
+            ],
+            "weight": 1
+          },
+          "front": {
+            "anchor": [
+              467.3199999999999,
+              649.16
+            ],
+            "weight": 0
+          }
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,5 +1,5 @@
 {
-  "htmlSha256": "278dc86cab14e9e7da67a90a0e29ba54c362f63e4eb26f8d0e58514ed3d9a948",
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
   "rows": [
     {
       "name": "ryu final solved support foot reduces planted horizontal drift",
@@ -15,6 +15,7 @@
       "passed": true,
       "details": {
         "enabled": true,
+        "style": "rooted",
         "mode": "brake",
         "phase": 0.8322580645161128,
         "velocity": 0,
@@ -58,6 +59,7 @@
       "passed": true,
       "details": {
         "enabled": true,
+        "style": "spiral",
         "mode": "brake",
         "phase": 0.8358974358974334,
         "velocity": 0,
@@ -108,6 +110,7 @@
       "passed": true,
       "details": {
         "enabled": true,
+        "style": "rooted",
         "mode": "step",
         "phase": 0.7629677419354807,
         "velocity": -4.103999999999985,
@@ -163,7 +166,42 @@
       "details": null
     },
     {
-      "name": "Other characters retain their existing movement presentation",
+      "name": "ryu has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai has independent active body language",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori has independent active body language",
       "passed": true,
       "details": null
     },
@@ -172,6 +210,7 @@
       "passed": true,
       "details": {
         "enabled": true,
+        "style": "spiral",
         "mode": "absorb",
         "phase": 0,
         "velocity": 0,

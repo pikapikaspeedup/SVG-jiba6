@@ -1,0 +1,906 @@
+{
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
+  "rows": [
+    {
+      "name": "normal actual contact unifies body FX and audio",
+      "passed": true,
+      "details": {
+        "character": "luke",
+        "move": "sHP",
+        "events": [
+          {
+            "id": 1,
+            "contact": {
+              "version": 3,
+              "affectsPush": true,
+              "character": "luke",
+              "style": "boxing",
+              "material": "shock",
+              "defenderStyle": "rooted",
+              "part": "fist",
+              "tier": "heavy",
+              "multi": false,
+              "finish": true,
+              "hitIndex": 0,
+              "projectile": false,
+              "throwing": false,
+              "airborne": false,
+              "attacker": "luke",
+              "defender": "ryu",
+              "direction": 1,
+              "responseDir": [
+                1,
+                0
+              ],
+              "point": [
+                634.3046687074504,
+                407.27672654594477
+              ],
+              "normal": [
+                -1,
+                0
+              ],
+              "normalGeom": [
+                -1,
+                0
+              ],
+              "hitPart": "fist",
+              "hurtPart": "torso",
+              "zone": "body",
+              "distance": 180,
+              "dNear": 195,
+              "dFar": 325,
+              "extension": 0,
+              "quality": 1,
+              "closing": 0,
+              "turn": -0.11294666962763243,
+              "hitScale": 1.056,
+              "blockScale": 1.0176,
+              "compression": 1.12,
+              "twist": 0.82,
+              "step": 0.85,
+              "kind": "solid"
+            },
+            "point": [
+              634.3046687074504,
+              407.27672654594477
+            ],
+            "fx": {
+              "response": {
+                "version": 3,
+                "affectsPush": true,
+                "character": "luke",
+                "style": "boxing",
+                "material": "shock",
+                "defenderStyle": "rooted",
+                "part": "fist",
+                "tier": "heavy",
+                "multi": false,
+                "finish": true,
+                "hitIndex": 0,
+                "projectile": false,
+                "throwing": false,
+                "airborne": false,
+                "attacker": "luke",
+                "defender": "ryu",
+                "direction": 1,
+                "responseDir": [
+                  1,
+                  0
+                ],
+                "point": [
+                  634.3046687074504,
+                  407.27672654594477
+                ],
+                "normal": [
+                  -1,
+                  0
+                ],
+                "normalGeom": [
+                  -1,
+                  0
+                ],
+                "hitPart": "fist",
+                "hurtPart": "torso",
+                "zone": "body",
+                "distance": 180,
+                "dNear": 195,
+                "dFar": 325,
+                "extension": 0,
+                "quality": 1,
+                "closing": 0,
+                "turn": -0.11294666962763243,
+                "hitScale": 1.056,
+                "blockScale": 1.0176,
+                "compression": 1.12,
+                "twist": 0.82,
+                "step": 0.85,
+                "kind": "solid"
+              },
+              "multi": false
+            },
+            "audio": {
+              "tick": 194,
+              "actorTick": 13,
+              "zone": "body",
+              "type": "hit",
+              "tier": "heavy",
+              "pan": -0.0952170347694995,
+              "multi": false,
+              "style": "boxing",
+              "part": "fist",
+              "damage": 910,
+              "move": "sHP"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "normal visual composition and event histories stay bounded",
+      "passed": true,
+      "details": {
+        "maxPerBody": 1,
+        "maxVisible": 1,
+        "counts": {
+          "kinetic": 1,
+          "fx": 1,
+          "audio": 1
+        }
+      }
+    },
+    {
+      "name": "special actual contact unifies body FX and audio",
+      "passed": true,
+      "details": {
+        "character": "mai",
+        "move": "shinobibachi_0",
+        "events": [
+          {
+            "id": 1,
+            "contact": {
+              "version": 3,
+              "affectsPush": false,
+              "character": "mai",
+              "style": "fan-dance",
+              "material": "ember",
+              "defenderStyle": "rooted",
+              "part": "elbow",
+              "tier": "light",
+              "multi": false,
+              "finish": true,
+              "hitIndex": 0,
+              "projectile": false,
+              "throwing": false,
+              "airborne": false,
+              "attacker": "mai",
+              "defender": "ryu",
+              "direction": 1,
+              "responseDir": [
+                1,
+                0
+              ],
+              "point": [
+                624.0421750677426,
+                439.9863594100108
+              ],
+              "normal": [
+                1,
+                0
+              ],
+              "normalGeom": [
+                1,
+                0
+              ],
+              "hitPart": "elbow",
+              "hurtPart": "torso",
+              "zone": "body",
+              "distance": 135,
+              "dNear": null,
+              "dFar": null,
+              "extension": 0,
+              "quality": 0.9,
+              "closing": 0,
+              "turn": 0.020314797596340205,
+              "hitScale": 1,
+              "blockScale": 1,
+              "compression": 1.12,
+              "twist": 0.82,
+              "step": 0.85,
+              "kind": "presentation"
+            },
+            "point": [
+              624.0421750677426,
+              439.9863594100108
+            ],
+            "fx": {
+              "response": {
+                "version": 3,
+                "affectsPush": false,
+                "character": "mai",
+                "style": "fan-dance",
+                "material": "ember",
+                "defenderStyle": "rooted",
+                "part": "elbow",
+                "tier": "light",
+                "multi": false,
+                "finish": true,
+                "hitIndex": 0,
+                "projectile": false,
+                "throwing": false,
+                "airborne": false,
+                "attacker": "mai",
+                "defender": "ryu",
+                "direction": 1,
+                "responseDir": [
+                  1,
+                  0
+                ],
+                "point": [
+                  624.0421750677426,
+                  439.9863594100108
+                ],
+                "normal": [
+                  1,
+                  0
+                ],
+                "normalGeom": [
+                  1,
+                  0
+                ],
+                "hitPart": "elbow",
+                "hurtPart": "torso",
+                "zone": "body",
+                "distance": 135,
+                "dNear": null,
+                "dFar": null,
+                "extension": 0,
+                "quality": 0.9,
+                "closing": 0,
+                "turn": 0.020314797596340205,
+                "hitScale": 1,
+                "blockScale": 1,
+                "compression": 1.12,
+                "twist": 0.82,
+                "step": 0.85,
+                "kind": "presentation"
+              },
+              "multi": false
+            },
+            "audio": {
+              "tick": 560,
+              "actorTick": 17,
+              "zone": "body",
+              "type": "hit",
+              "tier": "hit",
+              "pan": -0.10661980548028598,
+              "multi": false,
+              "style": "fan-dance",
+              "part": "elbow",
+              "damage": 820,
+              "move": "shinobibachi_0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "special leaves authored push damage and trajectories unchanged",
+      "passed": true,
+      "details": {
+        "contacts": 1
+      }
+    },
+    {
+      "name": "special visual composition and event histories stay bounded",
+      "passed": true,
+      "details": {
+        "maxPerBody": 1,
+        "maxVisible": 1,
+        "counts": {
+          "kinetic": 2,
+          "fx": 1,
+          "audio": 1
+        }
+      }
+    },
+    {
+      "name": "projectile actual contact unifies body FX and audio",
+      "passed": true,
+      "details": {
+        "character": "ryu",
+        "move": "hadoken_0",
+        "events": [
+          {
+            "id": 1,
+            "contact": {
+              "version": 3,
+              "affectsPush": false,
+              "character": "ryu",
+              "style": "rooted",
+              "material": "ki",
+              "defenderStyle": "rooted",
+              "part": "projectile",
+              "tier": "light",
+              "multi": false,
+              "finish": true,
+              "hitIndex": 0,
+              "projectile": true,
+              "throwing": false,
+              "airborne": false,
+              "attacker": "ryu",
+              "defender": "ryu",
+              "direction": 1,
+              "responseDir": [
+                1,
+                0
+              ],
+              "point": [
+                703.4774982879545,
+                425.76218853038966
+              ],
+              "normal": [
+                1,
+                0
+              ],
+              "normalGeom": [
+                1,
+                0
+              ],
+              "hitPart": null,
+              "hurtPart": null,
+              "zone": "body",
+              "distance": 420,
+              "dNear": null,
+              "dFar": null,
+              "extension": 0,
+              "quality": 0.9,
+              "closing": 0,
+              "turn": -0.037635528209523594,
+              "hitScale": 1,
+              "blockScale": 1,
+              "compression": 1.12,
+              "twist": 0.82,
+              "step": 0.85,
+              "kind": "presentation"
+            },
+            "point": [
+              703.4774982879545,
+              425.76218853038966
+            ],
+            "fx": {
+              "response": {
+                "version": 3,
+                "affectsPush": false,
+                "character": "ryu",
+                "style": "rooted",
+                "material": "ki",
+                "defenderStyle": "rooted",
+                "part": "projectile",
+                "tier": "light",
+                "multi": false,
+                "finish": true,
+                "hitIndex": 0,
+                "projectile": true,
+                "throwing": false,
+                "airborne": false,
+                "attacker": "ryu",
+                "defender": "ryu",
+                "direction": 1,
+                "responseDir": [
+                  1,
+                  0
+                ],
+                "point": [
+                  703.4774982879545,
+                  425.76218853038966
+                ],
+                "normal": [
+                  1,
+                  0
+                ],
+                "normalGeom": [
+                  1,
+                  0
+                ],
+                "hitPart": null,
+                "hurtPart": null,
+                "zone": "body",
+                "distance": 420,
+                "dNear": null,
+                "dFar": null,
+                "extension": 0,
+                "quality": 0.9,
+                "closing": 0,
+                "turn": -0.037635528209523594,
+                "hitScale": 1,
+                "blockScale": 1,
+                "compression": 1.12,
+                "twist": 0.82,
+                "step": 0.85,
+                "kind": "presentation"
+              },
+              "multi": false
+            },
+            "audio": {
+              "tick": 933,
+              "actorTick": 28,
+              "zone": "body",
+              "type": "hit",
+              "tier": "hit",
+              "pan": -0.01835833523560609,
+              "multi": false,
+              "style": "rooted",
+              "part": "projectile",
+              "damage": 620,
+              "move": "hadoken_0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "projectile leaves authored push damage and trajectories unchanged",
+      "passed": true,
+      "details": {
+        "contacts": 1
+      }
+    },
+    {
+      "name": "projectile visual composition and event histories stay bounded",
+      "passed": true,
+      "details": {
+        "maxPerBody": 1,
+        "maxVisible": 1,
+        "counts": {
+          "kinetic": 1,
+          "fx": 1,
+          "audio": 1
+        }
+      }
+    },
+    {
+      "name": "multi actual contact unifies body FX and audio",
+      "passed": true,
+      "details": {
+        "character": "chun",
+        "move": "legs_0",
+        "events": [
+          {
+            "id": 1,
+            "contact": {
+              "version": 3,
+              "affectsPush": false,
+              "character": "chun",
+              "style": "alternating",
+              "material": "silk",
+              "defenderStyle": "rooted",
+              "part": "foot",
+              "tier": "light",
+              "multi": true,
+              "finish": false,
+              "hitIndex": 0,
+              "projectile": false,
+              "throwing": false,
+              "airborne": false,
+              "attacker": "chun",
+              "defender": "ryu",
+              "direction": 1,
+              "responseDir": [
+                1,
+                0
+              ],
+              "point": [
+                662.7772730866143,
+                462.6843112222833
+              ],
+              "normal": [
+                -1,
+                0
+              ],
+              "normalGeom": [
+                -1,
+                0
+              ],
+              "hitPart": "foot",
+              "hurtPart": "torso",
+              "zone": "body",
+              "distance": 180,
+              "dNear": null,
+              "dFar": null,
+              "extension": 0,
+              "quality": 0.9,
+              "closing": 0,
+              "turn": 0.11278793460930246,
+              "hitScale": 1,
+              "blockScale": 1,
+              "compression": 1.12,
+              "twist": 0.82,
+              "step": 0.85,
+              "kind": "presentation"
+            },
+            "point": [
+              662.7772730866143,
+              462.6843112222833
+            ],
+            "fx": {
+              "response": {
+                "version": 3,
+                "affectsPush": false,
+                "character": "chun",
+                "style": "alternating",
+                "material": "silk",
+                "defenderStyle": "rooted",
+                "part": "foot",
+                "tier": "light",
+                "multi": true,
+                "finish": false,
+                "hitIndex": 0,
+                "projectile": false,
+                "throwing": false,
+                "airborne": false,
+                "attacker": "chun",
+                "defender": "ryu",
+                "direction": 1,
+                "responseDir": [
+                  1,
+                  0
+                ],
+                "point": [
+                  662.7772730866143,
+                  462.6843112222833
+                ],
+                "normal": [
+                  -1,
+                  0
+                ],
+                "normalGeom": [
+                  -1,
+                  0
+                ],
+                "hitPart": "foot",
+                "hurtPart": "torso",
+                "zone": "body",
+                "distance": 180,
+                "dNear": null,
+                "dFar": null,
+                "extension": 0,
+                "quality": 0.9,
+                "closing": 0,
+                "turn": 0.11278793460930246,
+                "hitScale": 1,
+                "blockScale": 1,
+                "compression": 1.12,
+                "twist": 0.82,
+                "step": 0.85,
+                "kind": "presentation"
+              },
+              "multi": true
+            },
+            "audio": {
+              "tick": 1276,
+              "actorTick": 9,
+              "zone": "body",
+              "type": "hit",
+              "tier": "hit",
+              "pan": -0.06358080768153967,
+              "multi": true,
+              "style": "alternating",
+              "part": "foot",
+              "damage": 325,
+              "move": "legs_0"
+            }
+          },
+          {
+            "id": 2,
+            "contact": {
+              "version": 3,
+              "affectsPush": false,
+              "character": "chun",
+              "style": "alternating",
+              "material": "silk",
+              "defenderStyle": "rooted",
+              "part": "foot",
+              "tier": "light",
+              "multi": false,
+              "finish": true,
+              "hitIndex": 1,
+              "projectile": false,
+              "throwing": false,
+              "airborne": false,
+              "attacker": "chun",
+              "defender": "ryu",
+              "direction": 1,
+              "responseDir": [
+                1,
+                0
+              ],
+              "point": [
+                643.287624170058,
+                491.5807563279929
+              ],
+              "normal": [
+                0,
+                -1
+              ],
+              "normalGeom": [
+                0,
+                -1
+              ],
+              "hitPart": "foot",
+              "hurtPart": "torso",
+              "zone": "body",
+              "distance": 189.38393161790407,
+              "dNear": null,
+              "dFar": null,
+              "extension": 0,
+              "quality": 0.9,
+              "closing": 0,
+              "turn": -0.2194858075526215,
+              "hitScale": 1,
+              "blockScale": 1,
+              "compression": 1.12,
+              "twist": 0.82,
+              "step": 0.85,
+              "kind": "presentation"
+            },
+            "point": [
+              643.287624170058,
+              491.5807563279929
+            ],
+            "fx": {
+              "response": {
+                "version": 3,
+                "affectsPush": false,
+                "character": "chun",
+                "style": "alternating",
+                "material": "silk",
+                "defenderStyle": "rooted",
+                "part": "foot",
+                "tier": "light",
+                "multi": false,
+                "finish": true,
+                "hitIndex": 1,
+                "projectile": false,
+                "throwing": false,
+                "airborne": false,
+                "attacker": "chun",
+                "defender": "ryu",
+                "direction": 1,
+                "responseDir": [
+                  1,
+                  0
+                ],
+                "point": [
+                  643.287624170058,
+                  491.5807563279929
+                ],
+                "normal": [
+                  0,
+                  -1
+                ],
+                "normalGeom": [
+                  0,
+                  -1
+                ],
+                "hitPart": "foot",
+                "hurtPart": "torso",
+                "zone": "body",
+                "distance": 189.38393161790407,
+                "dNear": null,
+                "dFar": null,
+                "extension": 0,
+                "quality": 0.9,
+                "closing": 0,
+                "turn": -0.2194858075526215,
+                "hitScale": 1,
+                "blockScale": 1,
+                "compression": 1.12,
+                "twist": 0.82,
+                "step": 0.85,
+                "kind": "presentation"
+              },
+              "multi": false
+            },
+            "audio": {
+              "tick": 1285,
+              "actorTick": 16,
+              "zone": "body",
+              "type": "hit",
+              "tier": "hit",
+              "pan": -0.08523597314437995,
+              "multi": false,
+              "style": "alternating",
+              "part": "foot",
+              "damage": 297,
+              "move": "legs_0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "multi leaves authored push damage and trajectories unchanged",
+      "passed": true,
+      "details": {
+        "contacts": 2
+      }
+    },
+    {
+      "name": "multi visual composition and event histories stay bounded",
+      "passed": true,
+      "details": {
+        "maxPerBody": 2,
+        "maxVisible": 2,
+        "counts": {
+          "kinetic": 2,
+          "fx": 2,
+          "audio": 2
+        }
+      }
+    },
+    {
+      "name": "multi makes multiple actual contacts with intermediate presentation",
+      "passed": true,
+      "details": {
+        "contacts": 2
+      }
+    },
+    {
+      "name": "throw actual contact unifies body FX and audio",
+      "passed": true,
+      "details": {
+        "character": "iori",
+        "move": "throw",
+        "events": [
+          {
+            "id": 1,
+            "contact": {
+              "version": 3,
+              "affectsPush": false,
+              "character": "iori",
+              "style": "low-claw",
+              "material": "dark-flame",
+              "defenderStyle": "rooted",
+              "part": "grip",
+              "tier": "light",
+              "multi": false,
+              "finish": true,
+              "hitIndex": 0,
+              "projectile": false,
+              "throwing": true,
+              "airborne": false,
+              "attacker": "iori",
+              "defender": "ryu",
+              "direction": 1,
+              "responseDir": [
+                1,
+                0
+              ],
+              "point": [
+                590.4704050610598,
+                625
+              ],
+              "normal": [
+                1,
+                0
+              ],
+              "normalGeom": [
+                1,
+                0
+              ],
+              "hitPart": null,
+              "hurtPart": null,
+              "zone": "body",
+              "distance": 149.97040506105975,
+              "dNear": null,
+              "dFar": null,
+              "extension": 0,
+              "quality": 0.9,
+              "closing": 0,
+              "turn": 0.7740740740740741,
+              "hitScale": 1,
+              "blockScale": 1,
+              "compression": 1.12,
+              "twist": 0.82,
+              "step": 0.85,
+              "kind": "presentation"
+            },
+            "point": [
+              590.4704050610598,
+              625
+            ],
+            "fx": {
+              "response": {
+                "version": 3,
+                "affectsPush": false,
+                "character": "iori",
+                "style": "low-claw",
+                "material": "dark-flame",
+                "defenderStyle": "rooted",
+                "part": "grip",
+                "tier": "light",
+                "multi": false,
+                "finish": true,
+                "hitIndex": 0,
+                "projectile": false,
+                "throwing": true,
+                "airborne": false,
+                "attacker": "iori",
+                "defender": "ryu",
+                "direction": 1,
+                "responseDir": [
+                  1,
+                  0
+                ],
+                "point": [
+                  590.4704050610598,
+                  625
+                ],
+                "normal": [
+                  1,
+                  0
+                ],
+                "normalGeom": [
+                  1,
+                  0
+                ],
+                "hitPart": null,
+                "hurtPart": null,
+                "zone": "body",
+                "distance": 149.97040506105975,
+                "dNear": null,
+                "dFar": null,
+                "extension": 0,
+                "quality": 0.9,
+                "closing": 0,
+                "turn": 0.7740740740740741,
+                "hitScale": 1,
+                "blockScale": 1,
+                "compression": 1.12,
+                "twist": 0.82,
+                "step": 0.85,
+                "kind": "presentation"
+              },
+              "multi": false
+            },
+            "audio": {
+              "tick": 1688,
+              "actorTick": 59,
+              "zone": "body",
+              "type": "throw",
+              "tier": "land",
+              "pan": -0.14392177215437804,
+              "multi": false,
+              "style": "low-claw",
+              "part": "grip",
+              "damage": 1200,
+              "move": "throw"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "throw leaves authored push damage and trajectories unchanged",
+      "passed": true,
+      "details": {
+        "contacts": 1
+      }
+    },
+    {
+      "name": "throw visual composition and event histories stay bounded",
+      "passed": true,
+      "details": {
+        "maxPerBody": 1,
+        "maxVisible": 2,
+        "counts": {
+          "kinetic": 2,
+          "fx": 1,
+          "audio": 1
+        }
+      }
+    }
+  ],
+  "errors": []
+}

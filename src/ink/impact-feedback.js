@@ -34,9 +34,9 @@
   }
   const Impact={events:[],
     classify,
-    emit(pool,{x,y,frame,G,owner,m,result,last,dir,material,reduced}){
+    emit(pool,{x,y,frame,G,owner,m,result,last,dir,response,material,reduced}){
       const kind=classify(m,result,last),seed=hash([G.tick,owner?.index,m?.id,kind].join(':'));
-      const angle=direction(owner,m,kind,dir),multi=(m?.hits||1)>1&&!last,size=kind==='finisher'?37:multi?17:kind==='kick'?30:24;
+      const angle=response?Math.atan2(response.responseDir[1],response.responseDir[0])*180/Math.PI+response.turn*20:direction(owner,m,kind,dir),multi=(m?.hits||1)>1&&!last,size=kind==='finisher'?37:multi?17:kind==='kick'?30:24;
       const add=(species,scale,rotation=angle,delay=0,life=10,opacity=.85)=>pool.add({x,y,birth:frame+delay,life,vx:0,vy:0,gravity:0,size:size*scale,angle:rotation,color:material.core,species,stretch:1,opacity,priority:4,
         sizeCurve:[[0,.75],[.22,1],[1,1.5]],opacityCurve:[[0,1],[.18,.88],[.65,.36],[1,0]]});
       if(kind==='guard')add('shield',1.1,dir===-1?180:0,0,11,.7);
@@ -51,7 +51,7 @@
           direction:dir,angle:-42,spread:140,speed:2.5,life:24,size:2.5,
           species:owner?.ch?.id==='mai'?'petal':material.species,drag:.07,priority:1});
       }
-      this.events.push({tick:G.tick,move:m?.id,kind,multi,angle,frame,delayed:!multi&&!reduced});if(this.events.length>128)this.events.shift();
+      this.events.push({tick:G.tick,move:m?.id,kind,multi,angle,frame,response:response||null,delayed:!multi&&!reduced});if(this.events.length>128)this.events.shift();
       return kind;
     },
     clear(){this.events=[];}

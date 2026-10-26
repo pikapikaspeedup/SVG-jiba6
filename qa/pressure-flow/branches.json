@@ -1,0 +1,1051 @@
+{
+  "htmlSha256": "54d38f5ec64c12f3035149665afa7ed2ec8170a8409ab07f5648724fddb27b31",
+  "rows": [
+    {
+      "name": "ryu hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sMK",
+            "name": "\u7ad9\u7acb\u4e2d\u811a",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 8,
+            "active": 4,
+            "recovery": 14,
+            "damage": 530,
+            "range": 252,
+            "height": "mid",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MK",
+            "cost": 0,
+            "cmd": "MK / I",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 26
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "ryu:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 28,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sMK"
+      }
+    },
+    {
+      "name": "ryu pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 27.999999999999773,
+        "budget": 28,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "ryu blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sLK",
+            "name": "\u7ad9\u7acb\u8f7b\u811a",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 5,
+            "active": 3,
+            "recovery": 9,
+            "damage": 320,
+            "range": 225,
+            "height": "mid",
+            "level": 1,
+            "hits": 1,
+            "knock": 10,
+            "stun": 16,
+            "blockstun": 10,
+            "cancel": true,
+            "motion": "",
+            "button": "LK",
+            "cost": 0,
+            "cmd": "LK / U",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 17
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "ryu:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 8,
+            "recoveryAdd": 4,
+            "startupFloor": 19
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 19,
+        "remaining": 15
+      }
+    },
+    {
+      "name": "ryu defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "ken hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sHP",
+            "name": "\u7ad9\u7acb\u91cd\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 10,
+            "active": 5,
+            "recovery": 21,
+            "damage": 720,
+            "range": 229,
+            "height": "mid",
+            "level": 3,
+            "hits": 1,
+            "knock": 22,
+            "stun": 27,
+            "blockstun": 15,
+            "cancel": true,
+            "motion": "",
+            "button": "HP",
+            "cost": 0,
+            "cmd": "HP / L",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u538b\u5236\u91cd\u62f3\uff1a\u786e\u8ba4\u540e\u63a5\u706b\u7130\u8ffd\u51fb\uff0c\u6325\u7a7a\u4e0d\u5b9c\u786c\u63a5\u4e0b\u4e00\u62db\u3002",
+            "total": 36,
+            "attackReachScale": 1
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "ken:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 38,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sHP"
+      }
+    },
+    {
+      "name": "ken pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 37.999999999999545,
+        "budget": 38,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "ken blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sMK",
+            "name": "\u7ad9\u7acb\u4e2d\u811a",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 8,
+            "active": 4,
+            "recovery": 14,
+            "damage": 530,
+            "range": 252,
+            "height": "mid",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MK",
+            "cost": 0,
+            "cmd": "MK / I",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 26
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "ken:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 14,
+            "recoveryAdd": 4,
+            "startupFloor": 18
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 18,
+        "remaining": 14
+      }
+    },
+    {
+      "name": "ken defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "chun hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sMP",
+            "name": "\u7ad9\u7acb\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 5,
+            "active": 3,
+            "recovery": 12,
+            "damage": 450,
+            "range": 210,
+            "height": "mid",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 21,
+            "blockstun": 13,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "MP / K",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u5feb\u638c\u786e\u8ba4\uff1a\u8f7b\u5feb\u7684\u8fd1\u8eab\u68c0\u67e5\uff0c\u547d\u4e2d\u540e\u53ef\u63a5\u84c4\u529b\u5fc5\u6740\u3002",
+            "total": 20,
+            "attackReachScale": 1.04
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "chun:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 32,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sMP"
+      }
+    },
+    {
+      "name": "chun pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 31.999999999999886,
+        "budget": 32,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "chun blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sLP",
+            "name": "\u7ad9\u7acb\u8f7b\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 4,
+            "active": 3,
+            "recovery": 9,
+            "damage": 280,
+            "range": 175,
+            "height": "mid",
+            "level": 1,
+            "hits": 1,
+            "knock": 10,
+            "stun": 16,
+            "blockstun": 10,
+            "cancel": true,
+            "motion": "",
+            "button": "LP",
+            "cost": 0,
+            "cmd": "LP / J",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 16
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "chun:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 10,
+            "recoveryAdd": 4,
+            "startupFloor": 14
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 14,
+        "remaining": 10
+      }
+    },
+    {
+      "name": "chun defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "cammy hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sHP",
+            "name": "\u7ad9\u7acb\u91cd\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 9,
+            "active": 4,
+            "recovery": 19,
+            "damage": 700,
+            "range": 215,
+            "height": "mid",
+            "level": 3,
+            "hits": 1,
+            "knock": 22,
+            "stun": 27,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "HP",
+            "cost": 0,
+            "cmd": "HP / L",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u8fd1\u8eab\u91cd\u51fb\uff1a\u5feb\u901f\u5151\u73b0\u63a5\u8fd1\u4f18\u52bf\uff0c\u77ed\u5c04\u7a0b\u5bb9\u6613\u88ab\u540e\u64a4\u8bf1\u7a7a\u3002",
+            "total": 32,
+            "attackReachScale": 0.94
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "cammy:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 44,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sHP"
+      }
+    },
+    {
+      "name": "cammy pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 44.00000000000023,
+        "budget": 44,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "cammy blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sLK",
+            "name": "\u7ad9\u7acb\u8f7b\u811a",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 5,
+            "active": 3,
+            "recovery": 9,
+            "damage": 320,
+            "range": 225,
+            "height": "mid",
+            "level": 1,
+            "hits": 1,
+            "knock": 10,
+            "stun": 16,
+            "blockstun": 10,
+            "cancel": true,
+            "motion": "",
+            "button": "LK",
+            "cost": 0,
+            "cmd": "LK / U",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 17
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "cammy:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 16,
+            "recoveryAdd": 4,
+            "startupFloor": 16
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 16,
+        "remaining": 12
+      }
+    },
+    {
+      "name": "cammy defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "luke hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sHK",
+            "name": "\u7ad9\u7acb\u91cd\u811a",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 12,
+            "active": 5,
+            "recovery": 19,
+            "damage": 740,
+            "range": 279,
+            "height": "mid",
+            "level": 3,
+            "hits": 1,
+            "knock": 22,
+            "stun": 28,
+            "blockstun": 18,
+            "cancel": true,
+            "motion": "",
+            "button": "HK",
+            "cost": 0,
+            "cmd": "HK / O",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 36
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "luke:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 24,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sHK"
+      }
+    },
+    {
+      "name": "luke pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 23.999999999999773,
+        "budget": 24,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "luke blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sLK",
+            "name": "\u7ad9\u7acb\u8f7b\u811a",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 5,
+            "active": 3,
+            "recovery": 9,
+            "damage": 320,
+            "range": 225,
+            "height": "mid",
+            "level": 1,
+            "hits": 1,
+            "knock": 10,
+            "stun": 16,
+            "blockstun": 10,
+            "cancel": true,
+            "motion": "",
+            "button": "LK",
+            "cost": 0,
+            "cmd": "LK / U",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 17
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "luke:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 8,
+            "recoveryAdd": 4,
+            "startupFloor": 18
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 18,
+        "remaining": 14
+      }
+    },
+    {
+      "name": "luke defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "juri hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sHP",
+            "name": "\u7ad9\u7acb\u91cd\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 10,
+            "active": 4,
+            "recovery": 21,
+            "damage": 720,
+            "range": 231,
+            "height": "mid",
+            "level": 3,
+            "hits": 1,
+            "knock": 22,
+            "stun": 28,
+            "blockstun": 15,
+            "cancel": true,
+            "motion": "",
+            "button": "HP",
+            "cost": 0,
+            "cmd": "HP / L",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u91cd\u51fb\u786e\u8ba4\uff1a\u6293\u4f4f\u786c\u76f4\u540e\u5151\u73b0\u4f24\u5bb3\uff0c\u98ce\u6c34\u5f15\u64ce\u4e2d\u53ef\u81ea\u7531\u8fde\u643a\u3002",
+            "total": 35,
+            "attackReachScale": 1.01
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "juri:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 38,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sHP"
+      }
+    },
+    {
+      "name": "juri pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 37.999999999999545,
+        "budget": 38,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "juri blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sMP",
+            "name": "\u7ad9\u7acb\u4e2d\u62f3",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 6,
+            "active": 4,
+            "recovery": 12,
+            "damage": 460,
+            "range": 194,
+            "height": "mid",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 22,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "MP / K",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u75be\u901f\u786e\u8ba4\uff1a\u8fd1\u8eab\u68c0\u67e5\u4e0e\u98ce\u6c34\u5f15\u64ce\u8fde\u643a\u7684\u8d77\u70b9\u3002",
+            "total": 22,
+            "attackReachScale": 0.96
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "juri:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 14,
+            "recoveryAdd": 4,
+            "startupFloor": 18
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 18,
+        "remaining": 14
+      }
+    },
+    {
+      "name": "juri defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "mai hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sHP",
+            "name": "\u56de\u8eab\u6247",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 12,
+            "active": 5,
+            "recovery": 26,
+            "damage": 800,
+            "range": 286,
+            "height": "mid",
+            "level": 3,
+            "hits": 1,
+            "knock": 22,
+            "stun": 30,
+            "blockstun": 15,
+            "cancel": true,
+            "motion": "",
+            "button": "HP",
+            "cost": 0,
+            "cmd": "HP / L",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u56de\u8eab\u957f\u6247\uff1a\u8fdc\u7aef\u91cd\u51fb\uff0c\u6325\u7a7a\u540e\u7834\u7efd\u5927\uff1b\u9002\u5408\u60e9\u7f5a\u8ffd\u6247\u524d\u8fdb\u3002",
+            "total": 43,
+            "animation": "maiFanStrike",
+            "contactPart": "fan",
+            "weaponReach": 38,
+            "attackReachScale": 1.13
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "mai:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 26,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sHP"
+      }
+    },
+    {
+      "name": "mai pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 26.000000000000227,
+        "budget": 26,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "mai blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sLK",
+            "name": "\u5fcd\u6b65\u8e22",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 5,
+            "active": 3,
+            "recovery": 9,
+            "damage": 320,
+            "range": 225,
+            "height": "mid",
+            "level": 1,
+            "hits": 1,
+            "knock": 10,
+            "stun": 16,
+            "blockstun": 10,
+            "cancel": true,
+            "motion": "",
+            "button": "LK",
+            "cost": 0,
+            "cmd": "LK / U",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 17,
+            "animation": "maiKick",
+            "contactPart": "foot"
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "mai:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 10,
+            "recoveryAdd": 4,
+            "startupFloor": 17
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 17,
+        "remaining": 13
+      }
+    },
+    {
+      "name": "mai defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "iori hit pursuit pays once and terminates route",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sMP",
+            "name": "\u9006\u638c",
+            "category": "normal",
+            "kind": "punch",
+            "pose": "punch",
+            "startup": 6,
+            "active": 4,
+            "recovery": 11,
+            "damage": 500,
+            "range": 201,
+            "height": "mid",
+            "level": 2,
+            "hits": 1,
+            "knock": 16,
+            "stun": 24,
+            "blockstun": 14,
+            "cancel": true,
+            "motion": "",
+            "button": "MP",
+            "cost": 0,
+            "cmd": "MP / K",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u8fd1\u722a\u538b\u5236\uff1a\u6536\u62db\u5feb\u3001\u8ddd\u79bb\u77ed\uff0c\u547d\u4e2d\u540e\u63a5\u8475\u82b1\u9010\u6bb5\u786e\u8ba4\u3002",
+            "total": 21,
+            "animation": "ioriClawStrike",
+            "contactPart": "hand",
+            "attackReachScale": 0.96
+          },
+          "cost": 1,
+          "kind": "pressure-branch",
+          "edge": "iori:pursuit",
+          "branch": "pursuit",
+          "adjustment": {
+            "damageScale": 0.78,
+            "travelBudget": 40,
+            "recoveryAdd": 2,
+            "startupFloor": 0
+          },
+          "driveCost": 1,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "attack": "sMP"
+      }
+    },
+    {
+      "name": "iori pursuit is bounded forward travel",
+      "passed": true,
+      "details": {
+        "maxTravel": 40.000000000000114,
+        "budget": 40,
+        "hitConfirmed": true
+      }
+    },
+    {
+      "name": "iori blocked branch pays and leaves a defensive gap",
+      "passed": true,
+      "details": {
+        "decision": {
+          "ok": true,
+          "code": "ready",
+          "reason": "\u53ef\u4ee5\u53d1\u52a8",
+          "move": {
+            "id": "sLK",
+            "name": "\u80eb\u8e22",
+            "category": "normal",
+            "kind": "kick",
+            "pose": "kick",
+            "startup": 5,
+            "active": 3,
+            "recovery": 9,
+            "damage": 320,
+            "range": 225,
+            "height": "mid",
+            "level": 1,
+            "hits": 1,
+            "knock": 10,
+            "stun": 16,
+            "blockstun": 10,
+            "cancel": true,
+            "motion": "",
+            "button": "LK",
+            "cost": 0,
+            "cmd": "LK / U",
+            "normalState": "s",
+            "knockdown": false,
+            "air": false,
+            "note": "\u547d\u4e2d\u6216\u88ab\u9632\u5fa1\u53ef\u53d6\u6d88\u4e3a\u5fc5\u6740 / \u8ff8\u53d1",
+            "total": 17,
+            "animation": "ioriKick",
+            "contactPart": "foot"
+          },
+          "cost": 1.5,
+          "kind": "pressure-branch",
+          "edge": "iori:pressure",
+          "branch": "pressure",
+          "adjustment": {
+            "damageScale": 0.62,
+            "travelBudget": 12,
+            "recoveryAdd": 4,
+            "startupFloor": 19
+          },
+          "driveCost": 1.5,
+          "routeStep": 2,
+          "remaining": 10,
+          "chainDepth": 0
+        },
+        "startup": 19,
+        "remaining": 15
+      }
+    },
+    {
+      "name": "iori defender really leaves blockstun before branch active",
+      "passed": true,
+      "details": {
+        "freeFrames": 4
+      }
+    },
+    {
+      "name": "Pressure cannot replace a hit finisher",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Insufficient drive denies pursuit without mutation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Beyond geometry band plus finite travel rejects pursuit",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Pursuit remains hit-only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Pressure cannot recursively restart the target route",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual coach branch button commits pursuit",
+      "passed": true
+    }
+  ],
+  "errors": []
+}
