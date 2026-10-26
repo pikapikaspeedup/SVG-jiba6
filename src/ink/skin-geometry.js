@@ -17,22 +17,37 @@
   }
   return d+'Z';
  }
- function sampled(chain,widths){
+ // Visual morphology only: source joints, sockets and collision never move.
+ const morphology=Object.freeze({
+  ryu:{arm:[.15,.19,.06],leg:[.12,.13,.12]},
+  ken:{arm:[.08,.12,.14],leg:[.13,.16,.18]},
+  chun:{arm:[.06,.08,.04],leg:[.21,.17,.06]},
+  cammy:{arm:[.11,.12,.04],leg:[.17,.19,.05]},
+  luke:{arm:[.16,.31,.06],leg:[.12,.19,.06]},
+  juri:{arm:[.05,.09,.035],leg:[.12,.17,.10]},
+  mai:{arm:[.07,.10,.035],leg:[.16,.17,.04]},
+  iori:{arm:[.06,.10,.16],leg:[.10,.14,.15]}
+ });
+ const jointFalloff=Array.from({length:18},(_,i)=>Math.exp(-Math.pow((i-8)/3.1,2)));
+ function sampled(chain,widths,shape=null){
   const [a,b,c]=chain,[w,j,z]=widths,L0=length(a,b),L1=length(b,c);
   if(L0+L1<.01)return null;
   const cut=Math.min(j*.9,L0*.23,L1*.23),u0=vec.normal(vec.sub(b,a)),u1=vec.normal(vec.sub(c,b));
   const before=vec.sub(b,vec.mul(u0,cut)),after=vec.add(b,vec.mul(u1,cut));
   const centers=[],radii=[];
-  for(let i=0;i<=6;i++){const t=i/6;centers.push(vec.mix(a,before,t));radii.push(lerp(w,j,t)+Math.sin(t*Math.PI)*w*.04);}
+  for(let i=0;i<=6;i++){const t=i/6;centers.push(vec.mix(a,before,t));radii.push(lerp(w,j,t)+Math.sin(t*Math.PI)*(shape?w*shape[0]:w*.04));}
   for(let i=1;i<=5;i++){const t=i/5,s=1-t;centers.push([s*s*before[0]+2*s*t*b[0]+t*t*after[0],s*s*before[1]+2*s*t*b[1]+t*t*after[1]]);radii.push(j);}
-  for(let i=1;i<=6;i++){const t=i/6;centers.push(vec.mix(after,c,t));radii.push(lerp(j,z,t)+Math.sin(t*Math.PI)*j*.055);}
+  for(let i=1;i<=6;i++){const t=i/6;centers.push(vec.mix(after,c,t));radii.push(lerp(j,z,t)+Math.sin(Math.pow(t,.72)*Math.PI)*(shape?j*shape[1]:j*.055));}
   const normals=centers.map((q,i)=>{const a=centers[Math.max(0,i-1)],b=centers[Math.min(centers.length-1,i+1)];let v=vec.sub(b,a);if(vec.length(v)<1e-6)v=i<centers.length/2?u0:u1;const u=vec.normal(v);return[-u[1],u[0]];});
-  return {centers,radii,normals,a,c,u0,u1,w,z};
+  const bend=clamp((1-(u0[0]*u1[0]+u0[1]*u1[1]))*.5),cross=u0[0]*u1[1]-u0[1]*u1[0],side=cross<0?-1:1;
+  const leftR=radii.map((r,i)=>{const joint=jointFalloff[i];return r*(1+(shape?bend*joint*(side<0?.10+(shape[2]||0)*.35:-.16):0));});
+  const rightR=radii.map((r,i)=>{const joint=jointFalloff[i];return r*(1+(shape?bend*joint*(side>0?.10+(shape[2]||0)*.35:-.16):0));});
+  return {centers,radii,normals,leftR,rightR,a,c,u0,u1,w,z};
  }
  function sweep(chain,widths,outer=mat.identity(),g=sampled(chain,widths)){
   if(!g){const at=mat.point(outer,chain[0]),r=Math.max(...widths);return `M${at[0]-r} ${at[1]}a${r} ${r} 0 1 0 ${2*r} 0a${r} ${r} 0 1 0 ${-2*r} 0Z`;}
-  const {centers,radii,normals,a,c,u0,u1,w,z}=g;
-  const left=centers.map((q,i)=>vec.add(q,vec.mul(normals[i],radii[i]))),right=centers.map((q,i)=>vec.sub(q,vec.mul(normals[i],radii[i])));
+  const {centers,radii,normals,leftR=radii,rightR=radii,a,c,u0,u1,w,z}=g;
+  const left=centers.map((q,i)=>vec.add(q,vec.mul(normals[i],leftR[i]))),right=centers.map((q,i)=>vec.sub(q,vec.mul(normals[i],rightR[i])));
   const head=vec.sub(a,vec.mul(u0,w*.75)),tip=vec.add(c,vec.mul(u1,z*.8));
   return closed([...left,tip,...right.reverse(),head].map(q=>mat.point(outer,q)),.105);
  }
@@ -41,7 +56,9 @@
   const edge=f=>g.centers.map((q,i)=>mat.point(outer,vec.add(q,vec.mul(g.normals[i],g.radii[i]*f))));
   return closed([...edge(from),...edge(to).reverse()],.09);
  }
- function frontClip(chain,depth,widths,handRadius=44){
+ function frontClip(chain,depth,widths,handRadius=44,shape=null){
+  // This masks an existing surface; widening the mask does not add geometry.
+  if(shape)widths=widths.map(w=>w*(1+Math.max(...shape)));
   let d='';for(let i=0;i<2;i++){
    const a=depth[i],b=depth[i+1];if(Math.max(a,b)<=0)continue;
    const from=a>=0?0:clamp(-a/(b-a)),to=b>=0?1:clamp(-a/(b-a));
@@ -63,5 +80,5 @@
   const sole=`M${fmt([heel[0]-7*c,heel[1]+8])}Q${fmt([toe[0]*.5,16+Math.abs(s)])} ${fmt([toe[0]+4*c,toe[1]+5])}`;
   return {outline,sole,toe,angle};
  }
- INK.SkinGeometry={sampled,sweep,band,frontClip,closed,torsoClip,foot,version:'6.0.0'};
+ INK.SkinGeometry={morphology,sampled,sweep,band,frontClip,closed,torsoClip,foot,version:'7.0.0'};
 })();

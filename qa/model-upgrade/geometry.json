@@ -1,0 +1,582 @@
+{
+  "passed": true,
+  "samples": 96,
+  "rows": [
+    {
+      "id": "ryu",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "ryu",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "ken",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "chun",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "cammy",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "luke",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "juri",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "mai",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "arm",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "arm",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "arm",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "arm",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "arm",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "arm",
+      "angle": 180,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "leg",
+      "angle": 0,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "leg",
+      "angle": 45,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "leg",
+      "angle": 90,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "leg",
+      "angle": 135,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "leg",
+      "angle": 175,
+      "vertices": 18
+    },
+    {
+      "id": "iori",
+      "part": "leg",
+      "angle": 180,
+      "vertices": 18
+    }
+  ]
+}

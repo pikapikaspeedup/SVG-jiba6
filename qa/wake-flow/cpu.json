@@ -1,0 +1,672 @@
+{
+  "htmlSha256": "660bcb1a6ea802d347aa4c295c553baa98b440877cb1a25deb6411dca535d39d",
+  "runs": [
+    {
+      "seed": 1,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 34,
+        "delayed": false,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 134,
+        "phase": "resolved"
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 1,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "recover"
+      },
+      "drive": 5.004
+    },
+    {
+      "seed": 2,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 168,
+        "delayed": false,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 247,
+        "phase": "resolved"
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 1,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "recover"
+      },
+      "drive": 5
+    },
+    {
+      "seed": 3,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 281,
+        "delayed": false,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 356,
+        "phase": "resolved"
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 1,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "recover"
+      },
+      "drive": 5
+    },
+    {
+      "seed": 4,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 390,
+        "delayed": false,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 467,
+        "phase": "resolved"
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": {
+          "start": 425,
+          "origin": 815.5411034845987,
+          "cut": false,
+          "fast": true,
+          "computer": true,
+          "landed": true,
+          "fastStart": 446,
+          "landedAt": 458,
+          "travel": -120.86000000000058
+        },
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 1,
+        "fastDrops": 1,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "recover",
+        "airPlan": {
+          "short": false,
+          "fast": true,
+          "target": 705
+        }
+      },
+      "drive": 5.08
+    },
+    {
+      "seed": 5,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 501,
+        "delayed": false,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 576,
+        "phase": "resolved"
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": {
+          "start": 536,
+          "origin": 815.5411034845987,
+          "cut": false,
+          "fast": false,
+          "computer": true,
+          "landed": false
+        },
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 1,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "recover",
+        "airPlan": {
+          "short": false,
+          "fast": false,
+          "target": 705
+        }
+      },
+      "drive": 5.08
+    },
+    {
+      "seed": 6,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 610,
+        "delayed": true,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 705,
+        "phase": "resolved",
+        "delayedAt": 620
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "delay",
+        "delayedWakes": 1
+      },
+      "drive": 4
+    },
+    {
+      "seed": 7,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 739,
+        "delayed": false,
+        "struck": true,
+        "paid": 1.5,
+        "lastStep": 834,
+        "phase": "resolved",
+        "started": 779
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": true,
+        "wakeChoice": "strike",
+        "wakeStrikes": 1
+      },
+      "drive": 4.5
+    },
+    {
+      "seed": 8,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 868,
+        "delayed": false,
+        "struck": true,
+        "paid": 1.5,
+        "lastStep": 963,
+        "phase": "resolved",
+        "started": 908
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": true,
+        "wakeChoice": "strike",
+        "wakeStrikes": 1
+      },
+      "drive": 4.5
+    },
+    {
+      "seed": 9,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 997,
+        "delayed": false,
+        "struck": true,
+        "paid": 1.5,
+        "lastStep": 1092,
+        "phase": "resolved",
+        "started": 1037
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": true,
+        "wakeChoice": "strike",
+        "wakeStrikes": 1
+      },
+      "drive": 4.5
+    },
+    {
+      "seed": 10,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1126,
+        "delayed": true,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 1226,
+        "phase": "resolved",
+        "delayedAt": 1136
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": {
+          "start": 1209,
+          "origin": 830.9971034845993,
+          "cut": false,
+          "fast": false,
+          "computer": true,
+          "landed": false
+        },
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "delay",
+        "delayedWakes": 1,
+        "airPlan": {
+          "short": false,
+          "fast": true,
+          "target": 705
+        }
+      },
+      "drive": 6
+    },
+    {
+      "seed": 11,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1260,
+        "delayed": true,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 1360,
+        "phase": "resolved",
+        "delayedAt": 1270
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "delay",
+        "delayedWakes": 1
+      },
+      "drive": 6
+    },
+    {
+      "seed": 12,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1394,
+        "delayed": false,
+        "struck": true,
+        "paid": 1.5,
+        "lastStep": 1489,
+        "phase": "resolved",
+        "started": 1434
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": true,
+        "wakeChoice": "strike",
+        "wakeStrikes": 1
+      },
+      "drive": 4.5
+    },
+    {
+      "seed": 13,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1523,
+        "delayed": true,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 1623,
+        "phase": "resolved",
+        "delayedAt": 1533
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": {
+          "start": 1607,
+          "origin": 835.1011034845993,
+          "cut": false,
+          "fast": false,
+          "computer": true,
+          "landed": false
+        },
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "delay",
+        "delayedWakes": 1,
+        "airPlan": {
+          "short": false,
+          "fast": true,
+          "target": 705
+        }
+      },
+      "drive": 6
+    },
+    {
+      "seed": 14,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1657,
+        "delayed": true,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 1749,
+        "phase": "resolved",
+        "delayedAt": 1667
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "delay",
+        "delayedWakes": 1
+      },
+      "drive": 6
+    },
+    {
+      "seed": 15,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1783,
+        "delayed": false,
+        "struck": true,
+        "paid": 1.5,
+        "lastStep": 1878,
+        "phase": "resolved",
+        "started": 1823
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": null,
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 0,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": true,
+        "wakeChoice": "strike",
+        "wakeStrikes": 1
+      },
+      "drive": 4.5
+    },
+    {
+      "seed": 16,
+      "role": "defend",
+      "swept": true,
+      "wake": {
+        "cycle": 1,
+        "entered": 1912,
+        "delayed": false,
+        "struck": false,
+        "paid": 0,
+        "lastStep": 2003,
+        "phase": "resolved"
+      },
+      "duel": {
+        "recoveryTried": false,
+        "flight": {
+          "start": 1983,
+          "origin": 815.5411034845987,
+          "cut": false,
+          "fast": false,
+          "computer": true,
+          "landed": false
+        },
+        "waveAttempt": -999,
+        "followed": null,
+        "recoveries": 1,
+        "fastDrops": 0,
+        "counterWaves": 0,
+        "followUps": 0,
+        "wakeCycle": 1,
+        "wakeStrikeTried": false,
+        "wakeChoice": "recover",
+        "airPlan": {
+          "short": false,
+          "fast": false,
+          "target": 655.2408732630404
+        }
+      },
+      "drive": 5.08
+    },
+    {
+      "seed": 1,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 2,
+      "role": "attack",
+      "swept": true,
+      "pressures": 0,
+      "baits": 1,
+      "goal": "\u4e2d\u8ddd\u8bd5\u63a2"
+    },
+    {
+      "seed": 3,
+      "role": "attack",
+      "swept": true,
+      "pressures": 0,
+      "baits": 1,
+      "goal": "\u7a7a\u4e2d\u53d8\u901f \u00b7 \u6539\u53d8\u63a5\u8fd1\u8def\u7ebf"
+    },
+    {
+      "seed": 4,
+      "role": "attack",
+      "swept": true,
+      "pressures": 0,
+      "baits": 1,
+      "goal": "\u7a7a\u4e2d\u53d8\u901f \u00b7 \u6539\u53d8\u63a5\u8fd1\u8def\u7ebf"
+    },
+    {
+      "seed": 5,
+      "role": "attack",
+      "swept": true,
+      "pressures": 0,
+      "baits": 1,
+      "goal": "\u4e2d\u8ddd\u8bd5\u63a2"
+    },
+    {
+      "seed": 6,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 7,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 8,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 9,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 10,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 11,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 12,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u540e\u64a4\u8bf1\u7a7a"
+    },
+    {
+      "seed": 13,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 14,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 15,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    },
+    {
+      "seed": 16,
+      "role": "attack",
+      "swept": true,
+      "pressures": 1,
+      "baits": 0,
+      "goal": "\u547d\u4e2d\u786e\u8ba4 \u00b7 \u8d85\u7ea7\u8ffd\u51fb"
+    }
+  ],
+  "checks": {
+    "realSweeps": true,
+    "delay": true,
+    "strike": true,
+    "pressure": true,
+    "mixedPlans": true
+  },
+  "errors": []
+}

@@ -1,0 +1,70 @@
+{
+  "sha256": "660bcb1a6ea802d347aa4c295c553baa98b440877cb1a25deb6411dca535d39d",
+  "rows": [
+    {
+      "id": "ryu",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3147
+    },
+    {
+      "id": "ken",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3130
+    },
+    {
+      "id": "chun",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3163
+    },
+    {
+      "id": "cammy",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3140
+    },
+    {
+      "id": "luke",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3129
+    },
+    {
+      "id": "juri",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3139
+    },
+    {
+      "id": "mai",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3227
+    },
+    {
+      "id": "iori",
+      "finite": true,
+      "pure": true,
+      "deterministic": true,
+      "bounded": true,
+      "nodes": 3142
+    }
+  ],
+  "errors": []
+}

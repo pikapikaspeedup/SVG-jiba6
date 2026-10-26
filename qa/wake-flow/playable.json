@@ -1,0 +1,293 @@
+{
+  "htmlSha256": "660bcb1a6ea802d347aa4c295c553baa98b440877cb1a25deb6411dca535d39d",
+  "rows": [
+    {
+      "name": "ryu actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "ryu delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "ken actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "ken delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "chun actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "chun delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "cammy actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "cammy delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "luke actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "luke delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "juri actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "juri delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "mai actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "mai delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "iori actual sweep creates wake cycle",
+      "passed": true,
+      "details": {
+        "state": "down",
+        "hp": 9260
+      }
+    },
+    {
+      "name": "iori delay adds 18 once free",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori wake strike pays once and clears inherited protection",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori wake strike really hits",
+      "passed": true,
+      "details": {
+        "hp": 9400,
+        "attack": "WAKE_STRIKE"
+      }
+    },
+    {
+      "name": "Wake strike can be guarded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Blocked strike has a real punish window",
+      "passed": true,
+      "details": {
+        "damage": 336,
+        "state": "hit"
+      }
+    },
+    {
+      "name": "Real throw catches armored wake startup",
+      "passed": true,
+      "details": {
+        "state": "captured"
+      }
+    },
+    {
+      "name": "Unused armor expires before sixth-frame contacts",
+      "passed": true,
+      "details": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Local contact probe: one armored hit costs health",
+      "passed": true,
+      "details": {
+        "result": "armor",
+        "damage": 84
+      }
+    },
+    {
+      "name": "Original Q direction recovery remains paid",
+      "passed": true,
+      "details": {
+        "recovery": {
+          "direction": 1,
+          "selectedAt": 1153,
+          "age": 0
+        },
+        "drive": 5,
+        "money": 6
+      }
+    }
+  ],
+  "errors": []
+}

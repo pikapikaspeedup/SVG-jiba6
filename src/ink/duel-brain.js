@@ -6,6 +6,16 @@
  function update(f,b,obs,G,api){
   if(!active())return false;const hard=G.difficulty==='hard',easy=G.difficulty==='easy',dist=Math.abs(obs.x-f.x),corner=f.x<205||f.x>1235;
   const q=f._inkDuel||(f._inkDuel={recoveryTried:false,flight:null,waveAttempt:-999,followed:null,recoveries:0,fastDrops:0,counterWaves:0,followUps:0});
+  const wake=f._inkWake;
+  if(INK.WakeFlow?.active()&&f.state==='down'&&f.stateAge>=6&&q.wakeCycle!==wake?.cycle){
+   q.wakeCycle=wake?.cycle;q.wakeStrikeTried=false;const roll=INK.Random.combat.next();
+   q.wakeChoice=!easy&&dist<280&&f.drive>=1.5&&roll<(hard?.34:.22)?'strike':roll<(hard?.60:.42)?'delay':'recover';
+   if(q.wakeChoice==='delay'&&api.request(f,'WAKE_DELAY')){q.recoveryTried=true;b.goal='延迟起身 · 打乱压制时机';q.delayedWakes=(q.delayedWakes||0)+1;return true;}
+   if(q.wakeChoice==='strike')q.recoveryTried=true;
+  }
+  if(INK.WakeFlow?.active()&&f.state==='rise'&&q.wakeChoice==='strike'&&!q.wakeStrikeTried&&f.stateT<=4){
+   q.wakeStrikeTried=true;if(api.request(f,'WAKE_STRIKE')){b.goal='起身迎击 · 承担后摇风险';q.wakeStrikes=(q.wakeStrikes||0)+1;return true;}
+  }
   if(f.state!=='down')q.recoveryTried=false;
   if(f.state==='down'&&f.y===0&&f.stateAge>=6&&!q.recoveryTried){q.recoveryTried=true;
    if(!easy&&f.drive>=2&&(corner||dist<300)&&INK.Random.combat.next()<(hard?.78:.48)){

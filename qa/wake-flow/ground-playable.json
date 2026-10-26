@@ -1,0 +1,102 @@
+{
+  "htmlSha256": "660bcb1a6ea802d347aa4c295c553baa98b440877cb1a25deb6411dca535d39d",
+  "rows": [
+    {
+      "name": "neon real fast landing commits matching surface and velocity",
+      "passed": true,
+      "details": {
+        "id": 1,
+        "actor": 0,
+        "birth": 33,
+        "x": 539.3520268236817,
+        "kind": "fast",
+        "heavy": false,
+        "surface": "wet",
+        "color": "#8bc8dc",
+        "force": 1.3357142857142856,
+        "drift": 3.378869597644771,
+        "life": 21
+      }
+    },
+    {
+      "name": "neon drawing cannot change landing or event births",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "courtyard real fast landing commits matching surface and velocity",
+      "passed": true,
+      "details": {
+        "id": 2,
+        "actor": 0,
+        "birth": 33,
+        "x": 539.3520268236817,
+        "kind": "fast",
+        "heavy": false,
+        "surface": "dust",
+        "color": "#d7b280",
+        "force": 1.3357142857142856,
+        "drift": 3.378869597644771,
+        "life": 21
+      }
+    },
+    {
+      "name": "courtyard drawing cannot change landing or event births",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "rooftop real fast landing commits matching surface and velocity",
+      "passed": true,
+      "details": {
+        "id": 3,
+        "actor": 0,
+        "birth": 33,
+        "x": 539.3520268236817,
+        "kind": "fast",
+        "heavy": false,
+        "surface": "grit",
+        "color": "#b5b5cf",
+        "force": 1.3357142857142856,
+        "drift": 3.378869597644771,
+        "life": 21
+      }
+    },
+    {
+      "name": "rooftop drawing cannot change landing or event births",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Real throw arrival creates heavy directional ground response",
+      "passed": true,
+      "details": {
+        "id": 4,
+        "actor": 1,
+        "birth": 59,
+        "x": 590.4984928920506,
+        "kind": "throw",
+        "heavy": true,
+        "surface": "wet",
+        "color": "#8bc8dc",
+        "force": 1.2071428571428566,
+        "drift": 7.4,
+        "life": 38
+      }
+    },
+    {
+      "name": "Ground event history and node bank are bounded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual practice button and delay control change the real wake cycle",
+      "passed": true
+    },
+    {
+      "name": "Actual wake strike button buffers into the legal window",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

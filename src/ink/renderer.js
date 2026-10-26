@@ -121,26 +121,28 @@
    const name=(this.rear?'rear':'front')+(this.leg?'Leg':'Arm'),source=rig.anatomy?.source[name];
    const invariant=INK.Anatomy.lengths(this.c),index=this.leg?2:0,sourceLengths=[invariant[index],invariant[index+1]];
    this.decals(sourceLengths);
-   const centerline=INK.SkinGeometry.sampled(chain,baseWidths);
+   const centerline=INK.SkinGeometry.sampled(chain,baseWidths,INK.SkinGeometry.morphology[this.c.id]?.[this.leg?'leg':'arm']);
    const contour=INK.SkinGeometry.sweep(chain,baseWidths,outer,centerline);assign(this.surface,'d',contour,stats);assign(this.clipShape,'d',contour,stats);
-   assign(this.skinShade,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,-.92,-.48,centerline):'',stats);
-   assign(this.skinLight,'d',this.material.skin?INK.SkinGeometry.band(chain,baseWidths,outer,.38,.61,centerline):'',stats);
+   assign(this.skinShade,'d',INK.SkinGeometry.band(chain,baseWidths,outer,-.94,this.material.skin?-.48:-.30,centerline),stats);
+   assign(this.skinLight,'d',INK.SkinGeometry.band(chain,baseWidths,outer,.28,this.material.skin?.53:.67,centerline),stats);
    for(let i=0;i<2;i++){
     const part=this.pieces[i],L=lengths[i],top=i?e*(this.leg?1.05:1.14):w,bottom=i?z:e;
     const bulge=i?(this.leg?1.19:this.c.id==='luke'?1.47:1.24):(this.material.skin?1+flex*.1:1.015);
     setTransform(part.group,boneMatrix(i?b:a,i?c:b,outer),stats);
     assign(part.cloth,'transform',`scale(1 ${L/Math.max(.0001,this.decalLengths[i])})`,stats);
-    assign(part.outline,'d',this.material.skin?'':segmentShape(L,top,bottom,bulge,!!i),stats);
-    assign(part.shade,'display',this.material.skin?'none':'inline',stats);assign(part.light,'display',this.material.skin?'none':'inline',stats);
-    if(!this.material.skin){assign(part.shade,'d',segmentShadow(L,top,bottom,!!i),stats);assign(part.light,'d',segmentLight(L,top,bottom),stats);}
+    // The continuous envelope owns all base fill, including cloth.
+    assign(part.outline,'d','',stats);
+    assign(part.shade,'display','none',stats);assign(part.light,'display','none',stats);
     assign(part.line,'d',this.material.skin?`M${top*.35} ${L*.36}Q${top*.47} ${L*.56} ${bottom*.23} ${L*.76}`:'',stats);
    }
    const joint=mat.point(outer,b),ang=Math.atan2(bc[1],bc[0])*180/Math.PI;
    assign(this.joint,'cx',joint[0],stats);assign(this.joint,'cy',joint[1],stats);assign(this.joint,'rx',e*.82,stats);assign(this.joint,'ry',e*.71,stats);
    // The shared continuous surface replaces the old overlaid joint patch.
    assign(this.joint,'visibility','hidden',stats);
-   const n=[-bc[1]/Math.max(.0001,lengths[1]),bc[0]/Math.max(.0001,lengths[1])],q0=mat.point(outer,[b[0]+n[0]*e*.55,b[1]+n[1]*e*.55]),q1=mat.point(outer,[b[0]-n[0]*e*.4,b[1]-n[1]*e*.4]);
-   assign(this.crease,'d',`M${q0}Q${joint[0]+3} ${joint[1]+2} ${q1}`,stats);assign(this.crease,'opacity',this.material.skin?.16+flex*.19:.4,stats);
+   const n=[-bc[1]/Math.max(.0001,lengths[1]),bc[0]/Math.max(.0001,lengths[1])],turn=ab[0]*bc[1]-ab[1]*bc[0],side=turn<0?-1:1;
+   const q0=mat.point(outer,[b[0]+n[0]*e*side*.72-bc[0]/Math.max(1,lengths[1])*e*.35,b[1]+n[1]*e*side*.72-bc[1]/Math.max(1,lengths[1])*e*.35]);
+   const q1=mat.point(outer,[b[0]+n[0]*e*side*.2+bc[0]/Math.max(1,lengths[1])*e*.4,b[1]+n[1]*e*side*.2+bc[1]/Math.max(1,lengths[1])*e*.4]);
+   assign(this.crease,'d',`M${q0}Q${joint[0]} ${joint[1]} ${q1}`,stats);assign(this.crease,'opacity',(.06+flex*.42)*(this.material.skin?.7:1),stats);
    const endMatrix=this.leg?INK.Anatomy.footMatrix(p,rig,this.c,this.rear):INK.Anatomy.handMatrix(p,rig,this.c,this.rear);
    setTransform(this.end,endMatrix,stats);
    if(this.leg){const shoe=INK.SkinGeometry.foot(INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
@@ -220,7 +222,7 @@
      const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
      const facing=Math.max(0,Math.cos(INK.rad(INK.Turn.angle(p))));depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;
     }
-    assign(this.foregroundArms[name].path,'d',INK.SkinGeometry.frontClip(chain,depth,this.c.arm,this.c.id==='mai'&&name==='frontArm'?91:43),s);
+    assign(this.foregroundArms[name].path,'d',INK.SkinGeometry.frontClip(chain,depth,this.c.arm,this.c.id==='mai'&&name==='frontArm'?91:43,INK.SkinGeometry.morphology[this.c.id]?.arm),s);
    }
    const order=back?'back':'front';if(order!==this._order){this._order=order;
     const legs=back?[this.frontLeg.group,this.rearLeg.group]:[this.rearLeg.group,this.frontLeg.group];

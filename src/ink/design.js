@@ -36,12 +36,31 @@
   s+=INK.Art[c.id].decoration(c,a,skin,hair);
   return s;
  }
+ // Costume-specific planes follow the existing three-influence torso skin.
+ // They articulate rib cage / waist volume without changing the combat rig.
+ function volumePlanes(c,a){
+  const {F,L}=INK.assets;
+  const planes={
+   ryu:['M5-298Q23-309 34-292L28-280 8-282Z','M7-269L29-272 24-256 12-260Z','M-39-280L-27-265-25-241-15-220-31-230Z'],
+   ken:['M-31-303L-15-314-21-290-12-263-24-271Z','M17-302L33-297 30-275 20-267Z','M-24-250L-11-237 3-219-16-224Z'],
+   chun:['M-25-296Q-7-306 13-294L19-281-6-282Z','M-22-263L-9-248-8-226-18-216Z','M15-265L25-278 19-246 24-225 11-230Z'],
+   cammy:['M-24-296Q-8-307 14-294L19-282-9-280Z','M-19-265L-5-254-7-232-19-221Z','M12-263L24-277 18-245 25-222 10-230Z'],
+   luke:['M-31-302L-14-312-17-282-29-273Z','M17-307L34-296 28-278 14-283Z','M-26-265L-13-251-12-227 3-211-18-217Z'],
+   juri:['M-24-291Q-8-299 10-284L5-273-15-277Z','M-18-253L-5-246-5-226-16-218Z','M14-268L22-276 17-248 23-222 12-229Z'],
+   mai:['M-24-296L-13-303-8-282-15-266Z','M12-293L24-307 24-284 13-267Z','M-18-253L-6-244-7-228-17-219Z'],
+   iori:['M-36-302L-22-313-18-284-27-268Z','M18-306L37-297 29-278 14-283Z','M-27-259L-13-247-9-222-22-213Z']
+  }[c.id];
+  const bare=['ryu','juri','mai'].includes(c.id),light=bare?a.skin[0]:a.cloth[0],shade=bare?a.skin[2]:a.cloth[2];
+  return F(planes[0],light,'opacity=".19"')+F(planes[1],light,'opacity=".12"')+F(planes[2],shade,'opacity=".24"')+
+   L(c.female?'M-19-246Q-8-251 1-246M8-227L17-223':'M-26-244L-15-239-9-227M14-218L26-221',shade,.85,'opacity=".4"');
+ }
  function torso(c,back=false){
   if(back)return SF6Art.torso(c,true);
   const a=SF6Art.palette[c.id],skin=`url(#atelier-${c.id}-skin)`,cloth=`url(#atelier-${c.id}-cloth)`,dark=`url(#atelier-${c.id}-dark)`;
   let s=P(c.female?'M-30-315Q-7-327 23-315L38-297 28-274 19-244 28-214 14-195-19-196-31-215-24-243-31-277-40-295Z':'M-40-314Q-10-331 27-315L48-299 37-267 28-233 34-204 13-185-21-188-37-208-29-238-42-273-49-296Z',skin,1.5);
   s+=F('M-31-295Q-16-306-2-300L-4-273-15-264-21-241-14-218-26-213-27-251Z',a.skin[2],'opacity=".32"');
   s+=INK.Art[c.id].front(c,a,skin,cloth,dark);
+  s+=volumePlanes(c,a);
   return s;
  }
 
