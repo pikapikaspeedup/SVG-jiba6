@@ -1,0 +1,554 @@
+{
+  "htmlSha256": "28b61152feb3355585e024b6fb70a5022184dfd0b748f131e6b4bb18e0dca83c",
+  "rows": [
+    {
+      "id": "ryu",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ryu",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ryu",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ryu",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ken",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ken",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ken",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ken",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "chun",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "chun",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "chun",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "chun",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "cammy",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "cammy",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "cammy",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "cammy",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "luke",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "luke",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "luke",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "luke",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "juri",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "juri",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "juri",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "juri",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "mai",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "mai",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "mai",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "mai",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "iori",
+      "result": "hit",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#eee9dd"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "iori",
+      "result": "block",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "iori",
+      "result": "parry",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "parry",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#e3f7ff"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "iori",
+      "result": "armor",
+      "special": false,
+      "move": "sMP",
+      "linkedTrails": 0,
+      "deformedTrails": 0,
+      "actual": "armor",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 1,
+      "strokes": [
+        "#fff1bb"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "ken",
+      "result": "hit",
+      "special": true,
+      "move": "shoryu_0",
+      "linkedTrails": 1,
+      "deformedTrails": 1,
+      "actual": "hit",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 3,
+      "strokes": [
+        "#fff5bf",
+        "#ff8244",
+        "#ff8244"
+      ],
+      "frozen": true
+    },
+    {
+      "id": "mai",
+      "result": "block",
+      "special": true,
+      "move": "hissatsu_0",
+      "linkedTrails": 2,
+      "deformedTrails": 1,
+      "actual": "block",
+      "contactCount": 1,
+      "finite": true,
+      "layers": 3,
+      "strokes": [
+        "#e3f7ff",
+        "#79cfff",
+        "#79cfff"
+      ],
+      "frozen": true
+    }
+  ],
+  "errors": []
+}

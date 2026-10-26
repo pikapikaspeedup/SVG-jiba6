@@ -48,6 +48,22 @@
       while(r.points.length>2&&r.points[1].time<time-(r.memory??12))r.points.shift();
       r.last=time;return true;
     }
+    contact(source,snapshot,time) {
+      if(!source||!snapshot)return 0;let count=0;
+      for(const r of this.live)if(r&&(r.source===source||r.sourceAttack===source)){r.contact=snapshot;count++;}
+      return count;
+    }
+    stamp(snapshot,time,style={}) {
+      if(!snapshot||!Number.isFinite(time))return false;
+      const key='contact:'+(snapshot.serial??snapshot.id??('local-'+(this.contactSerial=(this.contactSerial||0)+1)));if(this.byKey.has(key))return true;
+      let i=this.live.findIndex(r=>r===null);
+      if(i<0){
+        const rank=r=>r.contactOnly?2:r.closed?0:1;let best=0;
+        for(let j=1;j<this.capacity;j++){const a=this.live[j],b=this.live[best];if(rank(a)<rank(b)||rank(a)===rank(b)&&a.last<b.last)best=j;}
+        i=best;this.byKey.delete(this.live[i].key);this.stats.active--;this.stats.evicted=(this.stats.evicted||0)+1;
+      }
+      this.live[i]={...style,key,contact:snapshot,contactOnly:true,points:[],closed:true,last:time,life:Math.min(12,snapshot.duration||12)};this.byKey.set(key,i);this.stats.active++;this.stats.peak=Math.max(this.stats.peak,this.stats.active);return true;
+    }
     close(key,time) {const i=this.byKey.get(key),r=i===undefined?null:this.live[i];if(r&&!r.closed){r.closed=true;r.last=time;}}
     step(time) {
       const {assign}=INK.SVG;
@@ -58,13 +74,14 @@
       for(let i=0;i<this.capacity;i++) {
         const r=this.live[i],n=this.nodes[i];if(!r)continue;
         const pts=r.points.filter(p=>p.time<=time+1e-6).map(p=>p.point),age=Math.max(0,time-r.last),fade=clamp(1-age/(r.life??13));
-        if(pts.length<2||fade<=0){assign(n.g,'display','none');continue;}
-        const material=INK.MaterialFlow?.active()&&r.character;
+        if((pts.length<2&&!r.contactOnly)||fade<=0){assign(n.g,'display','none');continue;}
+        const material=r.contactOnly||INK.MaterialFlow?.active()&&r.character;
         for(const part of [n.edge,n.body,n.core])assign(part,'display',material?'none':'inline');
         for(const part of n.material)assign(part,'display','none');
         if(material){
-          const layers=INK.MaterialFlow.geometry(r.points,time,r);
-          assign(n.g,'display',layers.length?'inline':'none');assign(n.g,'opacity',fade*fade*(r.opacity??.65));
+          const c=r.contact,base=INK.Particles?.materials?.[c?.character]||{},palette=c?.result==='armor'?{color:'#e6b45c',core:'#fff1bb'}:['block','parry'].includes(c?.result)?{color:'#79cfff',core:'#e3f7ff'}:c?.category==='normal'?{color:'#c9c6bd',core:'#eee9dd'}:{color:base.color,core:base.core};
+          const layers=r.contactOnly?(INK.ContactFlux?.section(c,time,{...palette,...r})||[]):INK.MaterialFlow.geometry(r.points,time,{...r,contactTime:time});
+          assign(n.g,'display',layers.length?'inline':'none');assign(n.g,'opacity',(r.contactOnly?1:fade*fade)*(r.opacity??.65));
           layers.forEach((layer,j)=>{const p=n.material[j];if(!p)return;assign(p,'display','inline');assign(p,'d',layer.d);assign(p,'fill',layer.fill);assign(p,'stroke',layer.stroke||'none');assign(p,'stroke-width',layer.width);assign(p,'opacity',layer.opacity);assign(p,'stroke-dasharray',layer.dash||'none');});
           vertices+=layers.length*24;continue;
         }

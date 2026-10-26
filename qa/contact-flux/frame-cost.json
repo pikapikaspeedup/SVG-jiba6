@@ -1,0 +1,135 @@
+{
+  "htmlSha256": "28b61152feb3355585e024b6fb70a5022184dfd0b748f131e6b4bb18e0dca83c",
+  "scope": "Sequential special-contact simulation plus full SVG/VFX DOM render, including held contact frames; one warmup. CPU only.",
+  "rows": [
+    {
+      "character": "ryu",
+      "result": "hit",
+      "move": "shoryu_0",
+      "contactFrames": 16,
+      "mean": 1.550000011920929,
+      "p95": 4.400000095367432
+    },
+    {
+      "character": "ryu",
+      "result": "block",
+      "move": "shoryu_0",
+      "contactFrames": 16,
+      "mean": 1.53125,
+      "p95": 2.5999999046325684
+    },
+    {
+      "character": "ken",
+      "result": "hit",
+      "move": "shoryu_0",
+      "contactFrames": 16,
+      "mean": 1.59375,
+      "p95": 3.4000000953674316
+    },
+    {
+      "character": "ken",
+      "result": "block",
+      "move": "shoryu_0",
+      "contactFrames": 16,
+      "mean": 1.4874999821186066,
+      "p95": 2.5
+    },
+    {
+      "character": "chun",
+      "result": "hit",
+      "move": "legs_0",
+      "contactFrames": 24,
+      "mean": 1.5541666746139526,
+      "p95": 3
+    },
+    {
+      "character": "chun",
+      "result": "block",
+      "move": "legs_0",
+      "contactFrames": 24,
+      "mean": 1.2833333412806194,
+      "p95": 2.5
+    },
+    {
+      "character": "cammy",
+      "result": "hit",
+      "move": "arrow_0",
+      "contactFrames": 16,
+      "mean": 1.356249988079071,
+      "p95": 2.799999713897705
+    },
+    {
+      "character": "cammy",
+      "result": "block",
+      "move": "arrow_0",
+      "contactFrames": 16,
+      "mean": 1.431249976158142,
+      "p95": 2.9000000953674316
+    },
+    {
+      "character": "luke",
+      "result": "hit",
+      "move": "rising_0",
+      "contactFrames": 16,
+      "mean": 1.3624999821186066,
+      "p95": 2.6999998092651367
+    },
+    {
+      "character": "luke",
+      "result": "block",
+      "move": "rising_0",
+      "contactFrames": 16,
+      "mean": 1.2312500178813934,
+      "p95": 2.200000286102295
+    },
+    {
+      "character": "juri",
+      "result": "hit",
+      "move": "fuha_0",
+      "contactFrames": 16,
+      "mean": 1.5,
+      "p95": 2.6000003814697266
+    },
+    {
+      "character": "juri",
+      "result": "block",
+      "move": "fuha_0",
+      "contactFrames": 16,
+      "mean": 1.4124999940395355,
+      "p95": 3
+    },
+    {
+      "character": "mai",
+      "result": "hit",
+      "move": "ryuenbu_0",
+      "contactFrames": 24,
+      "mean": 1.7083333333333333,
+      "p95": 2.700000286102295
+    },
+    {
+      "character": "mai",
+      "result": "block",
+      "move": "ryuenbu_0",
+      "contactFrames": 24,
+      "mean": 1.6041666666666667,
+      "p95": 2.4000000953674316
+    },
+    {
+      "character": "iori",
+      "result": "hit",
+      "move": "oniYaki_0",
+      "contactFrames": 16,
+      "mean": 1.4625000059604645,
+      "p95": 2.6999998092651367
+    },
+    {
+      "character": "iori",
+      "result": "block",
+      "move": "oniYaki_0",
+      "contactFrames": 16,
+      "mean": 1.425000011920929,
+      "p95": 2.4000000953674316
+    }
+  ],
+  "errors": []
+}

@@ -106,7 +106,7 @@
           for(const b of births){if(this.pool.add(makeParticle(b,event,record,{direction:f.dir,scale:f.renderScale||f.ch.scale||1})))this.stats.acceptedBirths++;else this.stats.poolDrops++;}
           if(settings.enabled&&!settings.reducedMotion&&record.category!=='normal') {
             const base=INK.Particles.materials[record.character]||INK.Particles.materials.ryu;
-            this.ribbons.push(state.key,q,stamp,{...INK.MaterialFlow.style(record.character,event),birth:stamp,memory:event.trailFrames??12,life:14,width:(event.width??16)*event.scale*.9,
+            this.ribbons.push(state.key,q,stamp,{...INK.MaterialFlow.style(record.character,event),source:f.attack,category:record.category,contact:INK.ContactFlux?.read(f.attack,time),birth:stamp,memory:event.trailFrames??12,life:14,width:(event.width??16)*event.scale*.9,
               opacity:event.opacity*.6,color:event.color,core:base.core,dark:base.dark,flame:event.type==='flame'});
           }
         }

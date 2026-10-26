@@ -23,13 +23,17 @@
   const color=style.color||base.color,core=style.core||base.core;
   const valid=rows.filter(r=>r.time<=time+1e-6&&time-r.time<memory+8);
   if(valid.length<2)return [];
-  const points=valid.map((r,i)=>{
+  let points=style.category==='normal'?valid.map(r=>r.point.slice()):valid.map((r,i)=>{
    const age=clamp(time-r.time,0,24),a=valid[Math.max(0,i-1)],b=valid[Math.min(valid.length-1,i+1)],dt=b.time-a.time;
    const vx=clamp(dt?(b.point[0]-a.point[0])/dt:0,-30,30),vy=clamp(dt?(b.point[1]-a.point[1])/dt:0,-30,30),len=Math.hypot(vx,vy)||1;
    const transport=(1-Math.exp(-profile.drag*age))/profile.drag*.13;
    const curl=profile.curl*Math.sin(age*.36+r.time*.19)*Math.sin(Math.PI*clamp(age/(memory+8)));
    return [r.point[0]+vx*transport-vy/len*curl,r.point[1]+vy*transport+profile.lift*age*age+vx/len*curl];
   });
+  const flux=INK.ContactFlux,c=style.contact,clock=style.contactTime??time;
+  if(c&&flux)points=flux.deform(points,c,clock);
+  const sections=c&&flux&&style.contactSection===true?flux.section(c,clock):[];
+  if(style.category==='normal')return [{d:path(points.slice(-5)),fill:'none',stroke:'#e5e2d6',width:1.1,opacity:.3},...sections].slice(0,6);
   const pts=INK.Motion.resample(points,24),left=[],right=[],lanes=Array.from({length:profile.lanes},()=>[]),middle=[];
   let last=[0,1];
   for(let i=0;i<pts.length;i++){
@@ -50,7 +54,7 @@
   const out=[{d:body,fill:color,opacity:['cut','claw'].includes(mode)?.12:.30,width:0}];
   lanes.forEach((pts,j)=>out.push({d:path(pts),fill:'none',stroke:j===1?core:color,width:mode==='cut'?1.1:mode==='claw'?2.8:mode==='fire'?3.4:1.8,opacity:j===1?.82:.52}));
   if(mode==='wave'||mode==='pressure')out.push({d:path(middle),fill:'none',stroke:core,width:mode==='pressure'?3.5:2,opacity:.8,dash:mode==='pressure'?'13 8':'none'});
-  return out;
+  return sections.length?[...out.slice(0,3),...sections].slice(0,6):out;
  }
  function particle(p,birth,event,record){
   if(!active()||record.category==='normal')return p;
@@ -66,14 +70,18 @@
  }
  // Contact changes the material's release direction. Guard reflects a compact
  // spray; a hit transports it through the target. Never spawned on whiff.
- function contact(pool,{x,y,frame,owner,m,result,dir,last,reduced,G}){
-  if(!active()||!owner||!m||m.category==='normal'||m.throw)return false;
-  const profile=profiles[owner.ch.id]||profiles.ryu,base=INK.Particles.materials[owner.ch.id],guard=['block','parry'].includes(result),multi=(m.hits||1)>1&&!last;
-  const count=reduced?2:multi?3:guard?5:9,seed=INK.Particles.hash([G.tick,owner.index,m.id,result,'material'].join(':'));
+ function contact(pool,{x,y,frame,owner,m,result,dir,last,reduced,G,response,contact:stamp}){
+  if(!active()||!owner||!m||m.throw)return false;
+  const base=INK.Particles.materials[owner.ch.id]||INK.Particles.materials.ryu,normal=m.category==='normal',guard=result==='block',parry=result==='parry',armor=result==='armor',multi=(m.hits||1)>1&&!last;
+  const vector=stamp?.responseDir||response?.responseDir||[dir,0],heading=Math.atan2(vector[1],vector[0]);
+  const count=reduced?1:normal?2:armor?2:multi?2:guard||parry?3:5,seed=INK.Particles.hash([G.tick,owner.index,m.id,result,'material'].join(':'));
   for(let i=0;i<count;i++){
-   const angle=((i/(count-1||1)-.5)*(guard?150:85)-20)*Math.PI/180,speed=guard?3.5:5.5;
-   const birth={seed:seed+i,velocity:[dir*speed,0]},p={x,y,birth:frame,life:guard?12:22,vx:Math.cos(angle)*speed*dir*(guard?-1:1),vy:Math.sin(angle)*speed,gravity:0,drag:.1,size:guard?2:3.6,angle:angle*180/Math.PI,color:i%3?base.color:base.core,species:base.species,stretch:1,opacity:guard?.52:.7,priority:2,phase:i};
-   pool.add(particle(p,birth,{}, {character:owner.ch.id,category:m.category}));
+   const spread=guard?.3:parry?.45:armor?.65:.8,axis=guard?heading+(i%2?1:-1)*Math.PI/2:parry?heading-(dir||1)*Math.PI/3:armor?heading+Math.PI:heading,angle=axis+(i/(count-1||1)-.5)*spread,speed=armor?1.2:guard?2.2:parry?4:4.5;
+   const p={x,y,birth:frame,life:normal||armor?7:guard?10:16,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,gravity:0,drag:.1,size:normal?1:armor?1.5:2.3,angle:angle*180/Math.PI,color:normal?'#e5e2d6':i%2?base.color:base.core,species:normal?'thrust':base.species,stretch:normal?2:1,opacity:normal?.3:armor?.4:.52,priority:2,phase:i};
+   // Preserve the response direction; material transport must not add an old
+   // attack-facing velocity after a parry or compressed guard contact.
+   if(!normal){particle(p,{seed:seed+i,velocity:[0,0]}, {},{character:owner.ch.id,category:m.category});}
+   pool.add(p);
   }
   return true;
  }

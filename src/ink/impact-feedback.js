@@ -39,13 +39,14 @@
     emit(pool,{x,y,frame,G,owner,m,result,last,dir,response,material,reduced}){
       const kind=classify(m,result,last),seed=hash([G.tick,owner?.index,m?.id,kind].join(':'));
       const angle=response?Math.atan2(response.responseDir[1],response.responseDir[0])*180/Math.PI+response.turn*20:direction(owner,m,kind,dir),multi=(m?.hits||1)>1&&!last,size=kind==='finisher'?37:multi?17:kind==='kick'?30:24;
-      const add=(species,scale,rotation=angle,delay=0,life=10,opacity=.85)=>pool.add({x,y,birth:frame+delay,life,vx:0,vy:0,gravity:0,size:size*scale,angle:rotation,color:material.core,species,stretch:1,opacity,priority:4,
+      const causal=INK.ContactFlux?.active()&&m&&!m.throw;
+      const add=(species,scale,rotation=angle,delay=0,life=10,opacity=.85)=>pool.add({x,y,birth:frame+delay,life,vx:0,vy:0,gravity:0,size:size*scale*(causal?.65:1),angle:rotation,color:material.core,species,stretch:1,opacity:opacity*(causal?.45:1),priority:4,
         sizeCurve:[[0,.75],[.22,1],[1,1.5]],opacityCurve:[[0,1],[.18,.88],[.65,.36],[1,0]]});
       if(kind==='brace')add('brace',.85,dir===-1?180:0,0,8,.65);
       else if(kind==='guard')add('shield',1.1,dir===-1?180:0,0,11,.7);
       else if(kind==='fan'){add('slash',1.45,angle,0,multi?7:12);if(!reduced)add('slash',1.1,angle+20,2,11,.5);}
       else if(kind==='launch'){add('thrust',1.6,angle,0,9,.72);add('cross',.64,angle+35,0,7,.78);}
-      else if(kind==='finisher'){add('cross',1.2,angle,0,9);add('ring',.9,0,2,15,.55);}
+      else if(kind==='finisher'){add('cross',1.2,angle,0,9);if(!causal)add('ring',.9,0,2,15,.55);}
       else {add(kind==='kick'?'thrust':'cross',1,angle,0,multi?6:9);}
       // Intermediate blows are deliberately economical. The final contact
       // releases the slower debris instead of every hit spawning a smoke cloud.

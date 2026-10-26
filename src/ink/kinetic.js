@@ -93,7 +93,7 @@
   const active=enabled?visibleContacts(G,alpha):[];
   const reduced=INK.VFX.settings.reducedMotion,intensity=INK.VFX.settings.intensity*settings.impact;
   trailNodes.forEach((n,i)=>{
-   const h=trails.get(i),points=enabled&&!reduced&&h?h.rows.filter(p=>time-p.time<7):[];
+   const h=trails.get(i);let points=enabled&&!reduced&&h?h.rows.filter(p=>time-p.time<7):[];const flux=h&&INK.ContactFlux?.read(h.attack,time);if(flux){const bent=INK.ContactFlux.deform(points.map(p=>[p.x,p.y]),flux,time);points=points.map((p,j)=>({...p,x:bent[j][0],y:bent[j][1]}));}
    if(points.length<2){assign(n.ribbon,'d','');assign(n.core,'d','');return;}
    const left=[],right=[];points.forEach((p,j)=>{const a=points[Math.max(0,j-1)],b=points[Math.min(points.length-1,j+1)],dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,width=p.width*(j+1)/points.length;left.push([p.x-dy/len*width,p.y+dx/len*width]);right.push([p.x+dy/len*width,p.y-dx/len*width]);});
    const path='M'+left.map(p=>p.join(',')).join('L')+'L'+right.reverse().map(p=>p.join(',')).join('L')+'Z';
@@ -103,17 +103,17 @@
   for(let i=0;i<slots.length;i++){
    const s=slots[i],e=active[i];assign(s.root,'display',e?'inline':'none');if(!e)continue;
    const age=time-e.birth,u=clamp(age/e.life),fade=(1-u)**2,ground=e.type==='landing',guard=e.type==='block'||e.type==='parry',armor=e.type==='armor',radius=(armor?23:guard?32:45)+e.energy*(guard?14:35)+age*(guard?1:2.8);
-   const contact=INK.ContactResponse?.active()?e.contact:null,turn=contact?clamp(contact.turn*20,-20,20):0,quality=contact?.quality??1;
+   const contact=INK.ContactResponse?.active()?e.contact:null,turn=contact?clamp(contact.turn*20,-20,20):0,quality=contact?.quality??1,causal=!ground&&e.type!=='throw'&&INK.ContactFlux?.active();
    const newer=active.some(q=>q.defender===e.defender&&q.id>e.id&&q.type!=='landing'),focus=newer?.28:contact?.multi?.68:1;
    assign(s.root,'opacity',focus);assign(s.root,'data-contact-style',contact?.material||'physical');assign(s.root,'data-contact-result',e.type);
    assign(s.root,'transform',`translate(${e.x} ${e.y}) scale(${e.dir} 1) rotate(${ground?0:turn})`);
    assign(s.lightColor,'stop-color',e.color);assign(s.light,'rx',ground?radius*1.6:radius*1.5);assign(s.light,'ry',ground?12:radius*1.1);assign(s.light,'opacity',fade*(reduced?.08:.2)*e.energy*intensity);
-   assign(s.halo,'rx',radius*(ground?1.4:guard?.4:1));assign(s.halo,'ry',radius*(ground?.1:guard?1:.55));assign(s.halo,'stroke',e.color);assign(s.halo,'stroke-width',guard?3:1.3);assign(s.halo,'opacity',fade*(guard?.8:.32)*intensity);
+   assign(s.halo,'rx',radius*(ground?1.4:guard?.4:1));assign(s.halo,'ry',radius*(ground?.1:guard?1:.55));assign(s.halo,'stroke',e.color);assign(s.halo,'stroke-width',guard?3:1.3);assign(s.halo,'opacity',fade*(guard?.8:.32)*intensity*(causal?.18:1));
    const core=armor?'M-22-10L-8-15 8-13 21-4 19 9 6 16-10 13-23 4ZM-12-3L0-8 12 0 0 8Z':guard?'M-5-30Q28 0-5 30L1 18Q16 0 1-18Z':contactArt[contact?.material]||'M-7-5L-26-23-4-12 6-33 9-9 43-5 14 3 25 21 4 11-6 29-10 9-38 6Z';
-   assign(s.core,'d',core);assign(s.core,'fill',e.type==='parry'?'#fff5ff':'#fff4da');assign(s.core,'transform',`scale(${(1+e.energy*.6)*(1+u*.3)})`);assign(s.core,'opacity',ground?0:Math.max(0,1-age/5)*.9*intensity);
+   assign(s.core,'d',core);assign(s.core,'fill',e.type==='parry'?'#fff5ff':'#fff4da');assign(s.core,'transform',`scale(${(1+e.energy*.6)*(1+u*.3)})`);assign(s.core,'opacity',ground?0:Math.max(0,1-age/5)*.9*intensity*(causal?.3:1));
    s.rays.forEach((ray,j)=>{
     const angle=(j-3)*(guard?.33:.22),near=radius*.65,far=near+(reduced?12:armor?20:40+e.energy*70*(.72+.28*quality))*(1-u),c=Math.cos(angle),sn=Math.sin(angle);
-    assign(ray,'d',`M${c*near} ${sn*near}L${c*far} ${sn*far}`);assign(ray,'stroke',j%2?e.color:'#fff3d7');assign(ray,'stroke-width',j===3?2.8:1.2);assign(ray,'opacity',reduced||ground?0:fade*(guard?.35:.55)*intensity);
+    assign(ray,'d',`M${c*near} ${sn*near}L${c*far} ${sn*far}`);assign(ray,'stroke',j%2?e.color:'#fff3d7');assign(ray,'stroke-width',j===3?2.8:1.2);assign(ray,'opacity',reduced||ground?0:fade*(guard?.35:.55)*intensity*(causal?.28:1));
    });
   }
  }

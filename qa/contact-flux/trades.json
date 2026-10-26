@@ -1,0 +1,59 @@
+{
+  "htmlSha256": "28b61152feb3355585e024b6fb70a5022184dfd0b748f131e6b4bb18e0dca83c",
+  "rows": [
+    {
+      "name": "real trade uses two pre-contact frozen direction snapshots",
+      "passed": true,
+      "details": {
+        "captures": [
+          {
+            "actor": 0,
+            "state": "attack",
+            "source": "attack:1",
+            "incoming": [
+              0.6457824897406307,
+              -0.7635214312279597
+            ],
+            "frozen": true
+          },
+          {
+            "actor": 1,
+            "state": "hit",
+            "source": "attack:2",
+            "incoming": [
+              -0.6457824897406307,
+              -0.7635214312279597
+            ],
+            "frozen": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "trade retains opposite source ownership and directions",
+      "passed": true,
+      "details": {
+        "health": [
+          9720,
+          9720
+        ]
+      }
+    },
+    {
+      "name": "both traded contacts remain visible in bounded bank",
+      "passed": true,
+      "details": {
+        "count": 2,
+        "active": 2
+      }
+    },
+    {
+      "name": "reduced-motion real special contact uses one compact layer",
+      "passed": true,
+      "details": {
+        "move": "shoryu_0"
+      }
+    }
+  ],
+  "errors": []
+}

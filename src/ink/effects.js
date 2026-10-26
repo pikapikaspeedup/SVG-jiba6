@@ -51,7 +51,7 @@
     render(record,frame,pose,rig,context=null){this.context=context;this.frameSamples=new Map();if(!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
       const profile=rig.profile||INK.Runtime.profile(record.character);
       if(this.record!==record||this.profileKey!==JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth])||this.quality!==setting.quality||this.graphKey!==JSON.stringify(this.graphOptions||INK.MotionGraph.settings)){this.record=record;this.profile=profile;this.profileKey=JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth]);this.quality=setting.quality;this.graphKey=JSON.stringify(this.graphOptions||INK.MotionGraph.settings);this.cache.clear();this.catalogue=null;this.clip=new (INK.CompiledClip||INK.Clip)(record.clip);}
-      const inverse=mat.inverse(rootMat(pose)),base=materials[record.character]||materials.ryu;let used=0,slot=0;
+      const inverse=mat.inverse(rootMat(pose)),contactTime=context?.fxTime??INK.VFX.time,worldContact=context?.sourceAttack&&INK.ContactFlux?.read(context.sourceAttack,contactTime),localContact=worldContact?INK.ContactFlux.local(worldContact,q=>mat.point(inverse,[(q[0]-context.x)/(context.scale*context.dir),(q[1]-665-context.y)/context.scale])):null,base=materials[record.character]||materials.ryu;let used=0,slot=0;
       for(const ev of record.fx){const age=frame-ev.frame,life=ev.particles?.life??28;if(age<0||age>ev.duration+life)continue;
         const matl={...base,color:ev.color},active=age<ev.duration+4,traceFrame=Math.min(frame,ev.frame+ev.duration),seed=hash(record.character+record.key+ev.id),config=ev.particles||{},isBeam=['wave','shock','streak'].includes(ev.type),isFire=['flame','pillar'].includes(ev.type),scale=ev.scale;
                 if(active&&used<this.ribbons.length){const v=this.ribbons[used++],tail=ev.trailFrames??(record.category==='normal'?4:9);let pts=[];v.layer=ev.layer||'front';
@@ -64,6 +64,8 @@
           }
           const fade=Math.min(1,age/2+.3)*clamp((ev.duration+4-age)/4),width=(ev.width??(record.category==='normal'?3:isFire?22:ev.type==='crescent'?15:11))*scale;
           assign(v.g,'display','inline');assign(v.g,'opacity',ev.opacity*fade);v.tongues.forEach(n=>{assign(n,'display','none');assign(n,'stroke','none');});
+          const materialActive=INK.MaterialFlow?.active()&&!setting.reducedMotion&&!['pillar','shock','ring'].includes(ev.type);
+          if(localContact&&!materialActive)pts=INK.ContactFlux.deform(pts,localContact,contactTime);
           const d=curve(pts);v.paths.forEach((n,j)=>{assign(n,'display','inline');assign(n,'transform','');assign(n,'stroke-dasharray','none');assign(n,'fill','none');assign(n,'d',d);assign(n,'stroke',j===0?matl.dark:j===1?matl.color:matl.core);assign(n,'stroke-width',width*[2.1,1,.23,.075][j]);assign(n,'opacity',[.12,.55,.9,.9][j]);});
           // Material-specific silhouettes, not one recolored ring.
           if(['flame','wave','crescent','fan'].includes(ev.type)){
@@ -83,8 +85,8 @@
           if(ev.type==='shock'){const s=24+Math.sin(age*.6)*4;v.paths.forEach((n,j)=>{const x=q[0]+j*5,r=s+j*7;assign(n,'d',`M${x-6} ${q[1]-r}Q${x+r*.8} ${q[1]} ${x-6} ${q[1]+r}`);assign(n,'stroke-width',j===1?3:1);assign(n,'opacity',.65-j*.12);});}
           if(ev.type==='pillar'){v.paths.forEach((n,j)=>{const x=q[0]+(j-1.5)*13;assign(n,'d',`M${x-24} ${q[1]+23}Q${x+40} ${q[1]-95} ${x-8} ${q[1]-190}Q${x+28} ${q[1]-260} ${x-5} ${q[1]-338}`);assign(n,'stroke-width',(j===0?28:11)*scale);});}
           if(ev.type==='ring'){v.paths.forEach((n,j)=>{const r=(25+age*1.3+j*6)*scale;assign(n,'d',`M${q[0]+r} ${q[1]}A${r} ${r} 0 1 0 ${q[0]-r} ${q[1]}A${r} ${r} 0 1 0 ${q[0]+r} ${q[1]}`);assign(n,'stroke-width',j===1?2:.8);});}
-          if(INK.MaterialFlow?.active()&&!setting.reducedMotion&&record.category!=='normal'&&!['pillar','shock','ring'].includes(ev.type)){
-            const layers=INK.MaterialFlow.geometry(pts.map((point,i)=>({point,time:traceFrame-tail+tail*i/(pts.length-1)})),frame,{...INK.MaterialFlow.style(record.character,ev),width,memory:tail+4,color:ev.color,core:matl.core});
+          if(materialActive){
+            const layers=INK.MaterialFlow.geometry(pts.map((point,i)=>({point,time:traceFrame-tail+tail*i/(pts.length-1)})),frame,{...INK.MaterialFlow.style(record.character,ev),category:record.category,contact:localContact,contactTime,width,memory:tail+4,color:ev.color,core:matl.core});
             const paths=[...v.paths,...v.tongues];paths.forEach((n,j)=>{const layer=layers[j];assign(n,'display',layer?'inline':'none');if(!layer)return;assign(n,'transform','');assign(n,'d',layer.d);assign(n,'fill',layer.fill);assign(n,'stroke',layer.stroke||'none');assign(n,'stroke-width',layer.width);assign(n,'opacity',layer.opacity);assign(n,'stroke-dasharray',layer.dash||'none');});
           }
 
@@ -115,6 +117,15 @@
       if(!this.pool||!this.pool.root.isConnected){this.pool?.destroy();this.trails?.destroy();this.trails=new INK.RibbonPool(el,{capacity:64});this.pool=new ParticleSystem(el,{capacity:320});this.bank=new INK.FXEmitter.EmitterBank(this.pool,this.trails);}
       return this.pool;
     },
+    contact(G,owner,target,m,result,context){
+      const F=INK.ContactFlux;if(!setting.enabled||!F?.active()||!['hit','block','parry','armor'].includes(result)||!context?.point||m.throw)return null;
+      const pool=this.mount();if(!pool)return null;
+      const dir=context.direction??owner.dir,source=context.projectile?null:context.sourceAttack||owner.attack;
+      const incoming=context.incoming||[dir,0];
+      const snapshot=F.commit(source,{id:[G.tick,owner.index,target.index,context.projectileID||source?.combatID||m.id,context.hitIndex??0,result].join(':'),point:context.point,incoming,responseDir:context.response?.responseDir||[dir,0],result,born:this.time,character:owner.ch.id,category:m.category,strength:m.super?3:(m.level||1)+(m.od?.35:0),multi:(m.hits||1)>1&&!context.last,last:!!context.last,part:context.response?.part||m.contactPart||(m.pose==='kick'?'foot':'fist')});
+      if(snapshot){this.trails.contact(source,snapshot,this.time);this.trails.stamp(snapshot,this.time,{...INK.MaterialFlow.style(owner.ch.id),category:m.category,reduced:setting.reducedMotion});}
+      return snapshot;
+    },
     burst(x,y,color,count=16,kind='hit',context=null,G){
       const pool=this.mount();if(!pool)return false;if(!setting.enabled)return true;
       const owner=context?.owner,m=context?.move,phased=INK.CombatFlow?.settings.rhythm!=='legacy'&&!!m,multi=phased&&(m?.hits||1)>1&&!context?.last,guard=['block','parry'].includes(kind),big=!!m?.super,last=!!context?.last;
@@ -132,12 +143,12 @@
       }
       pool.emit({x,y,frame,seed,count:guard?8:multi?7:big?20:14,material:base,direction:dir,angle:-12,spread:guard?220:155,speed:guard?4.5:big?10:7.5,life:guard?17:27,size:guard?1.2:2,species:'spark',priority:2});
       if(!guard){
-        if(!INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,reduced:setting.reducedMotion,G}))pool.emit({x,y,frame,seed:seed+1,count:multi?2:big?9:5,material:base,direction:dir,angle:-35,spread:230,speed:2.8,life:33,size:2.2,priority:1});
+        if(!INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,response:context?.response,reduced:setting.reducedMotion,G}))pool.emit({x,y,frame,seed:seed+1,count:multi?2:big?9:5,material:base,direction:dir,angle:-35,spread:230,speed:2.8,life:33,size:2.2,priority:1});
         if(!setting.reducedMotion&&!multi)pool.emit({x,y,frame:frame+(phased?3:0),seed:seed+2,count:3,material:{...base,color:'#c9b7a4',core:'#ede2cf'},direction:dir,angle:0,spread:170,speed:1.3,life:23,size:7,species:'smoke',opacity:.14});
         if(!phased&&owner?.ch.id==='mai'&&(m?.contactPart==='fan'||big))pool.emit({x,y,frame,seed:seed+3,count:big&&last?10:4,material:{...base,color:'#ed8d91',core:'#ffe4c8'},direction:dir,angle:-45,spread:220,speed:2.6,life:38,size:3.1,species:'petal',gravity:.035,curl:3,priority:1});
-        pool.add({x,y,birth:frame,life:5,vx:0,vy:0,gravity:0,size:big?28:18,angle:seed%45,color:base.core,species:'impact',stretch:1.25,opacity:.88,priority:4});
+        pool.add({x,y,birth:frame,life:5,vx:0,vy:0,gravity:0,size:big?28:18,angle:seed%45,color:base.core,species:'impact',stretch:1.25,opacity:INK.ContactFlux?.active()&&m&&!m.throw?.28:.88,priority:4});
       }
-      if(guard)INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,reduced:setting.reducedMotion,G});
+      if(guard)INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,response:context?.response,reduced:setting.reducedMotion,G});
       if(phased)INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,response:context?.response,material:base,reduced:setting.reducedMotion});
       else pool.add({x,y,birth:frame,life:guard?12:9,vx:0,vy:0,gravity:0,size:guard?19:big?34:20,angle:15,color:base.core,species:'ring',stretch:.65,opacity:.55,priority:3});return true;
     },
@@ -187,7 +198,7 @@
       const t=G.paused||G.hitstop||this.frozen?this.time:this.time-1+clamp(alpha);
       this.pool.render(t);this.trails.render(t);
     },
-    clear(){INK.SuperDirector?.clear();INK.StrikeFeel?.clear();INK.StageLight?.clear();INK.ProjectileFlow?.clear();INK.Kinetic?.clear();INK.SceneFeedback?.clear();INK.StateTransitions?.clear();INK.ImpactFeedback?.clear();this.bank?.clear();this.pool?.clear();this.trails?.clear();this.time=0;this.frozen=false;for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkTrail=null;f._inkFxPrevious=null;}},
+    clear(){INK.ContactFlux?.clear();INK.SuperDirector?.clear();INK.StrikeFeel?.clear();INK.StageLight?.clear();INK.ProjectileFlow?.clear();INK.Kinetic?.clear();INK.SceneFeedback?.clear();INK.StateTransitions?.clear();INK.ImpactFeedback?.clear();this.bank?.clear();this.pool?.clear();this.trails?.clear();this.time=0;this.frozen=false;for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkTrail=null;f._inkFxPrevious=null;}},
     quality(value){if(!Number.isFinite(value))throw TypeError('Finite FX quality required');setting.quality=clamp(value,.25,1.5);},
     setEnabled(value){setting.enabled=!!value;},
     get stats(){return this.pool?.stats||{active:0,peak:0,dropped:0,capacity:320};},

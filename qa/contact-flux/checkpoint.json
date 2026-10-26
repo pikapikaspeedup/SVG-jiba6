@@ -1,0 +1,29 @@
+{
+  "stage": "continuous-6-contact-flux",
+  "htmlSha256": "28b61152feb3355585e024b6fb70a5022184dfd0b748f131e6b4bb18e0dca83c",
+  "gameSource": "22cb837c8c731d3f",
+  "reports": {
+    "playable": {
+      "path": "qa/contact-flux/playable.json",
+      "rows": 7
+    },
+    "visual": {
+      "path": "qa/contact-flux/visual.json",
+      "rows": 34
+    },
+    "trades": {
+      "path": "qa/contact-flux/trades.json",
+      "rows": 4
+    },
+    "frame-cost": {
+      "path": "qa/contact-flux/frame-cost.json",
+      "rows": 16
+    }
+  },
+  "limits": [
+    "Actual special ribbon deformation sampled for Ken hit and Mai block; not every special move",
+    "CPU timings include hitstop-held contact frames, not GPU/display/mobile FPS",
+    "No long endurance, no new Pro consultation",
+    "Original 707 authored assets unchanged"
+  ]
+}

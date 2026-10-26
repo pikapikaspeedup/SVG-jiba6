@@ -1,0 +1,104 @@
+{
+  "htmlSha256": "28b61152feb3355585e024b6fb70a5022184dfd0b748f131e6b4bb18e0dca83c",
+  "rows": [
+    {
+      "name": "real hit commits one source-linked section",
+      "passed": true,
+      "details": {
+        "event": "hit",
+        "result": "hit",
+        "stamps": 1
+      }
+    },
+    {
+      "name": "frozen renders neither duplicate sections nor alter combat",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "time": 7
+      }
+    },
+    {
+      "name": "real block commits one source-linked section",
+      "passed": true,
+      "details": {
+        "event": "block",
+        "result": "block",
+        "stamps": 1
+      }
+    },
+    {
+      "name": "real parry commits one source-linked section",
+      "passed": true,
+      "details": {
+        "event": "parry",
+        "result": "parry",
+        "stamps": 1
+      }
+    },
+    {
+      "name": "real armor commits one source-linked section",
+      "passed": true,
+      "details": {
+        "event": "armor",
+        "result": "armor",
+        "stamps": 1
+      }
+    },
+    {
+      "name": "projectile contact has section without infecting owner attack",
+      "passed": true,
+      "details": {
+        "event": "hit",
+        "stamps": 1
+      }
+    },
+    {
+      "name": "visual Flux switch preserves actual combat result",
+      "passed": true,
+      "details": {
+        "on": [
+          {
+            "hp": 10000,
+            "x": 540,
+            "y": 0,
+            "drive": 6,
+            "super": 3,
+            "state": "idle",
+            "stateT": 0
+          },
+          {
+            "hp": 9180,
+            "x": 715.8570135199569,
+            "y": 0,
+            "drive": 6,
+            "super": 3,
+            "state": "idle",
+            "stateT": 0
+          }
+        ],
+        "off": [
+          {
+            "hp": 10000,
+            "x": 540,
+            "y": 0,
+            "drive": 6,
+            "super": 3,
+            "state": "idle",
+            "stateT": 0
+          },
+          {
+            "hp": 9180,
+            "x": 715.8570135199569,
+            "y": 0,
+            "drive": 6,
+            "super": 3,
+            "state": "idle",
+            "stateT": 0
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}
