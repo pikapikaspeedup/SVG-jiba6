@@ -29,8 +29,12 @@
   // delaying all recoil until hitstop expires would make a hit feel unresponsive.
   const impact=['hit','block','stun'].includes(kind);
   if(impact)for(const k of immediateBody){delete poseBridge.offsets[k];delete poseBridge.velocities[k];}
+  // The lead forearm must already defend at contact, including the held frame.
+  // Rear protection and legs keep their ordinary transition ownership.
+  if(kind==='block'&&INK.GuardBody?.active())for(const k of ['fw','fe']){delete poseBridge.offsets[k];delete poseBridge.velocities[k];}
   const incoming=Motion.apply(target,poseBridge,0),incomingNext=Motion.apply(following,poseBridge,dt);
   const jointBridge=INK.Articulation.bridge(Rig.solveAnimation(profile,from.pose),Rig.solveAnimation(profile,from.previous),Rig.solveAnimation(profile,incoming),Rig.solveAnimation(profile,incomingNext),n,dt);
+  if(kind==='block'&&INK.GuardBody?.active()){jointBridge.offsets.frontArm=[0,0];jointBridge.velocities.frontArm=[0,0];}
   const bridge={to:next,kind,duration:n,start:f._inkVisualClock||0,poseBridge,jointBridge,secondaryFrom:from.secondary,impact};
   f._inkStateVisualBlend=bridge;
   Transitions.events.push({clock:bridge.start,actor:f.index,from:from.key,to:kind,duration:n,impact});

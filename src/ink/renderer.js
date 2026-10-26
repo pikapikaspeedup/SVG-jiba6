@@ -86,7 +86,7 @@
     this.ankle=node('path',{d:'M-10 -16L10 -16 10 -3Q0 1-10 -3Z',fill:c.id==='mai'?'#f3e5d4':bare?p.dark[1]:p.dark[0],stroke:INKLINE,'stroke-width':.8},this.end);
     this.ankleDetail=node('path',{d:'M-9 -12L9 -10M-9 -7L9 -5',fill:'none',stroke:c.id==='mai'?'#b39a90':p.dark[2],'stroke-width':.8},this.end);
    }else{
-    this.fist=node('g',{},this.end);this.fist.innerHTML=INK.assets.hand(c);this.palm=node('g',{},this.end);this.palm.innerHTML=INK.assets.hand(c,true);
+    this.hands=Object.fromEntries(['fist','palm','guard','claw','grip'].map(kind=>{const group=node('g',{'data-hand':kind,visibility:kind==='fist'?'visible':'hidden'},this.end);group.innerHTML=INK.assets.hand(c,kind);return[kind,group];}));this.fist=this.hands.fist;this.palm=this.hands.palm;
     if(c.id==='mai'&&!rear){this.fan=node('g',{},this.end);this.fanRig=new INK.MaiFan(this.fan);this.end.insertBefore(this.fan,this.fist);}
    }
    this.decalsReady=false;
@@ -147,7 +147,7 @@
    setTransform(this.end,endMatrix,stats);
    if(this.leg){const shoe=INK.SkinGeometry.foot(INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
 
-   if(!this.leg){const open=p.open>.45;assign(this.palm,'visibility',open?'visible':'hidden',stats);assign(this.fist,'visibility',open?'hidden':'visible',stats);
+   if(!this.leg){const requested=this.rear?p.handRear:p.handFront,kind=this.fan&&p.fan!==0?'grip':['fist','guard','claw','grip'].includes(requested)?requested:p.open>.45?'palm':'fist';for(const [name,group] of Object.entries(this.hands))assign(group,'visibility',name===kind?'visible':'hidden',stats);
     if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1);assign(this.fan,'transform',`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
    }
   }
@@ -233,7 +233,8 @@
    const body=INK.bodyMatrix(p),h=Rig.sockets(p,r).head,headScale=this.c.headScale*this.style.head;
    const hv=INK.Turn.view(INK.Turn.angle(p,'head'));setTransform(this.head,mat.compose(h[0]+hv.offset*.5,h[1],(p.lean||0)+(p.head||0)+(p.chest||0),headScale*(.8+.2*hv.width),headScale),s);
    // Face attachments have continuous disjoint surface masks above.
-   for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===expression?'visible':'hidden',s);
+   const face=expression==='hurt'?'hurt':['guard','brace'].includes(p.expression)?p.expression:expression;
+   for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===face?'visible':'hidden',s);
    const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
    setTransform(this.hair,mat.multiply(mat.compose(h[0]-6,h[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365)),s);
    const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);

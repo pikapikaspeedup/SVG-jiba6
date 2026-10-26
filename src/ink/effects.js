@@ -120,6 +120,11 @@
       const owner=context?.owner,m=context?.move,phased=INK.CombatFlow?.settings.rhythm!=='legacy'&&!!m,multi=phased&&(m?.hits||1)>1&&!context?.last,guard=['block','parry'].includes(kind),big=!!m?.super,last=!!context?.last;
       const base=guard?materials.guard:materials[owner?.ch?.id]||materials.ryu,dir=context?.direction||owner?.dir||1,seed=hash([G.tick,owner?.index,kind,m?.id,x,y].join(':')),frame=this.time;
       pool.quality=setting.quality*(setting.reducedMotion?.55:1);
+      if(kind==='armor'){
+        const brace={...materials.guard,color:'#d79c59',core:'#ffe0a8'};
+        pool.emit({x,y,frame,seed,count:8,material:brace,direction:dir,angle:0,spread:180,speed:3.2,life:13,size:1.4,species:'spark',priority:2});
+        INK.ImpactFeedback.emit(pool,{x,y,frame,G,owner,m,result:kind,last,dir,response:context?.response,material:brace,reduced:setting.reducedMotion});return true;
+      }
       pool.emit({x,y,frame,seed,count:guard?8:multi?7:big?20:14,material:base,direction:dir,angle:-12,spread:guard?220:155,speed:guard?4.5:big?10:7.5,life:guard?17:27,size:guard?1.2:2,species:'spark',priority:2});
       if(!guard){
         if(!INK.MaterialFlow?.contact(pool,{x,y,frame,owner,m,result:kind,dir,last,reduced:setting.reducedMotion,G}))pool.emit({x,y,frame,seed:seed+1,count:multi?2:big?9:5,material:base,direction:dir,angle:-35,spread:230,speed:2.8,life:33,size:2.2,priority:1});

@@ -9,9 +9,11 @@
     slash:'M-1.3 .55C-.95-.55 .05-1.3 1.3-.8C.25-.8-.65-.2-1.3 .55Z',
     shield:'M-.45-1C.65-.85.65.85-.45 1L-.25.7C.33.45.33-.45-.25-.7Z',
     cross:'M-1.2-.08L-.18-.17-.04-1 .15-.13 1.2.04.16.2.01 1-.15.14Z',
-    thrust:'M-1.5-.07L.45-.16 1.2 0 .45.16-1.5.07Z'
+    thrust:'M-1.5-.07L.45-.16 1.2 0 .45.16-1.5.07Z',
+    brace:'M-.9-.45L-.3-.75.55-.6.9-.15.7.55-.1.8-.8.4ZM-.5-.1L.05-.35.5.1-.05.35Z'
   });
   function classify(m,result,last){
+    if(result==='armor')return 'brace';
     if(result==='block'||result==='parry')return 'guard';
     if(m?.super&&last)return 'finisher';
     if(m?.kind==='upper'||m?.launch)return 'launch';
@@ -39,19 +41,20 @@
       const angle=response?Math.atan2(response.responseDir[1],response.responseDir[0])*180/Math.PI+response.turn*20:direction(owner,m,kind,dir),multi=(m?.hits||1)>1&&!last,size=kind==='finisher'?37:multi?17:kind==='kick'?30:24;
       const add=(species,scale,rotation=angle,delay=0,life=10,opacity=.85)=>pool.add({x,y,birth:frame+delay,life,vx:0,vy:0,gravity:0,size:size*scale,angle:rotation,color:material.core,species,stretch:1,opacity,priority:4,
         sizeCurve:[[0,.75],[.22,1],[1,1.5]],opacityCurve:[[0,1],[.18,.88],[.65,.36],[1,0]]});
-      if(kind==='guard')add('shield',1.1,dir===-1?180:0,0,11,.7);
+      if(kind==='brace')add('brace',.85,dir===-1?180:0,0,8,.65);
+      else if(kind==='guard')add('shield',1.1,dir===-1?180:0,0,11,.7);
       else if(kind==='fan'){add('slash',1.45,angle,0,multi?7:12);if(!reduced)add('slash',1.1,angle+20,2,11,.5);}
       else if(kind==='launch'){add('thrust',1.6,angle,0,9,.72);add('cross',.64,angle+35,0,7,.78);}
       else if(kind==='finisher'){add('cross',1.2,angle,0,9);add('ring',.9,0,2,15,.55);}
       else {add(kind==='kick'?'thrust':'cross',1,angle,0,multi?6:9);}
       // Intermediate blows are deliberately economical. The final contact
       // releases the slower debris instead of every hit spawning a smoke cloud.
-      if(!multi&&kind!=='guard'&&!reduced){
+      if(!multi&&kind!=='guard'&&kind!=='brace'&&!reduced){
         pool.emit({x,y,frame:frame+3,seed:seed+7,count:owner?.ch?.id==='mai'?4:3,material,
           direction:dir,angle:-42,spread:140,speed:2.5,life:24,size:2.5,
           species:owner?.ch?.id==='mai'?'petal':material.species,drag:.07,priority:1});
       }
-      this.events.push({tick:G.tick,move:m?.id,kind,multi,angle,frame,response:response||null,delayed:!multi&&!reduced});if(this.events.length>128)this.events.shift();
+      this.events.push({tick:G.tick,move:m?.id,kind,multi,angle,frame,response:response||null,delayed:!multi&&kind!=='guard'&&kind!=='brace'&&!reduced});if(this.events.length>128)this.events.shift();
       return kind;
     },
     clear(){this.events=[];}

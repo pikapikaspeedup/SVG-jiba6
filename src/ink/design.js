@@ -7,14 +7,16 @@
  const profiles=INK.assets.profiles;
 
  function face(c,mood,side){const a=SF6Art.palette[c.id],female=c.female;let s='';
-  const hurt=mood==='hurt',power=mood==='power';
+  const hurt=mood==='hurt',power=mood==='power',guard=mood==='guard',brace=mood==='brace';
   if(hurt)return L('M-13-5l10 3-8 2M9-4l13-3-6 7',a.hair[2],1.7)+P('M5 17Q12 12 20 15L16 23 9 22Z','#723c40',.6);
   if(!side){s+=F(female?'M-15-6Q-8-10-2-5L-6-2-12-3Z':'M-16-6L-8-9-2-5-6-2-13-3Z','#f7ede1');s+=F('M-7-7L-4-6-4-3-7-3Z',a.eye)+L('M-15-6Q-8-10-2-5',a.hair[2],1.45);}
   s+=F(female?'M7-5Q15-10 25-7L20-2 12-2Z':'M7-5L17-9 25-6 20-2 11-2Z','#fff6e9');
   s+=F('M17-7L21-7 20-2 17-2Z',a.eye)+F('M19-7L20-6 20-3 19-3Z','#232631')+L('M7-5Q17-11 25-7',a.hair[2],female?1.65:1.9);
-  s+=L(power?'M-15-16L-2-11M8-11L28-18':female?'M-15-15Q-8-18-1-13M9-14Q19-19 27-16':'M-16-17L-2-14M8-15L28-19',a.hair[2],female?1.25:2.35);
+  s+=L(power||brace?'M-15-16L-2-11M8-11L28-18':guard?'M-15-15L-2-12M9-12L27-16':female?'M-15-15Q-8-18-1-13M9-14Q19-19 27-16':'M-16-17L-2-14M8-15L28-19',a.hair[2],female?1.25:2.35);
   s+=F('M10-3L9 6 15 8 19 6 13 5Z',a.skin[2],'opacity=".42"')+L('M21 5L25 5',a.skin[2],.7);
-  if(power)s+=P('M5 16Q12 12 21 15L19 23 10 25 6 21Z','#673a43',.65)+F('M8 16L19 16 18 18 9 18Z','#fff4dd');
+  if(brace)s+=P('M5 16Q13 13 22 16L20 21 7 21Z','#673a43',.75)+F('M7 16L20 16 19 19 8 19Z','#fff4dd')+L('M10 16L10 19M15 16L15 19',a.skin[2],.5);
+  else if(guard)s+=L('M6 17Q13 15 21 16',female?'#a75460':'#72483e',1.3)+L('M10 22L17 22',a.skin[2],.65);
+  else if(power)s+=P('M5 16Q12 12 21 15L19 23 10 25 6 21Z','#673a43',.65)+F('M8 16L19 16 18 18 9 18Z','#fff4dd');
   else s+=L(c.id==='juri'?'M5 17Q15 22 23 13':female?'M6 17Q13 19 21 15':'M5 17L13 16 21 17',female?'#a75460':'#72483e',1.05)+L('M10 22L16 22',a.skin[0],.95);
   if(c.id==='ryu')s+=F('M-15 16L-4 23 6 30 14 29 22 21 18 30 10 35-4 31-16 20Z','#493b3a','opacity=".74"')+L('M-11 19l2 3M-6 24l3 3M1 28l3 2M13 30l3-2',a.skin[0],.5);
   if(c.id==='luke')s+=L('M-13 7l4 6M-16 8l4 6',a.skin[2],1.3);
@@ -29,7 +31,7 @@
    s+=P(side?'M-24-27Q-7-45 14-35L27-25 28-9 27-2 35 5 28 9 25 22 11 33-4 29-19 14-24-4Z':female?'M-24-27Q-10-45 11-38L26-28 28-12 26-3 32 4 27 9 24 22 10 34-2 30-19 14-24-5Z':'M-26-25L-17-36-2-41 15-36 27-26 29-10 28-2 34 5 28 10 26 24 11 35-4 32-21 15-26-5Z',skin,1.35);
    s+=F('M-23-16L-13-8-12 8-4 23 9 33-3 29-20 14Z',a.skin[2],'opacity=".33"')+F('M16 11L26 9 23 20 16 23 10 20Z',a.skin[0],'opacity=".32"');
    s+=P('M-23-3Q-32-9-31 2L-25 11-21 8-20 0Z',skin,.9)+L('M-27 0Q-22-3-24 5',a.skin[2],.8);
-   for(const mood of ['rest','power','hurt'])s+=`<g data-expression="${mood}"${mood==='rest'?'':' visibility="hidden"'}>${face(c,mood,side)}</g>`;
+   for(const mood of ['rest','power','hurt','guard','brace'])s+=`<g data-expression="${mood}"${mood==='rest'?'':' visibility="hidden"'}>${face(c,mood,side)}</g>`;
    s+=P(INK.Art[c.id].hair,hair,1.3);
    s+=L(c.id==='iori'?'M-25-31Q-6-44 15-34L-3-4M-17-25L-20 5':c.id==='ken'?'M-24-27Q-6-43 13-32M-17-29L-19-6M19-30L24-8':'M-21-29Q-8-39 9-33M-16-30L-17-21',a.hair[0],1.2,'opacity=".65"');
   }

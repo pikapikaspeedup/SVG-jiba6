@@ -1,0 +1,122 @@
+{
+  "htmlSha256": "d8f4c276ea058447de84e3487c96d36b04b32aad35d7bee77c0a603c13d5f72c",
+  "passed": true,
+  "rows": [
+    {
+      "id": "chun",
+      "mode": "low",
+      "event": "block",
+      "state": "block",
+      "attack": null,
+      "arms": [
+        [
+          "guard"
+        ],
+        [
+          "guard"
+        ]
+      ],
+      "expressions": [
+        "guard",
+        "guard"
+      ],
+      "stable": true,
+      "variants": 10,
+      "fanGrip": true,
+      "hasFaces": true
+    },
+    {
+      "id": "iori",
+      "mode": "high",
+      "event": "block",
+      "state": "block",
+      "attack": null,
+      "arms": [
+        [
+          "claw"
+        ],
+        [
+          "claw"
+        ]
+      ],
+      "expressions": [
+        "guard",
+        "guard"
+      ],
+      "stable": true,
+      "variants": 10,
+      "fanGrip": true,
+      "hasFaces": true
+    },
+    {
+      "id": "luke",
+      "mode": "armor",
+      "event": "armor",
+      "state": "attack",
+      "attack": "DI",
+      "arms": [
+        [
+          "fist"
+        ],
+        [
+          "fist"
+        ]
+      ],
+      "expressions": [
+        "brace",
+        "brace"
+      ],
+      "stable": true,
+      "variants": 10,
+      "fanGrip": true,
+      "hasFaces": true
+    },
+    {
+      "id": "mai",
+      "mode": "high",
+      "event": "block",
+      "state": "block",
+      "attack": null,
+      "arms": [
+        [
+          "grip"
+        ],
+        [
+          "guard"
+        ]
+      ],
+      "expressions": [
+        "guard",
+        "guard"
+      ],
+      "stable": true,
+      "variants": 10,
+      "fanGrip": true,
+      "hasFaces": true
+    },
+    {
+      "id": "ryu",
+      "mode": "hurt",
+      "event": "hit",
+      "state": "hit",
+      "attack": null,
+      "arms": [
+        [
+          "fist"
+        ],
+        [
+          "fist"
+        ]
+      ],
+      "expressions": [
+        "hurt",
+        "hurt"
+      ],
+      "stable": true,
+      "variants": 10,
+      "fanGrip": true,
+      "hasFaces": true
+    }
+  ],
+  "errors": []
+}

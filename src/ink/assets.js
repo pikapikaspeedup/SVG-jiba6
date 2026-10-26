@@ -58,7 +58,11 @@
  }
  function hand(c,open=false) {
   const p=SF6Art.palette[c.id],gloves=['ryu','ken','cammy','luke'].includes(c.id),base=gloves?(c.id==='ken'?'#51434a':c.id==='luke'?'#5683aa':'#cb4252'):`url(#atelier-${c.id}-skin)`,light=gloves?'#f18c82':p.skin[0],shade=gloves?'#773440':p.skin[2];
-  if(open){return P('M-9-8L3-11 14-17 25-18Q28-17 26-14L17-11 32-13Q36-12 33-9L20-6 36-7Q40-5 35-3L20 0 32 1Q36 3 32 5L17 5 24 10Q25 14 21 13L8 7-1 11-9 7Z',base,1.15)+L('M7-7L13-1 7 5M19-6L24-7M18 0L26 1',shade,.8);}
+  const mode=typeof open==='string'?open:open?'palm':'fist';
+  if(mode==='guard')return P('M-9-8L1-11 7-19Q10-22 12-18L12-10 17-23Q20-25 22-20L20-8 26-20Q30-22 31-17L26-4 32-12Q36-13 35-8L28 7 17 12 4 10-9 6Z',base,1.15)+F('M2-7L10-10 22-5 19 5 6 7Z',light,'opacity=".35"')+L('M5-6L12 0 8 6M16-9L17-2M23-7L23 0',shade,.85);
+  if(mode==='claw')return P('M-9-8L2-12 11-23 20-25 26-20 24-16 19-20 14-12 26-18 34-14 34-8 30-7 29-12 20-7 31-9 38-4 37 2 33 3 32-2 21 1 28 5 30 11 26 14 23 9 14 7 5 12-9 7Z',base,1.15)+F('M2-9L11-13 17-9 13-1 3 4Z',light,'opacity=".35"')+L('M4-7L11-2 7 6M17-11L21-13M21-5L28-5M18 4L23 7',shade,.85);
+  if(mode==='grip')return P('M-9-8L2-11 12-14 23-11 29-5 28 3 23 9 11 11 2 8-9 6Z',base,1.15)+F('M4-9L12-12 23-9 24-5 12-6Z',light,'opacity=".45"')+P('M3-5Q9-10 14-4L19 1 15 6 8 4 3 0Z',base,.8)+L('M19-9L22-5M23-3L25 1M20 6L24 4',shade,.85);
+  if(mode==='palm'){return P('M-9-8L3-11 14-17 25-18Q28-17 26-14L17-11 32-13Q36-12 33-9L20-6 36-7Q40-5 35-3L20 0 32 1Q36 3 32 5L17 5 24 10Q25 14 21 13L8 7-1 11-9 7Z',base,1.15)+L('M7-7L13-1 7 5M19-6L24-7M18 0L26 1',shade,.8);}
   return P('M-9-9L2-12 10-16 22-15 30-10 31-1 25 7 13 11 2 9-9 6Z',base,1.15)+F('M4-10L12-13 24-12 27-8 16-8 12-3 3-4Z',light,'opacity=".65"')+P('M3-5Q8-12 13-6L18 0 13 7 6 5 2 0Z',base,.85)+L('M15-12L16-7M22-11L23-6M27-8L28-3M17 5L23 4',shade,.85);
  }
  function torso(c,back=false) {
@@ -73,7 +77,7 @@
  }
  function pack(c) {
   const p=byID[c.id]||profiles[0],proxy={ch:c,headTails:document.createElementNS(NS,'g'),coatTails:document.createElementNS(NS,'g'),trailing:document.createElementNS(NS,'g')};SF6Art.attach(proxy);
-  return {profile:{...p,...c,arm:(c.arm||p.arm).slice(),leg:(c.leg||p.leg).slice(),headScale:c.headScale??p.headScale},torso:torso(c),torsoBack:torso(c,true),heads:{front:head(c),profile:head(c,'profile'),back:head(c,'back')},hands:{fist:hand(c),palm:hand(c,true)},foot:SF6Art.feet(c),fan:SF6Art.fan(c),hair:proxy.headTails.innerHTML,coat:proxy.coatTails.innerHTML,trail:proxy.trailing.innerHTML};
+  return {profile:{...p,...c,arm:(c.arm||p.arm).slice(),leg:(c.leg||p.leg).slice(),headScale:c.headScale??p.headScale},torso:torso(c),torsoBack:torso(c,true),heads:{front:head(c),profile:head(c,'profile'),back:head(c,'back')},hands:{fist:hand(c),palm:hand(c,true),guard:hand(c,'guard'),claw:hand(c,'claw'),grip:hand(c,'grip')},foot:SF6Art.feet(c),fan:SF6Art.fan(c),hair:proxy.headTails.innerHTML,coat:proxy.coatTails.innerHTML,trail:proxy.trailing.innerHTML};
  }
  INK.assets={profiles,byID,pack,head,hand,torso,P,F,L};
 })();

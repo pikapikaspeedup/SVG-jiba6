@@ -11,7 +11,7 @@
   return Math.hypot(point[0]-head[0],point[1]-head[1])<70?'head':point[1]>hip[1]+18?'leg':'body';
  }
  function response(f,p,r,now,motion=1){
-  if(!active())return false;const age=now-r.actorBirth;if(age<0||age>r.duration)return true;
+  if(!active())return false;if(INK.GuardBody?.response(f,p,r,now,motion))return true;const age=now-r.actorBirth;if(age<0||age>r.duration)return true;
   const end=clamp(1-age/r.duration),power=Math.min(1.6,r.energy)*INK.Kinetic.settings.impact*motion,sign=r.worldDir*f.dir;
   const pulse=(delay,rate,damp)=>{const t=Math.max(0,age-delay);return (age<delay?1:Math.cos(t*rate))*Math.exp(-damp*t)*end*end;};
   const fast=pulse(0,.25,.13)*power,lag=pulse(3,.22,.095)*power,weight=Math.sin(Math.PI*clamp(age/r.duration))*end*power;
@@ -53,16 +53,16 @@
   return true;
  }
  function audio(m,type,zone,context={},x=720){
-  const multi=(m.hits||1)>1&&!context.last,heavy=m.level>=3||m.super&&context.last,guard=type==='block',parry=type==='parry',throwing=type==='throw';
-  const tier=parry?'parry':guard?'block':throwing?'land':m.super?(context.last?'superfinish':'superhit'):heavy?'heavy':'hit';
+  const multi=(m.hits||1)>1&&!context.last,heavy=m.level>=3||m.super&&context.last,guard=type==='block',parry=type==='parry',armor=type==='armor',throwing=type==='throw';
+  const tier=armor?'armor':parry?'parry':guard?'block':throwing?'land':m.super?(context.last?'superfinish':'superhit'):heavy?'heavy':'hit';
   const f=zone==='head'?230:zone==='leg'?110:145,level=multi?.64:heavy?1.1:.85;
-  let plan=parry?[['tone',context.perfect?1050:800,1500,.13,'sine',.045],['tone',1750,1200,.16,'sine',.022,.012]]:guard?[['noise',.045,1900,.042],['tone',430,210,.065,'triangle',.052]]:throwing?[['tone',80,28,.23,'sine',.13],['noise',.13,1050,.07]]:[['tone',heavy?f*.7:f,heavy?35:55,heavy?.18:.095,zone==='head'?'triangle':'sine',heavy?.12:.085],['noise',heavy?.095:.055,zone==='head'?4200:zone==='leg'?1500:2300,heavy?.08:.055]];
-  if(!guard&&!parry&&!throwing&&heavy)plan.push(['tone',f*1.8,f*.8,.07,'triangle',.025,.008]);
-  if(!guard&&!parry&&m.category!=='normal'&&!multi)plan.push(['noise',.08,3200,.018,.012]);
+  let plan=armor?[['tone',105,57,.085,'triangle',.07],['noise',.04,1150,.045]]:parry?[['tone',context.perfect?1050:800,1500,.13,'sine',.045],['tone',1750,1200,.16,'sine',.022,.012]]:guard?[['noise',.045,1900,.042],['tone',430,210,.065,'triangle',.052]]:throwing?[['tone',80,28,.23,'sine',.13],['noise',.13,1050,.07]]:[['tone',heavy?f*.7:f,heavy?35:55,heavy?.18:.095,zone==='head'?'triangle':'sine',heavy?.12:.085],['noise',heavy?.095:.055,zone==='head'?4200:zone==='leg'?1500:2300,heavy?.08:.055]];
+  if(!armor&&!guard&&!parry&&!throwing&&heavy)plan.push(['tone',f*1.8,f*.8,.07,'triangle',.025,.008]);
+  if(!armor&&!guard&&!parry&&m.category!=='normal'&&!multi)plan.push(['noise',.08,3200,.018,.012]);
   const contact=context.response,style=contact?.style||'neutral',part=contact?.part||m.contactPart||'',foot=/foot|leg|shin|kick/.test(part);
   // Character timbres share the same contact trigger and bounded voice pool.
   // Defensive sounds retain their recognisable common cue across the roster.
-  if(!guard&&!parry&&!throwing){
+  if(!armor&&!guard&&!parry&&!throwing){
    const tint={rooted:[.88,1700],pursuit:[1.06,3100],alternating:[foot?.9:1.1,2800],spiral:[1.14,3600],boxing:[.78,1900],'single-leg':[1.2,4100],'fan-dance':[1.3,4700],'low-claw':[.76,1200]}[style];
    if(tint){for(const layer of plan){if(layer[0]==='tone'){layer[1]*=tint[0];layer[2]*=tint[0];}else if(layer[0]==='noise')layer[2]=tint[1];}
     if(heavy&&!multi&&style==='boxing')plan.push(['tone',75,32,.09,'triangle',.024,.014]);

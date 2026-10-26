@@ -1,0 +1,516 @@
+{
+  "htmlSha256": "d8f4c276ea058447de84e3487c96d36b04b32aad35d7bee77c0a603c13d5f72c",
+  "rows": [
+    {
+      "name": "ryu high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "fist",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "ryu high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "fist",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "ryu low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ryu high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              60.84213324327704,
+              -328.74331252514065
+            ],
+            "rear": [
+              2.315182097672512,
+              -289.31489324287895
+            ]
+          },
+          {
+            "front": [
+              87.88176498631871,
+              -283.03519196389874
+            ],
+            "rear": [
+              18.08329557648536,
+              -293.4494367440458
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ken high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "guard",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "ken high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "guard",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "ken low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "ken high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              77.2117018774782,
+              -330.79113891571865
+            ],
+            "rear": [
+              -7.349640511958238,
+              -274.69780683772154
+            ]
+          },
+          {
+            "front": [
+              91.43265497688213,
+              -281.8342750198743
+            ],
+            "rear": [
+              15.866118311687213,
+              -293.3720112078595
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "chun high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "guard",
+          "guard"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "chun high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "guard",
+          "guard"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "chun low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "chun high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              71.3200000000001,
+              -332.76
+            ],
+            "rear": [
+              -11.049027702005297,
+              -298.79142535766834
+            ]
+          },
+          {
+            "front": [
+              87.91257415159541,
+              -279.79542497466423
+            ],
+            "rear": [
+              17.405955947987053,
+              -293.7207298880688
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "cammy high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "fist",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "cammy high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "fist",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "cammy low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cammy high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              60.60677998304841,
+              -332.0373305092601
+            ],
+            "rear": [
+              11.789928992656598,
+              -314.2608749431071
+            ]
+          },
+          {
+            "front": [
+              81.65913526071918,
+              -282.7975449760868
+            ],
+            "rear": [
+              18.63714765516826,
+              -293.7830646102437
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "luke high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "fist",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "luke high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "fist",
+          "fist"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "luke low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "luke high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              63.95035141793966,
+              -336.83284548361627
+            ],
+            "rear": [
+              27.479090779174093,
+              -293.39980216797846
+            ]
+          },
+          {
+            "front": [
+              86.2864062218865,
+              -286.76583525692996
+            ],
+            "rear": [
+              30.017670925896823,
+              -299.99378818306917
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "juri high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "guard",
+          "guard"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "juri high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "guard",
+          "guard"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "juri low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "juri high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              73.47337928935853,
+              -325.5907522753499
+            ],
+            "rear": [
+              -52.47167928693676,
+              -235.14715960045393
+            ]
+          },
+          {
+            "front": [
+              85.30895492949854,
+              -278.5199006901182
+            ],
+            "rear": [
+              19.516747034659033,
+              -293.81378089742
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "mai high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "grip",
+          "guard"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "mai high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "grip",
+          "guard"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "mai low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "mai high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              70.85159899174985,
+              -331.81348461534475
+            ],
+            "rear": [
+              -12.595395448117959,
+              -281.14843814853583
+            ]
+          },
+          {
+            "front": [
+              90.2937345009134,
+              -278.69397302849876
+            ],
+            "rear": [
+              11.431511647785776,
+              -296.6362005646636
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "iori high real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "claw",
+          "claw"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "iori high first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori low real block has guard hands and pure render",
+      "passed": true,
+      "details": {
+        "hands": [
+          "claw",
+          "claw"
+        ],
+        "state": "block"
+      }
+    },
+    {
+      "name": "iori low first-contact lead arm bridge is released",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "iori high and low resolved guard skeletons differ",
+      "passed": true,
+      "details": {
+        "views": [
+          {
+            "front": [
+              73.6279325959412,
+              -321.70091170421836
+            ],
+            "rear": [
+              -65.03576640322441,
+              -195.11286753847287
+            ]
+          },
+          {
+            "front": [
+              88.05407508830409,
+              -278.9492207671404
+            ],
+            "rear": [
+              19.099767817214904,
+              -293.48493273685887
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Real jab triggers immutable armor event without hit confirm",
+      "passed": true,
+      "details": {
+        "event": {
+          "tick": 116,
+          "type": "armor",
+          "attacker": 1,
+          "defender": 0,
+          "move": "sLP",
+          "damage": 84
+        },
+        "confirm": false,
+        "combo": 0,
+        "armor": 1
+      }
+    },
+    {
+      "name": "Armor render preserves attack and frozen sampling",
+      "passed": true,
+      "details": {
+        "handFront": null,
+        "open": 0
+      }
+    },
+    {
+      "name": "Armored attack resumes rather than becoming hitstun",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "errors": []
+}

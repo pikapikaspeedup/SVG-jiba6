@@ -1,0 +1,38 @@
+{
+  "suite": "spacing-source-and-evidence",
+  "htmlSha256": "d8f4c276ea058447de84e3487c96d36b04b32aad35d7bee77c0a603c13d5f72c",
+  "total": 6,
+  "passed": 6,
+  "tests": [
+    {
+      "name": "Node is available for required syntax and math checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contact mathematics and spacing state contracts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Production JavaScript syntax",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "All 707 original action/model/rig/route files preserved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "INK-Street-Fighter-6.html contains current experiment sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "INK-Street-Fighter-6-Player.html contains current experiment sources",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

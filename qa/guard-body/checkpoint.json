@@ -1,0 +1,41 @@
+{
+  "htmlSha256": "d8f4c276ea058447de84e3487c96d36b04b32aad35d7bee77c0a603c13d5f72c",
+  "stage": "Continuous round 3: distinct guard and armor body response, independent hand and face modeling",
+  "goal": "active; stage storage does not finish continuous work",
+  "reports": [
+    {
+      "report": "qa/guard-body/playable.json",
+      "checks": 43,
+      "passed": true
+    },
+    {
+      "report": "qa/guard-body/appearance.json",
+      "checks": 5,
+      "passed": true
+    },
+    {
+      "report": "qa/wake-flow/playable.json",
+      "checks": 38,
+      "passed": true
+    },
+    {
+      "report": "qa/air-pursuit/playable.json",
+      "checks": 46,
+      "passed": true
+    },
+    {
+      "report": "qa/guard-body/source/validation.json",
+      "checks": 6,
+      "passed": true
+    },
+    {
+      "report": "qa/guard-body/frame-cost.json",
+      "checks": 8,
+      "passed": true
+    }
+  ],
+  "unitChecks": [
+    "tests/guard-body/unit.cjs"
+  ],
+  "limitations": "Focused local real-contact and appearance checks. No endurance, competitive balance, subjective audio or hardware FPS claim."
+}
