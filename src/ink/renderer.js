@@ -239,7 +239,7 @@
     const leg=name.endsWith('Leg'),limb=this[name],chain=sockets[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
     if(name==='rearArm'){
      const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
-     const facing=Math.max(0,Math.cos(INK.rad(bodyAngle)));if(!['locomotion','strike-model'].includes(visual?.mode)){depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;}
+     const facing=Math.max(0,Math.cos(INK.rad(bodyAngle)));if(!(visual?.nativeBody||visual?.mode==='locomotion')){depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;}
     }
     const exposure=leg?INK.Turn.smooth(-10,28,Math.max(chain[0][1]-chain[1][1],chain[0][1]-chain[2][1])):1;
     assign(layers[name].group,'opacity',exposure,s);
@@ -270,7 +270,7 @@
    for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===face?'visible':'hidden',s);
    const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
    const oldHair=()=>{const at=visual?Rig.sockets(visual.legacyPose,visual.legacyRig).head:h;return mat.multiply(mat.compose(at[0]-6,at[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365));};
-   setTransform(this.hair,readableHead||['locomotion','contact','strike-model'].includes(visual?.mode)?mat.multiply(headFrame,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
+   setTransform(this.hair,readableHead||visual?.nativeBody||['locomotion','contact'].includes(visual?.mode)?mat.multiply(headFrame,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
    const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);
    setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
    setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);

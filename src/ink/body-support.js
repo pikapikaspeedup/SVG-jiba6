@@ -21,7 +21,18 @@
  function feet(f,p,world){const r=INK.Runtime.visualRig(f,p),w=root(f,world);return Object.fromEntries(keys.map(k=>[k,INK.Rig.world(p,INK.Runtime.socket(p,r,k+'Foot'),w)]));}
  // Intersect the projected fixed-length reach disk with the ground line.
  // The seven-unit reserve leaves bend room; no inverse is needed at profile.
- function groundReach(f,p,world,groundY){
+ const ownsRule=f=>!!INK.RulePose?.owns?.(f);
+ function ruleReach(f,rule,world,groundY){
+  const model=rule?.model;if(!model?.joints3D||!model.physicalLengths)return null;
+  const w=root(f,world),out={};
+  for(const k of keys){const chain=model.joints3D[part(k)],lengths=model.physicalLengths[part(k)];if(!chain||!lengths){out[k]=null;continue;}
+   const hip=chain[0],targetZ=f._inkLocomotion?.feet[k]?.z??chain[2][2]*w.scale*w.facing;
+   const radius=Math.max(0,lengths[0]+lengths[1]-3),dy=(groundY-w.y)/w.scale-hip[1],dz=targetZ/w.scale-hip[2]*w.facing,available=radius*radius-dy*dy-dz*dz;
+   if(available<0){out[k]=null;continue;}const extent=Math.sqrt(available)*w.scale,center=w.x+hip[0]*w.scale*w.facing;out[k]=[center-extent,center+extent];
+  }return out;
+ }
+ function groundReach(f,p,world,groundY,rule=null){
+  if(ownsRule(f))return ruleReach(f,rule||INK.RulePose.sample(f,{bare:true,...(world?{world}:{})}),world,groundY);
   const moving3D=!f.attack&&!f.crouch&&!f.jumpPre&&f.y===0&&['idle','dash','rush'].includes(f.state);
   if(moving3D){
    const c=INK.Runtime.profile(f.ch.id),raw=INK.Anatomy.sourceRig(c,p),w=root(f,world),heading=INK.FacingMotion?.sample(f,f._inkVisualClock||0,world)?.pelvis??(f.dir<0?Math.PI:0),cs=Math.cos(heading),sn=Math.sin(heading),out={};
@@ -40,15 +51,16 @@
   }return out;
  }
  function reset(f){f._inkSupport=null;INK.Locomotion?.reset(f);}
- function basePose(f){if(INK.RulePose?.eligible(f))return INK.RulePose.base(f);const view=Object.create(f);view._inkRawVisual=true;view._inkSupport=null;view._inkLocomotion=null;const p=globalThis.SVG_FIGHTER?.pose(view);return p?INK.Runtime.visual(view,p,{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1}):null;}
+ function basePose(f){if(ownsRule(f))return INK.RulePose.sample(f,{bare:true})?.pose||null;if(INK.RulePose?.eligible(f))return INK.RulePose.base(f);const view=Object.create(f);view._inkRawVisual=true;view._inkSupport=null;view._inkLocomotion=null;const p=globalThis.SVG_FIGHTER?.pose(view);return p?INK.Runtime.visual(view,p,{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1}):null;}
  const ruleActive=f=>!!profiles[f?.ch?.id];
  function step(f,G){
   if(INK.HitEpisode?.support(f))return;
   if(!ruleActive(f)){reset(f);return;}
   const time=f._inkVisualClock||0,old=f._inkSupport;if(old?.time===time)return;
-  const on=supported(f),profile=profiles[f.ch.id],p=on?basePose(f):null;
+  const owned=ownsRule(f),ruleBase=owned?INK.RulePose.sample(f,{bare:true}):INK.RulePose?.sample(f,{bare:true});
+  const on=supported(f),profile=profiles[f.ch.id],p=on?(ruleBase?.pose||(!owned?basePose(f):null)):null;
   if(!p){INK.Locomotion?.reset(f);f._inkSupport={time,x:f.x,dir:f.dir,velocity:0,drive:0,brake:0,turn:0,distance:0,mode:'free',contacts:null};return;}
-  const ruleBase=INK.RulePose?.sample(f,{bare:true}),current=ruleBase?Object.fromEntries(keys.map(k=>[k,ruleBase.worldFeet[k].slice(0,2)])):feet(f,p),fresh=!old?.contacts||old.dir!==f.dir||Math.abs(f.x-old.x)>80;
+  const current=ruleBase?Object.fromEntries(keys.map(k=>[k,ruleBase.worldFeet[k].slice(0,2)])):feet(f,p),fresh=!old?.contacts||old.dir!==f.dir||Math.abs(f.x-old.x)>80;
   const defending=!!f._inkDefense&&f._inkDefense.age<f._inkDefense.duration&&['block','recovery'].includes(f.state);
   const delta=fresh?0:f.x-old.x,moving=!f.attack&&['idle','dash','rush'].includes(f.state)&&!f.crouch&&Math.abs(delta)>.15;
   const previousVelocity=old?.velocity||0,velocity=moving||defending?delta:0,drive=clamp(velocity/Math.max(1,f.ch.speed),-1.5,1.5);
@@ -58,16 +70,16 @@
   const support=defending?(f._inkDefense.age<f._inkDefense.duration*.5?'front':'rear'):phase<(profile.style==='alternating'?.38:profile.style==='boxing'?.62:.5)?'rear':'front',kick=f.attack&&(f.attack.m.contactPart==='foot'||f.attack.m.pose==='kick');
   const mode=f.attack?'strike':defending?'defend':moving?'step':stopping||Math.abs(brake)>.08?'brake':['hit','block','stun','parry'].includes(f.state)?'absorb':'stand';
   const groundY=fresh?Math.max(current.rear[1],current.front[1]):old.groundY,contacts={};
-  const gaitEligible=!f.attack&&!f.crouch&&!f.jumpPre&&['idle','dash','rush'].includes(f.state);
-  const scale=f.renderScale||f.ch.scale||1,planning=INK.copy(p),load=INK.Locomotion?.bodyLoad(f,{dx:delta,scale,profile});
+  const autonomous=!f.crouch&&['idle','dash','rush'].includes(f.state),gaitEligible=owned||!f.attack&&!f.crouch&&!f.jumpPre&&['idle','dash','rush'].includes(f.state),gaitDelta=owned&&!autonomous?0:delta;
+  const scale=f.renderScale||f.ch.scale||1,planning=INK.copy(p),load=INK.Locomotion?.bodyLoad(f,{dx:gaitDelta,scale,profile});
   INK.Articulation.inherit(p,planning);planning.bob=(planning.bob||0)+(load?.drop||0)*profile.load;
-  const reach=gaitEligible&&(Math.abs(delta)>.08*scale||f._inkLocomotion)?groundReach(f,planning,null,groundY):null;
+  const reach=gaitEligible&&(Math.abs(delta)>.08*scale||f._inkLocomotion)?groundReach(f,planning,null,groundY,ruleBase):null;
   let startFeet=null;
   if(gaitEligible&&(!f._inkLocomotion||f._inkLocomotion.releaseStart!==null)&&Math.abs(delta)>.08*scale){
    const previous=f._inkPrevView;
    if(previous&&previous.dir===f.dir){const wp={x:previous.x,y:previous.y,dir:previous.dir,scale},rule=INK.RulePose?.sample(previous,{world:wp});if(rule)startFeet=Object.fromEntries(keys.map(k=>[k,rule.worldFeet[k].slice(0,2)]));}
   }
-  INK.Locomotion?.step(f,G,{startFeet,groundY,baseFeet:Object.fromEntries(keys.map(k=>[k,[current[k][0],groundY]])),scale,actualdx:delta,grounded:f.y===0,eligible:gaitEligible,dir:f.dir,actionclock:time,profile,reach});
+  INK.Locomotion?.step(f,G,{startFeet,groundY,baseFeet:Object.fromEntries(keys.map(k=>[k,[current[k][0],groundY]])),scale,actualdx:gaitDelta,grounded:f.y===0,eligible:gaitEligible,dir:f.dir,actionclock:time,profile,reach});
   const reaction=f._inkReaction,age=time-(reaction?.actorBirth||0),retreatFoot=!defending&&reaction?.contact&&!reaction.parry&&age>=0&&age<reaction.duration*.75?(reaction.worldDir*f.dir<0?'rear':'front'):null;
   for(const k of keys){
    const previous=fresh?null:old.contacts[k];let desired=kick?(k==='rear'?1:0):moving||defending?(k===support?1:0):1;
@@ -107,6 +119,25 @@
    if(f._inkSupport.handoff)for(const k of keys)contacts[k].anchor=f._inkSupport.handoff.feet[k].slice();
   }
 
+ }
+ function stepRule(f,G){
+  if(!ownsRule(f))return;
+  const time=f._inkVisualClock||0,old=f._inkSupport;if(old?.ruleBody&&old.time===time)return;
+  const scale=f.ch.scale||1,world={x:f.x,y:f.y,dir:f.dir,scale},bare=INK.RulePose.sample(f,{bare:true,world}),L=INK.Locomotion;if(!bare||!L)return;
+  const facing=INK.FacingMotion?.sample(f,time,world),groundY=665+f.y-16*scale,kind=f._inkRuleBody?.kind||INK.RuleBody.mode(f),dx=old?.ruleBody?f.x-old.x:0;
+  if(!f._inkLocomotion)L.adopt(f,bare.worldFeet,{time,dir:f.dir,scale});
+  // Turning feet own the same interval until the existing handoff adopts them.
+  // Never run a second ordinary support correction over this rule body.
+  if(!facing?.ownsFeet){
+   L.step(f,G,{actionclock:time,dir:f.dir,scale,actualdx:dx,grounded:true,eligible:true,profile:profiles[f.ch.id],groundY,baseFeet:Object.fromEntries(keys.map(k=>[k,[bare.worldFeet[k][0],groundY]])),reach:ruleReach(f,bare,world,groundY)});
+   if(!f._inkLocomotion)L.adopt(f,bare.worldFeet,{time,dir:f.dir,scale});
+   const plan=f._inkLocomotion,front=plan.feet.front,at=L.sample(f,time,world)?.feet3D.front;
+   if(f.ch.id==='juri'&&kind!=='stance'&&at&&at[1]<groundY-.5&&!front.swing){
+    const foot=Object.freeze({...front,weight:0,swing:Object.freeze({from:Object.freeze(at.slice(0,2)),to:Object.freeze([at[0],groundY]),start:time,duration:4,height:0})});
+    f._inkLocomotion=Object.freeze({...plan,adopted:true,releaseStart:null,feet:Object.freeze({...plan.feet,front:foot})});
+   }
+  }
+  f._inkSupport={ruleBody:true,time,x:f.x,dir:f.dir,velocity:dx,drive:0,brake:0,turn:0,distance:0,mode:'rule-body',groundY,contacts:null};
  }
  function pose(f,source,world=null){
   const q=f._inkSupport;if(!active(f)||!supported(f)||!q?.contacts)return source;
@@ -177,5 +208,5 @@
  }
 
  function inspect(f){const q=f?._inkSupport;return q?{enabled:active(f),style:profiles[f.ch.id]?.style||'neutral',mode:q.mode,phase:q.phase||0,velocity:q.velocity,drive:q.drive,brake:q.brake,turn:q.turn,contacts:q.contacts?Object.fromEntries(keys.map(k=>[k,{anchor:q.contacts[k].anchor.slice(),weight:q.contacts[k].weight}])):null}:null;}
- INK.BodySupport={settings,profiles,active,ruleActive,reset,step,stepRule:step,pose,constrainFeet,inspect,groundReach};
+ INK.BodySupport={settings,profiles,active,ruleActive,reset,step,stepRule,pose,constrainFeet,inspect,groundReach};
 })();

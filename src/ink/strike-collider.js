@@ -10,13 +10,13 @@
   for(const [x,y]of [[matrix[0],matrix[2]],[matrix[1],matrix[3]]]){const base=Math.atan2(y,x);for(let k=Math.ceil((a-base)/Math.PI);k<=Math.floor((b-base)/Math.PI);k++)angles.push(base+k*Math.PI);}
   return [[matrix[4],matrix[5]],...angles.map(t=>INK.mat.point(matrix,[r*Math.cos(t),r*Math.sin(t)]))];
  }
- function sample(model,options={}){
+ function geometry(model,options={},bodyOnly=false){
   const w=options.world||{},s=w.scale,dir=w.dir,P=INK.BodyProxy;
   if(!P||!Number.isFinite(w.x)||!Number.isFinite(w.groundWorldY)||!Number.isFinite(s)||s<=0||![1,-1].includes(dir))return invalid('invalid-world');
   const chains=model?.chains,profile=model?.profile;
   if(!chains||chainOrder.some(k=>!Array.isArray(chains[k])||chains[k].length!==3||!chains[k].every(finite)))return invalid('invalid-chains');
   if(!profile||!['arm','leg'].every(k=>Array.isArray(profile[k])&&profile[k].length===3&&profile[k].every(v=>Number.isFinite(v)&&v>0))||!Number.isFinite(profile.headScale)||profile.headScale<=0)return invalid('invalid-canonical-profile');
-  if(!Array.isArray(model.skinMatrices)||model.skinMatrices.length!==3||!model.skinMatrices.every(matrix)||!matrix(model.headMatrix)||chainOrder.some(k=>!matrix(model.endFrames?.[k])))return invalid('invalid-shared-frames');
+  if(!Array.isArray(model.skinMatrices)||model.skinMatrices.length!==3||!model.skinMatrices.every(matrix)||!matrix(model.headMatrix)||!bodyOnly&&chainOrder.some(k=>!matrix(model.endFrames?.[k])))return invalid('invalid-shared-frames');
   const world=q=>[w.x+dir*s*q[0],w.groundWorldY+s*q[1]],bounds=(ps,id,part,zone)=>{const points=ps.map(world),xs=points.map(q=>q[0]),ys=points.map(q=>q[1]),x=Math.min(...xs),y=Math.min(...ys);return {id,part,zone,x,y,w:Math.max(...xs)-x,h:Math.max(...ys)-y};};
   const endProxy=(name,kind)=>P.outlines[kind].map(q=>INK.mat.point(model.endFrames[name],q));
   const hurt=[bounds(P.outlines.head.map(q=>INK.mat.point(model.headMatrix,q.map(v=>v*profile.headScale))),'hurt.head','head','head')];
@@ -26,7 +26,7 @@
   const segment=(a,b,ra,rb)=>{const dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy),n=l>1e-9?[-dy/l,dx/l]:[1,0];return [[a[0]+n[0]*ra,a[1]+n[1]*ra],[a[0]-n[0]*ra,a[1]-n[1]*ra],[b[0]+n[0]*rb,b[1]+n[1]*rb],[b[0]-n[0]*rb,b[1]-n[1]*rb]];};
   for(const name of chainOrder){const leg=name.includes('Leg'),widths=profile[leg?'leg':'arm'],part=name.replace('Arm','-arm').replace('Leg','-leg');for(let bone=0;bone<2;bone++)for(let sub=0;sub<2;sub++){const u=sub/2,v=(sub+1)/2,a=mix(chains[name][bone],chains[name][bone+1],u),b=mix(chains[name][bone],chains[name][bone+1],v),wa=widths[bone]+(widths[bone+1]-widths[bone])*u,wb=widths[bone]+(widths[bone+1]-widths[bone])*v;hurt.push(bounds(segment(a,b,wa,wb),`hurt.${name}.${bone?'lower':'upper'}.${sub}`,part,leg?'leg':'body'));}}
   const hit=[],strikeSections=[];
-  if(options.active){const c=options.contact||{},name=c.chain,chain=chains[name],kind=c.kind,leg=name?.includes('Leg');if(!chain||!['fist','foot','fan'].includes(kind)||(kind==='foot')!==leg)return invalid('invalid-contact');
+  if(!bodyOnly&&options.active){const c=options.contact||{},name=c.chain,chain=chains[name],kind=c.kind,leg=name?.includes('Leg');if(!chain||!['fist','foot','fan'].includes(kind)||(kind==='foot')!==leg)return invalid('invalid-contact');
    hit.push(bounds(endProxy(name,leg?'foot':'hand'),'hit.'+name+'.end',leg?'foot':'fist',leg?'leg':'body'));
    const sectionStart=world(mix(chain[1],chain[2],.28)),sectionEnd=world(chain[2]),endTip=world(INK.mat.point(model.endFrames[name],[leg?48:24,0]));
    strikeSections.push({hitID:'hit.'+name+'.end',part:leg?'foot':'fist',kind:'segment',start:sectionStart.slice(),end:endTip});
@@ -37,5 +37,9 @@
   if([...hurt,...hit,push].some(b=>!['x','y','w','h'].every(k=>Number.isFinite(b[k]))||b.w<=0||b.h<=0))return invalid('nonfinite-or-degenerate-bounds');
   return {valid:true,reason:null,hurt,hit,strikeSections,throw:[],push,metadata};
  }
- INK.StrikeCollider=Object.freeze({sample,chainOrder,metadata,arcSector});
+ // Body ownership is independent of an attack: no weapon/end-frame inputs
+ // are required. The fixed push proxy is returned separately from hurt.
+ const sample=(model,options={})=>geometry(model,options,false);
+ const body=(model,{world}={})=>geometry(model,{world},true);
+ INK.StrikeCollider=Object.freeze({sample,body,chainOrder,metadata,arcSector});
 })();

@@ -18,7 +18,15 @@
  const take=(f,geometry,G)=>({fighter:f,attack:f.attack,serial:id(f.attack,f.index),epoch:f._inkContactEpoch||0,t:f.attack?.t,index:index(f.attack),
   active:!!active(f.attack),terminal:!!terminal(f.attack),x:f.x,y:f.y,dir:f.dir,state:f.state,captured:!!f.captured,
   frame:G.actionTick,revision:INK.Runtime?.revision||0,geometry});
- function continuous(a,b){return a&&b&&b.frame===a.frame+1&&a.dir===b.dir&&a.state===b.state&&
+ const nativeGeometry=g=>!!(g?.strikeModel||g?.bodyModel);
+ const nativeOwner=f=>INK.StrikeModel?.owns(f)||INK.RulePose?.owns(f);
+ const sameBody=(a,b)=>typeof a?.geometry.bodyModel?.owner==='string'&&a.geometry.bodyModel.owner.length>0&&a.geometry.bodyModel.owner===b?.geometry.bodyModel?.owner&&a.y===0&&b.y===0;
+ function modelContinuous(a,b){
+  if(a?.geometry.strikeModel||b?.geometry.strikeModel)return !!(a?.geometry.strikeModel&&b?.geometry.strikeModel&&a.attack===b.attack);
+  if(a?.geometry.bodyModel||b?.geometry.bodyModel)return sameBody(a,b);
+  return true;
+ }
+ function continuous(a,b){return a&&b&&b.frame===a.frame+1&&a.dir===b.dir&&(a.state===b.state||sameBody(a,b))&&modelContinuous(a,b)&&
   !a.captured&&!b.captured&&a.revision===b.revision&&a.epoch===b.epoch;}
  function boxBefore(old,now){const matches=old?.filter(b=>(b.id??b.part)===(now.id??now.part))||[];return matches.length===1?matches[0]:null;}
  function inspectPair(a,b,pa,pb){
@@ -26,8 +34,12 @@
   const shapes=arr=>arr.every(S.valid)&&new Set(arr.map(b=>b.id??b.part)).size===arr.length;
   let coverage=shapes(a.geometry.hit)&&shapes(b.geometry.hurt);
   if(pa?.active&&pa.attack===a.attack)coverage &&= sweep&&pa.geometry.hit.length===a.geometry.hit.length&&pb.geometry.hurt.length===b.geometry.hurt.length;
-  if(sweep&&(a.geometry.strikeModel||b.geometry.strikeModel)&&INK.StrikeSweep){
-   const curve=(before,now)=>before?.geometry.strikeModel&&now.geometry.strikeModel&&before.attack===now.attack?u=>INK.StrikeModel.between(before.geometry,now.geometry,u):undefined;
+  if(sweep&&(nativeGeometry(a.geometry)||nativeGeometry(b.geometry))&&INK.StrikeSweep){
+   const curve=(before,now)=>{
+    if(before?.geometry.strikeModel&&now.geometry.strikeModel&&before.attack===now.attack)return u=>INK.StrikeModel?.between?.(before.geometry,now.geometry,u);
+    if(sameBody(before,now))return u=>INK.RulePose?.between?.(before.geometry,now.geometry,u);
+    return undefined;
+   };
    const result=INK.StrikeSweep.inspect(pa.geometry,a.geometry,pb.geometry,b.geometry,{sampleA:curve(pa,a),sampleB:curve(pb,b)});
    return {...result,coverage:coverage&&result.coverage,contact:result.contact?{...result.contact,attacker:a.fighter.index,defender:b.fighter.index,serial:a.serial,hitIndex:a.index,swept:true,approximation:'eighth-frame-AABB'}:null};
   }
@@ -49,7 +61,7 @@
  const Spacing={settings,rules,events,inspectPair,supports,
   begin(G,fighters,geometry){
    // Capture after last step's push correction, before this step moves roots.
-   if(!settings.enabled&&!fighters.some(f=>INK.StrikeModel?.owns(f)))return;
+   if(!settings.enabled&&!fighters.some(nativeOwner))return;
    previous=new Map(fighters.map(f=>[f.index,take(f,geometry(f,terminal(f.attack)),{actionTick:G.actionTick})]));
   },
   set(enabled){if(typeof enabled!=='boolean')throw TypeError('间距规则需要布尔值');if(enabled!==settings.enabled){settings.enabled=enabled;this.reset();}return enabled;},
@@ -70,7 +82,7 @@
   started(f,permit,G){if(permit)emit(G,'reentry',{player:f.index,move:f.attack.m.id,source:permit.source,serial:id(f.attack,f.index)});},
   cancel(f,state){f._inkContactEpoch=(f._inkContactEpoch||0)+1;if(f._inkRetreat&&state!=='evade')f._inkRetreat=null;},
   frame(G,fighters,geometry){
-   if(!settings.enabled&&!fighters.some(f=>INK.StrikeModel?.owns(f))){previous.clear();return null;}
+   if(!settings.enabled&&!fighters.some(nativeOwner)){previous.clear();return null;}
    certificates=[];
    const snapshots=new Map([...fighters].sort((a,b)=>a.index-b.index).map(f=>{
     return[f.index,take(f,geometry(f,terminal(f.attack)),G)];
@@ -78,7 +90,7 @@
    for(const f of [...fighters].sort((a,b)=>a.index-b.index)){
     const a=snapshots.get(f.index),b=snapshots.get(1-f.index),old=observed.get(f.index);
     if(old&&(old.attack!==a.attack||!normal(a.attack)||(!a.active&&!a.terminal)))observed.delete(f.index);
-    if(!normal(a.attack)||(!a.active&&!a.terminal)||!settings.enabled&&!a.geometry.strikeModel&&!b.geometry.strikeModel)continue;
+    if(!normal(a.attack)||(!a.active&&!a.terminal)||!settings.enabled&&!nativeGeometry(a.geometry)&&!nativeGeometry(b.geometry))continue;
     let record=observed.get(f.index);
     if(!record){record={attack:a.attack,serial:a.serial,touched:false,near:null,retreat:b.fighter._inkRetreat,
      certifiable:a.t===a.attack.m.startup&&b.state==='evade',last:a.t};observed.set(f.index,record);}

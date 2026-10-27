@@ -1,0 +1,569 @@
+{
+  "high": [
+    {
+      "early": 0,
+      "damage": 720,
+      "headBefore": {
+        "id": "hurt.head",
+        "part": "head",
+        "zone": "head",
+        "x": 446.49779178034737,
+        "y": 312.6251249749649,
+        "w": 44.34446810307486,
+        "h": 63.7064397565116
+      },
+      "proposals": [
+        {
+          "move": "sHP",
+          "age": 10,
+          "type": "hit",
+          "part": null,
+          "hit": null,
+          "clock": 22,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 446.49779178034737,
+            "y": 312.6251249749649,
+            "w": 44.34446810307486,
+            "h": 63.7064397565116
+          }
+        },
+        {
+          "move": "sHP",
+          "age": 11,
+          "type": "hit",
+          "part": "front-arm",
+          "hit": "forearm",
+          "clock": 23,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 446.49779178034737,
+            "y": 312.6251249749649,
+            "w": 44.34446810307486,
+            "h": 63.7064397565116
+          }
+        }
+      ],
+      "events": [
+        {
+          "tick": 26,
+          "action": 23,
+          "attackID": "attack:1",
+          "type": "hit",
+          "attacker": 1,
+          "defender": 0,
+          "move": "sHP",
+          "damage": 720
+        }
+      ]
+    },
+    {
+      "early": 2,
+      "damage": 720,
+      "headBefore": {
+        "id": "hurt.head",
+        "part": "head",
+        "zone": "head",
+        "x": 446.49779178034737,
+        "y": 312.6251249749649,
+        "w": 44.34446810307486,
+        "h": 63.7064397565116
+      },
+      "proposals": [
+        {
+          "move": "sHP",
+          "age": 10,
+          "type": "hit",
+          "part": null,
+          "hit": null,
+          "clock": 22,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 447.277597472702,
+            "y": 319.72997388348125,
+            "w": 45.01357023324249,
+            "h": 64.15779515536423
+          }
+        },
+        {
+          "move": "sHP",
+          "age": 11,
+          "type": "hit",
+          "part": "head",
+          "hit": "fist",
+          "clock": 23,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 450.2715935758733,
+            "y": 347.0874037824285,
+            "w": 47.52826917772569,
+            "h": 65.81744304679296
+          }
+        }
+      ],
+      "events": [
+        {
+          "tick": 114,
+          "action": 102,
+          "attackID": "attack:1",
+          "type": "hit",
+          "attacker": 1,
+          "defender": 0,
+          "move": "sHP",
+          "damage": 720
+        }
+      ]
+    },
+    {
+      "early": 4,
+      "damage": 720,
+      "headBefore": {
+        "id": "hurt.head",
+        "part": "head",
+        "zone": "head",
+        "x": 446.49779178034737,
+        "y": 312.6251249749649,
+        "w": 44.34446810307486,
+        "h": 63.7064397565116
+      },
+      "proposals": [
+        {
+          "move": "sHP",
+          "age": 10,
+          "type": "hit",
+          "part": null,
+          "hit": null,
+          "clock": 22,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 453.27421499217996,
+            "y": 374.67438977548017,
+            "w": 49.96314977318423,
+            "h": 67.36508427716058
+          }
+        },
+        {
+          "move": "sHP",
+          "age": 11,
+          "type": "hit",
+          "part": "head",
+          "hit": "forearm",
+          "clock": 23,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 454.05910975721207,
+            "y": 381.91472803047117,
+            "w": 50.585145021882454,
+            "h": 67.75033562339246
+          }
+        }
+      ],
+      "events": [
+        {
+          "tick": 200,
+          "action": 179,
+          "attackID": "attack:1",
+          "type": "hit",
+          "attacker": 1,
+          "defender": 0,
+          "move": "sHP",
+          "damage": 720
+        }
+      ]
+    }
+  ],
+  "low": [
+    {
+      "id": "chun",
+      "damage": 0,
+      "proposals": [
+        {
+          "move": "cMK",
+          "age": 8,
+          "type": "block",
+          "part": "front-leg",
+          "hit": "shin",
+          "clock": 27,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 423.998448449231,
+            "y": 362.1147525694512,
+            "w": 48.327628805923894,
+            "h": 67.78546389528327
+          }
+        }
+      ],
+      "events": [
+        {
+          "tick": 288,
+          "action": 258,
+          "attackID": "attack:1",
+          "type": "block",
+          "attacker": 1,
+          "defender": 0,
+          "move": "cMK",
+          "damage": 0
+        }
+      ]
+    },
+    {
+      "id": "cammy",
+      "damage": 0,
+      "proposals": [
+        {
+          "move": "cMK",
+          "age": 8,
+          "type": "block",
+          "part": "front-leg",
+          "hit": "shin",
+          "clock": 27,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 445.6196834577453,
+            "y": 385.31753412888844,
+            "w": 43.292460997181024,
+            "h": 62.98424545639756
+          }
+        }
+      ],
+      "events": [
+        {
+          "tick": 372,
+          "action": 339,
+          "attackID": "attack:1",
+          "type": "block",
+          "attacker": 1,
+          "defender": 0,
+          "move": "cMK",
+          "damage": 0
+        }
+      ]
+    },
+    {
+      "id": "juri",
+      "damage": 0,
+      "proposals": [
+        {
+          "move": "cMK",
+          "age": 8,
+          "type": "block",
+          "part": "front-leg",
+          "hit": "shin",
+          "clock": 27,
+          "head": {
+            "id": "hurt.head",
+            "part": "head",
+            "zone": "head",
+            "x": 440.04758251008735,
+            "y": 382.22812966751377,
+            "w": 50.53586919123353,
+            "h": 68.38019916105549
+          }
+        }
+      ],
+      "events": [
+        {
+          "tick": 456,
+          "action": 420,
+          "attackID": "attack:1",
+          "type": "block",
+          "attacker": 1,
+          "defender": 0,
+          "move": "cMK",
+          "damage": 0
+        }
+      ]
+    }
+  ],
+  "pressure": {
+    "chosen": {
+      "id": "legs_2",
+      "hits": 4
+    },
+    "accepted": true,
+    "proposals": [
+      {
+        "move": "legs_2",
+        "age": 12,
+        "type": "block",
+        "part": "torso",
+        "hit": "foot",
+        "clock": 32,
+        "head": {
+          "id": "hurt.head",
+          "part": "head",
+          "zone": "head",
+          "x": 326.55361880048565,
+          "y": 291.0027287884178,
+          "w": 58.84702989812638,
+          "h": 76.32901943121675
+        }
+      },
+      {
+        "move": "legs_2",
+        "age": 19,
+        "type": "block",
+        "part": "front-arm",
+        "hit": "foot",
+        "clock": 39,
+        "head": {
+          "id": "hurt.head",
+          "part": "head",
+          "zone": "head",
+          "x": 317.70299771686734,
+          "y": 289.07973477719054,
+          "w": 59.17038988831837,
+          "h": 76.51560565825145
+        }
+      },
+      {
+        "move": "legs_2",
+        "age": 26,
+        "type": "block",
+        "part": "front-leg",
+        "hit": "foot",
+        "clock": 46,
+        "head": {
+          "id": "hurt.head",
+          "part": "head",
+          "zone": "head",
+          "x": 309.91062468388316,
+          "y": 290.7026442922195,
+          "w": 59.23879962229415,
+          "h": 76.55491844090733
+        }
+      },
+      {
+        "move": "legs_2",
+        "age": 33,
+        "type": "block",
+        "part": null,
+        "hit": null,
+        "clock": 53,
+        "head": {
+          "id": "hurt.head",
+          "part": "head",
+          "zone": "head",
+          "x": 302.3579697279116,
+          "y": 290.4972179045373,
+          "w": 59.24970610224091,
+          "h": 76.56118079049514
+        }
+      },
+      {
+        "move": "legs_2",
+        "age": 34,
+        "type": "block",
+        "part": null,
+        "hit": null,
+        "clock": 54,
+        "head": {
+          "id": "hurt.head",
+          "part": "head",
+          "zone": "head",
+          "x": 302.2108999303574,
+          "y": 290.96401803290297,
+          "w": 59.17740268179335,
+          "h": 76.5196382802311
+        }
+      },
+      {
+        "move": "legs_2",
+        "age": 35,
+        "type": "block",
+        "part": "front-arm",
+        "hit": "foot",
+        "clock": 55,
+        "head": {
+          "id": "hurt.head",
+          "part": "head",
+          "zone": "head",
+          "x": 302.1045133398672,
+          "y": 291.06151347089497,
+          "w": 59.11464734850716,
+          "h": 76.48353046964394
+        }
+      }
+    ],
+    "events": [
+      {
+        "tick": 545,
+        "action": 506,
+        "attackID": "attack:1",
+        "type": "block",
+        "attacker": 1,
+        "defender": 0,
+        "move": "legs_2",
+        "damage": 0
+      },
+      {
+        "tick": 556,
+        "action": 513,
+        "attackID": "attack:1",
+        "type": "block",
+        "attacker": 1,
+        "defender": 0,
+        "move": "legs_2",
+        "damage": 0
+      },
+      {
+        "tick": 567,
+        "action": 520,
+        "attackID": "attack:1",
+        "type": "block",
+        "attacker": 1,
+        "defender": 0,
+        "move": "legs_2",
+        "damage": 0
+      },
+      {
+        "tick": 580,
+        "action": 529,
+        "attackID": "attack:1",
+        "type": "block",
+        "attacker": 1,
+        "defender": 0,
+        "move": "legs_2",
+        "damage": 0
+      }
+    ],
+    "loads": [
+      {
+        "count": 32,
+        "clock": 32,
+        "state": "block",
+        "load": {
+          "time": 32,
+          "arm": {
+            "z": [
+              0,
+              0
+            ],
+            "v": [
+              -0.35750000000000004,
+              0
+            ]
+          },
+          "body": {
+            "z": [
+              0,
+              0
+            ],
+            "v": [
+              -0.20800000000000002,
+              0
+            ]
+          }
+        },
+        "root": 367.9200000000003
+      },
+      {
+        "count": 39,
+        "clock": 39,
+        "state": "block",
+        "load": {
+          "time": 39,
+          "arm": {
+            "z": [
+              -0.053252540437038844,
+              0
+            ],
+            "v": [
+              -0.3358186085363485,
+              0
+            ]
+          },
+          "body": {
+            "z": [
+              -0.1550035823761921,
+              0
+            ],
+            "v": [
+              -0.18054222255050312,
+              0
+            ]
+          }
+        },
+        "root": 360.41285470567703
+      },
+      {
+        "count": 46,
+        "clock": 46,
+        "state": "block",
+        "load": {
+          "time": 46,
+          "arm": {
+            "z": [
+              -0.05551894048738726,
+              0
+            ],
+            "v": [
+              -0.33473397422653894,
+              0
+            ]
+          },
+          "body": {
+            "z": [
+              -0.18800648148258356,
+              0
+            ],
+            "v": [
+              -0.17233864477262867,
+              0
+            ]
+          }
+        },
+        "root": 352.90570941135377
+      },
+      {
+        "count": 55,
+        "clock": 55,
+        "state": "block",
+        "load": {
+          "time": 55,
+          "arm": {
+            "z": [
+              -0.023679435581780546,
+              0
+            ],
+            "v": [
+              0.010436365729626857,
+              -0.549993914289372
+            ]
+          },
+          "body": {
+            "z": [
+              -0.12801605365051036,
+              0
+            ],
+            "v": [
+              0.027924606152603927,
+              -0.3197341779522987
+            ]
+          }
+        },
+        "root": 344.58190491545076
+      }
+    ],
+    "damage": 0,
+    "exitMP": true
+  },
+  "sha256": "c2a82f0524ff6e9753152336431ea3936a7a1f4a04fd819cba348073e223f2ec",
+  "errors": []
+}

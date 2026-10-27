@@ -1,0 +1,30 @@
+✔ crossing with no endpoint overlap has a time of impact (0.810209ms)
+✔ relative movement, shared translation and mirrors (0.113584ms)
+✔ all four edges move, including width and height (0.096916ms)
+✔ initial overlap is time zero, separating motion is valid (0.052375ms)
+✔ edge sliding and terminal tangency are not hits (0.4005ms)
+✔ touching then penetrating starts at zero (0.070958ms)
+✔ invalid or degenerate inputs do not create contacts (0.144833ms)
+✔ closest approach finds interior minima and nearest points (0.2225ms)
+✔ deterministic randomized comparison against independent dense oracle (19.707333ms)
+✔ whole active phase, terminal coverage and next-step grant (1.634041ms)
+✔ late start of observation cannot certify a whiff (0.1945ms)
+✔ last active interval contact vetoes earlier near evidence (0.227292ms)
+✔ geometric overlap vetoes reward even if damage was immune (0.144459ms)
+✔ missing shapes and topology changes cannot certify partial coverage (0.159875ms)
+✔ interruptions, direct mirrors and explicit teleport epochs veto certification (0.620167ms)
+✔ stationary or too-far retreats do not earn the spacing permission (0.120833ms)
+✔ reward disabled preserves evidence, but permission is not usable (0.080917ms)
+✔ stable shape identities make collection order irrelevant (6.60425ms)
+✔ continuous fast motion is not mistaken for teleportation (0.233667ms)
+✔ explicit discontinuity prevents a phantom fast sweep (0.09025ms)
+✔ first active frame never sweeps from an inactive pose (0.059875ms)
+✔ contacts are bounded and invalid setting writes are rejected (0.617375ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 61.488042

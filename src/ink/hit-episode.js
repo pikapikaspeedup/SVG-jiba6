@@ -10,6 +10,7 @@
  function enqueue(f,reaction){const tx=pending.get(f);if(!tx)return false;tx.reactions.push(reaction);return true;}
  function clean(f){const v=Object.create(f);Object.assign(v,{_inkNoHitEpisode:true,_inkHitEpisode:null,_inkHitBody:null,_inkReaction:null,_inkRecoil:null,_inkWeight:null,_inkSupport:null,_inkLocomotion:null,_inkState:null,_inkStateBlend:null,_inkStateVisualBlend:null,_inkVisualTransition:null,_inkJointTransition:null,_inkTransition:null,_inkFrameTransition:null});return v;}
  function neutral(f,source){
+  const rule=INK.RulePose?.restFrame(f);if(rule)return {pose:rule.pose,frame:rule.frame};
   const v=clean(f);Object.assign(v,{state:'idle',stateAge:0,attack:null,move:0,crouch:false,jumpPre:0,captured:false,captureKind:null,throwAction:null});
   const pose=SVG_FIGHTER.pose(v),p=INK.Runtime.visual(v,pose,world(v));
   return {pose:p,frame:INK.VisualFrame.get(p)};

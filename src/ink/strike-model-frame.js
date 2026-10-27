@@ -17,7 +17,7 @@
   for(const n of ['pelvis','chest','neck','head']){joints3D[n]=xyz(model.joints3D?.[n]||fallback[n]);sockets[n]=joints3D[n].slice(0,2);}
   Object.defineProperties(rig,{profile:{value:c},anatomy:{value:{source,sockets,depth,turns,surfaces,projectors}}});
   const scale=world.scale??f.renderScale??c.scale??1,worldFeet={};for(const k of ['rear','front']){const q=joints3D[k+'Leg'][2];worldFeet[k]=[(world.x??f.x??0)+q[0]*scale,665+(world.y??f.y??0)+q[1]*scale,q[2]*scale];}
-  return {space:'actor-screen',mode:'strike-model',surfaceMode:'persistent-facing',carrierSpec:{representation:has3D?'spatial3D':'planar3D',nativeChains:copy(joints3D)},physicalLengths,supportDrop:0,fanFrames,legacyMatrix:I.slice(),legacyPose:copy(p),legacyRig:rig,rig,joints3D,skinMatrices:model.skinMatrices.map(m=>basis(m)),headMatrix:basis(model.headMatrix),endFrames,materialAngles,worldFeet,residuals:{rear:0,front:0},bodyOuter:I.slice()};
+  return {space:'actor-screen',nativeBody:true,mode:'strike-model',surfaceMode:'persistent-facing',carrierSpec:{representation:has3D?'spatial3D':'planar3D',nativeChains:copy(joints3D)},physicalLengths,supportDrop:0,fanFrames,legacyMatrix:I.slice(),legacyPose:copy(p),legacyRig:rig,rig,joints3D,skinMatrices:model.skinMatrices.map(m=>basis(m)),headMatrix:basis(model.headMatrix),endFrames,materialAngles,worldFeet,residuals:{rear:0,front:0},bodyOuter:I.slice()};
  }
  INK.StrikeModelFrame=Object.freeze({build});
 })();

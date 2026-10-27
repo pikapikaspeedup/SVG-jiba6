@@ -1,0 +1,74 @@
+{
+  "sha": "6ace87360fa2205b09886ec371b321f9c352c16b1c51c6c1add736a804bfbf81",
+  "errors": [],
+  "result": [
+    {
+      "crouch": false,
+      "on": true,
+      "captureNull": true,
+      "savedExists": true,
+      "accepted": true,
+      "policy": {
+        "mode": "native",
+        "reason": "original-content",
+        "fingerprint": "18fd155e8a402b07caa8799d5c97a50484a12a8fc3d76745d5805977d1f6779c",
+        "modelRevision": "native-strike-1",
+        "character": "ryu",
+        "move": "sMP"
+      },
+      "sameSaved": true,
+      "sameEntry": true
+    },
+    {
+      "crouch": false,
+      "on": false,
+      "captureNull": true,
+      "savedExists": true,
+      "accepted": true,
+      "policy": {
+        "mode": "native",
+        "reason": "original-content",
+        "fingerprint": "18fd155e8a402b07caa8799d5c97a50484a12a8fc3d76745d5805977d1f6779c",
+        "modelRevision": "native-strike-1",
+        "character": "ryu",
+        "move": "sMP"
+      },
+      "sameSaved": true,
+      "sameEntry": true
+    },
+    {
+      "crouch": true,
+      "on": true,
+      "captureNull": true,
+      "savedExists": true,
+      "accepted": true,
+      "policy": {
+        "mode": "native",
+        "reason": "original-content",
+        "fingerprint": "18fd155e8a402b07caa8799d5c97a50484a12a8fc3d76745d5805977d1f6779c",
+        "modelRevision": "native-strike-1",
+        "character": "ryu",
+        "move": "sMP"
+      },
+      "sameSaved": true,
+      "sameEntry": true
+    },
+    {
+      "crouch": true,
+      "on": false,
+      "captureNull": true,
+      "savedExists": true,
+      "accepted": true,
+      "policy": {
+        "mode": "native",
+        "reason": "original-content",
+        "fingerprint": "18fd155e8a402b07caa8799d5c97a50484a12a8fc3d76745d5805977d1f6779c",
+        "modelRevision": "native-strike-1",
+        "character": "ryu",
+        "move": "sMP"
+      },
+      "sameSaved": true,
+      "sameEntry": true
+    }
+  ]
+}

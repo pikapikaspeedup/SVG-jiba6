@@ -1,0 +1,14 @@
+from pathlib import Path
+import json,hashlib
+from playwright.sync_api import sync_playwright
+raw=Path('dist/INK-Street-Fighter-6.html').read_bytes();errors=[]
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path='/Users/miaomiaomiao/Library/Caches/ms-playwright/chromium-1169/chrome-mac/Chromium.app/Contents/MacOS/Chromium',headless=True);p=b.new_page();p.on('pageerror',lambda e:errors.append(str(e)));p.set_content(raw.decode());p.wait_for_function('window.INKDuel?.ready');p.locator('.kinetic-launch button').click()
+ result=p.evaluate('''()=>{const A=SVG_FIGHTER,G=A.state;let observed=[],records=[];const original=INK.ContactResponse.describe;INK.ContactResponse.describe=function(a,d,m,c){const r=original(a,d,m,c);observed.push({move:m.id,age:a.attack?.t,type:c.type,part:c.witness?.hurtPart,hit:c.witness?.hitPart,clock:d._inkVisualClock,head:A.geometry(d).hurt.find(x=>x.part==='head')});return r;};
+ function setup(a,b,gap){A.start(b,a,'training','classic',42);G.paused=true;document.getElementById('dummy').value='idle';document.getElementById('autohp').checked=false;A.teleport(0,450);A.teleport(1,450+gap);A.step(12);observed=[];return [A.fighters[1],A.fighters[0]];}
+ function press(i,k){G.paused=false;A.press(i,k);G.paused=true;}
+ const high=[];for(const early of [0,2,4]){const [f,d]=setup('ken','cammy',235);A.tryMove(1,'sHP');const a=f.attack;while(a.t<a.m.startup-early)A.step();press(0,'down');const headBefore=A.geometry(d).hurt.find(x=>x.part==='head');for(let i=0;i<a.m.total+30;i++)A.step();high.push({early,damage:10000-d.hp,headBefore,proposals:observed,events:G.combatEvents.filter(e=>e.defender===0)});}
+ const low=[];for(const id of ['chun','cammy','juri']){const [f,d]=setup('ryu',id,205);press(0,'down');press(0,'left');A.step(7);A.tryMove(1,'cMK');for(let i=0;i<65;i++)A.step();low.push({id,damage:10000-d.hp,proposals:observed,events:G.combatEvents.filter(e=>e.defender===0)});}
+ const [f,d]=setup('chun','ryu',175);press(0,'left');A.step(8);const moves=A.moves.chun.filter(m=>m.id.includes('legs')).map(m=>({id:m.id,hits:m.hits}));const chosen=moves.find(m=>m.hits>=4)||moves[0],accepted=A.tryMove(1,chosen.id),loads=[];let count=0;for(let i=0;i<150;i++){A.step();if(d._inkRulePressure&&d._inkRulePressure.time!==count){count=d._inkRulePressure.time;loads.push({count,clock:d._inkVisualClock,state:d.state,load:d._inkRulePressure,root:d.x});}}const mp=A.tryMove(0,'sMP');INK.ContactResponse.describe=original;return {high,low,pressure:{chosen,accepted,proposals:observed,events:G.combatEvents.filter(e=>e.defender===0),loads,damage:10000-d.hp,exitMP:mp}};}''')
+ b.close()
+result.update(sha256=hashlib.sha256(raw).hexdigest(),errors=errors);Path('qa/shared-defense/fight.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print(json.dumps(result,ensure_ascii=False))

@@ -1,0 +1,717 @@
+{
+  "htmlSha256": "c2a82f0524ff6e9753152336431ea3936a7a1f4a04fd819cba348073e223f2ec",
+  "scope": "24 settled S/H/L production-renderer poses; not transient movement or combat coverage",
+  "rows": [
+    {
+      "id": "ryu",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:1",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          358.48,
+          648.36,
+          -5.2
+        ],
+        "front": [
+          549.84,
+          648.36,
+          5.2
+        ]
+      },
+      "frontLoad": 0.45,
+      "residuals": {
+        "rearArm": 1.7763568394002505e-15,
+        "frontArm": 0,
+        "rearLeg": 1.4210854715202004e-14,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "ken",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:3",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          364.72,
+          648.36,
+          -5.2
+        ],
+        "front": [
+          558.16,
+          648.36,
+          5.2
+        ]
+      },
+      "frontLoad": 0.58,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 1.4210854715202004e-14,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "chun",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:5",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          376,
+          649,
+          -5
+        ],
+        "front": [
+          536,
+          649,
+          5
+        ]
+      },
+      "frontLoad": 0.42,
+      "residuals": {
+        "rearArm": 3.552713678800501e-15,
+        "frontArm": 0,
+        "rearLeg": 0,
+        "frontLeg": 0
+      },
+      "finite": true
+    },
+    {
+      "id": "cammy",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:7",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          386.64,
+          649.64,
+          -4.8
+        ],
+        "front": [
+          524.88,
+          649.64,
+          4.8
+        ]
+      },
+      "frontLoad": 0.48,
+      "residuals": {
+        "rearArm": 3.552713678800501e-15,
+        "frontArm": 0,
+        "rearLeg": 1.4210854715202004e-14,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "luke",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:9",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          368.1,
+          648.2,
+          -5.25
+        ],
+        "front": [
+          544.5,
+          648.2,
+          5.25
+        ]
+      },
+      "frontLoad": 0.52,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 1.2434497875801753e-14,
+        "frontLeg": 1.2434497875801753e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "juri",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:11",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          372.78,
+          649.16,
+          -4.95
+        ],
+        "front": [
+          509.4,
+          623.42,
+          4.95
+        ]
+      },
+      "frontLoad": 0,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 3.552713678800501e-15,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "mai",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:13",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          378.72,
+          649.16,
+          -4.95
+        ],
+        "front": [
+          535.14,
+          649.16,
+          4.95
+        ]
+      },
+      "frontLoad": 0.35,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 3.552713678800501e-15,
+        "frontLeg": 1.464821375527116e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "iori",
+      "state": "S",
+      "kind": "stance",
+      "clock": 63,
+      "owner": "body:0:15",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          345.36,
+          647.56,
+          -5.45
+        ],
+        "front": [
+          572.08,
+          647.56,
+          5.45
+        ]
+      },
+      "frontLoad": 0.56,
+      "residuals": {
+        "rearArm": 3.552713678800501e-15,
+        "frontArm": 0,
+        "rearLeg": 7.105427357601002e-15,
+        "frontLeg": 7.105427357601002e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "ryu",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:17",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          13.47999999999999,
+          648.36,
+          -5.2
+        ],
+        "front": [
+          204.84,
+          648.36,
+          5.2
+        ]
+      },
+      "frontLoad": 0.42,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 1.4210854715202004e-14,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "ken",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:19",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          19.72,
+          648.36,
+          -5.2
+        ],
+        "front": [
+          213.16,
+          648.36,
+          5.2
+        ]
+      },
+      "frontLoad": 0.56,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 1.7763568394002505e-15,
+        "rearLeg": 1.4210854715202004e-14,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "chun",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:21",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          31,
+          649,
+          -5
+        ],
+        "front": [
+          191,
+          649,
+          5
+        ]
+      },
+      "frontLoad": 0.38,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 0,
+        "frontLeg": 0
+      },
+      "finite": true
+    },
+    {
+      "id": "cammy",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:23",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          41.64,
+          649.64,
+          -4.8
+        ],
+        "front": [
+          179.88,
+          649.64,
+          4.8
+        ]
+      },
+      "frontLoad": 0.44,
+      "residuals": {
+        "rearArm": 7.105427357601002e-15,
+        "frontArm": 0,
+        "rearLeg": 1.4210854715202004e-14,
+        "frontLeg": 1.4210854715202004e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "luke",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:25",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          23.099999999999994,
+          648.2,
+          -5.25
+        ],
+        "front": [
+          199.5,
+          648.2,
+          5.25
+        ]
+      },
+      "frontLoad": 0.48,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 1.2434497875801753e-14,
+        "frontLeg": 1.2434497875801753e-14
+      },
+      "finite": true
+    },
+    {
+      "id": "juri",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:27",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          27.78,
+          649.16,
+          -4.95
+        ],
+        "front": [
+          164.4,
+          649.16,
+          4.95
+        ]
+      },
+      "frontLoad": 0.18,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 3.552713678800501e-15,
+        "frontLeg": 3.552713678800501e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "mai",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:29",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          33.72,
+          649.16,
+          -4.95
+        ],
+        "front": [
+          190.14,
+          649.16,
+          4.95
+        ]
+      },
+      "frontLoad": 0.32,
+      "residuals": {
+        "rearArm": 7.105427357601002e-15,
+        "frontArm": 0,
+        "rearLeg": 3.552713678800501e-15,
+        "frontLeg": 3.552713678800501e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "iori",
+      "state": "H",
+      "kind": "high",
+      "clock": 265,
+      "owner": "body:0:31",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          0.3599999999999852,
+          647.56,
+          -5.45
+        ],
+        "front": [
+          227.08,
+          647.56,
+          5.45
+        ]
+      },
+      "frontLoad": 0.52,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 7.105427357601002e-15,
+        "frontLeg": 7.105427357601002e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "ryu",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:33",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          358.48,
+          648.36,
+          -5.2
+        ],
+        "front": [
+          549.84,
+          648.36,
+          5.2
+        ]
+      },
+      "frontLoad": 0.35,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 0,
+        "frontLeg": 0
+      },
+      "finite": true
+    },
+    {
+      "id": "ken",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:35",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          364.72,
+          648.36,
+          -5.2
+        ],
+        "front": [
+          558.16,
+          648.36,
+          5.2
+        ]
+      },
+      "frontLoad": 0.48,
+      "residuals": {
+        "rearArm": 7.105427357601002e-15,
+        "frontArm": 0,
+        "rearLeg": 0,
+        "frontLeg": 0
+      },
+      "finite": true
+    },
+    {
+      "id": "chun",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:37",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          376,
+          649,
+          -5
+        ],
+        "front": [
+          536,
+          649,
+          5
+        ]
+      },
+      "frontLoad": 0.3,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 0,
+        "frontLeg": 0
+      },
+      "finite": true
+    },
+    {
+      "id": "cammy",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:39",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          386.64,
+          649.64,
+          -4.8
+        ],
+        "front": [
+          524.88,
+          649.64,
+          4.8
+        ]
+      },
+      "frontLoad": 0.36,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 0,
+        "frontLeg": 0
+      },
+      "finite": true
+    },
+    {
+      "id": "luke",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:41",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          368.1,
+          648.2,
+          -5.25
+        ],
+        "front": [
+          544.5,
+          648.2,
+          5.25
+        ]
+      },
+      "frontLoad": 0.4,
+      "residuals": {
+        "rearArm": 7.105427357601002e-15,
+        "frontArm": 3.552713678800501e-15,
+        "rearLeg": 1.7763568394002505e-15,
+        "frontLeg": 1.7763568394002505e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "juri",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:43",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          372.78,
+          649.16,
+          -4.95
+        ],
+        "front": [
+          509.4,
+          649.16,
+          4.95
+        ]
+      },
+      "frontLoad": 0.28,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 3.552713678800501e-15,
+        "frontLeg": 3.552713678800501e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "mai",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:45",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          378.72,
+          649.16,
+          -4.95
+        ],
+        "front": [
+          535.14,
+          649.16,
+          4.95
+        ]
+      },
+      "frontLoad": 0.26,
+      "residuals": {
+        "rearArm": 1.7763568394002505e-15,
+        "frontArm": 0,
+        "rearLeg": 3.552713678800501e-15,
+        "frontLeg": 3.552713678800501e-15
+      },
+      "finite": true
+    },
+    {
+      "id": "iori",
+      "state": "L",
+      "kind": "low",
+      "clock": 63,
+      "owner": "body:0:47",
+      "mode": "defense-body",
+      "hurt": 20,
+      "feet": {
+        "rear": [
+          345.36,
+          647.56,
+          -5.45
+        ],
+        "front": [
+          572.08,
+          647.56,
+          5.45
+        ]
+      },
+      "frontLoad": 0.46,
+      "residuals": {
+        "rearArm": 0,
+        "frontArm": 0,
+        "rearLeg": 7.105427357601002e-15,
+        "frontLeg": 7.105427357601002e-15
+      },
+      "finite": true
+    }
+  ],
+  "images": [
+    {
+      "file": "checkpoint-S.png",
+      "sha256": "bdfdf43217df6c05e966b86e6c8bb08cdd4f016469ef347f5d0e841cde25a2e0"
+    },
+    {
+      "file": "checkpoint-H.png",
+      "sha256": "3efa7dee66c9e8ac21dab3cbc35368c6908d18db271ccec2151aa52ae2744e2f"
+    },
+    {
+      "file": "checkpoint-L.png",
+      "sha256": "75eb12d2263f3194a262ad0fc2e895ea53477222fd410d4292eceaa3b463e46b"
+    }
+  ],
+  "errors": []
+}
