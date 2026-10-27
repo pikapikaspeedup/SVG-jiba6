@@ -5,7 +5,9 @@
  const frozen=rows=>Object.freeze(rows.map(r=>Object.freeze(r)));
  function supports(m){return !!m&&m.category==='normal'&&['s','c'].includes(m.normalState)&&!m.throw&&!m.air&&!m.travel&&!String(m.kind).includes('projectile')&&Number.isFinite(m.startup)&&m.startup>=0&&Number.isFinite(m.active)&&m.active>=1;}
  function sample(f,m,geometry){
-  if(!supports(m)||typeof geometry!=='function')return null;
+  if(typeof geometry!=='function')return null;
+  const air=INK.AirStrike?.candidateFrames(f,m);if(air)return air;
+  if(!supports(m))return null;
   const first=Math.ceil(m.startup),last=Math.ceil(m.startup+m.active)-1;if(last<first)return null;
   const native=INK.StrikeModel?.candidate(f,m),times=native?Array.from({length:Math.ceil(m.active*8)},(_,i)=>m.startup+i*.125).filter(t=>t<m.startup+m.active):[...new Set([first,Math.floor((first+last)/2),last])],frames=[];
   if(m.movementStrike&&!native)return null;

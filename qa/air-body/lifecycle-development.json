@@ -1,0 +1,684 @@
+{
+  "htmlSha256": "5867f026c39fe70fc1baf81c21d1a9575d277148b6c2870387f22ce670d706cd",
+  "errors": [],
+  "result": {
+    "formalData": "air-body-pro18-1",
+    "rows": [
+      {
+        "id": "ryu",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 7.105427357601002e-14,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              316.6290653676734,
+              641.229005428318,
+              -0.2064546775607501
+            ],
+            "front": [
+              497.38013982263345,
+              634.3608735457502,
+              9.182537898856927
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "ryu",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              316.6287565549004,
+              641.2286078948626,
+              -0.20637754117556917
+            ],
+            "front": [
+              497.38064184960604,
+              634.3602809413233,
+              9.182630757710838
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "ryu",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              307.6897949863071,
+              622.0106248550819,
+              2.2779108652352362
+            ],
+            "front": [
+              513.2390971008324,
+              602.5492612812758,
+              10.416818396754374
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "ken",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 9.947598300641403e-14,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              328.7483209908176,
+              638.080942915851,
+              -0.781579097796396
+            ],
+            "front": [
+              510.78979714595573,
+              634.1104692091208,
+              3.4130021086846716
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "ken",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 9.947598300641403e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              328.74780388723127,
+              638.0806790767999,
+              -0.7815335080261449
+            ],
+            "front": [
+              510.7903366581137,
+              634.1097350126525,
+              3.4129712351200387
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "ken",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 9.947598300641403e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              324.76814686996494,
+              614.1030273815165,
+              4.846093998210755
+            ],
+            "front": [
+              527.2004560652803,
+              599.9215483623402,
+              1.3285524308688978
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "chun",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 1.1368683772161603e-13,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              321.28933517439987,
+              632.9607993543905,
+              5.696028350308405
+            ],
+            "front": [
+              500.96602883561036,
+              638.7036036196407,
+              11.4775544881571
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "chun",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              321.2887172582271,
+              632.9603474515034,
+              5.69624217112012
+            ],
+            "front": [
+              500.9668043545703,
+              638.7026979315056,
+              11.47772965814891
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "chun",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              318.27164204208117,
+              601.8145607568025,
+              19.629785600126212
+            ],
+            "front": [
+              524.541055549226,
+              608.1537238690964,
+              11.841536564678536
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "cammy",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              336.36868566510464,
+              644.1310621090905,
+              -3.367024813346172
+            ],
+            "front": [
+              484.29031643546557,
+              641.5098304938849,
+              6.3293173488793295
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "cammy",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 4.263256414560601e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              336.3683069874559,
+              644.130768273246,
+              -3.3670369170569914
+            ],
+            "front": [
+              484.2908680027304,
+              641.5092254434454,
+              6.329336653287625
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "cammy",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 4.973799150320701e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              332.8097144669458,
+              632.3100403476005,
+              -3.5805423239305325
+            ],
+            "front": [
+              499.963675783505,
+              621.7983737606693,
+              5.650024208902632
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "luke",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 1.1368683772161603e-13,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              317.78500913949273,
+              639.2519239000377,
+              -1.138072539207001
+            ],
+            "front": [
+              496.6073023638912,
+              637.0391066633043,
+              7.175606377944489
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "luke",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 1.1368683772161603e-13,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              317.7846538741147,
+              639.2515658399738,
+              -1.138065833680181
+            ],
+            "front": [
+              496.6077545325718,
+              637.0385871615201,
+              7.175645263303104
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "luke",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 1.1368683772161603e-13,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              310.6729035340154,
+              621.1293916326457,
+              1.4092254312792265
+            ],
+            "front": [
+              509.6978495519033,
+              612.0714565640055,
+              4.03383528434517
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "juri",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              332.50118292083744,
+              646.6006094087513,
+              2.9664766557935742
+            ],
+            "front": [
+              509.91967267152853,
+              611.7702439716534,
+              7.931062829968719
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "juri",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 4.263256414560601e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              332.5009718848725,
+              646.60038476537,
+              2.9666251813807145
+            ],
+            "front": [
+              509.9201291694817,
+              611.7693675114198,
+              7.931135135154712
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "juri",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 5.684341886080802e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              327.8732482433179,
+              642.4113250411385,
+              7.2730183047548085
+            ],
+            "front": [
+              529.2847845784338,
+              573.0888790425341,
+              10.55856816769786
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "mai",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 6.394884621840902e-14,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              327.9801950446656,
+              638.0535377757292,
+              10.188053036100072
+            ],
+            "front": [
+              495.20601606896486,
+              635.4884570080635,
+              19.12828818531649
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "mai",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 7.105427357601002e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              327.9796853186056,
+              638.0531147695292,
+              10.188371535795666
+            ],
+            "front": [
+              495.2064767147233,
+              635.487796581735,
+              19.128417257070183
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "mai",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 7.105427357601002e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              322.7371200946937,
+              615.4439292131262,
+              25.111407099350917
+            ],
+            "front": [
+              513.787231276958,
+              604.8643851354351,
+              24.538101904446126
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "iori",
+        "move": null,
+        "air": 43,
+        "attack": 0,
+        "accepted": null,
+        "maxBone": 4.263256414560601e-14,
+        "land": {
+          "state": "idle",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              326.15644438566153,
+              639.8526311335959,
+              -1.825184357682369
+            ],
+            "front": [
+              516.6457563598967,
+              636.6232681544523,
+              1.8432299959765819
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "iori",
+        "move": "aMP",
+        "air": 18,
+        "attack": 25,
+        "accepted": true,
+        "maxBone": 4.263256414560601e-14,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              326.15601933653477,
+              639.8523466794572,
+              -1.825184525724354
+            ],
+            "front": [
+              516.6461029875688,
+              636.6227244415147,
+              1.843264386842692
+            ]
+          }
+        },
+        "nextMP": true
+      },
+      {
+        "id": "iori",
+        "move": "aHK",
+        "air": 7,
+        "attack": 36,
+        "accepted": true,
+        "maxBone": 1.1368683772161603e-13,
+        "land": {
+          "state": "recovery",
+          "landT": 6,
+          "mode": "defense-body",
+          "hurt": 20,
+          "plan": true,
+          "feet": {
+            "rear": [
+              319.19728796154266,
+              626.08286808711,
+              1.6402896010641
+            ],
+            "front": [
+              531.2639429289377,
+              612.9823366831608,
+              -5.088393281258622
+            ]
+          }
+        },
+        "nextMP": true
+      }
+    ],
+    "cHP": true,
+    "cNative": 36,
+    "exitState": "idle"
+  }
+}

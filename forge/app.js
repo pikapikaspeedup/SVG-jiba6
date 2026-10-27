@@ -7,6 +7,10 @@
  INK.StrikeModelPolicy?.installBaseline(bundle,{modelRevision:'native-strike-1'});
  INK.DefensePolicy?.installBaseline(bundle);
  INK.HitRulePolicy?.installBaseline(bundle);
+ INK.AirBodyPolicy?.installBaseline(bundle);
+ INK.AirStrikePolicy?.installBaseline(bundle);
+ if(INK.AirBodyData?.sample)INK.AirBody?.installData(INK.AirBodyData.sample);
+ if(INK.AirDuel&&INK.AirBodyData?.sample&&INK.AirStrikeData)INK.AirDuel.settings.enabled=true;
  const store=new INK.AssetStore(bundle,embedded),A=SVG_FIGHTER,playerOnly=embedded.presentation==='player';
  document.body.classList.toggle('forge-player',playerOnly);
  if(playerOnly){document.querySelector('.f-home-top h1').innerHTML='现在，<em>开打。</em>';document.querySelector('.f-home-top p').textContent='八位格斗家，纯 SVG 对战。经典搓招、辅助操作和本地双人。';document.querySelector('.f-home-foot span').textContent='WASD 移动 · J/K/L 拳 · U/I/O 脚 · H 招式表';}

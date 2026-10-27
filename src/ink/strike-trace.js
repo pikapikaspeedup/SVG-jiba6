@@ -4,6 +4,17 @@
 (()=>{
  const {mat}=INK,valid=p=>Array.isArray(p)&&p.slice(0,2).every(Number.isFinite),clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
  const links={frontHand:['frontArm',2],rearHand:['rearArm',2],frontFoot:['frontLeg',2],rearFoot:['rearLeg',2],frontElbow:['frontArm',1],rearElbow:['rearArm',1],frontKnee:['frontLeg',1],rearKnee:['rearLeg',1]};
+ // Physical contact identity wins over legacy animation labels. Native data
+ // describes the same chain used by StrikeCollider, including decorative fans.
+ function contactSpec(f,m=f.attack?.m,witness=null){
+  const section=witness?.strikeSections?.find(q=>q.hitID===witness.hitID),id=section?.hitID||witness?.hitID||'',part=section?.part||witness?.hitPart;
+  const data=INK.AirStrike?.owns(f)?INK.AirStrikeData?.[f.ch.id+':'+m.id]:INK.StrikeModel?.owns(f)?INK.StrikeModelData?.[f.ch.id+':'+m.id]:null;
+  const chain=/^hit\.(frontArm|rearArm|frontLeg|rearLeg)\./.exec(id)?.[1]||data?.contactChain;
+  const kind=part||data?.kind||m?.contactPart;
+  const rear=chain?.startsWith('rear')||kind==='rear-kick',leg=chain?.endsWith('Leg')||['foot','shin','rear-kick'].includes(kind)||(!chain&&!kind&&m?.pose==='kick');
+  const socket=kind==='fan'||id.startsWith('hit.fan.')?'fanTip':kind==='elbow'?(rear?'rearElbow':'frontElbow'):leg?(rear?'rearFoot':'frontFoot'):(rear?'rearHand':'frontHand');
+  return {chain:chain||(leg?'frontLeg':'frontArm'),kind:kind||(leg?'foot':'fist'),socket};
+ }
  function stage(f,snapshot){
   if(!f.attack||!snapshot?.frame?.frame)return;
   f._inkTraceStaged={attack:f.attack,age:f.attack.t,record:INK.Runtime.record(f,f.attack.m),pose:snapshot.pose,frame:snapshot.frame.frame,x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1,time:INK.VFX.time};
@@ -40,7 +51,7 @@
   history.traceCurrent=out;history.traceTime=time;history.traceRoot={x:f.x,y:f.y,age:a.t,dir:f.dir};history.socketUntil=INK.Runtime.clipFrame(record,a.m,a.t);history.traceOwned=true;return out;
  }
  function contactMotion(f,d,m,witness,snapshot){
-  const part=witness?.hitPart,kick=part==='rear-kick'||part==='foot'||part==='shin'||(!part&&(m.contactPart==='foot'||m.pose==='kick')),socket=part==='fan'?'fanTip':part==='elbow'?'frontElbow':part==='rear-kick'?'rearFoot':kick?'frontFoot':'frontHand',fallback={incoming:[f.dir,0],evidence:'facing',surface:'none',continuous:false,channel:socket};
+  const part=witness?.hitPart,{socket}=contactSpec(f,m,witness),fallback={incoming:[f.dir,0],evidence:'facing',surface:'none',continuous:false,channel:socket};
   if(['energy','body-dive','flame-pillar'].includes(part))return fallback;
   const record=INK.Runtime.record(f,m),h=f._inkTrail,a=f.attack;if(!record||!a)return fallback;
   const now=sample(f,record,INK.VFX.time,{pose:snapshot?.pose,frame:snapshot?.frame?.frame,epoch:h?.traceEpoch||0,names:[socket]}).get(socket);if(!now)return fallback;
@@ -53,5 +64,5 @@
   const relativeVelocity=[(at(now,0)-at(prior,0))/dt-(d.x-d.px),(at(now,1)-at(prior,1))/dt-(d.y-d.py)],speed=Math.hypot(...relativeVelocity);
   return speed>1e-6?{...base,incoming:relativeVelocity.map(x=>x/speed),relativeVelocity,evidence:'sectionVelocity',continuous:true}:base;
  }
- INK.StrikeTrace=Object.freeze({sample,capture,stage,contactMotion});
+ INK.StrikeTrace=Object.freeze({sample,capture,stage,contactMotion,contactSpec});
 })();

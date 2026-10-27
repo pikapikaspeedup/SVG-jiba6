@@ -3,14 +3,30 @@
 (() => {
  const settings={enabled:true},clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
  const surfaces={neon:{kind:'wet',color:'#8bc8dc'},courtyard:{kind:'dust',color:'#d7b280'},rooftop:{kind:'grit',color:'#b5b5cf'}};
- let events=[],root=null,slots=[],serial=0;
+ let events=[],root=null,slots=[],serial=0,pending=new WeakMap();
  const active=()=>settings.enabled&&INK.Kinetic?.settings.enabled;
- function commit(f,G,speed,horizontal,kind='step'){
+ function commit(f,G,speed,horizontal,kind='step',point=null){
   if(!active()||!Number.isFinite(speed)||speed<3)return null;
   const surface=surfaces[G.stage]||surfaces.neon,force=clamp(speed/14,.2,1.5),heavy=kind==='down'||kind==='throw';
-  const e=Object.freeze({id:++serial,actor:f.index,birth:INK.VFX.time,x:f.x,kind,heavy,surface:surface.kind,color:surface.color,
+  const e=Object.freeze({id:++serial,actor:f.index,birth:INK.VFX.time,x:Number.isFinite(point?.[0])?point[0]:f.x,kind,heavy,surface:surface.kind,color:surface.color,
    force,drift:clamp(horizontal,-9,9),life:heavy?38:21});
   events.push(e);if(events.length>8)events.shift();return e;
+ }
+ function armArrival(f,G,speed,horizontal,kind,handoff){
+  if(!handoff?.feet||!Number.isFinite(speed)||speed<3)return null;const time=f._inkVisualClock;
+  const q={time,last:time-1,epoch:f._inkContactEpoch||0,x:f.x,speed,horizontal,kind,remaining:['rear','front'],until:time+32};pending.set(f,q);return q;
+ }
+ function step(f,G){const q=pending.get(f);if(!q)return;
+  const time=f._inkVisualClock;if(!Number.isFinite(time)||time<q.time||time<q.last||time>q.until||f.y!==0||f.jumpPre>0||f.hp<=0||f.captured||f.throwAction||['hit','tumble','down','rise','ko','throwing','captured'].includes(f.state)||(f._inkContactEpoch||0)!==q.epoch||Math.abs(f.x-q.x)>80){pending.delete(f);return;}
+  if(time===q.last||G._inkStepFrozen||G.hitstop>0)return;q.last=time;q.x=f.x;
+  const sample=INK.AirStrike?.owns(f)?{model:INK.AirStrike.sample(f)}:INK.StrikeModel?.owns(f)?{model:INK.StrikeModel.sample(f)}:INK.RulePose?.sample(f);if(!sample?.model)return;
+  const scale=f.ch.scale||1,feet=sample.worldFeet||INK.StrikeModelFrame.build(f,sample.model,{world:{x:f.x,y:0,dir:f.dir,scale}}).worldFeet,gait=INK.Locomotion?.sample(f,time),ground=665-16*scale;
+  for(const key of q.remaining.slice()){const point=feet?.[key],weight=sample.model.support?.weights?.[key]??sample.support?.weights?.[key]??gait?.weights?.[key];
+   // Actual solved ankles must reach the floor. A low swing cannot emit only
+   // because its planned target lies on the ground; require load when known.
+   if(!point||Math.abs(point[1]-ground)>2*scale||Number.isFinite(weight)&&weight<.5)continue;
+   commit(f,G,q.speed*(q.remaining.length===2?1:.65),q.horizontal,q.kind,point);q.remaining=q.remaining.filter(k=>k!==key);
+  }if(!q.remaining.length)pending.delete(f);
  }
  function mount(){
   if(root?.isConnected)return;const parent=document.getElementById('ground-fx');if(!parent)return;
@@ -46,6 +62,6 @@
    });
   });
  }
- function clear(){events=[];root?.remove();root=null;slots=[];}
- INK.GroundContact={settings,active,commit,render,visible,clear,inspect:()=>({events:events.map(e=>({...e})),slots:slots.length})};
+ function clear(){pending=new WeakMap();events=[];root?.remove();root=null;slots=[];}
+ INK.GroundContact={settings,active,commit,armArrival,step,reset:f=>pending.delete(f),render,visible,clear,inspect:()=>({events:events.map(e=>({...e})),slots:slots.length})};
 })();

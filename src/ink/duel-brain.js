@@ -21,15 +21,16 @@
   }
   const launch=f._inkLaunch,delay=hard?3:easy?10:6;
   if(INK.AirPursuit?.active()&&launch&&!launch.used&&launch.source!==q.pursuitSource&&Number.isFinite(launch.at)&&G.actionTick-launch.at>=delay){
-   const gate=INK.AirPursuit.decision(f,'AIR_CHASE',G);
-   if(!gate?.wait){
-    // One roll per real launch source, including declined / expired permits.
-    q.pursuitSource=launch.source;
-    if(!easy&&gate?.ok&&INK.Random.combat.next()<(hard?.65:.4)&&api.request(f,'AIR_CHASE')){
-     q.pursuits=(q.pursuits||0)+1;b.goal='挑空确认 · 付费追空';return true;
-    }
+   // Plan only from the actor's confirmed launch and mature public distance.
+   // Live target eligibility belongs to the eventual public input request.
+   q.pursuitSource=launch.source;
+   if(!easy&&G.actionTick-launch.at<=8&&f.drive>=1.5&&!f.burnout&&dist<=300&&(obs.x-f.x)*f.dir>0&&INK.Random.combat.next()<(hard?.65:.4)){
+    const accepted=api.request(f,'AIR_CHASE');
+    if(accepted){q.pursuits=(q.pursuits||0)+1;b.goal='挑空确认 · 付费追空';}
+    return true; // A rejected request is not instant opponent intelligence.
    }
   }
+
   const wake=f._inkWake;
   if(INK.WakeFlow?.active()&&f.state==='down'&&f.stateAge>=6&&q.wakeCycle!==wake?.cycle){
    q.wakeCycle=wake?.cycle;q.wakeStrikeTried=false;const roll=INK.Random.combat.next();
@@ -47,7 +48,7 @@
    }
   }
   const flight=f._inkFlight;
-  if(flight?.computer&&!flight.landed&&f.y<0){
+  if(flight?.computer&&!flight.landed&&f.y<0&&!INK.AirDuel?.active()){
    if(q.flight!==flight){q.flight=flight;q.airPlan={short:dist<250&&INK.Random.combat.next()<.35,fast:!easy&&INK.Random.combat.next()<(hard?.55:.3),target:obs.x-f.dir*145};}
    const p=q.airPlan,dx=p.target-f.x;
    api.airControl(f,{up:!p.short,down:p.fast&&Math.abs(dx)<210&&obs.attack?.kind!=='upper',left:dx<-35,right:dx>35},started=>{if(started){q.fastDrops++;b.goal='快落改变落点';}});

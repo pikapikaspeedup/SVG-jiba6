@@ -182,7 +182,7 @@
         // its already captured contact-time endpoint, never a hit-body pose.
         if(f._inkTraceStaged?.attack!==f.attack)this.flushStrike(f);else f._inkTraceStaged=null;
         const a=f.attack;
-        if(!a){this.bank?.cancel(f.index,this.time);f._inkTrail=null;f._inkFxPrevious=null;continue;}
+        if(!a){this.drawCaps.delete(f.index);this.bank?.cancel(f.index,this.time);f._inkTrail=null;f._inkFxPrevious=null;continue;}
         const rec=INK.Runtime.record(f,a.m);if(!rec)continue;
         if(f._inkTrail?.attack!==a){f._inkTrail={attack:a,socketHistory:new Map(),socketNames:[...new Set(rec.fx.map(e=>e.socket))],socketUntil:0,rows:[{...(f._inkActionOrigin||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04}),t:0}]};f._inkFxPrevious=new Map();}
         const rows=f._inkTrail.rows,t=INK.Runtime.clipFrame(rec,a.m,a.t),root={t,x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1.04};
@@ -208,7 +208,7 @@
       const visible=setting.enabled?'inline':'none';assign(this.pool.root,'display',visible);assign(this.trails.root,'display',visible);if(!setting.enabled)return;
       assign(this.pool.root,'opacity',setting.intensity);assign(this.trails.root,'opacity',setting.intensity);
       const t=G.paused||G.hitstop||this.frozen?this.time:this.time-1+clamp(alpha);
-      const caps=new Map([...this.drawCaps.values()].filter(c=>Math.abs(c.time-t)<1e-6).map(c=>[c.source,c.rows]));
+      const caps=new Map([...this.drawCaps.entries()].filter(([index,c])=>SVG_FIGHTER.fighters.find(f=>f.index===index)?.attack===c.source&&Math.abs(c.time-t)<1e-6).map(([,c])=>[c.source,c.rows]));
       this.pool.render(t);this.trails.render(t,caps);
     },
     invalidateStrike(f){

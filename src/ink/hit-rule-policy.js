@@ -29,10 +29,11 @@
   if(decision.mode!=='native')return answer(false,decision.reason);
   if(f.y!==0||f.airLock||f.captured||f.throwAction||f.hp<=0||['hit','stun','tumble','down','rise','ko','win','captured','throwing'].includes(f.state))return answer(false,'outside-ground-entry');
   const attack=f.attack,m=attack?.m;
-  const nativeAttack=f.state==='attack'&&!!attack?.combatID&&['sMP','sHP','cMK'].includes(m?.id)&&m.category==='normal'&&!m.air&&!m.throw&&!m.wakeStrike&&INK.StrikeModelPolicy?.read(f)?.mode==='native';
+  const airGroundAttack=f.state==='attack'&&m?.id==='cHP'&&INK.AirStrike?.owns(f);
+  const nativeAttack=airGroundAttack||f.state==='attack'&&!!attack?.combatID&&['sMP','sHP','cMK'].includes(m?.id)&&m.category==='normal'&&!m.air&&!m.throw&&!m.wakeStrike&&INK.StrikeModelPolicy?.read(f)?.mode==='native';
   const defense=!attack&&['idle','dash','rush','recovery','block','parry'].includes(f.state)&&INK.DefensePolicy?.evaluate(f,options)?.mode==='native';
   if(!nativeAttack&&!defense)return answer(false,'unsupported-source-owner');
-  if(!frame?.nativeBody||frame.space!=='actor-screen'||frame.bridge||frame.carrierSpec?.representation!=='spatial3D'||frame.mode!==(nativeAttack?'strike-model':'defense-body'))return answer(false,'untrusted-carrier');
+  if(!frame?.nativeBody||frame.space!=='actor-screen'||frame.bridge||frame.carrierSpec?.representation!=='spatial3D'||frame.mode!==(airGroundAttack?'air-strike':nativeAttack?'strike-model':'defense-body'))return answer(false,'untrusted-carrier');
   const row=baseline(f.ch.id),lengths=row.rig.lengths;
   for(const name of ['rearArm','frontArm','rearLeg','frontLeg']){
    const chain=frame.joints3D?.[name],expected=lengths.slice(name.endsWith('Leg')?2:0,name.endsWith('Leg')?4:2);

@@ -10,18 +10,20 @@
  const rules=Object.freeze({duration:24,travelFrames:8,speed:7,nearDistance:18,minTravel:8,cancelFrames:4});
  const id=(a,actor)=>{if(!a)return null;if(!ids.has(a)){const n=(serials.get(actor)||0)+1;serials.set(actor,n);ids.set(a,actor+':'+n);}return ids.get(a);};
  const emit=(G,type,data={})=>{const row={frame:G.actionTick,type,...data};events.push(row);if(events.length>160)events.shift();return row;};
- const supports=m=>m&&m.category==='normal'&&m.hits===1&&!m.air&&!m.throw&&!m.super&&!m.kind.includes('projectile')&&m.total>m.startup+m.active;
- const normal=a=>a&&supports(a.m);
+ const supports=(m,a=null)=>m&&m.category==='normal'&&m.hits===1&&(!m.air||!!a?.airStrikeContext&&a.airStrikePolicy?.mode==='native'&&['aMP','aHK'].includes(m.id))&&!m.throw&&!m.super&&!m.kind.includes('projectile')&&m.total>m.startup+m.active;
+ const rewardSupports=m=>!!m&&!m.air&&supports(m);
+ const normal=a=>a&&supports(a.m,a);
  const index=a=>a?Math.min(a.m.hits-1,Math.floor((a.t-a.m.startup)/(a.m.active/a.m.hits))):-1;
  const active=a=>a&&a.t>=a.m.startup&&a.t<a.m.startup+a.m.active;
  const terminal=a=>normal(a)&&a.t===a.m.startup+a.m.active;
  const take=(f,geometry,G)=>({fighter:f,attack:f.attack,serial:id(f.attack,f.index),epoch:f._inkContactEpoch||0,t:f.attack?.t,index:index(f.attack),
   active:!!active(f.attack),terminal:!!terminal(f.attack),x:f.x,y:f.y,dir:f.dir,state:f.state,captured:!!f.captured,
   frame:G.actionTick,revision:INK.Runtime?.revision||0,geometry});
- const nativeGeometry=g=>!!(g?.strikeModel||g?.bodyModel);
- const nativeOwner=f=>INK.HitRule?.owns(f)||INK.StrikeModel?.owns(f)||INK.RulePose?.owns(f);
- const sameBody=(a,b)=>typeof a?.geometry.bodyModel?.owner==='string'&&a.geometry.bodyModel.owner.length>0&&a.geometry.bodyModel.owner===b?.geometry.bodyModel?.owner&&a.y===0&&b.y===0;
+ const nativeGeometry=g=>!!(g?.airStrike||g?.strikeModel||g?.bodyModel);
+ const nativeOwner=f=>INK.AirBody?.owns(f)||INK.AirStrike?.owns(f)||INK.HitRule?.owns(f)||INK.StrikeModel?.owns(f)||INK.RulePose?.owns(f);
+ const sameBody=(a,b)=>typeof a?.geometry.bodyModel?.owner==='string'&&a.geometry.bodyModel.owner.length>0&&a.geometry.bodyModel.owner===b?.geometry.bodyModel?.owner&&(a.geometry.bodyModel.kind==='air-body'&&b.geometry.bodyModel.kind==='air-body'||a.y===0&&b.y===0);
  function modelContinuous(a,b){
+  if(a?.geometry.airStrike||b?.geometry.airStrike)return !!(a?.geometry.airStrike&&b?.geometry.airStrike&&a.attack===b.attack);
   if(a?.geometry.strikeModel||b?.geometry.strikeModel)return !!(a?.geometry.strikeModel&&b?.geometry.strikeModel&&a.attack===b.attack);
   if(a?.geometry.bodyModel||b?.geometry.bodyModel)return sameBody(a,b);
   return true;
@@ -30,14 +32,15 @@
   !a.captured&&!b.captured&&a.revision===b.revision&&a.epoch===b.epoch;}
  function boxBefore(old,now){const matches=old?.filter(b=>(b.id??b.part)===(now.id??now.part))||[];return matches.length===1?matches[0]:null;}
  function inspectPair(a,b,pa,pb){
-  const sweep=continuous(pa,a)&&continuous(pb,b)&&pa.attack===a.attack&&pa.active&&(a.active||a.terminal)&&pa.index===a.index&&(a.geometry.strikeModel?a.t>=pa.t&&a.t<=pa.t+1:a.t===pa.t+1);
+  const sweep=continuous(pa,a)&&continuous(pb,b)&&pa.attack===a.attack&&pa.active&&(a.active||a.terminal)&&pa.index===a.index&&(a.geometry.strikeModel||a.geometry.airStrike?a.t>=pa.t&&a.t<=pa.t+1:a.t===pa.t+1);
   const shapes=arr=>arr.every(S.valid)&&new Set(arr.map(b=>b.id??b.part)).size===arr.length;
   let coverage=shapes(a.geometry.hit)&&shapes(b.geometry.hurt);
   if(pa?.active&&pa.attack===a.attack)coverage &&= sweep&&pa.geometry.hit.length===a.geometry.hit.length&&pb.geometry.hurt.length===b.geometry.hurt.length;
   if(sweep&&(nativeGeometry(a.geometry)||nativeGeometry(b.geometry))&&INK.StrikeSweep){
    const curve=(before,now)=>{
+    if(before?.geometry.airStrike&&now.geometry.airStrike&&before.attack===now.attack)return u=>INK.AirStrike?.between(before.geometry,now.geometry,u);
     if(before?.geometry.strikeModel&&now.geometry.strikeModel&&before.attack===now.attack)return u=>INK.StrikeModel?.between?.(before.geometry,now.geometry,u);
-    if(sameBody(before,now))return u=>now.geometry.bodyModel?.kind==='hit-rule'?INK.HitRule?.between(before.geometry,now.geometry,u):INK.RulePose?.between?.(before.geometry,now.geometry,u);
+    if(sameBody(before,now))return u=>now.geometry.bodyModel?.kind==='air-body'?INK.AirBody?.between(before.geometry,now.geometry,u):now.geometry.bodyModel?.kind==='hit-rule'?INK.HitRule?.between(before.geometry,now.geometry,u):INK.RulePose?.between?.(before.geometry,now.geometry,u);
     return undefined;
    };
    const result=INK.StrikeSweep.inspect(pa.geometry,a.geometry,pb.geometry,b.geometry,{sampleA:curve(pa,a),sampleB:curve(pb,b)});
@@ -58,7 +61,7 @@
   }
   return{contact,near,overlapped,coverage};
  }
- const Spacing={settings,rules,events,inspectPair,supports,
+ const Spacing={settings,rules,events,inspectPair,supports,sweepSupports:supports,rewardSupports,
   begin(G,fighters,geometry){
    // Capture after last step's push correction, before this step moves roots.
    if(!settings.enabled&&!fighters.some(nativeOwner))return;
@@ -93,7 +96,7 @@
     if(!normal(a.attack)||(!a.active&&!a.terminal)||!settings.enabled&&!nativeGeometry(a.geometry)&&!nativeGeometry(b.geometry))continue;
     let record=observed.get(f.index);
     if(!record){record={attack:a.attack,serial:a.serial,touched:false,near:null,retreat:b.fighter._inkRetreat,
-     certifiable:a.t===a.attack.m.startup&&b.state==='evade',last:a.t};observed.set(f.index,record);}
+     certifiable:rewardSupports(a.attack.m)&&a.y===0&&a.t===a.attack.m.startup&&b.state==='evade',last:a.t};observed.set(f.index,record);}
     else {record.certifiable &&= a.t===record.last+1&&continuous(previous.get(f.index),a)&&continuous(previous.get(b.fighter.index),b);record.last=a.t;}
     if(!a.geometry.hit.length||!b.geometry.hurt.length)record.certifiable=false;
     const result=inspectPair(a,b,previous.get(f.index),previous.get(1-f.index));pairs.set(f.index,result);record.certifiable &&= result.coverage;

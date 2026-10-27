@@ -1,0 +1,36 @@
+{
+  "stage": 18,
+  "htmlSha256": "98bdb921ec43f1871332900948abb61e8278696e7d1d45b8e09d939ebcb05afa",
+  "bytes": 9995124,
+  "gameSha256": "a3d2dc5790ea474aaaff4e7f4cdc0f0d54853a06568b1728783ed2b6ed283d58",
+  "finalReports": [
+    "edges.json",
+    "invalidation.json",
+    "plates.json",
+    "source"
+  ],
+  "earlierDevelopmentReports": [
+    "lifecycle-development.json",
+    "fight-development.json",
+    "cpu-development.json"
+  ],
+  "pro": {
+    "sourceFiles": 214,
+    "sourceSha256": "7d9815222ddc88d8ab49098c2201abe978d01acc8f56b59f2eb229b9fec6671a",
+    "completeRead": "2026-10-27 03:33 Europe/Rome",
+    "consultations": 1
+  },
+  "scope": [
+    "8 voluntary jump bodies",
+    "24 aMP/aHK/cHP shared models",
+    "same-owner fractional geometry",
+    "landing handoff and foot feedback",
+    "bounded delayed air decisions"
+  ],
+  "limitations": [
+    "air hit/tumble/throw remain compatibility",
+    "CPU extrapolates observed hurt, not future opponent poses",
+    "AABB sweep is approximate",
+    "no new endurance or performance claim"
+  ]
+}

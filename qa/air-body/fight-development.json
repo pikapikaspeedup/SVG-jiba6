@@ -1,0 +1,542 @@
+{
+  "htmlSha256": "a4a7de839ab6b5007685672bdefad229af0e9e77a5f1ea3f6a91faa6945dd596",
+  "errors": [],
+  "result": {
+    "rows": [
+      {
+        "id": "ryu",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9260
+        ],
+        "events": [
+          {
+            "tick": 19,
+            "action": 16,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "ryu",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          10000,
+          9171
+        ],
+        "events": [
+          {
+            "tick": 127,
+            "action": 115,
+            "attackID": "attack:2",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 829
+          }
+        ]
+      },
+      {
+        "id": "ryu",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 221,
+            "action": 199,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "ken",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9320
+        ],
+        "events": [
+          {
+            "tick": 299,
+            "action": 268,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 680
+          }
+        ]
+      },
+      {
+        "id": "ken",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          9260,
+          9320
+        ],
+        "events": [
+          {
+            "tick": 407,
+            "action": 367,
+            "attackID": "attack:2",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 680
+          },
+          {
+            "tick": 407,
+            "action": 367,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "ken",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 500,
+            "action": 451,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "chun",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9330
+        ],
+        "events": [
+          {
+            "tick": 579,
+            "action": 521,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 670
+          }
+        ]
+      },
+      {
+        "id": "chun",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 686,
+            "action": 619,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "chun",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 779,
+            "action": 703,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "cammy",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9340
+        ],
+        "events": [
+          {
+            "tick": 856,
+            "action": 771,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 660
+          }
+        ]
+      },
+      {
+        "id": "cammy",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          10000,
+          9261
+        ],
+        "events": [
+          {
+            "tick": 964,
+            "action": 870,
+            "attackID": "attack:2",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 739
+          }
+        ]
+      },
+      {
+        "id": "cammy",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 1058,
+            "action": 954,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "luke",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9210
+        ],
+        "events": [
+          {
+            "tick": 1135,
+            "action": 1022,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 790
+          }
+        ]
+      },
+      {
+        "id": "luke",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          10000,
+          9115
+        ],
+        "events": [
+          {
+            "tick": 1243,
+            "action": 1121,
+            "attackID": "attack:2",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 885
+          }
+        ]
+      },
+      {
+        "id": "luke",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 1337,
+            "action": 1205,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "juri",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9330
+        ],
+        "events": [
+          {
+            "tick": 1415,
+            "action": 1274,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 670
+          }
+        ]
+      },
+      {
+        "id": "juri",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          9260,
+          9330
+        ],
+        "events": [
+          {
+            "tick": 1523,
+            "action": 1373,
+            "attackID": "attack:2",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 670
+          },
+          {
+            "tick": 1523,
+            "action": 1373,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "juri",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 1616,
+            "action": 1457,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "mai",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9320
+        ],
+        "events": [
+          {
+            "tick": 1695,
+            "action": 1527,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 680
+          }
+        ]
+      },
+      {
+        "id": "mai",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 1802,
+            "action": 1625,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "mai",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 1895,
+            "action": 1709,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "iori",
+        "when": 0,
+        "accepted": true,
+        "hp": [
+          10000,
+          9230
+        ],
+        "events": [
+          {
+            "tick": 1973,
+            "action": 1778,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 770
+          }
+        ]
+      },
+      {
+        "id": "iori",
+        "when": 14,
+        "accepted": true,
+        "hp": [
+          9260,
+          9230
+        ],
+        "events": [
+          {
+            "tick": 2081,
+            "action": 1877,
+            "attackID": "attack:2",
+            "type": "hit",
+            "attacker": 0,
+            "defender": 1,
+            "move": "cHP",
+            "damage": 770
+          },
+          {
+            "tick": 2081,
+            "action": 1877,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      },
+      {
+        "id": "iori",
+        "when": 24,
+        "accepted": false,
+        "hp": [
+          9260,
+          10000
+        ],
+        "events": [
+          {
+            "tick": 2174,
+            "action": 1961,
+            "attackID": "attack:1",
+            "type": "hit",
+            "attacker": 1,
+            "defender": 0,
+            "move": "aHK",
+            "damage": 740
+          }
+        ]
+      }
+    ]
+  }
+}

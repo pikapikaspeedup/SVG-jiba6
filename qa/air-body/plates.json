@@ -1,0 +1,198 @@
+{
+  "htmlSha256": "98bdb921ec43f1871332900948abb61e8278696e7d1d45b8e09d939ebcb05afa",
+  "errors": [],
+  "rows": [
+    {
+      "id": "ryu",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "ryu",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "ryu",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "ryu",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "ken",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "ken",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "ken",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "ken",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "chun",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "chun",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "chun",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "chun",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "cammy",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "cammy",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "cammy",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "cammy",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "luke",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "luke",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "luke",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "luke",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "juri",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "juri",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "juri",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "juri",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "mai",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "mai",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "mai",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "mai",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    },
+    {
+      "id": "iori",
+      "move": "jump",
+      "y": -168.00000000000009,
+      "mode": "air-body"
+    },
+    {
+      "id": "iori",
+      "move": "aMP",
+      "y": -157.00000000000006,
+      "mode": "air-strike"
+    },
+    {
+      "id": "iori",
+      "move": "aHK",
+      "y": -169.00000000000009,
+      "mode": "air-strike"
+    },
+    {
+      "id": "iori",
+      "move": "cHP",
+      "y": 0,
+      "mode": "air-strike"
+    }
+  ]
+}

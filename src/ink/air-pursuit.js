@@ -36,7 +36,7 @@
   if(q.phase==='interrupted'){if(f.y===0&&!f.captured&&!['hit','tumble','down','rise','ko','stun','throwing'].includes(f.state))land(f,G,api);return;}
   if(q.phase==='windup'){
    if(q.age<rules.windup){f.stateT=Math.max(f.stateT,rules.windup-q.age+1);return;}
-   q={...q,phase:'flight',age:0};f._inkPursuit=q;api.state(f,'idle');f.y=-1;f.vy=rules.vy;f.vx=0;f.airLock=false;f.crouch=false;f.jumpPre=0;api.dust?.(f.x);return;
+   q={...q,phase:'flight',age:0};f._inkPursuit=q;api.state(f,'idle');const airSource=INK.AirBody?.capture(f);f.y=-1;f.vy=rules.vy;f.vx=0;f.airLock=false;f.crouch=false;f.jumpPre=0;INK.AirBody?.begin(f,airSource);api.dust?.(f.x);return;
   }
   if(q.phase==='flight'){
    f.vx=0;const amount=Math.min(rules.speed,rules.travel-q.travel);if(amount>0){f.x=Math.max(105,Math.min(1335,f.x+q.dir*amount));q.travel+=amount;}

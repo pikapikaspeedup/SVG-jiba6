@@ -17,7 +17,7 @@
  const Runtime={enabled:true,sourceStore:null,sessionStore:null,get store(){return this.sessionStore||this.sourceStore;},eventLog:[],profileCache:new Map(),lifecycleLog:[],actionSerial:0,
   install(store){this.sourceStore=store;store.on(()=>{if(!this.sessionStore)this.invalidate();});return this;},
   useSessionStore(store){this.sessionStore=store;this.invalidate();},
-  invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Spacing?.invalidate(f);if(INK.StrikeModel?.owns(f)){globalThis.SVG_FIGHTER.setState(f,'idle');}INK.Presentation?.reset(f);INK.BodySupport?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
+  invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Spacing?.invalidate(f);if(INK.AirStrike?.owns(f)){delete f.attack.airStrikeContext;delete f.attack.airStrikeSupportPlan;}else if(INK.StrikeModel?.owns(f)){globalThis.SVG_FIGHTER.setState(f,f.y<0?'recovery':'idle');}INK.Presentation?.reset(f);INK.BodySupport?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
   get revision(){return this.store?.revision||0;},
   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
   record(f,m){return this.store?.byGame(f.ch.id,m?.wakeStrike?'sMP':m?.id||'@idle')||null;},
@@ -27,7 +27,7 @@
    if(!this.store)return;const A=globalThis.SVG_FIGHTER,from=A?.pose(source),rec=this.record(f,m);if(!from||!rec)return;
    const profile=this.profile(f.ch.id),world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},oldWorld={x:source.x,y:source.y,dir:source.dir,scale:source.renderScale||source.ch.scale||1},visualFrom=this.visual(source,from,oldWorld);
    let previous=from,visualPrevious=visualFrom,dt=.25;
-   if(source.attack&&source.attack.t>0){dt=Math.min(.25,source.attack.t);const view=Object.create(source);view.attack={...source.attack,t:source.attack.t-dt};previous=A.pose(view);visualPrevious=this.visual(view,previous,{x:view.x,y:view.y,dir:view.dir,scale:view.renderScale||view.ch.scale||1});}else if(INK.Presentation){const view=INK.Presentation.previous(source,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,{x:view.x,y:view.y,dir:view.dir,scale:view.renderScale||view.ch.scale||1});}
+   if(source.attack&&source.attack.t>0){dt=Math.min(.25,source.attack.t);const nativeAir=INK.AirStrike?.owns(source),historical=nativeAir?INK.Presentation?.attackAt(source,source.attack.t-dt):null,view=historical||Object.create(source);if(!historical){if(nativeAir)dt=0;view.attack={...source.attack,t:source.attack.t-dt};}previous=A.pose(view);visualPrevious=this.visual(view,previous,{x:view.x,y:view.y,dir:view.dir,scale:view.renderScale||view.ch.scale||1});}else if(INK.Presentation){const view=INK.Presentation.previous(source,dt);previous=A.pose(view);visualPrevious=this.visual(view,previous,{x:view.x,y:view.y,dir:view.dir,scale:view.renderScale||view.ch.scale||1});}
    // Sample the real incoming game pose with clean transition ownership.
    // Falling back to the outgoing pose for absent channels fabricated a yaw
    // target which the incoming Runtime.sample would never actually produce.
@@ -69,7 +69,7 @@
   presentation(f,record,frame,simulationFrame=f.attack?.t||0){const v=INK.Motion.secondary(record?.clip,frame);const tr=f._inkTransition;const out=f.attack&&tr?.id===f.attack.m.id?INK.Motion.blendSecondary(tr.secondary,v,simulationFrame,8):v;return INK.StateTransitions?INK.StateTransitions.secondary(f,out):out;},
   clock(f,fallback=0){return Number.isFinite(f._inkVisualClock)?f._inkVisualClock:Number.isFinite(f._inkPreviewClock)?f._inkPreviewClock:fallback;},
   neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((this.clock(f,time*60)+(f.index||0)*13)%rec.clip.duration,base);},
-  rig(f,p){const native=INK.StrikeModel?.rig(f,p);if(native)return native;if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
+  rig(f,p){const native=INK.AirStrike?.rig(f,p)||INK.StrikeModel?.rig(f,p);if(native)return native;if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
   visualRig(f,p){return INK.VisualFrame?.get(p)?.rig||Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
   prepare(f,m){if(!this.enabled||!this.store||!m)return m;const record=this.record(f,m);if(!record?.binding.retimed)return m;const b=record.binding;return{...m,startup:b.startup,active:b.active,recovery:b.recovery,total:record.clip.duration};},
   geometry(f,original,p,rig,world,closing=false){if(!this.enabled||!f.attack)return original;const a=f.attack,rec=this.record(f,a.m);if(!rec||rec.boxes.mode!=='custom')return original;const t=this.clipFrame(rec,a.m,a.t),out={...original};const hit=[],hurt=[];
@@ -121,6 +121,8 @@
   },
   visual(f,base,world=null,skipThrowConstraint=false){
    const hit=INK.HitRule?.sample(f,{world:world||{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1},time:this.clock(f)});if(hit)return INK.VisualFrame.attach(hit.pose,this.combatView(f,hit.frame));
+   const airView=world?Object.assign(Object.create(f),{x:world.x??f.x,y:world.y??f.y}):f,airStrike=INK.AirStrike?.sample(airView);if(airStrike){const p=INK.copy(airStrike.pose),frame={...INK.StrikeModelFrame.build(f,airStrike,{world:world||{}}),mode:'air-strike'};return INK.VisualFrame.attach(p,this.combatView(f,frame));}
+   const air=INK.AirBody?.owns(f)&&INK.AirBody.sample(f,{world:world||{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1},time:this.clock(f)});if(air)return INK.VisualFrame.attach(INK.copy(air.pose),this.combatView(f,air.frame));
    const native=INK.StrikeModel?.sample(f);if(native){const p=INK.copy(native.pose),frame=INK.StrikeModelFrame.build(f,native,{world:world||{}});return INK.VisualFrame.attach(p,this.combatView(f,frame));}
    const rule=!f._inkRawVisual&&INK.RulePose?.sample(f,{world:world||{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1},time:this.clock(f)});if(rule)return INK.VisualFrame.attach(rule.pose,this.combatView(f,rule.frame));
    if(!this.enabled||!this.store)return base;
@@ -176,7 +178,8 @@
   },
   visualSample(f,record,frame,root){
    const m=f.attack.m,b=record.binding,gameFrame=phaseMap(frame,[0,b.startup,b.startup+b.active,record.clip.duration],[0,m.startup,m.startup+m.active,m.total]);
-   const view=Object.create(f);view.attack={...f.attack,t:gameFrame};view.x=root.x;view.y=root.y;
+   const native=INK.AirStrike?.owns(f),sampled=native?INK.Presentation?.attackAt(f,gameFrame):null;if(native&&!sampled)return null;
+   const view=Object.create(sampled||f);if(!native){view.attack={...f.attack,t:gameFrame};view.x=root.x;view.y=root.y;}else root={...root,x:view.x,y:view.y,dir:view.dir};
    const base=globalThis.SVG_FIGHTER.pose(view),p=this.visual(view,base,root),rig=this.visualRig(view,p);
    return {pose:p,rig};
   },

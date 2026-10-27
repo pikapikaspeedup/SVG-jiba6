@@ -16,7 +16,7 @@
 
 ## 项目现状与阅读顺序
 
-- 第十五轮共享招式空间已整合：24 招固定骨长与极坐标路线、共同身体代理、真实扇缘和八分帧扫掠；支持招的空间范围明确更新，原伤害/时间/资源保持。阅读 `docs/STRIKE-MODEL.md` 与 `qa/strike-model/checkpoint.json`；72 姿态图和最终 TOI/编辑检查分属明确记录的两个构建，不能混用哈希。第十六轮共享防守身体已整合，阅读 `docs/SHARED-DEFENSE.md` 与 `qa/shared-defense/checkpoint.json`；第十七轮地面规则受击已整合，阅读 `docs/HIT-RULE.md`、`qa/hit-rule/fight.json` 与出口残差说明；下一轮推进跳入—对空—落地共享身体。每轮仅一次 Pro 咨询，先读持续账本防止重复。
+- 第十五轮共享招式空间已整合：24 招固定骨长与极坐标路线、共同身体代理、真实扇缘和八分帧扫掠；支持招的空间范围明确更新，原伤害/时间/资源保持。阅读 `docs/STRIKE-MODEL.md` 与 `qa/strike-model/checkpoint.json`；72 姿态图和最终 TOI/编辑检查分属明确记录的两个构建，不能混用哈希。第十六轮共享防守身体已整合，阅读 `docs/SHARED-DEFENSE.md` 与 `qa/shared-defense/checkpoint.json`；第十七轮地面规则受击已整合，阅读 `docs/HIT-RULE.md`、`qa/hit-rule/fight.json` 与出口残差说明；第十八轮跳入—对空—落地共享身体已整合，阅读 `docs/AIR-BODY.md` 与 `qa/air-body/checkpoint.json`；下一轮推进空中受击—摔地—起身。每轮仅一次 Pro 咨询，先读持续账本防止重复。
 
 - 「身体参与对抗」三阶段已整合：身体与接触、攻防与连携、八角色与表现统一。当前规则见 `docs/NEXT-ENGINE.md`、`docs/PRESSURE-FLOW.md` 和 `docs/EIGHT-FIGHTERS.md`；当前检查汇总为 `qa/eight-fighters/completion.json`。隆/嘉米样板与旧十轮报告属于历史构建。2026-10-26 第一阶段 Pro 咨询已使用一次；第二、三阶段未新增咨询。用户授权的两名子 Agent 已用于本轮分工，后续遵循用户的 Agent 数量限制。
 

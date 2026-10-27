@@ -1,0 +1,71 @@
+{
+  "htmlSha256": "98bdb921ec43f1871332900948abb61e8278696e7d1d45b8e09d939ebcb05afa",
+  "errors": [],
+  "result": {
+    "accepted": true,
+    "owned": true,
+    "before": {
+      "state": "attack",
+      "t": 2,
+      "id": "aMP",
+      "airLock": true,
+      "y": -72.10000000000001,
+      "vx": 0,
+      "vy": -6.6,
+      "landT": 0,
+      "pursuit": null,
+      "flight": {
+        "start": 4,
+        "origin": 350,
+        "cut": true,
+        "fast": false,
+        "computer": false,
+        "landed": false
+      }
+    },
+    "after": {
+      "state": "attack",
+      "t": 2,
+      "id": "aMP",
+      "airLock": true,
+      "y": -72.10000000000001,
+      "vx": 0,
+      "vy": -6.6,
+      "landT": 0,
+      "pursuit": null,
+      "flight": {
+        "start": 4,
+        "origin": 350,
+        "cut": true,
+        "fast": false,
+        "computer": false,
+        "landed": false
+      }
+    },
+    "preserved": true,
+    "ownerRemoved": true,
+    "switches": [
+      {
+        "runtime": false,
+        "kinetic": true,
+        "hurtCount": 20,
+        "same": true,
+        "owned": true
+      },
+      {
+        "runtime": true,
+        "kinetic": false,
+        "hurtCount": 20,
+        "same": true,
+        "owned": true
+      },
+      {
+        "runtime": false,
+        "kinetic": false,
+        "hurtCount": 20,
+        "same": true,
+        "owned": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "htmlSha256": "98bdb921ec43f1871332900948abb61e8278696e7d1d45b8e09d939ebcb05afa",
+  "errors": [],
+  "result": {
+    "late": [
+      {
+        "fast": false,
+        "accepted": true,
+        "landing": {
+          "lastAttack": 8,
+          "attack": null,
+          "landT": 6,
+          "pending": [],
+          "action": 55,
+          "model": "ground",
+          "hurt": 20
+        },
+        "hp": 10000,
+        "events": [],
+        "ground": {
+          "events": [],
+          "slots": 0
+        }
+      },
+      {
+        "fast": true,
+        "accepted": true,
+        "landing": {
+          "lastAttack": 8,
+          "attack": null,
+          "landT": 11,
+          "pending": [],
+          "action": 131,
+          "model": "ground",
+          "hurt": 20
+        },
+        "hp": 10000,
+        "events": [],
+        "ground": {
+          "events": [
+            {
+              "id": 1,
+              "actor": 0,
+              "birth": 53,
+              "x": 408.80271322372073,
+              "kind": "fast",
+              "heavy": false,
+              "surface": "wet",
+              "color": "#8bc8dc",
+              "force": 1.3357142857142856,
+              "drift": 0,
+              "life": 21
+            },
+            {
+              "id": 2,
+              "actor": 0,
+              "birth": 66,
+              "x": 635.3015680468594,
+              "kind": "fast",
+              "heavy": false,
+              "surface": "wet",
+              "color": "#8bc8dc",
+              "force": 0.8682142857142857,
+              "drift": 0,
+              "life": 21
+            }
+          ],
+          "slots": 0
+        }
+      }
+    ],
+    "pursuit": {
+      "paid": {
+        "spent": 1.5,
+        "start": 178
+      },
+      "airAccepted": {
+        "native": true,
+        "damage": 392,
+        "hits": 1
+      },
+      "landing": {
+        "landT": 12,
+        "stateT": 12,
+        "state": "recovery"
+      },
+      "maxTravel": 48,
+      "hp": [
+        10000,
+        8901
+      ],
+      "events": [
+        {
+          "tick": 180,
+          "action": 178,
+          "attackID": "attack:1",
+          "type": "hit",
+          "attacker": 0,
+          "defender": 1,
+          "move": "cHP",
+          "damage": 740
+        },
+        {
+          "tick": 202,
+          "action": 191,
+          "attackID": "attack:2",
+          "type": "hit",
+          "attacker": 0,
+          "defender": 1,
+          "move": "aMP",
+          "damage": 359
+        }
+      ]
+    }
+  }
+}
