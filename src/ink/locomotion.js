@@ -3,7 +3,7 @@
 (() => {
  const settings={enabled:true},clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),smooth=x=>{x=clamp(x);return x*x*(3-2*x);};
  const profiles=Object.freeze({ryu:{duration:10,height:13,stride:34,lean:2},ken:{duration:8,height:17,stride:40,lean:4},chun:{duration:9,height:12,stride:35,lean:1},cammy:{duration:7,height:12,stride:42,lean:5},luke:{duration:9,height:15,stride:38,lean:3},juri:{duration:11,height:22,stride:37,lean:-1},mai:{duration:10,height:15,stride:36,lean:2},iori:{duration:10,height:11,stride:43,lean:6}});
- const point=p=>Object.freeze([p[0],p[1]]),active=()=>settings.enabled&&INK.Kinetic?.settings.enabled;
+ const point=p=>Object.freeze([p[0],p[1]]),active=()=>settings.enabled;
  function reset(f){f._inkLocomotion=null;}
  function footAt(foot,time){if(!foot.swing)return foot.anchor.slice();if(foot.swing.run){const s=foot.swing,u=clamp((time-s.start)/s.duration),h00=2*u*u*u-3*u*u+1,h10=u*u*u-2*u*u+u,h01=-2*u*u*u+3*u*u;return s.from.map((v,i)=>h00*v+h10*s.duration*s.velocity[i]+h01*s.to[i]-(i===1?Math.sin(Math.PI*u)**2*s.height:0));}const s=foot.swing,u=clamp((time-s.start)/s.duration),q=smooth(u);return [s.from[0]+(s.to[0]-s.from[0])*q,s.from[1]+(s.to[1]-s.from[1])*q-Math.sin(Math.PI*u)**2*s.height];}
  function freezeFoot(v){return Object.freeze({anchor:point(v.anchor),swing:v.swing?Object.freeze({...v.swing,from:point(v.swing.from),to:point(v.swing.to),...(v.swing.velocity?{velocity:point(v.swing.velocity)}:{})}):null,weight:v.weight,runSteps:v.runSteps||0,z:Number.isFinite(v.z)?v.z:0});}

@@ -20,28 +20,38 @@
   frame:G.actionTick,revision:INK.Runtime?.revision||0,geometry});
  function continuous(a,b){return a&&b&&b.frame===a.frame+1&&a.dir===b.dir&&a.state===b.state&&
   !a.captured&&!b.captured&&a.revision===b.revision&&a.epoch===b.epoch;}
- function boxBefore(old,now){const matches=old?.filter(b=>b.part===now.part)||[];return matches.length===1?matches[0]:null;}
+ function boxBefore(old,now){const matches=old?.filter(b=>(b.id??b.part)===(now.id??now.part))||[];return matches.length===1?matches[0]:null;}
  function inspectPair(a,b,pa,pb){
-  const sweep=continuous(pa,a)&&continuous(pb,b)&&pa.attack===a.attack&&pa.active&&(a.active||a.terminal)&&pa.index===a.index&&a.t===pa.t+1;
-  const shapes=arr=>arr.every(S.valid)&&new Set(arr.map(b=>b.part)).size===arr.length;
+  const sweep=continuous(pa,a)&&continuous(pb,b)&&pa.attack===a.attack&&pa.active&&(a.active||a.terminal)&&pa.index===a.index&&(a.geometry.strikeModel?a.t>=pa.t&&a.t<=pa.t+1:a.t===pa.t+1);
+  const shapes=arr=>arr.every(S.valid)&&new Set(arr.map(b=>b.id??b.part)).size===arr.length;
   let coverage=shapes(a.geometry.hit)&&shapes(b.geometry.hurt);
   if(pa?.active&&pa.attack===a.attack)coverage &&= sweep&&pa.geometry.hit.length===a.geometry.hit.length&&pb.geometry.hurt.length===b.geometry.hurt.length;
+  if(sweep&&(a.geometry.strikeModel||b.geometry.strikeModel)&&INK.StrikeSweep){
+   const curve=(before,now)=>before?.geometry.strikeModel&&now.geometry.strikeModel&&before.attack===now.attack?u=>INK.StrikeModel.between(before.geometry,now.geometry,u):undefined;
+   const result=INK.StrikeSweep.inspect(pa.geometry,a.geometry,pb.geometry,b.geometry,{sampleA:curve(pa,a),sampleB:curve(pb,b)});
+   return {...result,coverage:coverage&&result.coverage,contact:result.contact?{...result.contact,attacker:a.fighter.index,defender:b.fighter.index,serial:a.serial,hitIndex:a.index,swept:true,approximation:'eighth-frame-AABB'}:null};
+  }
   let contact=null,near=null,overlapped=false;
-  for(const hit of [...a.geometry.hit].sort((x,y)=>x.part.localeCompare(y.part)))for(const hurt of [...b.geometry.hurt].sort((x,y)=>x.part.localeCompare(y.part))){
+  for(const hit of [...a.geometry.hit].sort((x,y)=>(x.id??x.part).localeCompare(y.id??y.part)))for(const hurt of [...b.geometry.hurt].sort((x,y)=>(x.id??x.part).localeCompare(y.id??y.part))){
    const oldHit=sweep&&boxBefore(pa.geometry.hit,hit),oldHurt=sweep&&boxBefore(pb.geometry.hurt,hurt);
    const swept=oldHit&&oldHurt;
    if(sweep&&!swept)coverage=false;
    if(a.terminal&&!swept)continue;
    const c=swept?S.sweep(oldHit,hit,oldHurt,hurt):S.discrete(hit,hurt);
    const g=swept?S.closest(oldHit,hit,oldHurt,hurt):{...S.gap(hit,hurt),time:1};
-   if(c){overlapped=true;const row={...c,attacker:a.fighter.index,defender:b.fighter.index,serial:a.serial,hitIndex:a.index,hitPart:hit.part,hurtPart:hurt.part,swept:!!swept};
+   if(c){overlapped=true;const row={...c,attacker:a.fighter.index,defender:b.fighter.index,serial:a.serial,hitIndex:a.index,hitID:hit.id??hit.part,hurtID:hurt.id??hurt.part,hitPart:hit.part,hurtPart:hurt.part,swept:!!swept};
     if(!contact||row.time<contact.time)contact=row;
    }
-   if(g&&(!near||g.distance<near.distance))near={...g,hitPart:hit.part,hurtPart:hurt.part};
+   if(g&&(!near||g.distance<near.distance))near={...g,hitID:hit.id??hit.part,hurtID:hurt.id??hurt.part,hitPart:hit.part,hurtPart:hurt.part};
   }
   return{contact,near,overlapped,coverage};
  }
  const Spacing={settings,rules,events,inspectPair,supports,
+  begin(G,fighters,geometry){
+   // Capture after last step's push correction, before this step moves roots.
+   if(!settings.enabled&&!fighters.some(f=>INK.StrikeModel?.owns(f)))return;
+   previous=new Map(fighters.map(f=>[f.index,take(f,geometry(f,terminal(f.attack)),{actionTick:G.actionTick})]));
+  },
   set(enabled){if(typeof enabled!=='boolean')throw TypeError('间距规则需要布尔值');if(enabled!==settings.enabled){settings.enabled=enabled;this.reset();}return enabled;},
   reset(){certificates=[];previous.clear();observed.clear();events.length=0;ids=new WeakMap();serials.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){f._inkRetreat=null;if(f.state==='evade')globalThis.SVG_FIGHTER.setState(f,'idle');}},
   setReward(value){if(typeof value!=='boolean')throw TypeError('反入奖励需要布尔值');settings.reentry=value;},
@@ -60,7 +70,7 @@
   started(f,permit,G){if(permit)emit(G,'reentry',{player:f.index,move:f.attack.m.id,source:permit.source,serial:id(f.attack,f.index)});},
   cancel(f,state){f._inkContactEpoch=(f._inkContactEpoch||0)+1;if(f._inkRetreat&&state!=='evade')f._inkRetreat=null;},
   frame(G,fighters,geometry){
-   if(!settings.enabled)return null;
+   if(!settings.enabled&&!fighters.some(f=>INK.StrikeModel?.owns(f))){previous.clear();return null;}
    certificates=[];
    const snapshots=new Map([...fighters].sort((a,b)=>a.index-b.index).map(f=>{
     return[f.index,take(f,geometry(f,terminal(f.attack)),G)];
@@ -68,7 +78,7 @@
    for(const f of [...fighters].sort((a,b)=>a.index-b.index)){
     const a=snapshots.get(f.index),b=snapshots.get(1-f.index),old=observed.get(f.index);
     if(old&&(old.attack!==a.attack||!normal(a.attack)||(!a.active&&!a.terminal)))observed.delete(f.index);
-    if(!normal(a.attack)||(!a.active&&!a.terminal))continue;
+    if(!normal(a.attack)||(!a.active&&!a.terminal)||!settings.enabled&&!a.geometry.strikeModel&&!b.geometry.strikeModel)continue;
     let record=observed.get(f.index);
     if(!record){record={attack:a.attack,serial:a.serial,touched:false,near:null,retreat:b.fighter._inkRetreat,
      certifiable:a.t===a.attack.m.startup&&b.state==='evade',last:a.t};observed.set(f.index,record);}
@@ -78,7 +88,7 @@
     record.touched ||= result.overlapped||!!a.attack.confirmed||a.attack.hitsDone.size>0;
     const r=b.fighter._inkRetreat,g=result.near;
     // Only deliberate grounded retreats, never jumping, blocking or invulnerability.
-    if(record.certifiable&&!record.touched&&r===record.retreat&&r&&b.state==='evade'&&b.y===0&&!b.fighter.invuln&&g&&g.distance>1e-7&&g.distance<=rules.nearDistance&&
+    if(settings.enabled&&record.certifiable&&!record.touched&&r===record.retreat&&r&&b.state==='evade'&&b.y===0&&!b.fighter.invuln&&g&&g.distance>1e-7&&g.distance<=rules.nearDistance&&
        Math.abs(b.x-r.origin)>=rules.minTravel&&Math.abs(g.pointA[0]-g.pointB[0])>1e-7){
      if(!record.near||g.distance<record.near.distance)record.near=g;
     }

@@ -2,7 +2,7 @@
  * the actor's own resources and flight. Never reads the opponent's inputs. */
 'use strict';
 (() => {
- const settings={enabled:true},active=()=>settings.enabled&&INK.Kinetic?.settings.enabled;
+ const settings={enabled:true},active=()=>settings.enabled;
  function update(f,b,obs,G,api){
   if(!active())return false;const hard=G.difficulty==='hard',easy=G.difficulty==='easy',dist=Math.abs(obs.x-f.x),corner=f.x<205||f.x>1235;
   const q=f._inkDuel||(f._inkDuel={recoveryTried:false,flight:null,waveAttempt:-999,followed:null,recoveries:0,fastDrops:0,counterWaves:0,followUps:0});

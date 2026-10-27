@@ -3,7 +3,7 @@
 (() => {
  const settings={enabled:true};
  const rules=Object.freeze({delay:18,strikeCost:1.5,window:4,startup:8,active:3,recovery:26,damage:600,travel:18});
- const active=()=>settings.enabled&&INK.Kinetic?.settings.enabled&&INK.CombatFlow?.settings.rules==='flow';
+ const active=()=>settings.enabled&&INK.CombatFlow?.settings.rules==='flow';
  function state(f,next,G){
   if(next==='down'&&f.state!=='down')f._inkWake={cycle:(f._inkWake?.cycle||0)+1,entered:G.actionTick,delayed:false,struck:false,paid:0};
  }

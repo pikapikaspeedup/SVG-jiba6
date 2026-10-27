@@ -2,7 +2,7 @@
 'use strict';
 (() => {
  const settings={enabled:true},rules=Object.freeze({window:8,cost:1.5,distance:260,juggle:2,windup:4,vy:-9.2,speed:4.8,travel:48,landing:12});
- const active=()=>settings.enabled&&INK.Kinetic?.settings.enabled&&INK.CombatFlow?.settings.rules==='flow';
+ const active=()=>settings.enabled&&INK.CombatFlow?.settings.rules==='flow';
  function recordLaunch(a,d,sourceAttack,G){
   if(!active()||a.y!==0||a.attack!==sourceAttack||sourceAttack?.m.id!=='cHP'||!sourceAttack.hitConfirmed||d.y>=0||d.state!=='tumble'||d.hp<=0)return false;
   a._inkLaunch={source:sourceAttack,target:d,at:G.actionTick,used:false};return true;

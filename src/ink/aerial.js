@@ -4,7 +4,7 @@
 (() => {
  const settings={enabled:true},clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
  let root=null,streaks=[];
- const active=()=>settings.enabled&&INK.Kinetic?.settings.enabled;
+ const active=()=>settings.enabled;
  function launch(f,G,computer=false){f._inkFlight=active()?{start:G.actionTick,origin:f.x,cut:false,fast:false,computer,landed:false}:null;}
  function control(f,G,command=null){
   const flight=f._inkFlight;if(!active()||!flight||flight.computer&&!command||flight.landed||f.y>=0||f.captured||!['idle','recovery','attack'].includes(f.state))return;
@@ -30,6 +30,7 @@
  }
  function recoveryStep(f){if(!active()||!f._inkRecovery||f.state!=='rise')return;const q=f._inkRecovery;q.age++;if(q.age<=6)f.x+=q.direction*(7-q.age)*2;}
  function pose(f,source){
+  if(INK.Kinetic?.settings.enabled===false)return source;
   if(active()&&f._inkRecovery&&f.state==='rise'){
    const p=INK.copy(source),u=clamp(f._inkRecovery.age/12,0,1),w=Math.sin(Math.PI*u);p.bob=(p.bob||0)+7*w;p.lean=(p.lean||0)+f._inkRecovery.direction*f.dir*7*w;return INK.Articulation.inherit(source,p);
   }
@@ -44,7 +45,7 @@
  }
  function render(G,fighters){
   if(!root?.isConnected){const parent=document.getElementById('ghosts');if(!parent)return;root=INK.SVG.node('g',{'data-air-flow':'descent','pointer-events':'none'},parent);streaks=[0,1].map(()=>INK.SVG.node('path',{fill:'none','stroke-width':2,'stroke-linecap':'round'},root));}
-  fighters.forEach((f,i)=>{const n=streaks[i];if(!n)return;const visible=active()&&INK.VFX.settings.enabled&&!INK.VFX.settings.reducedMotion&&f.y<0&&f._inkFlight?.fast&&!f.captured&&!['hit','tumble'].includes(f.state);INK.SVG.assign(n,'display',visible?'inline':'none');if(!visible)return;
+  fighters.forEach((f,i)=>{const n=streaks[i];if(!n)return;const visible=active()&&INK.Kinetic?.settings.enabled!==false&&INK.VFX.settings.enabled&&!INK.VFX.settings.reducedMotion&&f.y<0&&f._inkFlight?.fast&&!f.captured&&!['hit','tumble'].includes(f.state);INK.SVG.assign(n,'display',visible?'inline':'none');if(!visible)return;
    const x=f.x,y=665+f.y-180,l=Math.min(70,15+f.vy*2.8);INK.SVG.assign(n,'d',`M${x-42} ${y-l}l-4 ${l}M${x+46} ${y-l-18}l4 ${l}M${x-5} ${y-l-65}v${l*.7}`);INK.SVG.assign(n,'stroke',f.ch.color);INK.SVG.assign(n,'opacity',.38*INK.VFX.settings.intensity);
   });
  }

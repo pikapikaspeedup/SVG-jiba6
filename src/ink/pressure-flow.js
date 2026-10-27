@@ -4,7 +4,7 @@
 (() => {
  const settings={enabled:true},clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
  const options={YIELD:{cost:.5,duration:10,travel:42,label:'守势退让'},ESCAPE:{cost:1.5,duration:20,travel:76,label:'脱压步'}};
- const active=()=>settings.enabled&&INK.Kinetic?.settings.enabled&&INK.CombatFlow.settings.rules==='flow';
+ const active=()=>settings.enabled&&INK.CombatFlow.settings.rules==='flow';
  function decision(f,id,G){
   const option=options[id];if(!option)return null;
   const code=!active()?'disabled':f.state!=='block'||f.y!==0||f.captured?'guard':f._inkDefense||f._inkPressure?.spent?'used':G.hitstop>0?'hitstop':'ready';

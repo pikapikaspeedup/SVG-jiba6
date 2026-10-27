@@ -2,7 +2,7 @@
  * throw eligibility, capture, protection, timing, damage and physical roots. */
 'use strict';
 (()=>{
- const settings={enabled:true},active=()=>settings.enabled&&INK.Kinetic?.settings.enabled;
+ const settings={enabled:true},active=()=>settings.enabled;
  let serial=0,events=[];
  function noteIntent(f,m,G){if(!m?.throw||m.commandThrow||f.state==='captured')return false;f._inkThrowIntent={at:G.actionTick,move:m.id};return true;}
  function canPreTech(f,G){const q=f._inkThrowIntent,age=G.actionTick-(q?.at??-Infinity);return !!(q&&age>=0&&age<=8);}

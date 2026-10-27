@@ -17,7 +17,7 @@
  const Runtime={enabled:true,sourceStore:null,sessionStore:null,get store(){return this.sessionStore||this.sourceStore;},eventLog:[],profileCache:new Map(),lifecycleLog:[],actionSerial:0,
   install(store){this.sourceStore=store;store.on(()=>{if(!this.sessionStore)this.invalidate();});return this;},
   useSessionStore(store){this.sessionStore=store;this.invalidate();},
-  invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Presentation?.reset(f);INK.BodySupport?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
+  invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){if(INK.StrikeModel?.owns(f)){INK.Spacing?.invalidate(f);globalThis.SVG_FIGHTER.setState(f,'idle');}INK.Presentation?.reset(f);INK.BodySupport?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
   get revision(){return this.store?.revision||0;},
   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
   record(f,m){return this.store?.byGame(f.ch.id,m?.wakeStrike?'sMP':m?.id||'@idle')||null;},
@@ -69,7 +69,7 @@
   presentation(f,record,frame,simulationFrame=f.attack?.t||0){const v=INK.Motion.secondary(record?.clip,frame);const tr=f._inkTransition;const out=f.attack&&tr?.id===f.attack.m.id?INK.Motion.blendSecondary(tr.secondary,v,simulationFrame,8):v;return INK.StateTransitions?INK.StateTransitions.secondary(f,out):out;},
   clock(f,fallback=0){return Number.isFinite(f._inkVisualClock)?f._inkVisualClock:Number.isFinite(f._inkPreviewClock)?f._inkPreviewClock:fallback;},
   neutral(f,time,base){if(!this.enabled||!this.store)return null;const rec=this.store.byGame(f.ch.id,'@idle');if(!rec)return null;return this.store.clip(rec).sample((this.clock(f,time*60)+(f.index||0)*13)%rec.clip.duration,base);},
-  rig(f,p){if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
+  rig(f,p){const native=INK.StrikeModel?.rig(f,p);if(native)return native;if(!this.enabled||!this.store)return null;return (Rig.solveCombat||Rig.solveAnimation)(this.profile(f.ch.id),p);},
   visualRig(f,p){return INK.VisualFrame?.get(p)?.rig||Rig.solveAnimation(this.store?this.profile(f.ch.id):INK.assets.byID[f.ch.id],p);},
   prepare(f,m){if(!this.enabled||!this.store||!m)return m;const record=this.record(f,m);if(!record?.binding.retimed)return m;const b=record.binding;return{...m,startup:b.startup,active:b.active,recovery:b.recovery,total:record.clip.duration};},
   geometry(f,original,p,rig,world,closing=false){if(!this.enabled||!f.attack)return original;const a=f.attack,rec=this.record(f,a.m);if(!rec||rec.boxes.mode!=='custom')return original;const t=this.clipFrame(rec,a.m,a.t),out={...original};const hit=[],hurt=[];
@@ -120,6 +120,8 @@
    return p;
   },
   visual(f,base,world=null,skipThrowConstraint=false){
+   const native=INK.StrikeModel?.sample(f);if(native){const p=INK.copy(native.pose),frame=INK.StrikeModelFrame.build(f,native,{world:world||{}});return INK.VisualFrame.attach(p,this.combatView(f,frame));}
+   const rule=!f._inkRawVisual&&INK.RulePose?.sample(f,{world:world||{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1},time:this.clock(f)});if(rule)return INK.VisualFrame.attach(rule.pose,this.combatView(f,rule.frame));
    if(!this.enabled||!this.store)return base;
    if(INK.HitEpisode?.owns(f)){const p=INK.HitEpisode.sample(f,world||{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},this.clock(f));return INK.VisualFrame.attach(p,this.combatView(f,INK.VisualFrame.get(p)));}
    const movingFrame=INK.VisualFrame&&!f._inkRawVisual&&!f.attack&&!f.crouch&&!f.jumpPre&&f.y===0&&['idle','dash','rush'].includes(f.state);

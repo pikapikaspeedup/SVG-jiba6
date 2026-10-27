@@ -10,7 +10,7 @@
  const freeze=v=>{if(v&&typeof v==='object'){Object.values(v).forEach(freeze);Object.freeze(v);}return v;};
  function capture(frame){
   const resolved=copy(frame);resolved.rig.profile=copy(frame.rig.profile);resolved.rig.anatomy=copy(frame.rig.anatomy);
-  const spec=frame.carrierSpec,projected=frame.mode!=='locomotion',nativeChains=copy(spec?.nativeChains),bindings=copy(spec?.forwardBindings),corrections={};let maximum=0;
+  const spec=frame.carrierSpec,spatial=frame.mode==='locomotion'||['spatial3D','planar3D'].includes(spec?.representation),projected=!spatial,nativeChains=copy(spec?.nativeChains),bindings=copy(spec?.forwardBindings),corrections={};let maximum=0;
   if(projected&&nativeChains&&bindings)for(const n of names){corrections[n]=nativeChains[n].map((p,i)=>{const q=INK.mat.point(bindings[n],p),actual=frame.joints3D[n][i];const d=[actual[0]-q[0],actual[1]-q[1]];maximum=Math.max(maximum,Math.hypot(...d));return d;});}
   const representation=!projected&&!frame.bridge?'spatial3D':nativeChains&&bindings&&maximum<=24?'legacyProjected':'resolvedSurfaceFallback';
   return freeze({representation,resolvedFrame:resolved,nativeChains,bindings,corrections,diagnostics:{bridge:!!frame.bridge,maxBindingCorrection:maximum,fixedNative:representation==='legacyProjected',fallback:representation==='resolvedSurfaceFallback'}});

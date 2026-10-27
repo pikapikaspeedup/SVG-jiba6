@@ -40,14 +40,15 @@
   }return out;
  }
  function reset(f){f._inkSupport=null;INK.Locomotion?.reset(f);}
- function basePose(f){const view=Object.create(f);view._inkRawVisual=true;view._inkSupport=null;view._inkLocomotion=null;const p=globalThis.SVG_FIGHTER?.pose(view);return p?INK.Runtime.visual(view,p,{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1}):null;}
+ function basePose(f){if(INK.RulePose?.eligible(f))return INK.RulePose.base(f);const view=Object.create(f);view._inkRawVisual=true;view._inkSupport=null;view._inkLocomotion=null;const p=globalThis.SVG_FIGHTER?.pose(view);return p?INK.Runtime.visual(view,p,{x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1}):null;}
+ const ruleActive=f=>!!profiles[f?.ch?.id];
  function step(f,G){
   if(INK.HitEpisode?.support(f))return;
-  if(!active(f)){reset(f);return;}
+  if(!ruleActive(f)){reset(f);return;}
   const time=f._inkVisualClock||0,old=f._inkSupport;if(old?.time===time)return;
   const on=supported(f),profile=profiles[f.ch.id],p=on?basePose(f):null;
   if(!p){INK.Locomotion?.reset(f);f._inkSupport={time,x:f.x,dir:f.dir,velocity:0,drive:0,brake:0,turn:0,distance:0,mode:'free',contacts:null};return;}
-  const current=feet(f,p),fresh=!old?.contacts||old.dir!==f.dir||Math.abs(f.x-old.x)>80;
+  const ruleBase=INK.RulePose?.sample(f,{bare:true}),current=ruleBase?Object.fromEntries(keys.map(k=>[k,ruleBase.worldFeet[k].slice(0,2)])):feet(f,p),fresh=!old?.contacts||old.dir!==f.dir||Math.abs(f.x-old.x)>80;
   const defending=!!f._inkDefense&&f._inkDefense.age<f._inkDefense.duration&&['block','recovery'].includes(f.state);
   const delta=fresh?0:f.x-old.x,moving=!f.attack&&['idle','dash','rush'].includes(f.state)&&!f.crouch&&Math.abs(delta)>.15;
   const previousVelocity=old?.velocity||0,velocity=moving||defending?delta:0,drive=clamp(velocity/Math.max(1,f.ch.speed),-1.5,1.5);
@@ -64,7 +65,7 @@
   let startFeet=null;
   if(gaitEligible&&(!f._inkLocomotion||f._inkLocomotion.releaseStart!==null)&&Math.abs(delta)>.08*scale){
    const previous=f._inkPrevView;
-   if(previous&&previous.dir===f.dir){const wp={x:previous.x,y:previous.y,dir:previous.dir,scale},base=globalThis.SVG_FIGHTER?.pose(previous);if(base)startFeet=feet(previous,INK.Runtime.visual(previous,base,wp),wp);}
+   if(previous&&previous.dir===f.dir){const wp={x:previous.x,y:previous.y,dir:previous.dir,scale},rule=INK.RulePose?.sample(previous,{world:wp});if(rule)startFeet=Object.fromEntries(keys.map(k=>[k,rule.worldFeet[k].slice(0,2)]));}
   }
   INK.Locomotion?.step(f,G,{startFeet,groundY,baseFeet:Object.fromEntries(keys.map(k=>[k,[current[k][0],groundY]])),scale,actualdx:delta,grounded:f.y===0,eligible:gaitEligible,dir:f.dir,actionclock:time,profile,reach});
   const reaction=f._inkReaction,age=time-(reaction?.actorBirth||0),retreatFoot=!defending&&reaction?.contact&&!reaction.parry&&age>=0&&age<reaction.duration*.75?(reaction.worldDir*f.dir<0?'rear':'front'):null;
@@ -96,8 +97,8 @@
    if(old?.handoff)f._inkSupport.handoff=old.handoff;
    else if(release!==null&&release!==undefined){
     const ordinary=Object.create(f);ordinary._inkLocomotion=null;
-    const base=globalThis.SVG_FIGHTER?.pose(ordinary);
-    if(base){const destination=feet(ordinary,INK.Runtime.visual(ordinary,base,{x:f.x,y:f.y,dir:f.dir,scale}));
+    ordinary._inkSupport=null;const rule=INK.RulePose?.sample(ordinary,{world:{x:f.x,y:f.y,dir:f.dir,scale},bare:true});
+    if(rule){const destination=Object.fromEntries(keys.map(k=>[k,rule.worldFeet[k].slice(0,2)]));
      const gait=INK.Locomotion.sample(f,time),distance=Math.max(...keys.map(k=>Math.hypot(destination[k][0]-gait.feet[k][0],destination[k][1]-gait.feet[k][1]))),duration=clamp(Math.ceil(1.5*distance/(12*scale)),5,24);
      f._inkSupport.handoff=Object.freeze({born:time,duration,feet:Object.freeze(Object.fromEntries(keys.map(k=>[k,Object.freeze(destination[k].slice())])))});
      f._inkLocomotion=Object.freeze({...f._inkLocomotion,releaseDuration:duration});
@@ -176,5 +177,5 @@
  }
 
  function inspect(f){const q=f?._inkSupport;return q?{enabled:active(f),style:profiles[f.ch.id]?.style||'neutral',mode:q.mode,phase:q.phase||0,velocity:q.velocity,drive:q.drive,brake:q.brake,turn:q.turn,contacts:q.contacts?Object.fromEntries(keys.map(k=>[k,{anchor:q.contacts[k].anchor.slice(),weight:q.contacts[k].weight}])):null}:null;}
- INK.BodySupport={settings,profiles,active,reset,step,pose,constrainFeet,inspect,groundReach};
+ INK.BodySupport={settings,profiles,active,ruleActive,reset,step,stepRule:step,pose,constrainFeet,inspect,groundReach};
 })();

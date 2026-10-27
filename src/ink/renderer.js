@@ -30,7 +30,7 @@
   }return m;
  }
  const bind=[mat.compose(0,-191),mat.compose(0,-246),mat.compose(0,-295)];
- function torsoWeights(q){const y=q[1];if(y>=-246){const t=INK.easing(clamp((-191-y)/55));return[1-t,t,0];}const t=INK.easing(clamp((-246-y)/49));return[0,1-t,t];}
+ const torsoWeights=q=>INK.BodyProxy.torsoWeights(q);
  function ellipsePath(cx,cy,rx,ry){const k=.55228475;return `M${cx+rx} ${cy}C${cx+rx} ${cy+ry*k} ${cx+rx*k} ${cy+ry} ${cx} ${cy+ry}C${cx-rx*k} ${cy+ry} ${cx-rx} ${cy+ry*k} ${cx-rx} ${cy}C${cx-rx} ${cy-ry*k} ${cx-rx*k} ${cy-ry} ${cx} ${cy-ry}C${cx+rx*k} ${cy-ry} ${cx+rx} ${cy-ry*k} ${cx+rx} ${cy}Z`;}
  class SkinGroup {
   constructor(parent,markup,shape={}){
@@ -39,7 +39,7 @@
     const current=mat.multiply(m,transform(n.getAttribute?.('transform')||'')),attrs={...inherited};
     for(const a of n.attributes||[])if(!['transform','d','cx','cy','rx','ry','r','x','y'].includes(a.name))attrs[a.name]=a.value;
     let d=n.getAttribute?.('d');if(['ellipse','circle'].includes(n.tagName)){const num=(a,def=0)=>+(n.getAttribute(a)||def);d=ellipsePath(num('cx'),num('cy'),num('rx',num('r')),num('ry',num('r')));}
-    if(d){const path=INK.compilePath(d);for(let i=0;i<path.values.length;i+=2){const q=mat.point(current,[path.values[i],path.values[i+1]]),upper=shape.chest??1,waist=shape.waist??1,hip=shape.hip??1,scale=q[1]<-244?lerp(waist,upper,clamp((-244-q[1])/55)):lerp(waist,hip,clamp((q[1]+244)/42));path.values[i]=q[0]*scale;path.values[i+1]=q[1];}
+    if(d){const path=INK.compilePath(d);for(let i=0;i<path.values.length;i+=2){const q=INK.BodyProxy.shapePoint(mat.point(current,[path.values[i],path.values[i+1]]),shape);path.values[i]=q[0];path.values[i+1]=q[1];}
      const dom=node('path',attrs,this.group),skin=new WeightedPath(INK.pathString(path),torsoWeights,bind);this.paths.push({dom,skin,rest:INK.pathString(path)});
     }else for(const c of n.children||[])walk(c,current,attrs);
    };for(const c of tmp.children)walk(c,mat.identity());
@@ -148,7 +148,7 @@
    setTransform(this.end,endMatrix,stats);
    if(this.leg){const shoe=INK.SkinGeometry.foot(visual?.materialAngles.pelvis??INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
 
-   if(!this.leg){const requested=this.rear?p.handRear:p.handFront,kind=this.fan&&p.fan!==0?'grip':['fist','guard','claw','grip'].includes(requested)?requested:p.open>.45?'palm':'fist';for(const [name,group] of Object.entries(this.hands))assign(group,'visibility',name===kind?'visible':'hidden',stats);
+   if(!this.leg){const requested=this.rear?p.handRear:p.handFront,kind=this.fan&&p.fan!==0?'grip':['fist','palm','guard','claw','grip'].includes(requested)?requested:p.open>.45?'palm':'fist';for(const [name,group] of Object.entries(this.hands))assign(group,'visibility',name===kind?'visible':'hidden',stats);
     if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1),fanFrame=visual?.fanFrames?.[name],local=INK.FanGeometry.transform(p);assign(this.fan,'transform',fanFrame?mat.svg(mat.multiply(mat.multiply(mat.inverse(endMatrix),fanFrame),local)):`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
    }
   }
@@ -239,7 +239,7 @@
     const leg=name.endsWith('Leg'),limb=this[name],chain=sockets[name],depth=(r.anatomy?.depth[name]||[1,1,1]).slice();
     if(name==='rearArm'){
      const guard=INK.Turn.smooth(-52,-22,p.rw[0])*(1-INK.Turn.smooth(-279,-247,p.rw[1]));
-     const facing=Math.max(0,Math.cos(INK.rad(bodyAngle)));if(visual?.mode!=='locomotion'){depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;}
+     const facing=Math.max(0,Math.cos(INK.rad(bodyAngle)));if(!['locomotion','strike-model'].includes(visual?.mode)){depth[1]+=guard*facing*10;depth[2]+=guard*facing*27;}
     }
     const exposure=leg?INK.Turn.smooth(-10,28,Math.max(chain[0][1]-chain[1][1],chain[0][1]-chain[2][1])):1;
     assign(layers[name].group,'opacity',exposure,s);
@@ -270,7 +270,7 @@
    for(const e of this.expressions)assign(e,'visibility',e.dataset.expression===face?'visible':'hidden',s);
    const lag=secondary?followThrough(frame,impulses,1.15):0;const dynamics=secondary?motion:null;
    const oldHair=()=>{const at=visual?Rig.sockets(visual.legacyPose,visual.legacyRig).head:h;return mat.multiply(mat.compose(at[0]-6,at[1]-14,(dynamics?.hair??lag)*.7+(p.lean||0)+(p.chest||0)+(p.head||0)*.6),mat.compose(14,365));};
-   setTransform(this.hair,readableHead||['locomotion','contact'].includes(visual?.mode)?mat.multiply(headFrame,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
+   setTransform(this.hair,readableHead||['locomotion','contact','strike-model'].includes(visual?.mode)?mat.multiply(headFrame,mat.multiply(mat.compose(-6,-14,(dynamics?.hair??lag)*.7),mat.compose(14,365))):visual?mat.multiply(visual.legacyMatrix,oldHair()):oldHair(),s);
    const hipM=INK.Anatomy.skinMatrices(p)[0],belt=mat.point(hipM,[0,-14]);
    setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
    setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);

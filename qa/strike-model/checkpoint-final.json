@@ -1,0 +1,85 @@
+{
+  "contacts": [
+    {
+      "gap": 230,
+      "damage": 500,
+      "observations": [
+        {
+          "age": 6,
+          "swept": false,
+          "time": 1,
+          "hitID": "hit.frontArm.end",
+          "qualityModel": "native-section",
+          "contactU": 0.9999590049802547,
+          "usesTOIGeometry": false,
+          "section": {
+            "u": 0.9999590049802547,
+            "hitID": "hit.frontArm.end",
+            "part": "fist",
+            "model": "segment"
+          }
+        }
+      ]
+    },
+    {
+      "gap": 240,
+      "damage": 500,
+      "observations": [
+        {
+          "age": 6,
+          "swept": null,
+          "time": null,
+          "hitID": null,
+          "qualityModel": "native-unmeasured",
+          "contactU": null,
+          "usesTOIGeometry": false,
+          "section": null
+        },
+        {
+          "age": 7,
+          "swept": true,
+          "time": 0.3851060253188029,
+          "hitID": "hit.frontArm.end",
+          "qualityModel": "native-section",
+          "contactU": 1,
+          "usesTOIGeometry": true,
+          "section": {
+            "u": 1,
+            "hitID": "hit.frontArm.end",
+            "part": "fist",
+            "model": "segment"
+          }
+        }
+      ]
+    }
+  ],
+  "edit": {
+    "channel": "lean",
+    "oldPolicy": {
+      "mode": "native",
+      "reason": "original-content",
+      "fingerprint": "18fd155e8a402b07caa8799d5c97a50484a12a8fc3d76745d5805977d1f6779c",
+      "modelRevision": "native-strike-1",
+      "character": "ryu",
+      "move": "sMP"
+    },
+    "after": {
+      "attackCleared": true,
+      "state": "idle",
+      "epochChanged": true,
+      "oldInstanceRetained": false
+    },
+    "accepted": true,
+    "newPolicy": {
+      "mode": "legacy",
+      "reason": "edited-content",
+      "fingerprint": "3d765d84ecffa86dd6a4c7d28ac43dec4daf12d36751003b73946aef1a8686bb",
+      "modelRevision": "native-strike-1",
+      "character": "ryu",
+      "move": "sMP"
+    },
+    "newMode": "legacy"
+  },
+  "sha256": "041f2967ea6e780dc82c51b259813fc71078e054306c1e63c2a4dba39e3ebea0",
+  "errors": []
+}

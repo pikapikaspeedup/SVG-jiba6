@@ -81,7 +81,7 @@
       const p=profiles[settings.rhythm];
       const n=result==='block'?p.block:m.super?(last?p.superEnd:p.superMid):m.hits>1&&!last&&settings.rhythm==='fluid'?Math.min(3,m.level>=2?3:2):m.hits>1&&!last&&settings.rhythm==='weighted'?Math.min(5,m.level>=2?5:4):m.level>=3?p.heavy:m.level===2?p.medium:p.light;
       let freeze=n;
-      if(INK.Kinetic?.settings.enabled&&settings.rhythm!=='legacy'){
+      if(settings.rhythm!=='legacy'){
         const intermediate=(m.hits||1)>1&&!last;
         if(result==='hit'&&!intermediate){freeze+=m.super?2:m.level>=3?2:m.level===1?-1:0;freeze+=context.punish?2:context.counter?1:0;}
         if(result==='block'&&m.level>=3)freeze+=1;

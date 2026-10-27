@@ -17,7 +17,7 @@
  for(const route of Object.values(routes))Object.freeze(route);Object.freeze(routes);
  for(const row of Object.values(branches)){for(const value of Object.values(row))Object.freeze(value);Object.freeze(row);}Object.freeze(branches);
  const settings={enabled:true,branches:true};
- function enabled(){return settings.enabled&&INK.Kinetic?.settings.enabled&&INK.CombatFlow.settings.rules==='flow';}
+ function enabled(){return settings.enabled&&INK.CombatFlow.settings.rules==='flow';}
  function branchDecision(f,m,G){
   const a=f.attack,step=a?.targetChain?.step,profile=branches[f.ch.id];
   if(!settings.branches||!profile||step!==1||a.targetChain.terminal||f.install>0)return null;
@@ -26,8 +26,9 @@
   const opponent=globalThis.SVG_FIGHTER?.fighters?.find(d=>d!==f&&d.index!==f.index),distance=opponent?Math.abs(opponent.x-f.x):Infinity;
   const band=INK.ContactResponse?.bands?.[f.ch.id]?.[m.id],dFar=band?.dFar??band?.[1],maxDistance=Number.isFinite(dFar)?dFar+choice.travel:0;
   const contact=a._inkContact,blockAge=contact?Math.max(0,G.actionTick-contact.actionTick):age,remainingBlock=contact?.result==='block'?Math.max(0,contact.blockstun-blockAge):null;
-  let code=!a.confirmed?'confirm':age>10||a.t>=a.m.total?'window':kind==='pursuit'&&!a.hitConfirmed?'hitOnly':kind==='pressure'&&(a.hitConfirmed||a.contactResult!=='block'||remainingBlock===null)?'blockOnly':f.y!==0||opponent?.y!==0?'ground':!opponent||!maxDistance||distance>maxDistance||(opponent.x-f.x)*f.dir<=0?'distance':'ready';
-  return {ok:code==='ready',code,kind:'pressure-branch',branch:kind,driveCost,remaining,edge:f.ch.id+':'+kind,chainDepth:2,routeStep:2,label:choice.label,distance,maxDistance,
+  const native=INK.StrikeModel?.candidate(f,m),reach=native&&opponent?INK.StrikeModel.estimate(f,m,globalThis.SVG_FIGHTER.geometry(opponent).hurt,{travelBudget:choice.travel,startupFloor:kind==='pressure'?(remainingBlock||0)+4:0}):null;
+  let code=!a.confirmed?'confirm':age>10||a.t>=a.m.total?'window':kind==='pursuit'&&!a.hitConfirmed?'hitOnly':kind==='pressure'&&(a.hitConfirmed||a.contactResult!=='block'||remainingBlock===null)?'blockOnly':f.y!==0||opponent?.y!==0?'ground':!opponent||(native?!reach:!maxDistance||distance>maxDistance)||(opponent.x-f.x)*f.dir<=0?'distance':'ready';
+  return {ok:code==='ready',code,kind:'pressure-branch',branch:kind,driveCost,remaining,edge:f.ch.id+':'+kind,chainDepth:2,routeStep:2,label:choice.label,distance,maxDistance:native?null:maxDistance,reachEstimate:reach,
    adjustment:{damageScale:kind==='pursuit'?.78:.62,travelBudget:choice.travel,recoveryAdd:kind==='pursuit'?2:4,startupFloor:kind==='pressure'?remainingBlock+4:0},
    reason:code==='blockOnly'?'再压只允许第二击被防御后选择':code==='distance'?'距离超出此分支的前移范围':undefined};
  }
