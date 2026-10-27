@@ -18,6 +18,7 @@
    for(const[key,max]of [['drive',6],['super',3]]){const value=route.meter?.[key];if(value!==undefined&&(!Number.isFinite(value)||value<0||value>max))fail(key+' 资源越界');}
    for(const key of ['expectedHits','minTotal'])if(route[key]!==undefined&&(!Number.isInteger(route[key])||route[key]<1||route[key]>200))fail(key+' 越界');
    if(route.distance!==undefined&&(!Number.isFinite(route.distance)||route.distance<60||route.distance>700))fail('起手距离');
+   if(route.midOffset!==undefined&&(!Number.isFinite(route.midOffset)||route.midOffset<0||route.midOffset>200))fail('中场起手位置');
    INK.Schema.safeData(route);return copy(route);
   },
   configure(library){
@@ -33,7 +34,8 @@
    if(A.experience?.exitLessons)A.experience.exitLessons();
    document.getElementById('dummy').value='idle';document.getElementById('infinite').checked=false;document.getElementById('autohp').checked=false;
    const [f,d]=A.fighters,side=options.side===-1?-1:1,corner=route.corner!==false;const edge=side===1?1335:105;
-   f.x=f.px=corner?edge-side*(route.distance||168):720-side*(route.distance||168)/2;d.x=d.px=corner?edge:720+side*(route.distance||168)/2;
+   const mid=720+side*(route.midOffset||0);
+   f.x=f.px=corner?edge-side*(route.distance||168):mid-side*(route.distance||168)/2;d.x=d.px=corner?edge:mid+side*(route.distance||168)/2;
    f.dir=side;d.dir=-side;f.super=route.meter?.super??3;f.drive=route.meter?.drive??6;
    this.initial={x:f.x,targetX:d.x,super:f.super,drive:f.drive};this.final=null;this.endedTick=null;this.endedAction=null;this.control=options.control||'assist';this.cursor=0;this.clock=0;this.hits=0;this.damage=0;this.maxCombo=0;this.actions=[];this.log=[];this.trace=[];this.reason='';this.lastStart=0;this.lastContact=0;this.startTick=A.state.tick;this.startAction=A.state.actionTick||0;this.startTempo={...INK.CombatFlow.settings};this.waitTicks=0;this.guard=options.guard!==false;this.manualDelay=options.delay||0;
    this.pending=null;this.inputLog=[];this.bufferFrames=options.bufferFrames??6;this.window={ready:false};this.status='running';this.attempts++;A.state.phase='fight';A.state.paused=!!options.paused;A.state.artSpeed=this.speed;

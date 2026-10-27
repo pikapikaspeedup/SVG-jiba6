@@ -14,10 +14,12 @@
  };
  const freeze=x=>{if(x&&typeof x==='object'){Object.values(x).forEach(freeze);Object.freeze(x);}return x;},clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),smooth=v=>{v=clamp(v,0,1);return v*v*(3-2*v);},rad=Math.PI/180;
  for(const row of Object.values(raw))row.legs=row.legs.split(';').map(s=>s.split('/').map(v=>v.split(',').map(Number)));freeze(raw);
- function desiredPhase(y,vy){if(vy<0)return smooth((vy+8)/8);const down=1+smooth(vy/5);return y>-64?Math.max(down,2+smooth((64+y)/64)):down;}
+ // Keep the tucked apex pose while the body is still high, then extend the
+ // legs gradually as the fighter approaches the floor.
+ function desiredPhase(y,vy){if(vy<0)return smooth((vy+12)/12);return 1+2*smooth((y+240)/240);}
  function sample(id,{phase=0}={}){const r=raw[id];if(!r)return null;const q=clamp(phase,0,3),i=Math.min(2,Math.floor(q)),u=smooth(q-i),at=a=>a[i]+(a[i+1]-a[i])*u,vector=a=>a[i].map((v,k)=>v+(a[i+1][k]-v)*u),B=vector(r.B),yaw=at(r.yaw),rotate=v=>[v[0]*Math.cos(yaw*rad)+v[2]*Math.sin(yaw*rad),v[1],-v[0]*Math.sin(yaw*rad)+v[2]*Math.cos(yaw*rad)],alpha=r.pole[0]*rad,kappa=r.pole[1]*rad;
   const front=r.arms[0].slice(),rear=r.arms[1].slice();front[0]+=at([0,-.02,.03,-.04]);front[1]+=at([0,-6,6,-2]);rear[1]+=at([0,-4,2,-2]);
-  return {entryFrames:4,transitionFrames:2,bodyX:B[0],pose:{bodyX:B[0],bob:B[1],lean:B[2],twist:B[3],head:B[4],yaw,handFront:r.hands[0],handRear:r.hands[1],...(id==='mai'?{fan:at([.72,.85,.60,.45]),fanAngle:at([-15,-35,-5,10])}:{})},polarTargets:{frontArm:front,rearArm:rear,frontLeg:vector(r.legs.map(v=>v[0])),rearLeg:vector(r.legs.map(v=>v[1]))},poles:{frontArm:rotate([0,Math.cos(alpha),Math.sin(alpha)]),rearArm:rotate([0,Math.cos(alpha),-Math.sin(alpha)]),frontLeg:rotate([Math.cos(kappa),0,Math.sin(kappa)]),rearLeg:rotate([-Math.cos(kappa),0,-Math.sin(kappa)])}};
+  return {entryFrames:14,transitionFrames:4,bodyX:B[0],pose:{bodyX:B[0],bob:B[1],lean:B[2],twist:B[3],head:B[4],yaw,handFront:r.hands[0],handRear:r.hands[1],...(id==='mai'?{fan:at([.72,.85,.60,.45]),fanAngle:at([-15,-35,-5,10])}:{})},polarTargets:{frontArm:front,rearArm:rear,frontLeg:vector(r.legs.map(v=>v[0])),rearLeg:vector(r.legs.map(v=>v[1]))},poles:{frontArm:rotate([0,Math.cos(alpha),Math.sin(alpha)]),rearArm:rotate([0,Math.cos(alpha),-Math.sin(alpha)]),frontLeg:rotate([Math.cos(kappa),0,Math.sin(kappa)]),rearLeg:rotate([-Math.cos(kappa),0,-Math.sin(kappa)])}};
  }
  INK.AirBodyData=Object.freeze({revision:"air-body-pro18-1",rows:raw,sample,desiredPhase,preparation:freeze(Object.fromEntries(Object.entries(raw).map(([id,r])=>[id,r.sink]))),landing:freeze(Object.fromEntries(Object.entries(raw).map(([id,r])=>[id,{front:r.land[0],rear:r.land[1]}])))});
 })();

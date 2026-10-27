@@ -25,8 +25,8 @@ function configure(chars,moves,bases){
    Object.assign(m,v,{name:(m.od?'OD ':['轻·','中·','重·'][s])+v.name,weaponReach:v.contactPart==='fan'?38:0,cmd:(v.air?'空中 ':'')+fmt(v.motion)+' + '+(m.od?v.button+v.button:v.button),air:!!v.air});
    if(m.base==='kachosen')Object.assign(m,{startup:[14,15,16,12][s],active:6,recovery:[18,20,24,21][s],hits:1,damage:[580,640,710,900][s],knockdown:false,fanChargeable:true,fanCharged:false,travel:0,speed:[7.4,11,16.5,12.5][s]});
    if(m.base==='ryuenbu')Object.assign(m,{startup:[5,7,9,6][s],active:[17,20,24,24][s],recovery:[22,25,29,28][s],hits:m.od?3:2,launch:-12,travel:2.1,invuln:m.od?17:0,knockdown:true});
-   if(m.base==='hissatsu')Object.assign(m,{startup:[14,14,15,12][s],active:[15,20,25,25][s],recovery:[15,19,21,22][s],hits:[1,2,2,3][s],travel:[1.2,1.7,2.1,2.6][s],knockdown:s>0});
-   if(m.base==='shinobibachi')Object.assign(m,{startup:[16,18,20,14][s],active:18,recovery:[22,25,28,23][s],hits:m.od?2:1,travel:[7.5,9.2,11,11.2][s],knockdown:true});
+   if(m.base==='hissatsu')Object.assign(m,{startup:[14,14,15,12][s],active:[15,20,22,25][s],recovery:[15,19,12,22][s],hits:[1,2,2,3][s],travel:[1.2,1.7,2.1,2.6][s],knockdown:s>0,...(s===2?{launchLast:-15}:{})});
+   if(m.base==='shinobibachi')Object.assign(m,{startup:[10,18,20,14][s],active:18,recovery:[22,25,28,23][s],hits:m.od?2:1,travel:[7.5,9.2,11,11.2][s],knockdown:true});
    if(m.base==='musabi')Object.assign(m,{startup:[10,12,14,9][s],active:24,recovery:18,hits:m.od?2:1,travel:0,knockdown:true});
   }
   if(m.super){
@@ -47,6 +47,12 @@ function configure(chars,moves,bases){
   }
   m.total=m.startup+m.active+m.recovery;
  }
+ // Route-relevant Mai normals use the published SF6 frame data as a starting
+ // point; the SVG engine still owns its own geometry and hitstop model.
+ const normals={sLP:{startup:4,active:3,recovery:7,stun:17},cLP:{startup:4,active:3,recovery:7,stun:13},sHP:{startup:9,active:3,recovery:21,stun:24},cMP:{startup:6,active:4,recovery:15,stun:23}};
+ for(const [id,timing] of Object.entries(normals)){const m=moves.mai.find(x=>x.id===id);if(m){Object.assign(m,timing);m.total=m.startup+m.active+m.recovery;}}
+ const heavyKick=moves.mai.find(m=>m.id==='sHK');
+ if(heavyKick)moves.mai.push({...heavyKick,id:'bHK',name:'星孔雀',cmd:'← + HK / ← + O',startup:8,active:5,recovery:20,total:33,damage:800,stun:29,blockstun:23,cancel:false,forceStand:true,note:'后重脚，命中时迫使对手站立；绿冲后可接蹲中拳。'});
  const od=moves.mai.find(m=>m.id==='kachosen_3');
  moves.mai.push({...od,id:'midare',base:'kachosen',name:'乱花蝶扇',category:'followup',cmd:'OD 蓄力花蝶扇出手后 → + P',kind:'fan_follow',fanChargeable:false,cost:0,startup:6,active:14,recovery:20,total:40,hits:1,damage:0,note:'只在 OD 蓄力花蝶扇后开放的追投窗口内使用；分两拍追加两把扇子。'});
 }

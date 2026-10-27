@@ -60,9 +60,12 @@
     v.swing=swing;v.runSteps=(v.runSteps||0)+1;v.weight=0;next=name==='front'?'rear':'front';travel=0;lastRunLaunch=now;
    }
   }
-  if(!run&&urgent&&swinging){const name=urgent==='front'?'rear':'front',v=feet[name];if(v.swing&&!v.swing.spatial3D&&!v.swing.urgent&&v.swing.start+v.swing.duration-now>2){const from=footAt(v,now),to=[clampTarget(name,from[0]+dx*2),v.swing.to[1]],distance=Math.hypot(to[0]-from[0],to[1]-from[1]),duration=Math.max(2,Math.ceil(1.5*distance/(18*scale)));v.swing={from,to,start:now,duration,height:0,urgent:true};}next=urgent;}
-  if(!run&&!swinging&&(moving&&(travel>=3*scale||urgent)||!moving&&urgent&&old&&old.releaseStart===null)){
-   const speed=Math.abs(dx)/scale,baseDuration=clamp(p.duration-speed*.45,5,p.duration),name=urgent||next,base=c.baseFeet[name],from=feet[name].anchor,advance=clamp(dx*baseDuration*.5,-p.stride*scale,p.stride*scale);
+  // If a support foot is about to leave its reachable area, let its step
+  // overlap the other foot's swing. Cutting the other step short repeatedly
+  // prevented either foot from catching up during a sustained walk.
+  if(!run&&(!swinging||urgent)&&(moving&&(travel>=3*scale||urgent)||!moving&&urgent&&old&&old.releaseStart===null)){
+   // Aim at the stance position when the swing lands, not halfway through it.
+   const speed=Math.abs(dx)/scale,baseDuration=clamp(p.duration-speed*.45,5,p.duration),name=urgent||next,base=c.baseFeet[name],from=feet[name].anchor,advance=clamp(dx*baseDuration,-p.stride*scale,p.stride*scale);
    const wished=moving?clamp(base[0]+advance,from[0]-p.stride*scale*2,from[0]+p.stride*scale*2):from[0],target=[clampTarget(name,wished),base[1]],height=p.height*scale*(.7+.3*clamp(speed/5));
    // Smoothstep translation peaks at 1.5×average; the lift derivative adds
    // pi*height. Budget both so a long authored stance cannot snap the foot.

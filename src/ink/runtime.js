@@ -8,7 +8,7 @@
  const {mat,vec,Rig,clamp}=INK;
  function phaseMap(t,from,to){for(let i=0;i<3;i++)if(t<=from[i+1]||i===2)return to[i]+clamp((t-from[i])/Math.max(.001,from[i+1]-from[i]))*(to[i+1]-to[i]);return to[3];}
  function contactWeight(f){
-  if(!INK.StrikeScore?.supports(f))return 0;
+  if(!INK.StrikeScore?.supports(f)&&!(f.ch.id==='mai'&&f.attack?.m.id==='bHK'))return 0;
   const {m,t}=f.attack,end=m.startup+m.active,handoff=Math.min(2,Math.max(0,m.startup-1)),lead=Math.min(3,Math.max(.001,m.startup-handoff)),tail=Math.min(5,m.recovery/3);
   const u=clamp(t<m.startup?(t-m.startup+lead)/lead:t<=end?1:1-(t-end)/Math.max(.001,tail));
   return u*u*(3-2*u);
@@ -142,6 +142,13 @@
    if(f.attack&&f._inkJointTransition?.id===f.attack.m.id)INK.Articulation.attachTransition(p,f._inkJointTransition,f.attack.t);
    p=INK.StateTransitions.compression(display,p);
    p=INK.StateTransitions.apply(display,p);
+   // The light Shinobi-bachi's authored full turn was compressed into a few
+   // frames by its shorter combat startup. Spread the same rotation across
+   // the startup for presentation; the combat pose remains untouched.
+   if(f.ch.id==='mai'&&f.attack?.m.id==='shinobibachi_0'){
+    const u=clamp(f.attack.t/f.attack.m.startup),q=INK.Articulation.inherit(p,INK.copy(p));
+    q.spin=-360*u*u*(3-2*u);p=q;
+   }
    const strikeWeight=contactWeight(f);
    if(strikeWeight){
     const q=INK.Articulation.inherit(p,INK.copy(p)),kick=f.attack.m.contactPart==='foot'||f.attack.m.pose==='kick';

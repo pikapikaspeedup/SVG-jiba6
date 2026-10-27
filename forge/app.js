@@ -13,7 +13,7 @@
  if(INK.AirDuel&&INK.AirBodyData?.sample&&INK.AirStrikeData)INK.AirDuel.settings.enabled=true;
  const store=new INK.AssetStore(bundle,embedded),A=SVG_FIGHTER,playerOnly=embedded.presentation==='player';
  document.body.classList.toggle('forge-player',playerOnly);
- if(playerOnly){document.querySelector('.f-home-top h1').innerHTML='现在，<em>开打。</em>';document.querySelector('.f-home-top p').textContent='八位格斗家，纯 SVG 对战。经典搓招、辅助操作和本地双人。';document.querySelector('.f-home-foot span').textContent='WASD 移动 · J/K/L 拳 · U/I/O 脚 · H 招式表';}
+ if(playerOnly){document.querySelector('.f-home-top h1').innerHTML='选好角色，<em>开始格斗。</em>';document.querySelector('.f-home-top p').textContent='选择角色和对战模式，或进入连段练习。';$('flow-open').textContent='连段练习';$('f-enter').innerHTML='开始格斗 <span>↗</span>';document.querySelector('.f-home-foot span').textContent='WASD 移动 · J/K/L 拳 · U/I/O 脚 · H 招式表';}
  const state={route:'home',character:'mai',key:'hishou-ryuuenjin-light',draft:null,model:null,rig:null,clip:null,frame:0,playing:false,view:'skin',inspector:'motion',pose:null,solved:null,selected:'fw',box:0,fx:0,dirty:false,undo:[],redo:[],picks:['ryu','mai'],pick:0,speed:1,loop:true,zoom:false,drag:null,revision:0};
  let actor=null,onion=null,effects=null,hero=[],thumbs=[],autoTimer=null,toastTimer,clock=new INK.FixedClock(60,5),frameCounter=0;
  const socketNames={root:'角色原点',head:'头部',chest:'胸廓',pelvis:'骨盆',frontHand:'前手',rearHand:'后手',frontElbow:'前肘',rearElbow:'后肘',frontFoot:'前脚',rearFoot:'后脚',frontKnee:'前膝',rearKnee:'后膝',fanGrip:'折扇握柄',fanTip:'折扇扇尖'};

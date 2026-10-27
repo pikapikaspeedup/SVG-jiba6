@@ -59,6 +59,14 @@
   let d='';for(let i=0;i<initial;i++){const a=(i/initial+.05)*Math.PI*2,b=(i/initial+.05+.65/initial)*Math.PI*2;if(i<energy)d+=`M${Math.cos(a)*r} ${Math.sin(a)*r}A${r} ${r} 0 0 1 ${Math.cos(b)*r} ${Math.sin(b)*r}`;}
   assign(n.ring,'d',d);assign(n.ring,'stroke',s.owner.ch.color);assign(n.ring,'opacity',.45*INK.VFX.settings.intensity);
   assign(n.wake,'d',`M-20 ${-s.r*.7}Q-65 ${-s.r-4*Math.sin(age*.3)} ${-70-s.v*4} ${-s.r*.45}M-20 ${s.r*.7}Q-65 ${s.r+4*Math.sin(age*.3)} ${-70-s.v*4} ${s.r*.45}`);assign(n.wake,'stroke',s.owner.ch.color);assign(n.wake,'opacity',INK.VFX.settings.reducedMotion?0:.35*INK.VFX.settings.intensity);
+  if(s.isMaiFan){
+   if(!n.mai){const a=INK.SVG.node('path',{'data-mai-projectile':'wake'},n),b=INK.SVG.node('path',{},n),c=INK.SVG.node('path',{},n),petals=Array.from({length:4},()=>INK.SVG.node('path',{},n));n.mai={a,b,c,petals};}
+   const {a,b,c,petals}=n.mai,charged=s.fanCharged||s.m.flameEnhanced,reduced=INK.VFX.settings.reducedMotion,phase=reduced?0:age*.15,reach=charged?136:105,wave=Math.sin(phase)*6;
+   assign(a,'d',`M-20 -18 Q-58 ${-31+wave} ${-reach} -12 Q-70 -10 -25 0 Q-61 13 ${-reach-15} 21 Q-50 29 -20 15Z`);assign(a,'fill',charged?'#f2674d':'#e9868b');assign(a,'stroke','none');assign(a,'opacity',charged?.34:.22);
+   assign(b,'d',`M-26 -15 Q-70 ${-29+wave} ${-reach} -13 M-26 15 Q-69 ${26-wave} ${-reach-10} 20`);assign(b,'fill','none');assign(b,'stroke',charged?'#ffe1a6':'#ffdbcb');assign(b,'stroke-width',charged?2.4:1.5);assign(b,'opacity',.7);
+   assign(c,'d','M-45 -26 Q-12 -46 17 -23 M-45 25 Q-12 46 17 23');assign(c,'fill','none');assign(c,'stroke',charged?'#ffb46d':'#fff0d6');assign(c,'stroke-width',1.2);assign(c,'opacity',.5);
+   petals.forEach((p,i)=>{const t=reduced?i/4:((age*.035+i*.27)%1),px=-25-t*reach,py=(i%2?1:-1)*(13+12*t)+Math.sin(phase+i)*5;assign(p,'d','M-5 0 Q-3 -6 2 -5 Q6 -2 3 3 Q-1 5 -5 0Z');assign(p,'transform',`translate(${px} ${py}) rotate(${i*60+(reduced?0:age*3)}) scale(${.5+.25*(i%2)})`);assign(p,'fill',i%2?'#fff0d0':'#f7a8aa');assign(p,'opacity',(.25+.45*Math.sin(Math.PI*t))*(reduced?.5:1));});
+  }
  }
  function render(G,alpha=1){
   if(!root?.isConnected){const parent=document.getElementById('impact-fx');if(!parent)return;root=INK.SVG.node('g',{'data-projectile-clashes':'true','pointer-events':'none'},parent);slots=Array.from({length:8},()=>({a:INK.SVG.node('path',{fill:'none','stroke-width':3},root),b:INK.SVG.node('path',{fill:'none','stroke-width':3},root)}));}

@@ -10,8 +10,9 @@
   const flight=f._inkFlight;if(!active()||!flight||flight.computer&&!command||flight.landed||f.y>=0||f.captured||!['idle','recovery','attack'].includes(f.state))return;
   if(f.attack&&f.attack.m.category!=='normal')return;
   const held=command?{has:key=>!!command[key]}:f.input.held,dir=(held.has('right')?1:0)-(held.has('left')?1:0);
-  // A tap releases only upward impulse; it can never inject a second jump.
-  if(!flight.cut&&!held.has('up')){flight.cut=true;if(f.vy<-8)f.vy=-8;}
+  // A jump is a committed fighting-game arc. Releasing up records the input
+  // change but does not abruptly remove most of the upward velocity.
+  if(!flight.cut&&!held.has('up'))flight.cut=true;
   if(!flight.fast){f.vx=clamp(f.vx+dir*(f.attack?.12:.26),-5.7,5.7);}
   if(!flight.fast&&held.has('down')&&f.vy>=-.5){flight.fast=true;flight.fastStart=G.actionTick;f.vy=Math.max(7,f.vy);f.vx*=.7;}
   if(flight.fast){f.vy=Math.min(18,f.vy+.45);f.vx*=.985;}

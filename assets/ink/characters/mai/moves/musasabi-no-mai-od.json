@@ -1509,8 +1509,8 @@
   "fx": [
     {
       "id": "flying-wake",
-      "frame": 9,
-      "duration": 24,
+      "frame": 5,
+      "duration": 28,
       "type": "flame",
       "socket": "frontElbow",
       "scale": 1,
@@ -1575,8 +1575,8 @@
     },
     {
       "id": "flying-silk",
-      "frame": 11,
-      "duration": 22,
+      "frame": 6,
+      "duration": 27,
       "type": "silk",
       "socket": "rearFoot",
       "scale": 1,

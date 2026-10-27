@@ -18,7 +18,7 @@
   const I=INK,M=I.mat,c=frame.rig.profile,leg=m.contactPart==='foot'||m.pose==='kick',name=leg?'frontLeg':'frontArm',spec=frame.carrierSpec;
   const reject=reason=>{diagnostics.set(frame,Object.freeze({unsupported:reason,name}));return frame;};
   if(!spec?.nativeChains||!spec.forwardBindings)return reject('missing-native-binding');
-  if(!['ryu','ken','chun','cammy','luke','juri','mai','iori'].includes(f.ch.id)||!['sMP','sHP','cMK'].includes(m.id))return reject('unsupported-move');
+  if(!['ryu','ken','chun','cammy','luke','juri','mai','iori'].includes(f.ch.id)||!(['sMP','sHP','cMK'].includes(m.id)||(f.ch.id==='mai'&&m.id==='bHK')))return reject('unsupported-move');
   const source=spec.nativeChains[name],L=[distance(source[0],source[1]),distance(source[1],source[2])],cr=I.Runtime.rig(f,combatPose),C=cr[name],ratios=[distance(C[0],C[1])/L[0],distance(C[1],C[2])/L[1]];
   if(!ratios.every(Number.isFinite)||ratios[0]<=0||Math.abs(ratios[0]-ratios[1])>1e-6)return reject('nonuniform-combat-scale');
   const canonical=I.Anatomy.lengths(c),expected=leg?canonical.slice(2,4):canonical.slice(0,2);

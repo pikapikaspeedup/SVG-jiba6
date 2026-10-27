@@ -16,7 +16,7 @@
  };
  const active=()=>settings.enabled&&INK.Kinetic?.settings.enabled;
  const path=pts=>'M'+pts.map(p=>p.map(v=>v.toFixed(2)).join(' ')).join('L');
- function style(character,event={}){const mode=character==='mai'&&['flame','pillar'].includes(event.type)?'fire':profiles[character]?.mode||'wave';return {character,type:event.type||'wave',mode};}
+ function style(character,event={}){const mode=character==='mai'&&['flame','pillar'].includes(event.type)?'fire':character==='mai'&&event.type==='silk'?'silk':profiles[character]?.mode||'wave';return {character,type:event.type||'wave',mode};}
  function geometry(rows,time,style={}){
   const profile=profiles[style.character]||profiles.ryu,mode=style.mode||profile.mode;
   if(style.sections){
@@ -72,11 +72,11 @@
   const q=profiles[record.character]||profiles.ryu,mode=style(record.character,event).mode,rnd=i=>INK.Particles.random(birth.seed,i);
   p.drag=q.drag;p.gravity=q.lift;p.curlX=q.curl*.7;p.curlY=q.curl*.3;
   p.vx+=clamp(birth.velocity[0]*.12,-4,4);p.vy+=clamp(birth.velocity[1]*.12,-4,4);
-  p.species={fire:'ember',wave:'ring',silk:'fleck',cut:'shard',pressure:'thrust',vortex:'slash',fan:'petal',claw:'slash'}[mode];
+  p.species=event.particles?.species||{fire:'ember',wave:'ring',silk:'fleck',cut:'shard',pressure:'thrust',vortex:'slash',fan:'petal',claw:'slash'}[mode];
   p.stretch=mode==='cut'?6:mode==='pressure'?4:1;
   p.spin=mode==='vortex'?8:mode==='fan'?(rnd(5)-.5)*12:p.spin;
   p.size*=mode==='wave'?1.3:mode==='claw'?1.5:1;
-  p.heat=mode==='fire';p.opacity=Math.min(p.opacity,.7);
+  p.heat=mode==='fire'||event.particles?.heat===true;p.opacity=Math.min(p.opacity,.7);
   return p;
  }
  // Contact changes the material's release direction. Guard reflects a compact

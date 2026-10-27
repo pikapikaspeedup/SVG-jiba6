@@ -38,6 +38,11 @@ body.forge-player #f-download,body.forge-player #f-home-edit,
 body.forge-player #f-return-studio,body.forge-player #showcase-btn,
 body.forge-player #select-showcase,body.forge-player .f-runtime-bar,
 body.forge-player #f-storage-warning{display:none!important}
+/* Keep the player home focused on character selection and the two main paths. */
+body.forge-player #f-home > section:not(.f-select-stage),
+body.forge-player #flow-home-demo,body.forge-player #r7-open,
+body.forge-player #engine5-nav,body.forge-player #continuity6-nav,
+body.forge-player #f-home .f-edition{display:none!important}
 
 /* FLOW 08: real-pose retained silhouettes. No legacy contour snapshots. */
 [data-ink-afterimage] [data-ink-layer=art] path:not([fill=none]),[data-ink-afterimage] [data-ink-layer=art] ellipse,[data-ink-afterimage] [data-ink-layer=art] circle{fill:var(--ink-echo-color,#82a798)!important;stroke:none!important;opacity:1!important}

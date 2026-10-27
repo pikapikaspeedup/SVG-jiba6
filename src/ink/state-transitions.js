@@ -19,17 +19,20 @@
  function cleanView(f){const v=Object.create(f);v._inkNoHitEpisode=true;v._inkHitEpisode=null;v._inkStateVisualBlend=null;v._inkStateBlend=null;v._inkVisualTransition=null;v._inkJointTransition=null;v._inkTransition=null;v._inkFrameTransition=null;return v;}
  function bind(f,from,{next=f.state,kind=next,age=0,override=null}={}){
   if(!from||!INK.Presentation.settings.stateBlends||!INK.Runtime.enabled||excluded(f))return null;
-  INK.FrameBridge?.begin(f,from.frame,{state:next,duration:duration[kind]??5,impact:['hit','block','stun'].includes(kind),guard:kind==='block'});
+  // A super can catch an airborne opponent and immediately reposition its
+  // combat root. Give the displayed body time to follow that handoff.
+  const airborneSuper=kind==='hit'&&from.state==='tumble'&&f.captureKind==='super',handoff=airborneSuper?10:duration[kind]??5;
+  INK.FrameBridge?.begin(f,from.frame,{state:next,duration:handoff,impact:!airborneSuper&&['hit','block','stun'].includes(kind),guard:kind==='block'});
   if(from.dir!==f.dir)return null;
   const A=SVG_FIGHTER,R=INK.Runtime,view=cleanView(f);if(override)Object.assign(view,override);
-  const dt=from.dt||.25,n=duration[kind]??5,profile=R.profile(f.ch.id);
+  const dt=from.dt||.25,n=handoff,profile=R.profile(f.ch.id);
   const target=R.visual(view,A.pose(view),world(view));view.stateAge=(view.stateAge||0)+dt;view._inkVisualClock=(view._inkVisualClock||0)+dt;
   if(view._inkState)view._inkState={...view._inkState,age:view._inkState.age+dt};
   const following=R.visual(view,A.pose(view),world(view));
   const poseBridge=Motion.bridge(from.pose,Motion.velocity(from.previous,from.pose,dt),target,Motion.velocity(target,following,dt),n);
   // The torso registers a strike immediately. Only the limbs/weapon catch up;
   // delaying all recoil until hitstop expires would make a hit feel unresponsive.
-  const impact=['hit','block','stun'].includes(kind);
+  const impact=!airborneSuper&&['hit','block','stun'].includes(kind);
   if(impact)for(const k of immediateBody){delete poseBridge.offsets[k];delete poseBridge.velocities[k];}
   // The lead forearm must already defend at contact, including the held frame.
   // Rear protection and legs keep their ordinary transition ownership.
@@ -57,6 +60,8 @@
   },
   clipChanged(f,oldKey,key){
    if(f.attack||oldKey===key||excluded(f)||f._inkStateVisualBlend?.start===(f._inkVisualClock||0))return;
+   const bridge=f._inkStateVisualBlend;
+   if(f.captureKind==='super'&&bridge?.kind==='hit'&&this.elapsed(f,bridge)<bridge.duration)return;
    const previous=f._inkPrevView;
    if(!previous||excluded(previous))return;
    // A facing sign change is not a body crossfade. Do not produce a singular
