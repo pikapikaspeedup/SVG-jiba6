@@ -120,6 +120,7 @@
    return p;
   },
   visual(f,base,world=null,skipThrowConstraint=false){
+   const hit=INK.HitRule?.sample(f,{world:world||{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1},time:this.clock(f)});if(hit)return INK.VisualFrame.attach(hit.pose,this.combatView(f,hit.frame));
    const native=INK.StrikeModel?.sample(f);if(native){const p=INK.copy(native.pose),frame=INK.StrikeModelFrame.build(f,native,{world:world||{}});return INK.VisualFrame.attach(p,this.combatView(f,frame));}
    const rule=!f._inkRawVisual&&INK.RulePose?.sample(f,{world:world||{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1},time:this.clock(f)});if(rule)return INK.VisualFrame.attach(rule.pose,this.combatView(f,rule.frame));
    if(!this.enabled||!this.store)return base;

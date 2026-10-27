@@ -1,0 +1,2166 @@
+{
+  "sha256": "c361013d266b336f0ec340ff35c0a0b759c9277c624b13a2e23b224e2dcd04ac",
+  "errors": [],
+  "rows": [
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            6.602333664131484,
+            -336.87269491394454
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              549.84,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            3.5349717068993725,
+            -337.2224389529689
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              549.84,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            2.509391092105134,
+            -337.2738943853163
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              549.84,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            2.1601478628174466,
+            -337.2809478667994
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              549.84,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            2.1278541455129094,
+            -337.27493881444786
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              549.84,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            6.602333664131484,
+            -336.87269491394454
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              549.84,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            6.292678388856043,
+            -336.59421463246974
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              540.48,
+              640.04,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            5.799157310570763,
+            -336.1546090260175
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              534.045,
+              644.2,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            5.182771302483872,
+            -335.8970571704379
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              531.12,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            4.580026678572502,
+            -335.82893073817905
+          ],
+          "feet": {
+            "rear": [
+              358.48,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              531.12,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            28.145204382924952,
+            -334.1618155007589
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              558.16,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            25.151514446774033,
+            -334.82113869332875
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              558.16,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            24.107411286317127,
+            -334.9614601308172
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              558.16,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            23.425657788661002,
+            -335.0255692814593
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              558.16,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            22.61053385645515,
+            -335.1108605248809
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              558.16,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            28.145204382924952,
+            -334.1618155007589
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              558.16,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            27.83905423991963,
+            -333.91545335645185
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              546.72,
+              637.96,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            27.294515436751205,
+            -333.5359962614199
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              538.855,
+              643.16,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            26.390924885937565,
+            -333.38526285559027
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              535.28,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            25.09203506655817,
+            -333.47850443089783
+          ],
+          "feet": {
+            "rear": [
+              364.72,
+              648.36,
+              -5.2
+            ],
+            "front": [
+              535.28,
+              648.36,
+              5.2
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            3.908846518073248,
+            -338
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              536,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            0.8003803453036826,
+            -338.2933477740322
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              536,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            -0.27355957618527116,
+            -338.3308167456781
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              536,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            -0.6083319873077684,
+            -338.33666294272035
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              536,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            -0.5505953050333722,
+            -338.33285459698936
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              536,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            3.908846518073248,
+            -338
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              536,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            3.5989331095062704,
+            -337.71595390594405
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              526,
+              639,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            3.111229903164012,
+            -337.2672706593386
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              519.125,
+              644,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            2.6211842478424794,
+            -336.98478241810534
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              516,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            2.2332795764349687,
+            -336.8808215032782
+          ],
+          "feet": {
+            "rear": [
+              376,
+              649,
+              -5
+            ],
+            "front": [
+              516,
+              649,
+              5
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            19.01778604796089,
+            -331.90913494694405
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              524.88,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            16.110742672368232,
+            -332.4522760164328
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              524.88,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            15.128806685848486,
+            -332.5570799395681
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              524.88,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            14.451209104503587,
+            -332.6051306432003
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              524.88,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            13.610478907741912,
+            -332.66962336520606
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              524.88,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            19.01778604796089,
+            -331.90913494694405
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              524.88,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            18.710099351201517,
+            -331.6521751189032
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              514.3199999999999,
+              641,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            18.159501144015834,
+            -331.25422232239805
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              507.06,
+              645.3199999999999,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            17.28686086322991,
+            -331.05739362353745
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              503.76,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            16.02513367376106,
+            -331.07716626949684
+          ],
+          "feet": {
+            "rear": [
+              386.64,
+              649.64,
+              -4.8
+            ],
+            "front": [
+              503.76,
+              649.64,
+              4.8
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            18.390606014599683,
+            -332.22014188775273
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            15.348069542024447,
+            -332.72660536732815
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            14.314857535645313,
+            -332.8215461257317
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            13.862648536949587,
+            -332.8430813176793
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            13.57764886832325,
+            -332.85185775664655
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            18.390606014599683,
+            -332.22014188775273
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            17.916812794078353,
+            -331.81669795974085
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              642.74,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            17.143320905770572,
+            -331.17706123604
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              645.47,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            16.276590019961166,
+            -330.85249583483494
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            15.417909103925629,
+            -330.8331651122999
+          ],
+          "feet": {
+            "rear": [
+              368.1,
+              648.2,
+              -5.25
+            ],
+            "front": [
+              544.5,
+              648.2,
+              5.25
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            10.480822264688003,
+            -328.49935194188646
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              509.4,
+              623.42,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            7.43986290960706,
+            -328.93096487243116
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              509.4,
+              636.29,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            6.4099084445382815,
+            -329.0067898105044
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              509.4,
+              645.138125,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            5.966762893389727,
+            -329.0243837986383
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              509.4,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            5.719282852826145,
+            -329.0300966533492
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              509.4,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            10.480822264688003,
+            -328.49935194188646
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              509.4,
+              623.42,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            10.171916532271217,
+            -328.23094152028796
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              501.03648,
+              618.1530654045504,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            9.664927497961749,
+            -327.8084928552115
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              494.00352,
+              625.7721054045504,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            9.049972748872058,
+            -327.56235580277877
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              488.11104,
+              641.0104545954496,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            8.3722802520924,
+            -327.5056984420509
+          ],
+          "feet": {
+            "rear": [
+              372.78,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              485.64,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            6.937787455547828,
+            -334.70947569033837
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              535.14,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            3.9816227707026624,
+            -335.08472793484543
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              535.14,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            3.121290871815669,
+            -335.13627141624465
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              535.14,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            2.8168217066941263,
+            -335.1420418009453
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              535.14,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            2.7143147166719372,
+            -335.13789884173525
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              535.14,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            6.937787455547828,
+            -334.70947569033837
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              535.14,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            6.628487099563584,
+            -334.435840901599
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              523.26,
+              637.28,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            6.1305502330835235,
+            -334.0046274430059
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              515.0925,
+              643.2199999999999,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            5.582143017595658,
+            -333.7437668866045
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              511.38,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.lower.0",
+          "count": 1,
+          "head": [
+            5.048773687006518,
+            -333.6658078775293
+          ],
+          "feet": {
+            "rear": [
+              378.72,
+              649.16,
+              -4.95
+            ],
+            "front": [
+              511.38,
+              649.16,
+              4.95
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "accepted": true,
+      "damage": 720,
+      "samples": [
+        {
+          "time": 22,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            40.92738999559171,
+            -316.50193018084343
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            38.09973634284356,
+            -317.3919831031648
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 25,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            37.19833598759287,
+            -317.5769210071924
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 26,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            36.7208485550867,
+            -317.63737430928825
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 27,
+          "owner": "hit:0:2:22:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.chest",
+          "count": 1,
+          "head": [
+            36.26714517584004,
+            -317.7042277805771
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "accepted": true,
+      "damage": 480,
+      "samples": [
+        {
+          "time": 19,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            40.92738999559171,
+            -316.50193018084343
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 21,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            40.535200140947666,
+            -316.2149430507547
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              641.8919999999999,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 22,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            39.88122220079167,
+            -315.7673906412977
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              644.726,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 23,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            39.06010053264473,
+            -315.59971131740207
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        },
+        {
+          "time": 24,
+          "owner": "hit:0:2:19:1",
+          "sourceSame": true,
+          "hurt": 20,
+          "part": "hurt.frontLeg.upper.1",
+          "count": 1,
+          "head": [
+            38.10519325373211,
+            -315.7149958376962
+          ],
+          "feet": {
+            "rear": [
+              345.36,
+              647.56,
+              -5.45
+            ],
+            "front": [
+              572.08,
+              647.56,
+              5.45
+            ]
+          },
+          "mode": "hit-rule"
+        }
+      ],
+      "state": "idle",
+      "geometry": 20
+    }
+  ]
+}

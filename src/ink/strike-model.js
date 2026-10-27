@@ -12,7 +12,7 @@
   const chestPoint=q=>add(C2,turn(rotation(q,twist,lean))),roots={};
   for(const n of names){const rear=n.startsWith('rear'),leg=n.endsWith('Leg'),q=leg?[(rear?-1:1)*(profile.rigHipWidth||52)/2,0,(rear?-1:1)*5]:[...(rear?profile.rigRearShoulder:profile.rigFrontShoulder)];if(!leg){q[1]+=295;q[2]=(rear?-1:1)*8;}roots[n]=leg?add(P,turn(q)):chestPoint(q);}
   const matrices=[P,C1,C2].map((q,i)=>{const angle=i?lean:0,h=heading+(i?twist*(i===2?1:.5):0),width=Math.sqrt(Math.cos(h)**2+.64**2*Math.sin(h)**2);return [Math.cos(angle)*width,Math.sin(angle)*width,-Math.sin(angle),Math.cos(angle),q[0],q[1]];});
-  return {roots,matrices,P,C2,chestPoint,heading};
+  return {roots,matrices,P,C1,C2,chestPoint,heading};
  }
  function polarPoint(H,K,L,heading=0){const [rho,phi,beta]=K,p=phi*rad,b=beta*rad;return add(H,rotation([rho*L*Math.cos(p)*Math.cos(b),rho*L*Math.sin(p),rho*L*Math.cos(p)*Math.sin(b)],heading));}
  function toPolar(H,E,L,heading=0){const q=rotation(sub(E,H),-heading),d=length(q);return [clamp(d/L,.001,1),Math.atan2(q[1],Math.hypot(q[0],q[2]))/rad,Math.atan2(q[2],q[0])/rad];}
@@ -44,7 +44,8 @@
   const skinMatrices=matrices.map((m,i)=>{if(native)return [...m.slice(0,5),m[5]+drop];const heading=(i===0?angles.pelvis:i===2?angles.body:(angles.pelvis+angles.body)/2)*rad,width=Math.sqrt(Math.cos(heading)**2+.64**2*Math.sin(heading)**2);return [m[0]*width,m[1]*width,m[2],m[3],m[4]+(options.bodyX||0),m[5]+drop];});
   const head=joints3D.head,headMatrix=M.compose(head[0],head[1],(p.lean||0)+(p.chest||0)+(p.head||0));
   if(native)p.bob=(p.bob||0)+drop;
-  const out={pose:p,profile,chains,joints3D,skinMatrices,headMatrix,endFrames,fanFrames,physicalLengths,materialAngles:angles,residuals,supportDrop:drop};
+  const nativeCarriers=native?{pelvis:{point:shift(native.P),vertical:rotation([0,1,0],native.heading),heading:native.heading},middle:{point:shift(native.C1),vertical:rotation(rotation([0,1,0],0,(p.lean||0)*rad),native.heading),heading:(angles.pelvis+angles.body)*rad*.5},chest:{point:shift(native.C2),vertical:sub(native.chestPoint([0,1,0]),native.C2),heading:angles.body*rad},head:{point:joints3D.head.slice(),vertical:[headMatrix[2],headMatrix[3],0],heading:angles.head*rad}}:null;
+  const out={pose:p,profile,chains,joints3D,skinMatrices,headMatrix,endFrames,fanFrames,physicalLengths,nativeCarriers,materialAngles:angles,residuals,supportDrop:drop};
   for(const key of ['pelvis','chest','neck','head'])out[key]=joints3D[key].slice(0,2);
   return out;
  }
@@ -57,15 +58,17 @@
  function defaultEntry(character,move){const key=character+':'+move;if(!defaults.has(key)){const rec=INK.StrikeModelPolicy.baseline(character,move).record,c=profile(character,move),p=new INK.CompiledClip(rec.clip).sample(0,INK.basePose);defaults.set(key,freeze(fromPose(c,p)));}return defaults.get(key);}
  function capture(f,m,outgoing=null){
   const decision=INK.StrikeModelPolicy?.evaluate(f,m);if(decision?.mode!=='native')return {decision,context:null};
-  const source=outgoing||f,dir=source.dir||1,time=source._inkVisualClock||0;let entry,frame;
-  if(owns(source)){const current=sample(source);frame=INK.StrikeModelFrame.build(source,current,{world:{x:source.x,y:source.y,dir,scale:source.ch.scale||1}});entry={pose:INK.copy(current.pose),targets:Object.fromEntries(names.map(n=>[n,current.joints3D[n][2].slice()])),bodyX:current.bodyX||0};}
-  else{const rule=INK.RulePose?.capture(source);if(rule){frame=rule.frame;const convert=q=>[q[0]*dir,q[1],q[2]*dir],pelvis=convert(frame.joints3D.pelvis),chest=convert(frame.joints3D.chest),yaw=(frame.materialAngles?.pelvis??rule.heading/rad)-(dir<0?180:0),localP=rotation(pelvis,-yaw*rad),axis=rotation(sub(chest,pelvis),-yaw*rad);entry=INK.DefenseBody?.fromFrame(frame,{dir})||{pose:{...INK.copy(rule.pose),yaw,bob:localP[1]+191,lean:Math.atan2(axis[0],-axis[1])/rad,twist:(frame.materialAngles?.body??rule.heading/rad)-(frame.materialAngles?.pelvis??rule.heading/rad),headYaw:(frame.materialAngles?.head??rule.heading/rad)-(frame.materialAngles?.pelvis??rule.heading/rad)},bodyX:localP[0],targets:Object.fromEntries(names.map(n=>[n,convert(frame.joints3D[n][2])]))};}
+  const source=outgoing||f,dir=source.dir||1,time=source._inkVisualClock||0;let entry,frame,hitHandoff=null,hitExit=null;
+  if(INK.HitRule?.owns(source)){const current=INK.HitRule.sample(source);if(current){hitExit=INK.HitRule.handoff(source);frame=current.frame;entry=INK.DefenseBody.fromFrame(frame,{dir});hitHandoff=hitExit?.hitHandoff||INK.HitRuleHandoff?.capture(current,{time,dir});}}
+  if(entry){}else if(owns(source)){const current=sample(source);frame=INK.StrikeModelFrame.build(source,current,{world:{x:source.x,y:source.y,dir,scale:source.ch.scale||1}});entry={pose:INK.copy(current.pose),targets:Object.fromEntries(names.map(n=>[n,current.joints3D[n][2].slice()])),bodyX:current.bodyX||0};}
+  else{const rule=INK.RulePose?.capture(source);if(rule){frame=rule.frame;if(source._inkRuleBody?.hitHandoff&&time-source._inkRuleBody.handoffStart<4)hitHandoff=INK.HitRuleHandoff?.capture(rule,{time,dir});const convert=q=>[q[0]*dir,q[1],q[2]*dir],pelvis=convert(frame.joints3D.pelvis),chest=convert(frame.joints3D.chest),yaw=(frame.materialAngles?.pelvis??rule.heading/rad)-(dir<0?180:0),localP=rotation(pelvis,-yaw*rad),axis=rotation(sub(chest,pelvis),-yaw*rad);entry=INK.DefenseBody?.fromFrame(frame,{dir})||{pose:{...INK.copy(rule.pose),yaw,bob:localP[1]+191,lean:Math.atan2(axis[0],-axis[1])/rad,twist:(frame.materialAngles?.body??rule.heading/rad)-(frame.materialAngles?.pelvis??rule.heading/rad),headYaw:(frame.materialAngles?.head??rule.heading/rad)-(frame.materialAngles?.pelvis??rule.heading/rad)},bodyX:localP[0],targets:Object.fromEntries(names.map(n=>[n,convert(frame.joints3D[n][2])]))};}
    else{const saved=INK.CompatibilityRulePose?.sample(source),p=saved?.pose||globalThis.SVG_FIGHTER?.pose(source);entry=p?fromPose(profile(f.ch.id,m.id),p):defaultEntry(f.ch.id,m.id);if(saved){const B=INK.bodyMatrix(p);for(const n of names){const q=saved.rig[n][2],v=n.endsWith('Arm')?INK.mat.point(B,q):q;entry.targets[n]=[v[0],v[1],entry.targets[n][2]];}}}}
   const poles={};if(frame)for(const n of names){const chain=frame.joints3D[n].map(q=>[q[0]*dir,q[1],q[2]*dir]),d=sub(chain[2],chain[0]),J=sub(chain[1],chain[0]),square=d.reduce((v,q)=>v+q*q,0),u=square?J.reduce((v,q,i)=>v+q*d[i],0)/square:0;let v=J.map((q,i)=>q-u*d[i]);const len=length(v);poles[n]=len>1e-8?v.map(q=>q/len):INK.StrikeModelData[f.ch.id+':'+m.id].poles[n];}
   const worldFeet=frame?.worldFeet||Object.fromEntries(['rear','front'].map(n=>{const q=entry.targets[n+'Leg'],scale=source.ch.scale||1;return[n,[source.x+q[0]*scale*dir,665+source.y+q[1]*scale,q[2]*scale*dir]];}));
-  const supportPlan=INK.StrikeSupport?.capture(source,{worldFeet},{time,epoch:(f._inkContactEpoch||0)+1,root:{x:f.x,y:f.y},scale:f.ch.scale||1,dir:f.dir});
+  let supportSource=source;if(hitExit?.hitFeet){supportSource=Object.create(source);supportSource._inkFacing=null;INK.Locomotion.adoptHitPlan(supportSource,hitExit.hitFeet,{time,dir,scale:source.ch.scale||1});}
+  const supportPlan=INK.StrikeSupport?.capture(supportSource,{worldFeet},{time,epoch:(f._inkContactEpoch||0)+1,root:{x:f.x,y:f.y},scale:f.ch.scale||1,dir:f.dir});
   const carriers=frame?.mode==='defense-body'?entryCarriers(frame,dir,profile(f.ch.id,m.id),entry):null;
-  return {decision,supportPlan,context:freeze({carriers,version:1,character:f.ch.id,move:m.id,entry,poles,time,sourceDir:dir,targetDir:f.dir,origin:{x:f.x,y:f.y}})};
+  return {decision,supportPlan,context:freeze({hitHandoff,carriers,version:1,character:f.ch.id,move:m.id,entry,poles,time,sourceDir:dir,targetDir:f.dir,origin:{x:f.x,y:f.y}})};
  }
  // A short carrier correction is part of the rule model, hence the same
  // matrices reach both hurt proxies and SVG. It ends before active startup.
@@ -122,8 +125,9 @@
   if(rows.data.poleSweep)poles.frontLeg=rotation(poles.frontLeg,-targetPolar[2]*rad);
   for(const n of names){poles[n]=rotation(poles[n],(p.yaw||0)*rad);if(context?.poles?.[n]&&t<m.startup-1){const u=clamp(t/Math.max(1,m.startup-1),0,1),w=u*u*(3-2*u),sign=context.sourceDir===context.targetDir?1:-1,from=context.poles[n].map((q,i)=>i===1?q:q*sign);poles[n]=from.map((q,i)=>q+(poles[n][i]-q)*w);if(length(poles[n])<1e-7)poles[n]=[0,0,1];}}
 
-  const model=solve(profile(id,m.id),p,targets,{bodyMode:rows.data.bodyMode,bodyX,poles,contactChain:rows.data.contactChain,targetPolar,guardRelative:at('guardRelative'),frontGuardRelative:rows.values.frontGuardRelative?at('frontGuardRelative'):null});
+  let model=solve(profile(id,m.id),p,targets,{bodyMode:rows.data.bodyMode,bodyX,poles,contactChain:rows.data.contactChain,targetPolar,guardRelative:at('guardRelative'),frontGuardRelative:rows.values.frontGuardRelative?at('frontGuardRelative'):null});
   carryMatrices(model,context,t,m.startup);
+  if(context?.hitHandoff)model=INK.HitRuleHandoff.apply(model,context.hitHandoff,{age:t,duration:Math.max(0,m.startup-1),dir:f.dir});
   for(const n of names){const leg=n.endsWith('Leg'),rear=n.startsWith('rear');model.pose[(rear?'r':'f')+(leg?'a':'w')]=model.chains[n][2].slice();}
   return {...model,support,bodyX,character:id,move:m.id,age:t,contactChain:rows.data.contactChain,kind:rows.data.kind,family:rows.data.family};
  }

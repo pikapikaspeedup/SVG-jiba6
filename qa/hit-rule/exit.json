@@ -1,0 +1,115 @@
+{
+  "bytes": 9861634,
+  "sha256": "d5cd1d2ffa0cdc29355ba2d1cae1294a1488a97900479499e0b825bad57d3348",
+  "errors": [],
+  "cases": [
+    {
+      "wait": 0,
+      "exit": {
+        "hit": true,
+        "steps": 34,
+        "state": "idle",
+        "clock": 41,
+        "handoff": true,
+        "diff": {
+          "chains": {
+            "rearArm": 1.5888218580782548e-14,
+            "frontArm": 1.4210854715202004e-14,
+            "rearLeg": 0.02991699828444183,
+            "frontLeg": 0.029916998284448937
+          },
+          "skin": {
+            "0": 0,
+            "1": 1.1102230246251565e-16,
+            "2": 1.1102230246251565e-16
+          }
+        },
+        "gait": true
+      },
+      "accepted": true,
+      "t": 0,
+      "attackHandoff": true,
+      "entry": {
+        "chains": {
+          "rearArm": 2.0097183471152322e-14,
+          "frontArm": 0,
+          "rearLeg": 0,
+          "frontLeg": 1.4210854715202004e-14
+        },
+        "skin": {
+          "0": 0,
+          "1": 2.220446049250313e-16,
+          "2": 3.469446951953614e-18
+        }
+      },
+      "deadline": {
+        "chains": {
+          "rearArm": 0,
+          "frontArm": 0,
+          "rearLeg": 0,
+          "frontLeg": 0
+        },
+        "skin": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        }
+      },
+      "footPlan": true
+    },
+    {
+      "wait": 5,
+      "exit": {
+        "hit": true,
+        "steps": 34,
+        "state": "idle",
+        "clock": 41,
+        "handoff": true,
+        "diff": {
+          "chains": {
+            "rearArm": 1.5888218580782548e-14,
+            "frontArm": 1.4210854715202004e-14,
+            "rearLeg": 0.02991699828444183,
+            "frontLeg": 0.029916998284448937
+          },
+          "skin": {
+            "0": 0,
+            "1": 1.1102230246251565e-16,
+            "2": 1.1102230246251565e-16
+          }
+        },
+        "gait": true
+      },
+      "accepted": true,
+      "t": 0,
+      "attackHandoff": false,
+      "entry": {
+        "chains": {
+          "rearArm": 1.1086345357615843e-12,
+          "frontArm": 8.408455978773767e-13,
+          "rearLeg": 0,
+          "frontLeg": 1.0658141036401503e-14
+        },
+        "skin": {
+          "0": 0,
+          "1": 0,
+          "2": 2.220446049250313e-16
+        }
+      },
+      "deadline": {
+        "chains": {
+          "rearArm": 0,
+          "frontArm": 0,
+          "rearLeg": 0,
+          "frontLeg": 0
+        },
+        "skin": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        }
+      },
+      "footPlan": true
+    }
+  ]
+}

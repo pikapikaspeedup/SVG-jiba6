@@ -8,6 +8,7 @@
   const s=foot.swing,u=clamp((time-s.start)/Math.max(1e-6,s.duration)),v=s.velocity||[0,0,0],a=point(s.from),b=point(s.to),h=u*u*(3-2*u),g=u*(1-u)*(1-u),wave=Math.sin(Math.PI*u)**2;
   return a.map((x,i)=>x+(b[i]-x)*h+(s.hermite?v[i]*s.duration*g:0)+(i===1?-s.height*wave:i===2?(s.arc||0)*wave:0));
  }
+ function velocity(foot,time){const s=foot.swing;if(!s||time<s.start||time>=s.start+s.duration)return [0,0,0];const duration=Math.max(1e-6,s.duration),u=(time-s.start)/duration,d=6*u*(1-u)/duration,w=Math.PI*Math.sin(2*Math.PI*u)/duration,a=point(s.from),b=point(s.to);return a.map((x,i)=>(b[i]-x)*d+(s.hermite?(s.velocity?.[i]||0)*s.duration/duration*(1-4*u+3*u*u):0)+(i===1?-s.height*w:i===2?(s.arc||0)*w:0));}
  function capture(f,rule,{time=f._inkVisualClock||0,epoch=f._inkContactEpoch||0,root={x:f.x,y:f.y},scale=f.ch.scale||1,dir=f.dir}={}){
   const worldFeet=rule?.worldFeet||rule?.frame?.worldFeet;if(!worldFeet)return null;
   const feet={},face=f._inkFacing,gait=f._inkLocomotion,owns=face?.feetOwned&&!face.suspended,prior=f.attack?.strikeSupportPlan,priorChain=INK.StrikeModelData?.[f.ch.id+':'+f.attack?.m?.id]?.contactChain||(f.attack?.m?.id==='cMK'?'frontLeg':null);
@@ -20,7 +21,7 @@
     }else if(!attacking&&old.swing&&time<old.swing.start+old.swing.duration)swing=copy(old.swing);
    }
    else if(owns){const q=face.feet[k];if(q&&time<q.start+q.duration)swing={from:point(q.from),to:point(q.to),velocity:point(q.velocity||[0,0,0]),start:q.start,duration:q.duration,height:q.height||0,arc:q.arc||0,hermite:true};}
-   else if(gait?.feet[k]?.swing){const q=gait.feet[k],s=q.swing;if(time<s.start+s.duration)swing={from:[...s.from,q.z||0],to:[...s.to,q.z||0],velocity:[...(s.velocity||[0,0]),0],start:s.start,duration:s.duration,height:s.height||0,arc:0,hermite:!!s.run};}
+   else if(gait?.feet[k]?.swing){const q=gait.feet[k],s=q.swing;if(time<s.start+s.duration)swing={from:s.spatial3D?point(s.from):[...s.from,q.z||0],to:s.spatial3D?point(s.to):[...s.to,q.z||0],velocity:s.spatial3D?point(s.velocity||[0,0,0]):[...(s.velocity||[0,0]),0],start:s.start,duration:s.duration,height:s.height||0,arc:s.spatial3D?s.arc||0:0,hermite:!!s.run};}
    const foot={anchor,swing},planned=at(foot,time),correction=anchor.map((v,i)=>v-planned[i]),distance=Math.hypot(...correction);
    feet[k]={...foot,correction,correctionDuration:Math.max(3,Math.ceil(1.5*distance/(12*scale)))};
   }
@@ -52,12 +53,13 @@
   p.preparedAt=time;p.singleSupportRisk=!!contactChain&&candidates.length>0;return freeze(p);
  }
  function sample(plan,{age=0,time=plan?.time+age,root,scale=plan?.scale||1,dir=plan?.dir||1,epoch=plan?.epoch,contactChain,defaultTargets={},frontLoad=plan?.frontLoad??.5}={}){
-  if(!plan||!root)return null;if(epoch!==plan.epoch)plan=rebase(plan,{root,epoch});const targets={},weights={},worldFeet={};let completed=true;
+  if(!plan||!root)return null;if(epoch!==plan.epoch)plan=rebase(plan,{root,epoch});const targets={},weights={},worldFeet={},worldVelocities={};let completed=true;
   for(const k of keys){const f=plan.feet[k],s=f.swing,u=s?clamp((time-s.start)/s.duration):1,q=at(f,time),c=1-smooth((time-plan.time)/f.correctionDuration);for(let i=0;i<3;i++)q[i]+=f.correction[i]*c;
+   const vel=velocity(f,time),cu=(time-plan.time)/f.correctionDuration,cd=cu>0&&cu<1?-6*cu*(1-cu)/f.correctionDuration:0;for(let i=0;i<3;i++)vel[i]+=f.correction[i]*cd;
    const owned=contactChain===k+'Leg';const load=contactChain?1:k==='front'?clamp(frontLoad):1-clamp(frontLoad);weights[k]=owned?0:load*(s&&time<s.start+s.duration?1-Math.sin(Math.PI*u)**2:1);completed&&=!s||time>=s.start+s.duration;
-   targets[k]=owned&&defaultTargets[k]?point(defaultTargets[k]):[(q[0]-root.x)/scale*dir,(q[1]-665-(root.y||0))/scale,q[2]/scale*dir];worldFeet[k]=owned?[root.x+targets[k][0]*scale*dir,665+(root.y||0)+targets[k][1]*scale,targets[k][2]*scale*dir]:q;
+   targets[k]=owned&&defaultTargets[k]?point(defaultTargets[k]):[(q[0]-root.x)/scale*dir,(q[1]-665-(root.y||0))/scale,q[2]/scale*dir];worldVelocities[k]=owned&&defaultTargets[k]?null:vel;worldFeet[k]=owned?[root.x+targets[k][0]*scale*dir,665+(root.y||0)+targets[k][1]*scale,targets[k][2]*scale*dir]:q;
   }
-  return {targets,weights,worldFeet,completed,singleSupportRisk:!!plan.singleSupportRisk,epoch:plan.epoch};
+  return {targets,weights,worldFeet,worldVelocities,completed,singleSupportRisk:!!plan.singleSupportRisk,epoch:plan.epoch};
  }
  INK.StrikeSupport=Object.freeze({capture,sample,rebase,prepare});
 })();

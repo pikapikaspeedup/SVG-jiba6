@@ -32,15 +32,15 @@
   const relative=q=>rotate(rotate(rotate(q.map((v,i)=>v-center[i]),-yaw),0,-lean),-twist);
   return {body:{bodyX:entry.bodyX,bob:p.bob||0,lean:p.lean||0,yaw:p.yaw||0,twist:p.twist||0,head:p.head||0,headYaw:p.headYaw||0},wrists:{front:relative(entry.targets.frontArm),rear:relative(entry.targets.rearArm)},feet:{front:entry.targets.frontLeg,rear:entry.targets.rearLeg},poles:Object.fromEntries(chains.map(n=>[n,n.endsWith('Arm')?rotate(rotate(rotate(entry.poles[n],-yaw),0,-lean),-twist):rotate(entry.poles[n],-yaw)])),hands:{front:p.handFront||'fist',rear:p.handRear||'fist'},fan:p.fan??.7,fanAngle:p.fanAngle||0};
  }
- function prepare(f,{entry=null}={}){
+ function prepare(f,{entry=null,hitHandoff=null}={}){
   if(!owns(f)){f._inkRuleBody=null;f._inkRulePressure=null;f._inkRuleImpulse=null;return null;}
   const time=f._inkVisualClock||0,kind=mode(f),policy=INK.DefensePolicy.evaluate(f),old=f._inkRuleBody,sameContent=old&&old.policy.fingerprint===policy.fingerprint&&old.policy.revision===policy.revision;
   const logicalLow=kind==='low'||kind==='crouch'||kind==='parry'&&!!f.crouch,goals={crouch:logicalLow?1:0,guard:kind==='high'||kind==='low'?1:0,parry:kind==='parry'?1:0,handLow:logicalLow?1:0};
-  if(sameContent&&old.dir===f.dir&&!entry&&Object.entries(goals).every(([k,v])=>old.curves[k].target===v))return old;
+  if(sameContent&&old.dir===f.dir&&!entry&&!hitHandoff&&Object.entries(goals).every(([k,v])=>old.curves[k].target===v))return old;
   const curves={};for(const [k,v]of Object.entries(goals))curves[k]=retarget(sameContent?old.curves[k]:null,time,v,k==='crouch'?(v?4:5):k==='handLow'?2:v?2:3);
   const captured=entry?fromFrame(entry,f.dir):null;
   if(captured){const facing=INK.FacingMotion?.sample(f,time,{x:f.x,y:f.y,dir:f.dir,scale:f.ch.scale||1}),heading=facing?(f.dir<0?180-facing.pelvis/rad:facing.pelvis/rad):0;captured.body.yaw-=heading;if(facing){const sign=f.dir<0?-1:1;captured.body.twist-=sign*(facing.chest-facing.pelvis)/rad;captured.body.headYaw-=sign*(facing.head-facing.pelvis)/rad;}for(const key of ['rear','front'])captured.feet[key]=rotate(captured.feet[key],-heading*rad);}
-  f._inkRuleBody=freeze({owner:sameContent?old.owner:'body:'+f.index+':'+(++serial),character:f.ch.id,policy,kind,logicalLow,dir:f.dir,start:time,curves,entry:captured||(sameContent?old.entry:null),entryStart:captured?time:sameContent?old.entryStart:time});return f._inkRuleBody;
+  f._inkRuleBody=freeze({owner:sameContent?old.owner:'body:'+f.index+':'+(++serial),character:f.ch.id,policy,kind,logicalLow,dir:f.dir,start:time,curves,hitHandoff:hitHandoff||(sameContent?old.hitHandoff:null),handoffStart:hitHandoff?time:old?.handoffStart,entry:captured||(sameContent?old.entry:null),entryStart:captured?time:sameContent?old.entryStart:time});return f._inkRuleBody;
  }
  function sample(f,{time=f._inkVisualClock||0,world={x:f.x,y:f.y,dir:f.dir,scale:f.renderScale||f.ch.scale||1},bare=false,restParams=null}={}){
   if(!owns(f))return null;
@@ -54,7 +54,8 @@
   const targets={rearArm:[0,0,0],frontArm:[0,0,0],rearLeg:rotate(params.feet.rear,heading*rad),frontLeg:rotate(params.feet.front,heading*rad)},poles=Object.fromEntries(chains.map(n=>[n,INK.DefenseData[f.ch.id].poleSpace==='body-local'?rotate(n.endsWith('Arm')?rotate(params.poles[n],(p.twist||0)*rad,(p.lean||0)*rad):params.poles[n],(p.yaw||0)*rad):rotate(params.poles[n],heading*rad)])),feet={},supportWeights={},groundedFeet={};
   for(const key of ['rear','front']){const turn=facing?.ownsFeet?facing.feet[key]?.targetWorld:null,gaitFoot=gait?.feet3D?.[key],settled=f._inkSupport?.handoff?.feet?.[key];let foot=turn||gaitFoot||(!bare&&settled);if(foot){foot=foot.slice();if(foot.length<3)foot.push(targets[key+'Leg'][2]*world.scale*direction);if(!turn&&gaitFoot&&settled){const u=gait.blend??1;foot=foot.map((v,i)=>(settled[i]??v)+(v-(settled[i]??v))*u);}feet[key]=foot;}const load=key==='front'?(params.frontLoad??.5):1-(params.frontLoad??.5),weight=turn?(facing.feet[key]?.weight??0):gait?(gait.weights?.[key]??0):1;groundedFeet[key]=foot?Math.abs(foot[1]-(665+world.y-16*world.scale))<2*world.scale:Math.abs(targets[key+'Leg'][1]+16)<2;supportWeights[key]=groundedFeet[key]?weight*load:0;}
   const wristOffset=rotate(rotate(rotate([az[0]*sign,az[1],0],-(p.yaw||0)*rad),0,-(p.lean||0)*rad),-(p.twist||0)*rad),yieldDistance=INK.DefenseData[f.ch.id].armYield||6,wrists={};for(const key of ['rear','front'])wrists[key]=params.wrists[key].map((v,i)=>v+wristOffset[i]*yieldDistance*(key==='rear'?.35:1));
-  const model=INK.DefenseBody.solve(profile(f),p,targets,{bodyX:p.bodyX,poles,supportWeights,groundedFeet,guardRelative:wrists.rear,frontGuardRelative:wrists.front,...(!bare&&feet.rear&&feet.front?{worldFeet:feet,world}:{} )});
+  let model=INK.DefenseBody.solve(profile(f),p,targets,{bodyX:p.bodyX,poles,supportWeights,groundedFeet,guardRelative:wrists.rear,frontGuardRelative:wrists.front,...(!bare&&feet.rear&&feet.front?{worldFeet:feet,world}:{} )});
+  if(!bare&&plan?.hitHandoff)model=INK.HitRuleHandoff.apply(model,plan.hitHandoff,{age:time-plan.handoffStart,duration:4,dir:world.dir});
   for(const n of chains){const key=(n.startsWith('rear')?'r':'f')+(n.endsWith('Leg')?'a':'w');model.pose[key]=model.chains[n][2].slice();}
   const frame=INK.DefenseBody.frame(f,model,{world});return {pose:model.pose,model,frame,worldFeet:frame.worldFeet,heading:facing?.heading??(f.dir<0?Math.PI:0),time,kind:plan?.kind||mode(f)};
  }

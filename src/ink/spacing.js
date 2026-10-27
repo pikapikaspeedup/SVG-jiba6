@@ -19,7 +19,7 @@
   active:!!active(f.attack),terminal:!!terminal(f.attack),x:f.x,y:f.y,dir:f.dir,state:f.state,captured:!!f.captured,
   frame:G.actionTick,revision:INK.Runtime?.revision||0,geometry});
  const nativeGeometry=g=>!!(g?.strikeModel||g?.bodyModel);
- const nativeOwner=f=>INK.StrikeModel?.owns(f)||INK.RulePose?.owns(f);
+ const nativeOwner=f=>INK.HitRule?.owns(f)||INK.StrikeModel?.owns(f)||INK.RulePose?.owns(f);
  const sameBody=(a,b)=>typeof a?.geometry.bodyModel?.owner==='string'&&a.geometry.bodyModel.owner.length>0&&a.geometry.bodyModel.owner===b?.geometry.bodyModel?.owner&&a.y===0&&b.y===0;
  function modelContinuous(a,b){
   if(a?.geometry.strikeModel||b?.geometry.strikeModel)return !!(a?.geometry.strikeModel&&b?.geometry.strikeModel&&a.attack===b.attack);
@@ -37,7 +37,7 @@
   if(sweep&&(nativeGeometry(a.geometry)||nativeGeometry(b.geometry))&&INK.StrikeSweep){
    const curve=(before,now)=>{
     if(before?.geometry.strikeModel&&now.geometry.strikeModel&&before.attack===now.attack)return u=>INK.StrikeModel?.between?.(before.geometry,now.geometry,u);
-    if(sameBody(before,now))return u=>INK.RulePose?.between?.(before.geometry,now.geometry,u);
+    if(sameBody(before,now))return u=>now.geometry.bodyModel?.kind==='hit-rule'?INK.HitRule?.between(before.geometry,now.geometry,u):INK.RulePose?.between?.(before.geometry,now.geometry,u);
     return undefined;
    };
    const result=INK.StrikeSweep.inspect(pa.geometry,a.geometry,pb.geometry,b.geometry,{sampleA:curve(pa,a),sampleB:curve(pb,b)});

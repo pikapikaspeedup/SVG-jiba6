@@ -1,0 +1,102 @@
+{
+  "htmlSha256": "d5cd1d2ffa0cdc29355ba2d1cae1294a1488a97900479499e0b825bad57d3348",
+  "errors": [],
+  "rows": [
+    {
+      "id": "ryu",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "ken",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "chun",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "cammy",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "luke",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "juri",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "mai",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "iori",
+      "move": "sHP",
+      "age": 6,
+      "hurtID": "hurt.chest"
+    },
+    {
+      "id": "ryu",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.lower.0"
+    },
+    {
+      "id": "ken",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.lower.0"
+    },
+    {
+      "id": "chun",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.lower.0"
+    },
+    {
+      "id": "cammy",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.lower.0"
+    },
+    {
+      "id": "luke",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.upper.1"
+    },
+    {
+      "id": "juri",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.lower.0"
+    },
+    {
+      "id": "mai",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.lower.0"
+    },
+    {
+      "id": "iori",
+      "move": "cMK",
+      "age": 6,
+      "hurtID": "hurt.frontLeg.upper.1"
+    }
+  ]
+}

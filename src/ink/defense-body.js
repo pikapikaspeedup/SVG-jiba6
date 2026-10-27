@@ -48,7 +48,8 @@
   const skinMatrices=[carrier(shift(pelvis),turn([0,1,0]),yaw),carrier(shift(middle),turn(rotate([0,1,0],0,lean)),yaw+twist*.5),carrier(shift(chest),chestVector([0,1,0]),yaw+twist)];
   const h=profile.rigHeadOffset||[6,-46];joints3D.pelvis=shift(pelvis);joints3D.chest=shift(add(chest,chestVector([0,3,0])));joints3D.neck=shift(add(chest,chestVector([5,-29,0])));joints3D.head=shift(add(chest,chestVector([...h,0])));
   const headYaw=(p.headYaw||0)*rad,headVertical=chestVector(rotate([0,1,0],headYaw-twist,(p.head||0)*rad)),headMatrix=carrier(joints3D.head,headVertical,yaw+headYaw);p.bob=(p.bob||0)+drop;
-  const model={pose:p,profile,chains,joints3D,skinMatrices,headMatrix,endFrames,fanFrames,physicalLengths,materialAngles:{pelvis:yaw/rad,body:(yaw+twist)/rad,head:(yaw+headYaw)/rad},residuals,supportDrop:drop,unreachableSupport};for(const key of ['pelvis','chest','neck','head'])model[key]=joints3D[key].slice(0,2);
+  const nativeCarriers={pelvis:{point:shift(pelvis),vertical:turn([0,1,0]),heading:yaw},middle:{point:shift(middle),vertical:turn(rotate([0,1,0],0,lean)),heading:yaw+twist*.5},chest:{point:shift(chest),vertical:chestVector([0,1,0]),heading:yaw+twist},head:{point:joints3D.head.slice(),vertical:headVertical,heading:yaw+headYaw}};
+  const model={pose:p,profile,chains,joints3D,skinMatrices,headMatrix,endFrames,fanFrames,physicalLengths,nativeCarriers,materialAngles:{pelvis:yaw/rad,body:(yaw+twist)/rad,head:(yaw+headYaw)/rad},residuals,supportDrop:drop,unreachableSupport};for(const key of ['pelvis','chest','neck','head'])model[key]=joints3D[key].slice(0,2);
   return {...model,kind:'defense-body',representation:'spatial3D',character:profile.id,bodyX,supportTargets:{rear:own.rearLeg.slice(),front:own.frontLeg.slice()}};
  }
  function frame(f,model,{world}={}){return {...INK.StrikeModelFrame.build(f,model,{world}),mode:'defense-body'};}
