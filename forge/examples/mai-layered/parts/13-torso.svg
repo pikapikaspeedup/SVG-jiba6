@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 860" width="650" height="860">
+  <title>Mai · torso</title>
+  <metadata>{"kind":"ink-authored-vector-part","version":1,"part":"torso","bind":"neck pelvis","pivot":[294.0,185.0],"layer":13}</metadata>
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a55f58" />
+      <stop offset=".24" stop-color="#cf8b79" />
+      <stop offset=".58" stop-color="#f0b9a2" />
+      <stop offset=".83" stop-color="#ffd5b9" />
+      <stop offset="1" stop-color="#dc9a83" />
+    </linearGradient>
+    <linearGradient id="skin-warm" x1="0" y1="0" x2=".85" y2=".6" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdabd" />
+      <stop offset=".48" stop-color="#edaa94" />
+      <stop offset="1" stop-color="#ae695e" />
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2=".35" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bb796c" />
+      <stop offset=".3" stop-color="#e6a28e" />
+      <stop offset=".65" stop-color="#ffceb2" />
+      <stop offset="1" stop-color="#d89883" />
+    </linearGradient>
+    <linearGradient id="skin-leg" x1="0" y1="0" x2="1" y2=".15" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b97065" />
+      <stop offset=".25" stop-color="#e5a08c" />
+      <stop offset=".55" stop-color="#ffccb0" />
+      <stop offset=".8" stop-color="#f4b49b" />
+      <stop offset="1" stop-color="#bd776a" />
+    </linearGradient>
+    <linearGradient id="rear-leg-skin" x1="170" y1="550" x2="220" y2="563" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b97065" />
+      <stop offset=".25" stop-color="#e5a08c" />
+      <stop offset=".55" stop-color="#ffccb0" />
+      <stop offset=".8" stop-color="#f4b49b" />
+      <stop offset="1" stop-color="#bd776a" />
+    </linearGradient>
+    <linearGradient id="front-leg-skin" x1="317" y1="550" x2="367" y2="542" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b97065" />
+      <stop offset=".25" stop-color="#e5a08c" />
+      <stop offset=".55" stop-color="#ffccb0" />
+      <stop offset=".8" stop-color="#f4b49b" />
+      <stop offset="1" stop-color="#bd776a" />
+    </linearGradient>
+    <linearGradient id="rear-arm-skin" x1="116" y1="263" x2="139" y2="289" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd9bc" />
+      <stop offset=".52" stop-color="#edaa94" />
+      <stop offset="1" stop-color="#ae695e" />
+    </linearGradient>
+    <linearGradient id="front-arm-skin" x1="410" y1="227" x2="418" y2="263" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd9bc" />
+      <stop offset=".52" stop-color="#edaa94" />
+      <stop offset="1" stop-color="#ae695e" />
+    </linearGradient>
+    <linearGradient id="red-cloth" x1="0" y1="0" x2="1" y2=".18" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#891b34" />
+      <stop offset=".27" stop-color="#c42f42" />
+      <stop offset=".57" stop-color="#ec4a4e" />
+      <stop offset=".83" stop-color="#ff7770" />
+      <stop offset="1" stop-color="#bf303d" />
+    </linearGradient>
+    <linearGradient id="red-dark" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee5260" />
+      <stop offset=".55" stop-color="#a51f3c" />
+      <stop offset="1" stop-color="#621c31" />
+    </linearGradient>
+    <linearGradient id="ivory" x1="0" y1="0" x2="1" y2=".5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d6c5b9" />
+      <stop offset=".45" stop-color="#fff4dc" />
+      <stop offset="1" stop-color="#f0dece" />
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4e5166" />
+      <stop offset=".45" stop-color="#242b3d" />
+      <stop offset="1" stop-color="#141a29" />
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2=".18" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#171820" />
+      <stop offset=".28" stop-color="#29232d" />
+      <stop offset=".57" stop-color="#413037" />
+      <stop offset=".79" stop-color="#29232d" />
+      <stop offset="1" stop-color="#12151c" />
+    </linearGradient>
+    <linearGradient id="fan-paper" x1="0" y1="0" x2=".8" y2=".8" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff6df" />
+      <stop offset=".68" stop-color="#e9d7b9" />
+      <stop offset="1" stop-color="#c8ac8c" />
+    </linearGradient>
+    <linearGradient id="cord" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cbb39b" />
+      <stop offset=".5" stop-color="#fff1d6" />
+      <stop offset="1" stop-color="#bda18c" />
+    </linearGradient>
+  </defs>
+  <g id="torso" data-part="torso" data-bind="neck pelvis" data-pivot="294 185">
+    <path d="M274 166 C272 179 264 188 250 191 C241 193 233 190 224 185 C220 195 222 209 227 220 C234 236 237 252 237 270 C237 289 231 306 224 322 C224 339 242 350 264 354 C284 358 307 358 326 352 C338 347 342 339 338 326 C331 310 327 294 330 277 C334 255 341 239 351 222 C355 213 357 203 350 194 C341 190 327 187 315 178 C309 173 305 168 304 160Z" fill="url(#skin)" stroke="#90564e" stroke-width="2.3" />
+    <path d="M275 169 C278 181 288 187 299 188 C306 188 312 185 317 180 C307 175 304 167 304 160Z" fill="#ae6e63" opacity=".55" />
+    <path d="M275 178 C280 190 289 195 301 195 C307 195 314 192 319 186 C314 199 307 207 300 209 C289 207 280 198 275 187Z" fill="#ffd0b3" opacity=".48" />
+    <path d="M231 192 C237 186 246 186 253 190 C266 200 276 216 284 230 C291 243 297 257 303 268 C309 255 316 238 322 220 C328 202 337 192 347 191 C355 198 358 211 354 221 C345 236 337 252 333 270 C329 289 329 305 337 323 C319 334 291 337 269 334 C251 333 235 328 224 322 C231 306 235 288 235 270 C235 249 228 233 224 218 C220 206 222 198 231 192Z" fill="url(#red-cloth)" stroke="#8f2539" stroke-width="2.2" />
+    <path d="M253 190 C261 190 268 187 274 181 C280 190 289 195 298 195 C306 195 313 191 318 184 C322 188 327 191 333 193 C323 207 317 224 311 238 C306 251 301 261 298 267 C289 251 280 235 272 220 C265 207 259 197 253 190Z" fill="url(#skin-warm)" />
+    <path d="M282 204 C286 216 291 227 296 236 M314 207 C309 218 305 230 301 241" fill="none" stroke="#fff0d4" stroke-width="2.5" opacity=".4" stroke-linecap="round" />
+    <path d="M231 195 C234 190 239 188 245 189 C258 200 267 214 275 229 C284 245 293 262 301 275 L291 284 C280 267 270 249 262 235 C254 220 246 207 237 200Z" fill="url(#ivory)" />
+    <path d="M345 192 C337 191 330 196 323 207 C318 216 313 230 307 243 C300 259 293 272 282 285 L292 293 C305 279 313 267 321 249 C328 233 334 218 341 208 C345 202 349 199 353 200Z" fill="url(#ivory)" />
+    <path d="M245 190 C254 199 260 209 266 218 M340 194 C332 198 327 208 324 217" fill="none" stroke="#fff9ec" stroke-width="2.5" opacity=".85" />
+    <path d="M241 224 C243 249 246 263 244 284 M328 253 C324 275 320 286 318 304" fill="none" stroke="#f9867f" stroke-width="2.1" opacity=".48" />
+    <path d="M229 301 C252 309 275 313 298 312 C314 312 328 308 335 304 L340 325 C331 336 314 343 295 345 C268 346 243 338 223 326Z" fill="url(#navy)" stroke="#161b2a" stroke-width="2.5" />
+    <path d="M230 307 C249 314 270 318 292 318 C309 318 325 315 336 311 M227 318 C250 326 273 330 294 329 C312 329 327 326 338 320" fill="none" stroke="#7b7584" stroke-width="2" opacity=".46" />
+    <path d="M238 326 C257 334 278 337 298 337" fill="none" stroke="#101722" stroke-width="3" opacity=".42" />
+  </g>
+</svg>

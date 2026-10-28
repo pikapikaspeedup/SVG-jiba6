@@ -84,9 +84,18 @@
    if(leg){
     const bare=['ryu','juri','luke','mai'].includes(c.id),p=SF6Art.palette[c.id];
     this.shoe=node('path',{fill:bare?`url(#atelier-${c.id}-skin)`:`url(#atelier-${c.id}-dark)`,stroke:INKLINE,'stroke-width':1.3,'stroke-linejoin':'round'},this.end);
+    if(c.id==='mai'){
+     const clip=node('clipPath',{id:'ink6-mai-foot-'+(++serial),clipPathUnits:'userSpaceOnUse'},this.end);this.maiShoeClip=node('path',{},clip);
+     this.maiShoeDetail=node('g',{'clip-path':'url(#'+clip.id+')'},this.end);
+     this.maiSandal=node('path',{fill:'#b52d3d',stroke:'#542c34','stroke-width':.8},this.maiShoeDetail);
+     this.maiSandalShade=node('path',{fill:'#702135',opacity:.55},this.maiShoeDetail);
+     this.maiSandalStrap=node('path',{fill:'#262a32',stroke:'#4b3039','stroke-width':.7},this.maiShoeDetail);
+     this.maiToes=node('path',{fill:'none',stroke:p.skin[2],'stroke-width':.7,'stroke-linecap':'round'},this.maiShoeDetail);
+     this.maiSandalLight=node('path',{fill:'none',stroke:'#f09a8e','stroke-width':.8,opacity:.7},this.maiShoeDetail);
+    }
     this.sole=node('path',{fill:'none',stroke:bare?p.skin[2]:p.dark[2],'stroke-width':2.1,'stroke-linecap':'round'},this.end);
-    this.ankle=node('path',{d:'M-10 -16L10 -16 10 -3Q0 1-10 -3Z',fill:c.id==='mai'?'#f3e5d4':bare?p.dark[1]:p.dark[0],stroke:INKLINE,'stroke-width':.8},this.end);
-    this.ankleDetail=node('path',{d:'M-9 -12L9 -10M-9 -7L9 -5',fill:'none',stroke:c.id==='mai'?'#b39a90':p.dark[2],'stroke-width':.8},this.end);
+    this.ankle=node('path',{d:'M-10 -16L10 -16 10 -3Q0 1-10 -3Z',fill:c.id==='mai'?'#242a32':bare?p.dark[1]:p.dark[0],stroke:INKLINE,'stroke-width':.8},this.end);
+    this.ankleDetail=node('path',{d:'M-9 -12L9 -10M-9 -7L9 -5',fill:'none',stroke:c.id==='mai'?'#777d82':p.dark[2],'stroke-width':.8},this.end);
    }else{
     this.hands=Object.fromEntries(['fist','palm','guard','claw','grip'].map(kind=>{const group=node('g',{'data-hand':kind,visibility:kind==='fist'?'visible':'hidden'},this.end);group.innerHTML=INK.assets.hand(c,kind);return[kind,group];}));this.fist=this.hands.fist;this.palm=this.hands.palm;
     if(c.id==='mai'&&!rear){this.fan=node('g',{},this.end);this.fanRig=new INK.MaiFan(this.fan);this.end.insertBefore(this.fan,this.fist);}
@@ -100,14 +109,30 @@
    if(!this.leg){
     if(id==='ryu'&&this.rear)upper+=P(`M${-w*.8} -8Q0 -20 ${w*.8} -8L${w*.95} ${u*.32}L${w*.55} ${u*.27}L${w*.2} ${u*.39}L${-w*.15} ${u*.31}L${-w*.5} ${u*.38}L${-w*.94} ${u*.28}Z`,`url(#atelier-${id}-cloth)`,1.1)+L(`M${-w*.5} 1L${-w*.4} ${u*.22}`,'#aaa7a1',1.1);
     if(id==='cammy')lower+=P(segmentShape(l*.92,e*1.43,a*1.05,1.05,true),'#cb4153',1.2)+L(`M${e*.35} 3L${e*.44} ${l*.56}`,'#ff9e90',2.2);
-    if(['mai','chun','iori'].includes(id)){lower+=band(l*.81,l,a+2,id==='chun'?'#3e3446':p.trim)+L(`M${-a-1} ${l*.91}L${a+1} ${l*.91}`,p.dark[2],.9);if(id==='chun')for(const x of [-a*.7,0,a*.7])lower+=P(`M${x-1.5} ${l*.88}l2-3 2 4-2 2Z`,p.trim,.45);}
+    if(['mai','chun','iori'].includes(id)){
+     lower+=band(l*(id==='mai'?.60:.75),l,a+2,id==='chun'?'#3e3446':id==='mai'?'#242a32':p.trim)
+      +L(`M${-a-1} ${l*.91}L${a+1} ${l*.91}`,id==='mai'?'#777d82':p.dark[2],.9);
+     if(id==='mai')lower+=L(`M${-a-1} ${l*.64}Q0 ${l*.68} ${a+1} ${l*.64}M${-a*.8} ${l*.72}L${a*.75} ${l*.73}`,'#72767c',.8)
+      +F(`M${-a*.65} ${l*.84}l1.1-1.1 1.1 1.1-1.1 1.1ZM${a*.5} ${l*.84}l1.1-1.1 1.1 1.1-1.1 1.1Z`,'#b3b4b0');
+     if(id==='chun')for(const x of [-a*.7,0,a*.7])lower+=P(`M${x-1.5} ${l*.88}l2-3 2 4-2 2Z`,p.trim,.45);
+    }
     if(id==='luke')lower+=L(`M${e*.4} ${l*.22}l-6 7 3 5-5 7M${e*.44} ${l*.52}l-5 5 2 5`,p.skin[2],1.7);
     if(['ken','iori'].includes(id)){upper+=L(`M${-w*.36} ${u*.38}L${-e*.2} ${u*.87}M${e*.1} ${u*.7}l8-7`,p.dark[2],1.2);lower+=L(`M${-e*.6} ${l*.2}l9 8-6 4M${a*.6} ${l*.88}L${-a*.7} ${l*.88}`,p.dark[2],1.1);}
    }else{
     if(id==='luke')upper+=P(segmentShape(u*.72,w+1.5,e+5),`url(#atelier-luke-cloth)`,1.2)+L(`M${-w*.43} 2L${-e*.8} ${u*.63}M${-e-4} ${u*.72}Q0 ${u*.77} ${e+4} ${u*.72}`,p.trim,2.5);
     if(id==='cammy'){upper+=F(`M${-w*.78} ${u*.28}L${w*.36} ${u*.37}L${w*.52} ${u*.43}L${-w*.69} ${u*.34}Z M${-w*.74} ${u*.45}L${w*.65} ${u*.49}L${w*.58} ${u*.55}L${-w*.68} ${u*.53}Z`,'#485c53','opacity=".64"');lower+=band(l*.38,l,e*.89,'#bb394b')+L(`M${e*.4} ${l*.51}L${a*.47} ${l*.94}`,'#f08081',1.4);}
     if(id==='chun')lower+=band(l*.48,l,e*.81,'#e9e4d9')+L(`M${-e*.72} ${l*.49}Q0 ${l*.57} ${e*.72} ${l*.49}`,p.trim,1.7);
-    if(id==='mai')lower+=band(l*.76,l,a+2,'#f7e9d8')+L(`M${-a-1} ${l*.8}L${a+1} ${l*.84}M${-a-1} ${l*.9}L${a+1} ${l*.94}`,'#b99994',1);
+    if(id==='mai'){
+     // Anatomical planes remain clipped to the continuous limb surface and
+     // follow the upper and lower leg bones through every pose.
+     upper+=F(`M${-w*.85} ${u*.10}Q${-w*.98} ${u*.39} ${-e*.77} ${u*.73}L${-e*.42} ${u*.91}Q${-w*.56} ${u*.50} ${-w*.48} ${u*.12}Z`,p.skin[2],'opacity=".14"')
+      +F(`M${w*.17} ${u*.06}Q${w*.76} ${u*.16} ${w*.64} ${u*.48}Q${w*.56} ${u*.65} ${e*.35} ${u*.78}Q${w*.40} ${u*.44} ${w*.17} ${u*.06}Z`,p.skin[0],'opacity=".23"')
+      +L(`M${-w*.34} ${u*.17}Q${-w*.47} ${u*.5} ${-e*.23} ${u*.80}M${e*.20} ${u*.82}Q0 ${u*.9} ${-e*.25} ${u*.9}`,p.skin[2],.75,'opacity=".38"');
+     lower+=F(`M${-e*.72} ${l*.08}Q${-e*.79} ${l*.30} ${-a*.63} ${l*.69}L${-a*.52} ${l*.76}Q${-e*.39} ${l*.37} ${-e*.32} ${l*.08}Z`,p.skin[2],'opacity=".14"')
+      +F(`M${e*.22} ${l*.10}Q${e*.75} ${l*.18} ${e*.52} ${l*.39}L${a*.30} ${l*.69}Q${e*.38} ${l*.35} ${e*.22} ${l*.10}Z`,p.skin[0],'opacity=".20"')
+      +L(`M${-e*.35} ${l*.06}Q0 ${l*.14} ${e*.35} ${l*.06}M${e*.19} ${l*.2}Q${e*.29} ${l*.45} ${a*.12} ${l*.65}`,p.skin[2],.7,'opacity=".36"')
+      +band(l*.73,l,a+2,'#252b33')+L(`M${-a-1} ${l*.8}L${a+1} ${l*.84}M${-a-1} ${l*.9}L${a+1} ${l*.94}`,'#777d82',1);
+    }
     if(id==='juri'){upper+=L(`M${w*.66} ${u*.08}Q${w*.7} ${u*.4} ${e*.65} ${u*.92}`,p.trim,2.4);lower+=L(`M${e*.61} 0Q${e*.8} ${l*.4} ${a*.66} ${l*.82}`,p.trim,2.4);}
     if(['ryu','ken','iori'].includes(id)){upper+=L(`M${w*.21} ${u*.22}Q${w*.38} ${u*.5} ${e*.12} ${u*.91}M${-e*.7} ${u*.78}l7 12`,p.cloth[2],1.15);lower+=L(`M${-e*.6} ${l*.14}l8 9-8 10M${a*.8} ${l*.8}l-9 9M${-a*.8} ${l*.93}Q0 ${l*.97} ${a*.8} ${l*.93}`,p.cloth[2],1.05);}
    }
@@ -146,7 +171,19 @@
    assign(this.foldShade,'d',folds.shade,stats);assign(this.foldShade,'opacity',folds.opacity*.7,stats);
    const endMatrix=this.leg?INK.Anatomy.footMatrix(p,rig,this.c,this.rear):INK.Anatomy.handMatrix(p,rig,this.c,this.rear);
    setTransform(this.end,endMatrix,stats);
-   if(this.leg){const shoe=INK.SkinGeometry.foot(visual?.materialAngles.pelvis??INK.Turn.angle(p,'pelvis'));assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);}
+   if(this.leg){
+    const shoe=INK.SkinGeometry.foot(visual?.materialAngles.pelvis??INK.Turn.angle(p,'pelvis'));
+    assign(this.shoe,'d',shoe.outline,stats);assign(this.sole,'d',shoe.sole,stats);
+    if(this.maiShoeClip){
+     assign(this.maiShoeClip,'d',shoe.outline,stats);
+     const toe=shoe.toe[0],side=toe<0?-1:1;
+     assign(this.maiSandal,'d',`M-10-14L8-14Q${side*10}-8 ${toe*.32}-2L${toe*.66} 3 ${toe*.58} 10Q${toe*.25} 8-10 4Z`,stats);
+     assign(this.maiSandalShade,'d',`M-10-9Q${side*4}-1 ${toe*.38} 4L${toe*.50} 9Q${toe*.1} 8-10 4Z`,stats);
+     assign(this.maiSandalStrap,'d',`M${toe*.52} 1L${toe*.69} 3 ${toe*.67} 10 ${toe*.5} 9Z`,stats);
+     assign(this.maiSandalLight,'d',`M${-side*5}-11Q${side*3}-8 ${toe*.38} 1`,stats);
+     assign(this.maiToes,'d',`M${toe*.78} 5l${side} 4M${toe*.88} 6l${side} 3M${toe*.97} 7l${side} 2`,stats);
+    }
+   }
 
    if(!this.leg){const requested=this.rear?p.handRear:p.handFront,kind=this.fan&&p.fan!==0?'grip':['fist','palm','guard','claw','grip'].includes(requested)?requested:p.open>.45?'palm':'fist';for(const [name,group] of Object.entries(this.hands))assign(group,'visibility',name===kind?'visible':'hidden',stats);
     if(this.fan){this.fanRig.render(p.fan??.9,stats);const openness=clamp(p.fan??.9,.07,1),fanFrame=visual?.fanFrames?.[name],local=INK.FanGeometry.transform(p);assign(this.fan,'transform',fanFrame?mat.svg(mat.multiply(mat.multiply(mat.inverse(endMatrix),fanFrame),local)):`translate(16 0) rotate(${-18+(p.fanAngle||0)})`,stats);assign(this.fan,'visibility',p.fan===0?'hidden':'visible',stats);}
@@ -205,6 +242,8 @@
    this.joints=Array.from({length:15},()=>node('circle',{r:3.4,fill:'#f6fbeb',stroke:'#238b81','stroke-width':1.4},this.debug));
    this.debug.setAttribute('display','none');this._order='';this.mode='skin';this.destroyed=false;
    if(this.c.id==='mai')this.maiSecondary=new INK.MaiSecondary(this);
+   const vectorSkin=character.imageSkin||INK.Runtime?.store?.getSkin?.(this.c.id);
+   if(vectorSkin&&INK.ImageSkin)this.imageSkin=new INK.ImageSkin.VectorSkin(this,vectorSkin);
    this.stats.mountNodes=this.group.querySelectorAll('*').length;
   }
   setMode(mode){if(!['skin','rig','silhouette','overlay'].includes(mode))throw Error('Unknown mode');this.mode=mode;assign(this.group,'data-ink-mode',mode,this.stats);assign(this.art,'visibility',mode==='rig'?'hidden':'visible',this.stats);assign(this.debug,'display',['rig','overlay'].includes(mode)?'inline':'none',this.stats);assign(this.debug,'visibility',['rig','overlay'].includes(mode)?'visible':'hidden',this.stats);}
@@ -275,6 +314,7 @@
    setTransform(this.coat,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.22),mat.compose(0,205))),s);
    setTransform(this.trail,mat.multiply(hipM,mat.multiply(mat.compose(0,-14,(dynamics?.cloth??lag)*.18),mat.compose(0,205))),s);
    this.maiSecondary?.render(p,dynamics,secondary?frame:0,s);
+   this.imageSkin?.render(p,r,s);
    if(['rig','overlay'].includes(this.mode)){
     const sockets=Rig.sockets(p,r),lines=[],points=[];for(const name of ['rearLeg','frontLeg','rearArm','frontArm']){const q=sockets[name];lines.push([q[0],q[1]],[q[1],q[2]]);points.push(...q);}
     lines.push([sockets.pelvis,sockets.chest],[sockets.chest,sockets.neck],[sockets.neck,sockets.head]);points.push(sockets.pelvis,sockets.chest,sockets.head);

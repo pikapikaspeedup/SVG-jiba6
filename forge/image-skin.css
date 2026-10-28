@@ -1,0 +1,25 @@
+#image-model-dialog{width:min(1180px,96vw);max-height:94vh;padding:22px;border:1px solid #536b64;border-radius:8px;background:#192829;color:#edf1e7;overflow:auto}
+#image-model-dialog::backdrop{background:#07100fd9}
+#image-model-dialog header,#image-model-dialog footer{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#image-model-dialog header span{color:#edb185;font:700 10px monospace;letter-spacing:2px}
+#image-model-dialog h2{margin:5px 0;font-size:25px}
+#image-model-dialog p{margin:6px 0;color:#bdcbc3;font-size:12px;line-height:1.6}
+#image-model-dialog button,#image-model-dialog select{padding:9px 12px;color:#eef1e6;background:#263b39;border:1px solid #536b64;border-radius:4px;font:inherit;cursor:pointer}
+#image-model-dialog button:disabled{opacity:.4;cursor:default}
+#image-model-dialog .f-primary{background:#f3b080;color:#172722;border-color:#f3b080;font-weight:700}
+#image-model-dialog #image-model-close{font-size:25px;padding:3px 12px}
+.image-model-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin:18px 0}
+.image-model-controls label{display:flex;flex-direction:column;gap:5px;color:#a8beb2;font-size:11px}
+.image-model-upload{padding:8px 10px;border:1px solid #536b64;border-radius:4px;cursor:pointer;background:#263b39}
+.image-model-upload input{max-width:210px;font-size:10px}
+.image-model-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.image-model-grid section{padding:12px;background:#102020;border:1px solid #405650;border-radius:5px;min-width:0}
+.image-model-grid h3{margin:0 0 8px;font-size:12px;color:#c5d5c9}
+.image-model-grid svg{display:block;width:100%;height:380px;background:#2a403b;touch-action:none}
+#image-model-status[data-error="true"]{color:#ff9b85}
+#image-sequence-preview{padding:12px;background:#102020;border:1px solid #405650;border-radius:5px}
+#image-sequence-preview h3{margin:0 0 8px;color:#c5d5c9;font-size:12px}
+#image-sequence-image{display:block;width:100%;height:380px;object-fit:contain;background:#2a403b}
+#image-model-dialog footer{justify-content:flex-end;flex-wrap:wrap;margin-top:15px}
+@media(max-width:900px){.image-model-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.image-model-grid{grid-template-columns:1fr}.image-model-grid svg,#image-sequence-image{height:280px}#image-model-dialog{padding:15px}}

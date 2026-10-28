@@ -1116,7 +1116,7 @@ function spawnShot(f,m){const low=m.kind==='lowprojectile'||m.projectileStyle===
  if(sup)art+=`<path d="M-90-60Q48-124 87-15M-61 72Q68 85 84 14" stroke="#f0ffff" stroke-width="4" fill="none"/><path d="M-205-29L-122-19M-178 35L-108 22M-125-81L-74-53" stroke="${color}" stroke-width="4"/>`;
  const g=el('g',{transform:`scale(${sup?1.68:id==='mai'?.74:low?.88:1})`},n);g.innerHTML=art;if(id==='iori'){const base=sup?1.68:.88;sa(g,'transform',`translate(0 ${45-44*base}) scale(${base})`)}
  const pose=desiredPose(f),rig=poseRig(f,pose),hand=['luke','mai','iori'].includes(id)?rig.frontArm[2]:lerp2(rig.frontArm[2],rig.rearArm[2],.5),origin=poseWorldPoint(f,hand,pose,true);
- const s=INK.CombatEntities.create('projectile',{node:n,visual:g,spin:g.querySelector('[data-spin]'),spinKind:g.querySelector('[data-spin]')?.getAttribute('data-spin'),owner:f,x:origin[0]+f.dir*23,y:low?FLOOR+f.y-45:origin[1],dir:f.dir,v:(m.speed||12)+(sup?4:0),m,hits:m.hits,r,life:sup?180:105,cool:0,damage:m.damage/m.hits,age:0});n.setAttribute('transform',`translate(${s.x} ${s.y}) scale(${s.dir} 1)`);SF6Mai.initShot(s);SF6FX.projectile(s);G.shots.push(s);sound('wave');}
+ const s=INK.CombatEntities.create('projectile',{node:n,visual:g,spin:g.querySelector('[data-spin]'),spinKind:g.querySelector('[data-spin]')?.getAttribute('data-spin'),owner:f,sourceAttack:f.attack||null,x:origin[0]+f.dir*23,y:low?FLOOR+f.y-45:origin[1],dir:f.dir,v:(m.speed||12)+(sup?4:0),m,hits:m.hits,r,life:sup?180:105,cool:0,damage:m.damage/m.hits,age:0});n.setAttribute('transform',`translate(${s.x} ${s.y}) scale(${s.dir} 1)`);SF6Mai.initShot(s);SF6FX.projectile(s);G.shots.push(s);sound('wave');}
 function updateFX(){
  const frozen=!!G.hitstop||!!(G.slow>0&&G.tick%2===0);
  if(!frozen){
@@ -1236,7 +1236,7 @@ function spendDrive(f,n,allowDepletion=false){if(G.mode==='training'&&$('infinit
 function burnout(f){if(f.burnout)return;f.burnout=true;f.drive=0;f.burnT=0;notify(f,'BURNOUT · 斗气疲劳');burst(f.x,FLOOR-200,'#a5a6b3',12)}
 function startParry(f){if(!['idle','parry'].includes(f.state)||f.y<0||f.attack)return false;if(f.state==='parry')return true;if(!spendDrive(f,.5))return false;setState(f,'parry');f.parryAge=0;f.parryStart=G.tick;f.parryPaid=.5;notify(f,'DRIVE PARRY · 斗气招架');return true}
 function driveRush(f){if(aiDecisionBatch?.planning){if(!decideMove(f,getMove(f,'RUSH')).ok)return false;aiDecisionBatch.actions.push(()=>driveRush(f));return true;}if(f.y<0)return false;let cancel=canRushCancel(f),parry=f.state==='parry';if(!(cancel||parry||f.state==='idle'))return false;const cost=cancel?3:parry?.5:1;if(!spendDrive(f,cost,cancel))return false;setState(f,'rush',25);f.vx=f.dir*20;f.rushBuff=80;INK.Combo.onMove(f,{id:'RUSH',name:'斗气取消迸发'},G);notify(f,cancel?'CANCEL RUSH · 取消迸发 −3':'DRIVE RUSH · 斗气迸发 −1');burst(f.x-f.dir*30,FLOOR-75,'#9bff6b',20);sound('wave');return true}
-function performButton(f,b){if(G.phase!=='fight'||G.paused)return false;if(b==='RUSH'&&[1,4,7].includes(relative(f.input.dir,controlFacing(f)))&&f.attack?.tempo?.phase==='holding')return requestMove(f,getMove(f,'FEINT'),false);if(f.state==='down'&&b==='RUSH')return requestMove(f,getMove(f,'WAKE_DELAY'));if(f.state==='rise'&&b==='DI')return requestMove(f,getMove(f,'WAKE_STRIKE'));if(f.state==='block'&&[1,4,7].includes(relative(f.input.dir,controlFacing(f)))&&['PAR','RUSH'].includes(b))return requestMove(f,getMove(f,b==='PAR'?'ESCAPE':'YIELD'));if(b==='RUSH'&&[3,6,9].includes(relative(f.input.dir,controlFacing(f)))){const chase=INK.AirPursuit?.decision(f,'AIR_CHASE',G);if(chase?.ok||chase?.wait)return requestMove(f,getMove(f,'AIR_CHASE'));}if(b==='PAR'||b==='RUSH')return requestMove(f,getMove(f,b));if(b==='THROW'){if(f.state==='captured'&&f.captureKind==='throw')return escapeThrow(f);return requestMove(f,getMove(f,relative(f.input.dir,controlFacing(f))===4?'backthrow':'throw'))}if(b==='DI'){const rel=relative(f.input.dir,controlFacing(f));return requestMove(f,getMove(f,f.state==='block'&&[3,6,9].includes(rel)?'REV':'DI'))}}
+function performButton(f,b){if(G.phase!=='fight'||G.paused)return false;if(b==='RUSH'&&[1,4,7].includes(relative(f.input.dir,controlFacing(f)))&&f.attack?.tempo?.phase==='holding')return requestMove(f,getMove(f,'FEINT'),false);if(f.state==='down'&&b==='RUSH')return requestMove(f,getMove(f,'WAKE_DELAY'));if(f.state==='rise'&&b==='DI')return requestMove(f,getMove(f,'WAKE_STRIKE'));if(f.state==='block'&&[1,4,7].includes(relative(f.input.dir,controlFacing(f)))&&['PAR','RUSH'].includes(b))return requestMove(f,getMove(f,b==='PAR'?'ESCAPE':'YIELD'));if(b==='RUSH'&&[3,6,9].includes(relative(f.input.dir,controlFacing(f)))){const chase=INK.AirPursuit?.decision(f,'AIR_CHASE',G);if(chase?.ok||chase?.wait)return requestMove(f,getMove(f,'AIR_CHASE'));}if(b==='PAR'||b==='RUSH')return requestMove(f,getMove(f,b));if(b==='THROW'){if(f.state==='captured'&&f.captureKind==='throw')return escapeThrow(f);return requestMove(f,getMove(f,f.ch.id==='mai'&&f.y<-8?'airthrow':relative(f.input.dir,controlFacing(f))===4?'backthrow':'throw'))}if(b==='DI'){const rel=relative(f.input.dir,controlFacing(f));return requestMove(f,getMove(f,f.state==='block'&&[3,6,9].includes(rel)?'REV':'DI'))}}
 function canRekkaContinue(f,m){const a=f.attack;return !!(a&&m?.rekkaFrom&&a.m.rekkaNext===m.id&&(a.m.base===m.rekkaFrom||a.m.id===m.rekkaFrom)&&a.confirmed&&INK.CombatFlow.age(G,a)<=20)}
 function interpret(f,bs){if(G.phase!=='fight')return;const b=[...bs],p=b.filter(x=>x.endsWith('P')),k=b.filter(x=>x.endsWith('K')),isP=p.length>0,kind=isP?'P':'K',st=Math.max(...b.map(x=>BUTTONS.indexOf(x)%3),0),od=isP?p.length>=2:k.length>=2;let m=null;
 if(b.includes('LP')&&b.includes('LK'))return performButton(f,'THROW');if(b.includes('HP')&&b.includes('HK'))return performButton(f,'DI');if(b.includes('MP')&&b.includes('MK'))return performButton(f,'PAR');
@@ -1249,7 +1249,7 @@ if(!m&&motion(f,'22')&&!isP)m=getMove(f,'stance');
 if(!m&&f.ch.id==='ryu'&&isP&&motion(f,'22'))m=getMove(f,'DENJIN');
 if(!m&&f.ch.id==='chun'&&isP&&motion(f,'214'))m=getMove(f,'stance');
 if(!m){let defs=BASESPECIALS[f.ch.id].filter(d=>d[3]===kind&&!!(d[9]?.air)===(f.y<-10));defs.sort((a,b)=>{const order={623:0,chargeB:1,chargeD:1,22:2,214:3,236:4};return(order[a[2]]??9)-(order[b[2]]??9)});for(const d of defs){if(motion(f,d[2])){m=getMove(f,d[0]+'_'+(od?3:st));break}}}
-if(!m&&f.ch.id==='mai'&&b.length===1&&b[0]==='HK'&&f.y===0&&relative(f.input.dir,controlFacing(f))===4)m=getMove(f,'bHK');
+if(!m)m=SF6Mai.uniqueInput(f,b,getMove,relative);
 if(!m&&f.ch.id==='ken'&&k.length>=2)m=getMove(f,'stance');
 if(m){consumeMotion(f);return requestMove(f,m,true,f._inkTempoInput?.buttons[b[0]])}
 const state=f.y<-8?'a':[1,2,3].includes(relative(f.input.dir,controlFacing(f)))?'c':'s';m=getMove(f,state+b[0]);if(m)requestMove(f,m,true,f._inkTempoInput?.buttons[b[0]])
@@ -1261,7 +1261,7 @@ function decideMove(f,m){
  const feint=INK.StrikeTempo?.decision(f,m.id,G);if(feint)return {...feint,move:m};
  if(G.phase!=='fight'||f.hp<=0)return deny('phase');
  if(f.captured||['throwing','ko','win'].includes(f.state)||['down','rise'].includes(f.state)&&!['WAKE_DELAY','WAKE_STRIKE'].includes(m.id))return deny('captured');
- if(m.id==='midare'&&!(f.maiFollowCancel||f.maiFollowUntil>G.actionTick))return deny('follow');
+ if(m.id==='midare'&&!(f.maiFollowCancel||SF6Mai.canFollow(f,G)))return deny('follow');
  if(m.super&&f.ch.id==='mai'&&f.y<-8&&!m.airAllowed)return deny('ground');
  if(m.id==='CA'&&f.hp>2500)return deny('health');
  if(m.id==='SA3'&&f.hp<=2500)m=getMove(f,'CA');
@@ -1280,7 +1280,8 @@ function decideMove(f,m){
  const wake=INK.WakeFlow?.decision(f,m.id,G);if(wake)return {...wake,move:m};
  const defense=INK.PressureFlow?.decision(f,m.id,G);if(defense)return {...defense,move:m};
  if(f.landT>0)return deny('landing',true);
- if(f.airLock&&f.y<-1&&!(m.super&&canCancel(f,m)||canAirFollow(f,m)||f.ch.id==='mai'&&m.airAllowed))return deny('airLock',true);
+ const maiAir=SF6Mai.airCancel(f,m);
+ if(f.airLock&&f.y<-1&&!(maiAir||m.super&&canCancel(f,m)||canAirFollow(f,m)||f.ch.id==='mai'&&m.airAllowed))return deny('airLock',true);
  if(m.air&&f.y>=-8)return deny('air');
  if(!m.air&&f.y<-15&&!['branch','super'].includes(m.category)&&m.kind!=='dive')return deny('ground');
  if(m.id==='REV'&&f.state!=='block')return deny('reversal');
@@ -1296,16 +1297,16 @@ function decideMove(f,m){
   if(G.hitstop>0)return deny('hitstop',true);
   return {ok:true,code:'ready',reason:'斗气迸发',move:m,kind:canRushCancel(f)?'drive-cancel':'drive',cost};
  }
- const specialState=m.id==='REV'&&f.state==='block';
+ const specialState=m.id==='REV'&&f.state==='block'||maiAir;
  const branch=m.category==='branch'&&(m.rekkaFrom?canRekkaContinue(f,m):m.from?canAirFollow(f,m):f.branchT>0&&G.actionTick>=f.branchReady);
  const free=['idle','dash','rush','stance'].includes(f.state)||f.state==='parry'&&!m.cost;
  const edge=INK.CombatFlow.cancel(f,m,G);cost+=edge.driveCost||0;if(!unlimited&&cost&&(f.burnout||f.drive+1e-6<cost))return deny(f.burnout?'burnout':'drive');
- const follow=m.id==='midare'&&(f.maiFollowCancel||f.maiFollowUntil>G.actionTick);
+ const follow=m.id==='midare'&&(f.maiFollowCancel||SF6Mai.canFollow(f,G));
  if(m.category==='branch'&&!branch)return deny('branch',true);
  if(!(free&&!f.attack||specialState||branch||edge.ok||follow))return deny(edge.code,true,edge);
  if(G.hitstop>0)return deny('hitstop',true,{kind:edge.ok?edge.kind:'link',remaining:edge.remaining});
  return {ok:true,code:'ready',reason:INK.CombatFlow.reasons.ready,move:m,cost,
-   kind:branch?'branch':edge.ok?edge.kind:specialState?'reversal':follow?'follow':previous?'link':'neutral',
+   kind:maiAir?'mai-air-cancel':branch?'branch':edge.ok?edge.kind:specialState?'reversal':follow?'follow':previous?'link':'neutral',
    edge:edge.ok?edge.edge:undefined,branch:edge.branch,adjustment:edge.adjustment,driveCost:edge.driveCost,routeStep:edge.routeStep,remaining:edge.remaining,chainDepth:edge.kind==='asset-chain'&&edge.ok?edge.chainDepth:previous?.flowChain||0};
 }
 function requestMove(f,m,buffer=true,origin=null){
@@ -1331,7 +1332,7 @@ if(m.kind==='charge'&&origin&&f._inkTempoInput?.buttons[origin.button]===origin&
 if(m.kind==='stance'){f.branchT=100;f.branchReady=G.actionTick+8}
 if(['run','flip','rekka'].includes(m.kind)&&!m.rekkaNext&&!m.rekkaFrom){f.branchT=100;f.branchReady=G.actionTick+m.startup+5}
 if(m.kind==='flip'||(m.id==='stance'&&f.ch.id==='cammy')){f.vy=-12;f.vx=f.dir*6;f.y=-1}
-if(m.kind==='dive'){f.vy=9;f.vx=f.dir*10}
+if(m.kind==='dive'&&!SF6Mai.beginDive(f,m)){f.vy=9;f.vx=f.dir*10}
 if(m.kind==='leap'||m.kind==='overhead'){f.vy=m.kind==='leap'?-10.2:-8;f.y=-1}
 if(m.super){G.hitstop=INK.CombatFlow.superStart(m);G.superFx=62+(m.ca?10:0);G.superOwner=f;buildSuperFX(f,m);sound('super');G.flash=INK.SuperDirector.active()?.035:.24}
 if(!m.super||!INK.SuperDirector.active())notify(f,(rush?'DR · ':'')+m.name);return true}
@@ -1625,9 +1626,9 @@ if(m.kind==='denjin'&&a.t===m.startup){f.denjin=1;burst(f.x,FLOOR-220,f.ch.color
 if(m.kind==='install'&&a.t===m.startup){f.install=600;f.stock=3;notify(f,'FENG SHUI ENGINE · 风水引擎 10秒');burst(f.x,FLOOR-230,f.ch.color,25)}
 if(m.kind==='store'&&a.t===m.startup)f.stock=Math.min(3,f.stock+1);
 if(m.kind==='stance'&&a.t>=m.total){setState(f,'stance',75);f.attack=null;if(f.ch.id==='juri')f.stock=Math.min(3,f.stock+1)}
-else if(a.t>=m.total){INK.ExchangeFacts?.end(f,a,'natural',G);if(f.branchT>0&&['run','flip','rekka'].includes(m.kind)){setState(f,'stance',f.branchT);f.attack=null;}else setState(f,f.y<0&&f.airLock?'recovery':'idle');if(f.y===0)f.vx=0}
+else if(a.t>=m.total){SF6Mai.finish(f,a,notify);INK.ExchangeFacts?.end(f,a,'natural',G);if(f.branchT>0&&['run','flip','rekka'].includes(m.kind)){setState(f,'stance',f.branchT);f.attack=null;}else setState(f,f.y<0&&f.airLock?'recovery':'idle');if(f.y===0)f.vx=0}
 else {
-if(m.kind.includes('projectile')&&!a.projectileSent&&a.t>=m.startup){a.projectileSent=true;const firstShot=G.shots.length;spawnShot(f,m);for(const shot of G.shots.slice(firstShot)){shot.sourceAttack=a;shot.clashDurability=m.pierce?2:1;shot.travelled=0;shot.maxDistance=m.projectileDistance||Infinity;if(m.projectileLife)shot.life=m.projectileLife}}
+if(m.kind.includes('projectile')&&!a.projectileSent&&a.t>=m.startup){a.projectileSent=true;const firstShot=G.shots.length;for(const shotMove of SF6Mai.fanShots(f,m))spawnShot(f,shotMove);for(const shot of G.shots.slice(firstShot)){shot.sourceAttack=a;shot.clashDurability=m.pierce?2:shot.clashDurability??1;shot.travelled=0;shot.maxDistance=m.projectileDistance||Infinity;if(m.projectileLife)shot.life=m.projectileLife}}
 if(m.travel&&a.t>=Math.max(1,m.startup-5)&&a.t<m.startup+m.active){f.x+=f.dir*m.travel*(m.kind==='superrush'&&a.confirmed?.08:1);if(G.tick%5===0&&(m.od||m.super))ghost(f)}
 if(m.kind==='upper'&&a.t===m.startup){f.vy=-10-(m.strength||0);f.y=Math.min(-1,f.y)}
 if(!m.kind.includes('projectile')&&m.damage>0&&a.t>=m.startup&&(a.t<m.startup+m.active||INK.Spacing?.supports(m,a)&&(INK.Spacing.settings.enabled||nativeRuleOwner(f)||nativeRuleOwner(enemy(f)))&&a.t===m.startup+m.active)){let idx=Math.min(m.hits-1,Math.floor((a.t-m.startup)/(m.active/m.hits)));if(!a.hitsDone.has(idx)){G.pendingMelee.push({f,a,m,idx})}}
@@ -1713,7 +1714,7 @@ function backToSelect(){clearHeld();clearBattleFX();G.screen='select';G.paused=f
 function openManual(){if(G.screen==='battle')$('manual-character').value=fighters[0].ch.id;renderManual();openDialog('moves-dialog')}
 let dialogPrevious=false;function openDialog(id){dialogPrevious=G.paused;if(G.screen==='battle'){G.paused=true;clearHeld()}$(id).showModal()}
 for(let d of document.querySelectorAll('dialog'))d.addEventListener('close',()=>{if(G.screen==='battle')G.paused=dialogPrevious});
-function renderManual(){const id=$('manual-character').value||'ryu',c=CHARACTERS.find(c=>c.id===id),cat=$('manual-category').value,q=$('move-search').value.toLowerCase();$('manual-note').textContent=c.cn+'：'+MOVES[id].filter(m=>m.category==='special').length+'项必杀变体，'+MOVES[id].filter(m=>m.category==='branch').length+'项派生。'+c.trait+' 本作所有指令以此表为准；派生架势、蛛俐部分输入和战斗数值经过 SVG 同人改编。';const list=MOVES[id].map(m=>INK.Runtime.prepare({ch:{id}},m)).filter(m=>(cat==='all'||m.category===cat)&&[m.name,m.cmd,m.note||''].join(' ').toLowerCase().includes(q));$('manual-list').innerHTML=list.map(m=>`<article class="move-row"><div><h3>${m.name}</h3><small>${m.category.toUpperCase()} · ${m.damage?m.damage+' 基础伤害':'UTILITY'} · ${m.startup}F 启动 / ${m.active}F 持续 / ${m.recovery}F 恢复</small></div><div><div class="move-cmd">${m.cmd||''}</div><div class="move-detail">${m.note||''}</div></div><button data-practice="${m.id}" data-character="${id}" ${G.screen==='battle'&&G.mode==='training'?'':'disabled'}>练习此招</button></article>`).join('')||'<p>未找到匹配招式。</p>';for(let b of $('manual-list').querySelectorAll('[data-practice]'))b.onclick=()=>practiceMove(b.dataset.character,b.dataset.practice)}
+function renderManual(){const id=$('manual-character').value||'ryu',c=CHARACTERS.find(c=>c.id===id),cat=$('manual-category').value,q=$('move-search').value.toLowerCase();$('manual-note').textContent=c.cn+'：'+MOVES[id].filter(m=>m.category==='special').length+'项必杀变体，'+MOVES[id].filter(m=>m.category==='branch').length+'项派生。'+c.trait+' 本作所有指令以此表为准；派生架势、蛛俐部分输入和战斗数值经过 SVG 同人改编。';const list=MOVES[id].map(m=>INK.Runtime.prepare({ch:{id}},m)).filter(m=>(cat==='all'||m.category===cat||cat==='special'&&m.category==='followup')&&[m.name,m.cmd,m.note||''].join(' ').toLowerCase().includes(q));$('manual-list').innerHTML=list.map(m=>`<article class="move-row"><div><h3>${m.name}</h3><small>${m.category.toUpperCase()} · ${m.damage?m.damage+' 基础伤害':'UTILITY'} · ${m.startup}F 启动 / ${m.active}F 持续 / ${m.recovery}F 恢复</small></div><div><div class="move-cmd">${m.cmd||''}</div><div class="move-detail">${m.note||''}</div></div><button data-practice="${m.id}" data-character="${id}" ${G.screen==='battle'&&G.mode==='training'?'':'disabled'}>练习此招</button></article>`).join('')||'<p>未找到匹配招式。</p>';for(let b of $('manual-list').querySelectorAll('[data-practice]'))b.onclick=()=>practiceMove(b.dataset.character,b.dataset.practice)}
 function practiceMove(char,id){
  if(G.mode!=='training'||G.screen!=='battle')return false;
  const chosen=MOVES[char]?.find(m=>m.id===id);if(!chosen)return false;
@@ -1729,7 +1730,7 @@ function practiceMove(char,id){
   if(!entry||depth>4)return false;
   if(entry.id==='midare'){
    const source=getMove(f,'kachosen_3');if(!requestMove(f,source,false))return false;
-   f.input.held.add('HP');for(let i=0;i<source.startup+23;i++)simulate(true);f.input.held.delete('HP');
+   f.input.held.add('HP');for(let i=0;i<240&&!f.maiFollowUntil&&f.attack?.m.id===source.id;i++)simulate(true);f.input.held.delete('HP');
    for(let n=0;G.hitstop>0&&n<240;n++)simulate(true);
    f.maiFollowCancel=!!f.maiFollowUntil;const ok=f.maiFollowCancel&&requestMove(f,entry,false);f.maiFollowCancel=false;f.maiFollowUntil=0;return ok;
   }

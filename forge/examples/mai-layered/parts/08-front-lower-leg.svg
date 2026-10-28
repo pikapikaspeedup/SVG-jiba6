@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 860" width="650" height="860">
+  <title>Mai · front-lower-leg</title>
+  <metadata>{"kind":"ink-authored-vector-part","version":1,"part":"frontLowerLeg","bind":"frontKnee frontFoot","pivot":[342.0,552.0],"layer":8}</metadata>
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a55f58" />
+      <stop offset=".24" stop-color="#cf8b79" />
+      <stop offset=".58" stop-color="#f0b9a2" />
+      <stop offset=".83" stop-color="#ffd5b9" />
+      <stop offset="1" stop-color="#dc9a83" />
+    </linearGradient>
+    <linearGradient id="skin-warm" x1="0" y1="0" x2=".85" y2=".6" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdabd" />
+      <stop offset=".48" stop-color="#edaa94" />
+      <stop offset="1" stop-color="#ae695e" />
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2=".35" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bb796c" />
+      <stop offset=".3" stop-color="#e6a28e" />
+      <stop offset=".65" stop-color="#ffceb2" />
+      <stop offset="1" stop-color="#d89883" />
+    </linearGradient>
+    <linearGradient id="skin-leg" x1="0" y1="0" x2="1" y2=".15" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b97065" />
+      <stop offset=".25" stop-color="#e5a08c" />
+      <stop offset=".55" stop-color="#ffccb0" />
+      <stop offset=".8" stop-color="#f4b49b" />
+      <stop offset="1" stop-color="#bd776a" />
+    </linearGradient>
+    <linearGradient id="rear-leg-skin" x1="170" y1="550" x2="220" y2="563" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b97065" />
+      <stop offset=".25" stop-color="#e5a08c" />
+      <stop offset=".55" stop-color="#ffccb0" />
+      <stop offset=".8" stop-color="#f4b49b" />
+      <stop offset="1" stop-color="#bd776a" />
+    </linearGradient>
+    <linearGradient id="front-leg-skin" x1="317" y1="550" x2="367" y2="542" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b97065" />
+      <stop offset=".25" stop-color="#e5a08c" />
+      <stop offset=".55" stop-color="#ffccb0" />
+      <stop offset=".8" stop-color="#f4b49b" />
+      <stop offset="1" stop-color="#bd776a" />
+    </linearGradient>
+    <linearGradient id="rear-arm-skin" x1="116" y1="263" x2="139" y2="289" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd9bc" />
+      <stop offset=".52" stop-color="#edaa94" />
+      <stop offset="1" stop-color="#ae695e" />
+    </linearGradient>
+    <linearGradient id="front-arm-skin" x1="410" y1="227" x2="418" y2="263" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd9bc" />
+      <stop offset=".52" stop-color="#edaa94" />
+      <stop offset="1" stop-color="#ae695e" />
+    </linearGradient>
+    <linearGradient id="red-cloth" x1="0" y1="0" x2="1" y2=".18" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#891b34" />
+      <stop offset=".27" stop-color="#c42f42" />
+      <stop offset=".57" stop-color="#ec4a4e" />
+      <stop offset=".83" stop-color="#ff7770" />
+      <stop offset="1" stop-color="#bf303d" />
+    </linearGradient>
+    <linearGradient id="red-dark" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee5260" />
+      <stop offset=".55" stop-color="#a51f3c" />
+      <stop offset="1" stop-color="#621c31" />
+    </linearGradient>
+    <linearGradient id="ivory" x1="0" y1="0" x2="1" y2=".5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d6c5b9" />
+      <stop offset=".45" stop-color="#fff4dc" />
+      <stop offset="1" stop-color="#f0dece" />
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4e5166" />
+      <stop offset=".45" stop-color="#242b3d" />
+      <stop offset="1" stop-color="#141a29" />
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2=".18" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#171820" />
+      <stop offset=".28" stop-color="#29232d" />
+      <stop offset=".57" stop-color="#413037" />
+      <stop offset=".79" stop-color="#29232d" />
+      <stop offset="1" stop-color="#12151c" />
+    </linearGradient>
+    <linearGradient id="fan-paper" x1="0" y1="0" x2=".8" y2=".8" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff6df" />
+      <stop offset=".68" stop-color="#e9d7b9" />
+      <stop offset="1" stop-color="#c8ac8c" />
+    </linearGradient>
+    <linearGradient id="cord" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cbb39b" />
+      <stop offset=".5" stop-color="#fff1d6" />
+      <stop offset="1" stop-color="#bda18c" />
+    </linearGradient>
+  </defs>
+  <g id="front-lower-leg" data-part="frontLowerLeg" data-bind="frontKnee frontFoot" data-pivot="342 552">
+    <path d="M326 540 C319 552 322 572 327 592 C332 614 339 637 345 659 C351 680 352 700 355 718 C357 730 366 737 376 735 C388 733 391 724 388 711 C384 691 384 672 383 650 C382 628 381 608 377 587 C373 568 368 552 358 542 C349 534 335 532 326 540Z" fill="url(#front-leg-skin)" />
+    <path d="M323 550 C320 563 323 578 327 592 C332 614 339 637 345 659 C351 680 352 700 355 718 M365 549 C372 559 375 573 377 587 C381 608 382 628 383 650 C384 672 384 691 388 711" fill="none" stroke="#8f544e" stroke-width="2" />
+    <path d="M328 558 C329 581 338 609 345 634 C351 653 356 680 358 701 C352 676 345 660 339 638 C332 612 322 581 325 565Z" fill="#ab665e" opacity=".4" />
+    <path d="M351 560 C357 577 361 596 361 617 C362 641 365 663 367 682 C367 659 373 639 370 616 C367 594 363 574 358 560Z" fill="#ffddbf" opacity=".5" />
+    <path d="M354 707 C363 711 377 711 387 705 L389 731 C380 739 365 741 356 732Z" fill="url(#navy)" stroke="#181a27" stroke-width="1.7" />
+    <path d="M355 714 C365 717 378 717 388 713 M356 725 C366 729 378 729 389 725" fill="none" stroke="#77768b" stroke-width="2" opacity=".65" />
+  </g>
+</svg>

@@ -111,7 +111,15 @@
       v.tongues.forEach((n,j)=>{const x=-75+j*22,y=(j%2?1:-1)*(17+j*4)+Math.sin(phase+j)*3;assign(n,'display',normal&&j>1?'none':'inline');assign(n,'transform',`translate(${x} ${y}) rotate(${j*31+(setting.reducedMotion?0:frame*3)})`);assign(n,'d',fire?'M-5 2 Q-6-5 1-12 Q2-4 5-1 Q4 4 0 5Z':'M-6 1 Q-3-7 3-5 Q8-1 2 5 Q-2 6-6 1Z');assign(n,'fill',j%2?'#ffe8c4':fire?'#ff9c60':'#ed8c97');assign(n,'stroke','none');assign(n,'opacity',.68);});
       return true;
     }
-    renderLive(record,frame,pose,rig,move){
+    renderLive(record,frame,pose,rig,move,actor=null){
+      if(record?.character==='mai'&&record.clip.meta?.maiChoreography&&INK.MaiMoveFX){
+        this.maiMoveFX??=new INK.MaiMoveFX(this.backRoot,this.root);
+        assign(this.root,'display','inline');assign(this.backRoot,'display','inline');
+        assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
+        this.ribbons.forEach(v=>assign(v.g,'display','none'));
+        this.stats.active=this.maiMoveFX.render(record,frame,pose,rig,move,actor);return;
+      }
+      this.maiMoveFX?.hide();
       // Pillars are sustained authored shapes, not motion trails: a stationary
       // foot cannot supply their vertical geometry through StrikeTrace.
       const events=record?.fx?.filter(e=>(e.type==='pillar'||record.character==='mai'&&['fan','flame','silk','crescent','streak'].includes(e.type))&&frame>=e.frame&&frame<e.frame+e.duration)||[];
@@ -140,7 +148,7 @@
       for(let i=used;i<this.ribbons.length;i++)assign(this.ribbons[i].g,'display','none');
       this.layerOrder=null;this.stats.active=used;
     }
-    render(record,frame,pose,rig,context=null){this.context=context;this.frameSamples=new Map();if(!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}if(context?.live){this.renderLive(record,frame,pose,rig,context.move);return;}assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
+    render(record,frame,pose,rig,context=null){this.context=context;this.frameSamples=new Map();if(!record||!this.visible||!setting.enabled){assign(this.root,'display','none');assign(this.backRoot,'display','none');this.stats.active=0;return;}if(context?.live||record?.character==='mai'&&record.clip.meta?.maiChoreography&&INK.MaiMoveFX){this.renderLive(record,frame,pose,rig,context?.move,context?.actor);if(this.particles)for(const n of this.particles.nodes)assign(n,'display','none');return;}this.maiMoveFX?.hide();assign(this.root,'display','inline');assign(this.backRoot,'display','inline');assign(this.root,'opacity',setting.intensity);assign(this.backRoot,'opacity',setting.intensity);
       this.particles??=new ParticleSystem(this.root,{capacity:144});
       const profile=rig.profile||INK.Runtime.profile(record.character);
       if(this.record!==record||this.profileKey!==JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth])||this.quality!==setting.quality||this.graphKey!==JSON.stringify(this.graphOptions||INK.MotionGraph.settings)){this.record=record;this.profile=profile;this.profileKey=JSON.stringify([profile.id,profile.rigLengths,profile.rigRearShoulder,profile.rigFrontShoulder,profile.rigHipWidth]);this.quality=setting.quality;this.graphKey=JSON.stringify(this.graphOptions||INK.MotionGraph.settings);this.cache.clear();this.catalogue=null;this.clip=new (INK.CompiledClip||INK.Clip)(record.clip);}

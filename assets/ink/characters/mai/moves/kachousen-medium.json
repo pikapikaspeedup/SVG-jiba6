@@ -39,889 +39,1057 @@
     "tracks": {
       "lean": [
         [
-          0.0,
+          0,
           -6,
           "spline"
         ],
         [
-          6.75,
+          5.4,
+          -13,
+          "spline"
+        ],
+        [
+          10.8,
           -16,
-          "spline"
+          "load"
         ],
         [
-          12.0,
-          -8,
-          "spline"
-        ],
-        [
-          15.0,
-          17,
+          15,
+          13,
           "strike"
         ],
         [
-          20.4,
-          8,
+          21,
+          10,
           "spline"
         ],
         [
-          28.5,
-          -1,
+          27.0,
+          4,
           "spline"
         ],
         [
-          35.375,
-          -6,
+          34.4,
+          -5,
           "spline"
         ],
         [
-          41.0,
+          41,
           -6,
           "spline"
         ]
       ],
       "bob": [
         [
-          0.0,
+          0,
           0,
           "spline"
         ],
         [
-          6.75,
-          7,
-          "spline"
-        ],
-        [
-          12.0,
+          5.4,
           0,
           "spline"
         ],
         [
-          15.0,
+          10.8,
+          0,
+          "load"
+        ],
+        [
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
           "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
           "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
           "spline"
         ],
         [
-          41.0,
+          41,
           0,
           "spline"
         ]
       ],
       "head": [
         [
-          0.0,
+          0,
           3,
           "spline"
         ],
         [
-          6.75,
+          5.4,
           3,
           "spline"
         ],
         [
-          12.0,
+          10.8,
           3,
-          "hold"
+          "load"
         ],
         [
-          15.0,
-          -10,
+          15,
+          3,
           "strike"
         ],
         [
-          20.4,
+          21,
           3,
           "spline"
         ],
         [
-          28.5,
+          27.0,
           3,
           "spline"
         ],
         [
-          35.375,
+          34.4,
           3,
           "spline"
         ],
         [
-          41.0,
+          41,
           3,
           "spline"
         ]
       ],
       "chest": [
         [
-          0.0,
+          0,
           0,
           "spline"
         ],
         [
-          6.75,
-          -8,
+          5.4,
+          -10,
           "spline"
         ],
         [
-          12.0,
-          0,
-          "spline"
+          10.8,
+          -15,
+          "load"
         ],
         [
-          15.0,
-          9,
+          15,
+          12,
           "strike"
         ],
         [
-          20.4,
+          21,
+          7,
+          "spline"
+        ],
+        [
+          27.0,
           0,
           "spline"
         ],
         [
-          28.5,
+          34.4,
           0,
           "spline"
         ],
         [
-          35.375,
-          0,
-          "spline"
-        ],
-        [
-          41.0,
+          41,
           0,
           "spline"
         ]
       ],
       "pelvis": [
         [
-          0.0,
+          0,
           0,
           "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
           "spline"
         ],
         [
-          12.0,
-          0,
-          "hold"
+          10.8,
+          7,
+          "load"
         ],
         [
-          15.0,
+          15,
+          -5,
+          "strike"
+        ],
+        [
+          21,
+          0,
+          "spline"
+        ],
+        [
+          27.0,
+          0,
+          "spline"
+        ],
+        [
+          34.4,
+          0,
+          "spline"
+        ],
+        [
+          41,
+          0,
+          "spline"
+        ]
+      ],
+      "yaw": [
+        [
+          0,
+          0,
+          "spline"
+        ],
+        [
+          5.4,
+          0,
+          "spline"
+        ],
+        [
+          10.8,
+          0,
+          "load"
+        ],
+        [
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
           "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
           "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
           "spline"
         ],
         [
-          41.0,
+          41,
+          0,
+          "spline"
+        ]
+      ],
+      "chestYaw": [
+        [
+          0,
+          0,
+          "spline"
+        ],
+        [
+          5.4,
+          0,
+          "spline"
+        ],
+        [
+          10.8,
+          0,
+          "load"
+        ],
+        [
+          15,
+          0,
+          "strike"
+        ],
+        [
+          21,
+          0,
+          "spline"
+        ],
+        [
+          27.0,
+          0,
+          "spline"
+        ],
+        [
+          34.4,
+          0,
+          "spline"
+        ],
+        [
+          41,
+          0,
+          "spline"
+        ]
+      ],
+      "pelvisYaw": [
+        [
+          0,
+          0,
+          "spline"
+        ],
+        [
+          5.4,
+          0,
+          "spline"
+        ],
+        [
+          10.8,
+          0,
+          "load"
+        ],
+        [
+          15,
+          0,
+          "strike"
+        ],
+        [
+          21,
+          0,
+          "spline"
+        ],
+        [
+          27.0,
+          0,
+          "spline"
+        ],
+        [
+          34.4,
+          0,
+          "spline"
+        ],
+        [
+          41,
+          0,
+          "spline"
+        ]
+      ],
+      "headYaw": [
+        [
+          0,
+          0,
+          "spline"
+        ],
+        [
+          5.4,
+          0,
+          "spline"
+        ],
+        [
+          10.8,
+          0,
+          "load"
+        ],
+        [
+          15,
+          0,
+          "strike"
+        ],
+        [
+          21,
+          0,
+          "spline"
+        ],
+        [
+          27.0,
+          0,
+          "spline"
+        ],
+        [
+          34.4,
+          0,
+          "spline"
+        ],
+        [
+          41,
           0,
           "spline"
         ]
       ],
       "spin": [
         [
-          0.0,
           0,
-          "smooth"
+          0,
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "turn": [
         [
-          0.0,
+          0,
           0,
           "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
           "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
           "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
           "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
           "spline"
         ],
         [
-          41.0,
+          41,
           0,
           "spline"
         ]
       ],
       "depth": [
         [
-          0.0,
+          0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           1,
           "strike"
         ],
         [
-          20.4,
+          21,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           1,
-          "smooth"
+          "spline"
         ]
       ],
       "floor": [
         [
-          0.0,
+          0,
           0,
           "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
           "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
           "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
           "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
           "spline"
         ],
         [
-          41.0,
+          41,
           0,
           "spline"
         ]
       ],
       "rootShift": [
         [
-          0.0,
+          0,
           0,
           "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
           "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
           "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
           "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
           "spline"
         ],
         [
-          41.0,
+          41,
           0,
           "spline"
         ]
       ],
       "open": [
         [
-          0.0,
           0,
-          "smooth"
+          1,
+          "spline"
         ],
         [
-          6.75,
-          0,
-          "smooth"
+          5.4,
+          1,
+          "spline"
         ],
         [
-          12.0,
-          0,
-          "hold"
+          10.8,
+          1,
+          "load"
         ],
         [
-          15.0,
-          0,
+          15,
+          1,
           "strike"
         ],
         [
-          20.4,
-          0,
-          "smooth"
+          21,
+          1,
+          "spline"
         ],
         [
-          28.5,
-          0,
-          "smooth"
+          27.0,
+          1,
+          "spline"
         ],
         [
-          35.375,
-          0,
-          "smooth"
+          34.4,
+          1,
+          "spline"
         ],
         [
-          41.0,
-          0,
-          "smooth"
+          41,
+          1,
+          "spline"
         ]
       ],
       "fan": [
         [
-          0.0,
+          0,
           0.92,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
+          0,
+          "spline"
+        ],
+        [
+          34.4,
           0.18,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
-          0.75,
-          "smooth"
-        ],
-        [
-          41.0,
+          41,
           0.92,
-          "smooth"
+          "spline"
         ]
       ],
       "fanAngle": [
         [
-          0.0,
+          0,
           -9,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           -35,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
-          -54,
-          "hold"
+          10.8,
+          -58,
+          "load"
         ],
         [
-          15.0,
+          15,
           -9,
           "strike"
         ],
         [
-          20.4,
+          21,
           -9,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           -9,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
-          -9,
-          "smooth"
+          34.4,
+          -25,
+          "spline"
         ],
         [
-          41.0,
+          41,
           -9,
-          "smooth"
+          "spline"
         ]
       ],
       "ffoot": [
         [
-          0.0,
           0,
-          "smooth"
+          0,
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "rfoot": [
         [
-          0.0,
           0,
-          "smooth"
+          0,
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "reachScale": [
         [
-          0.0,
+          0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           1,
           "strike"
         ],
         [
-          20.4,
+          21,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           1,
-          "smooth"
+          "spline"
         ]
       ],
       "reachFoot": [
         [
-          0.0,
           0,
-          "smooth"
+          0,
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           0,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           0,
           "strike"
         ],
         [
-          20.4,
+          21,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           0,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           0,
-          "smooth"
+          "spline"
         ]
       ],
       "frontArmProjection": [
         [
-          0.0,
+          0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           1,
           "strike"
         ],
         [
-          20.4,
+          21,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           1,
-          "smooth"
+          "spline"
         ]
       ],
       "rearArmProjection": [
         [
-          0.0,
+          0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           1,
           "strike"
         ],
         [
-          20.4,
+          21,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           1,
-          "smooth"
+          "spline"
         ]
       ],
       "frontLegProjection": [
         [
-          0.0,
+          0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           1,
           "strike"
         ],
         [
-          20.4,
+          21,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           1,
-          "smooth"
+          "spline"
         ]
       ],
       "rearLegProjection": [
         [
-          0.0,
+          0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          6.75,
+          5.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          12.0,
+          10.8,
           1,
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           1,
           "strike"
         ],
         [
-          20.4,
+          21,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          28.5,
+          27.0,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          35.375,
+          34.4,
           1,
-          "smooth"
+          "spline"
         ],
         [
-          41.0,
+          41,
           1,
-          "smooth"
+          "spline"
         ]
       ],
       "rw": [
         [
-          0.0,
+          0,
           [
             -23,
             -285
@@ -929,47 +1097,47 @@
           "spline"
         ],
         [
-          6.75,
+          5.4,
           [
-            -68,
-            -284
+            -58,
+            -291
           ],
           "spline"
         ],
         [
-          12.0,
+          10.8,
           [
-            -62,
-            -279
+            -58,
+            -285
           ],
-          "spline"
+          "load"
         ],
         [
-          15.0,
+          15,
           [
-            -68,
-            -290
+            -73,
+            -288
           ],
           "strike"
         ],
         [
-          20.4,
+          21,
           [
-            -49,
-            -295
+            -65,
+            -301
           ],
           "spline"
         ],
         [
-          28.5,
+          27.0,
           [
-            -25,
-            -293
+            -41,
+            -299
           ],
           "spline"
         ],
         [
-          35.375,
+          34.4,
           [
             -23,
             -285
@@ -977,7 +1145,7 @@
           "spline"
         ],
         [
-          41.0,
+          41,
           [
             -23,
             -285
@@ -987,7 +1155,7 @@
       ],
       "fw": [
         [
-          0.0,
+          0,
           [
             113,
             -313
@@ -995,55 +1163,55 @@
           "spline"
         ],
         [
-          6.75,
+          5.4,
           [
-            13,
-            -278
-          ],
-          "spline"
-        ],
-        [
-          12.0,
-          [
-            44,
-            -321
-          ],
-          "spline"
-        ],
-        [
-          15.0,
-          [
-            164,
-            -292
-          ],
-          "strike"
-        ],
-        [
-          20.4,
-          [
-            129,
-            -272
-          ],
-          "spline"
-        ],
-        [
-          28.5,
-          [
-            79,
+            30,
             -289
           ],
           "spline"
         ],
         [
-          35.375,
+          10.8,
           [
-            113,
-            -313
+            44,
+            -323
+          ],
+          "load"
+        ],
+        [
+          15,
+          [
+            162,
+            -281
+          ],
+          "strike"
+        ],
+        [
+          21,
+          [
+            146,
+            -275
           ],
           "spline"
         ],
         [
-          41.0,
+          27.0,
+          [
+            111,
+            -281
+          ],
+          "spline"
+        ],
+        [
+          34.4,
+          [
+            100,
+            -310
+          ],
+          "spline"
+        ],
+        [
+          41,
           [
             113,
             -313
@@ -1053,7 +1221,7 @@
       ],
       "ra": [
         [
-          0.0,
+          0,
           [
             -104,
             -16
@@ -1061,7 +1229,7 @@
           "spline"
         ],
         [
-          6.75,
+          5.4,
           [
             -104,
             -16
@@ -1069,15 +1237,15 @@
           "spline"
         ],
         [
-          12.0,
+          10.8,
           [
             -104,
             -16
           ],
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           [
             -123,
             -16
@@ -1085,7 +1253,15 @@
           "strike"
         ],
         [
-          20.4,
+          21,
+          [
+            -123,
+            -16
+          ],
+          "spline"
+        ],
+        [
+          27.0,
           [
             -104,
             -16
@@ -1093,7 +1269,7 @@
           "spline"
         ],
         [
-          28.5,
+          34.4,
           [
             -104,
             -16
@@ -1101,15 +1277,7 @@
           "spline"
         ],
         [
-          35.375,
-          [
-            -104,
-            -16
-          ],
-          "spline"
-        ],
-        [
-          41.0,
+          41,
           [
             -104,
             -16
@@ -1119,7 +1287,7 @@
       ],
       "fa": [
         [
-          0.0,
+          0,
           [
             82,
             -16
@@ -1127,7 +1295,7 @@
           "spline"
         ],
         [
-          6.75,
+          5.4,
           [
             82,
             -16
@@ -1135,23 +1303,31 @@
           "spline"
         ],
         [
-          12.0,
+          10.8,
           [
             82,
             -16
           ],
-          "hold"
+          "load"
         ],
         [
-          15.0,
+          15,
           [
-            112,
+            108,
             -16
           ],
           "strike"
         ],
         [
-          20.4,
+          21,
+          [
+            108,
+            -16
+          ],
+          "spline"
+        ],
+        [
+          27.0,
           [
             82,
             -16
@@ -1159,7 +1335,7 @@
           "spline"
         ],
         [
-          28.5,
+          34.4,
           [
             82,
             -16
@@ -1167,15 +1343,7 @@
           "spline"
         ],
         [
-          35.375,
-          [
-            82,
-            -16
-          ],
-          "spline"
-        ],
-        [
-          41.0,
+          41,
           [
             82,
             -16
@@ -1196,185 +1364,50 @@
       "rootPolicy": "combat",
       "fxOwnership": "Pure vector accents; projectiles and damage remain combat-owned.",
       "flowEdition": 4,
-      "visualRevision": "mai-flower-flame-1",
+      "visualRevision": "mai-native-choreography-2026-10",
       "secondaryBeats": [
         {
           "frame": 15,
-          "amplitude": 10
+          "amplitude": 6
         },
         {
           "frame": 21,
-          "amplitude": -7
+          "amplitude": -4
         }
       ],
       "visualNote": "FLOW 04：折扇开合、饰物惯性、分层轨迹。装饰节拍不生成命中；世界位移与伤害仍由战斗引擎决定。",
       "motion5": {
         "version": 1,
         "weightScale": 1,
-        "layers": [
-          {
-            "id": "mai-torso-counterrotation",
-            "mode": "additive",
-            "weight": 1,
-            "tracks": {
-              "chest": [
-                [
-                  0,
-                  0,
-                  "spline"
-                ],
-                [
-                  9.75,
-                  -4,
-                  "spline"
-                ],
-                [
-                  17.52,
-                  10,
-                  "spline"
-                ],
-                [
-                  21,
-                  5,
-                  "spline"
-                ],
-                [
-                  31.4,
-                  -3,
-                  "spline"
-                ],
-                [
-                  41,
-                  0,
-                  "spline"
-                ]
-              ],
-              "pelvis": [
-                [
-                  0,
-                  0,
-                  "spline"
-                ],
-                [
-                  9.75,
-                  3,
-                  "spline"
-                ],
-                [
-                  17.52,
-                  -5,
-                  "spline"
-                ],
-                [
-                  21,
-                  -3,
-                  "spline"
-                ],
-                [
-                  31.4,
-                  2,
-                  "spline"
-                ],
-                [
-                  41,
-                  0,
-                  "spline"
-                ]
-              ],
-              "headYaw": [
-                [
-                  0,
-                  0,
-                  "spline"
-                ],
-                [
-                  9.75,
-                  2,
-                  "spline"
-                ],
-                [
-                  17.52,
-                  -5,
-                  "spline"
-                ],
-                [
-                  21,
-                  -2,
-                  "spline"
-                ],
-                [
-                  31.4,
-                  2,
-                  "spline"
-                ],
-                [
-                  41,
-                  0,
-                  "spline"
-                ]
-              ]
-            }
-          },
-          {
-            "id": "mai-fan-follow-through",
-            "mode": "additive",
-            "weight": 1,
-            "tracks": {
-              "fanAngle": [
-                [
-                  0,
-                  0,
-                  "spline"
-                ],
-                [
-                  9.75,
-                  -6,
-                  "spline"
-                ],
-                [
-                  17.52,
-                  11,
-                  "spline"
-                ],
-                [
-                  21,
-                  6,
-                  "spline"
-                ],
-                [
-                  31.4,
-                  -4,
-                  "spline"
-                ],
-                [
-                  41,
-                  0,
-                  "spline"
-                ]
-              ]
-            }
-          }
-        ],
+        "layers": [],
         "contacts": [
           {
-            "id": "rear-support",
+            "id": "rear-plant",
             "socket": "rearFoot",
             "start": 0,
-            "end": 24,
-            "fadeIn": 2,
-            "fadeOut": 3,
-            "strength": 0.92,
-            "maxCorrection": 32
+            "end": 21,
+            "fadeIn": 1,
+            "fadeOut": 2,
+            "strength": 0.9,
+            "maxCorrection": 24
           }
         ],
         "springs": {
-          "frequency": 0.31,
-          "damping": 0.4,
+          "frequency": 0.3,
+          "damping": 0.64,
           "hairStrength": 1.15,
-          "clothStrength": 1.1
+          "clothStrength": 1.05
         }
       },
-      "continuousHolds6": true
+      "continuousHolds6": true,
+      "maiChoreography": {
+        "version": 1,
+        "family": "fan-cast",
+        "description": "中·花蝶扇",
+        "source": "Capcom Mai character guide / SVG interpretation",
+        "rootOwner": "combat",
+        "contactOwner": "combat"
+      }
     }
   },
   "boxes": {
@@ -1389,26 +1422,26 @@
       "type": "fan",
       "socket": "fanTip",
       "scale": 1,
-      "color": "#f5dfbc",
+      "color": "#f58b56",
       "rotation": 0,
-      "opacity": 0.5,
-      "trailFrames": 5,
-      "width": 6,
+      "opacity": 0.66,
+      "width": 5,
+      "trailFrames": 8,
       "layer": "front",
       "particles": {
-        "count": 8,
-        "life": 20,
+        "count": 3,
+        "life": 26,
         "speed": 2.4,
-        "size": 2.2,
-        "spread": 95,
+        "size": 1.6,
+        "spread": 80,
         "species": "fleck",
-        "gravity": 0.02,
-        "drag": 0.035,
-        "curl": 2,
-        "spacing": 18,
-        "rate": 0.507,
-        "burst": 3,
-        "inheritVelocity": 0.28
+        "gravity": -0.06,
+        "drag": 0.04,
+        "curl": 1.4,
+        "spacing": 16,
+        "rate": 0.12,
+        "burst": 2,
+        "inheritVelocity": 0.2
       }
     }
   ],

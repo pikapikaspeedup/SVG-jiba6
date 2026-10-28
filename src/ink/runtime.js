@@ -20,7 +20,10 @@
   invalidate(){INK.StageLight?.clear();INK.Replay?.stop();INK.SceneFeedback?.clear();this.profileCache.clear();INK.MotionGraph.clear();INK.Articulation?.clear();INK.SecondaryDynamics.clear();INK.VFX?.bank?.clear();for(const f of globalThis.SVG_FIGHTER?.fighters||[]){INK.Spacing?.invalidate(f);if(INK.AirStrike?.owns(f)){delete f.attack.airStrikeContext;delete f.attack.airStrikeSupportPlan;}else if(INK.StrikeModel?.owns(f)){globalThis.SVG_FIGHTER.setState(f,f.y<0?'recovery':'idle');}INK.Presentation?.reset(f);INK.BodySupport?.reset(f);f._poseSimulationFrame=null;f._floorCache=null;f._renderSignature=null;if(f.inkRenderer){f.inkRenderer.destroy();f.inkRenderer=null;}if(f.inkFX){f.inkFX.destroy();f.inkFX=null;}}},
   get revision(){return this.store?.revision||0;},
   profile(id){if(!this.profileCache.has(id))this.profileCache.set(id,this.store.profile(id));return this.profileCache.get(id);},
-  record(f,m){return this.store?.byGame(f.ch.id,m?.wakeStrike?'sMP':m?.id||'@idle')||null;},
+  record(f,m){const original=this.store?.byGame(f.ch.id,m?.wakeStrike?'sMP':m?.id||'@idle')||null;
+   if(original&&f.ch.id==='mai'&&m?.base==='kachosen'&&m.od&&m.fanCharged&&m.id!=='midare'&&!this.store.modified?.('mai',original.key))return this.store.byGame('mai','@kachosen-od-held')||original;
+   return original;
+  },
   clipFrame(record,m,t){const b=record.binding;return phaseMap(t,[0,m.startup,m.startup+m.active,m.total],[0,b.startup,b.startup+b.active,record.clip.duration]);},
   capture(f,m,outgoing=null){
    const source=outgoing||f;
@@ -103,15 +106,16 @@
    let p=base;
    if(!ctx)return p;
    const context=world?{...world,history:f._inkTrail?.rows,origin:f._inkActionOrigin,airborne:f.y<-2}:null;
-   const scored=INK.StrikeScore?.supports(f);
+   const authored=!!ctx.record?.clip.meta?.maiChoreography;
+   const scored=!authored&&INK.StrikeScore?.supports(f);
    // Score owns the authored body/guard/fan tracks. Preserve independent
    // secondary dynamics, but do not add the old motion5 score a second time.
    p=scored?INK.copy(p):INK.MotionGraph.compose(ctx.record,ctx.frame,p,this.profile(f.ch.id),context);
    p=INK.Kinetic?.pose(f,p)||p;
    p=INK.GuardBody?.pose(f,p)||p;
-   p=scored?INK.StrikeScore.sample(f,p):INK.StrikeMotion?.pose(f,p)||p;
+   p=scored?INK.StrikeScore.sample(f,p):authored?p:INK.StrikeMotion?.pose(f,p)||p;
    p=INK.StrikeTempoFX?.pose(f,p)||p;
-   if(!scored)p=INK.RecoveryMotion?.pose(f,p)||p;
+   if(!scored&&!authored)p=INK.RecoveryMotion?.pose(f,p)||p;
    p=INK.Aerial?.pose(f,p)||p;
    p=INK.AirPursuitFX?.pose(f,p)||p;
    p=INK.WakeFlow?.pose(f,p)||p;
@@ -145,7 +149,7 @@
    // The light Shinobi-bachi's authored full turn was compressed into a few
    // frames by its shorter combat startup. Spread the same rotation across
    // the startup for presentation; the combat pose remains untouched.
-   if(f.ch.id==='mai'&&f.attack?.m.id==='shinobibachi_0'){
+   if(f.ch.id==='mai'&&f.attack?.m.id==='shinobibachi_0'&&!this.record(f,f.attack.m)?.clip.meta?.maiChoreography){
     const u=clamp(f.attack.t/f.attack.m.startup),q=INK.Articulation.inherit(p,INK.copy(p));
     q.spin=-360*u*u*(3-2*u);p=q;
    }

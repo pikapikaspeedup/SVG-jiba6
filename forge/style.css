@@ -44,6 +44,12 @@ body.forge-player #flow-home-demo,body.forge-player #r7-open,
 body.forge-player #engine5-nav,body.forge-player #continuity6-nav,
 body.forge-player #f-home .f-edition{display:none!important}
 
+/* An imported SVG skin replaces the native artwork only; both still use the
+   same combat joints, effects and collision rules. */
+[data-ink-image-skin="true"] > [data-ink-layer="art"] > :not([data-ink-part="image-skin"]){display:none!important}
+[data-ink-mai-stage="true"] > [data-ink-layer="art"] > :not([data-ink-part="mai-stage-reference"]){display:none!important}
+#f-mai-stage-note{margin:0 0 12px;padding:9px 12px;color:#f3dcbd;background:#394137;border:1px solid #72806c;border-radius:4px}
+
 /* FLOW 08: real-pose retained silhouettes. No legacy contour snapshots. */
 [data-ink-afterimage] [data-ink-layer=art] path:not([fill=none]),[data-ink-afterimage] [data-ink-layer=art] ellipse,[data-ink-afterimage] [data-ink-layer=art] circle{fill:var(--ink-echo-color,#82a798)!important;stroke:none!important;opacity:1!important}
 [data-ink-afterimage] [data-ink-layer=art] path[fill=none]{stroke:none!important}

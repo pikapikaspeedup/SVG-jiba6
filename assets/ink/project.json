@@ -662,7 +662,15 @@
         "state-tumble",
         "state-ko",
         "state-throw-forward-sequence",
-        "state-throw-back-sequence"
+        "state-throw-back-sequence",
+        "senkotsu-uchi",
+        "hoshi-kujaku",
+        "hien-renkyaku-2",
+        "hien-renkyaku-3",
+        "hoshi-kujaku-2",
+        "yume-zakura",
+        "state-throw-air-sequence",
+        "kachousen-od-held"
       ]
     },
     {
